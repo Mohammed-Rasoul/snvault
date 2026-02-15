@@ -234,6 +234,23 @@ main {
     font-weight: 500;
 }
 
+/* Quiz banner on exam pages */
+
+.quiz-banner {
+    background-color: #fff;
+    border: 2px solid #5B2EAE;
+    border-radius: 4px;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    box-shadow: 2px 2px 0 rgba(91, 46, 174, 0.15);
+}
+
+.quiz-banner a {
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
 /* Quiz feature */
 
 .quiz-config {
