@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Incident Response - SN Vault</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="site-title"><a href="../index.html">SN Vault</a></div>
+            <nav>
+                <a href="cis-apm.html">Application Portfolio Management</a>
+<a href="cad.html">Certified Application Developer</a>
+<a href="csa.html">Certified System Administrator</a>
+<a href="cis-cpg.html">Cloud Provisioning and Governance</a>
+<a href="cis-csm.html">Customer Service Management</a>
+<a href="cis-discovery.html">Discovery</a>
+<a href="cis-em.html">Event Management</a>
+<a href="cis-fsm.html">Field Service Management</a>
+<a href="cis-ham.html">Hardware Asset Management</a>
+<a href="cis-hr.html">Human Resources</a>
+<a href="cis-itsm.html">IT Service Management</a>
+<a href="cas-pa.html">Performance Analytics</a>
+<a href="cis-ppm.html">Project Portfolio Management</a>
+<a href="cis-rc.html">Risk and Compliance</a>
+<a href="cis-sir.html" class="active">Security Incident Response</a>
+<a href="cis-sm.html">Service Mapping</a>
+<a href="cis-sam.html">Software Asset Management</a>
+<a href="cis-spm.html">Strategic Portfolio Management</a>
+<a href="cis-vrm.html">Vendor Risk Management</a>
+<a href="cis-vr.html">Vulnerability Response</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="question-card">
+<h2>Question 1</h2>
+<p>What makes a playbook appear for a Security Incident if using Flow Designer?<br />A. Actions defined to create tasks<br />B. Trigger set to conditions that match the security incident<br />C. Runbook property set to true<br />D. Service Criticality set to High</p>
+<details>
+<summary>Show Answer</summary>
+<p>B (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 2</h2>
+<p>What is the purpose of Calculator Groups as opposed to Calculators?<br />A. To provide metadata about the calculators<br />B. To allow the agent to select which calculator they want to execute<br />C. To set the condition for all calculators to run<br />D. To ensure one at maximum will run per group</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 3</h2>
+<p>The following term is used to describe any observable occurrence: __________.<br />A. Incident<br />B. Log<br />C. Ticket<br />D. Alert<br />E. Event</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 4</h2>
+<p>The severity field of the security incident is influenced by what?<br />A. The cost of the response to the security breach<br />B. The impact, urgency and priority of the incident<br />C. The time taken to resolve the security incident<br />D. The business value of the affected asset</p>
+<details>
+<summary>Show Answer</summary>
+<p>B (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 5</h2>
+<p>The Risk Score is calculated by combining all the weights using __________.<br />A. an arithmetic mean<br />B. addition<br />C. the Risk Score script include<br />D. a geometric mean</p>
+<details>
+<summary>Show Answer</summary>
+<p>A (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 6</h2>
+<p>What are two of the audiences identified that will need reports and insight into Security Incident Response reports? (Choose two.)<br />A. Analysts<br />B. Vulnerability Managers<br />C. Chief Information Security Officer (CISO)<br />D. Problem Managers</p>
+<details>
+<summary>Show Answer</summary>
+<p>AC (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 7</h2>
+<p>What three steps enable you to include a new playbook in the Selected Playbook choice list? (Choose three.)<br />A. Add the TLP: GREEN tag to the playbooks that you want to include in the Selected Playbook choice list<br />B. Navigate to the sys_hub_flow.list table<br />C. Search for the new playbook you have created using Flow Designer<br />D. Add the sir_playbook tag to the playbooks that you want to include in the Selected Playbook choice list<br />E. Navigate to the sys_playbook_flow.list table</p>
+<details>
+<summary>Show Answer</summary>
+<p>BCD (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 8</h2>
+<p>Which improvement opportunity can be found baseline which can contribute towards process maturity and strengthen costumer’s overall security posture?<br />A. Post-Incident Review<br />B. Fast Eradication<br />C. Incident Containment<br />D. Incident Analysis</p>
+<details>
+<summary>Show Answer</summary>
+<p>A (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 9</h2>
+<p>What is the fastest way for security incident administrators to remove unwanted widgets from the Security Incident Catalog?<br />A. Clicking the X on the top right corner<br />B. Talking to the system administrator<br />C. Can't be removed<br />D. Through the Catalog Definition record</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 10</h2>
+<p>Select the one capability that retrieves a list of running processes on a CI from a host or endpoint.<br />A. Get Network Statistics<br />B. Isolate Host<br />C. Get Running Processes<br />D. Publish Watchlist<br />E. Block Action<br />F. Sightings Search</p>
+<details>
+<summary>Show Answer</summary>
+<p>C (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 11</h2>
+<p>Which Table would be commonly used for Security Incident Response?<br />A. sysapproval_approver<br />B. sec_ops_incident<br />C. cmdb_rel_ci<br />D. sn_si_incident</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 12</h2>
+<p>There are several methods in which security incidents can be raised, which broadly fit into one of these categories: __________. (Choose two.)<br />A. Integrations<br />B. Manually created<br />C. Automatically created<br />D. Email parsing</p>
+<details>
+<summary>Show Answer</summary>
+<p>BC (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 13</h2>
+<p>What is the first step when creating a security Playbook?<br />A. Set the Response Task's state<br />B. Create a Flow<br />C. Create a Runbook<br />D. Create a Knowledge Article</p>
+<details>
+<summary>Show Answer</summary>
+<p>B (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 14</h2>
+<p>To configure Security Incident Escalations, you need the following role(s): __________.<br />A. sn_si.admin<br />B. sn_si.admin or sn_si.manager<br />C. sn_si.admin or sn_si.ciso<br />D. sn_si.manager or sn_si.analyst</p>
+<details>
+<summary>Show Answer</summary>
+<p>A (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 15</h2>
+<p>Which of the following are potential benefits for utilizing Security Incident assignment automation? (Choose two.)<br />A. Decreased Time to Containment<br />B. Increased Mean Time to Remediation<br />C. Decreased Time to Ingestion<br />D. Increased resolution process consistency</p>
+<details>
+<summary>Show Answer</summary>
+<p>AD (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 16</h2>
+<p>What is the key to a successful implementation?<br />A. Sell customer the most expensive package<br />B. Implementing everything that we offer<br />C. Understanding the customer’s goals and objectives<br />D. Building custom integrations</p>
+<details>
+<summary>Show Answer</summary>
+<p>C (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 17</h2>
+<p>A flow consists of one or more actions and a what?<br />A. Change formatter<br />B. Catalog Designer<br />C. NIST Ready State<br />D. Trigger</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 18</h2>
+<p>Flow Triggers can be based on what? (Choose three.)<br />A. Record changes<br />B. Schedules<br />C. Subflows<br />D. Record inserts<br />E. Record views</p>
+<details>
+<summary>Show Answer</summary>
+<p>ABD (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 19</h2>
+<p>Which one of the following users is automatically added to the Request Assessments list?<br />A. Any user that adds a worknote to the ticket<br />B. The analyst assigned to the ticket<br />C. Any user who has Response Tasks on the incident<br />D. The Affected User on the incident</p>
+<details>
+<summary>Show Answer</summary>
+<p>C</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 20</h2>
+<p>For Customers who don't use 3rd-party systems, what ways can security incidents be created? (Choose three.)<br />A. Security Service Catalog<br />B. Security Incident Form<br />C. Inbound Email Parsing Rules<br />D. Leveraging an Integration<br />E. Alert Management</p>
+<details>
+<summary>Show Answer</summary>
+<p>ABC (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 21</h2>
+<p>What does a flow require?<br />A. Security orchestration flows<br />B. Runbooks<br />C. CAB orders<br />D. A trigger</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 22</h2>
+<p>Knowledge articles that describe steps an analyst needs to follow to complete Security incident tasks might be associated to those tasks through which of the following?<br />A. Work Instruction Playbook<br />B. Flow<br />C. Workflow<br />D. Runbook<br />E. Flow Designer</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 23</h2>
+<p>Which of the following process definitions allow only single-step progress through the process defined without allowing step skipping?<br />A. SANS Stateful<br />B. NIST Stateful<br />C. SANS Open<br />D. NIST Open</p>
+<details>
+<summary>Show Answer</summary>
+<p>B (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 24</h2>
+<p>If the customer’s email server currently has an account setup to report suspicious emails, then what happens next?<br />A. an integration added to Exchange keeps the ServiceNow platform in sync<br />B. the ServiceNow platform ensures that parsing and analysis takes place on their mail server<br />C. the customer’s systems are already handling suspicious emails<br />D. the customer should set up a rule to forward these mails onto the ServiceNow platform</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 25</h2>
+<p>What parts of the Security Incident Response lifecycle is responsible for limiting the impact of a security incident?<br />A. Post Incident Activity<br />B. Detection & Analysis<br />C. Preparation and Identification<br />D. Containment, Eradication, and Recovery</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 26</h2>
+<p>Select the one capability that restricts connections from one CI to other devices.<br />A. Isolate Host<br />B. Sightings Search<br />C. Block Action<br />D. Get Running Processes<br />E. Get Network Statistics<br />F. Publish Watchlist</p>
+<details>
+<summary>Show Answer</summary>
+<p>A (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 27</h2>
+<p>What factor, if any, limits the ability to close SIR records?<br />A. Opened related INC records<br />B. Best practice dictates that SIR records should be set to 'Resolved' never to 'Closed'<br />C. Nothing, SIR records could be closed at any time<br />D. All post-incident review questioners have to be completed first</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 28</h2>
+<p>When the Security Phishing Email record is created what types of observables are stored in the record? (Choose three.)<br />A. URLs, domains, or IP addresses appearing in the body<br />B. Who reported the phishing attempt<br />C. State of the phishing email<br />D. IP addresses from the header<br />E. Hashes and/or file names found in the EML attachment<br />F. Type of Ingestion Rule used to identify this email as a phishing attempt</p>
+<details>
+<summary>Show Answer</summary>
+<p>ADE (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 29</h2>
+<p>What plugin must be activated to see the New Security Analyst UI?<br />A. Security Analyst UI Plugin<br />B. Security Incident Response UI plugin<br />C. Security Operations UI plugin<br />D. Security Agent UI Plugin</p>
+<details>
+<summary>Show Answer</summary>
+<p>B (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 30</h2>
+<p>The benefits of improved Security Incident Response are expressed __________.<br />A. as desirable outcomes with clear, measurable Key Performance Indicators<br />B. differently depending upon 3 stages: Process Improvement, Process Design, and Post Go-Live<br />C. as a series of states with consistent, clear metrics<br />D. as a value on a scale of 1-10 based on specific outcomes</p>
+<details>
+<summary>Show Answer</summary>
+<p>A (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 31</h2>
+<p>This type of integration workflow helps retrieve a list of active network connections from a host or endpoint, so it can be used to enrich incidents during investigation.<br />A. Security Incident Response – Get Running Services<br />B. Security Incident Response – Get Network Statistics<br />C. Security Operations Integration – Sightings Search<br />D. Security Operations Integration – Block Request</p>
+<details>
+<summary>Show Answer</summary>
+<p>B (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 32</h2>
+<p>Joe is on the SIR Team and needs to be able to configure Territories and Skills.<br />What role does he need?<br />A. Security Basic<br />B. Manager<br />C. Security Analyst<br />D. Security Admin</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 33</h2>
+<p>Why should discussions focus with the end in mind?<br />A. To understand desired outcomes<br />B. To understand current posture<br />C. To understand customer’s process<br />D. To understand required tools</p>
+<details>
+<summary>Show Answer</summary>
+<p>A (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 34</h2>
+<p>Which of the following State Flows are provided for Security Incidents? (Choose three.)<br />A. NIST Open<br />B. SANS Open<br />C. NIST Stateful<br />D. SANS Stateful</p>
+<details>
+<summary>Show Answer</summary>
+<p>ABC (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 35</h2>
+<p>Chief factors when configuring auto-assignment of Security Incidents are __________.<br />A. Agent group membership, Agent location and time zone<br />B. Security incident priority, CI Location and agent time zone<br />C. Agent skills, System Schedules and agent location<br />D. Agent location, Agent skills and agent time zone</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 36</h2>
+<p>Which ServiceNow automation capability extends Flow Designer to integrate business processes with other systems?<br />A. Workflow<br />B. Orchestration<br />C. Subflows<br />D. Integration Hub</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 37</h2>
+<p>In order to see the Actions in Flow Designer for Security Incident, what plugin must be activated?<br />A. Performance Analytics for Security Incident Response<br />B. Security Spoke<br />C. Security Operations Spoke<br />D. Security Incident Spoke</p>
+<details>
+<summary>Show Answer</summary>
+<p>C (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 38</h2>
+<p>How do you select which process definition to use?<br />A. By selecting the desired process within the Process Definition module<br />B. By selecting the desired process within the Process Selection module<br />C. By setting the process definition record to Active<br />D. By setting the Script Include record to Active</p>
+<details>
+<summary>Show Answer</summary>
+<p>B (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 39</h2>
+<p>What role(s) are required to add new items to the Security Incident Catalog?<br />A. requires the sn_si.admin role<br />B. requires the sn_si.catalog role<br />C. requires both sn_si.write and catalog_admin roles<br />D. requires the admin role</p>
+<details>
+<summary>Show Answer</summary>
+<p>A (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 40</h2>
+<p>What is calculated as an arithmetic mean taking into consideration different values in the CI, Security Incident, and User records?<br />A. Priority<br />B. Business Impact<br />C. Severity<br />D. Risk Score</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 41</h2>
+<p>What is the name of the Inbound Action that validates whether an inbound email should be processed as a phishing email for URP v2?<br />A. User Reporting Phishing (for Forwarded emails)<br />B. Scan email for threats<br />C. User Reporting Phishing (for New emails)<br />D. Create Phishing Email</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 42</h2>
+<p>When a record is created in the Security Incident Phishing Email table what is triggered to create a Security Incident?<br />A. Ingestion Rule<br />B. Transform flow<br />C. Transform workflow<br />D. Duplication Rule</p>
+<details>
+<summary>Show Answer</summary>
+<p>B (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 43</h2>
+<p>If a desired pre-built integration cannot be found in the platform, what should be your next step to find a certified integration?<br />A. Build your own through the REST API Explorer<br />B. Ask for assistance in the community page<br />C. Download one from ServiceNow Share<br />D. Look for one in the ServiceNow Store</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 44</h2>
+<p>Incident severity is influenced by the business value of the affected asset.<br />Which of the following are asset types that can be affected by an incident? (Choose two.)<br />A. Business Service<br />B. Configuration Item<br />C. Calculator Group<br />D. Severity Calculator</p>
+<details>
+<summary>Show Answer</summary>
+<p>AB (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 45</h2>
+<p>A pre-planned response process contains which sequence of events?<br />A. Organize, Analyze, Prioritize, Contain<br />B. Organize, Detect, Prioritize, Contain<br />C. Organize, Prepare, Prioritize, Contain<br />D. Organize, Verify, Prioritize, Contain</p>
+<details>
+<summary>Show Answer</summary>
+<p>A (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 46</h2>
+<p>Why is it important that the Platform (System) Administrator and the Security Incident administrator role be separated? (Choose three.)<br />A. Access to security incident data may need to be restricted<br />B. Allow SIR Teams to control assignment of security roles<br />C. Clear separation of duty<br />D. Reduce the number of incidents assigned to the Platform Admin<br />E. Preserve the security image in the company</p>
+<details>
+<summary>Show Answer</summary>
+<p>ABC (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 47</h2>
+<p>Using the KB articles for Playbooks tasks also gives you which of these advantages?<br />A. Automated activities to run scans and enrich Security Incidents with real time data<br />B. Automated activities to resolve security Incidents through patching<br />C. Improved visibility to threats and vulnerabilities<br />D. Enhanced ability to create and present concise, descriptive tasks</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 48</h2>
+<p>The EmailUserReportedPhishing script include processes inbound emails and creates a record in which table?<br />A. ar_sn_si_phishing_email<br />B. sn_si_incident<br />C. sn_si_phishing_email_header<br />D. sn_si_phishing_email</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 49</h2>
+<p>A flow consists of __________. (Choose two.)<br />A. Scripts<br />B. Actions<br />C. Processes<br />D. Actors<br />E. Triggers</p>
+<details>
+<summary>Show Answer</summary>
+<p>BE (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 50</h2>
+<p>Which of the following process definitions are not provided baseline?<br />A. NIST Open<br />B. SAN Stateful<br />C. NIST Stateful<br />D. SANS Open</p>
+<details>
+<summary>Show Answer</summary>
+<p>B (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 51</h2>
+<p>Which of the following tag classifications are provided baseline? (Choose three.)<br />A. Traffic Light Protocol<br />B. Block from Sharing<br />C. IoC Type<br />D. Severity<br />E. Cyber Kill Chain Step<br />F. Escalation Level<br />G. Enrichment whitelist/blacklist</p>
+<details>
+<summary>Show Answer</summary>
+<p>ABG (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 52</h2>
+<p>David is on the Network team and has been assigned a security incident response task.<br />What role does he need to be able to view and work the task?<br />A. Security Analyst<br />B. Security Basic<br />C. External<br />D. Read</p>
+<details>
+<summary>Show Answer</summary>
+<p>A (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 53</h2>
+<p>When a service desk agent uses the Create Security Incident UI action from a regular incident, what occurs?<br />A. The incident is marked resolved with an automatic security resolution code<br />B. A security incident is raised on their behalf but only a notification is displayed<br />C. A security incident is raised on their behalf and displayed to the service desk agent<br />D. The service desk agent is redirected to the Security Incident Catalog to complete the record producer</p>
+<details>
+<summary>Show Answer</summary>
+<p>B (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 54</h2>
+<p>Which of the following fields is used to identify an Event that is to be used for Security purposes?<br />A. IT<br />B. Classification<br />C. Security<br />D. CI</p>
+<details>
+<summary>Show Answer</summary>
+<p>B (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 55</h2>
+<p>What specific role is required in order to use the REST API Explorer?<br />A. admin<br />B. sn_si.admin<br />C. rest_api_explorer<br />D. security_admin</p>
+<details>
+<summary>Show Answer</summary>
+<p>C (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 56</h2>
+<p>Which of the following is an action provided by the Security Incident Response application?<br />A. Create Outage state V1<br />B. Create Record on Security Incident state V1<br />C. Create Response Task set Incident state V1<br />D. Look Up Record on Security Incident state V1</p>
+<details>
+<summary>Show Answer</summary>
+<p>C (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 57</h2>
+<p>Which one of the following reasons best describes why roles for Security Incident Response (SIR) begin with "sn_si"?<br />A. Because SIR is a scoped application, roles and script includes will begin with the sn_si prefix<br />B. Because the Security Incident Response application uses a Secure Identity token<br />C. Because ServiceNow checks the instance for a Secure Identity when logging on to this scoped application<br />D. Because ServiceNow tracks license use against the Security Incident Response Application</p>
+<details>
+<summary>Show Answer</summary>
+<p>A (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 58</h2>
+<p>A Post Incident Review can contain which of the following? (Choose three.)<br />A. Post incident questionnaires<br />B. An audit trail<br />C. Attachments associated with the security incident<br />D. Key incident fields<br />E. Performance Analytics reports</p>
+<details>
+<summary>Show Answer</summary>
+<p>ABE (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 59</h2>
+<p>Security tag used when a piece of information requires support to be effectively acted upon, yet carries risks to privacy, reputation, or operations if shared outside of the organizations involved.<br />A. TLP:GREEN<br />B. TLP:AMBER<br />C. TLP:RED<br />D. TLP:WHITE</p>
+<details>
+<summary>Show Answer</summary>
+<p>B (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 60</h2>
+<p>Which Table would be commonly used for Security Incident Response?<br />A. sn_si_sec_incident<br />B. sn_sir_incident<br />C. incident<br />D. sn_si_incident</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 61</h2>
+<p>ServiceNow follows the basic guidelines of the NIST lifecycle. Based on the best course of action, usually guided by runbooks and established procedures, problems sought to be fixed in which phase?<br />A. Analysis<br />B. Detection<br />C. Eradication<br />D. Review</p>
+<details>
+<summary>Show Answer</summary>
+<p>C (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 62</h2>
+<p>What is the main purpose of the Security Incident Response Team?<br />A. Manage vulnerability response<br />B. Escalate incidents to security incidents<br />C. Handle security incidents<br />D. Patch vulnerabilities</p>
+<details>
+<summary>Show Answer</summary>
+<p>C (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 63</h2>
+<p>What are some of the recommended duties each SIR team should have?<br />A. Coaching<br />B. Monitoring activities<br />C. Testing<br />D. All of the above</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 64</h2>
+<p>Which role is needed to amend Security Incident Response Script Includes?<br />A. script_admin<br />B. activity_admin<br />C. sn_si.admin<br />D. admin</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 65</h2>
+<p>Users can create and update security incidents, requests, and tasks, as well as problems, changes, and outages related to their incidents with which role?<br />A. itil<br />B. sn_si.manager<br />C. sn_si.cisco<br />D. sn_si.basic</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 66</h2>
+<p>The sn_si.external role is given to external users working on security incidents. What activities can external user complete with this role? (Choose two.)<br />A. View related CI record<br />B. View the Security Incident record<br />C. View assigned Tasks<br />D. Work Tasks assigned to them</p>
+<details>
+<summary>Show Answer</summary>
+<p>CD (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 67</h2>
+<p>What are the benefits of having an SIR Team? (Choose three.)<br />A. Reduced cost of recovery<br />B. Increased headcount<br />C. Reduced security incidents<br />D. Quicker incident resolutions<br />E. Dedicated resources</p>
+<details>
+<summary>Show Answer</summary>
+<p>ADE (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 68</h2>
+<p>What measures activity outputs?<br />A. Business metrics<br />B. Leading Indicators<br />C. Lagging indicators<br />D. Business trends</p>
+<details>
+<summary>Show Answer</summary>
+<p>A (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 69</h2>
+<p>Which Security Incident Response product tiers offer baseline orchestration and automation? (Choose two.)<br />A. Standard<br />B. Professional<br />C. Enterprise<br />D. Basic</p>
+<details>
+<summary>Show Answer</summary>
+<p>AB (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 70</h2>
+<p>What are some of the ways SIR teams can increase their productivity? (Choose three.)<br />A. Process automation<br />B. Form personalization<br />C. Training<br />D. Utilizing spreadsheet pivot tables<br />E. Hire additional staff</p>
+<details>
+<summary>Show Answer</summary>
+<p>ABC (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 71</h2>
+<p>What roles are required to modify Security Incident Catalog items?<br />A. sn_si.admin and sn_si.analyst<br />B. (platform) admin and sn_si.analyst<br />C. (platform) admin and sn_si.admin<br />D. sn_si.integration_user and sn_si.admin</p>
+<details>
+<summary>Show Answer</summary>
+<p>C (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 72</h2>
+<p>When designing the Security Incident Catalog what should happen to all catalog items?<br />A. All catalog items should be displayed. These represent incidents common to all businesses.<br />B. All catalog items should be designed specifically to that customer's agreed needs.<br />C. All catalog items should be removed. They're just examples, and must be replaced by different ones specific to that customer.<br />D. All catalog items should be renamed to suit the language for that customer, so users know which to pick.</p>
+<details>
+<summary>Show Answer</summary>
+<p>B (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 73</h2>
+<p>Which of the following are required to allow inbound emails to be parsed into Security Incidents? (Choose three.)<br />A. Set Properties<br />B. Set Parsing Rules<br />C. Set Field Transforms<br />D. Set Assignment Rules<br />E. Set Business Rules</p>
+<details>
+<summary>Show Answer</summary>
+<p>ABC (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 74</h2>
+<p>Select all of the following which are the target personas for MITRE ATT&CK 2.0? (Choose three.)<br />A. Security and Threat Intelligence Administrators<br />B. Security Analysis<br />C. IT Project Users<br />D. SOC Managers and CISO</p>
+<details>
+<summary>Show Answer</summary>
+<p>ABD (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 75</h2>
+<p>Rollup framework capability model configures linked records for what purpose?<br />A. Rollup Data Loss Prevention records to Major Security Incident<br />B. Rollup additional records information to Major Security Incident<br />C. Rollup additional records information to Data Loss Prevention Incidents<br />D. Rollup additional records information to imported Security Incidents</p>
+<details>
+<summary>Show Answer</summary>
+<p>B (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 76</h2>
+<p>Events within the platform that are utilized for the creation of Alerts and/or Security Incidents are held in which table?<br />A. sir_event<br />B. sysevent<br />C. em_event<br />D. sys_event</p>
+<details>
+<summary>Show Answer</summary>
+<p>C (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 77</h2>
+<p>Security Incidents can be created using a manual UI Action on which one of the following record types?<br />A. Event<br />B. Email Notification<br />C. Workflow<br />D. Alert</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 78</h2>
+<p>Select the one capability that retrieves a list of active network connections from a host or endpoint.<br />A. Sightings Search<br />B. Block Action<br />C. Get Running Processes<br />D. Publish Watchlist<br />E. Isolate Host<br />F. Get Network Statistics</p>
+<details>
+<summary>Show Answer</summary>
+<p>F (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 79</h2>
+<p>LDAP, Direct Web Service, and SOAP are types of what?<br />A. Integration methods<br />B. Data mapping<br />C. ServiceNow access protocol<br />D. Reporting methods</p>
+<details>
+<summary>Show Answer</summary>
+<p>A (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 80</h2>
+<p>Events received from external tools should include what information? (Choose three.)<br />A. A list of similar indicators that were discovered in the event details<br />B. Event description, which populates the description of the security incident<br />C. Event classification set to Security to distinguish them from other IT events<br />D. Whitelisted and Blacklisted IP addresses<br />E. Node set to the name, IP address, or sys_id of the CI that becomes the affected resource</p>
+<details>
+<summary>Show Answer</summary>
+<p>BCE (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 81</h2>
+<p>Select all of the following which are key features of Microsoft Defender for Endpoint. (Choose three.)<br />A. Perform host enrichment actions to gather more information about the endpoint, which includes host details, logged-in users, and observable related machines details.<br />B. Find indicators of compromise (IoC) and enrich security incidents with threat intelligence data.<br />C. Perform Enterprise Security Search to sight potential malicious observables across endpoints, and take remediation actions.<br />D. Perform response actions such as Isolate host, Remove isolation, Restrict app execution, Run antivirus scan, Remove app restriction, and Stop and quarantine file.</p>
+<details>
+<summary>Show Answer</summary>
+<p>ABD (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 82</h2>
+<p>The time zone of a CI is determined by:<br />A. The time zone setting on the computer<br />B. The time zone field on the Clock<br />C. The time zone of the asset owner<br />D. The time zone of the location</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 83</h2>
+<p>Security tags can be applied to which of the following record types? (Choose three.)<br />A. Incidents<br />B. Problems<br />C. Indicators and observables<br />D. Response Tasks<br />E. Security Incidents<br />F. Change Orders<br />G. CMDB Ci records</p>
+<details>
+<summary>Show Answer</summary>
+<p>CDE (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 84</h2>
+<p>The creation of custom process definitions would require which of the following platform components? (Choose two.)<br />A. Client-Side Script<br />B. Process Definition record<br />C. Business Rule<br />D. Script Include</p>
+<details>
+<summary>Show Answer</summary>
+<p>BD (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 85</h2>
+<p>Which Security tag is used when information is useful for the awareness of all participating organizations as well as with peers within the broader community or sector?<br />A. TLP:PURPLE<br />B. TLP:AMBER<br />C. TLP:RED<br />D. TLP:GREEN</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 86</h2>
+<p>Which of the following management activities are associated with Major Security Incident Management?<br />A. Link security incidents as child incidents to other child incidents, so that all security incidents can be worked<br />B. Link security incidents as parent incidents to the major security incident (MSI) so that all security incidents can be worked<br />C. Link security incidents as child incidents to the major security incident (MSI) so that all security incidents can be worked<br />D. Link security incidents as minor incidents to the major security incident (MSI) so that all security incidents can be worked</p>
+<details>
+<summary>Show Answer</summary>
+<p>C (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 87</h2>
+<p>Select all of the following which are key features of Major Security Incident Management. (Choose three.)<br />A. Organize response tasks across multiple parent security incidents<br />B. Chat channel manager and activity stream components to manage communications across multiple security, IT, and functional groups via a Microsoft Teams integration<br />C. Organize response tasks across multiple 'child' security incidents<br />D. Dedicated workspace for managing major security incidents specifically designed for the major security incident manager user role</p>
+<details>
+<summary>Show Answer</summary>
+<p>BCD (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 88</h2>
+<p>Select all of the following which are key features of the Malware Information Sharing Platform. (Choose three.)<br />A. Dedicated workspace for managing major security incidents specifically designed for the major security incident manager user role<br />B. Auto-extract MITRE-ATT&CKTM information from MISP attributes and associate the information to SIR security incidents.<br />C. Add security incident associated observables as attributes to a MISP event.<br />D. Update a MISP event from SIR which includes adding or updating tags, galaxies, or attributes.</p>
+<details>
+<summary>Show Answer</summary>
+<p>BCD</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 89</h2>
+<p>Which role must a user have to customize major security incident reports based on the incremental progress since last summary update?<br />A. sn_msi.workspace_admin<br />B. sn_msi.workspace_manager<br />C. sn_msi.workspace_user<br />D. sn_msim.workspace_manager</p>
+<details>
+<summary>Show Answer</summary>
+<p>B (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 90</h2>
+<p>Which statement about Security Incident Calculators is correct?<br />A. All Calculator Groups run in order but only the calculator with the highest order in that group runs<br />B. All Calculator Groups run in order but only the first matching calculator from each group will apply<br />C. All Calculator Groups run in order but only the first matching group will apply<br />D. All Calculator Groups run in order and all calculators in the first matching group apply</p>
+<details>
+<summary>Show Answer</summary>
+<p>B (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 91</h2>
+<p>When a Post-Incident Review report is created, it can be found…<br />A. as a published article in a knowledge base<br />B. as an unpublished article in a knowledge base<br />C. as an attachment to the original security incident<br />D. as an article pending approval in a knowledge base</p>
+<details>
+<summary>Show Answer</summary>
+<p>C (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 92</h2>
+<p>What is the main goal of the Security Incident Response process?<br />A. Automate set processes<br />B. Reduce time to contain<br />C. Save the company money<br />D. Minimize impact</p>
+<details>
+<summary>Show Answer</summary>
+<p>B (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 93</h2>
+<p>What should you consider before helping customers automate different processes?<br />A. Customer's willingness to change<br />B. Understand expected benefits<br />C. Understand internal processes<br />D. Understand baseline workflow</p>
+<details>
+<summary>Show Answer</summary>
+<p>A (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 94</h2>
+<p>Security Incidents can be created using which platform functionality?<br />A. Inbound Email Actions<br />B. Email matching rules<br />C. Email rules<br />D. Notifications</p>
+<details>
+<summary>Show Answer</summary>
+<p>A (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 95</h2>
+<p>Which platform functionality uses Conditions and Scripts to take action on a target table when receiving emails?<br />A. Email Matching Rules<br />B. Inbound Email Actions<br />C. User Reported Phishing Script Include<br />D. Email Scheduler</p>
+<details>
+<summary>Show Answer</summary>
+<p>B (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 96</h2>
+<p>Actions packaged in Scoped applications are called:<br />A. Action Groups<br />B. Categories<br />C. Spokes<br />D. Subflows</p>
+<details>
+<summary>Show Answer</summary>
+<p>C (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 97</h2>
+<p>When testing a flow, the action outcomes can be found where?<br />A. Configuration Details<br />B. System Log<br />C. Execution Details<br />D. Content Record</p>
+<details>
+<summary>Show Answer</summary>
+<p>C (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 98</h2>
+<p>Flow Logic in the baseline includes: (Choose two.)<br />A. For Each Loops<br />B. Interrupts<br />C. If Then conditions<br />D. Function Calls<br />E. Wait until</p>
+<details>
+<summary>Show Answer</summary>
+<p>AC (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 99</h2>
+<p>What contains a set of reusable operations that are designed to be used in multiple playbooks?<br />A. Flows<br />B. Actions<br />C. Trigger<br />D. Subflows</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 100</h2>
+<p>What automates processes and supports triggers with a sequence of reusable actions?<br />A. Subflows<br />B. Actions<br />C. Flows<br />D. Activities</p>
+<details>
+<summary>Show Answer</summary>
+<p>C (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 101</h2>
+<p>Once a Phishing Email record is created, which Flow creates a new Security Incident record?<br />A. Security Incident - Phishing Manual<br />B. Security Incident - Automated Phishing Playbook<br />C. Child Incident Automated Flow<br />D. Transform Phishing Email to Security Incident</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 102</h2>
+<p>When an inbound email is processed and identified as a phishing email what table is it stored in for URP v2?<br />A. Security Incident Alert<br />B. Security Incident Phishing Email<br />C. Security Incident<br />D. Incident</p>
+<details>
+<summary>Show Answer</summary>
+<p>B (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 103</h2>
+<p>In order to use User Reported Phishing v2, what must occur in Flow Designer?<br />A. Transform Flow must be published<br />B. Transform Flow must be activated<br />C. Transform Action must be activated<br />D. Phishing Email Aggregation Subflow must be activated<br />E. Transform Flow must be copied and activated</p>
+<details>
+<summary>Show Answer</summary>
+<p>E (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 104</h2>
+<p>When setting up a Playbook what field in the Flow Action for Creating a Response Task must contain the same value as the Runbook name?<br />A. Short Description<br />B. Action<br />C. Runbook<br />D. Knowledge article</p>
+<details>
+<summary>Show Answer</summary>
+<p>A (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 105</h2>
+<p>Runbook records utilize a link to what type record for content?<br />A. Knowledge article<br />B. Response Tasks<br />C. Managed Document<br />D. Instruction Details</p>
+<details>
+<summary>Show Answer</summary>
+<p>A (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 106</h2>
+<p>In a Flow, if the Create Response Task set Incident state V1 action is selected, what field contains the yes_no value that drives a question being asked in the playbook?<br />A. Question Type<br />B. Outcome Type<br />C. SI State<br />D. Answer Type</p>
+<details>
+<summary>Show Answer</summary>
+<p>B (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 107</h2>
+<p>Runbooks are used to create a relationship between what components? (Choose two.)<br />A. Events<br />B. Security Incident Response Task<br />C. Playbook Task<br />D. Alerts<br />E. Workflow Trigger<br />F. Knowledge article</p>
+<details>
+<summary>Show Answer</summary>
+<p>BF (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 108</h2>
+<p>What is included in the real-time data model in the right pane of the Flow Designer UI that may be dragged and dropped into fields in the main flow workspace?<br />A. Record Objects<br />B. Table References<br />C. Data Pills<br />D. Code Snippets</p>
+<details>
+<summary>Show Answer</summary>
+<p>C (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 109</h2>
+<p>What kind of rules can be used to configure how email phishing incidents are processed? (Choose two.)<br />A. Risk Rules<br />B. Inbound Property Rules<br />C. CI Lookup Rules<br />D. Ingestion Rules<br />E. Condition Rules<br />F. Duplication Rules</p>
+<details>
+<summary>Show Answer</summary>
+<p>DF (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 110</h2>
+<p>Which role must a user have to customize major security incident reports based on the incremental progress since last summary update?<br />A. sn_msi.workspace_user<br />B. sn_msi.workspace_responder<br />C. sn_msim.workspace_responder<br />D. sn_msi.workspace_manager</p>
+<details>
+<summary>Show Answer</summary>
+<p>D (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 111</h2>
+<p>Risk Score weighting uses which of the following components? (Choose two.)<br />A. Business impact of a CI or Security Incident<br />B. Severity and Priority of a Security incident<br />C. Cost and Risk of an affected service<br />D. SLA and Schedule of an impacted service<br />E. Impact and Urgency of a Security incident</p>
+<details>
+<summary>Show Answer</summary>
+<p>AB (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 112</h2>
+<p>Who is responsible for identifying security incidents?<br />A. Everyone<br />B. Managers<br />C. IT personnel<br />D. Security analysts</p>
+<details>
+<summary>Show Answer</summary>
+<p>A (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 113</h2>
+<p>Select all of the following which are key features of the Malware Information Sharing Platform (Choose three.)<br />A. Dedicated MISP workspace for managing major security incidents<br />B. Auto-extract MITRE-ATT&CK™ information from MISP attributes and associate them to SIR security incidents<br />C. Attribute enrichment including adding or updating tags, galaxies, or attributes<br />D. Send malware to MISP for detonation<br />E. Add security incident associated observables as attributes to a MISP event</p>
+<details>
+<summary>Show Answer</summary>
+<p>BCE (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 114</h2>
+<p>Select all of the following which are the target personas for MITRE ATT&CK 2.0? (Choose three.)<br />A. SOC Managers and CISO<br />B. Security and Threat Intelligence Administrators<br />C. Security Analysts<br />D. Compliance Managers<br />E. Penetration Testers</p>
+<details>
+<summary>Show Answer</summary>
+<p>ABC (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 115</h2>
+<p>How does a user modify Risk Scores to suit their organizational needs?<br />A. alter values in the Risk Score Configuration module<br />B. amend constants in the RiskScoreUtil script include<br />C. change the business impact for affected Business Services and Configuration Items<br />D. recode logic in the Risk Score Calculator</p>
+<details>
+<summary>Show Answer</summary>
+<p>A (Community voted answer)</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 116</h2>
+<p>What are some of the ways SIR teams can increase their productivity? (Choose three.)<br />A. Red/Blue automation<br />B. Export to spreadsheet pivot tables<br />C. Process automation<br />D. Training<br />E. Form personalization</p>
+<details>
+<summary>Show Answer</summary>
+<p>ACD</p>
+</details>
+</div>
+<div class="question-card">
+<h2>Question 117</h2>
+<p>What is one of the Security Incident Response Team’s activities?<br />A. Patch vulnerabilities<br />B. Escalate incidents to security incidents<br />C. Monitor security alerts<br />D. Penetration testing</p>
+<details>
+<summary>Show Answer</summary>
+<p>C (Community voted answer)</p>
+</details>
+</div>
+    </main>
+    <footer class="site-footer">
+        SN Vault &mdash; ServiceNow Exam Questions &amp; Answers
+    </footer>
+</body>
+</html>

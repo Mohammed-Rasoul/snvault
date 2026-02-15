@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    background-color: #DDCFFF;
+    color: #1a1a1a;
+}
+
+a {
+    color: #040DE1;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Layout */
+
+.site-header {
+    background-color: #040DE1;
+    color: #fff;
+    padding: 1.5rem 2rem;
+}
+
+.site-header a {
+    color: #fff;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.site-title a:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+}
+
+nav a {
+    font-size: 0.75rem;
+    opacity: 0.85;
+}
+
+nav a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+nav a.active {
+    opacity: 1;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Homepage */
+
+.welcome {
+    background-color: #fff;
+    border: 2px solid #040DE1;
+    border-radius: 4px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 0 rgba(4, 13, 225, 0.15);
+}
+
+.welcome h1 {
+    font-size: 1.25rem;
+    color: #040DE1;
+    margin-bottom: 1rem;
+}
+
+.welcome p {
+    margin-bottom: 0.75rem;
+}
+
+.exam-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.exam-card {
+    background-color: #fff;
+    border: 2px solid #040DE1;
+    border-radius: 4px;
+    padding: 1.25rem;
+    box-shadow: 2px 2px 0 rgba(4, 13, 225, 0.15);
+    transition: transform 0.1s ease;
+}
+
+.exam-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 4px 0 rgba(4, 13, 225, 0.2);
+}
+
+.exam-card a {
+    display: block;
+}
+
+.exam-card .exam-name {
+    font-weight: 500;
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+.exam-card .exam-count {
+    font-size: 0.75rem;
+    color: #666;
+}
+
+/* Question cards */
+
+.question-card {
+    background-color: #fff;
+    border: 2px solid #040DE1;
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 2px 2px 0 rgba(4, 13, 225, 0.15);
+}
+
+.question-card h2 {
+    font-size: 1rem;
+    color: #040DE1;
+    margin-bottom: 0.75rem;
+}
+
+.question-card p {
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+}
+
+.question-card details {
+    margin-top: 0.5rem;
+}
+
+.question-card summary {
+    cursor: pointer;
+    color: #040DE1;
+    font-weight: 500;
+    padding: 0.4rem 0;
+    user-select: none;
+}
+
+.question-card summary:hover {
+    text-decoration: underline;
+}
+
+.question-card details[open] summary {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+
+.site-footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.75rem;
+    color: #666;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+    .site-header {
+        padding: 1rem;
+    }
+
+    main {
+        padding: 0 1rem;
+        margin: 1rem auto;
+    }
+
+    .welcome {
+        padding: 1.25rem;
+    }
+
+    .question-card {
+        padding: 1rem;
+    }
+
+    .exam-grid {
+        grid-template-columns: 1fr;
+    }
+}
