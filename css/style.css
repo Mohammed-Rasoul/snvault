@@ -169,24 +169,57 @@ main {
     line-height: 1.7;
 }
 
-.question-card details {
-    margin-top: 0.5rem;
+/* Browse page answer options */
+
+.answer-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-.question-card summary {
-    cursor: pointer;
-    color: #5B2EAE;
+.answer-option {
+    font-size: 0.875rem;
+    padding: 0.6rem 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    line-height: 1.5;
+    transition: all 0.15s ease;
+}
+
+.answer-option .option-key {
     font-weight: 500;
-    padding: 0.4rem 0;
-    user-select: none;
+    margin-right: 0.5rem;
 }
 
-.question-card summary:hover {
-    text-decoration: underline;
+.answer-option.correct {
+    border-color: #22863a;
+    background: #dcffe4;
 }
 
-.question-card details[open] summary {
-    margin-bottom: 0.5rem;
+.reveal-btn {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.5rem 1.25rem;
+    border: 2px solid #5B2EAE;
+    border-radius: 4px;
+    background: #5B2EAE;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.reveal-btn:hover {
+    opacity: 0.9;
+}
+
+.reveal-btn:disabled {
+    opacity: 0.7;
+    cursor: default;
+    background: #fff;
+    color: #5B2EAE;
 }
 
 /* Footer */
