@@ -24,7 +24,8 @@
     </header>
     <main>
         <div class="quiz-banner"><a href="../quiz/cis-sm.html">Test yourself on Service Mapping &rarr;</a></div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="ai-notice">Answers verified with AI using ServiceNow documentation. Exercise your own judgement.</div>
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] Service Mapping &gt; Tag-Based Services &gt; Tag Value Location: Tag values for tag-based services must be defined in Tag categories (A). Per p1664/p1860: &#x27;create tag categories that contain tags with similar use&#x27; — Environment and Application are examples of tag categories containing values like Production and HR. Tag categories organize tag values used for mapping. Tag catalogs (B), service families (C), and tag libraries (D) are not where tag values are defined." data-source-url="">
 <h2>Question 1</h2>
 <p class="question-stem">To begin the configuration of tag-based services, tag values must be defined where?</p>
 <div class="answer-options">
@@ -34,8 +35,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Tag libraries</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,D,E" data-community="true">
+<div class="question-card" data-answer="A,B,D,E" data-community="true" data-explanation="[Platform] Service Mapping &gt; Benefits: Benefits of implementing Service Mapping are: reduced ongoing maintenance via automated map updates (A), faster issue resolution through better root cause analysis (B), reduction in effort to create service maps via automation (D), and reduction in change-related incidents via improved service visibility during change planning (E). Software Asset Management (C) is not affected by Service Mapping. Alert accuracy from monitoring tools (F) depends on the monitoring configuration, not Service Mapping." data-source-url="">
 <h2>Question 2</h2>
 <p class="question-stem">Which of the following are potential benefits when implementing Service Mapping? (Choose four.)</p>
 <div class="answer-options">
@@ -47,8 +50,10 @@
 <div class="answer-option" data-key="F"><span class="option-key">F.</span> More accurate alerts from monitoring tools</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] Service Mapping &gt; Map Visualization &gt; Boundaries: The lower icons where connections from HAProxy stop represent mapping boundaries (D). Per p1730: &#x27;A boundary makes Service Mapping stop discovery from this point and not follow outgoing connections.&#x27; Boundaries are placed to limit the scope of discovery, preventing Service Mapping from following specific outgoing connections. They are not discovery errors (A), application clusters (B), or Generic Application placeholders (C)." data-source-url="">
 <h2>Question 3</h2>
 <p class="question-stem">In the image, which one of the following best describes the lower icons?</p>
 <div class="answer-options">
@@ -58,8 +63,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> The connections from HAProxy are marked as boundaries.</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true">
+<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] Service Mapping &gt; CMDB Reconciliation &gt; Precedence Rules: If a CI is discovered by ServiceNow and then discovered by ServiceWatch, an update will be allowed (C) when ServiceWatch has higher data source precedence (lower priority number) than ServiceNow. Higher-precedence sources can overwrite CI attributes set by lower-precedence sources. ServiceWatch updating ServiceNow data (B) is also allowed if ServiceWatch has higher priority. Option C specifically applies given the stated precedence configuration." data-source-url="">
 <h2>Question 4</h2>
 <p class="question-stem">Assuming Reconciliation Rules (Reconciliation Definitions) were configured exactly the same for both Data Sources, ServiceNow and ServiceWatch, for the Application [cmdb_ci_appl] table and the following Data Source Precedence Rules are configured.<br />Which one of the following is true?</p>
 <div class="answer-options">
@@ -69,8 +76,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> If an Application CI is discovered with a Data Source, ServiceWatch, then if the same Application CI is discovered by the Data Source, Altiris, an update will be allowed.</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C,D" data-community="true">
+<div class="question-card" data-answer="C,D" data-community="true" data-explanation="[Platform] Service Mapping &gt; Agent Workspace &gt; CI Visibility: Service Mapping provides visibility of Incidents (C) and Alerts (D) associated with the CI in the Agent Workspace. Per p1794: &#x27;Display additional information for a CI or application service itself by displaying related records such as alerts, outages, incidents, and problems.&#x27; The primary items surfaced in the Operator/Agent Workspace for Service Mapping are Alerts and Incidents. Releases (A) are not a Service Mapping workspace item." data-source-url="">
 <h2>Question 5</h2>
 <p class="question-stem">Service Mapping provides visibility to the Operator in Agent Workspace without leaving the Workspace UI. This visibility includes what items associated with the CI? (Choose two.)</p>
 <div class="answer-options">
@@ -80,8 +89,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Alerts</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] Service Mapping &gt; Discovery Phases &gt; RAM Discovery: Server RAM is discovered during the Identification and Exploration phase (D). Per p754: Classification determines the CI class; Identification and Exploration gathers detailed hardware attributes including memory, CPU, and disk. Port scan (A) detects open ports only. Classification (B) identifies the OS type. RAM is detailed hardware data requiring the Exploration phase probes." data-source-url="">
 <h2>Question 6</h2>
 <p class="question-stem">In ServiceNow Discovery, which one of the following phases is the server RAM value discovered?</p>
 <div class="answer-options">
@@ -91,8 +102,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Identification and Exploration</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="[Platform] Service Mapping &gt; Concepts &gt; Entry Point Definition: An Entry Point is a method by which a user interacts with a service or a CI interacts with another CI (A). Entry points are the externally-facing connection points that Service Mapping uses as the starting locations for top-down discovery. They represent how external traffic enters a service. A communication type between applications (B) describes a connection type. A template defining a communication type (C) describes a protocol definition." data-source-url="">
 <h2>Question 7</h2>
 <p class="question-stem">Which one of the following best describes the definition of an Entry Point?</p>
 <div class="answer-options">
@@ -102,8 +115,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> A Host::Hosted on relation between CIs</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] Service Mapping &gt; Pattern Execution &gt; Identification Sections: Identification Sections are executed one by one in the order they are listed until the first successful match, which concludes the Identification phase (D). Per p2474: &#x27;The section with the lowest order number is used first.&#x27; Once one identification section succeeds, the phase ends. Connection sections work differently — all run and each contributes connections. Identification is first-match-wins; it is not random (A/B) and doesn&#x27;t continue to the last (C)." data-source-url="">
 <h2>Question 8</h2>
 <p class="question-stem">In Service Mapping, when discovery is started, what is the execution strategy used to run Identification Sections?</p>
 <div class="answer-options">
@@ -113,8 +128,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Identification Sections are executed one by one in the order they are listed until the first successful match which concludes the Identification phase.</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true">
+<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] Service Mapping &gt; Commands &gt; Port Process ID: A non-root user uses &#x27;sudo netstat -anp | grep :8080&#x27; (B) to return the process ID listening on port 8080. Without sudo, the -p flag on netstat won&#x27;t show PIDs for processes owned by other users. Using sudo elevates privileges to see all PIDs. Option C (without sudo) would not show PIDs for other users&#x27; processes. Option A (-p TCP flag) is incorrect netstat syntax for process IDs." data-source-url="">
 <h2>Question 9</h2>
 <p class="question-stem">Which one of the following Linux commands can be used by a non root user to return the process ID listening on port 8080?</p>
 <div class="answer-options">
@@ -124,8 +141,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> netstat -an -pid * | grep :8080</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] Service Mapping &gt; Command Execution &gt; Process: Service Mapping provides a task with the command in the ECC queue, the MID Server collects and executes the command on the target device, and returns the result as an XML payload to the ServiceNow instance (A). Per p1212: &#x27;SSHCommand probe executes a shell command on the target host, and returns the resulting output to the sensor.&#x27; The MID Server is the execution intermediary — it doesn&#x27;t decide the command (B), and the target never communicates directly to the instance (D)." data-source-url="">
 <h2>Question 10</h2>
 <p class="question-stem">Which one of the following best describes the process that Service Mapping uses to run a command on a target device?</p>
 <div class="answer-options">
@@ -135,8 +154,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Service Mapping sends a request to the target device to execute a command, and the target device returns the result to the ServiceNow instance.</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="[Platform] Event Management &gt; Rules &gt; Automatic Task Creation: Alert Management rules (A) allow for automatic task creation in Event Management. Alert Management rules configure automated responses to alert conditions including creating incidents, tasks, and other records. Event rules (B) process incoming raw events. Alert Correlation rules (D) group related alerts. Task rules are not a standard Event Management rule type in this context." data-source-url="">
 <h2>Question 11</h2>
 <p class="question-stem">In Event Management, which of the following rules allows for automatic task creation?</p>
 <div class="answer-options">
@@ -146,8 +167,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Alert Correlation</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="[Platform] Service Mapping &gt; Discovery &gt; /16 Network Size: A /16 network (180.181.0.0/16) includes approximately 65 thousand IPs (C). Per p977: &#x27;limit Discovery schedules to a maximum range of /16 (approximately 65,536 IPs).&#x27; A /16 network = 2^16 = 65,536 host addresses. ~65 thousand is the correct approximation. ~5 million (A) would be a /8 or larger. ~1 million (B) would require a /12 range." data-source-url="">
 <h2>Question 12</h2>
 <p class="question-stem">During ServiceNow Discovery, which one of the following is the approximate number of host IPs that are port scanned with a Discovery Schedule configured with an IP network as shown?<br />180.181.0.0/16</p>
 <div class="answer-options">
@@ -157,8 +180,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> ~500,000 thousand</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true">
+<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] Service Mapping &gt; Windows Discovery &gt; Domain Controllers: With only a domain user with local admin rights, Windows Domain Controller Servers (C) will not be discovered. Per p1101: Domain Controllers require elevated domain-level permissions beyond local admin. The Windows security model restricts full WMI discovery of Domain Controllers to Domain Admin accounts. Windows AD servers (A), DHCP servers (B), and DNS servers (D) can typically be discovered with domain user + local admin credentials." data-source-url="">
 <h2>Question 13</h2>
 <p class="question-stem">ServiceNow only needs Domain user with local admin rights to discover Windows hosts as part of a successful implementation of ServiceNow Discovery, however which of the following targets will not be discovered?</p>
 <div class="answer-options">
@@ -168,8 +193,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Windows DNS Servers</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="E" data-community="true">
+<div class="question-card" data-answer="E" data-community="true" data-explanation="[Platform] Service Mapping &gt; Patterns &gt; Variable Scope: Variables defined in an Identification Section can also be used in Connection Sections for the same pattern (E). Variables are scoped to the pattern that defines them, allowing the connection sections in the same pattern to reference the data collected in identification. Variables cannot be used across different patterns (A, D wrong). Variable scope doesn&#x27;t extend to parent CI types (B). Other identification sections cannot access each other&#x27;s variables (C wrong)." data-source-url="">
 <h2>Question 14</h2>
 <p class="question-stem">Which one of the following is true for variables defined in an Identification Section?</p>
 <div class="answer-options">
@@ -180,8 +207,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> Identification Section variables can also be used in Connection Sections for the same pattern.</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] Service Mapping &gt; Command Line Console &gt; SaCmdManager URL: The URL https://&lt;Instance&gt;/SaCmdManager.do?ip=198.51.100.66 starts the Command Line Console and allows sending commands to the host at 198.51.100.66 (A). The SaCmdManager page is the Service Mapping command interface for testing discovery commands. The `ip=` parameter specifies the target host, not a MID Server (B). This is a valid and standard SM URL (C wrong). It targets the remote host, not the ServiceNow instance (D wrong)." data-source-url="">
 <h2>Question 15</h2>
 <p class="question-stem">Which one of the following statements best explains the following URL: https://<Instance_URL>/SaCmdManager.do?ip=198.51.100.66?</p>
 <div class="answer-options">
@@ -191,8 +220,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> The user is starting the Command Line Console and is able to send commands against the ServiceNow instance at 198.51.100.66.</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="[Platform] Service Mapping &gt; CMDB Integration &gt; Rediscovery: If a target host is already discovered and in the CMDB, it will be immediately rediscovered but only the changes will be updated in the CMDB (B). Per p1460: &#x27;Service Mapping checks whether this host exists in the CMDB&#x27; and applies reconciliation-based updates. Service Mapping never deletes existing CIs (A). The host is not skipped (D). The full CMDB record is not entirely overwritten — reconciliation applies only changed attributes (C overstates this)." data-source-url="">
 <h2>Question 16</h2>
 <p class="question-stem">In Service Mapping, which one of the following is true if a target host is already discovered and in the CMDB?</p>
 <div class="answer-options">
@@ -202,8 +233,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> The host will not be rediscovered during Service Mapping discovery.</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] Service Mapping &gt; Pattern Execution &gt; Connection Sections: Connection Sections are executed one by one and connections result from each successful section (A). Unlike Identification Sections (first-match-wins), all connection sections run sequentially and each successful one contributes discovered connections to the service map. Random execution (B) is incorrect. Connection sections don&#x27;t stop at the first success (C) — all execute. Connections accumulate from all successes, not just the last (D wrong)." data-source-url="">
 <h2>Question 17</h2>
 <p class="question-stem">In Service Mapping, when discovery is started, what is the execution strategy used to run Connection Sections?</p>
 <div class="answer-options">
@@ -213,8 +246,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Connection Sections are executed one by one in the order they are listed with a connection created from the last successful section.</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true">
+<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] Service Mapping &gt; IP Addresses &gt; Public vs Private: 225.16.0.5 (B) is a public IP address. The private IP ranges are: 10.0.0.0/8, 172.16.0.0/12 (172.16-31.x.x), and 192.168.0.0/16. Option D (10.0.6.8) is 10.x private. Option A (172.20.5.9) falls in 172.16-31.x private range. Option C (192.168.100.100) is 192.168.x private. 225.16.0.5 is in the 224-255 range (Class D/E multicast/reserved) which is publicly routable, not in private RFC 1918 space." data-source-url="">
 <h2>Question 18</h2>
 <p class="question-stem">Which one of the following is a public IP Address?</p>
 <div class="answer-options">
@@ -224,8 +259,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> 10.0.6.8</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true">
+<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] Service Mapping &gt; CMDB &gt; Table Hierarchy: A report on the Server [cmdb_ci_server] table includes CIs defined directly in Server and all child classes (B). Per p2463: CMDB uses table hierarchy where child classes inherit from parents. ServiceNow reports on a parent table automatically include records from all extending child tables (Windows Server, Linux Server, VMware VM, etc.). Reports include downward inheritance. Parent classes (A) are not included in child reports." data-source-url="">
 <h2>Question 19</h2>
 <p class="question-stem">Given the CMDB class structure shown, which types of Configuration Items (CIs) will be included in a report run against the Server [cmdb_ci_server] table?</p>
 <div class="answer-options">
@@ -234,8 +271,10 @@
 <div class="answer-option" data-key="C"><span class="option-key">C.</span> CIs defined directly in the Server [cmdb_ci_server] table</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] Service Mapping &gt; Patterns &gt; Regular Expressions: The regex ([\.\w\d\-\.]+) matches a single character in the list between one and unlimited times (A). The `+` quantifier means one or more occurrences (one to unlimited). The character class [\w\d\-\.] matches word characters, digits, hyphens, and dots. The `+` quantifier is not limited to one time (B), three times (C), or ten times (D)." data-source-url="">
 <h2>Question 20</h2>
 <p class="question-stem">Which one of the following best represents the output from the following Regular Expression?<br />([\w\d\-\.]+)</p>
 <div class="answer-options">
@@ -245,8 +284,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Match a single character in the list between one and ten times.</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true">
+<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] Service Mapping &gt; CI Identifiers &gt; Version in Identifier: With Class, Configuration file, and Version all as CI identifier criteria, upgrading the version creates a new Apache Web Server CI in the CMDB (B). The version change means the identifier no longer matches the existing CI — the system cannot reconcile the records and instead creates a new CI. Per p2462: identifiers differentiate new from existing CIs; a version change in the identifier = a new, distinct CI identity." data-source-url="">
 <h2>Question 21</h2>
 <p class="question-stem">Assuming the Apache Web Server Identification Rule (CI Identifier) is configured as shown with the following Criterion attributes:<br /><br />Class -<br /><br />Configuration file -<br /><br />Version -<br /><br />Yesterday, an Apache Web Server CI was discovered as part of Service Mapping. Today, the application owner upgraded the Apache Web Server to a different version and reran discovery of the service. What will happen in the CMDB?</p>
 <div class="answer-options">
@@ -256,8 +297,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> The Apache Web Server CI will be reclassified as a Web Server CI.</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] Service Mapping &gt; Pattern Designer &gt; Delimited Parsing: To parse CO from &#x27;Location,Denver,CO&#x27;, use delimiter comma (,) and position 3 (A). Splitting &#x27;Location,Denver,CO&#x27; by comma yields: position 1=Location, position 2=Denver, position 3=CO. Position 3 returns CO. Delimiter comma with position 2 (D) returns Denver. Using &#x27;Location,&#x27; as delimiter (B) or &#x27;Denver&#x27; (C) as delimiter would not reliably return CO at position 2." data-source-url="">
 <h2>Question 22</h2>
 <p class="question-stem">Using Pattern Designer, which one of the following Delimited Text Parsing Strategies could be used to parse CO from the string?<br />Location,Denver,CO</p>
 <div class="answer-options">
@@ -267,8 +310,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Delimiter of a comma and position 2</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] Event Management &gt; Alerts &gt; Message Key Auto-Generation: If a Message key is not passed from an Event, it is auto-generated from Source, Node, Type, and Resource (D). Per p2900/p3951: &#x27;the message_key field is a unique identifier... used for de-duplication.&#x27; It combines Source + Node + Type + Resource (plus Metric Name) to create the unique alert identifier. Task (A/C) and Number (B) are not used in message_key auto-generation." data-source-url="">
 <h2>Question 23</h2>
 <p class="question-stem">In Event Management, if a Message key is not passed from an Event, which of the following Alert fields combine to populate the Message key on an Alert?</p>
 <div class="answer-options">
@@ -278,8 +323,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Source, Node, Type, Resource</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] Service Mapping &gt; Load Balancer Discovery &gt; Required Address: A Management IP address (A) is required for Service Mapping to discover a load balancer not previously in the CMDB. The management IP is the access point Service Mapping uses to connect to and run discovery commands against the device. MAC address (B) is a hardware identifier, not a discovery access method. Public IP (C) is for external connectivity, not management access. MIB address (D) is an SNMP object path, not a host address." data-source-url="">
 <h2>Question 24</h2>
 <p class="question-stem">Which address is required for Service Mapping to discover a Load Balancer that does not previously exist in the CMDB?</p>
 <div class="answer-options">
@@ -289,8 +336,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> MIB address</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true">
+<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] Service Mapping &gt; Pattern Designer &gt; Regex Parsing: &#x27;Version\s+(\d+\.\d+\.\d+)&#x27; (B) correctly parses 5.2.0 from &#x27;Version 5.2.0&#x27;. &#x27;\s+&#x27; matches the space between &#x27;Version&#x27; and the version number; &#x27;(\d+\.\d+\.\d+)&#x27; captures the X.Y.Z format with properly escaped literal dots. Option A&#x27;s &#x27;(\.*)&#x27;  matches arbitrary characters. Option C captures only the first digit. Option D lacks &#x27;\s+&#x27; for the space and doesn&#x27;t escape dots in the non-captured portion." data-source-url="">
 <h2>Question 25</h2>
 <p class="question-stem">Which one of the following Regular Expressions could be used to parse the value 5.2.0 from the string?<br />Version 5.2.0</p>
 <div class="answer-options">
@@ -300,8 +349,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Version (\d+).(\d+).(\d+)</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,C,E" data-community="true">
+<div class="question-card" data-answer="A,C,E" data-community="true" data-explanation="[Platform] Event Management &gt; Value Proposition: Reasons to purchase Event Management are: determining impacted services from events/alerts (A), automatically generating incidents for alert classes (C), and consolidating events from disparate monitoring tools (E). Per p4122: EM gathers alerts from third-party monitoring tools and correlates them with services. Software deployment/patching (B) is not an EM capability. Monitoring capabilities (D) are provided by third-party tools, not EM." data-source-url="">
 <h2>Question 26</h2>
 <p class="question-stem">Which of the following reasons would a prospect consider purchasing ServiceNow Event Management? (Choose three.)</p>
 <div class="answer-options">
@@ -312,8 +363,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> Consolidate events from disparate monitoring tools into a consolidated central system.</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] Service Mapping &gt; Troubleshooting &gt; Access Denied Error: &#x27;Failed to access target system. Access is denied&#x27; indicates a Windows authentication error (D). This error message originates from Windows when WMI authentication fails — the service account lacks the required permissions on the target Windows host. Per p1317: this message relates to WMI connection failures. SSO (A) and CLI permissions (B) produce different error messages. Applicative permissions (C) relate to application-specific credentials." data-source-url="">
 <h2>Question 27</h2>
 <p class="question-stem">When running Service Mapping discovery, which of the following represents the root cause of the error?<br />“Failed to access target system. Access is denied”</p>
 <div class="answer-options">
@@ -323,8 +376,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Windows authentication error</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true">
+<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] Service Mapping &gt; ECC Queue &gt; MID Server Response: The ECC Queue record containing the XML payload returned from the MID Server is Input, Ready (B). Per p1037/p1192: Input records flow from the MID Server to the ServiceNow instance. &#x27;Ready&#x27; state means the payload is queued and ready to be processed by the instance sensors. Output records (C/D) contain commands sent from the instance to the MID Server. Input, Pending (A) means not yet ready for processing." data-source-url="">
 <h2>Question 28</h2>
 <p class="question-stem">Which one of the following ECC Queue records contains the XML payload returned from the MID Server that will be processed by the ServiceNow instance?</p>
 <div class="answer-options">
@@ -334,8 +389,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Output, Ready</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] Service Mapping &gt; CI Identifiers &gt; Missing Identifier Attribute: If the pattern does NOT collect Version data but the Identifier Entry requires Version, an identification error will occur (A). When required identifier attributes are missing from pattern output, the system cannot uniquely identify the CI and fails. The CI won&#x27;t be reclassified (B) or create a duplicate (D). Successful discovery requires all identifier attributes to be collected." data-source-url="">
 <h2>Question 29</h2>
 <p class="question-stem">Assume an Apache Web Server Identifier Entry is configured as shown:<br /><br />If the Apache Web Server Discovery Pattern has a step configured to collect the Configuration file data but NOT configured with a step to collect the Version information, what will happen when executing a Service Mapping discovery?</p>
 <div class="answer-options">
@@ -345,8 +402,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> A duplication error will occur.</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="[Platform] Service Mapping &gt; MID Server &gt; Config.xml Read Timing: The config.xml file is read and used at MID Server application start (D). The MID Server loads its configuration parameters (instance URL, credentials, proxy settings) from config.xml when the service starts. Changes to config.xml require a MID Server restart to take effect. The file is not re-read when saved (A) unless the MID Server is restarted. It is read on every start, not only at creation (B)." data-source-url="">
 <h2>Question 30</h2>
 <p class="question-stem">Which one of the following describes when the MID Server config.xml file is read and used?</p>
 <div class="answer-options">
@@ -356,8 +415,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> MID Server application start</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true">
+<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] Service Mapping &gt; Discovery &gt; MID Server Cluster: With Shazzam cluster support disabled and 3 MID Servers in a load balance cluster, only one MID Server is used during the Port Scan phase and all three are used during the Classification phase (C). Shazzam cluster support enables load-balanced port scanning across multiple MID Servers. When disabled, only one MID Server handles port scanning. Subsequent phases (Classification) can distribute work across all clustered MID Servers." data-source-url="">
 <h2>Question 31</h2>
 <p class="question-stem">Which one of the following best describes what will happen if Discovery is configured with 3 MID Servers in a Load Balance Cluster with Shazzam cluster support disabled?</p>
 <div class="answer-options">
@@ -367,8 +428,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> All three MID Server will be used during the Identification phase and only one will be used during the exploration phase.</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,C" data-community="true">
+<div class="question-card" data-answer="A,B,C" data-community="true" data-explanation="[Platform] Service Mapping &gt; Discovery Methods &gt; Initiation: Methods to initiate discovery are: map multiple services by discovering load balancers (A), map multiple services from a CSV file (B), and map a single service by configuring an entry point (C). Per p1656-1657: these are the documented Service Mapping discovery approaches. MID Server discovery (D) discovers infrastructure, not services. Asset-based mapping (E) is not a standard Service Mapping discovery initiation method." data-source-url="">
 <h2>Question 32</h2>
 <p class="question-stem">Which of the following are methods used to initiate discovery on a service? (Choose three.)</p>
 <div class="answer-options">
@@ -379,8 +442,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> Map services based on Assets stored in the CMDB.</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true">
+<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] Service Mapping &gt; Engagement Risks &gt; Credentials: The most common risk in a Service Mapping engagement is that the customer security team is not made aware early enough of the credential requirements (C). Security teams control access credentials and firewall rules. Late involvement causes project delays when discovery requires privileged service accounts across multiple systems. External firewall issues (A), resource capacity (B), and lack of Active Directory (D) are less common risks." data-source-url="">
 <h2>Question 33</h2>
 <p class="question-stem">Which one of the following is the most common risk that can negatively impact a Service Mapping engagement?</p>
 <div class="answer-options">
@@ -390,8 +455,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Customer is not using Active Directory for credential authentication.</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,C,E" data-community="true">
+<div class="question-card" data-answer="B,C,E" data-community="true" data-explanation="[Platform] Service Mapping &gt; Incident Management &gt; Service Map Benefits: Benefits during incident resolution are: narrows down possible affected components (B), helps reduce unplanned changes due to improved service visibility (C), and quickly identifies recent changes on impacted components (E). Service maps show component relationships (B) and recent changes (E) to speed troubleshooting. Recent incidents (A) are a discovery benefit, not unique to the service map. Code errors (D) require application debugging tools." data-source-url="">
 <h2>Question 34</h2>
 <p class="question-stem">Which of the following are benefits a service map can bring during an Incident resolution? (Choose three.)</p>
 <div class="answer-options">
@@ -402,8 +469,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> Quickly identifies any recent changes performed on components of the impacted service.</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="[Platform] Service Mapping &gt; Home Page &gt; Service Candidates: After discovering load balancers, service candidates appear under the Fix tile (B) on the Service Mapping Home page. The Fix tile contains service candidates that need attention and correction before mapping is complete. Per p1658-1659: newly discovered service candidates require review and fixing before they progress to the Review or Completed stages. Map (A) and Approve/Completed (C/D) represent later workflow stages." data-source-url="">
 <h2>Question 35</h2>
 <p class="question-stem">After discovering load balancers in a customer environment, service candidates may appear on the Service Mapping Home page under which one of the following tiles?</p>
 <div class="answer-options">
@@ -414,8 +483,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> Review</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] Service Mapping &gt; Discovery Scope &gt; CI Types: Service Mapping discovers Cloud Services, Applications, and CI Relationships (D). Service Mapping focuses on application services — discovering the applications running in the environment, their cloud service dependencies, and the relationships between CIs that define the service topology. Hardware (A) and Network Gear are primarily discovered by horizontal Discovery. Licenses (C/E) and Certificates (B) are not Service Mapping&#x27;s primary discovery targets." data-source-url="">
 <h2>Question 36</h2>
 <p class="question-stem">Which one of the following best represents the breadth of types of Configuration Items (CIs) discovered by running Service Mapping?</p>
 <div class="answer-options">
@@ -426,8 +497,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> Hardware, Licenses, CI Relationships</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] Service Mapping &gt; Pattern Creation &gt; Generic Application: Using &#x27;Create pattern from generic application&#x27; automatically creates a Discovery Pattern, CI Type/Class, and Process Classifier (A). Per p1169: &#x27;creates a CMDB CI class for the new application... creates a process classifier for the application group... creates a new pattern.&#x27; These three components enable the new application type to be discovered. Identification Rule (B/D) is not automatically generated." data-source-url="">
 <h2>Question 37</h2>
 <p class="question-stem">Which of the following are created automatically when using the map option Create pattern from generic application?</p>
 <div class="answer-options">
@@ -437,8 +510,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Identification Rule, CI Class/Class, Identification Section</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true">
+<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] Service Mapping &gt; Pattern Designer &gt; Delimited Parsing: To parse 2014 from &#x27;2014/02/07-17:49:36&#x27;, use delimiter &#x27;/&#x27; and position 1 (C). Splitting by &#x27;/&#x27; yields: position 1=2014, position 2=02, position 3=07-17:49:36. Position 1 with delimiter &#x27;/&#x27; returns 2014. Position 0 (B) is invalid for this 1-indexed parser. Space as delimiter (A) doesn&#x27;t split the string at the right point. Using &#x27;2014&#x27; as delimiter (D) would return empty or subsequent content." data-source-url="">
 <h2>Question 38</h2>
 <p class="question-stem">When using a Delimited Text Parsing Strategy, what delimiter and position will parse 2014 from the string?<br />2014/02/07-17:49:36</p>
 <div class="answer-options">
@@ -448,8 +523,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Delimiter of 2014 and position 1</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true">
+<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] Service Mapping &gt; Pattern Execution &gt; Full Discovery Flow: After an Entry Point is configured, for each supporting pattern, Identification Sections run until the first successful one, then ALL Extension Sections run (B). Per p2474: identification sections use first-match-wins (stop at first success). Extension sections all execute after identification — each adds attributes without stopping. Identification sections don&#x27;t all run (A/C wrong). Extension sections don&#x27;t stop at first success (D wrong)." data-source-url="">
 <h2>Question 39</h2>
 <p class="question-stem">In Service Mapping, which one of the following best describes the process of discovery after an Entry Point is configured?</p>
 <div class="answer-options">
@@ -459,8 +536,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> For each pattern that supports the Entry Point Type, run Identification Sections until one finishes successfully and then run Extensions Sections until one finishes successfully.</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] Service Mapping &gt; Map Icons &gt; Credential Error: A yellow triangle (A) represents a credential error on the Service map. The yellow triangle is the warning-level icon indicating discovery issues related to authentication/credentials on a specific CI. Per p3202: map icons use colors for severity levels — yellow indicates minor/warning conditions. Red icons (C/D) indicate critical errors. Yellow circle (B) is not the standard credential error indicator." data-source-url="">
 <h2>Question 40</h2>
 <p class="question-stem">In Service Mapping, which icon represents a credential error on the Service map?</p>
 <div class="answer-options">
@@ -470,6 +549,8 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Red triangle</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
     </main>
     <footer class="site-footer">

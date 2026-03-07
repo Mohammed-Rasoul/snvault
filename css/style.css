@@ -222,6 +222,69 @@ main {
     color: #5B2EAE;
 }
 
+/* Explain with AI button */
+
+.explain-btn {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.4rem 1rem;
+    margin-left: 0.5rem;
+    border: 2px solid #5B2EAE;
+    border-radius: 4px;
+    background: #fff;
+    color: #5B2EAE;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.explain-btn:hover:not([disabled]) {
+    background: #f0edff;
+}
+
+.explain-btn:disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+/* AI explanation box */
+
+.ai-explanation {
+    margin-top: 0.75rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+    line-height: 1.7;
+    color: #333;
+    background: #f8f6ff;
+    border-radius: 4px;
+    border-left: 3px solid #5B2EAE;
+}
+
+.ai-explanation a {
+    color: #5B2EAE;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.ai-explanation.typing::after {
+    content: "\2588";
+    animation: blink 0.7s step-end infinite;
+    color: #5B2EAE;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* AI notice on exam pages */
+
+.ai-notice {
+    font-size: 0.7rem;
+    color: #888;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 /* Footer */
 
 .site-footer {

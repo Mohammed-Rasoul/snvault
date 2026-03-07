@@ -234,6 +234,31 @@
     // Toggle buttons
     document.getElementById("submit-btn").style.display = "none";
     document.getElementById("next-btn").style.display = "inline-block";
+
+    // Explain with AI button (only if explanation exists)
+    if (q.explanation) {
+      const card = app.querySelector(".quiz-question");
+      const actions = card.querySelector(".quiz-actions");
+      const explainBtn = el("button", {
+        className: "explain-btn",
+        onClick: () => {
+          explainBtn.disabled = true;
+          const box = card.querySelector(".ai-explanation");
+          let processed = escapeHtmlSafe(q.explanation);
+          if (q.source_url) {
+            processed += '<br><a href="' + q.source_url + '" target="_blank" rel="noopener">ServiceNow Docs Reference</a>';
+          }
+          box.removeAttribute("hidden");
+          box.classList.add("typing");
+          typewrite(box, processed, () => box.classList.remove("typing"));
+        }
+      }, "Explain with AI");
+      actions.appendChild(explainBtn);
+
+      const explainBox = el("div", { className: "ai-explanation" });
+      explainBox.setAttribute("hidden", "");
+      card.appendChild(explainBox);
+    }
   }
 
   function nextQuestion() {
@@ -310,6 +335,39 @@
     results = [];
     submitted = false;
     renderQuestion();
+  }
+
+  function escapeHtmlSafe(str) {
+    const div = document.createElement("div");
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  function typewrite(el, html, onDone) {
+    const segments = [];
+    let i = 0;
+    while (i < html.length) {
+      if (html[i] === "<") {
+        const end = html.indexOf(">", i);
+        if (end !== -1) { segments.push({ type: "tag", value: html.slice(i, end + 1) }); i = end + 1; continue; }
+      }
+      if (html[i] === "&") {
+        const semi = html.indexOf(";", i);
+        if (semi !== -1 && semi - i < 10) { segments.push({ type: "text", value: html.slice(i, semi + 1) }); i = semi + 1; continue; }
+      }
+      segments.push({ type: "text", value: html[i] });
+      i++;
+    }
+    let output = "";
+    let idx = 0;
+    function step() {
+      if (idx >= segments.length) { el.innerHTML = output; if (onDone) onDone(); return; }
+      const seg = segments[idx++];
+      output += seg.value;
+      if (seg.type === "tag") { step(); }
+      else { el.innerHTML = output; setTimeout(step, 12); }
+    }
+    step();
   }
 
   // Init

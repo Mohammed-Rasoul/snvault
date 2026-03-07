@@ -24,7 +24,8 @@
     </header>
     <main>
         <div class="quiz-banner"><a href="../quiz/cis-vr.html">Test yourself on Vulnerability Response &rarr;</a></div>
-<div class="question-card" data-answer="A,C,D" data-community="true">
+<div class="ai-notice">Answers verified with AI using ServiceNow documentation. Exercise your own judgement.</div>
+<div class="question-card" data-answer="A,C,D" data-community="true" data-explanation="[Platform] VR &gt; Filter Conditions &gt; Components: The three components of a Filter Condition are Field (A), Operator (C), and Value (D). This is standard ServiceNow platform knowledge — every filter condition specifies a field to evaluate, an operator (equals, contains, is empty, etc.), and the comparison value. Sum (B) is a mathematical aggregation function, not a filter condition component." data-source-url="">
 <h2>Question 1</h2>
 <p class="question-stem">Select the three components of a Filter Condition: (Choose three.)</p>
 <div class="answer-options">
@@ -34,8 +35,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Value</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="[Platform] VR &gt; Roles &gt; SLA Management: The minimum role required to create and change SLAs for Vulnerability Response groups is sn_vul.admin (D). Per p421: &#x27;Vulnerability managers and senior analysts [sn_vul.vulnerability_admin or sn_vul.admin]: Update properties and vulnerability configurations.&#x27; The admin role for VR manages application configuration including SLAs. sla_manager (A) is not a VR-specific role. sn_vul.vulnerability_write (C) manages remediation tasks, not SLA configuration." data-source-url="">
 <h2>Question 2</h2>
 <p class="question-stem">What is the minimum role required to create and change Service Level Agreements for Vulnerability Response groups?</p>
 <div class="answer-options">
@@ -45,8 +48,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> sn_vul.admin</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="[Platform] VR &gt; Update Sets &gt; Scope Capture: Changes made within a named Update Set in a different application scope will be captured (A). ServiceNow Update Sets capture customizations across scopes when the Update Set is active during the session. The Update Set records changes regardless of which application scope is active when the change is made. Changes are not excluded (C), partially captured (D), or cause errors (B) simply due to scope differences." data-source-url="">
 <h2>Question 3</h2>
 <p class="question-stem">Changes made within a named Update Set in a different application scope:</p>
 <div class="answer-options">
@@ -56,8 +61,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Will be partially captured</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] VR &gt; Security Operations Process &gt; Identify Phase: The &#x27;Identify&#x27; phase defines: what processes and assets need protection (A). Per the NIST Cybersecurity Framework: Identify = understand assets/processes requiring protection; Protect = implement safeguards (C); Detect = identify incidents (B); Respond = contain impacts (E); Recover = restore capabilities (D). The Identify phase is foundational — knowing what needs protection before implementing controls." data-source-url="">
 <h2>Question 4</h2>
 <p class="question-stem">In regard to the Security Operations Process, which of the following statements defines the “Identify” phase?</p>
 <div class="answer-options">
@@ -68,8 +75,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> What techniques can contain impacts of incidents?</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] VR &gt; CVE Updates &gt; Frequency Module: The NVD Auto-update module (A) is used to adjust the frequency at which CVEs are updated. Per p583: &#x27;The default day for the NVD update is Weekly on Monday.&#x27; The NVD Auto-update scheduled job controls the update interval for CVE data from the National Vulnerability Database. Update (B) is too generic. CVE Auto-update (C) is not the module name. On-demand update (D) allows immediate updates, not frequency adjustment." data-source-url="">
 <h2>Question 5</h2>
 <p class="question-stem">Which module is used to adjust the frequency in which CVEs are updated?</p>
 <div class="answer-options">
@@ -79,8 +88,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> On-demand update</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true">
+<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] VR &gt; Instance Sizing &gt; 2 Million Vulnerabilities: For 2 million vulnerabilities during initial load, recommend an XXL instance size (C). Per p1200: &#x27;Validate your instance sizing based on the number of application vulnerable items you expect to import. An undersized instance can lead to long load times.&#x27; 2 million records requires XXL-tier resources. L (A) and XL (B) are insufficient. Ultra (D) is for the largest enterprise deployments." data-source-url="">
 <h2>Question 6</h2>
 <p class="question-stem">If a customer expects to ingest 2 million vulnerabilities during its initial load, which instance size should you recommend?</p>
 <div class="answer-options">
@@ -90,8 +101,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Ultra</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="[Platform] VR &gt; Business Rules &gt; CI Creation: The Business Rule &#x27;Create CI from Vulnerable Item Details&#x27; (D) creates a Configuration Item from a Vulnerable Item record. This business rule parses the network and host details within the VI record to identify and create or update the associated CI in the CMDB. Options A (Vulnerable Group) and B (Closed Item) reference incorrect source records. Option C &#x27;Determine CI from Network Details&#x27; is a lookup rule, not a CI creation rule." data-source-url="">
 <h2>Question 7</h2>
 <p class="question-stem">What Business Rule creates a Configuration Item from a Vulnerable Item record?</p>
 <div class="answer-options">
@@ -101,8 +114,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Create CI from Vulnerable Item Details</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="[Platform] VR &gt; Installation &gt; Components: Components installed with Vulnerability Response include Tables, Scheduled Jobs, and Security Operations Common (A). Per p420: &#x27;Several types of components are installed with activation of the Vulnerability Response application, including tables, user roles, and scheduled jobs.&#x27; Security Operations Common is the shared dependency plugin. Business Rules/Roles/Workflows (B), Properties/Client Scripts/Wizards (C), and Vulnerability Scanners (D) are not the primary installation components." data-source-url="">
 <h2>Question 8</h2>
 <p class="question-stem">The components installed with Vulnerability Response include:</p>
 <div class="answer-options">
@@ -112,8 +127,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> UI Pages, Business Rules, Vulnerability Scanners</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="[Platform] VR &gt; Application Scoping &gt; Purpose: The purpose of Scoped Applications is to encapsulate and protect data and functionality (C). Scoped applications isolate their data, scripts, and UI elements from other applications, preventing interference and enabling clean separation of concerns. This is standard ServiceNow platform architecture. Pricing (A) is unrelated to scoping. Scalability (B) is not the purpose. Plugins can be global or scoped (D is incorrect)." data-source-url="">
 <h2>Question 9</h2>
 <p class="question-stem">What is the purpose of Scoped Applications?</p>
 <div class="answer-options">
@@ -123,8 +140,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> An application needs to be scoped in order to be deployed as a plugin</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true">
+<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] VR &gt; Plugin ID &gt; Vulnerability Response: The Vulnerability Response plugin ID is com.snc.vulnerability (B). This is the plugin identifier used to activate the application. com.snc.threat.intelligence (A) is Threat Intelligence. com.snc.threat.feeds (C) is Threat Feeds. com.snc.security_incident (D) is Security Incident Response." data-source-url="">
 <h2>Question 10</h2>
 <p class="question-stem">What is the ID associated with the Vulnerability Response plugin?</p>
 <div class="answer-options">
@@ -134,8 +153,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> com.snc.security_incident</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true">
+<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] VR &gt; CVE &gt; Information Source: CVE (Common Vulnerabilities and Exposures) information is found at MITRE (B). Per p1307: &#x27;Common Vulnerabilities and Exposures (CVE): Dictionary of publicly known information-security vulnerabilities and exposures.&#x27; The CVE program is managed and maintained by MITRE Corporation at cve.mitre.org. NIST (C) manages the NVD which enriches CVE data. Tenable (A) and Qualys (D) are vulnerability scanning vendors that consume CVE data." data-source-url="">
 <h2>Question 11</h2>
 <p class="question-stem">Where can you find information related to the Common Vulnerabilities and Exposures (CVE)?</p>
 <div class="answer-options">
@@ -145,8 +166,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Qualys</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] VR &gt; Filter Groups &gt; Purpose: Filter Groups provide all of the above capabilities (D): decoupling use of grouping from definition (A), building criteria once (B), and reusing criteria in a variety of places (C). Per p4248: Filter Groups allow building reusable criteria sets that can be referenced across different application areas. All three benefits (A, B, C) apply to Filter Groups simultaneously." data-source-url="">
 <h2>Question 12</h2>
 <p class="question-stem">Filter Groups provide a way to:</p>
 <div class="answer-options">
@@ -156,8 +179,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> All of the above</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] VR &gt; NVD Integration &gt; On-Demand Module: The On-Demand Update module (A) is used to get NVD information at any moment. Per p583: &#x27;You perform CWE updates On Demand from the integration record by default.&#x27; The On-Demand Update allows immediate retrieval outside of the scheduled update window. NVD Auto-Update (B) handles scheduled automatic updates, not on-demand retrieval. Vulnerable Software (C) stores software vulnerability data. NVD Patch (D) is not a VR module." data-source-url="">
 <h2>Question 13</h2>
 <p class="question-stem">Which module within the Vulnerability Response application could be used to get information from the National Vulnerability Database (NVD) at any moment?</p>
 <div class="answer-options">
@@ -167,8 +192,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> NVD Patch</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] VR &gt; Roles &gt; Integration Configuration: To configure integrations, Vulnerability admins need both the admin role AND integration-specific roles like sn_vul_qualys.admin (D). Per p721: &#x27;The system administrator [admin] downloads and installs the app. The sn_vul.vulnerability_admin or sn_vul.admin oversees configuration.&#x27; Integration setup requires platform admin permissions plus the specific integration admin role. admin alone (A) lacks VR-specific integration access. sn_vul.admin alone (B) lacks platform admin permissions." data-source-url="">
 <h2>Question 14</h2>
 <p class="question-stem">In order for Vulnerability admins to configure integrations, they must have the following Role(s):</p>
 <div class="answer-options">
@@ -178,8 +205,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> admin and sn_vul_qualys.admin</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="[Platform] VR &gt; Vulnerable Items &gt; Large Set Management: To more easily manage large sets of Vulnerable Items, create Vulnerability Groups (A). Vulnerability Groups organize VIs into logical collections for bulk management, assignment, and reporting. Per p750/p900: vulnerability groups group items for remediation tracking. Filter Groups (C) are for reusable criteria. Calculator Group (B) is for scoring calculators. Vulnerable Item Conditions (D) define matching rules, not groupings." data-source-url="">
 <h2>Question 15</h2>
 <p class="question-stem">In order to more easily manage large sets of Vulnerable Items, what should you create?</p>
 <div class="answer-options">
@@ -189,8 +218,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Vulnerable Item Conditions</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true">
+<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] VR &gt; Filter Groups &gt; Build Once Reuse: Filter Group (C) provides a simple way to build criteria once and reuse them in other platform areas. Per p4248: Filter Groups allow defining conditions that can be referenced across multiple application contexts. Conditions (A) and Filters (D) are single-use constructs. Favorites (B) save navigation shortcuts, not criteria. Filter Groups specifically support the build-once-reuse-everywhere pattern." data-source-url="">
 <h2>Question 16</h2>
 <p class="question-stem">This functionality provides a simple way to build criteria once, which can be reused in other platform areas.</p>
 <div class="answer-options">
@@ -200,8 +231,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Filters</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] VR &gt; Remediation &gt; Most Common Item Type: A Change request (D) is most commonly used to facilitate the remediation of a Vulnerable Item. Per p1047: &#x27;Create Change: Create a change request or associate a remediation task to an existing change request.&#x27; Changes are the standard remediation mechanism in ITSM workflows. The change implements the patch or configuration fix. Problems (A) document root causes. Security Incidents (B) address active threats. KB articles (C) document knowledge." data-source-url="">
 <h2>Question 17</h2>
 <p class="question-stem">To facilitate the remediation of a Vulnerable Item what type of item is most commonly used?</p>
 <div class="answer-options">
@@ -211,8 +244,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Create a Change</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="[Platform] VR &gt; Vulnerable Items &gt; Post-Close Recommendation: After closing a Vulnerable Item, it is recommended to update the values in the Vulnerability Score Indicator (VSI) based on the criticality of the Vulnerability (A). This ensures the risk scoring remains accurate and reflects the resolved vulnerability status. The VI doesn&#x27;t remain active waiting for rescanning (B) — closing the VI resolves it. Marking CI as exempt (C) is for ongoing exceptions, not post-remediation." data-source-url="">
 <h2>Question 18</h2>
 <p class="question-stem">After closing the Vulnerable Item (VI), it is recommended to:</p>
 <div class="answer-options">
@@ -222,8 +257,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Compare the Vulnerability with subsequent scans</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] VR &gt; Vulnerable Items &gt; Ignore Action: Ignoring a Vulnerable Item temporarily removes the item from the list of Active Vulnerable Items (D). The ignore action suppresses the VI from active workflows without permanently deleting it. The item can be un-ignored and will reappear. Permanent removal (A) would require deletion. Slushbucket (B) is not a VI state. The action does impact the active list by hiding the item (C is incorrect)." data-source-url="">
 <h2>Question 19</h2>
 <p class="question-stem">Ignoring a Vulnerable Item:</p>
 <div class="answer-options">
@@ -233,8 +270,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Temporarily removes the item from the list of Active Vulnerable Items</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="[Platform] VR &gt; Exceptions &gt; Requirements: Vulnerability Exceptions require a GRC integration (C). Per p1344/p1133: &#x27;Request an exception... using GRC: Policy and Compliance Management&#x27; — the GRC Policy and Compliance Management application must be integrated to process vulnerability exceptions. An approval by default (A) may be required but the core requirement is the GRC integration. An Exception Workflow (B) and Filter Group (D) are not specifically required for exceptions." data-source-url="">
 <h2>Question 20</h2>
 <p class="question-stem">What do Vulnerability Exceptions require?</p>
 <div class="answer-options">
@@ -244,8 +283,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> A Filter Group</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] VR &gt; Approvals &gt; Table Basis: Approvals in the Vulnerability Application are created based on the sys_approval and sn_vul_vulnerable_item tables (A). sys_approval is ServiceNow&#x27;s standard approval tracking table; VR approval records link to sn_vul_vulnerable_item for context. sn_vul_change_approval (C) handles change-specific approvals only. Using only sys_approval (D) lacks the VI linkage. The sn_vul_vulnerability table (B) is not used in approval creation." data-source-url="">
 <h2>Question 21</h2>
 <p class="question-stem">Approvals within the Vulnerability Application are created based on:</p>
 <div class="answer-options">
@@ -255,8 +296,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> The sys_approval table</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] VR &gt; Exceptions &gt; Rejected Approval State: When an approval is rejected for a VI exception, the State reverts to its previous value (D). Per p1786: submitting an exception request transitions state to &#x27;In Review.&#x27; Upon rejection, the approval workflow restores the field to what it was before the exception request was submitted. It does not reset to Analysis (A), New (B), or remain In Review (C)." data-source-url="">
 <h2>Question 22</h2>
 <p class="question-stem">When an approval is rejected for a Vulnerable Item exception, what happens to the State field for that record?</p>
 <div class="answer-options">
@@ -266,8 +309,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> It will be set back to its previous value</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="[Zurich] VR &gt; Exceptions &gt; Mandatory Fields: Vulnerability Exceptions must be supplied with a reason by default (A). Per p1134: &#x27;Justification: Details related to the reason why this request is being made. This mandatory field must be filled in by the remediation owner.&#x27; GRC integration (B) enables policy exceptions but is optional. Requirement Actions (C) is not a standard VR exception field. Manual approval authority (D) depends on configuration." data-source-url="">
 <h2>Question 23</h2>
 <p class="question-stem">What must Vulnerability Exceptions be supplied by default?</p>
 <div class="answer-options">
@@ -277,8 +322,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> A manual approval authority for the exception</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] VR &gt; Vulnerability Groups &gt; Definition: A Vulnerability Group groups VIs using a Filter against Vulnerable Item fields (A). Per p4248, the VG condition filters records on the sn_vul_vulnerable_item table to include matching VIs. Option B describes CI-based filters, not VI filters. Option C is a team assignment group, not a Vulnerability Group. Option D is not a defining characteristic of VGs." data-source-url="">
 <h2>Question 24</h2>
 <p class="question-stem">Which of the following best describes a Vulnerability Group?</p>
 <div class="answer-options">
@@ -288,8 +335,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Must have a corresponding filter group</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] VR &gt; Vulnerability Groups &gt; Use Case: To manage large sets of Vulnerable Items, create Vulnerability Groups (A). VGs organize VIs into logical collections for bulk management, assignment, and reporting workflows. Script Includes (B) are server-side code objects. Filter Groups (C) are reusable criteria sets for cross-application use. Vulnerability Sets (D) is not a VR concept." data-source-url="">
 <h2>Question 25</h2>
 <p class="question-stem">In order to more easily manage large sets of Vulnerable Items, you would want to create:</p>
 <div class="answer-options">
@@ -299,8 +348,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Vulnerability Sets</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] VR &gt; Properties &gt; Auto-Create VGs: The property sn_vul.autocreate_vul_centric_group (A) controls whether Vulnerability Groups are automatically created based on Vulnerabilities in the system. This enables the system to generate one vulnerability-centric group per unique vulnerability, organizing VIs by their parent vulnerability." data-source-url="">
 <h2>Question 26</h2>
 <p class="question-stem">Which of the following is the property that controls whether Vulnerability Groups are created by default based on Vulnerabilities in the system?</p>
 <div class="answer-options">
@@ -310,8 +361,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> sn_vul.create_default_vul_groups</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="[Platform] VR &gt; Properties &gt; Auto-Create VG Items: The property sn_vul.autocreate_vul_group_item (C) allows auto-creation of Vulnerability Group memberships based on a Vulnerable Item&#x27;s Vulnerability. This property associates VIs with their corresponding vulnerability-centric groups automatically. sn_vul.autocreate_vul_centric_group (D) controls group creation itself, while this property controls item membership within groups." data-source-url="">
 <h2>Question 27</h2>
 <p class="question-stem">What system property allows for the auto creation of Vulnerability Groups based on the Vulnerable Item’s Vulnerability?</p>
 <div class="answer-options">
@@ -321,8 +374,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> sn_vul.autocreate_vul_centric_group</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Zurich] VR &gt; Filter Groups &gt; Navigation: Filter Groups are created via Security Operations &gt; Groups &gt; Filter Groups (D). Per p4245: &#x27;Groups &gt; Filter Groups: Create and use filter groups to locate records from any table on your instance.&#x27; The path is Security Operations &gt; Groups, not the Vulnerability module options (A/B/C)." data-source-url="">
 <h2>Question 28</h2>
 <p class="question-stem">Where in the platform can you create Filter Groups?</p>
 <div class="answer-options">
@@ -332,8 +387,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Security Operations > Groups > Filter Groups</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] VR &gt; GRC Integration &gt; Common Point: Risk Indicators are the common integration point between Vulnerability Response and GRC (D). VR computes risk scores and exposes them as Risk Indicators that GRC consumes for policy compliance and risk management. Security Incident Response (A), Change (B), and Problem (C) are not the primary VR-GRC integration mechanisms." data-source-url="">
 <h2>Question 29</h2>
 <p class="question-stem">Which of the following is a common integration point between Vulnerability and GRC?</p>
 <div class="answer-options">
@@ -343,8 +400,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Risk Indicators</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true">
+<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] VR &gt; SLAs &gt; Role Requirement: To define SLAs for VR, have the Vulnerability admin role in the Vulnerability application scope (C). VR SLA modules are scoped, requiring the VR admin role within the VR scope. Global admin (B) in global scope cannot access VR-specific SLA configuration. Custom workflows (A) are unnecessary when SLA modules exist. sn_vul.vulnerability_write (D) is insufficient for SLA configuration." data-source-url="">
 <h2>Question 30</h2>
 <p class="question-stem">To ensure that Vulnerabilities are processed correctly, you can define a Service Level Agreement (SLA) for Vulnerability Response. To achieve this, you would:</p>
 <div class="answer-options">
@@ -354,8 +413,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Make sure you have at least the sn_vul.vulnerability_write role and using the baseline SLA Application Modules</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="[Platform] VR &gt; Roles &gt; Overview Dashboard: The sn_vul.vulnerability.write role is required to view the Vulnerability Overview Dashboard (D). Per p422, this role provides access to manage and view vulnerability records and dashboards. A read role (A) provides insufficient access. sn_vul.manager (B) and sn_vul.ciso (C) are not standard VR role names in the platform." data-source-url="">
 <h2>Question 31</h2>
 <p class="question-stem">What role is required to view the Vulnerability Overview Dashboard?</p>
 <div class="answer-options">
@@ -365,8 +426,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> sn_vul.vulnerability.write</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,C,D" data-community="false">
+<div class="question-card" data-answer="B,C,D" data-community="false" data-explanation="[Platform] VR &gt; Manager Access &gt; Visualizations: Managers should have access to Time period views (B), Up-to-the-minute views (C), and Drill-down to granularity (D). These provide trend analysis, real-time status, and detailed investigation for management oversight. Aggregations for priority and workload (A) are more suited to operational analyst views rather than manager-level reporting." data-source-url="">
 <h2>Question 32</h2>
 <p class="question-stem">Managers should have access to which role-based data access and visualizations? (Choose three.)</p>
 <div class="answer-options">
@@ -376,8 +439,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Drill-down to granularity</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Zurich] VR &gt; Filter Groups &gt; Module: Filter Group configuration is found under Security Operations &gt; Groups module (A). Per p4245, Filter Groups are listed under &#x27;Groups&#x27; within Security Operations, not within the Vulnerability module (B/C/D). The Security Operations &gt; Groups area hosts shared security tooling including Filter Groups used across VR, SIR, and related apps." data-source-url="">
 <h2>Question 33</h2>
 <p class="question-stem">Filter Group configuration is found under which Application module?</p>
 <div class="answer-options">
@@ -387,8 +452,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Vulnerability > Filter Groups</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Zurich] VR &gt; Properties &gt; Popup: The property sn_vul.popup (D) controls whether a popup appears when creating a Problem or Change from a Vulnerability/VI record. Per p2159: &#x27;popup property (sn_vul.popup)&#x27; is explicitly named. sn_si.popup (p1882) is the equivalent for Security Incident Response, not VR. Options A, B, C are not valid VR property names." data-source-url="https://www.servicenow.com/docs/r/government-industry/properties-installed-with-psds.html">
 <h2>Question 34</h2>
 <p class="question-stem">Which is the property that is set to True or False based on the customer desire fora popup when creating a Problem or Change record from a Vulnerability or Vulnerable Item (VI) record?</p>
 <div class="answer-options">
@@ -398,6 +465,8 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> sn_vul.popup</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
     </main>
     <footer class="site-footer">

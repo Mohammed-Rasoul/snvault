@@ -24,7 +24,8 @@
     </header>
     <main>
         <div class="quiz-banner"><a href="../quiz/cis-vrm.html">Test yourself on Vendor Risk Management &rarr;</a></div>
-<div class="question-card" data-answer="A,B" data-community="true">
+<div class="ai-notice">Answers verified with AI using ServiceNow documentation. Exercise your own judgement.</div>
+<div class="question-card" data-answer="A,B" data-community="true" data-explanation="[Platform] VRM &gt; Objectives: The objectives of Vendor Risk Management are to help vendors improve their security posture and preparedness (A) and to assess and manage the risk from interactions with vendors and third parties (B). VRM is designed to evaluate vendor security and manage third-party risk exposure. Negotiating prices (C) is a procurement function, not a risk management objective. Ensuring vendor profitability (D) is not a risk management goal." data-source-url="">
 <h2>Question 1</h2>
 <p class="question-stem">Which of the following is an objective of Vendor Risk Management? (Choose two.)</p>
 <div class="answer-options">
@@ -34,8 +35,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> To verify that vendors have adequate measures and processes in place to ensure profitability of vendor</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] VRM &gt; Data Model: Vendor records are stored in the Company [core_company] table (A). ServiceNow VRM uses the core_company table as the foundation for storing vendor/third-party organization data. Department [cmn_department] (B) stores organizational department records. Task [task] (C) is the base task table. User [sys_user] (D) stores individual user accounts, not company/vendor records." data-source-url="">
 <h2>Question 2</h2>
 <p class="question-stem">The Vendor records are stored in which table?</p>
 <div class="answer-options">
@@ -45,8 +48,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> User [sys_user]</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,D,E" data-community="true">
+<div class="question-card" data-answer="B,D,E" data-community="true" data-explanation="[Platform] VRM &gt; Internal Roles: The internal roles are Vendor Risk Manager (B), Vendor Risk Assessor (D), and Vendor Risk Reviewer (E). Per p2897: &#x27;designed for users with the following roles: TPR manager [vendor_risk_manager], TPR assessor [vendor_assessor], Third-party assessment reviewer [vendor_assessment_reviewer].&#x27; These are the internal organizational roles. Vendor Contact (A) and Primary Vendor Contact (C) are external roles assigned to vendor-side personnel." data-source-url="">
 <h2>Question 3</h2>
 <p class="question-stem">Internal roles include: (Choose three.)</p>
 <div class="answer-options">
@@ -57,8 +62,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> Vendor Risk Reviewer sn_vdr_risk_asmt.vendor_assessment_reviewer</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="[Platform] VRM &gt; Application Scope: Roles preceded by sn_vdr_risk are for the GRC: Vendor Risk Management scope (D). The sn_vdr_risk prefix denotes the Vendor Risk Management scoped application. Per p13: the Vendor Risk Management plugin contains these role definitions. GRC: Vendor Risk Remediation (A), GRC: Risk Management (C), and GRC: Vendor Risk Core (B) are different scopes with different role prefixes." data-source-url="">
 <h2>Question 4</h2>
 <p class="question-stem">Roles preceded by sn_vdr_risk are for which scope?</p>
 <div class="answer-options">
@@ -68,8 +75,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> GRC: Vendor Risk Management</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] VRM &gt; Configuration: The System Administrator role (D) is required to select the correct update set and application scope before making configuration changes. System Administrators control update set management and application scope switching at the platform level. Vendor Administrator (A), Data Administrator (B), and User Administrator (C) do not have update set management permissions." data-source-url="">
 <h2>Question 5</h2>
 <p class="question-stem">Before any changes to the configuration of an application are made, it is recommended that the correct update set and application scope are selected. What role is required for this functionality?</p>
 <div class="answer-options">
@@ -79,8 +88,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> The System Administrator role is required for this functionality</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] VRM &gt; Risk Management Definition: Risk Management is the process to identify, assess, and respond to risks, threats and vulnerabilities that could compromise the business (D). This definition covers the full risk lifecycle from identification through assessment and response. Policy alignment (A) describes Governance. Conforming to standards (B) describes Compliance. Eliminating vulnerable surface area (C) describes security hardening, not Risk Management." data-source-url="">
 <h2>Question 6</h2>
 <p class="question-stem">What is the definition of ‘Risk Management’?</p>
 <div class="answer-options">
@@ -90,8 +101,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Process to identify, assess, and respond to risks, threats and vulnerabilities that could compromise the business</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] VRM &gt; Vendor Portal &gt; Main Benefit: The main benefit of using the Vendor Portal is more efficiently completing assessments via the Vendor Portal (D). The portal provides vendors with a dedicated interface to complete assessment questionnaires, respond to issues, and manage contacts — streamlining the assessment workflow. Spreadsheet use (A) and email sharing (C) are less efficient alternatives the portal replaces. Single contact communication (B) is a secondary benefit." data-source-url="">
 <h2>Question 7</h2>
 <p class="question-stem">Which of the following is the main benefit of using the Vendor Portal?</p>
 <div class="answer-options">
@@ -101,8 +114,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> More efficiently completing Assessments via the Vendor Portal</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] VRM &gt; Email Notifications &gt; Plugin: Baseline email notifications that automate the vendor risk management process are installed with the GRC: Vendor Risk Management plugin (A). The Vendor Risk Management application includes pre-configured notification workflows for assessment distribution and status updates. GRC: Audit Management (B), Risk Management (C), and Policy and Compliance Management (D) are separate GRC applications with their own notification sets." data-source-url="">
 <h2>Question 8</h2>
 <p class="question-stem">Baseline email notifications that help to automate the vendor risk management process are installed with which plugin?</p>
 <div class="answer-options">
@@ -112,8 +127,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> GRC: Policy and Compliance Management</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] VRM &gt; Vendor Contacts &gt; Role Assignment: When vendor contacts are created, they are automatically assigned the snc_external role (D). Per p3036: &#x27;It&#x27;s normal for a contact to have the snc_external role because the vendor_contact role includes it.&#x27; This external role grants vendor contacts access to the third-party portal for responding to assessments. They are not assigned snc_internal (C) as they are external users. Manual role assignment (B) is not required for the base external role." data-source-url="">
 <h2>Question 9</h2>
 <p class="question-stem">Which statement best describes the role assignment of vendor contacts in Vendor Risk Management?</p>
 <div class="answer-options">
@@ -123,8 +140,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> When vendor contacts are created, they are automatically assigned the snc_external role</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,D,E,F" data-community="true">
+<div class="question-card" data-answer="A,D,E,F" data-community="true" data-explanation="[Platform] VRM &gt; Vendor Portal &gt; Vendor Contact Actions: In the Vendor Portal, a vendor contact can update answers to returned questionnaires (A), review and respond to issues created by the assessing organization (D), manage vendor contacts and task assignments within the vendor organization (E), and respond to assessments sent by the assessing organization (F). Communicating with other vendors (B) is not supported. Creating new issues for the assessor team (C) is not a vendor contact capability." data-source-url="">
 <h2>Question 10</h2>
 <p class="question-stem">What can a vendor contact do in the Vendor Portal? (Choose four.)</p>
 <div class="answer-options">
@@ -136,8 +155,10 @@
 <div class="answer-option" data-key="F"><span class="option-key">F.</span> Respond to assessments sent by the assessing organization</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,C" data-community="true">
+<div class="question-card" data-answer="A,B,C" data-community="true" data-explanation="[Platform] VRM &gt; Vendor Portal &gt; Functions: The functions available in the Vendor Portal are Assessment response (A), Contact Management (B), and Issue remediation (C). The portal enables vendors to complete assessments, manage their contact information, and remediate identified issues. Scheduling web meetings (D) and virtual agent requests (E) are not standard Vendor Portal functions." data-source-url="">
 <h2>Question 11</h2>
 <p class="question-stem">Which functions can be performed in the Vendor Portal? (Choose three.)</p>
 <div class="answer-options">
@@ -148,8 +169,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> Requests via virtual agent</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true">
+<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] VRM &gt; Vendor Portal &gt; Issue Management: Vendors manage issues, respond to requests, and fulfill tasks assigned to them through the Vendor Portal (B). The Vendor Portal is the dedicated interface for vendor-side activities in the TPRM process. Spreadsheets (A) and email (D) are less efficient alternatives. Vendors do not have direct access to the ServiceNow Platform (C) — they use the portal." data-source-url="">
 <h2>Question 12</h2>
 <p class="question-stem">Where do vendors manage issues, respond to requests, and fulfill tasks assigned to them?</p>
 <div class="answer-options">
@@ -159,8 +182,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Email</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C,D" data-community="true">
+<div class="question-card" data-answer="C,D" data-community="true" data-explanation="[Platform] VRM &gt; Vendor Contacts &gt; Questionnaire Assignments: A questionnaire can be read by vendor contacts that are not assigned (C) and can only be completed by assigned vendor contacts (D). This allows read-only visibility for all contacts while restricting response submission to designated assignees. Individual sections cannot be separately assigned (A is false). Questionnaires can be assigned to multiple vendor contacts (B is false)." data-source-url="">
 <h2>Question 13</h2>
 <p class="question-stem">Which statements most accurately describe assignments to vendor contacts? (Choose two.)</p>
 <div class="answer-options">
@@ -170,8 +195,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> A questionnaire can only be completed by assigned vendor contacts</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,D" data-community="true">
+<div class="question-card" data-answer="A,B,D" data-community="true" data-explanation="[Platform] VRM &gt; Vendor Contacts &gt; Mandatory Fields: The baseline mandatory fields when creating a new Vendor Contact are Name/First and Last name (A), Vendor (B), and Email (D). Per p3036: &#x27;First name, Last name, Email&#x27; are required standard contact information, and the Vendor association is needed to link the contact to their organization. Department (C) and Role (E) are optional fields that can be populated but are not baseline mandatory." data-source-url="">
 <h2>Question 14</h2>
 <p class="question-stem">What are the baseline mandatory fields when creating a new Vendor Contact? (Choose three.)</p>
 <div class="answer-options">
@@ -182,8 +209,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> Role</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C,D,E" data-community="true">
+<div class="question-card" data-answer="C,D,E" data-community="true" data-explanation="[Platform] VRM &gt; Data Import &gt; Cleansing Options: For data cleansing when importing vendor data, you can use Field Normalization Rules (C), Fix Scripts (D), and Data Import or Data Source Transform (E). Field Normalization rules standardize field values; Fix Scripts handle custom data transformations; Data Import/Transform maps source data to target fields. Data Policies (A) enforce field validation but are not data cleansing tools. ACLs (B) control access. UI Policies (F) control form behavior." data-source-url="">
 <h2>Question 15</h2>
 <p class="question-stem">Which of these options can be used in data cleansing when importing vendor data? (Choose three.)</p>
 <div class="answer-options">
@@ -195,8 +224,10 @@
 <div class="answer-option" data-key="F"><span class="option-key">F.</span> UI Policies</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,D,E" data-community="true">
+<div class="question-card" data-answer="B,D,E" data-community="true" data-explanation="[Platform] VRM &gt; Vendor Risk Assessor &gt; Functions: The Vendor Risk Assessor can access completed assessments from vendors (B), create issues for the vendor (D), and create a Primary Contact record for a Vendor (E). Enabling communications across vendors (A) is not an assessor function — vendors don&#x27;t communicate with each other through the platform. Updating vendor contract deadlines (C) is not a standard assessor function." data-source-url="">
 <h2>Question 16</h2>
 <p class="question-stem">Which of the following are functions of the Vendor Risk Assessor? (Choose three.)</p>
 <div class="answer-options">
@@ -207,8 +238,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> Create a Primary Contact record for a Vendor</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C,D" data-community="true">
+<div class="question-card" data-answer="C,D" data-community="true" data-explanation="[Platform] VRM &gt; Integrations &gt; Security Evaluation: Third-party vendor security evaluation solutions integrated out-of-the-box are Bitsight (C) and Security Scorecard (D). Per p2835: ServiceNow TPRM has standard integrations with leading security rating providers. MyScoreMetrics (A) is not a known out-of-the-box integration. Vendor Insights (B) is a ServiceNow product, not a third-party security rating service." data-source-url="">
 <h2>Question 17</h2>
 <p class="question-stem">What third-party vendor security evaluation solutions are commonly integrated with VRM out-of-the-box? (Choose two.)</p>
 <div class="answer-options">
@@ -218,8 +251,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Security Scorecard</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true">
+<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] VRM &gt; Data Cleansing &gt; No-Code Option: The no-code option for cleaning data loaded into the Vendor Risk application is Field Normalization (B). Field Normalization allows administrators to standardize and normalize field values without writing code — configuring rules through a UI interface. Fix Scripts (A) require scripting. Import (C) is the data loading mechanism itself, not a cleansing option." data-source-url="">
 <h2>Question 18</h2>
 <p class="question-stem">What is the no code option to cleaning data being loaded into the Vendor Risk application?</p>
 <div class="answer-options">
@@ -228,8 +263,10 @@
 <div class="answer-option" data-key="C"><span class="option-key">C.</span> Import</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] VRM &gt; Tiering &gt; Tier Assignment Timing: The tiering value appears on the Vendor record when the Tiering Assessment record state is closed (A). Per p2955: &#x27;The risk tier is assigned to the third party when the tiering assessment is closed.&#x27; The tiering process: assessment runs → scores averaged → mapped to risk tiers → tier assigned on close. The value does not appear at the Tiering Assessment state (B) or when all tiering assessments are completed (C)." data-source-url="">
 <h2>Question 19</h2>
 <p class="question-stem">When will the tiering value appear on the Vendor record?</p>
 <div class="answer-options">
@@ -238,8 +275,10 @@
 <div class="answer-option" data-key="C"><span class="option-key">C.</span> When all tiering assessments have been completed</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true">
+<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] VRM &gt; Tiering &gt; Tier Assignment Method: A Tiering Assessment (C) is used to automatically assign a Vendor tier value. Per p2955: the tiering assessment process creates an assessment instance, averages response scores into a tiering score, maps it to risk tiers, and assigns the risk tier to the third party when the assessment is closed. A Risk Assessment (A) measures risk but doesn&#x27;t automatically tier vendors. A configuration setting (B) is not used for tiering. A Vendor Tiering Rule (D) and Visual Task Board (E) are not standard tiering mechanisms." data-source-url="">
 <h2>Question 20</h2>
 <p class="question-stem">What can be used to automatically assign a Vendor tier value?</p>
 <div class="answer-options">
@@ -250,8 +289,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> A Visual Task Board</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,D,E" data-community="true">
+<div class="question-card" data-answer="B,D,E" data-community="true" data-explanation="[Platform] VRM &gt; Data Import &gt; Baseline Cleansing Solutions: The baseline solutions within the platform are Field Normalization Plugin (B), System Definition Fix Scripts Module (D), and System Import Transform Map Scripts (E). Field Normalization standardizes field values; Fix Scripts handle custom transformations via script; Transform Map Scripts map and cleanse data during import. Integration Hub ETL Plugin (A) is a separate add-on. Service Graph Connector (C) is for CMDB ingestion, not general data cleansing." data-source-url="">
 <h2>Question 21</h2>
 <p class="question-stem">If clean data is not provided by the customer, what baseline solutions are available within the platform? (Choose three.)</p>
 <div class="answer-options">
@@ -262,8 +303,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> System import transform map scripts</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true">
+<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] VRM &gt; Vendor Contacts &gt; Vendor Field Mapping: The Vendor name field on the Contact record is the &#x27;company&#x27; [company] field from the sys_user table with a label change (C). The sys_user table includes a standard &#x27;Company&#x27; reference field that links users to their organization. In VRM, this field is relabeled &#x27;Vendor&#x27; on the vendor contact form to reflect the third-party context. sn_vendor (A) and vendor_name (D) are not sys_user fields. company_name (B) is not a standard sys_user field." data-source-url="">
 <h2>Question 22</h2>
 <p class="question-stem">On the Contact record, there is a field for the Vendor name. This is which field (with a label change) from the sys_user table?</p>
 <div class="answer-options">
@@ -273,8 +316,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> vendor_name</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,D" data-community="true">
+<div class="question-card" data-answer="A,D" data-community="true" data-explanation="[Platform] VRM &gt; Template Designer &gt; Created Items: The Template Designer is used to create Document Request Templates (A) and Questionnaire Templates (D). Per p2805: navigation leads to &#x27;Assessment setup &gt; Questionnaire Templates or... Document Request Templates&#x27; for creating templates. Assessment Template (B) is a SAE-level record; Vendor Risk Assessment (C) is a runtime assessment instance, not a template. The designer creates the template structures that are later used in assessments." data-source-url="">
 <h2>Question 23</h2>
 <p class="question-stem">The Template Designer is leveraged to create which of the following? (Choose two.)</p>
 <div class="answer-options">
@@ -284,8 +329,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Questionnaire Template</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true">
+<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] VRM &gt; Assessment Scoring &gt; Score Range: Assessment Metrics are scored on a 0-100 scale (B). Per p2790/p3119: the scoring formula normalizes responses — &#x27;([Highest normalization input value] / [Maximum of normalization input values]) * 100&#x27; — producing a 0-100 range. Metric categories aggregate metric scores, also resulting in 0-100. Scales of 0-5 (A), 0-10 (D), or 0-20 (C) are not used in VRM metric scoring." data-source-url="">
 <h2>Question 24</h2>
 <p class="question-stem">All Assessment Metrics within a Metric Category are scored, are rolled up, and get a score of.</p>
 <div class="answer-options">
@@ -295,8 +342,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> 0-10</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,D" data-community="true">
+<div class="question-card" data-answer="B,D" data-community="true" data-explanation="[Platform] VRM &gt; Template Designer &gt; Elements: The Template Designer contains Properties for supported question data types (B) and the Design canvas for creating questions/answers (D). Per p1924/p2380: &#x27;Controls — Supported question data types available in the Controls palette&#x27; and &#x27;Categories — New assessment opens in the Design view.&#x27; Assigning templates to vendors (A) is done from the assessment record. Weighting questions (C) is configured separately outside the designer canvas." data-source-url="">
 <h2>Question 25</h2>
 <p class="question-stem">The Template Designer contains which of the following elements? (Choose two.)</p>
 <div class="answer-options">
@@ -306,8 +355,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Design canvas for creating the questions and answers</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] VRM &gt; Assessment Scoring &gt; Score Configuration: The score for each Assessment Metric or Metric Category is configured on the Assessment Metric Type record (D). The Assessment Metric Type (questionnaire template) contains the scoring configuration including metric weights and category weights. Assessment Metric Category (A) and Assessment Template (B) do not contain the scoring setup. Assessment record (C) is a runtime instance, not a configuration record." data-source-url="">
 <h2>Question 26</h2>
 <p class="question-stem">Where can the score for each Assessment Metric or Metric Category be configured?</p>
 <div class="answer-options">
@@ -317,8 +368,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Assessment Metric Type record</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true">
+<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] VRM &gt; Repeating Assessments &gt; Table: To evaluate a vendor on a recurring basis, configure a Repeating Assessments (C) record. Per p2800: &#x27;You can create repeating assessments if you are using the classic assessment engine.&#x27; Repeating Assessments is the dedicated module for scheduling recurring vendor evaluations. Repeating Surveys (A) is not a VRM module. Assessment Metric (B) is a single question. Assessment Metric Type (D) is the questionnaire template structure." data-source-url="">
 <h2>Question 27</h2>
 <p class="question-stem">In order to evaluate a vendor on a recurring basis, configure a record in this table:</p>
 <div class="answer-options">
@@ -328,8 +381,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Assessment Metric Type</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] VRM &gt; Data Model &gt; Document Request Template Table: A Document Request Template is a record in the Assessment metric type [asmt_metric_type] table (D). Per p2806: &#x27;Metric type or Assessment metric type: A questionnaire template.&#x27; Both questionnaire templates and document request templates are stored in the asmt_metric_type table, differentiated by a type field. Document request item [sn_document_template] (A) is not the correct table. sn_vdr_risk_asmt_assessment (B) stores runtime assessments." data-source-url="">
 <h2>Question 28</h2>
 <p class="question-stem">A Document Request Template is a record in which table?</p>
 <div class="answer-options">
@@ -339,8 +394,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Assessment metric type [asmt_metric type]</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] VRM &gt; Assessment &gt; View Responses: Clicking &#x27;View Responses&#x27; on an Assessment record shows Assessment Responses (D). This displays the actual vendor contact answers to the questionnaire questions submitted during the assessment. Issue Responses (A) are tracked on issue records. Email Responses (B) are not a VRM response type. Task Responses (C) relate to task completions, not assessment question answers." data-source-url="">
 <h2>Question 29</h2>
 <p class="question-stem">From an Assessment record, the vendor risk assessor can click on “View Responses” to see which of the following?</p>
 <div class="answer-options">
@@ -350,8 +407,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Assessment Responses</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true">
+<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] VRM &gt; SIG Questionnaire &gt; SIG Lite Description: The SIG Lite assesses basic levels of due diligence and provides a broad but high-level understanding about internal security controls (C). Per p3050: SIG Lite is a lighter version of the Standardized Information Gathering questionnaire. The SIG Full (not Lite) covers highly sensitive/regulated service providers (D). SIG is a Shared Assessments industry standard questionnaire (B is wrong — not ServiceNow developed). It is not company-specific (A)." data-source-url="">
 <h2>Question 30</h2>
 <p class="question-stem">Which statement best describes the SIG Lite?</p>
 <div class="answer-options">
@@ -361,8 +420,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> The SIG Lite assesses service providers that store or manage highly sensitive or regulated information</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,C" data-community="true">
+<div class="question-card" data-answer="B,C" data-community="true" data-explanation="[Platform] VRM &gt; Template Designer &gt; Capabilities: True statements are: Correct answers can be set in the Template Designer (B) and Questions can be mandatory in the Template Designer (C). The designer allows marking questions as required and setting correct answer definitions for scored questions. Question weights (A) are configured separately. Dependencies CAN be set between questions (D is false — conditional logic is supported). E contradicts C." data-source-url="">
 <h2>Question 31</h2>
 <p class="question-stem">Which of the following statements are true about the Template Designer? (Choose two.)</p>
 <div class="answer-options">
@@ -373,8 +434,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> Questions cannot be mandatory in the Template Designer</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,C" data-community="true">
+<div class="question-card" data-answer="A,B,C" data-community="true" data-explanation="[Platform] VRM &gt; Assessment Scoring &gt; Rating Impact: Items that could impact a vendor&#x27;s Risk Assessment rating are answering questions incorrectly (A), leaving answers blank (B), and omitting documentation (C). Incorrect answers produce lower scores; blank answers contribute zero or unfavorable scores; missing document requests leave scoring gaps. Spelling errors (D) do not affect the calculated score. Reassigning a questionnaire (E) changes the respondent but does not directly impact scoring." data-source-url="">
 <h2>Question 32</h2>
 <p class="question-stem">Which could have an impact on the vendor’s Risk Assessment rating? (Choose three.)</p>
 <div class="answer-options">
@@ -385,8 +448,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> Reassigning a questionnaire to a contact</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] VRM &gt; Assessment Workflow &gt; Generating Observations: During the Generating Observations phase, the Risk Assessor creates issues from the assessment if necessary (A). The assessor reviews vendor responses and raises issues for gaps, deficiencies, or policy violations identified in the questionnaire responses. Updating the risk score (B) happens automatically based on assessment closure. Emailing the vendor (C) occurs in prior phases. Answering forgotten questions (D) is the vendor&#x27;s responsibility." data-source-url="">
 <h2>Question 33</h2>
 <p class="question-stem">During the Generating Observations phase of the Vendor Risk Assessment, what action might be taken by the Risk Assessor?</p>
 <div class="answer-options">
@@ -396,8 +461,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Answer questions the vendor forgot to answer</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="[Platform] VRM &gt; Questionnaire Templates &gt; Risk Areas: As many vendor risk areas as desired (B) can be designated for each questionnaire template/assessment metric type. Per p2823: templates support adding &#x27;third-party risk areas&#x27; to specify applicable risk domains. There is no documented limit restricting the number to one (A) or two (D). Templates can also have zero designated risk areas (C is not correct as the typical configuration includes at least one)." data-source-url="">
 <h2>Question 34</h2>
 <p class="question-stem">For each questionnaire template/assessment metric type, how many vendor risk areas can be designated?</p>
 <div class="answer-options">
@@ -407,8 +474,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Two</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true">
+<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] VRM &gt; Assessment Types &gt; Vendor Contact Scope: A vendor contact can respond to a Vendor Risk Assessment (B). External vendor contacts access the Vendor Portal to complete questionnaires associated with vendor risk assessments sent to their organization. Tiering assessments (A) are internal assessments completed by internal assessors. Customer assessment (C) and External monitoring assessment (D) are not standard VRM assessment types accessible to vendor contacts." data-source-url="">
 <h2>Question 35</h2>
 <p class="question-stem">To what type of assessment record can a vendor contact respond?</p>
 <div class="answer-options">
@@ -418,8 +487,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> External monitoring assessment</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] VRM &gt; Terminology &gt; Assessment Questions: Individual questions within a questionnaire or document request are referred to as Metrics (A). Per p2806: &#x27;Metric or Assessment metric: A single question within a questionnaire template.&#x27; Categories group metrics; metric types/questionnaire templates contain categories. Ratings (B) are scoring results. Templates (C) are the overall structures. Tiers (D) are vendor classification levels." data-source-url="">
 <h2>Question 36</h2>
 <p class="question-stem">What are individual questions within a questionnaire or document request referred to as?</p>
 <div class="answer-options">
@@ -429,8 +500,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Tiers</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,D" data-community="true">
+<div class="question-card" data-answer="A,B,D" data-community="true" data-explanation="[Platform] VRM &gt; Template Designer &gt; Elements: In addition to the design canvas, the Template Designer contains a Header bar with tabs and functions (A), Controls for supported question data types (B), and Question and Categories tabs from the Question Bank (D). Per p1924/p2380: the designer has a controls palette for data types, a questions library, and a categories view. FAQ Page/Tour (C) is not a standard designer element. Risk criteria for conditions (E) is configured separately in assessment setup." data-source-url="">
 <h2>Question 37</h2>
 <p class="question-stem">In addition to the “Design canvas”, which elements does the Template Designer contain? (Choose three.)</p>
 <div class="answer-options">
@@ -441,8 +514,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> Risk criteria to identity conditions and risk areas</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] VRM &gt; Notifications &gt; Reminder Mechanism: In the baseline, reminder notifications about assessments are sent by a Workflow (D). The VRM application includes pre-configured workflows that handle assessment lifecycle automation including reminder notifications at defined intervals before due dates. On-demand triggers (A) require manual action. Business Rule events (B) trigger notifications but the overall reminder orchestration is workflow-driven. Scheduled Jobs (C) handle score collection, not assessment reminders." data-source-url="">
 <h2>Question 38</h2>
 <p class="question-stem">In the baseline, what component sends reminder notifications about assessments?</p>
 <div class="answer-options">
@@ -452,8 +527,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> A Workflow</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] VRM &gt; Data Model &gt; Task Table: Vendor Risk Tasks are saved to the [sn_vdr_risk_asmt_task] table (D). Per p3134: &#x27;Tasks [sn_vdr_risk_asmt_task]&#x27; is explicitly listed in the due diligence data model. The base task table [task] (A) is the parent. planned_task (B) is for project tasks. sn_vendor_risk_task (C) is not the correct table name — the actual table has the sn_vdr_risk_asmt prefix consistent with the VRM scoped application." data-source-url="">
 <h2>Question 39</h2>
 <p class="question-stem">Vendor Risk Tasks are saved to which one of the following tables?</p>
 <div class="answer-options">
@@ -463,8 +540,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> [sn_vdr_risk_asmt_task]</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] VRM &gt; Roles &gt; Issue Creation: The minimum role required to create a new Vendor Risk Issue is Vendor Risk Assessor [sn_vdr_risk_asmt.vendor_assessor] (A). Per p1465/p2897: the TPR assessor role includes permissions to create and manage issues identified during assessments. Vendor Assessment Reviewer (B) has read-only/review access. Vendor Risk Manager (C) has higher-level management access. System Administrator (D) is not the minimum — the assessor role is sufficient." data-source-url="">
 <h2>Question 40</h2>
 <p class="question-stem">What is the minimum role required to create a new Vendor Risk Issue?</p>
 <div class="answer-options">
@@ -474,8 +553,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> System Administrator [admin]</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C,D" data-community="true">
+<div class="question-card" data-answer="C,D" data-community="true" data-explanation="[Platform] VRM &gt; Issues &gt; Features: Features of Vendor Risk Issues are providing vendor direct access to update and respond to Issues via the Vendor Portal (C) and being generated on-demand or automatically due to an incorrect answer (D). Issues can be auto-triggered by questionnaire responses that fail criteria or manually created by the assessor. Generating audit tasks (A) is not a VRM issue feature. Issues are visible to vendors in the portal (B is wrong — they are not internal-only)." data-source-url="">
 <h2>Question 41</h2>
 <p class="question-stem">What are the features of Vendor Risk Issues? (Choose two.)</p>
 <div class="answer-options">
@@ -485,8 +566,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Can be generated on-demand or automatically due to an incorrect answer</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true">
+<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] VRM &gt; Assessment Workflow &gt; Issue Creation Stage: Vendor Risk Issues are usually created during the Generating Observations stage (B). Per p1430: assessment states include &#x27;Generating observations, Responses received, Finalizing with third party.&#x27; During Generating Observations the assessor reviews vendor responses and creates issues for identified gaps. Responses Received (A) is the prior state when responses arrive. Submitted to Vendor (C) and Finalizing with Vendor (D) occur before or after issue creation." data-source-url="">
 <h2>Question 42</h2>
 <p class="question-stem">Vendor Risk Issues are usually created in which stage of an Assessment?</p>
 <div class="answer-options">
@@ -496,8 +579,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Finalizing with Vendor</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] VRM &gt; Tasks &gt; Creation Sources: A Vendor Risk Task can be created from a Vendor Risk Issue, Assessment, or Vendor record (D). Tasks are the work items for remediation and follow-up, traceable back to the issue, the assessment context, or the vendor relationship. Risk (B) and Policy (A/B/C) are not sources for VRM tasks. Option C including Policy is incorrect for standard VRM task creation." data-source-url="">
 <h2>Question 43</h2>
 <p class="question-stem">A Vendor Risk Task can be created from which of the following records?</p>
 <div class="answer-options">
@@ -507,8 +592,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Vendor Risk Issue, Assessment, Vendor</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,D" data-community="true">
+<div class="question-card" data-answer="B,D" data-community="true" data-explanation="[Platform] VRM &gt; Issues &gt; Purposes: Purposes of a Vendor Risk Issue are to indicate vendors that need further assessment (B) and to track remediation of compliance gaps (D). Issues flag specific deficiencies requiring attention and serve as remediation tracking records. Logging access incidents (A) is not a VRM issue purpose. Accepting risks (C) is a separate risk acceptance process, not an issue function." data-source-url="">
 <h2>Question 44</h2>
 <p class="question-stem">What are some of the purposes of a Vendor Risk Issue? (Choose two.)</p>
 <div class="answer-options">
@@ -518,8 +605,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Track remediation of compliance gaps</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,C" data-community="true">
+<div class="question-card" data-answer="A,C" data-community="true" data-explanation="[Platform] VRM &gt; Issue Management &gt; Building Blocks: The two ServiceNow building blocks for VRM issue lifecycle customization are Flow Designer (A) and Workflow Editor (C). Both tools enable organizations to automate and customize issue management processes to fit unique requirements. Service Management (B) and Incident Management (D) are product applications, not automation building blocks covered in VRM course context." data-source-url="">
 <h2>Question 45</h2>
 <p class="question-stem">The VRM issue management process is frequently unique to an organization. What two ServiceNow provided building blocks were covered in this course to help with customer needs that might arise during the lifecycle of VRM issues? (Choose two.)</p>
 <div class="answer-options">
@@ -529,8 +618,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Incident Management</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true">
+<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] VRM &gt; Vendor Portal &gt; Assessment Reassignment: In the Vendor Portal, the Primary Contact (C) can reassign assessments to other vendor contacts. The Primary Contact has elevated management privileges within the vendor organization&#x27;s portal access. Regular vendor contacts (B) can view and respond but cannot reassign. Vendor Business Owner (A) and Vendor Manager (D) are not standard Vendor Portal role designations." data-source-url="">
 <h2>Question 46</h2>
 <p class="question-stem">In the Vendor Portal, who can reassign Assessments?</p>
 <div class="answer-options">
@@ -540,8 +631,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Vendor Manager</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="[Platform] VRM &gt; Vendor Portal &gt; Request Display Count: A Vendor Risk Assessment with a SIG Lite questionnaire and two document requests displays as 3 total requests (B) in the Vendor Portal. Each questionnaire and each document request is shown as a separate individual request: 1 (SIG Lite) + 2 (document requests) = 3. Requests are not combined into a single item (D) and are not hidden (C)." data-source-url="">
 <h2>Question 47</h2>
 <p class="question-stem">A Vendor Risk Assessment that consists of a SIG Lite questionnaire and two document requests are displayed as how many total requests in the Vendor Portal?</p>
 <div class="answer-options">
@@ -551,8 +644,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> 1</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] VRM &gt; Tasks and Issues &gt; Grouping: When an assessor creates an issue or task from the vendor record, it is grouped with other issues or tasks for that specific Vendor (A). All issues and tasks associated with a vendor are visible and grouped on the vendor&#x27;s Company record, providing a consolidated view of vendor-specific work items. Grouping by All vendors (B), Assessment (C), or Remediation plan (D) is not how VRM tasks are organized from the vendor record." data-source-url="">
 <h2>Question 48</h2>
 <p class="question-stem">When an assessor creates an issue or task from the vendor record, it is grouped with other issues or tasks for what ServiceNow entity?</p>
 <div class="answer-options">
@@ -562,8 +657,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Remediation plan</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,C" data-community="true">
+<div class="question-card" data-answer="B,C" data-community="true" data-explanation="[Platform] VRM &gt; Vendor Contacts &gt; Password Management: The sys_admin (B) and the vendor contact via the Forgot Password link (C) can change the vendor contact password. Per p3040: admins can &#x27;Set Password — Generate a new password and send it to the third-party contact.&#x27; Vendor contacts can self-service via Forgot Password. Vendor Contract Relationship Manager (A) and Vendor Risk Reviewer (D) do not have password management permissions for external contacts." data-source-url="">
 <h2>Question 49</h2>
 <p class="question-stem">Who is able to change the password for the vendor contact? (Choose two.)</p>
 <div class="answer-options">
@@ -573,8 +670,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Vendor Risk Reviewer</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true">
+<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] VRM &gt; Assessment Import &gt; SIG: The assessment page provides an area to import a completed SIG (Standardized Information Gathering) questionnaire (C). Per p3051: vendors can upload pre-filled SIG spreadsheets from the Third-party portal. The SIG is the industry-standard third-party risk questionnaire natively supported by VRM. GDPR (A), SOC1 &amp; SOC2 (B), and SOX (D) are compliance frameworks but not importable questionnaire types in the VRM assessment page." data-source-url="">
 <h2>Question 50</h2>
 <p class="question-stem">The assessment page provides an area to import what kind of a completed questionnaire?</p>
 <div class="answer-options">
@@ -584,8 +683,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> SOX</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] VRM &gt; Vendor Portal &gt; Request Display: In the Vendor Portal, questionnaires and document requests are displayed as separate requests and can be assigned to different vendor contacts (A). Per p2750: different questionnaires can be assigned to different contacts — &#x27;One set collects information on the third-party organization. The TP contact responds to that questionnaire. The other set collects information on the business unit.&#x27; Assigning all to the same contact (B) is optional but not required." data-source-url="">
 <h2>Question 51</h2>
 <p class="question-stem">How are Vendor Risk questionnaires and document requests displayed on the Vendor Portal?</p>
 <div class="answer-options">
@@ -595,8 +696,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> As a single assessment assigned to a single engagement contact</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true">
+<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] VRM &gt; Vendor Portal &gt; Endpoint Property: To override the default scoped vendor portal (svdp) to use the legacy portal (vdp), update the sn_vdr_risk_asmt.vendor_portal_endpoint system property (C). This property controls the portal endpoint URL used for vendor access. The scoped prefix variants (B, D) are not the correct property names. sn_vdr_risk_asmt.vendor_portal (A) is not the endpoint configuration property." data-source-url="">
 <h2>Question 52</h2>
 <p class="question-stem">In the Paris release and beyond, the scoped vendor portal (svdp) will be installed by default but can be overridden in which System Property record to use the legacy/traditional vendor portal (vdp)?</p>
 <div class="answer-options">
@@ -606,8 +709,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> sn_vdr_risk_asmt.scoped.vendor_portal</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] VRM &gt; Issues &gt; Portal Visibility: For a vendor risk issue to be visible in the Vendor Portal, the &#x27;Visible in vendor portal&#x27; field must have a value of true (D). This field gives the assessor control over which issues are shared with the vendor. Not all issues are automatically visible (C is wrong). Secondary contacts (A) and special roles (B) are not the controlling factors for portal visibility." data-source-url="">
 <h2>Question 53</h2>
 <p class="question-stem">Which of these must be true in order for a vendor risk issue to be visible in the Vendor Portal?</p>
 <div class="answer-options">
@@ -617,8 +722,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> The Visible in vendor portal field must have a value of true</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,C,E" data-community="true">
+<div class="question-card" data-answer="A,C,E" data-community="true" data-explanation="[Platform] GRC &gt; Entities &gt; Related Records: GRC records that can be related to an Entity are Entity Types (A), Risks (C), and Controls (E). Entities are the organizational objects (business units, processes) assessed in GRC — they have types classifying them, risks quantifying exposures, and controls addressing those risks. Vendors (B) are entities themselves, not records related to an entity. Policies (D) relate to entities indirectly through citations and controls, not as direct entity relationships." data-source-url="">
 <h2>Question 54</h2>
 <p class="question-stem">Which GRC records can be related to an Entity? (Choose three.)</p>
 <div class="answer-options">
@@ -629,8 +736,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> Controls</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true">
+<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] VRM &gt; GRC Integration &gt; Control Status Update: The Control Status is updated when the Vendor Risk Assessment state is Finalizing with Vendor or Closed (B). Per p2825: questionnaire responses influence control compliance status — the update occurs when the assessment reaches the finalization stages and responses are processed. Responses Received (A) is too early. Per-response save (C) or all-questions complete (D) are not the trigger points for control status recalculation." data-source-url="">
 <h2>Question 55</h2>
 <p class="question-stem">A vendor is assessed and responds to a question which impacts one of the Controls applied to them. When is the Control Status updated?</p>
 <div class="answer-options">
@@ -640,8 +749,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> When all Questions in the Vendor Risk Assessment have a response</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true">
+<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] VRM &gt; GRC Integration &gt; Advantage: The advantage of using both VRM and GRC/IRM is that non-compliant controls automatically adjust the risk score for a vendor entity (D). Per p2825/p2948: when questionnaire responses are linked to control objectives, control compliance status influences the entity risk score. VRM engagements don&#x27;t auto-match audit engagements (A). Controls are not automatically visible to VRM managers (B). Vendor contacts don&#x27;t see internal risk scores (C)." data-source-url="">
 <h2>Question 56</h2>
 <p class="question-stem">What is the advantage of using both VRM and GRC/IRM?</p>
 <div class="answer-options">
@@ -651,8 +762,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Non compliant controls automatically adjust the risk score for a vendor entity</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,C" data-community="true">
+<div class="question-card" data-answer="A,B,C" data-community="true" data-explanation="[Platform] VRM &gt; Reporting &gt; Key Tables: Tables for vendor risk reports are Company [core_company] (A), Vendor Risk Assessment [sn_vdr_risk_asmt_assessment] (B), and Vendor Risk Issue [sn_vdr_risk_asmt_issue] (C). Per p3129/p3134: these three are the primary VRM data tables. Company stores vendor records with tier/risk ratings; Assessment stores assessment results; Issue stores identified risk gaps. Vendor Contact (D) and Vendor Activity (E) are not primary reporting data sources." data-source-url="">
 <h2>Question 57</h2>
 <p class="question-stem">On which of the following tables can you create vendor risk reports? (Choose three.)</p>
 <div class="answer-options">
@@ -663,8 +776,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> Vendor Activity [vm_vendor_activity]</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] VRM &gt; Reporting &gt; Critical Vendors Table: To report on Critical Vendors, run a report on the Company [core_company] table (A). Vendor records including tier/criticality classification are stored in the Company table. Per p3141: &#x27;Vendors by Risk Rating&#x27; reports use the company table. Vendor Risk Issue (B) stores issue records. Vendor Contact (C) stores contact persons. Vendor Risk Assessment (D) stores assessment instances, not vendor-level tier/criticality data." data-source-url="">
 <h2>Question 58</h2>
 <p class="question-stem">A Vendor Risk Manager needs to run a report displaying Critical Vendors. On which table would this person run a report?</p>
 <div class="answer-options">
@@ -674,8 +789,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Vendor Risk Assessment [sn_vdr_risk_asmt_assessment]</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,E" data-community="true">
+<div class="question-card" data-answer="A,E" data-community="true" data-explanation="[Platform] VRM &gt; Reporting &gt; Key Data Sources: Key data sources for Vendor Risk reporting are Vendor Risk Assessment [sn_vdr_risk_asmt_assessment] (A) and Vendor Risk Issue [sn_vdr_risk_asmt_issue] (E). Per p3134: these are the primary operational VRM tables. Questionnaire Templates (B) are configuration records. Vendor Benchmark Scores (C) and Survey Scores (D) are not core VRM reporting tables." data-source-url="">
 <h2>Question 59</h2>
 <p class="question-stem">Key data sources for Vendor Risk reporting include which of the following tables? (Choose two.)</p>
 <div class="answer-options">
@@ -686,6 +803,8 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> Vendor Risk Issue [sn_vdr_risk_asmt_issue]</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
     </main>
     <footer class="site-footer">
