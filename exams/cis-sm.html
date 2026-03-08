@@ -79,7 +79,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C,D" data-community="false" data-explanation="Service Mapping provides visibility of Incidents (C) and Alerts (D) associated with the CI in the Agent Workspace. Per the docs: &#x27;Display additional information for a CI or application service itself by displaying related records such as alerts, outages, incidents, and problems.&#x27; The primary items surfaced in the Operator/Agent Workspace for Service Mapping are Alerts and Incidents. Releases (A) are not a Service Mapping workspace item." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/service-mapping/workspace-view-history-app-service.html">
+<div class="question-card" data-answer="C,D" data-community="false" data-explanation="Service Mapping provides visibility of Incidents (C) and Alerts (D) associated with the CI in the Agent Workspace. Per the docs: &#x27;Display additional information for a CI or application service itself by displaying related records such as alerts, outages, incidents, and problems.&#x27; The primary items surfaced in the Operator/Agent Workspace for Service Mapping are Alerts and Incidents. Releases (A) are not a Service Mapping workspace item." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/service-mapping/workspace-view-service-map.html">
 <h2>Question 5</h2>
 <p class="question-stem">Service Mapping provides visibility to the Operator in Agent Workspace without leaving the Workspace UI. This visibility includes what items associated with the CI? (Choose two.)</p>
 <div class="answer-options">
@@ -118,7 +118,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Identification Sections are executed one by one in the order they are listed until the first successful match, which concludes the Identification phase (D). Per the docs: &#x27;The section with the lowest order number is used first.&#x27; Once one identification section succeeds, the phase ends. Connection sections work differently — all run and each contributes connections. Identification is first-match-wins; it is not random (A/B) and doesn&#x27;t continue to the last (C)." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery-and-service-mapping-patterns/connection-section-traffic-based.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Identification Sections are executed one by one in the order they are listed until the first successful match, which concludes the Identification phase (D). Per the docs: &#x27;The section with the lowest order number is used first.&#x27; Once one identification section succeeds, the phase ends. Connection sections work differently — all run and each contributes connections. Identification is first-match-wins; it is not random (A/B) and doesn&#x27;t continue to the last (C)." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery-and-service-mapping-patterns/modify-pattern-using-extensions.html">
 <h2>Question 8</h2>
 <p class="question-stem">In Service Mapping, when discovery is started, what is the execution strategy used to run Identification Sections?</p>
 <div class="answer-options">
@@ -144,7 +144,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Service Mapping provides a task with the command in the ECC queue, the MID Server collects and executes the command on the target device, and returns the result as an XML payload to the ServiceNow instance (A). Per the docs: &#x27;SSHCommand probe executes a shell command on the target host, and returns the resulting output to the sensor.&#x27; The MID Server is the execution intermediary — it doesn&#x27;t decide the command (B), and the target never communicates directly to the instance (D)." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery/c_SSHCommandProbe.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Service Mapping provides a task with the command in the ECC queue, the MID Server collects and executes the command on the target device, and returns the result as an XML payload to the ServiceNow instance (A). Per the docs: &#x27;SSHCommand probe executes a shell command on the target host, and returns the resulting output to the sensor.&#x27; The MID Server is the execution intermediary — it doesn&#x27;t decide the command (B), and the target never communicates directly to the instance (D)." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery/c_SNMPProbe.html">
 <h2>Question 10</h2>
 <p class="question-stem">Which one of the following best describes the process that Service Mapping uses to run a command on a target device?</p>
 <div class="answer-options">
@@ -170,7 +170,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="A /16 network (180.181.0.0/16) includes approximately 65 thousand IPs (C). Per the docs: &#x27;limit Discovery schedules to a maximum range of /16 (approximately 65,536 IPs).&#x27; A /16 network = 2^16 = 65,536 host addresses. ~65 thousand is the correct approximation. ~5 million (A) would be a /8 or larger. ~1 million (B) would require a /12 range." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/itom-visibility/r_LoadBalancerFields.html">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="A /16 network (180.181.0.0/16) includes approximately 65 thousand IPs (C). Per the docs: &#x27;limit Discovery schedules to a maximum range of /16 (approximately 65,536 IPs).&#x27; A /16 network = 2^16 = 65,536 host addresses. ~65 thousand is the correct approximation. ~5 million (A) would be a /8 or larger. ~1 million (B) would require a /12 range." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery/discovery-ip-address-configuration.html">
 <h2>Question 12</h2>
 <p class="question-stem">During ServiceNow Discovery, which one of the following is the approximate number of host IPs that are port scanned with a Discovery Schedule configured with an IP network as shown?<br />180.181.0.0/16</p>
 <div class="answer-options">
@@ -379,7 +379,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="The ECC Queue record containing the XML payload returned from the MID Server is Input, Ready (B). Per the docs: Input records flow from the MID Server to the ServiceNow instance. &#x27;Ready&#x27; state means the payload is queued and ready to be processed by the instance sensors. Output records (C/D) contain commands sent from the instance to the MID Server. Input, Pending (A) means not yet ready for processing." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery/r_DiscoveryStatusECCQueue.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="The ECC Queue record containing the XML payload returned from the MID Server is Input, Ready (B). Per the docs: Input records flow from the MID Server to the ServiceNow instance. &#x27;Ready&#x27; state means the payload is queued and ready to be processed by the instance sensors. Output records (C/D) contain commands sent from the instance to the MID Server. Input, Pending (A) means not yet ready for processing." data-source-url="https://www.servicenow.com/docs/r/yokohama/it-operations-management/discovery/t_ValidateDiscoveryResults.html">
 <h2>Question 28</h2>
 <p class="question-stem">Which one of the following ECC Queue records contains the XML payload returned from the MID Server that will be processed by the ServiceNow instance?</p>
 <div class="answer-options">

@@ -318,7 +318,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="By default, Event Management binds an alert to a CI by matching the node name against the CI name, Fully Qualified Domain Name (FQDN), and IP or MAC address (A). Per the docs: &#x27;the node value from the event is compared with various attributes in the host CI, such as Name, FQDN, IP, or MAC address.&#x27; Webserver name (B), SSH keys (C), and System class name (D) are not default binding attributes." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/ci-matching-ci-is-host.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="By default, Event Management binds an alert to a CI by matching the node name against the CI name, Fully Qualified Domain Name (FQDN), and IP or MAC address (A). Per the docs: &#x27;the node value from the event is compared with various attributes in the host CI, such as Name, FQDN, IP, or MAC address.&#x27; Webserver name (B), SSH keys (C), and System class name (D) are not default binding attributes." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/binding-alert-CI-host-default.html">
 <h2>Question 23</h2>
 <p class="question-stem">By default, Event Management tries to bind an alert to CI (configuration item), by matching the node name in the event to which three items in the CMDB (configuration management database)?</p>
 <div class="answer-options">
@@ -383,7 +383,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D,E" data-community="false" data-explanation="After creating a new connector instance, the two key steps are: Test the connector (D) and Activate the connector (E). Per the docs: &#x27;Select Test Connector&#x27; to verify the connection, then Activate to enable event collection. Assigning a MID Server (A) and entering credentials (B) are done during creation. Debugging (C) is not a required post-creation step." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/configure-prtg-connector.html">
+<div class="question-card" data-answer="D,E" data-community="false" data-explanation="After creating a new connector instance, the two key steps are: Test the connector (D) and Activate the connector (E). Per the docs: &#x27;Select Test Connector&#x27; to verify the connection, then Activate to enable event collection. Assigning a MID Server (A) and entering credentials (B) are done during creation. Debugging (C) is not a required post-creation step." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/configure-opsview-connector.html">
 <h2>Question 28</h2>
 <p class="question-stem">What two key steps must be performed after creating a new connector instance? (Choose two.)</p>
 <div class="answer-options">
@@ -411,7 +411,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="To change what the alert Source is set to, you would configure it in the Transform and Compose Alert Output tab (A) of the event rule. Per the docs: &#x27;Since there is no existing name attribute in the event, we can manually create one using the Transform and Compose Alert Output tab in the event rule.&#x27; This tab is where alert field values are mapped and overridden from event data. Event Filter (D) matches events. CI Binding (C) handles CI association." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/t_EMBindServiceCI.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="To change what the alert Source is set to, you would configure it in the Transform and Compose Alert Output tab (A) of the event rule. Per the docs: &#x27;Since there is no existing name attribute in the event, we can manually create one using the Transform and Compose Alert Output tab in the event rule.&#x27; This tab is where alert field values are mapped and overridden from event data. Event Filter (D) matches events. CI Binding (C) handles CI association." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/bind-alerts-CI-app-host-monitoring.html">
 <h2>Question 30</h2>
 <p class="question-stem">You have an event with a Source of ‘Trap from Enterprise 111’, but the alert created for this event shows a Source of ‘Oracle EM’. If you want to change what this is set to, where in the event rule would you do this?</p>
 <div class="answer-options">
@@ -424,7 +424,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="E" data-community="false" data-explanation="Copies of check definitions included in Agent Client Collector policies are known as check instances (E). Per the docs: &#x27;You associate check definitions with policies. Those check definitions are then referred to as check instances&#x27; once they are part of a policy. Check definitions (A) are the original templates. Check models (B), clones (C), and mirrors (D) are not valid ACC terminology." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/agent-client-collector/domain-separation-agent-client-collector.html">
+<div class="question-card" data-answer="E" data-community="false" data-explanation="Copies of check definitions included in Agent Client Collector policies are known as check instances (E). Per the docs: &#x27;You associate check definitions with policies. Those check definitions are then referred to as check instances&#x27; once they are part of a policy. Check definitions (A) are the original templates. Check models (B), clones (C), and mirrors (D) are not valid ACC terminology." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/agent-client-collector/acc-concept.html">
 <h2>Question 31</h2>
 <p class="question-stem">Copies of checks that have been included in Agent Client Collector policies are known as what?</p>
 <div class="answer-options">
@@ -750,7 +750,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Event field mapping (A) is the recommended approach to normalizing data from a source system to the default values in Event Management. Per the docs: &#x27;Use Event field mapping rules to map values from specific fields to values in other fields.&#x27; Per the docs, event field mapping rules are stored in the em_mapping_rule table and apply after event rules. Transform maps (B) are ITSM import tools. Alert management rules (C) handle alert responses. Business rules (D) are general automation." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/c_EMEventFieldMapping.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Event field mapping (A) is the recommended approach to normalizing data from a source system to the default values in Event Management. Per the docs: &#x27;Use Event field mapping rules to map values from specific fields to values in other fields.&#x27; Per the docs, event field mapping rules are stored in the em_mapping_rule table and apply after event rules. Transform maps (B) are ITSM import tools. Alert management rules (C) handle alert responses. Business rules (D) are general automation." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/simulate-event-processing.html">
 <h2>Question 54</h2>
 <p class="question-stem">What is the recommended approach to normalizing data from a source system to the default values in Event Management?</p>
 <div class="answer-options">
@@ -803,7 +803,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="Inbound actions (B) are the ServiceNow feature configured to process incoming email and create events. Per the docs: &#x27;Configure event collection from email... Configure an inbound email action to send email notifications when events and alerts are triggered.&#x27; Transforms (A) map data within the platform. Event processing jobs (C) process existing events. Event Filter (D) and Event field mapping (E) operate on events already in the system." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/t_EMConfigureEmailConnector.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Inbound actions (B) are the ServiceNow feature configured to process incoming email and create events. Per the docs: &#x27;Configure event collection from email... Configure an inbound email action to send email notifications when events and alerts are triggered.&#x27; Transforms (A) map data within the platform. Event processing jobs (C) process existing events. Event Filter (D) and Event field mapping (E) operate on events already in the system." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/configure-snmp-trap-listener.html">
 <h2>Question 58</h2>
 <p class="question-stem">What ServiceNow feature would you configure to process incoming email to create events?</p>
 <div class="answer-options">
@@ -817,7 +817,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,C" data-community="false" data-explanation="The two valid URIs to log events directly to the ServiceNow event table are /api/global/em/jsonv2 (B) and /api/now/table/em_event (C). Per the docs: the EM-specific web service API uses /api/global/em/jsonv2 for batch event insertion. The standard Table API /api/now/table/em_event also supports direct event insertion. The other options (A, D, E) use invalid path structures not matching ServiceNow API conventions." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/send-events-via-web-service.html">
+<div class="question-card" data-answer="B,C" data-community="false" data-explanation="The two valid URIs to log events directly to the ServiceNow event table are /api/global/em/jsonv2 (B) and /api/now/table/em_event (C). Per the docs: the EM-specific web service API uses /api/global/em/jsonv2 for batch event insertion. The standard Table API /api/now/table/em_event also supports direct event insertion. The other options (A, D, E) use invalid path structures not matching ServiceNow API conventions." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/event-collection-via-MID-using-push.html">
 <h2>Question 59</h2>
 <p class="question-stem">Within a PowerShell script, which two URI’s could you use to log events directly to the ServiceNow event table? (Choose two.)</p>
 <div class="answer-options">
@@ -873,7 +873,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Event Management licensing is based on the number of CIs in the CMDB being monitored (D). Per the docs: &#x27;CIs bound to alerts are counted towards licensing; if there are no CIs that are bound to alerts, the event node field is used.&#x27; Licensing counts monitored CIs, not just nodes (A), connectors (B/C), which are secondary metrics." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/user-guide.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Event Management licensing is based on the number of CIs in the CMDB being monitored (D). Per the docs: &#x27;CIs bound to alerts are counted towards licensing; if there are no CIs that are bound to alerts, the event node field is used.&#x27; Licensing counts monitored CIs, not just nodes (A), connectors (B/C), which are secondary metrics." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/license-usage.html">
 <h2>Question 63</h2>
 <p class="question-stem">What is Event Management licensing based on?</p>
 <div class="answer-options">
@@ -1034,7 +1034,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="JSON (B) is the supported format when sending data from the monitoring source to the additional_info field. Per the docs, the event additional_info field uses JSON format: &#x27;&quot;additional_info&quot;:&quot;{\&quot;name\&quot;:\&quot;My Airlines\&quot;}&quot;.&#x27; XML (A), YAML (C), and comma-separated (D) are not the supported formats for the additional_info field." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/event-collection-custom-payloads.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="JSON (B) is the supported format when sending data from the monitoring source to the additional_info field. Per the docs, the event additional_info field uses JSON format: &#x27;&quot;additional_info&quot;:&quot;{\&quot;name\&quot;:\&quot;My Airlines\&quot;}&quot;.&#x27; XML (A), YAML (C), and comma-separated (D) are not the supported formats for the additional_info field." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/configure-em-context-extension.html">
 <h2>Question 75</h2>
 <p class="question-stem">When sending data from the monitoring source to the additional_info field, what format is supported?</p>
 <div class="answer-options">
@@ -1327,7 +1327,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="When performing CI Binding, Event Management matches the Node to CI Name, FQDN, IP, and MAC Address (D). Per the docs: &#x27;The system compares the Node with attributes like Name, FQDN, IP, or MAC Address in the CMDB to find a match.&#x27; Option A uses DNS instead of FQDN. Option B has System class name instead of CI name. Option C has SSH keys instead of IP/MAC." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/ci-matching-ci-is-host.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="When performing CI Binding, Event Management matches the Node to CI Name, FQDN, IP, and MAC Address (D). Per the docs: &#x27;The system compares the Node with attributes like Name, FQDN, IP, or MAC Address in the CMDB to find a match.&#x27; Option A uses DNS instead of FQDN. Option B has System class name instead of CI name. Option C has SSH keys instead of IP/MAC." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/binding-alert-CI-host-default.html">
 <h2>Question 97</h2>
 <p class="question-stem">When performing CI Binding, what fields does Event Management match to the Node?</p>
 <div class="answer-options">
@@ -1366,7 +1366,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="By default, idle alerts are closed after 7 days (A). Per the docs, the 7-day threshold is referenced as the default interval after which closed alerts are not re-opened. The 30-day interval (C) applies to retaining open event data. 14 days (B) is not the default. Alerts are not kept indefinitely (D) — they are closed after the idle threshold." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/event-collection-MicrosoftAzure.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="By default, idle alerts are closed after 7 days (A). Per the docs, the 7-day threshold is referenced as the default interval after which closed alerts are not re-opened. The 30-day interval (C) applies to retaining open event data. 14 days (B) is not the default. Alerts are not kept indefinitely (D) — they are closed after the idle threshold." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/configure-azure-bi-directional-connector.html">
 <h2>Question 100</h2>
 <p class="question-stem">By default, when are idle alerts are closed?</p>
 <div class="answer-options">
@@ -1432,7 +1432,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="E" data-community="false" data-explanation="If no CMDB, automated, or text-based grouping is occurring, the most likely cause is that the alert correlation property that enables grouping is set to false (E). Per the docs, each grouping type (CMDB, ML-based automation, text-based) has its own property that must be enabled. If the master correlation property is false, all grouping types are disabled. No correlation rules (A) would only affect rule-based grouping, not automated and text-based." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/run-multiple-alert-group-scheduled-jobs.html">
+<div class="question-card" data-answer="E" data-community="false" data-explanation="If no CMDB, automated, or text-based grouping is occurring, the most likely cause is that the alert correlation property that enables grouping is set to false (E). Per the docs, each grouping type (CMDB, ML-based automation, text-based) has its own property that must be enabled. If the master correlation property is false, all grouping types are disabled. No correlation rules (A) would only affect rule-based grouping, not automated and text-based." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/enable-alert-grouping.html">
 <h2>Question 105</h2>
 <p class="question-stem">In your environment, no alert CMDB, automated, or text based grouping is occurring. What is most likely the problem?</p>
 <div class="answer-options">
@@ -1486,7 +1486,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="ACC can perform application service monitoring by configuring a proxy agent (B). Per the docs, proxy agents allow ACC to monitor external services and CIs that are not on the local host — enabling application service monitoring. An alert management rule (A) handles alert responses. A distributed cluster (C) provides HA for agent monitoring. Event rule (D) processes events. A REST API (E) is not an ACC configuration option." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/agent-client-collector/assign-proxy-cluster-policy.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="ACC can perform application service monitoring by configuring a proxy agent (B). Per the docs, proxy agents allow ACC to monitor external services and CIs that are not on the local host — enabling application service monitoring. An alert management rule (A) handles alert responses. A distributed cluster (C) provides HA for agent monitoring. Event rule (D) processes events. A REST API (E) is not an ACC configuration option." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/agent-client-collector/configure-agent-proxy-cluster.html">
 <h2>Question 109</h2>
 <p class="question-stem">Agent Client Collector can perform application service monitoring by configuring what option?</p>
 <div class="answer-options">
