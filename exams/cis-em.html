@@ -25,7 +25,7 @@
     <main>
         <div class="quiz-banner"><a href="../quiz/cis-em.html">Test yourself on Event Management &rarr;</a></div>
 <div class="ai-notice">Answers verified with AI using ServiceNow documentation. Exercise your own judgement.</div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; Alert Management Rules &gt; Workflow Location: In an alert management rule, you specify a workflow to resolve a given condition from the Actions tab (B). The Actions tab defines what the rule does when conditions are met, including triggering orchestration workflows. The Remediation tab (A) is specifically for CI remediation orchestration, not general workflow-based condition resolution. Launcher (C) and Related Links (D) are not alert management rule tabs." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="In an alert management rule, you specify a workflow to resolve a given condition from the Actions tab (B). The Actions tab defines what the rule does when conditions are met, including triggering orchestration workflows. The Remediation tab (A) is specifically for CI remediation orchestration, not general workflow-based condition resolution. Launcher (C) and Related Links (D) are not alert management rule tabs." data-source-url="">
 <h2>Question 1</h2>
 <p class="question-stem">When creating an alert management rule, where would you specify a workflow to resolve a given condition?</p>
 <div class="answer-options">
@@ -38,7 +38,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,C" data-community="true" data-explanation="[Platform] EM &gt; MID Server &gt; Supported Platforms: A MID Server can be installed on Microsoft Windows Server (B) and Linux System (C). These are the two supported operating systems for MID Server installations. OpenVMS (A) and Mac OS X (F) are not supported. Microsoft Windows Desktop (D) is not a supported server OS. Any system inside the firewall (E) is incorrect — the OS must be Windows Server or Linux." data-source-url="">
+<div class="question-card" data-answer="B,C" data-community="false" data-explanation="A MID Server can be installed on Microsoft Windows Server (B) and Linux System (C). These are the two supported operating systems for MID Server installations. OpenVMS (A) and Mac OS X (F) are not supported. Microsoft Windows Desktop (D) is not a supported server OS. Any system inside the firewall (E) is incorrect — the OS must be Windows Server or Linux." data-source-url="">
 <h2>Question 2</h2>
 <p class="question-stem">What types of system can a MID Server install on? (Choose two.)</p>
 <div class="answer-options">
@@ -53,7 +53,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="[Platform] EM &gt; JavaScript &gt; Primary Use Case: The primary use case for creating JavaScript in Event Management is to create a customized pull connector to retrieve events on behalf of an event source (A). JavaScript connectors allow Event Management to pull events from external monitoring systems that lack built-in connectors. Populating CMDB (B) is handled by Discovery. Parsing node names (C) uses event rule transforms. Remediation workflow scripting (D) is done in Orchestration." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The primary use case for creating JavaScript in Event Management is to create a customized pull connector to retrieve events on behalf of an event source (A). JavaScript connectors allow Event Management to pull events from external monitoring systems that lack built-in connectors. Populating CMDB (B) is handled by Discovery. Parsing node names (C) uses event rule transforms. Remediation workflow scripting (D) is done in Orchestration." data-source-url="">
 <h2>Question 3</h2>
 <p class="question-stem">What would be the primary use case for creating Javascripts in Event Management?</p>
 <div class="answer-options">
@@ -66,7 +66,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] EM &gt; Operational Intelligence &gt; Source Configuration: Metric Type Actions (C) are used to define the monitoring sources allowed to communicate with the ServiceNow instance for Operational Intelligence. Metric Type Actions configure which metric types from which sources are accepted and how they are processed. Metric Registration (A) is for registering metric definitions. Metric Config Rules (B) configure metric behavior. Metric to CI (D) handles metric-to-CI binding." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Metric Type Actions (C) are used to define the monitoring sources allowed to communicate with the ServiceNow instance for Operational Intelligence. Metric Type Actions configure which metric types from which sources are accepted and how they are processed. Metric Registration (A) is for registering metric definitions. Metric Config Rules (B) configure metric behavior. Metric to CI (D) handles metric-to-CI binding." data-source-url="">
 <h2>Question 4</h2>
 <p class="question-stem">What would you use to define the monitoring sources allowed to communicate with the ServiceNow instance for Operational Intelligence?</p>
 <div class="answer-options">
@@ -79,7 +79,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] EM &gt; Alert Priority Score &gt; Composition: The Alert Priority score is a composite of the alert&#x27;s category and its relative weight (A). Per p3186: &#x27;Each category has its own placement in the alert priority score, according to its order and limit&#x27; — each category contributes a weighted value to compute the overall priority score. Priority Group (B) is a separate field. Severity (C, D) influences some categories but is not the direct composite formula for the priority score." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The Alert Priority score is a composite of the alert&#x27;s category and its relative weight (A). Per the docs: &#x27;Each category has its own placement in the alert priority score, according to its order and limit&#x27; — each category contributes a weighted value to compute the overall priority score. Priority Group (B) is a separate field. Severity (C, D) influences some categories but is not the direct composite formula for the priority score." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/alert-priority.html">
 <h2>Question 5</h2>
 <p class="question-stem">The value of the Alert Priority score is a composite of what?</p>
 <div class="answer-options">
@@ -92,7 +92,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; De-duplication &gt; Attribute: The message_key attribute (B) is responsible for de-duplication of events. Per p3000: &#x27;message_key: This value is used for de-duplication of events.&#x27; Per p3951: &#x27;The message_key field is a unique identifier for an alert in the source monitoring system. It is used for de-duplication and alert flapping detection.&#x27; Metric_name (A), short_description (C), and additional_info (D) are not de-duplication attributes." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="The message_key attribute (B) is responsible for de-duplication of events. Per the docs: &#x27;message_key: This value is used for de-duplication of events.&#x27; Per the docs: &#x27;The message_key field is a unique identifier for an alert in the source monitoring system. It is used for de-duplication and alert flapping detection.&#x27; Metric_name (A), short_description (C), and additional_info (D) are not de-duplication attributes." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/send-events-via-web-service.html">
 <h2>Question 6</h2>
 <p class="question-stem">Which attribute is responsible for de-duplication?</p>
 <div class="answer-options">
@@ -105,7 +105,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; Insights Explorer &gt; Interpretation: win-ces882ierw is one of the hottest CIs (highest anomaly tracking activity) but is currently experiencing a low probability of anomalies (B). Per p4705, green indicator means &#x27;Metric for CI had at least one anomaly in the past, but anomaly score is currently 0&#x27; — indicating past activity but currently low probability. Hottest CIs are system-identified top CIs, not a customized list (eliminating C and D)." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="win-ces882ierw is one of the hottest CIs (highest anomaly tracking activity) but is currently experiencing a low probability of anomalies (B). Per the docs, green indicator means &#x27;Metric for CI had at least one anomaly in the past, but anomaly score is currently 0&#x27; — indicating past activity but currently low probability. Hottest CIs are system-identified top CIs, not a customized list (eliminating C and D)." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/metric-intelligence/metric-explorer-settings.html">
 <h2>Question 7</h2>
 <p class="question-stem">How would you interpret the following data in the Operational Intelligence Insights Explorer?</p>
 <div class="answer-options">
@@ -118,7 +118,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] EM &gt; Event Connectors &gt; Default Polling Interval: The default collection/polling interval applied to all event connectors is every 120 seconds (A). This is the standard default connector execution interval in Event Management. The 5-second interval (B) applies to the event processing job, not connectors. 40 seconds (C), 60 seconds (D), and 10 seconds (E) are not the default connector polling interval." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The default collection/polling interval applied to all event connectors is every 120 seconds (A). This is the standard default connector execution interval in Event Management. The 5-second interval (B) applies to the event processing job, not connectors. 40 seconds (C), 60 seconds (D), and 10 seconds (E) are not the default connector polling interval." data-source-url="">
 <h2>Question 8</h2>
 <p class="question-stem">What is the default collection/polling interval applied to all event connectors?</p>
 <div class="answer-options">
@@ -132,7 +132,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] EM &gt; Event Rules &gt; Alert Traceability: You can determine what event rule created an alert by looking at the Alert Activity (A) which records the creation actions, and the Event Processing Notes (C) which shows which event rule processed and matched the event. Per p3310, the Activities tab records what happened to the alert. Event Additional Information (B), Alert Message Key (D), and Alert Source (E) do not show which event rule created the alert." data-source-url="">
+<div class="question-card" data-answer="A,C" data-community="false" data-explanation="You can determine what event rule created an alert by looking at the Alert Activity (A) which records the creation actions, and the Event Processing Notes (C) which shows which event rule processed and matched the event. Per the docs, the Activities tab records what happened to the alert. Event Additional Information (B), Alert Message Key (D), and Alert Source (E) do not show which event rule created the alert." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/t_EMViewAlert.html">
 <h2>Question 9</h2>
 <p class="question-stem">Where can you look to determine what event rule created an alert? (Choose two.)</p>
 <div class="answer-options">
@@ -146,7 +146,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] EM &gt; Alert Management Rules &gt; Workflow Triggers: Alert management rules (C) are used to trigger a workflow or automatically generate tasks via templates. Per p3161, alert management rules define conditions and actions including creating incidents, triggering workflows, and generating tasks automatically. Event rules (A) process events into alerts. Task rules (B) is not a standard EM module. Alert correlation rules (D) group related alerts." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Alert management rules (C) are used to trigger a workflow or automatically generate tasks via templates. Per the docs, alert management rules define conditions and actions including creating incidents, triggering workflows, and generating tasks automatically. Event rules (A) process events into alerts. Task rules (B) is not a standard EM module. Alert correlation rules (D) group related alerts." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/create-alert-management-rule.html">
 <h2>Question 10</h2>
 <p class="question-stem">What feature would you use to trigger a workflow or automatically generate tasks via templates?</p>
 <div class="answer-options">
@@ -159,7 +159,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="[Platform] EM &gt; Alert Lifecycle &gt; States: The valid states an alert can be in are Open, Reopen, Flapping, and Closed (A). Per p3786-3787, these are the documented alert lifecycle states: Open on creation, Reopen when reopened, Flapping when events continue after closure, and Closed when resolved. Options B, C, and D include invalid state names (Updating, Waiting, Swinging, Warning, Clear)." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The valid states an alert can be in are Open, Reopen, Flapping, and Closed (A). Per -3787, these are the documented alert lifecycle states: Open on creation, Reopen when reopened, Flapping when events continue after closure, and Closed when resolved. Options B, C, and D include invalid state names (Updating, Waiting, Swinging, Warning, Clear)." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/service-reliability-management/sr-alerts-states.html">
 <h2>Question 11</h2>
 <p class="question-stem">What are the valid states an alert can be in during its lifecycle?</p>
 <div class="answer-options">
@@ -172,7 +172,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="[Platform] EM &gt; Automatic Task Creation &gt; Module: Alert management rules (A) is the Event Management module that allows configuration of automatic task creation. Alert management rules define conditions and specify automated actions including creating incidents and tasks from templates. Event rules (C) transform events into alerts. Alert correlation rules (D) group alerts. Task rules (B) is not a standard EM module." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Alert management rules (A) is the Event Management module that allows configuration of automatic task creation. Alert management rules define conditions and specify automated actions including creating incidents and tasks from templates. Event rules (C) transform events into alerts. Alert correlation rules (D) group alerts. Task rules (B) is not a standard EM module." data-source-url="">
 <h2>Question 12</h2>
 <p class="question-stem">What Event Management module allows for configuration of automatic task creation?</p>
 <div class="answer-options">
@@ -185,7 +185,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] EM &gt; MID Web Server &gt; Basic Auth Issue: The most likely cause is an invalid password set in the MID Web Server Context (D). When using Basic authentication, the MID Web Server Context stores the username and password used to authenticate incoming requests. An invalid password causes all authentication attempts to fail, preventing data from reaching the MID Server. Restarting (A) or Starting (B) would address service state issues. Invalid secret key (C) applies to key-based auth, not Basic auth." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The most likely cause is an invalid password set in the MID Web Server Context (D). When using Basic authentication, the MID Web Server Context stores the username and password used to authenticate incoming requests. An invalid password causes all authentication attempts to fail, preventing data from reaching the MID Server. Restarting (A) or Starting (B) would address service state issues. Invalid secret key (C) applies to key-based auth, not Basic auth." data-source-url="">
 <h2>Question 13</h2>
 <p class="question-stem">You have a system configured with a MID Web Server using Basic authentication to enable Operational Management Intelligence (OI) to push raw metric data to the MID Server. No data is getting through to the MID Server.<br />What is the most likely cause of the issue?</p>
 <div class="answer-options">
@@ -198,7 +198,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] EM &gt; Event Table &gt; External Attribute Mapping: The Additional Information field (D) in the event table maps the external attributes from the target system. This field stores supplementary data from the external monitoring source that doesn&#x27;t map directly to standard event fields. Resource (A) identifies the monitored resource. Description (B) is the event description. Source (C) identifies the monitoring tool origin." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The Additional Information field (D) in the event table maps the external attributes from the target system. This field stores supplementary data from the external monitoring source that doesn&#x27;t map directly to standard event fields. Resource (A) identifies the monitored resource. Description (B) is the event description. Source (C) identifies the monitoring tool origin." data-source-url="">
 <h2>Question 14</h2>
 <p class="question-stem">In the event table, which field maps the external attributes from the target system?</p>
 <div class="answer-options">
@@ -211,7 +211,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] EM &gt; Alert Console &gt; Default Display: By default the Alert Console displays all Primary, Open alerts with a Severity of Critical, Major, Minor, and Warning that are not in Maintenance mode (D). Secondary alerts are excluded from the default view. Anomaly alerts (A, B) are a separate display type. Option C omits the Open/Maintenance filter. Option E incorrectly includes Secondary alerts." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="By default the Alert Console displays all Primary, Open alerts with a Severity of Critical, Major, Minor, and Warning that are not in Maintenance mode (D). Secondary alerts are excluded from the default view. Anomaly alerts (A, B) are a separate display type. Option C omits the Open/Maintenance filter. Option E incorrectly includes Secondary alerts." data-source-url="">
 <h2>Question 15</h2>
 <p class="question-stem">By default, the Alert Console displays what type of alerts?</p>
 <div class="answer-options">
@@ -225,7 +225,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C,D,E" data-community="true" data-explanation="[Platform] EM &gt; Best Practices &gt; Three Recommendations: Three recommended best practices are: Filter out events at source rather than in ServiceNow (C), Baseline normal-state events to filter background noise (D), and Ignore non-critical events during initial implementation (E). Filtering at source (C) reduces load on the instance. Baselining (D) establishes normal behavior. Starting with minimal scope (E) allows controlled rollout. Filtering in ServiceNow (A) is less efficient. Promoting all events to alerts (B) creates noise." data-source-url="">
+<div class="question-card" data-answer="C,D,E" data-community="false" data-explanation="Three recommended best practices are: Filter out events at source rather than in ServiceNow (C), Baseline normal-state events to filter background noise (D), and Ignore non-critical events during initial implementation (E). Filtering at source (C) reduces load on the instance. Baselining (D) establishes normal behavior. Starting with minimal scope (E) allows controlled rollout. Filtering in ServiceNow (A) is less efficient. Promoting all events to alerts (B) creates noise." data-source-url="">
 <h2>Question 16</h2>
 <p class="question-stem">Which are recommended best practices for Event Management? (Choose three.)</p>
 <div class="answer-options">
@@ -239,7 +239,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] EM &gt; Alert Closure &gt; Severity Zero: Setting the Severity to 0 in the event rule (A) allows an existing alert to be automatically closed when an incoming event has a matching message key. Severity 0 represents a Clear/Resolved state, which triggers automatic closure of the matching alert. This must be set in the event rule (not alert rule), so B and C are incorrect. Severity -1 (C, D) is not a valid closure mechanism." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Setting the Severity to 0 in the event rule (A) allows an existing alert to be automatically closed when an incoming event has a matching message key. Severity 0 represents a Clear/Resolved state, which triggers automatic closure of the matching alert. This must be set in the event rule (not alert rule), so B and C are incorrect. Severity -1 (C, D) is not a valid closure mechanism." data-source-url="">
 <h2>Question 17</h2>
 <p class="question-stem">For an incoming event with a matching message key, what allows an existing alert to be automatically closed?</p>
 <div class="answer-options">
@@ -252,7 +252,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] EM &gt; Incident Closes Alert &gt; Role Issue: The most likely cause is that the support agent does not have the evt_mgmt_user role (A). Per p3242, resolving an incident to close the associated alert requires the evt_mgmt_admin, evt_mgmt_operator, or evt_mgmt_user role. Without any of these roles, the property cannot execute the alert closure. Having only evt_mgmt_admin (B) would still work. Having operator without user (C) would still work. Option D is incorrect as evt_mgmt_user alone is sufficient." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The most likely cause is that the support agent does not have the evt_mgmt_user role (A). Per the docs, resolving an incident to close the associated alert requires the evt_mgmt_admin, evt_mgmt_operator, or evt_mgmt_user role. Without any of these roles, the property cannot execute the alert closure. Having only evt_mgmt_admin (B) would still work. Having operator without user (C) would still work. Option D is incorrect as evt_mgmt_user alone is sufficient." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/t_EMResolveCloseIncidentAlert.html">
 <h2>Question 18</h2>
 <p class="question-stem">A support agent resolves an incident associated with an alert, but the alert does automatically close even though the evt_mgmt.incident_closes_alert property is set appropriately to close the alert.<br />What is the most likely cause of this issue?</p>
 <div class="answer-options">
@@ -265,7 +265,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,D" data-community="false" data-explanation="[Platform] EM &gt; CMDB &gt; Accurate Statements: The CMDB is a dynamic list that tracks CIs and their relationships (B), and a CI is any component that needs to be managed to deliver Services (D). B accurately describes the CMDB as a relational dynamic repository. D accurately defines a CI. CMDB contains more than just hardware (A is wrong). Not all CIs require IP addresses — software, services, and logical items have no IP (C is wrong)." data-source-url="">
+<div class="question-card" data-answer="B,D" data-community="false" data-explanation="The CMDB is a dynamic list that tracks CIs and their relationships (B), and a CI is any component that needs to be managed to deliver Services (D). B accurately describes the CMDB as a relational dynamic repository. D accurately defines a CI. CMDB contains more than just hardware (A is wrong). Not all CIs require IP addresses — software, services, and logical items have no IP (C is wrong)." data-source-url="">
 <h2>Question 19</h2>
 <p class="question-stem">What are the two most accurate statements regarding the ServiceNow CMDB (configuration management database) and CIs (configuration items)?</p>
 <div class="answer-options">
@@ -278,7 +278,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="E" data-community="false" data-explanation="[Platform] EM &gt; CMDB &gt; CI Class Manager: The CI Class Manager (E) is the central location to explore the CMDB class hierarchy, CI table definitions, and CIs. Per p3245: &#x27;To access rules at the class level, use the CI Class Manager. Navigate to All &gt; Configuration &gt; CI Class Manager.&#x27; It provides a unified view of the entire CI class structure. CI Remediations (A), CI Relation Types (B), CI Identifiers (C), and Process to CI Type Mapping (D) are more specialized tools." data-source-url="">
+<div class="question-card" data-answer="E" data-community="false" data-explanation="The CI Class Manager (E) is the central location to explore the CMDB class hierarchy, CI table definitions, and CIs. Per the docs: &#x27;To access rules at the class level, use the CI Class Manager. Navigate to All &gt; Configuration &gt; CI Class Manager.&#x27; It provides a unified view of the entire CI class structure. CI Remediations (A), CI Relation Types (B), CI Identifiers (C), and Process to CI Type Mapping (D) are more specialized tools." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/configure-alert-insight-properties.html">
 <h2>Question 20</h2>
 <p class="question-stem">What would you use as a central location to explore the CMDB class hierarchy, CI table definitions, and CIs?</p>
 <div class="answer-options">
@@ -292,7 +292,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; Impact &gt; Cluster Threshold: 2 members (B) of the 4-node cluster must be in a Critical state for the Business Service to display as Critical. With a 60% impact influence per member, 2 Critical members × 60% = 120%, which exceeds 100% and triggers a Critical state on the Business Service. A single member (A) at 60% is insufficient. 3 (C) or 4 (D) members exceed what is needed." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="2 members (B) of the 4-node cluster must be in a Critical state for the Business Service to display as Critical. With a 60% impact influence per member, 2 Critical members × 60% = 120%, which exceeds 100% and triggers a Critical state on the Business Service. A single member (A) at 60% is insufficient. 3 (C) or 4 (D) members exceed what is needed." data-source-url="">
 <h2>Question 21</h2>
 <p class="question-stem">A four node cluster makes up the components (CIs) of a Business Service. The impact influence for the cluster is set to 60%.<br />How many members of the cluster must be in a Critical state in order for the Business Service to display as Critical in the Impact Tree?</p>
 <div class="answer-options">
@@ -305,7 +305,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="[Platform] EM &gt; Anomaly Promotion &gt; Alert Console: Anomaly B would be automatically promoted into an IT alert based on the alert promotion rule (B). This question references a visual/table showing promotion rule thresholds that is not available in the raw text. Community consensus indicates B based on the promotion rule criteria shown in the original question image." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Anomaly B would be automatically promoted into an IT alert based on the alert promotion rule (B). This question references a visual/table showing promotion rule thresholds that is not available in the raw text. Community consensus indicates B based on the promotion rule criteria shown in the original question image." data-source-url="">
 <h2>Question 22</h2>
 <p class="question-stem">Which the following alert promotion rule defined in your ServiceNow instance, which of the anomalies below would be automatically promoted into IT alerts on the Alert Console?</p>
 <div class="answer-options">
@@ -318,7 +318,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] EM &gt; CI Binding &gt; Default Matching: By default, Event Management binds an alert to a CI by matching the node name against the CI name, Fully Qualified Domain Name (FQDN), and IP or MAC address (A). Per p3113/p3115: &#x27;the node value from the event is compared with various attributes in the host CI, such as Name, FQDN, IP, or MAC address.&#x27; Webserver name (B), SSH keys (C), and System class name (D) are not default binding attributes." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="By default, Event Management binds an alert to a CI by matching the node name against the CI name, Fully Qualified Domain Name (FQDN), and IP or MAC address (A). Per the docs: &#x27;the node value from the event is compared with various attributes in the host CI, such as Name, FQDN, IP, or MAC address.&#x27; Webserver name (B), SSH keys (C), and System class name (D) are not default binding attributes." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/ci-matching-ci-is-host.html">
 <h2>Question 23</h2>
 <p class="question-stem">By default, Event Management tries to bind an alert to CI (configuration item), by matching the node name in the event to which three items in the CMDB (configuration management database)?</p>
 <div class="answer-options">
@@ -331,7 +331,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="[Platform] EM &gt; MID Server &gt; Outbound Port: The MID Server requires an outbound connection on port 443 (C), the standard HTTPS port. MID Servers communicate with the ServiceNow instance over HTTPS/443. Port 445 (A) is Windows file sharing. Port 161 (B) is SNMP. Port 143 (D) is IMAP." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The MID Server requires an outbound connection on port 443 (C), the standard HTTPS port. MID Servers communicate with the ServiceNow instance over HTTPS/443. Port 445 (A) is Windows file sharing. Port 161 (B) is SNMP. Port 143 (D) is IMAP." data-source-url="">
 <h2>Question 24</h2>
 <p class="question-stem">The MID Server requires an outbound connection on which port?</p>
 <div class="answer-options">
@@ -344,7 +344,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] EM &gt; Event Rules &gt; Order of Execution: All event rules run from lowest to highest Order of execution number (C). Per p3093: &#x27;The event rules run in ascending order as defined in the Order field.&#x27; Multiple matching rules execute sequentially in ascending order unless restricted by the &#x27;Apply additional matching rules&#x27; setting. Only the highest Order (A) or only lowest Order (B) running would prevent multiple rules from executing." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="All event rules run from lowest to highest Order of execution number (C). Per the docs: &#x27;The event rules run in ascending order as defined in the Order field.&#x27; Multiple matching rules execute sequentially in ascending order unless restricted by the &#x27;Apply additional matching rules&#x27; setting. Only the highest Order (A) or only lowest Order (B) running would prevent multiple rules from executing." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/create-event-rules.html">
 <h2>Question 25</h2>
 <p class="question-stem">If more than one event rule applies to a particular event or metric, which of the event rules will run based upon the Order of execution number?</p>
 <div class="answer-options">
@@ -357,7 +357,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] EM &gt; Event Rules &gt; Best Practice: The best practice is to create as few event rules as possible (C). Per p2899: &#x27;Using a web service API for integration can reduce the number of event rules needed.&#x27; Fewer, broader rules are easier to maintain and perform better. Creating two rules per event (A), as many as possible (B), or one per event (D) all lead to rule sprawl and increased processing overhead." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The best practice is to create as few event rules as possible (C). Per the docs: &#x27;Using a web service API for integration can reduce the number of event rules needed.&#x27; Fewer, broader rules are easier to maintain and perform better. Creating two rules per event (A), as many as possible (B), or one per event (D) all lead to rule sprawl and increased processing overhead." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/r_EMBestPractice.html">
 <h2>Question 26</h2>
 <p class="question-stem">When creating event rules, is it best practice to create:</p>
 <div class="answer-options">
@@ -370,7 +370,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] EM &gt; Event States &gt; Blank Severity: If the event Severity is blank, the state of the event is set to Error (C). Per p3154/p3091, the Error state is applied when the event cannot be processed successfully — a missing Severity field causes a processing failure. Ready (A) is the initial waiting state. Ignored (B) is when an ignore rule applies. Processing/Processing (D) is not a valid final event state." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="If the event Severity is blank, the state of the event is set to Error (C). Per the docs, the Error state is applied when the event cannot be processed successfully — a missing Severity field causes a processing failure. Ready (A) is the initial waiting state. Ignored (B) is when an ignore rule applies. Processing/Processing (D) is not a valid final event state." data-source-url="https://www.servicenow.com/docs/r/employee-service-management/critical-event-management/new-critical-event-form.html">
 <h2>Question 27</h2>
 <p class="question-stem">During processing of the event and if the event Severity is blank, the state of the event is set to:</p>
 <div class="answer-options">
@@ -383,7 +383,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D,E" data-community="true" data-explanation="[Platform] EM &gt; Connector Instance &gt; Key Steps: After creating a new connector instance, the two key steps are: Test the connector (D) and Activate the connector (E). Per p2952: &#x27;Select Test Connector&#x27; to verify the connection, then Activate to enable event collection. Assigning a MID Server (A) and entering credentials (B) are done during creation. Debugging (C) is not a required post-creation step." data-source-url="">
+<div class="question-card" data-answer="D,E" data-community="false" data-explanation="After creating a new connector instance, the two key steps are: Test the connector (D) and Activate the connector (E). Per the docs: &#x27;Select Test Connector&#x27; to verify the connection, then Activate to enable event collection. Assigning a MID Server (A) and entering credentials (B) are done during creation. Debugging (C) is not a required post-creation step." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/configure-prtg-connector.html">
 <h2>Question 28</h2>
 <p class="question-stem">What two key steps must be performed after creating a new connector instance? (Choose two.)</p>
 <div class="answer-options">
@@ -397,7 +397,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,C,E" data-community="false" data-explanation="[Platform] EM &gt; Extra Value &gt; Four Benefits: Four extra values ServiceNow EM provides are: Alerts/incidents/problems/changes correlated with CIs and Business Services (A), managing alert-to-incident relationships end-to-end (B), a business-centric single system of record (C), and MID Server integration with leading monitoring systems (E). State-of-the-art performance monitoring (D) describes what external tools do — EM&#x27;s value is in correlation and consolidation, not raw monitoring." data-source-url="">
+<div class="question-card" data-answer="A,B,C,E" data-community="false" data-explanation="Four extra values ServiceNow EM provides are: Alerts/incidents/problems/changes correlated with CIs and Business Services (A), managing alert-to-incident relationships end-to-end (B), a business-centric single system of record (C), and MID Server integration with leading monitoring systems (E). State-of-the-art performance monitoring (D) describes what external tools do — EM&#x27;s value is in correlation and consolidation, not raw monitoring." data-source-url="">
 <h2>Question 29</h2>
 <p class="question-stem">A customer informs you that they already have monitoring and event management tools.<br />Which of the following describes the extra value that ServiceNow Event Management provides? (Choose four.)</p>
 <div class="answer-options">
@@ -411,7 +411,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] EM &gt; Event Rules &gt; Source Override: To change what the alert Source is set to, you would configure it in the Transform and Compose Alert Output tab (A) of the event rule. Per p3128: &#x27;Since there is no existing name attribute in the event, we can manually create one using the Transform and Compose Alert Output tab in the event rule.&#x27; This tab is where alert field values are mapped and overridden from event data. Event Filter (D) matches events. CI Binding (C) handles CI association." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="To change what the alert Source is set to, you would configure it in the Transform and Compose Alert Output tab (A) of the event rule. Per the docs: &#x27;Since there is no existing name attribute in the event, we can manually create one using the Transform and Compose Alert Output tab in the event rule.&#x27; This tab is where alert field values are mapped and overridden from event data. Event Filter (D) matches events. CI Binding (C) handles CI association." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/t_EMBindServiceCI.html">
 <h2>Question 30</h2>
 <p class="question-stem">You have an event with a Source of ‘Trap from Enterprise 111’, but the alert created for this event shows a Source of ‘Oracle EM’. If you want to change what this is set to, where in the event rule would you do this?</p>
 <div class="answer-options">
@@ -424,7 +424,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="E" data-community="true" data-explanation="[Platform] EM &gt; Agent Client Collector &gt; Policy Checks: Copies of check definitions included in Agent Client Collector policies are known as check instances (E). Per p4140: &#x27;You associate check definitions with policies. Those check definitions are then referred to as check instances&#x27; once they are part of a policy. Check definitions (A) are the original templates. Check models (B), clones (C), and mirrors (D) are not valid ACC terminology." data-source-url="">
+<div class="question-card" data-answer="E" data-community="false" data-explanation="Copies of check definitions included in Agent Client Collector policies are known as check instances (E). Per the docs: &#x27;You associate check definitions with policies. Those check definitions are then referred to as check instances&#x27; once they are part of a policy. Check definitions (A) are the original templates. Check models (B), clones (C), and mirrors (D) are not valid ACC terminology." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/agent-client-collector/domain-separation-agent-client-collector.html">
 <h2>Question 31</h2>
 <p class="question-stem">Copies of checks that have been included in Agent Client Collector policies are known as what?</p>
 <div class="answer-options">
@@ -438,7 +438,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; Connectors &gt; Collection Interval: Baseline event connectors retrieve events every 2 minutes (B) by default. This is the standard connector execution interval in Event Management, equivalent to 120 seconds. Every 30 seconds (A) and every 5 seconds are for other EM scheduled jobs. Every 10 minutes (C) is too slow. Every 1 minute (D) and every 5 minutes (E) are not the baseline connector default." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Baseline event connectors retrieve events every 2 minutes (B) by default. This is the standard connector execution interval in Event Management, equivalent to 120 seconds. Every 30 seconds (A) and every 5 seconds are for other EM scheduled jobs. Every 10 minutes (C) is too slow. Every 1 minute (D) and every 5 minutes (E) are not the baseline connector default." data-source-url="">
 <h2>Question 32</h2>
 <p class="question-stem">How often do baseline event connectors retrieve events?</p>
 <div class="answer-options">
@@ -452,7 +452,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; De-duplication &gt; Correlation Attribute: The message_key attribute (B) correlates multiple events to one alert. Per p3000: &#x27;Where both events must be mapped to the same ServiceNow alert, they should have the same message key.&#x27; The message_key ensures that successive events about the same condition update the same alert rather than creating new ones. Additional_info (A), metric_name (C), and short_description (D) do not perform event correlation." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="The message_key attribute (B) correlates multiple events to one alert. Per the docs: &#x27;Where both events must be mapped to the same ServiceNow alert, they should have the same message key.&#x27; The message_key ensures that successive events about the same condition update the same alert rather than creating new ones. Additional_info (A), metric_name (C), and short_description (D) do not perform event correlation." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/send-events-via-web-service.html">
 <h2>Question 33</h2>
 <p class="question-stem">Which attribute correlates multiple events to one alert?</p>
 <div class="answer-options">
@@ -465,7 +465,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; Event Consolidation &gt; Attribute: The Message Key attribute (B) consolidates events into a single alert. Events with the same Message Key are deduplicated into one alert, keeping it updated rather than creating duplicate alerts. Event Rules (A) process events but don&#x27;t consolidate them — that&#x27;s the message_key&#x27;s role. Alert Priority (C) and Severity (D) are alert attributes, not consolidation keys." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="The Message Key attribute (B) consolidates events into a single alert. Events with the same Message Key are deduplicated into one alert, keeping it updated rather than creating duplicate alerts. Event Rules (A) process events but don&#x27;t consolidate them — that&#x27;s the message_key&#x27;s role. Alert Priority (C) and Severity (D) are alert attributes, not consolidation keys." data-source-url="">
 <h2>Question 34</h2>
 <p class="question-stem">What attribute is used to consolidate events into a single alert?</p>
 <div class="answer-options">
@@ -478,7 +478,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; De-duplication &gt; Exact Match: The Message Key attribute (B) must be exactly the same across events to allow for deduplication into a single alert. Per p3000: events with matching message keys are mapped to the same alert. Metric Name (A) is used for metric identification. Type &amp; Node (C) contribute to the auto-generated message key if left blank. Description (D) and Correlation ID (E) do not drive deduplication." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="The Message Key attribute (B) must be exactly the same across events to allow for deduplication into a single alert. Per the docs: events with matching message keys are mapped to the same alert. Metric Name (A) is used for metric identification. Type &amp; Node (C) contribute to the auto-generated message key if left blank. Description (D) and Correlation ID (E) do not drive deduplication." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/r_EMBestPractice.html">
 <h2>Question 35</h2>
 <p class="question-stem">Which attribute within an event needs to be exactly the same to allow for deduplication?</p>
 <div class="answer-options">
@@ -492,7 +492,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; Connectors &gt; Default Collection Frequency: In default configuration using baseline connectors, event data is collected every 2 minutes (B). This is the default connector execution interval (120 seconds). Once every minute (A) and twice every minute (C) are faster than the default. Every 5 minutes (D) is slower than the default baseline connector interval." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="In default configuration using baseline connectors, event data is collected every 2 minutes (B). This is the default connector execution interval (120 seconds). Once every minute (A) and twice every minute (C) are faster than the default. Every 5 minutes (D) is slower than the default baseline connector interval." data-source-url="">
 <h2>Question 36</h2>
 <p class="question-stem">In default configuration using baseline connectors, how often is event data collected from event sources?</p>
 <div class="answer-options">
@@ -505,7 +505,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="[Platform] EM &gt; ITOM Health &gt; Included Applications: ITOM Health includes Event Management and Operational Intelligence (A). These two applications — Event Management for alert correlation and Operational Intelligence (Metric Intelligence) for anomaly detection — form the ITOM Health/AIOps product. ITOM Visibility (B) includes Discovery and Service Mapping (C). Cloud Management (D) is a separate ITOM product." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="ITOM Health includes Event Management and Operational Intelligence (A). These two applications — Event Management for alert correlation and Operational Intelligence (Metric Intelligence) for anomaly detection — form the ITOM Health/AIOps product. ITOM Visibility (B) includes Discovery and Service Mapping (C). Cloud Management (D) is a separate ITOM product." data-source-url="">
 <h2>Question 37</h2>
 <p class="question-stem">What applications are included in the ITOM Health product?</p>
 <div class="answer-options">
@@ -518,7 +518,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] EM &gt; Main Benefit &gt; Predictive ML: The main benefit of Event Management and Operational Intelligence is to proactively warn against possible service outages using advanced predictive machine learning methods (D). Per p4668/p2872, Metric Intelligence uses ML to identify anomalous CI behavior before outages occur. Improving service availability via issue pinpointing (A) and automation (B) are ITSM benefits. Agentless discovery (C) is a Discovery benefit." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The main benefit of Event Management and Operational Intelligence is to proactively warn against possible service outages using advanced predictive machine learning methods (D). Per the docs, Metric Intelligence uses ML to identify anomalous CI behavior before outages occur. Improving service availability via issue pinpointing (A) and automation (B) are ITSM benefits. Agentless discovery (C) is a Discovery benefit." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/itom-health-landing-page.html">
 <h2>Question 38</h2>
 <p class="question-stem">What is one of the main benefits of using Event Management and Operational Intelligence?</p>
 <div class="answer-options">
@@ -531,7 +531,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] EM &gt; MID Server &gt; Acronym: MID stands for Management, Instrumentation, and Discovery (A). This is the official ServiceNow acronym for the MID Server, reflecting its three core functions: managing connections, instrumenting monitoring, and supporting discovery. The other options (B, C, D) are incorrect expansions of the acronym." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="MID stands for Management, Instrumentation, and Discovery (A). This is the official ServiceNow acronym for the MID Server, reflecting its three core functions: managing connections, instrumenting monitoring, and supporting discovery. The other options (B, C, D) are incorrect expansions of the acronym." data-source-url="">
 <h2>Question 39</h2>
 <p class="question-stem">MID Servers provide important functions in your ITOM Health deployment.<br />What does MID stand for?</p>
 <div class="answer-options">
@@ -544,7 +544,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] EM &gt; Event Processing &gt; Frequency: Out-of-the-box, events get processed every 5 seconds (A). Per p3366, the Event Management event processing job runs every 5 seconds. This near-real-time processing ensures rapid alert generation from incoming events. Every minute via scheduled job (B) is too slow. Processing via business rule on insert (C) is not how EM processes events. The frequency is not connector-dependent (D)." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Out-of-the-box, events get processed every 5 seconds (A). Per the docs, the Event Management event processing job runs every 5 seconds. This near-real-time processing ensures rapid alert generation from incoming events. Every minute via scheduled job (B) is too slow. Processing via business rule on insert (C) is not how EM processes events. The frequency is not connector-dependent (D)." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/r_InstalledWithEventManagement.html">
 <h2>Question 40</h2>
 <p class="question-stem">Out-of-the-box, how often do the events get processed in ServiceNow?</p>
 <div class="answer-options">
@@ -557,7 +557,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="" data-community="false" data-explanation="[Platform] EM &gt; Event Processing &gt; Sequence: Events are processed in this sequence: (1) Event received and stored in em_event, (2) Event rules applied — ignore check, transforms, threshold accumulation, (3) Event field mapping applied, (4) CI binding performed, (5) Alert created or updated, (6) Alert management rules evaluated. This is a HOTSPOT sequence question with no visible options; sequence based on platform knowledge." data-source-url="">
+<div class="question-card" data-answer="" data-community="false" data-explanation="Events are processed in this sequence: (1) Event received and stored in em_event, (2) Event rules applied — ignore check, transforms, threshold accumulation, (3) Event field mapping applied, (4) CI binding performed, (5) Alert created or updated, (6) Alert management rules evaluated. This is a HOTSPOT sequence question with no visible options; sequence based on platform knowledge." data-source-url="">
 <h2>Question 41</h2>
 <p class="question-stem">HOTSPOT -<br />In what sequence are events processed?</p>
 <div class="answer-options">
@@ -566,7 +566,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] EM &gt; Alert Intelligence &gt; Invalid Access Method: &#x27;The application navigator Alerts Console menu item&#x27; (C) is NOT a valid method for accessing alert intelligence. There is no &#x27;Alerts Console&#x27; module in the application navigator for alert intelligence. Valid methods include: right-click menu Open in Workspace (A), appending /workspace to the URL (B), the Alert Intelligence navigator item (D), the Open in Workspace button on an alert (E), and the Lists tab in operator workspace (F)." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="&#x27;The application navigator Alerts Console menu item&#x27; (C) is NOT a valid method for accessing alert intelligence. There is no &#x27;Alerts Console&#x27; module in the application navigator for alert intelligence. Valid methods include: right-click menu Open in Workspace (A), appending /workspace to the URL (B), the Alert Intelligence navigator item (D), the Open in Workspace button on an alert (E), and the Lists tab in operator workspace (F)." data-source-url="">
 <h2>Question 42</h2>
 <p class="question-stem">Which is not a valid method for accessing alert intelligence?</p>
 <div class="answer-options">
@@ -581,7 +581,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] EM &gt; Alert Insights &gt; Top Incidents: Alert Insights (A) is the best place to determine the top incidents for the CI associated with an alert. Alert Insights provides a consolidated view of related incidents, changes, and problems for the CI associated with an alert, enabling quick root cause analysis. Incident List View (B) requires filtering. CMDB Health Dashboard (C) is CI-centric. Event Management Overview (D) shows overall EM status, not per-alert incident details." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Alert Insights (A) is the best place to determine the top incidents for the CI associated with an alert. Alert Insights provides a consolidated view of related incidents, changes, and problems for the CI associated with an alert, enabling quick root cause analysis. Incident List View (B) requires filtering. CMDB Health Dashboard (C) is CI-centric. Event Management Overview (D) shows overall EM status, not per-alert incident details." data-source-url="">
 <h2>Question 43</h2>
 <p class="question-stem">To determine the top incidents for the CI associated with an alert, where is the best place to look?</p>
 <div class="answer-options">
@@ -594,7 +594,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; Agent Client Collector &gt; Framework: Agent Client Collector is built on the Sensu framework (B). Per p4138: &#x27;The Agent Client Collector is built on a Sensu framework and comes installed with monitoring capabilities for servers, databases, application servers, and middleware. It also supports extending monitoring through additional checks from the Sensu community or Nagios-compatible plugins.&#x27; Icinga (A), SolarWinds (C), Nagios (D), and Zabbix (E) are not the ACC framework." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Agent Client Collector is built on the Sensu framework (B). Per the docs: &#x27;The Agent Client Collector is built on a Sensu framework and comes installed with monitoring capabilities for servers, databases, application servers, and middleware. It also supports extending monitoring through additional checks from the Sensu community or Nagios-compatible plugins.&#x27; Icinga (A), SolarWinds (C), Nagios (D), and Zabbix (E) are not the ACC framework." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/agent-client-collector/acc-concept.html">
 <h2>Question 44</h2>
 <p class="question-stem">Agent Client Collector is built on what framework that enables you to adopt and extend monitoring checks from the community?</p>
 <div class="answer-options">
@@ -608,7 +608,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; Alert Priority &gt; Highest Score First: Alert B with priority score 4406020.001 (B) should be processed first. The highest Alert Priority score indicates the most urgent alert requiring immediate attention. Score 4406020.001 (B) &gt; 3306020.001 (C) &gt; 3106020.001 (A). Alerts are not processed in the order received (D) — the priority score determines processing order." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Alert B with priority score 4406020.001 (B) should be processed first. The highest Alert Priority score indicates the most urgent alert requiring immediate attention. Score 4406020.001 (B) &gt; 3306020.001 (C) &gt; 3106020.001 (A). Alerts are not processed in the order received (D) — the priority score determines processing order." data-source-url="">
 <h2>Question 45</h2>
 <p class="question-stem">Based on the information shown, which of the following three alerts should be processed first?</p>
 <div class="answer-options">
@@ -639,7 +639,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="[Platform] EM &gt; Best Practices &gt; Alert Generation: Only events that necessitate action should generate an alert (B). This is the fundamental EM best practice to reduce noise and alert fatigue. Generating alerts for every event (A) creates unnecessary noise. Restricting to only critical events per CI (C) may miss non-critical but actionable issues. Every event on every critical CI (D) would also create excessive noise." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Only events that necessitate action should generate an alert (B). This is the fundamental EM best practice to reduce noise and alert fatigue. Generating alerts for every event (A) creates unnecessary noise. Restricting to only critical events per CI (C) may miss non-critical but actionable issues. Every event on every critical CI (D) would also create excessive noise." data-source-url="">
 <h2>Question 46</h2>
 <p class="question-stem">Applying recommended Event Management best practice guidelines, which of the following events should generate an alert?</p>
 <div class="answer-options">
@@ -652,7 +652,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] EM &gt; Single System of Record &gt; Reason: All applications built by ServiceNow utilize the same data model and code base (C). This shared platform architecture is what makes ServiceNow a single system of record — all products share the same underlying data model, tables, and platform services. ServiceNow is SaaS-hosted (A is wrong), uses its own DB (B is wrong), and a single table doesn&#x27;t house all data (E is wrong)." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="All applications built by ServiceNow utilize the same data model and code base (C). This shared platform architecture is what makes ServiceNow a single system of record — all products share the same underlying data model, tables, and platform services. ServiceNow is SaaS-hosted (A is wrong), uses its own DB (B is wrong), and a single table doesn&#x27;t house all data (E is wrong)." data-source-url="">
 <h2>Question 47</h2>
 <p class="question-stem">What makes all ServiceNow metrics, tasks, services, configuration items, assets, people, locations, and information a single system of record for IT and business processes?</p>
 <div class="answer-options">
@@ -667,7 +667,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,C" data-community="true" data-explanation="[Platform] EM &gt; Performance &gt; Event Processing Issue: The best options are to ensure all Event Management process events jobs are in a Ready state (A) and to add additional event processor jobs (C). Per p2898, scaling up event processing jobs addresses high event volume performance issues. Ensuring jobs are Ready ensures they execute properly. Setting Bucket to 0 (B) is not a standard solution. Disabling multi-node processing (D) would worsen the issue — enabling it would help." data-source-url="">
+<div class="question-card" data-answer="A,C" data-community="false" data-explanation="The best options are to ensure all Event Management process events jobs are in a Ready state (A) and to add additional event processor jobs (C). Per the docs, scaling up event processing jobs addresses high event volume performance issues. Ensuring jobs are Ready ensures they execute properly. Setting Bucket to 0 (B) is not a standard solution. Disabling multi-node processing (D) would worsen the issue — enabling it would help." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/r_EMBestPractice.html">
 <h2>Question 48</h2>
 <p class="question-stem">You have a very large networking environment and have noticed that your event notifications are either not being triggered or are delayed.<br />What are best options to try to resolve this issue? (Choose two.)</p>
 <div class="answer-options">
@@ -680,7 +680,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] EM &gt; Auto Alert Closure &gt; Event Value: An event with a Resolution State of &#x27;Closing&#x27; (C) will automatically close the corresponding alert. Per p3154: &#x27;Closing event state closes corresponding alerts.&#x27; This is the event-level value that triggers alert closure. Severity 0/Clear (E) and Severity -1/OK (A) are event rule configurations that can also close alerts, but the event value that auto-closes is the Resolution State of Closing." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="An event with a Resolution State of &#x27;Closing&#x27; (C) will automatically close the corresponding alert. Per the docs: &#x27;Closing event state closes corresponding alerts.&#x27; This is the event-level value that triggers alert closure. Severity 0/Clear (E) and Severity -1/OK (A) are event rule configurations that can also close alerts, but the event value that auto-closes is the Resolution State of Closing." data-source-url="https://www.servicenow.com/docs/r/employee-service-management/critical-event-management/new-critical-event-form.html">
 <h2>Question 49</h2>
 <p class="question-stem">What event value will auto close an alert?</p>
 <div class="answer-options">
@@ -694,7 +694,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="F" data-community="false" data-explanation="[Platform] EM &gt; Business Service Health &gt; Clear: Based on the impact settings shown in the question (image-dependent), the overall service health is Clear (F). This is a visual question referencing impact settings not available in text form. Community answer is F (Clear), suggesting the configured impact thresholds for the 3-node cluster are not met by the current alert states, resulting in a Clear/healthy overall service status." data-source-url="">
+<div class="question-card" data-answer="F" data-community="false" data-explanation="Based on the impact settings shown in the question (image-dependent), the overall service health is Clear (F). This is a visual question referencing impact settings not available in text form. Community answer is F (Clear), suggesting the configured impact thresholds for the 3-node cluster are not met by the current alert states, resulting in a Clear/healthy overall service status." data-source-url="">
 <h2>Question 50</h2>
 <p class="question-stem">Given the following Impact settings and Alerts in a three node cluster that makes up the components of a Business Service, what is the overall service health of this Business Service?</p>
 <div class="answer-options">
@@ -709,7 +709,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="E" data-community="true" data-explanation="[Platform] EM &gt; Operational Intelligence &gt; Proactive Identification: Operational Intelligence proactively identifies anomalies (E) before they cause service outages. Per p4668: &#x27;Metric Intelligence indicates anomalous behavior of CIs which events might not capture.&#x27; By detecting metric anomalies through ML analysis of historical data, it identifies potential issues before they escalate. Missing CMDB data (A), defects (B), alert correlations (C), and orphaned CIs (D) are not what OI proactively identifies." data-source-url="">
+<div class="question-card" data-answer="E" data-community="false" data-explanation="Operational Intelligence proactively identifies anomalies (E) before they cause service outages. Per the docs: &#x27;Metric Intelligence indicates anomalous behavior of CIs which events might not capture.&#x27; By detecting metric anomalies through ML analysis of historical data, it identifies potential issues before they escalate. Missing CMDB data (A), defects (B), alert correlations (C), and orphaned CIs (D) are not what OI proactively identifies." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/metric-intelligence/operational-intelligence-overview.html">
 <h2>Question 51</h2>
 <p class="question-stem">What does Operational Intelligence proactively identify before they cause service outages?</p>
 <div class="answer-options">
@@ -723,7 +723,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,C" data-community="true" data-explanation="[Platform] EM &gt; ECC Queue &gt; Functions: The three functions of the ECC Queue are: it is a connection point between ServiceNow and the MID Server (A), it contains probe records to be executed (B), and it holds jobs the MID Server needs to perform (C). Per p1036: &#x27;The External Communication Channel (ECC) Queue is a connection point between your ServiceNow instance and other systems... most commonly a MID Server.&#x27; It is not between hardware CIs and MID Server (D), and does not hold CMDB submission records (E)." data-source-url="">
+<div class="question-card" data-answer="A,B,C" data-community="false" data-explanation="The three functions of the ECC Queue are: it is a connection point between ServiceNow and the MID Server (A), it contains probe records to be executed (B), and it holds jobs the MID Server needs to perform (C). Per the docs: &#x27;The External Communication Channel (ECC) Queue is a connection point between your ServiceNow instance and other systems... most commonly a MID Server.&#x27; It is not between hardware CIs and MID Server (D), and does not hold CMDB submission records (E)." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery/r_DiscoveryStatusECCQueue.html">
 <h2>Question 52</h2>
 <p class="question-stem">What is the function of the External Communication Channel (ECC) Queue? (Choose three.)</p>
 <div class="answer-options">
@@ -737,7 +737,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] EM &gt; Regex &gt; Server Name Capture: The correct regex to capture &#x27;webserver3.domain.com&#x27; from &#x27;the server webserver3.domain.com is down&#x27; is .*\s(\w+\.\w+\.\w+).* (C). This pattern matches any text, then whitespace, then captures three word-segments separated by dots (hostname.domain.tld). Per p4021, capture groups use parentheses. Option A is greedy and may not capture correctly. Option B has case mismatch and captures too broadly. Option D captures too much after &#x27;the server&#x27;." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The correct regex to capture &#x27;webserver3.domain.com&#x27; from &#x27;the server webserver3.domain.com is down&#x27; is.*\s(\w+\.\w+\.\w+).* (C). This pattern matches any text, then whitespace, then captures three word-segments separated by dots (hostname.domain.tld). Per the docs, capture groups use parentheses. Option A is greedy and may not capture correctly. Option B has case mismatch and captures too broadly. Option D captures too much after &#x27;the server&#x27;." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/service-operations-workspace-for-itom-apps/extract-compose-fields.html">
 <h2>Question 53</h2>
 <p class="question-stem">The correct regex to capture the name of the server in “the server webserver3.domain.com is down” would be:</p>
 <div class="answer-options">
@@ -750,7 +750,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] EM &gt; Data Normalization &gt; Method: Event field mapping (A) is the recommended approach to normalizing data from a source system to the default values in Event Management. Per p3137: &#x27;Use Event field mapping rules to map values from specific fields to values in other fields.&#x27; Per p3138, event field mapping rules are stored in the em_mapping_rule table and apply after event rules. Transform maps (B) are ITSM import tools. Alert management rules (C) handle alert responses. Business rules (D) are general automation." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Event field mapping (A) is the recommended approach to normalizing data from a source system to the default values in Event Management. Per the docs: &#x27;Use Event field mapping rules to map values from specific fields to values in other fields.&#x27; Per the docs, event field mapping rules are stored in the em_mapping_rule table and apply after event rules. Transform maps (B) are ITSM import tools. Alert management rules (C) handle alert responses. Business rules (D) are general automation." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/c_EMEventFieldMapping.html">
 <h2>Question 54</h2>
 <p class="question-stem">What is the recommended approach to normalizing data from a source system to the default values in Event Management?</p>
 <div class="answer-options">
@@ -763,7 +763,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] EM &gt; CI Binding &gt; Non-Host CI: To bind an event to a non-host CI, the Node attribute must be removed from the Transform and Compose tab (C). Per p2900: &#x27;Bind to host - by populating the Node field.&#x27; The Node attribute triggers host-based CI binding. Removing it forces the system to use other CI identifiers to bind to non-host CIs like applications or services. Source Instance (A), Metric Name (B), and Resource (D) are used for other purposes and do not drive host binding." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="To bind an event to a non-host CI, the Node attribute must be removed from the Transform and Compose tab (C). Per the docs: &#x27;Bind to host - by populating the Node field.&#x27; The Node attribute triggers host-based CI binding. Removing it forces the system to use other CI identifiers to bind to non-host CIs like applications or services. Source Instance (A), Metric Name (B), and Resource (D) are used for other purposes and do not drive host binding." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/r_EMBestPractice.html">
 <h2>Question 55</h2>
 <p class="question-stem">You have an event that needs to be bound to a non-host CI.<br />Which attribute needs to be removed from the Transform and Compose tab?</p>
 <div class="answer-options">
@@ -776,7 +776,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="[Platform] EM &gt; Anomaly Alerts &gt; Alert Intelligence Display: Anomaly alerts are displayed in alert intelligence when they are promoted to IT alerts (B). Per p4703: &#x27;Anomaly alerts are separate from the regular IT alerts, and are not displayed in the Service Operations Workspace. You can define an anomaly alert promotion rule to generate an IT alert.&#x27; Per p4668: &#x27;Anomaly alerts can be promoted to regular IT alerts and appear on the Service Operations Workspace&#x27; (alert intelligence)." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Anomaly alerts are displayed in alert intelligence when they are promoted to IT alerts (B). Per the docs: &#x27;Anomaly alerts are separate from the regular IT alerts, and are not displayed in the Service Operations Workspace. You can define an anomaly alert promotion rule to generate an IT alert.&#x27; Per the docs: &#x27;Anomaly alerts can be promoted to regular IT alerts and appear on the Service Operations Workspace&#x27; (alert intelligence)." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/metric-intelligence/view-metrics-anomaly-alerts.html">
 <h2>Question 56</h2>
 <p class="question-stem">When are anomaly alerts generated by Operational Intelligence displayed in alert intelligence?</p>
 <div class="answer-options">
@@ -789,7 +789,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,C" data-community="true" data-explanation="[Platform] EM &gt; Alert Management &gt; Available Actions: The three possible actions in alert management are: Execute remediation subflows (A), Execute remediation workflows (B), and Launch applications (C). Per p3164: &#x27;Configure the following action types: Remediation Subflows: Execute a subflow... Remediation Workflows... Launch Applications: Open applications and browsers.&#x27; Evaluate business rule (D) and create service catalog request (E) are not standard alert management action types." data-source-url="">
+<div class="question-card" data-answer="A,B,C" data-community="false" data-explanation="The three possible actions in alert management are: Execute remediation subflows (A), Execute remediation workflows (B), and Launch applications (C). Per the docs: &#x27;Configure the following action types: Remediation Subflows: Execute a subflow... Remediation Workflows... Launch Applications: Open applications and browsers.&#x27; Evaluate business rule (D) and create service catalog request (E) are not standard alert management action types." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/create-alert-management-rule.html">
 <h2>Question 57</h2>
 <p class="question-stem">What are the possible actions available in alert management? (Choose three.)</p>
 <div class="answer-options">
@@ -803,7 +803,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; Inbound Email &gt; Event Creation: Inbound actions (B) are the ServiceNow feature configured to process incoming email and create events. Per p3085/p3086: &#x27;Configure event collection from email... Configure an inbound email action to send email notifications when events and alerts are triggered.&#x27; Transforms (A) map data within the platform. Event processing jobs (C) process existing events. Event Filter (D) and Event field mapping (E) operate on events already in the system." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Inbound actions (B) are the ServiceNow feature configured to process incoming email and create events. Per the docs: &#x27;Configure event collection from email... Configure an inbound email action to send email notifications when events and alerts are triggered.&#x27; Transforms (A) map data within the platform. Event processing jobs (C) process existing events. Event Filter (D) and Event field mapping (E) operate on events already in the system." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/t_EMConfigureEmailConnector.html">
 <h2>Question 58</h2>
 <p class="question-stem">What ServiceNow feature would you configure to process incoming email to create events?</p>
 <div class="answer-options">
@@ -817,7 +817,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,C" data-community="true" data-explanation="[Platform] EM &gt; Web Service API &gt; Event Table URIs: The two valid URIs to log events directly to the ServiceNow event table are /api/global/em/jsonv2 (B) and /api/now/table/em_event (C). Per p2998: the EM-specific web service API uses /api/global/em/jsonv2 for batch event insertion. The standard Table API /api/now/table/em_event also supports direct event insertion. The other options (A, D, E) use invalid path structures not matching ServiceNow API conventions." data-source-url="">
+<div class="question-card" data-answer="B,C" data-community="false" data-explanation="The two valid URIs to log events directly to the ServiceNow event table are /api/global/em/jsonv2 (B) and /api/now/table/em_event (C). Per the docs: the EM-specific web service API uses /api/global/em/jsonv2 for batch event insertion. The standard Table API /api/now/table/em_event also supports direct event insertion. The other options (A, D, E) use invalid path structures not matching ServiceNow API conventions." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/send-events-via-web-service.html">
 <h2>Question 59</h2>
 <p class="question-stem">Within a PowerShell script, which two URI’s could you use to log events directly to the ServiceNow event table? (Choose two.)</p>
 <div class="answer-options">
@@ -831,7 +831,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] EM &gt; Alert Management Rules &gt; Order of Execution: All alert management rules run from lowest to highest Order of execution number (C). Per p4020: &#x27;Automations run in order from the lowest&#x27; order number. Multiple matching alert management rules all execute sequentially in ascending order. Only running the highest Order (A) or lowest Order (B) would prevent multiple rules from firing. Rules do not run from highest to lowest Order (D)." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="All alert management rules run from lowest to highest Order of execution number (C). Per the docs: &#x27;Automations run in order from the lowest&#x27; order number. Multiple matching alert management rules all execute sequentially in ascending order. Only running the highest Order (A) or lowest Order (B) would prevent multiple rules from firing. Rules do not run from highest to lowest Order (D)." data-source-url="">
 <h2>Question 60</h2>
 <p class="question-stem">If more than one alert management rule applies to a particular alert, which of the rules will run based upon the Order of execution field?</p>
 <div class="answer-options">
@@ -844,7 +844,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,C,D" data-community="true" data-explanation="[Platform] EM &gt; Alert Processing &gt; Methods: Alerts are processed using Alert management rules (A), Event rules (C), and Scheduled jobs (D). Alert management rules respond to alerts with actions; event rules create and transform alerts; scheduled jobs execute the processing pipeline. &#x27;Event action rules&#x27; (B) are the legacy name for alert management rules, not a separate mechanism. Java and Groovy scripts (E) are not standard EM alert processing mechanisms." data-source-url="">
+<div class="question-card" data-answer="A,C,D" data-community="false" data-explanation="Alerts are processed using Alert management rules (A), Event rules (C), and Scheduled jobs (D). Alert management rules respond to alerts with actions; event rules create and transform alerts; scheduled jobs execute the processing pipeline. &#x27;Event action rules&#x27; (B) are the legacy name for alert management rules, not a separate mechanism. Java and Groovy scripts (E) are not standard EM alert processing mechanisms." data-source-url="">
 <h2>Question 61</h2>
 <p class="question-stem">Alerts are processed using which of the following? (Choose three.)</p>
 <div class="answer-options">
@@ -858,7 +858,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,E" data-community="true" data-explanation="[Platform] EM &gt; Agent Client Collector &gt; Command Types: The individual commands ACC executes produce Events (A), Checks (B), and Metrics (E). Per p4140: &#x27;The commands and their configurations that run on the Agent are called checks.&#x27; Per p4136: checks &#x27;collect various system metrics and events.&#x27; Checks (B) are the commands themselves, while Events (A) and Metrics (E) are the result types. Parameters (C), Policies (D), and Scripts (F) are not what ACC commands are called." data-source-url="">
+<div class="question-card" data-answer="A,B,E" data-community="false" data-explanation="The individual commands ACC executes produce Events (A), Checks (B), and Metrics (E). Per the docs: &#x27;The commands and their configurations that run on the Agent are called checks.&#x27; Per the docs: checks &#x27;collect various system metrics and events.&#x27; Checks (B) are the commands themselves, while Events (A) and Metrics (E) are the result types. Parameters (C), Policies (D), and Scripts (F) are not what ACC commands are called." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/agent-client-collector/exploring-agent-client-collector-framework.html">
 <h2>Question 62</h2>
 <p class="question-stem">The individual commands that the Agent Client Collector executes on the host are known as what? (Choose three.)</p>
 <div class="answer-options">
@@ -873,7 +873,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] EM &gt; Licensing &gt; Basis: Event Management licensing is based on the number of CIs in the CMDB being monitored (D). Per p3306: &#x27;CIs bound to alerts are counted towards licensing; if there are no CIs that are bound to alerts, the event node field is used.&#x27; Licensing counts monitored CIs, not just nodes (A), connectors (B/C), which are secondary metrics." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Event Management licensing is based on the number of CIs in the CMDB being monitored (D). Per the docs: &#x27;CIs bound to alerts are counted towards licensing; if there are no CIs that are bound to alerts, the event node field is used.&#x27; Licensing counts monitored CIs, not just nodes (A), connectors (B/C), which are secondary metrics." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/user-guide.html">
 <h2>Question 63</h2>
 <p class="question-stem">What is Event Management licensing based on?</p>
 <div class="answer-options">
@@ -886,7 +886,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="E" data-community="true" data-explanation="[Platform] EM &gt; Event Error State &gt; Missing Attribute: A missing Severity attribute would cause an event to have an Error state (E). Per p3152: &#x27;Error: Failure occurred while processing the event. For example, the event collection method or event Severity is blank.&#x27; Severity is required for event processing — without it the event cannot be evaluated and enters Error state. Metric Name (A), Source (B), Classification (C), and Node (D) missing do not directly trigger Error state." data-source-url="">
+<div class="question-card" data-answer="E" data-community="false" data-explanation="A missing Severity attribute would cause an event to have an Error state (E). Per the docs: &#x27;Error: Failure occurred while processing the event. For example, the event collection method or event Severity is blank.&#x27; Severity is required for event processing — without it the event cannot be evaluated and enters Error state. Metric Name (A), Source (B), Classification (C), and Node (D) missing do not directly trigger Error state." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/map-kafka-message-payload-attributes-to-alert-fields.html">
 <h2>Question 64</h2>
 <p class="question-stem">What missing attribute would cause an event to have a state of Error?</p>
 <div class="answer-options">
@@ -900,7 +900,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; Agent Client Collector &gt; Policy Changes: Modified ACC policies do not take effect until the policy is republished (B). Publishing distributes the updated policy configuration to agents via the MID Server. Testing a check (A), re-running discovery (C), MID Server synchronization (D), and restarting agents (E) do not apply policy changes — republishing is the required action to propagate modifications." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Modified ACC policies do not take effect until the policy is republished (B). Publishing distributes the updated policy configuration to agents via the MID Server. Testing a check (A), re-running discovery (C), MID Server synchronization (D), and restarting agents (E) do not apply policy changes — republishing is the required action to propagate modifications." data-source-url="">
 <h2>Question 65</h2>
 <p class="question-stem">Modified Agent Client Collector policies do not take effect until what action is taken?</p>
 <div class="answer-options">
@@ -914,7 +914,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] EM &gt; MID Server &gt; AMB Channel: The Asynchronous Messaging Bus (AMB) channel on the MID Server continually queries the External Communication Channel (ECC) queue via a persistent query (D). The AMB maintains a persistent connection to the instance, enabling real-time notification of new work items without constant polling overhead. It does not open inbound connections (A), pass Web Server transactions (B), or send heartbeat data (C) — those are separate mechanisms." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The Asynchronous Messaging Bus (AMB) channel on the MID Server continually queries the External Communication Channel (ECC) queue via a persistent query (D). The AMB maintains a persistent connection to the instance, enabling real-time notification of new work items without constant polling overhead. It does not open inbound connections (A), pass Web Server transactions (B), or send heartbeat data (C) — those are separate mechanisms." data-source-url="">
 <h2>Question 66</h2>
 <p class="question-stem">What does the Asynchronous Messaging Bus (AMB) channel do on the MID Server?</p>
 <div class="answer-options">
@@ -927,7 +927,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] EM &gt; Definition &gt; ITOM Context: Event Management is the process responsible for monitoring all abnormal occurrences throughout the IT infrastructure, allowing for normal operations, and detecting and escalating exception conditions (C). This is the standard ITIL/ITOM definition of event management. Availability management (A) and Capacity management (B) are separate ITIL processes. Recovery through ML (D) describes AI/OI capabilities, not EM&#x27;s core definition." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Event Management is the process responsible for monitoring all abnormal occurrences throughout the IT infrastructure, allowing for normal operations, and detecting and escalating exception conditions (C). This is the standard ITIL/ITOM definition of event management. Availability management (A) and Capacity management (B) are separate ITIL processes. Recovery through ML (D) describes AI/OI capabilities, not EM&#x27;s core definition." data-source-url="">
 <h2>Question 67</h2>
 <p class="question-stem">Within the ServiceNow IT Operations Management solution set, which statement most accurately describes what Event Management is?</p>
 <div class="answer-options">
@@ -940,7 +940,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] EM &gt; Task Creation &gt; Module: Alert Management (D) is the EM module used when creating a task from an alert. Alert management rules configure automated actions including task and incident creation when alert conditions are met. Event Rules (A) process events into alerts. Alert Correlation Rules (B) group related alerts. Task Management (C) is not a standalone EM module for this purpose." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Alert Management (D) is the EM module used when creating a task from an alert. Alert management rules configure automated actions including task and incident creation when alert conditions are met. Event Rules (A) process events into alerts. Alert Correlation Rules (B) group related alerts. Task Management (C) is not a standalone EM module for this purpose." data-source-url="">
 <h2>Question 68</h2>
 <p class="question-stem">When creating a task from an alert what Event Management Module would be used?</p>
 <div class="answer-options">
@@ -953,7 +953,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; Event Rule Transform &gt; Preferred Parsing Method: Regex (B) is the preferred method of parsing in the Transform/Compose step of an event rule. Per p3105, the event rule designer has an explicit regex mode for parsing event data, with built-in UI support for building regex expressions from event field values. Python (A) and sed/awk (C) are not supported. JavaScript (D) is available but regex is the preferred/built-in approach for transform parsing." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Regex (B) is the preferred method of parsing in the Transform/Compose step of an event rule. Per the docs, the event rule designer has an explicit regex mode for parsing event data, with built-in UI support for building regex expressions from event field values. Python (A) and sed/awk (C) are not supported. JavaScript (D) is available but regex is the preferred/built-in approach for transform parsing." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/t_EMComposeOuput.html">
 <h2>Question 69</h2>
 <p class="question-stem">What is the preferred method of parsing in the Transform/Compose step of an event rule?</p>
 <div class="answer-options">
@@ -966,7 +966,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; Operational Intelligence &gt; Push Requirements: To collect metric data via push, a MID Web Server is required in addition to the standard MID Server (B). The MID Web Server extension provides an HTTP endpoint that monitoring sources can push data to. A single MID Server handles pull-based collection (C is wrong). Multiple dedicated MID Servers (A, D) describe distributed deployments, not the core push requirement." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="To collect metric data via push, a MID Web Server is required in addition to the standard MID Server (B). The MID Web Server extension provides an HTTP endpoint that monitoring sources can push data to. A single MID Server handles pull-based collection (C is wrong). Multiple dedicated MID Servers (A, D) describe distributed deployments, not the core push requirement." data-source-url="">
 <h2>Question 70</h2>
 <p class="question-stem">What are the server requirements to allow Operational Intelligence to successfully collect operational metric data via a push?</p>
 <div class="answer-options">
@@ -979,7 +979,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; JavaScript Use Case &gt; Subflow Action: An appropriate use case for writing JavaScript in Event Management is to create a custom action within a subflow (B). Custom subflow actions use JavaScript to implement complex logic not achievable through configuration alone. Changing message key value (A) is done via event rule transforms. Parsing node names (C) is best done with regex (preferred method). Automatically creating incidents (D) is handled via alert management rules." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="An appropriate use case for writing JavaScript in Event Management is to create a custom action within a subflow (B). Custom subflow actions use JavaScript to implement complex logic not achievable through configuration alone. Changing message key value (A) is done via event rule transforms. Parsing node names (C) is best done with regex (preferred method). Automatically creating incidents (D) is handled via alert management rules." data-source-url="">
 <h2>Question 71</h2>
 <p class="question-stem">What would be an appropriate use case for having to write JavaScript in Event Management?</p>
 <div class="answer-options">
@@ -992,7 +992,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] EM &gt; Service Types &gt; Technical Service: A dynamic grouping of CIs based upon common criteria (filtered CI classes) that can be visualized in operator workspace is called a Technical service (B). Per p3330: &#x27;A technical service is a dynamic grouping of CIs based on some common criteria. For example, a technical service could be comprised of all web servers or all Oracle databases for a specific location.&#x27; Application service (C) is a broader category. Manual service (D) is user-defined." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="A dynamic grouping of CIs based upon common criteria (filtered CI classes) that can be visualized in operator workspace is called a Technical service (B). Per the docs: &#x27;A technical service is a dynamic grouping of CIs based on some common criteria. For example, a technical service could be comprised of all web servers or all Oracle databases for a specific location.&#x27; Application service (C) is a broader category. Manual service (D) is user-defined." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/operator-application-services.html">
 <h2>Question 72</h2>
 <p class="question-stem">A dynamic grouping of CIs based upon common criteria (filtered CI classes) that can be visualized in operator workspace is called?</p>
 <div class="answer-options">
@@ -1006,7 +1006,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,D" data-community="true" data-explanation="[Platform] EM &gt; CI Binding &gt; Matching Fields: During CI binding, CI matching is done using the Additional Information field (B) and the Node field (D). Per p3114: &#x27;the system considers all fields in the Additional Information field and attempts to match their values with the CI table.&#x27; Per p3113: &#x27;the node value from the event is compared with various attributes in the host CI.&#x27; Message Key (A) is for deduplication. Source (C) identifies the monitoring tool, not for CI matching." data-source-url="">
+<div class="question-card" data-answer="B,D" data-community="false" data-explanation="During CI binding, CI matching is done using the Additional Information field (B) and the Node field (D). Per the docs: &#x27;the system considers all fields in the Additional Information field and attempts to match their values with the CI table.&#x27; Per the docs: &#x27;the node value from the event is compared with various attributes in the host CI.&#x27; Message Key (A) is for deduplication. Source (C) identifies the monitoring tool, not for CI matching." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/binding-alert-CI-host-default.html">
 <h2>Question 73</h2>
 <p class="question-stem">During CI binding, CI matching is done using which two fields? (Choose two.)</p>
 <div class="answer-options">
@@ -1019,7 +1019,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,F" data-community="true" data-explanation="[Platform] EM &gt; CMDB Health Dashboard &gt; Data Quality Areas: The three areas of data quality the CMDB Health Dashboard focuses on are Correctness (A), Completeness (B), and Compliance (F). These are the standard CMDB health dimensions: Completeness measures if all required attributes are populated, Correctness validates accuracy of data, and Compliance checks adherence to defined standards. Configuration (C), Conciseness (D), and Conformity (E) are not the CMDB Health Dashboard dimensions." data-source-url="">
+<div class="question-card" data-answer="A,B,F" data-community="false" data-explanation="The three areas of data quality the CMDB Health Dashboard focuses on are Correctness (A), Completeness (B), and Compliance (F). These are the standard CMDB health dimensions: Completeness measures if all required attributes are populated, Correctness validates accuracy of data, and Compliance checks adherence to defined standards. Configuration (C), Conciseness (D), and Conformity (E) are not the CMDB Health Dashboard dimensions." data-source-url="">
 <h2>Question 74</h2>
 <p class="question-stem">What three areas of data quality does the CMDB Health Dashboard focus on? (Choose three.)</p>
 <div class="answer-options">
@@ -1034,7 +1034,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; Additional Info Field &gt; Supported Format: JSON (B) is the supported format when sending data from the monitoring source to the additional_info field. Per p3006, the event additional_info field uses JSON format: &#x27;&quot;additional_info&quot;:&quot;{\&quot;name\&quot;:\&quot;My Airlines\&quot;}&quot;.&#x27; XML (A), YAML (C), and comma-separated (D) are not the supported formats for the additional_info field." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="JSON (B) is the supported format when sending data from the monitoring source to the additional_info field. Per the docs, the event additional_info field uses JSON format: &#x27;&quot;additional_info&quot;:&quot;{\&quot;name\&quot;:\&quot;My Airlines\&quot;}&quot;.&#x27; XML (A), YAML (C), and comma-separated (D) are not the supported formats for the additional_info field." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/event-collection-custom-payloads.html">
 <h2>Question 75</h2>
 <p class="question-stem">When sending data from the monitoring source to the additional_info field, what format is supported?</p>
 <div class="answer-options">
@@ -1047,7 +1047,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; Event Rule &gt; Ignore Step: The Event filter step (B) in event rule configuration enables you to ignore events and prevent alert generation. The Event Filter tab defines matching conditions — when the Ignore check box is selected, matching events are not promoted to alerts. Transform and Compose (A) customizes alert content. Event Options (C) is not a standard tab name. Threshold (D) suppresses alerts until a count threshold is met." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="The Event filter step (B) in event rule configuration enables you to ignore events and prevent alert generation. The Event Filter tab defines matching conditions — when the Ignore check box is selected, matching events are not promoted to alerts. Transform and Compose (A) customizes alert content. Event Options (C) is not a standard tab name. Threshold (D) suppresses alerts until a count threshold is met." data-source-url="">
 <h2>Question 76</h2>
 <p class="question-stem">Which step in the event rule configuration process enables you to ignore events and prevent alert generation?</p>
 <div class="answer-options">
@@ -1060,7 +1060,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] EM &gt; Alert States &gt; Flapping: An alert that moves from open to closed multiple times within a designated timeframe is called Flapping (D). Per p3309: flapping &#x27;has fluctuated between a closed and a non-closed state within the flap interval.&#x27; Flapping indicates the underlying condition is unstable, possibly due to thresholds set too low. Fluctuating (A), Swinging (B), and Flipping (C) are not valid ServiceNow alert state names." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="An alert that moves from open to closed multiple times within a designated timeframe is called Flapping (D). Per the docs: flapping &#x27;has fluctuated between a closed and a non-closed state within the flap interval.&#x27; Flapping indicates the underlying condition is unstable, possibly due to thresholds set too low. Fluctuating (A), Swinging (B), and Flipping (C) are not valid ServiceNow alert state names." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/t_EMViewAlert.html">
 <h2>Question 77</h2>
 <p class="question-stem">What is an alert called that moves from an open to a closed state multiple times within a designated time-frame?</p>
 <div class="answer-options">
@@ -1073,7 +1073,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] EM &gt; CMDB Quality &gt; Long-term Approach: Having well-defined Identification, Reconciliation, and Relationship rules (D) is the best approach for ensuring CMDB data quality over time. These rules prevent duplicate CIs, ensure accurate updates from multiple sources, and maintain correct relationships. Manual inventory (A) is unsustainable. Using only Discovery (B) or only scripts (C) are overly restrictive single-source approaches." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Having well-defined Identification, Reconciliation, and Relationship rules (D) is the best approach for ensuring CMDB data quality over time. These rules prevent duplicate CIs, ensure accurate updates from multiple sources, and maintain correct relationships. Manual inventory (A) is unsustainable. Using only Discovery (B) or only scripts (C) are overly restrictive single-source approaches." data-source-url="">
 <h2>Question 78</h2>
 <p class="question-stem">How would you ensure the quality of data in your Configuration Management Database (CMDB) over time?</p>
 <div class="answer-options">
@@ -1086,7 +1086,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] EM &gt; Alert States &gt; Invalid State: Processed (D) is an invalid state for an alert. Valid alert states are Open, Reopen, Flapping, and Closed — as confirmed by p3786-3787. Processed is an event state (for the em_event table), not an alert state. Flapping (A), Closed (B), and Reopen (C) are all valid alert lifecycle states." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Processed (D) is an invalid state for an alert. Valid alert states are Open, Reopen, Flapping, and Closed — as confirmed by -3787. Processed is an event state (for the em_event table), not an alert state. Flapping (A), Closed (B), and Reopen (C) are all valid alert lifecycle states." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/service-reliability-management/sr-alerts-states.html">
 <h2>Question 79</h2>
 <p class="question-stem">Which is an invalid state for an alert?</p>
 <div class="answer-options">
@@ -1099,7 +1099,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] EM &gt; Incident Resolution &gt; Alert Closure: The best method to close an alert when a support agent resolves the associated incident is to set the evt_mgmt.incident_closes_alert property (A). Per p3242: &#x27;When you resolve an incident that is associated with an alert, the alert can also close according to the evt_mgmt.incident_closes_alert property.&#x27; This property automates the closure. evt_mgmt.alert_closes_incident (B) works in the reverse direction. Manual closure (C) and business rules (D, E) are inefficient alternatives." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The best method to close an alert when a support agent resolves the associated incident is to set the evt_mgmt.incident_closes_alert property (A). Per the docs: &#x27;When you resolve an incident that is associated with an alert, the alert can also close according to the evt_mgmt.incident_closes_alert property.&#x27; This property automates the closure. evt_mgmt.alert_closes_incident (B) works in the reverse direction. Manual closure (C) and business rules (D, E) are inefficient alternatives." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/t_EMResolveCloseIncidentAlert.html">
 <h2>Question 80</h2>
 <p class="question-stem">A support agent resolves an incident associated with an alert. What is the best method to close the alert?</p>
 <div class="answer-options">
@@ -1113,7 +1113,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] EM &gt; Impact Calculation &gt; Table: Impacted services for alerts are calculated using data from the svc_ci_assoc table (D). Per p3196: &#x27;Use the Service Configuration Item Association&#x27; table to create the service map for impact calculation. This table maps CIs to their associated application services for impact propagation. cmdb_ci_hardware (A), em_impacted_svc (B), and cmdb_ci_rei (C) are not the table used for service-CI association data." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Impacted services for alerts are calculated using data from the svc_ci_assoc table (D). Per the docs: &#x27;Use the Service Configuration Item Association&#x27; table to create the service map for impact calculation. This table maps CIs to their associated application services for impact propagation. cmdb_ci_hardware (A), em_impacted_svc (B), and cmdb_ci_rei (C) are not the table used for service-CI association data." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/c_EMImpactCalculation.html">
 <h2>Question 81</h2>
 <p class="question-stem">Impacted services for alerts are calculated using data from which table?</p>
 <div class="answer-options">
@@ -1126,7 +1126,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; Terminology &gt; Event vs Alert: A monitoring tool notification of a notable occurrence is known as an event (B). Events are raw notifications sent from external monitoring tools to ServiceNow. After event rules process these raw events, they are promoted to alerts. An alert (A) is a ServiceNow-created record derived from events. A metric (C) is a performance measurement. An alarm (D) is terminology from some external tools, not the ServiceNow EM term." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="A monitoring tool notification of a notable occurrence is known as an event (B). Events are raw notifications sent from external monitoring tools to ServiceNow. After event rules process these raw events, they are promoted to alerts. An alert (A) is a ServiceNow-created record derived from events. A metric (C) is a performance measurement. An alarm (D) is terminology from some external tools, not the ServiceNow EM term." data-source-url="">
 <h2>Question 82</h2>
 <p class="question-stem">A monitoring tool notification of a notable occurrence is known as what?</p>
 <div class="answer-options">
@@ -1139,7 +1139,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; Message Key &gt; Auto-generation: If a Message Key is not provided, the fields Source, Type, Node, Resource, and Metric Name (B) are concatenated to generate one. Per p3154: &#x27;If this value is empty, it is generated from the Source, Node, Type, Resource, and Metric Name field values.&#x27; DNS (A, C) and Source Instance (D) are not part of the auto-generated message key formula." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="If a Message Key is not provided, the fields Source, Type, Node, Resource, and Metric Name (B) are concatenated to generate one. Per the docs: &#x27;If this value is empty, it is generated from the Source, Node, Type, Resource, and Metric Name field values.&#x27; DNS (A, C) and Source Instance (D) are not part of the auto-generated message key formula." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/r_EMBestPractice.html">
 <h2>Question 83</h2>
 <p class="question-stem">If a Message Key is not provided, which fields are concatenated to make our own?</p>
 <div class="answer-options">
@@ -1152,7 +1152,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] EM &gt; Impact Calculation &gt; Cluster Nodes: 3 nodes (D) within the 5-node cluster must be impacted to cause overall service degradation with a 45% influence setting. 3 × 45% = 135%, which exceeds 100% and triggers degradation of the application service. 1 node (B) = 45% and 2 nodes (C) = 90% — both below the 100% threshold required for service degradation. All 5 (A) or 4 (E) nodes exceed what is needed." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="3 nodes (D) within the 5-node cluster must be impacted to cause overall service degradation with a 45% influence setting. 3 × 45% = 135%, which exceeds 100% and triggers degradation of the application service. 1 node (B) = 45% and 2 nodes (C) = 90% — both below the 100% threshold required for service degradation. All 5 (A) or 4 (E) nodes exceed what is needed." data-source-url="">
 <h2>Question 84</h2>
 <p class="question-stem">A load balanced web application has a cluster of 5 Apache nodes. When considering impact calculation with application cluster member rule influence set to 45, how many impacted nodes within that cluster would cause the overall application service to have a degradation of service?</p>
 <div class="answer-options">
@@ -1166,7 +1166,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; Operator Workspace &gt; Service Visibility: A service not viewable in Operator Workspace is most likely not set to operational (B). Services must have their operational status set to &#x27;Operational&#x27; to appear in the Operator Workspace. Manual services (A), Service Mapping-discovered services (C), and technical services (D) are all displayable in Operator Workspace regardless of how they were created." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="A service not viewable in Operator Workspace is most likely not set to operational (B). Services must have their operational status set to &#x27;Operational&#x27; to appear in the Operator Workspace. Manual services (A), Service Mapping-discovered services (C), and technical services (D) are all displayable in Operator Workspace regardless of how they were created." data-source-url="">
 <h2>Question 85</h2>
 <p class="question-stem">A Service is not viewable in Operator Workspace. What could be the issue?</p>
 <div class="answer-options">
@@ -1179,7 +1179,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] EM &gt; Implementation &gt; Guided Setup: Guided setup (D) is the ServiceNow feature that aids in rapid implementation of Event Management and Operational Intelligence. Per p2884: &#x27;Event Management setup using guided setup provides a sequence of tasks that help you configure Event Management on your ServiceNow instance.&#x27; Deployment wizard (A), Step-by-step guide (B), and Checklist application (C) are not the ServiceNow feature name for this capability." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Guided setup (D) is the ServiceNow feature that aids in rapid implementation of Event Management and Operational Intelligence. Per the docs: &#x27;Event Management setup using guided setup provides a sequence of tasks that help you configure Event Management on your ServiceNow instance.&#x27; Deployment wizard (A), Step-by-step guide (B), and Checklist application (C) are not the ServiceNow feature name for this capability." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery/discovery-guided-setup.html">
 <h2>Question 86</h2>
 <p class="question-stem">What ServiceNow feature is an aid to rapid implementation of your Event Management and Operational Intelligence features?</p>
 <div class="answer-options">
@@ -1192,7 +1192,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] EM &gt; Service Data &gt; CSDM: The Common service data model (D) is the standard and shared set of service-related definitions that enable and support true service level reporting. Per p1672: &#x27;The Common Service Data Model (CSDM) helps you streamline service types and service offerings.&#x27; The CSDM is the ServiceNow standard for organizing service-related data across all applications. Service level (A), Business service (B), and Application service (C) data models are not the correct term." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The Common service data model (D) is the standard and shared set of service-related definitions that enable and support true service level reporting. Per the docs: &#x27;The Common Service Data Model (CSDM) helps you streamline service types and service offerings.&#x27; The CSDM is the ServiceNow standard for organizing service-related data across all applications. Service level (A), Business service (B), and Application service (C) data models are not the correct term." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/service-mapping/t_DefineNewBusinessService.html">
 <h2>Question 87</h2>
 <p class="question-stem">The ServiceNow standard and shared set of service-related definitions that enable and support true service level reporting is known as what?</p>
 <div class="answer-options">
@@ -1205,7 +1205,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="E" data-community="true" data-explanation="[Platform] EM &gt; Terminology &gt; Event: A monitoring tool notification of a notable occurrence is known as an event (E). Events are the raw notifications received from external monitoring systems. An alarm (A) and alert (B) are different — alerts are created in ServiceNow after processing events through event rules. An incident (C) is an ITSM record. A notice (D) and metric (F) are different types of data." data-source-url="">
+<div class="question-card" data-answer="E" data-community="false" data-explanation="A monitoring tool notification of a notable occurrence is known as an event (E). Events are the raw notifications received from external monitoring systems. An alarm (A) and alert (B) are different — alerts are created in ServiceNow after processing events through event rules. An incident (C) is an ITSM record. A notice (D) and metric (F) are different types of data." data-source-url="">
 <h2>Question 88</h2>
 <p class="question-stem">A monitoring tool notification of a notable occurrence is known as what?</p>
 <div class="answer-options">
@@ -1220,7 +1220,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] EM &gt; Performance &gt; Latency Reduction: Verifying the bucket field in the em_event table is greater than 0 (A) is the best option to reduce latency issues when receiving events. The bucket field enables batched parallel event processing — when set above 0, events are distributed across processing buckets for concurrent handling. event_processor_job_count = 2 (B) is insufficient context. Setting job count to 0 (C) would stop processing. multi_node = 2 (D) is not a valid property value." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Verifying the bucket field in the em_event table is greater than 0 (A) is the best option to reduce latency issues when receiving events. The bucket field enables batched parallel event processing — when set above 0, events are distributed across processing buckets for concurrent handling. event_processor_job_count = 2 (B) is insufficient context. Setting job count to 0 (C) would stop processing. multi_node = 2 (D) is not a valid property value." data-source-url="">
 <h2>Question 89</h2>
 <p class="question-stem">Which is the best option to reduce latency issues when receiving events?</p>
 <div class="answer-options">
@@ -1233,7 +1233,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] EM &gt; Event Collection &gt; Default Polling Time: The default polling time to collect events from an event source is 120 seconds (D). Per p2919: &#x27;Default schedule: The number of seconds between attempts to receive events&#x27; — the standard connector default is 120 seconds (2 minutes). This is consistent with the connector execution job interval. 5 seconds (A), 30 seconds (B), and 60 seconds (C) are not the default connector polling interval." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The default polling time to collect events from an event source is 120 seconds (D). Per the docs: &#x27;Default schedule: The number of seconds between attempts to receive events&#x27; — the standard connector default is 120 seconds (2 minutes). This is consistent with the connector execution job interval. 5 seconds (A), 30 seconds (B), and 60 seconds (C) are not the default connector polling interval." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/t_EMCreateCustomConnectorDefinition.html">
 <h2>Question 90</h2>
 <p class="question-stem">The default polling time to collect events from an event source is:</p>
 <div class="answer-options">
@@ -1246,7 +1246,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,D" data-community="true" data-explanation="[Platform] EM &gt; Large Networks &gt; Improvement Methods: Two methods to improve event processing in large network environments are: Enable multi-node processing (A) and Increase the number of scheduled jobs processing events (D). Per p2898, scaling up involves adding more processing capacity. Multi-node processing (A) distributes load across nodes. More scheduled jobs (D) adds parallel processing capacity. Increasing polling interval (B) reduces event frequency. Bucket value &gt; 0 (C) is for latency, not processing capacity." data-source-url="">
+<div class="question-card" data-answer="A,D" data-community="false" data-explanation="Two methods to improve event processing in large network environments are: Enable multi-node processing (A) and Increase the number of scheduled jobs processing events (D). Per the docs, scaling up involves adding more processing capacity. Multi-node processing (A) distributes load across nodes. More scheduled jobs (D) adds parallel processing capacity. Increasing polling interval (B) reduces event frequency. Bucket value &gt; 0 (C) is for latency, not processing capacity." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/r_EMBestPractice.html">
 <h2>Question 91</h2>
 <p class="question-stem">Which two methods can be used to improve the processing of events in large network environments? (Choose two.)</p>
 <div class="answer-options">
@@ -1259,7 +1259,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] EM &gt; Operator Workspace &gt; Not Displayed: The Event Management operator workspace cannot display Correlation groups (D). The operator workspace displays alert groups (A), manual application services (B), discovered application services from Service Mapping (C), and technical services (E). Correlation groups are an internal alert correlation mechanism and are not a displayable service type in the operator workspace." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The Event Management operator workspace cannot display Correlation groups (D). The operator workspace displays alert groups (A), manual application services (B), discovered application services from Service Mapping (C), and technical services (E). Correlation groups are an internal alert correlation mechanism and are not a displayable service type in the operator workspace." data-source-url="">
 <h2>Question 92</h2>
 <p class="question-stem">The Event Management operator workspace can display all of the following except?</p>
 <div class="answer-options">
@@ -1273,7 +1273,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] EM &gt; Event Rule Parsing &gt; Method: Within an event rule, you would use a Regex statement (D) to parse a nodename out of raw event data. Per p3105, the event rule designer has a built-in regex mode specifically for parsing event fields, making it the preferred parsing approach. JavaScript (A) is available but not the recommended method for nodename parsing. Groovy (B) is deprecated. PowerShell (C) is not applicable within event rules." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Within an event rule, you would use a Regex statement (D) to parse a nodename out of raw event data. Per the docs, the event rule designer has a built-in regex mode specifically for parsing event fields, making it the preferred parsing approach. JavaScript (A) is available but not the recommended method for nodename parsing. Groovy (B) is deprecated. PowerShell (C) is not applicable within event rules." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/t_EMCreateCustomConnectorDefinition.html">
 <h2>Question 93</h2>
 <p class="question-stem">Within an event rule, how would you parse a nodename out of your raw event data?</p>
 <div class="answer-options">
@@ -1286,7 +1286,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; Event-Alert Matching &gt; Field: If events are not matching to alerts as desired, the Message Key field (B) should be changed. The message key determines which events correlate to the same alert — events with matching message keys are consolidated into one alert. Adjusting the message key ensures correct event-to-alert mapping. Resource (A), Node (C), and Metric Name (D) affect other aspects of event processing but not event-to-alert matching/deduplication." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="If events are not matching to alerts as desired, the Message Key field (B) should be changed. The message key determines which events correlate to the same alert — events with matching message keys are consolidated into one alert. Adjusting the message key ensures correct event-to-alert mapping. Resource (A), Node (C), and Metric Name (D) affect other aspects of event processing but not event-to-alert matching/deduplication." data-source-url="">
 <h2>Question 94</h2>
 <p class="question-stem">If events are not matching to alerts as you would like, what field should be changed?</p>
 <div class="answer-options">
@@ -1299,7 +1299,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] EM &gt; Message Key &gt; Default Fields: If the Message Key is not populated, the default value is created from Source, type, node, resource, and metric name (A). Per p3154: &#x27;If this value is empty, it is generated from the Source, Node, Type, Resource, and Metric Name field values.&#x27; Source instance (B, D) and time of event (E) are not part of the auto-generated message key. The metric name is included (eliminating C)." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="If the Message Key is not populated, the default value is created from Source, type, node, resource, and metric name (A). Per the docs: &#x27;If this value is empty, it is generated from the Source, Node, Type, Resource, and Metric Name field values.&#x27; Source instance (B, D) and time of event (E) are not part of the auto-generated message key. The metric name is included (eliminating C)." data-source-url="https://www.servicenow.com/docs/r/employee-service-management/critical-event-management/new-critical-event-form.html">
 <h2>Question 95</h2>
 <p class="question-stem">If the Message Key is not populated, the default value is created from which fields?</p>
 <div class="answer-options">
@@ -1313,7 +1313,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true" data-explanation="[Platform] EM &gt; Error State &gt; Required Value: Processing creates an Error state if the Severity value is not set (C). Per p3152: &#x27;Error: Failure occurred while processing the event. For example, the event collection method or event Severity is blank.&#x27; Severity is a required field for event processing. Node (A), Source (B), Message Key (D), and Resource (E) missing do not directly trigger Error state." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Processing creates an Error state if the Severity value is not set (C). Per the docs: &#x27;Error: Failure occurred while processing the event. For example, the event collection method or event Severity is blank.&#x27; Severity is a required field for event processing. Node (A), Source (B), Message Key (D), and Resource (E) missing do not directly trigger Error state." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/map-kafka-message-payload-attributes-to-alert-fields.html">
 <h2>Question 96</h2>
 <p class="question-stem">Processing on an event will create a state of error if what value is not set?</p>
 <div class="answer-options">
@@ -1327,7 +1327,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] EM &gt; CI Binding &gt; Node Matching Fields: When performing CI Binding, Event Management matches the Node to CI Name, FQDN, IP, and MAC Address (D). Per p3115/p3113: &#x27;The system compares the Node with attributes like Name, FQDN, IP, or MAC Address in the CMDB to find a match.&#x27; Option A uses DNS instead of FQDN. Option B has System class name instead of CI name. Option C has SSH keys instead of IP/MAC." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="When performing CI Binding, Event Management matches the Node to CI Name, FQDN, IP, and MAC Address (D). Per the docs: &#x27;The system compares the Node with attributes like Name, FQDN, IP, or MAC Address in the CMDB to find a match.&#x27; Option A uses DNS instead of FQDN. Option B has System class name instead of CI name. Option C has SSH keys instead of IP/MAC." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/ci-matching-ci-is-host.html">
 <h2>Question 97</h2>
 <p class="question-stem">When performing CI Binding, what fields does Event Management match to the Node?</p>
 <div class="answer-options">
@@ -1340,7 +1340,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; Alert Processing &gt; Priority Order: Alert0010003 (B) should be processed first based on the highest Alert Priority score. This question references a visual/image showing alert priority data not available in text form. Per EM best practices, alerts with the highest priority score are processed first. Community consensus (100%) indicates B has the highest priority score among the listed alerts." data-source-url="">
+<div class="question-card" data-answer="B" data-community="true" data-explanation="Alert0010003 (B) should be processed first based on the highest Alert Priority score. This question references a visual/image showing alert priority data not available in text form. Per EM best practices, alerts with the highest priority score are processed first. Community consensus (100%) indicates B has the highest priority score among the listed alerts." data-source-url="">
 <h2>Question 98</h2>
 <p class="question-stem">Applying recommended Event Management best practice guidelines, which of the following alerts should be processed first?</p>
 <div class="answer-options">
@@ -1353,7 +1353,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; Roles &gt; Minimum Alert View Role: The minimum role needed to view alerts is evt_mgmt_user (B). Per p3207: role required includes &#x27;evt_mgmt_user&#x27; as the lowest level role that can view alerts. evt_mgmt_user is the view-only access role for Event Management. evt_mgmt_operator (C) has additional action capabilities but is not the minimum. alert_operator (A) and alert_user (D) are not standard EM roles." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="The minimum role needed to view alerts is evt_mgmt_user (B). Per the docs: role required includes &#x27;evt_mgmt_user&#x27; as the lowest level role that can view alerts. evt_mgmt_user is the view-only access role for Event Management. evt_mgmt_operator (C) has additional action capabilities but is not the minimum. alert_operator (A) and alert_user (D) are not standard EM roles." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/t_EMViewTopology.html">
 <h2>Question 99</h2>
 <p class="question-stem">What is the minimum role needed to view alerts?</p>
 <div class="answer-options">
@@ -1366,7 +1366,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] EM &gt; Alert Lifecycle &gt; Idle Closure: By default, idle alerts are closed after 7 days (A). Per p3025, the 7-day threshold is referenced as the default interval after which closed alerts are not re-opened. The 30-day interval (C) applies to retaining open event data. 14 days (B) is not the default. Alerts are not kept indefinitely (D) — they are closed after the idle threshold." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="By default, idle alerts are closed after 7 days (A). Per the docs, the 7-day threshold is referenced as the default interval after which closed alerts are not re-opened. The 30-day interval (C) applies to retaining open event data. 14 days (B) is not the default. Alerts are not kept indefinitely (D) — they are closed after the idle threshold." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/event-collection-MicrosoftAzure.html">
 <h2>Question 100</h2>
 <p class="question-stem">By default, when are idle alerts are closed?</p>
 <div class="answer-options">
@@ -1379,7 +1379,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] EM &gt; CI Binding &gt; Application Binding: CI identification rules (D) are used to correctly bind an alert to an application CI. Per p3127: when a matching application CI (e.g., IIS Web Server) is found on the host using CI identification rules, the alert is bound to the correct application CI rather than just the host machine. Correlation rules (A) group alerts. Workflows (B) automate responses. Classifiers (C) identify CI types during Discovery." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="CI identification rules (D) are used to correctly bind an alert to an application CI. Per the docs: when a matching application CI (e.g., IIS Web Server) is found on the host using CI identification rules, the alert is bound to the correct application CI rather than just the host machine. Correlation rules (A) group alerts. Workflows (B) automate responses. Classifiers (C) identify CI types during Discovery." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/bind-alerts-CI-app-host-monitoring.html">
 <h2>Question 101</h2>
 <p class="question-stem">What is used to correctly bind an alert to an application?</p>
 <div class="answer-options">
@@ -1392,7 +1392,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] EM &gt; Alert Management &gt; Quick Response URL: To create a quick response alert rule that opens a web search on the alert description, you configure it under Launch Applications (A) in alert management rules. Per p3164: &#x27;Launch Applications: Open applications and browsers that you configure.&#x27; This action type opens URLs and browser-based applications as a response to alerts. Remediation Workflows (B) and Subflows (C) execute automated tasks. Operator Workspace (D) is the UI view." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="To create a quick response alert rule that opens a web search on the alert description, you configure it under Launch Applications (A) in alert management rules. Per the docs: &#x27;Launch Applications: Open applications and browsers that you configure.&#x27; This action type opens URLs and browser-based applications as a response to alerts. Remediation Workflows (B) and Subflows (C) execute automated tasks. Operator Workspace (D) is the UI view." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/create-alert-management-rule.html">
 <h2>Question 102</h2>
 <p class="question-stem">If you wanted to create a quick response alert rule to open an Ask Jeeves search on the description of the alert, where would it configured?</p>
 <div class="answer-options">
@@ -1405,7 +1405,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] EM &gt; Alert Form &gt; Priority Breakdown: The Priority Breakdown for an alert is found under the More Information section (A) of the alert form. This section displays the calculated priority score breakdown showing the contribution of each category (Business services, Severity, CI type, Role, State) to the overall alert priority score. Activities (B) shows work history. History (C) shows event times. CI Problems (D) shows related CI issues." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The Priority Breakdown for an alert is found under the More Information section (A) of the alert form. This section displays the calculated priority score breakdown showing the contribution of each category (Business services, Severity, CI type, Role, State) to the overall alert priority score. Activities (B) shows work history. History (C) shows event times. CI Problems (D) shows related CI issues." data-source-url="">
 <h2>Question 103</h2>
 <p class="question-stem">Where would you find the Priority Breakdown for an Alert?</p>
 <div class="answer-options">
@@ -1418,7 +1418,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] EM &gt; Alert Grouping &gt; Operator Feedback: An operator gives feedback on an automated alert grouping via the Feedback attribute on the alert record (D). Per p3308/p3309, the Feedback field is available on the alert form record where operators can indicate whether the automated grouping is correct or not. Per p3309: &#x27;the feedback option is available but does not trigger further actions after being logged.&#x27; Virtual alert (A) and child alert (B) feedback attributes are not the standard location." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="An operator gives feedback on an automated alert grouping via the Feedback attribute on the alert record (D). Per the docs, the Feedback field is available on the alert form record where operators can indicate whether the automated grouping is correct or not. Per the docs: &#x27;the feedback option is available but does not trigger further actions after being logged.&#x27; Virtual alert (A) and child alert (B) feedback attributes are not the standard location." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/t_EMViewAlert.html">
 <h2>Question 104</h2>
 <p class="question-stem">Where does an operator give feedback on an automated alert grouping?</p>
 <div class="answer-options">
@@ -1432,7 +1432,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="E" data-community="true" data-explanation="[Platform] EM &gt; Alert Grouping &gt; No Grouping Occurring: If no CMDB, automated, or text-based grouping is occurring, the most likely cause is that the alert correlation property that enables grouping is set to false (E). Per p3257, each grouping type (CMDB, ML-based automation, text-based) has its own property that must be enabled. If the master correlation property is false, all grouping types are disabled. No correlation rules (A) would only affect rule-based grouping, not automated and text-based." data-source-url="">
+<div class="question-card" data-answer="E" data-community="false" data-explanation="If no CMDB, automated, or text-based grouping is occurring, the most likely cause is that the alert correlation property that enables grouping is set to false (E). Per the docs, each grouping type (CMDB, ML-based automation, text-based) has its own property that must be enabled. If the master correlation property is false, all grouping types are disabled. No correlation rules (A) would only affect rule-based grouping, not automated and text-based." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/run-multiple-alert-group-scheduled-jobs.html">
 <h2>Question 105</h2>
 <p class="question-stem">In your environment, no alert CMDB, automated, or text based grouping is occurring. What is most likely the problem?</p>
 <div class="answer-options">
@@ -1446,7 +1446,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="true" data-explanation="[Platform] EM &gt; Additional Info &gt; JSON Format: The supported JSON string format for the additional_info field is {&quot;CPU&quot;:&quot;100&quot;} (D) — with string values in quotes. ServiceNow EM requires the additional_info field values to be strings (not raw integers). Option A has an integer value without quotes. Option B is malformed JSON. Option C has mixed types (string and integer). D with string values only is the correct supported format." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The supported JSON string format for the additional_info field is {&quot;CPU&quot;:&quot;100&quot;} (D) — with string values in quotes. ServiceNow EM requires the additional_info field values to be strings (not raw integers). Option A has an integer value without quotes. Option B is malformed JSON. Option C has mixed types (string and integer). D with string values only is the correct supported format." data-source-url="">
 <h2>Question 106</h2>
 <p class="question-stem">The additional information field is a JSON string that gives more information about an event. An example of a supported JSON string is:</p>
 <div class="answer-options">
@@ -1459,7 +1459,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true" data-explanation="[Platform] EM &gt; SNMP Traps &gt; Required Configuration: For SNMP trap notifications to appear in ServiceNow as events, the MID SNMP trap listener (A) must be enabled on the required MID Server. Per p3082: &#x27;Use the MID SNMP Trap Listener to listen for SNMP traps. In this configuration, the specified MID Server acts as a collection endpoint for SNMP traps.&#x27; SNMP event manager (B), event collector extension (C), and SNMP agent (D) are not the correct module names." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="For SNMP trap notifications to appear in ServiceNow as events, the MID SNMP trap listener (A) must be enabled on the required MID Server. Per the docs: &#x27;Use the MID SNMP Trap Listener to listen for SNMP traps. In this configuration, the specified MID Server acts as a collection endpoint for SNMP traps.&#x27; SNMP event manager (B), event collector extension (C), and SNMP agent (D) are not the correct module names." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/event-management/t_EMSNMPTrapEvent.html">
 <h2>Question 107</h2>
 <p class="question-stem">In order for SNMP trap notifications to appear in ServiceNow as events, what option must be enabled in the required MID server?</p>
 <div class="answer-options">
@@ -1472,7 +1472,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="E" data-community="true" data-explanation="[Platform] EM &gt; Agent Client Collector &gt; Self-Monitoring Pause: ACC self-monitoring pauses data collection when the amount of host CPU being utilized by the agent exceeds a threshold (E). This protects the host system from being overwhelmed by the monitoring agent&#x27;s own resource consumption. Loss of MID server communication (A) or instance communication (C) would affect connectivity, not trigger a pause. Memory (B) and disk space (D) thresholds do not trigger collection pause." data-source-url="">
+<div class="question-card" data-answer="E" data-community="false" data-explanation="ACC self-monitoring pauses data collection when the amount of host CPU being utilized by the agent exceeds a threshold (E). This protects the host system from being overwhelmed by the monitoring agent&#x27;s own resource consumption. Loss of MID server communication (A) or instance communication (C) would affect connectivity, not trigger a pause. Memory (B) and disk space (D) thresholds do not trigger collection pause." data-source-url="">
 <h2>Question 108</h2>
 <p class="question-stem">What event will cause Agent Client Collector self-monitoring to pause data collection?</p>
 <div class="answer-options">
@@ -1486,7 +1486,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="true" data-explanation="[Platform] EM &gt; Agent Client Collector &gt; Application Service Monitoring: ACC can perform application service monitoring by configuring a proxy agent (B). Per p4205, proxy agents allow ACC to monitor external services and CIs that are not on the local host — enabling application service monitoring. An alert management rule (A) handles alert responses. A distributed cluster (C) provides HA for agent monitoring. Event rule (D) processes events. A REST API (E) is not an ACC configuration option." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="ACC can perform application service monitoring by configuring a proxy agent (B). Per the docs, proxy agents allow ACC to monitor external services and CIs that are not on the local host — enabling application service monitoring. An alert management rule (A) handles alert responses. A distributed cluster (C) provides HA for agent monitoring. Event rule (D) processes events. A REST API (E) is not an ACC configuration option." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/agent-client-collector/assign-proxy-cluster-policy.html">
 <h2>Question 109</h2>
 <p class="question-stem">Agent Client Collector can perform application service monitoring by configuring what option?</p>
 <div class="answer-options">
