@@ -2353,8 +2353,22 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,C" data-community="false" data-explanation="Audience configuration options are: select specific individual users (A), define conditions against the User table via User Filters (B), and select specific predefined groups (C). The three tabs are Users, Groups, and User Filters. ACLs (D), Group table conditions (E), and User Criteria (F) are not standard audience configuration methods." data-source-url="">
+<div class="question-card" data-answer="B,E" data-community="false" data-explanation="When a risk is in the Assess state during a classic risk assessment, assessors can: (B) Answer the assessment - the primary action in Assess state, and (E) Return the risk to Draft via the Return to draft action. The docs show Assess state actions include Save, View assessment, Cancel assessment, and Return to draft. You cannot delete (A), deactivate (C), or move directly to Monitor (D) from Assess." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-risk-management-workspace/risk-lifecycle-using-advanced-risk.html">
 <h2>Question 174</h2>
+<p class="question-stem">What can assessors do when a risk is in the state of Assess on a classic risk assessment? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Delete the risk</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Answer the assessment</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Deactivate the risk</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Set the risk to Monitor</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> Set the risk back to Draft</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
+</div>
+<div class="question-card" data-answer="A,B,C" data-community="false" data-explanation="Audience configuration options are: select specific individual users (A), define conditions against the User table via User Filters (B), and select specific predefined groups (C). The three tabs are Users, Groups, and User Filters. ACLs (D), Group table conditions (E), and User Criteria (F) are not standard audience configuration methods." data-source-url="">
+<h2>Question 175</h2>
 <p class="question-stem">What choices do implementers have when configuring an audience for policy acknowledgements? (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Select specific users</div>
@@ -2369,7 +2383,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B,E" data-community="false" data-explanation="Two rule types govern the exception process: Verification rules (B) gate who verifies the request, and Approval rules (E) define multi-level approval flows. Alert (A), Entity class (C), Initial Approval (D), and Notification (F) are not defined rule types in the GRC Approval Configurator for policy exceptions." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/policy-and-compliance-management/define-approval-rules-grc-config.html">
-<h2>Question 175</h2>
+<h2>Question 176</h2>
 <p class="question-stem">What rules can be set up to manage policy exceptions? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Alert rule</div>
@@ -2384,7 +2398,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,C" data-community="false" data-explanation="ServiceNow applications outside GRC providing indicator templates when activated are Event Management (A) and Vulnerability Response (C). These integrations extend GRC monitoring with event-based and vulnerability indicators respectively. Customer Service Management (B), Configuration Compliance (D), and Security Incident Response (E) do not provide GRC indicator templates on activation." data-source-url="">
-<h2>Question 176</h2>
+<h2>Question 177</h2>
 <p class="question-stem">Which ServiceNow applications outside of the GRC suite of applications provide indicator templates when activated? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Event Management</div>
@@ -2398,7 +2412,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="The Entity table (renamed from Profile in prior releases) has the technical name sn_grc_profile(s) (B), in the GRC: Profiles (sn_grc) application scope. sn_compliance_entities (A) and sn_grc_entities (C) do not exist. sn_compliance_profiles (D) incorrectly combines the compliance scope prefix with the profile table suffix." data-source-url="">
-<h2>Question 177</h2>
+<h2>Question 178</h2>
 <p class="question-stem">What is the technical name of the table that contains entities?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> sn_compliance_entities</div>
@@ -2411,7 +2425,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="The Technology Controls Monitoring Accelerator content pack provides Indicator templates (C) as its primary records — 273 templates for CIS v7 (94 Basic, 174 Manual, 5 Scripted) plus 67 for CIS v8. Assessment templates (A), PA indicator templates (B), and test plan templates (D) are not the primary content type delivered by this accelerator." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-common-functions/indicator-templates-for-ctrls.html">
-<h2>Question 178</h2>
+<h2>Question 179</h2>
 <p class="question-stem">What are the primary records provided in the Technology Controls content pack?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Assessment templates</div>
@@ -2424,7 +2438,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,D" data-community="false" data-explanation="Enabling exceptions from a non-GRC application (e.g. HR) requires: Integration Registry (A) to map the non-GRC source table, and an Exception questionnaire (D) for the request form. Approval rules (B), risk rules (C), and verification rules (E) are optional GRC-internal configurations not required for non-GRC integration." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/policy-and-compliance-management/request-pe-from-vr.html">
-<h2>Question 179</h2>
+<h2>Question 180</h2>
 <p class="question-stem">What must an implementer configure to allow users to submit a policy exception from a non-GRC application like HR? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Integration registry</div>
@@ -2438,7 +2452,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="To roll up quantitative ALE values, the implementer updates the &quot;Calculate ALE based on&quot; field (C) on the RAM, designating which source record column stores the residual ALE result after assessment. This field only appears when Assessment contribution is Quantitative or Both. Options A and D are not valid RAM fields; B governs qualitative score calculation." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-risk-management-workspace/configure-control-assess.html">
-<h2>Question 180</h2>
+<h2>Question 181</h2>
 <p class="question-stem">If an implementer wanted to roll-up the quantitative values for a risk assessment methodology, what field would they update on the RAM?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Roll-up scores</div>
@@ -2450,8 +2464,21 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The default value for the policy exception valid to date system property is 30 days. This property controls how far in the future the Valid To date is set when creating a new policy exception. The GRC Policy and Compliance properties page allows administrators to configure this value." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-compliance-management-workspace/request-policy-exception-ws.html">
+<h2>Question 182</h2>
+<p class="question-stem">What is the default value for the policy exception valid to date stored in a system property?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> 30</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> 60</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> 90</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> 365</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
+</div>
 <div class="question-card" data-answer="B,E" data-community="false" data-explanation="GRC Business User Lite can respond to GRC issues assigned to them (B) and take/respond to a risk assessment (E). They cannot group control attestations (A — requires full business_user), approve advanced risk assessments (C — separate role configuration required), or create risk assessments (D — restricted to higher roles)." data-source-url="">
-<h2>Question 181</h2>
+<h2>Question 183</h2>
 <p class="question-stem">What actions can be executed by a user with the GRC Business User Lite role? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Group control attestations</div>
@@ -2465,7 +2492,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="Basic indicators (D) use platform automation — an indicator source specifying a table and collection frequency — to automatically collect records for continuous monitoring. Scripted indicators (B) use custom scripts. Manual indicators (A) use assigned tasks. &quot;Automatic&quot; (C) is not a valid indicator type; the automated type is called Basic." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-risk-management-workspace/manage-indicators-risk.html">
-<h2>Question 182</h2>
+<h2>Question 184</h2>
 <p class="question-stem">Which indicator type uses platform automation to collect records for continuous monitoring?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Manual</div>
@@ -2478,7 +2505,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="Risk score rollup (C) is exclusive to Advanced Risk — scores are aggregated across risk statement hierarchy and entity hierarchy to provide rolled-up risk posture visibility. Classic Risk does not support score rollup/aggregation. Risk indicator management (A), risk response (B), and risk score tracking (D) exist in both classic and advanced risk." data-source-url="">
-<h2>Question 183</h2>
+<h2>Question 185</h2>
 <p class="question-stem">What feature does the GRC: Advanced Risk application have that is not available in the GRC: Risk Management (Classic Risk) application?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Risk indicator management</div>
@@ -2491,7 +2518,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C,E" data-community="false" data-explanation="Control Objective has m2m relationships with: Citation (C) — via Content Reference to Control Objective [sn_grc_m2m_cont_ref_ps]; and Policy (E) — a control objective can belong to multiple policies and vice versa. Authority Document (A) relates via Citations, not directly. Control (B) and Risk (D) have direct (not m2m) relationships to Control Objectives." data-source-url="">
-<h2>Question 184</h2>
+<h2>Question 186</h2>
 <p class="question-stem">What tables can be related to the Control Objective table with a many-to-many relationship? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Authority Document</div>
@@ -2505,7 +2532,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="The GRC Properties module under the Policy and Compliance menu exposes System Properties for the GRC: Profiles (sn_grc) application scope (C). Option D (Policy and Compliance scope) is incorrect. Options A (Entities scope) and B (all GRC scopes) do not accurately describe the module&#x27;s scope." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/policy-and-compliance-management/pre-req-policy-redlining.html">
-<h2>Question 185</h2>
+<h2>Question 187</h2>
 <p class="question-stem">What is located in the GRC Properties module under the Policy and Compliance application menu?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> System Properties for GRC: Entities scope</div>
@@ -2518,7 +2545,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="Common controls are generated by converting an existing standard control (B) using the &quot;Convert to Common&quot; UI action. There is no direct creation or auto-generation path for common controls. Options A and D (child records) are not valid approaches. Option C (direct creation) is explicitly excluded by documentation." data-source-url="https://www.servicenow.com/docs/r/yokohama/governance-risk-compliance/grc-compliance-management-workspace/common-controls-multiple-rel-entities.html">
-<h2>Question 186</h2>
+<h2>Question 188</h2>
 <p class="question-stem">How can common controls be generated?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Create a common control as a child of a control objective</div>
@@ -2531,7 +2558,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="When a standard control is selected as a reliant entity on a common control, the standard control&#x27;s state changes to Retired (C). The common control inherits responsibility for testing. The standard control is not deleted (A). &quot;Converted&quot; (B) is not a valid control state. Option D (no change) is incorrect." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-compliance-management-workspace/convert-standard-control-common.html">
-<h2>Question 187</h2>
+<h2>Question 189</h2>
 <p class="question-stem">What happens to the standard control if it is selected to become a reliant entity on a common control?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Standard control is deleted</div>
@@ -2544,7 +2571,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="Doc The docs state controls in the Review state are automatically moved there — confirming Review (A) is the automatic next state once all control attestations are completed. After the compliance manager reviews results in Review, controls advance to Monitor for ongoing monitoring. Lifecycle: Draft -&gt; Attest -&gt; Review -&gt; Monitor -&gt; Retired." data-source-url="">
-<h2>Question 188</h2>
+<h2>Question 190</h2>
 <p class="question-stem">What state do controls enter once all control attestations are completed?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Review</div>
@@ -2558,7 +2585,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="The Audit Approver [sn_audit.approver] (C) is the persona who approves engagements and audit plans, including formal approval to release audit content to external auditors. Audit Admin (A) manages application configuration; Audit Process Owner (B) is a functional stakeholder; Audit Engagement Project Manager (D) manages execution, not formal release approval." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/audit-management/r_InstallWAudit.html">
-<h2>Question 189</h2>
+<h2>Question 191</h2>
 <p class="question-stem">What persona approves the release of the content for auditors outside the organization?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Audit application technical admin</div>
@@ -2571,7 +2598,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="E" data-community="false" data-explanation="Creating a Risk Assessment Methodology requires the Advanced Risk Assessment Admin [sn_risk_advanced.ara_admin] role (E), as RAM creation is an administrative configuration task. ara_assessor (A) is for taking assessments; sn_risk.manager (B) governs standard risk; sn_risk.user (C) is read/participate; ara_creator (D) is not a valid Advanced Risk role name." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-risk-management-workspace/roles-for-ara.html">
-<h2>Question 190</h2>
+<h2>Question 192</h2>
 <p class="question-stem">What is the minimum role required to create a new RAM?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> sn_risk_advanced.ara_assessor</div>
@@ -2585,7 +2612,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="Rollup Configuration options appear on a RAM only when Assessment Context is set to Risk (A). This context assesses an entity and its related risk statements, requiring score propagation through a rollup hierarchy. Object context (D) assesses arbitrary records without rollup; Entity (B) and blank (C) are not valid Assessment Context values." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/privacy-workspace/risk-assessment-methodology-form-prm.html">
-<h2>Question 191</h2>
+<h2>Question 193</h2>
 <p class="question-stem">What circumstances will cause the Rollup Configuration options to only appear on a risk assessment methodology?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> RAM context is Risk</div>
@@ -2598,7 +2625,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="When auto-update is enabled but the source record owner field is cleared, the entity owner remains unchanged (C). The auto-update only pushes non-empty values; a cleared source field does not clear the entity owner. The Default owner field on the entity filter ensures every entity always retains an owner. Options A, B, and D do not reflect the documented behaviour." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-common-functions/enhancements-for-entities.html">
-<h2>Question 192</h2>
+<h2>Question 194</h2>
 <p class="question-stem">What happens if an entity is set to auto-update the owner value from the source record and the value on the source record field has been cleared?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> The entity owner will be cleared</div>
@@ -2611,7 +2638,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="From within a GRC application, users can submit policy exceptions without any additional configuration (B) — the built-in exception workflow is natively available. Integration Registry (A) and Exception questionnaire (D) are only required when integrating non-GRC applications with the exception process." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/policy-and-compliance-management/request-pe-from-vr.html">
-<h2>Question 193</h2>
+<h2>Question 195</h2>
 <p class="question-stem">What must an implementer configure to allow users to submit a policy exception from a GRC application?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Integration registry</div>
@@ -2626,7 +2653,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="Appetite scales (A) are configurable — administrators define and map qualitative appetite scales to risk rating criteria to calculate appetite status. Tolerance scales (B) are derived from appetite scales. Appetite status (C) and Tolerance status (E) are calculated outputs, not user-configured definitions. Appetite roles (D) is not a risk appetite concept." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-risk-management-workspace/risk-appetite-fields-on-entity.html">
-<h2>Question 194</h2>
+<h2>Question 196</h2>
 <p class="question-stem">What risk appetite definitions are configurable versus customizable?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Appetite scales</div>
@@ -2640,7 +2667,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="Entity classes serve two primary purposes — enabling hierarchical reporting (grouping entities for dashboards and metrics) and supporting advanced risk assessment (RAM applicability and risk appetite are defined per entity class) (C). Entity ownership (A) is an entity record attribute, not the purpose of entity classes. Option D describes GRC item-to-content relationships." data-source-url="">
-<h2>Question 195</h2>
+<h2>Question 197</h2>
 <p class="question-stem">What is the overall goal of entity classes?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> To provide specific information about an Entity, such as who owns the Entity</div>
@@ -2653,7 +2680,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="Indicator templates in the Technology Controls content pack are connected to the ISO 27002 regulation via the Related source IDs (C) field, which stores cross-framework regulatory reference identifiers enabling multi-standard mapping. Options A and B reference non-existent field names; D (UCF Content Reference ID) maps to UCF content, not ISO 27002 specifically." data-source-url="">
-<h2>Question 196</h2>
+<h2>Question 198</h2>
 <p class="question-stem">In the Technology Controls content pack, some of the indicator templates are related to the ISO 27002 regulation. What field connects the indicator templates to the regulation?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> ISO 27002 Control Objective ID</div>
@@ -2666,7 +2693,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="All tables in the GRC: Advanced Risk application scope use the prefix sn_risk_advanced_ (A), e.g. sn_risk_advanced_risk_assessment_methodology and sn_risk_advanced_factor. The prefix sn_risk_ara_ (B) does not exist; sn_advanced_risk_ (C) and sn_ara_ (D) are not ServiceNow Advanced Risk table naming conventions." data-source-url="">
-<h2>Question 197</h2>
+<h2>Question 199</h2>
 <p class="question-stem">What is the prefix for tables in the Advanced Risk scope?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> sn_risk_advanced_</div>
@@ -2679,7 +2706,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,C" data-community="false" data-explanation="The GRC Business User role permits: taking risk assessments (A) when assigned as an assessor, and participating in group attestations (C). Business users have read access to policies and control objectives and can submit issues or exceptions. Grouping issues (B), creating policies (D), and creating risks (E) require manager or admin roles." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/policy-and-compliance-management/r_InstallWPolAndCompl.html">
-<h2>Question 198</h2>
+<h2>Question 200</h2>
 <p class="question-stem">What actions can be executed by a user with the GRC Business User role? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Take risk assessments</div>
@@ -2693,7 +2720,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="The GRC: Technology Controls Monitoring Accelerator delivers Indicator templates (D) as its primary pre-built content for automating cybersecurity control monitoring. Risk templates (A) belong to GRC: Risk Management; Metric templates (B) are not a GRC template type; Control test templates (C) belong to GRC: Audit Management." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-common-functions/indicator-templates-for-ctrls.html">
-<h2>Question 199</h2>
+<h2>Question 201</h2>
 <p class="question-stem">What templates are provided in the GRC: Technology Controls Monitoring Accelerator application?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Risk templates</div>
@@ -2706,7 +2733,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="The Risk assessment planning section uses a Playbook (A) — the Risk assessment scope playbook — to guide users through defining the RAM, scoping entities, and initiating assessments. Runbooks (B) are an IT Operations feature; Guidebook (C) and Now Assist (D) are not the guided workflow function for RAM instance generation." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-risk-management-workspace/create-risk-asses-scope-workspace.html">
-<h2>Question 200</h2>
+<h2>Question 202</h2>
 <p class="question-stem">Using the Risk Workspace, the Risk assessment planning section allows a user to generate RAM instances. What is the ServiceNow guided set up function used?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Playbook</div>
@@ -2719,7 +2746,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="E" data-community="false" data-explanation="The Policy table [sn_compliance_policy] is related to Control Objectives via the m2m table sn_compliance_m2m_policy_statement (E). Risk (A), Authority Document (B), Citation (C), and Control (D) are not directly related to Policy via an m2m relationship — they connect through other parts of the GRC content hierarchy." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-compliance-management-workspace/convert-standard-control-common.html">
-<h2>Question 201</h2>
+<h2>Question 203</h2>
 <p class="question-stem">What table can be related to the Policy table with a many-to-many relationship?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Risk</div>
@@ -2733,7 +2760,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="The Reviewer field (D) on the Policy record defines which users can perform the redlining function once Office 365/OneDrive integration is configured. Reviewers are designated policy collaborators with edit and mark-up access. Contributor (A), Knowledgebase Admin (B), and Acknowledgement Manager (C) do not govern redlining access." data-source-url="">
-<h2>Question 202</h2>
+<h2>Question 204</h2>
 <p class="question-stem">What policy field defines who can perform the redlining function once the integration with Office 365 is configured for a customer?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Contributor</div>
@@ -2746,7 +2773,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="The minimum role to use the Scheduled Assessments module and generate RAM instances is Risk Manager [sn_risk.manager] (D). Risk Manager can schedule and initiate assessments. Risk User (A) can only participate; Risk Admin (B) has full access but is not the minimum; Sys Admin (C) has platform-wide access but is not the minimum GRC-specific role." data-source-url="">
-<h2>Question 203</h2>
+<h2>Question 205</h2>
 <p class="question-stem">What minimum role is required to use the Scheduled assessments module to generate RAM instances on the workspace?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Risk User</div>
@@ -2759,7 +2786,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="The Compliance Score (B) field is stored on the Entity Type record, representing the aggregate compliance score calculated across all entities of that type. Entity Class (A) is a separate dimensional record; Entity Owner (C) and Auto-Update flag (D) are on the individual Entity record; Source (E) is an Entity record field, not an Entity Type attribute." data-source-url="">
-<h2>Question 204</h2>
+<h2>Question 206</h2>
 <p class="question-stem">Which attribute is stored on the entity type record?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Entity Class</div>
@@ -2773,7 +2800,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="The Entity Class (D) record maintains the primary RAM displayed on the entity record, defining the applicable risk framework for groups of similarly classified entities. The Entity record (A) displays the RAM but does not define it; Entity Type (B) scopes GRC items; Entity Tier (C) is not a standard GRC term." data-source-url="https://www.servicenow.com/docs/r/washingtondc/governance-risk-compliance/grc-common-functions/create-new-entity-class-ws.html">
-<h2>Question 205</h2>
+<h2>Question 207</h2>
 <p class="question-stem">What record maintains the primary Risk Assessment Methodology that is displayed on the entity record?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Entity</div>
@@ -2786,7 +2813,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="The Technology Controls Monitoring Accelerator indicator templates are directly related to CIS Controls (A) — specifically CIS Controls v7.1 and v8 authority documents and their citations. ISO 27002 (B) links via Related source IDs; SOX (C) and COBIT (D) are not directly mapped as citation sources in this content pack." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-common-functions/cybersecurity-controls-accelerator.html">
-<h2>Question 206</h2>
+<h2>Question 208</h2>
 <p class="question-stem">In the Technology Controls content pack, what citations are directly related to the indicator templates?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> CIS Controls</div>
@@ -2799,7 +2826,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B,C" data-community="false" data-explanation="The Advanced Audit application adds Resource plans (B) and Cost plans (C) via PPM integration, creating an equivalent PPM project for each engagement. Observation management (A) is standard audit functionality; WBS structure (D) is not added by Advanced Audit; auto-generation of audit tasks (E) is a standard feature, not specific to Advanced Audit." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/audit-management/r_InstallWAudit.html">
-<h2>Question 207</h2>
+<h2>Question 209</h2>
 <p class="question-stem">What additional capabilities does the Advanced Audit application provide? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Observation management</div>
@@ -2813,7 +2840,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="Group factor assessment responses are converted to a score using the Qualitative Transformation Criteria (A) defined on the group factor, mapping response value ranges to score values. Factor Contribution Criteria (B) governs individual factor contribution; Aggregation method (C) and Factor Weights (D) are not the scoring transformation mechanism." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-risk-management-workspace/define-group-factor.html">
-<h2>Question 208</h2>
+<h2>Question 210</h2>
 <p class="question-stem">How are advanced risk assessment responses to a group factor turned into a score?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> By Qualitative Transformation Criteria on the Group Factor</div>
@@ -2826,7 +2853,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="The GRC Profile Generation scheduled job (D) generates entities from entity filters by scanning filter conditions and creating entity records from matching source table records. Despite the Zurich rename from &quot;Profile&quot; to &quot;Entity&quot;, the scheduled job retains the legacy name. GRC Cleanup (A) removes stale records; GRC Entity/Item Generation (B, C) are not valid job names." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/operational-resilience-dashboard/conf-end-to-end-wf-for-ser.html">
-<h2>Question 209</h2>
+<h2>Question 211</h2>
 <p class="question-stem">What is the name of the job that generates entities from the entity filters?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> GRC Cleanup</div>
@@ -2839,7 +2866,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="E,F" data-community="false" data-explanation="Indicator templates support Sample size (E), defining how many records are evaluated per execution, and Supporting data fields (F), specifying additional data collected with each indicator run. Tracking options (A), Virtualization options (B), User Criteria (C), and Alert rules (D) are not configurable attributes on indicator templates." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-risk-management-workspace/create-a-manual-indicator-risk-ws.html">
-<h2>Question 210</h2>
+<h2>Question 212</h2>
 <p class="question-stem">What attributes can be set on an indicator template? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Tracking options</div>

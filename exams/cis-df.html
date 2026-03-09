@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Foundations - SN Vault</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-31ECVZFP70"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-31ECVZFP70');
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="site-title"><a href="../index.html">SN Vault</a></div>
+            <nav>
+                <a href="../index.html">Home</a> <span class="nav-sep">/</span> <span class="nav-current">Data Foundations</span>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="quiz-banner"><a href="../quiz/cis-df.html">Test yourself on Data Foundations &rarr;</a></div>
+<div class="ai-notice">Answers verified with AI using ServiceNow documentation. Exercise your own judgement.</div>
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The Correctness scorecard on the CMDB Health Dashboard tracks stale CIs. Per ServiceNow docs, Correctness is a KPI aggregating Orphan, Staleness, and Duplicate metrics. The Staleness metric measures the percentage of stale CIs that have not been updated within a specified duration (default 60 days). Therefore, Correctness (A) is the scorecard that displays information about stale CIs." data-source-url="https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/r_CMDBHealthMetrics.html">
+<h2>Question 1</h2>
+<p class="question-stem">A CMDB Administrator would like to minimize stale CIs in the CMDB.<br />Which CMDB Health Dashboard scorecard displays this information?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Correctness</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Compliance</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Completeness</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
+</div>
+<div class="question-card" data-answer="" data-community="false" data-explanation="This drag-and-drop question asks to match application service types to descriptions but the specific items and descriptions are not included in the scraped text (they were in an image). In CSDM, key application service types include Application Service (logical), Business Application (business-facing), Technical Service (infrastructure-level), and Entry Point. Without the visible drag items, a precise mapping cannot be determined." data-source-url="">
+<h2>Question 2</h2>
+<p class="question-stem">DRAG DROP -<br />Drag and drop the application service type to the best description.</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
+</div>
+<div class="question-card" data-answer="D" data-community="false" data-explanation="To add a custom CI class in the CMDB, you need sn_cmdb_admin (to manage CMDB classes) and personalize_dictionary (to create new fields/tables). cmdb_inst_admin (A) is not the correct role for class creation. itil_admin (B) lacks CMDB class management permissions. data_classification_admin (C) is for data classification. personalize_form only allows form layout changes, not the dictionary changes needed for new classes." data-source-url="">
+<h2>Question 3</h2>
+<p class="question-stem">A new custom class is needed to reflect a new application being managed in the CMDB.<br />Which roles are minimally needed to add this custom CI class?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> A cmdb_inst_admin and personalize_form</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> itil_admin and personalize_form</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> data_classification_admin and personalize_dictionary</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> sn_cmdb_admin and personalize_dictionary</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
+</div>
+<div class="question-card" data-answer="D" data-community="false" data-explanation="In the CMDB, the relationship between an application and a server uses the &quot;Runs on&quot; relationship type. From the application perspective it &quot;Runs on&quot; the server, and from the server perspective the application &quot;Runs&quot; on it. The correct notation is Application&gt;Runs on::Runs&gt;Server (D). The docs confirm dependent relationships like &quot;RunsOn&quot; (e.g., tomcat RunsOn Hardware) are used by the IRE for CI identification." data-source-url="https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/c_CIRelationships.html">
+<h2>Question 4</h2>
+<p class="question-stem">What is the relationship between an application and a server?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Application>Used by::Uses>Server</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Application> Uses::Used by>Server</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Application>Runs::Runs On>Server</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Application>Runs on::Runs>Server</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
+</div>
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Discovery automatically creates relationships between CIs in the CMDB. Per the docs: &quot;The relationships between CIs can be automatically discovered. If you use Discovery, many relationships can be automatically loaded into the system through the discovery process.&quot; While Service Mapping also discovers relationships, the question asks specifically about &quot;automatic relationships&quot; which is the core function of Discovery (B)." data-source-url="https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/c_CIRelationships.html">
+<h2>Question 5</h2>
+<p class="question-stem">Which ServiceNow solution creates automatic relationships?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> IntegrationHub ETL</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Discovery</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Workflow Studio</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Service Mapping</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
+</div>
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The CMDB Data Foundations Dashboard Playbooks (CSDB is the abbreviation used in the option) provide structured guidelines for troubleshooting CMDB health issues like missing serial numbers. Option A is not the official name. Option D uses CSDM (Common Service Data Model) instead of CMDB/CSDB. Option B refers to CSDM Now Create which is about framework content, not CI data quality troubleshooting." data-source-url="">
+<h2>Question 6</h2>
+<p class="question-stem">A CMDB Administrator is reviewing the health of the CMDB and notices a large percentage of the Hardware CIs are missing serial numbers. The Administrator is concerned this may cause duplicate CIs and would like to resolve the issue in a timely manner.<br />What structured guidelines provided by ServiceNow are available to troubleshoot and resolve the issue?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> CMDB Health Dashboards Playbooks</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> CSDM Now Create Playbooks</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> CSDB Data Foundations Dashboard Playbooks</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> CSDM Data Foundations Dashboard Playbooks</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
+</div>
+<div class="question-card" data-answer="B,C" data-community="false" data-explanation="The CMDB Health Dashboard evaluates data quality through three KPIs: Correctness, Completeness, and Compliance. Under Correctness, the metrics include Orphan, Staleness (Stale CIs), and Duplicate (Duplicate CIs). The answer choices B (State CIs, referring to Stale CIs) and C (Duplicate CIs) match the Staleness and Duplicate metrics under the Correctness KPI. Missing CIs (A), Downgraded CIs (D), and Upgraded CIs (E) are not CMDB Health Dashboard metrics." data-source-url="https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/r_CMDBHealthMetrics.html">
+<h2>Question 7</h2>
+<p class="question-stem">Configuration Management needs to ensure data quality for all CIs in the CMDB.<br />What areas of data quality for CIs are in the CMDB Health Dashboard? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Missing CIs</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> State CIs</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Duplicate CIs</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Downgraded CIs</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> Upgraded CIs</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
+</div>
+<div class="question-card" data-answer="A" data-community="false" data-explanation="CMDB Data Manager generates tasks (such as life-cycle, certification, and attestation tasks) for CMDB class owners. These tasks appear under the My Work tab in CMDB Workspace, where users can review, approve, cancel, reject, or reassign them. The docs confirm: &quot;Navigate to Workspaces &gt; CMDB Workspace and then select My Work in the CMDB Workspace menu bar&quot; to review Data Manager tasks." data-source-url="https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/data-manager-review-task-wrkspc.html">
+<h2>Question 8</h2>
+<p class="question-stem">CMDB class owners are receiving tasks under the ‘My Work’ tab in the CMDB Workspace.<br />Which CMDB management tool is generating these tasks?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> CMDB Data Manager</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> De-duplication templates</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> CMDB Health Dashboard</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
+</div>
+<div class="question-card" data-answer="C,D" data-community="false" data-explanation="In ServiceNow reconciliation rules, a LOWER priority number means HIGHER precedence. (C) Altiris can update SCCM records because Altiris has higher priority than SCCM. (D) SCCM can insert new records regardless of priority - all sources can insert. (A) is wrong because SCCM has the lowest priority and cannot update records from higher-priority sources. (B) is wrong because ServiceNow has the highest priority and can update any record." data-source-url="">
+<h2>Question 9</h2>
+<p class="question-stem">The following Reconciliation Rules were configured for ServiceNow, Altiris, and SCCM:<br /><br />Which are true? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Data collected with a discovery source of SCCM can update any record in the Windows Server [cmdb_ci_win_server] table because it has the highest priority number.</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Data collected with a discovery source of ServiceNow can insert new records into the Windows Server [cmdb_ci_win_server] table, but cannot update records created by Altiris or SCCM.</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Data collected with a discovery source of Altiris can update records inserted by SCCM into the Windows Server [cmdb_ci_win_server] table.</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Data collected with a discovery source of SCCM can be inserted as new records in the Windows Server [cmdb_ci_win_server] table.</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
+</div>
+    </main>
+    <footer class="site-footer">
+        SN Vault &mdash; ServiceNow Exam Questions &amp; Answers
+    </footer>
+    <script src="../js/browse.js"></script>
+</body>
+</html>
