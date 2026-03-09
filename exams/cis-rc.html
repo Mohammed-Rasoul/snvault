@@ -1607,8 +1607,15 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C,D,E" data-community="false" data-explanation="A RAM can enable three assessment types: Residual Assessment (C), Inherent Assessment (D), and Control Assessment (E). Operational (A), Application (B), and Project (F) are not valid RAM assessment type options in ServiceNow Advanced Risk configuration." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 119</h2>
+<p class="question-stem">Which of the following is not used to source control data for a customer’s control framework?<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											ServiceNow Product documentation<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Customer’s existing controls<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											An external regulatory content provider<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											ServiceNow content packs and accelerators</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="C,D,E" data-community="false" data-explanation="A RAM can enable three assessment types: Residual Assessment (C), Inherent Assessment (D), and Control Assessment (E). Operational (A), Application (B), and Project (F) are not valid RAM assessment type options in ServiceNow Advanced Risk configuration." data-source-url="">
+<h2>Question 120</h2>
 <p class="question-stem">What assessment types can be enabled when configuring a risk assessment methodology (RAM)? (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Operational Risk Assessment</div>
@@ -1623,7 +1630,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="The compliance chain is Authority Documents -&gt; Citations -&gt; Control Objectives -&gt; Controls. Citations (from authority documents) are mapped to control objectives (D), and compliance is tracked when controls are tested compliant or non-compliant. A incorrectly scopes citations to entity controls; C incorrectly maps authority docs directly to control objectives." data-source-url="">
-<h2>Question 120</h2>
+<h2>Question 121</h2>
 <p class="question-stem">How does GRC: Policy and Compliance Management track compliance to Authority Documents?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Citations are mapped to entity-scoped controls, which are tested as compliant or non-compliant.</div>
@@ -1636,7 +1643,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,B,E" data-community="false" data-explanation="GRC scoped apps require entitlements for all environments (A), all components have namespace prefixes like sn_grc_, sn_risk_, sn_compliance_ (B), and restrict access to available data by scope (E). They do NOT provide access to all global data (C) — that is a misconception. D is incorrect — sys_metadata is scoped to their own application." data-source-url="">
-<h2>Question 121</h2>
+<h2>Question 122</h2>
 <p class="question-stem">What are some of the features of scoped applications for GRC? (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Requires an entitlement for all environments</div>
@@ -1650,7 +1657,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,B,E" data-community="false" data-explanation="GRC: Profiles scope (sn_grc_) contains: sn_grc_profile_type (A — Entity Type), sn_grc_indicator (B — Indicator), and sn_grc_profile_class (E — Entity Class). sn_grc_compliance_policy_statement (C) is in the compliance scope. sn_grc_risk_definition (D) is in the risk scope, not Profiles scope." data-source-url="">
-<h2>Question 122</h2>
+<h2>Question 123</h2>
 <p class="question-stem">Which of the following tables exist within the GRC: Profiles application scope? (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> sn_grc_profile_type</div>
@@ -1664,7 +1671,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="true" data-explanation="The policy owner (D) can request approval and complete the workflow on the policy record. Moving from Review to Awaiting Approval is requesting approval — an action initiated by the policy owner. Reviewers (C) can edit in Review but cannot advance the workflow. The compliance manager (B) requests the initial move from Draft to Review." data-source-url="">
-<h2>Question 123</h2>
+<h2>Question 124</h2>
 <p class="question-stem">Who can move a Policy record from Review into the next state?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> The sys admin</div>
@@ -1677,7 +1684,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="Risk Statement [sn_risk_definition] (D) extends the Content [sn_grc_content] table — Content is the parent for citation-like framework records. Risk Record [sn_risk_risk] (A) extends Item, not Content. Risk Framework (B) extends Document. Risk Response Task (C) extends Task. Risk Statement is the Content-level definition record." data-source-url="">
-<h2>Question 124</h2>
+<h2>Question 125</h2>
 <p class="question-stem">Which table extends from the Content Table?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Risk Record</div>
@@ -1690,7 +1697,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="When an Entity Type is assigned to a Control Objective, ServiceNow automatically generates one control record for every entity within that entity type (C). This is the core auto-generation feature. No assessment (A), policy (B), or compliance score display (D) is auto-generated by this assignment." data-source-url="">
-<h2>Question 125</h2>
+<h2>Question 126</h2>
 <p class="question-stem">What happens when you assign an Entity Type to a Control Objective?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> An assessment is automatically generated to test each Entity listed in the Entity Type</div>
@@ -1703,7 +1710,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,B,C" data-community="false" data-explanation="Baseline tables commonly used in Entity filters are Company [core_company] (A), Services [cmdb_ci_service] (B), and Location [cmn_location] (C). These CSDM tables represent the organizational scope for entity populations. Risk [sn_risk_risk] (D) and Audit Engagement [sn_audit_engagement] (E) are GRC output tables, not entity source/filter tables." data-source-url="">
-<h2>Question 126</h2>
+<h2>Question 127</h2>
 <p class="question-stem">What are some of the baseline tables commonly leveraged in Entity filters? (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Company [core_company]</div>
@@ -1717,7 +1724,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="sn_audit.external_auditor (C) is designed for external audit teams needing read-only access to view published policies, controls, and audit records. sn_audit_manager (A) and sn_compliance_user (B) are internal roles with write privileges. sn_risk_user (D) provides risk-specific access, not audit/policy views for external parties." data-source-url="">
-<h2>Question 127</h2>
+<h2>Question 128</h2>
 <p class="question-stem">An external audit team needs to view all of your published policies and controls? Which role can you give the team members?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> sn_audit_manager</div>
@@ -1730,7 +1737,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="In audit terminology, an Observation is commonly called a Finding (D). Audit observations/findings are results of audit reviews, interviews, and analysis brought to the attention of audit supervisors. Evidence (A) supports a finding. Engagement (B) is the audit project. Problem (C) is an ITSM concept." data-source-url="">
-<h2>Question 128</h2>
+<h2>Question 129</h2>
 <p class="question-stem">An Observation can also be commonly known as what during an audit?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Evidence</div>
@@ -1743,7 +1750,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="The GRC: Workbench Dependency Map (C), accessed at $grc_workbench.do in Classic UI, is the mapping capability for relating entities within entity classes and defining dependency relationships. Entity Class Mapper (A) and GRC Entity Mapper (D) do not exist as GRC tools. Entity Workbench (B) is not a standard GRC Classic UI feature." data-source-url="">
-<h2>Question 129</h2>
+<h2>Question 130</h2>
 <p class="question-stem">What mapping capability in the Classic UI allows customers to relate specific Entities to each other within an Entity Class?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Entity Class Mapper</div>
@@ -1755,8 +1762,15 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 131</h2>
+<p class="question-stem">While management of a company must set the stage for all improvement efforts, which of these 5S’s is primarily driven by management?<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Straighten<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Sort<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Shine<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Sustain</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="The Risk Criteria Matrix (B) is the most frequently configured classic risk feature — it defines qualitative impact and likelihood rating scales, score thresholds, and color-coded risk appetite bands. ALE (A) is a less-used quantitative feature. Control Failure Factor (C) and Indicator Failure Factor (D) are auto-calculated, not manually configured by customers." data-source-url="">
-<h2>Question 130</h2>
+<h2>Question 132</h2>
 <p class="question-stem">Which feature of classic risk scoring is frequently configured by customers?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Annualized Loss Expectancy</div>
@@ -1769,7 +1783,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B,C,F" data-community="false" data-explanation="ServiceNow supports three policy migration methods: via API (B), created manually in the UI (C), and imported from existing spreadsheets via import sets (F). PDFs (A) cannot be directly imported as policy records. UCF (D) is for authority documents/citations, not policies. Regulatory websites (E) are not a supported direct import source." data-source-url="">
-<h2>Question 131</h2>
+<h2>Question 133</h2>
 <p class="question-stem">Which methods does ServiceNow support when migrating new policies? (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> They can be imported from PDFs</div>
@@ -1784,7 +1798,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="Document [sn_grc_document] is extended by Risk Framework [sn_risk_framework], Policy [sn_compliance_policy], and Authority Document [sn_compliance_authority_document] (C). Policy extends Document (confirmed ). Risk Statement, Control Objective, and Citation (D) all extend Content [sn_grc_content]. Risk and Control (A) extend Item [sn_grc_item]." data-source-url="">
-<h2>Question 132</h2>
+<h2>Question 134</h2>
 <p class="question-stem">Which collection of tables extend the Document table?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Risk, Control</div>
@@ -1797,7 +1811,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,C" data-community="false" data-explanation="Authority Document [sn_compliance_authority_document] and Policy Exception [sn_compliance_policy_exception] are both installed as part of the GRC: Policy and Compliance Management application scope. Assessment (B) belongs to the platform Assessment module; Audit Task (D) belongs to GRC: Audit Management." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/policy-and-compliance-management/approve-lib-import-task.html">
-<h2>Question 133</h2>
+<h2>Question 135</h2>
 <p class="question-stem">Which of the following tables are within the GRC: Policy and Compliance Management application scope? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Authority Document</div>
@@ -1810,7 +1824,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C,E" data-community="false" data-explanation="UCF imports two types of content into ServiceNow: Authority Documents (C) via the Default Authority Document transform, and Citations (E) via the Default Citation Transform. Policies (A), Risks (B), and Issues (D) are not ingested from UCF — UCF Controls map to Control Objectives, not to those records." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/policy-and-compliance-management/configure-UCF-integration.html">
-<h2>Question 134</h2>
+<h2>Question 136</h2>
 <p class="question-stem">What content can be ingested into ServiceNow as a result of the UCF integration? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Policies</div>
@@ -1824,7 +1838,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="Entity Types use Entity Filters to generate Entity records from any table in ServiceNow, not restricted to GRC or core platform tables. This allows GRC entities to be based on CMDB CIs, HR positions, financial accounts, or records from any custom or third-party table installed on the instance." data-source-url="">
-<h2>Question 135</h2>
+<h2>Question 137</h2>
 <p class="question-stem">Entity Types use Entity Filters to generate entitles based on which of the following?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Only GRC scoped tables in ServiceNow</div>
@@ -1837,7 +1851,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="When a Risk Statement and a Control Objective are associated with the same Entity Type, the platform automatically generates a risk-to-control relationship for each entity belonging to that Entity Type. The shared Entity Type is what triggers the automatic linkage between the generated Risk and Control records." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-risk-management-workspace/risk-appetite-fields-on-risk-statement.html">
-<h2>Question 136</h2>
+<h2>Question 138</h2>
 <p class="question-stem">A relationship between a registered risk and a control will be automatically generated when the control objective and risk statement have the same what?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Control</div>
@@ -1850,7 +1864,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B,D" data-community="false" data-explanation="When creating an assessment scheduler record for advanced risk assessments, you select a published Risk Assessment Methodology (B) and entities based on the designated entity classes (D) associated with that RAM. Entity classes are automatically resolved from the selected RAM; arbitrary active entities (A) or objects (E) are not valid scheduler inputs." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-risk-management-workspace/schedule-risk-assessment-workspace.html">
-<h2>Question 137</h2>
+<h2>Question 139</h2>
 <p class="question-stem">What do you select when you create a new assessment scheduler record for initiating advanced risk assessments? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Any active entity</div>
@@ -1864,7 +1878,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="The &quot;Migrate to Advanced Risk Assessments&quot; property replaces the legacy risk lifecycle on the Risk form with the Assessment Summary section and impacts the Risk, Entity, and Risk Statement forms. It is found at Advanced Risk Assessment &gt; Administration &gt; Properties and is not enabled by default." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-risk-management-workspace/risk-rollup-ara-concept.html">
-<h2>Question 138</h2>
+<h2>Question 140</h2>
 <p class="question-stem">When this property is set to true, Risk, Entity, and Risk Statement forms are impacted.</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Migrate to Risk Events property</div>
@@ -1877,7 +1891,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="sn_compliance_m2m_statement_citation (A). Option B (sn_compliance_m2m_policy_statement) links Policy to Control Objective. Option C is an inverse naming. Option D (sn_compliance_m2m_policy_profile_type) links Policy to Entity Type. The table name in option A has a typo (&quot;cftation&quot;) but correctly identifies the relationship." data-source-url="">
-<h2>Question 139</h2>
+<h2>Question 141</h2>
 <p class="question-stem">Which table stores the links from Control Objective to Citation?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> [sn_compliance_m2m_statement_cftation]</div>
@@ -1890,7 +1904,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="ALE (Annualized Loss Expectancy) = SLE x ARO. With SLE = $1,000,000 and ARO = 20% (0.20): ALE = $1,000,000 x 0.20 = $200,000. Options A ($1M) ignores the ARO factor; C ($2M) incorrectly doubles the SLE; D ($10K) applies no valid formula." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-risk-management-workspace/risk-appetite-fields-on-entity.html">
-<h2>Question 140</h2>
+<h2>Question 142</h2>
 <p class="question-stem">The Single Loss Expectancy is $1.000.000 and the Annual Rate of Occurrence is 20%. What is the Annualized Loss Expectancy?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> $1,000,000</div>
@@ -1903,7 +1917,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C,D" data-community="false" data-explanation="When configuring the assessment context for a RAM, the two available options are Risk (C) — assessing individual Risk records — and Object (D) — assessing records from any designated ServiceNow table. Risk Statement (A), Application Risk (B), and Project Risk (E) are not valid assessment context options for a RAM." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-risk-management-workspace/workflow-of-risk-assessment-project.html">
-<h2>Question 141</h2>
+<h2>Question 143</h2>
 <p class="question-stem">What options are available when configuring the assessment context for a risk assessment methodology RAM)? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Risk Statement</div>
@@ -1917,7 +1931,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="A control test task is generated when an engagement moves to the Validate or Fieldwork state, but only for entities that have associated controls with test plans. The entity must have controls scoped to the engagement and those controls must have test plans defined. Without test plans (C), no control test tasks are created." data-source-url="https://www.servicenow.com/docs/r/yokohama/governance-risk-compliance/audit-management/add-entities-engagmt-scope-ws.html">
-<h2>Question 142</h2>
+<h2>Question 144</h2>
 <p class="question-stem">What are key prerequisites for a control test task to be generated?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Engagement is Scope</div>
@@ -1931,7 +1945,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C,E,F" data-community="false" data-explanation="ServiceNow platform experts (C) who configure and deploy the application; risk and compliance domain experts (E) who define the GRC programme requirements; and the CMDB process owner (F) who ensures entity data from CMDB is accurate and available. Board (A), CEO (B), and HR analysts (D) are not typically direct implementation participants." data-source-url="">
-<h2>Question 143</h2>
+<h2>Question 145</h2>
 <p class="question-stem">Who should be directly involved in GRC implementations? (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Board of directors</div>
@@ -1946,7 +1960,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,B" data-community="false" data-explanation="The most commonly used ServiceNow baseline tables for building Entity Types are cmn_location (A), which represents physical and logical locations, and core_company (B), which represents organisations and business units. These are the most widely adopted tables because GRC scoping often follows an organisation&#x27;s geographic and corporate structure. cmn_department (C) is also used but less foundational." data-source-url="">
-<h2>Question 144</h2>
+<h2>Question 146</h2>
 <p class="question-stem">Creating Entities in ServiceNow is easier as customers can leverage existing data used in other applications. What are some baseline tables that are commonly used to build an Entity Type? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> cmn_location</div>
@@ -1960,7 +1974,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B,C,D" data-community="false" data-explanation="Audit-specific task types are Interview (B), Walkthrough (C), and Control Test (D), all confirmed in the scheduled jobs table and task creation documentation. Control Attestation (A) is a compliance task. Tabletop Exercise (E) belongs to Business Continuity Management. Remediation (F) is an issue management task." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/audit-management/schedule-job-for-audit-date.html">
-<h2>Question 145</h2>
+<h2>Question 147</h2>
 <p class="question-stem">What types of tasks are specific to the Audit module? (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Control Attestation</div>
@@ -1975,7 +1989,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="The ComplianceScoreCalculator script include governs how compliance scores are aggregated and rolled up across controls, entities, and the compliance hierarchy in ServiceNow GRC. Modifying this script include is the supported approach for customising score rollup logic to match customer-specific requirements." data-source-url="">
-<h2>Question 146</h2>
+<h2>Question 148</h2>
 <p class="question-stem">Which Script include can be modified to change how the compliance scores roll up?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> ScoreRollUp</div>
@@ -1988,7 +2002,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,E" data-community="false" data-explanation="Primary tables for the GRC Advanced Risk application scope include sn_risk_advanced_risk_assessment_methodology (A, with typo in question) and sn_risk_advanced_factor (E). sn_risk_response_task (C) belongs to the GRC Risk scope, not the Advanced Risk scope. Options B and D are not primary Advanced Risk tables." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-common-functions/tables-that-consume-entity-based-access.html">
-<h2>Question 147</h2>
+<h2>Question 149</h2>
 <p class="question-stem">What are primary tables for the GRC Advanced Risk application scope? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> sn_risk_advanced_nsk_assessment_methodotogy</div>
@@ -2002,7 +2016,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="The documentation explicitly states &quot;Controls are automatically moved to Review from the attestation phase.&quot; This is part of the standard control lifecycle: Attest -&gt; Review. Monitor (D) is a subsequent state that is set manually; the automatic transition from attestation is specifically to Review (B)." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/third-party-risk-management/tprm-control-record-form.html">
-<h2>Question 148</h2>
+<h2>Question 150</h2>
 <p class="question-stem">Controls are automatically moved to which state from the attestation phase?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Retired</div>
@@ -2016,7 +2030,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="&quot;EMEA Data Centers&quot; represents a grouping or category of data center records filtered by region. In ServiceNow GRC, this corresponds to an Entity Type — a configuration that uses an Entity Filter to dynamically identify all matching records (individual data center CIs) as Entities. The Entity Type defines what EMEA Data Centers are; the individual data centers would be the Entities." data-source-url="">
-<h2>Question 149</h2>
+<h2>Question 151</h2>
 <p class="question-stem">EMEA Data Centers are an example of what?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Entity Object</div>
@@ -2029,7 +2043,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="The policy approver is responsible for reviewing and approving policies in the Awaiting Approval state. In ServiceNow, the minimum role required to act on a policy approval is sn_compliance.user (C). The user must also be designated as an approver on the specific policy form to receive the approval task." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/policy-and-compliance-management/assign-user-roles.html">
-<h2>Question 150</h2>
+<h2>Question 152</h2>
 <p class="question-stem">What is the minimum role required to approve a Policy?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> sn_grc admin</div>
@@ -2042,7 +2056,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D,E" data-community="false" data-explanation="Moving a Control record to the Monitor state requires either the System Administrator role (D), which has platform-wide authority, or the Compliance Manager role (E), which governs the full control lifecycle. Compliance Reader (A) is read-only; Risk User (B) and Audit User (C) do not govern compliance control state transitions." data-source-url="https://www.servicenow.com/docs/r/washingtondc/governance-risk-compliance/grc-common-functions/install-nist-rmf.html">
-<h2>Question 151</h2>
+<h2>Question 153</h2>
 <p class="question-stem">Which roles can move the control to the ‘Monitor’ state manually? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Compliance Reader</div>
@@ -2056,7 +2070,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="Risk Management application scope, not the GRC Profiles scope." data-source-url="">
-<h2>Question 152</h2>
+<h2>Question 154</h2>
 <p class="question-stem">All of the following are tables which exist within the GRC Profiles application scope EXCEPT:</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> sn_grc_profile</div>
@@ -2069,7 +2083,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="The compliance score calculation can be modified by changing the Control Weight (D) factor — it assigns relative importance to individual controls when calculating overall compliance scores. Higher-weighted controls have more impact on the final score. Control Height (A), Mass (B), and Velocity (C) are not valid GRC configuration terms." data-source-url="">
-<h2>Question 153</h2>
+<h2>Question 155</h2>
 <p class="question-stem">The compliance score calculation may be modified by changing which control factor?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Control Height</div>
@@ -2082,7 +2096,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B,D,G" data-community="false" data-explanation="Policy and Compliance scoped application (sn_compliance_ prefix) contains: Policy [sn_compliance_policy] (B), Control Objective/Policy Statement [sn_compliance_policy_statement] (D), and Citation [sn_compliance_citation] (G). sn_grc_ prefix tables (C, E, F) belong to GRC Common/Profiles scope. sn_compliance_risk (A) is not a standard table." data-source-url="">
-<h2>Question 154</h2>
+<h2>Question 156</h2>
 <p class="question-stem">Which of the following tables are included in the GRC: Policy and Compliance Management scoped application? (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> sn_compliance_risk</div>
@@ -2098,7 +2112,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="true" data-explanation="Annualized Rate of Occurrence (ARO) (D) is the quantitative likelihood measure — defines &quot;Inherent ARO: Probability that a risk occurs in any given year before any mitigation strategies are in place.&quot; ALE = SLE x ARO, where SLE is monetary impact. Qualitative risk uses an ordinal Likelihood scale; ARO is its quantitative equivalent." data-source-url="">
-<h2>Question 155</h2>
+<h2>Question 157</h2>
 <p class="question-stem">What is the Risk likelihood called when using the Quantitative method?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Likelihood</div>
@@ -2110,8 +2124,15 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 158</h2>
+<p class="question-stem">__________ Distributions occur when data comes from several sources that are supposed to be the same yet are not.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Skewed<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Bimodal<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Gaussian<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Tri-peaked</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="A,C,E" data-community="false" data-explanation="GRC Profiles scope parent tables that Risk Management tables extend from: Item [sn_grc_item] (A) — Risk/Control extend Item; Content [sn_grc_content] (C) — Risk Statement extends Content; Document [sn_grc_document] (E) — Risk Framework extends Document. Profile (D) is an entity instance table. Task (B) is a base platform table outside Profiles scope." data-source-url="">
-<h2>Question 156</h2>
+<h2>Question 159</h2>
 <p class="question-stem">Which tables in the GRC: Profiles scope are parent tables for GRC: Risk Management tables? (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Item</div>
@@ -2125,7 +2146,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C,D" data-community="false" data-explanation="Consolidated (grouped) attestations allow respondents to provide the same response for all assessments in the group (D) or provide different responses for each individual assessment (C). Both options are available in one UI. Subgroups (A), baseline templates (B), and entity class responses (E) are not valid consolidated attestation options." data-source-url="">
-<h2>Question 157</h2>
+<h2>Question 160</h2>
 <p class="question-stem">How can a user respond to consolidated (grouped) attestations? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Create subgroups for responding with same or different responses</div>
@@ -2138,8 +2159,15 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 161</h2>
+<p class="question-stem">For a Normal Distribution the Mean, Median and Mode are the same data point.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											True<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											False</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="A,B,D" data-community="false" data-explanation="Entity scoping is important because: it auto-generates controls when control objectives are scoped with entity types (A), provides a consistent approach to setting up risks and controls (B), and is dynamic — new records meeting criteria are automatically added as entities (D). Owner identification (C) and issue tracking approach (E) are not primary entity scoping benefits." data-source-url="">
-<h2>Question 158</h2>
+<h2>Question 162</h2>
 <p class="question-stem">Why is Entity scoping important when implementing GRC? (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Auto-generates controls when control objective is scoped with entity type</div>
@@ -2153,7 +2181,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="GDPR applies to organizations that process personal data of individuals in the European Union (C). It is not triggered by credit card storage (A — that is PCI DSS), cyber-threat exposure (B), or US stock exchange listing (D — that is SOX/SEC). GDPR was enacted May 25, 2018 to protect EU citizen data rights." data-source-url="">
-<h2>Question 159</h2>
+<h2>Question 163</h2>
 <p class="question-stem">Why would a company need to comply with the General Data Protection Regulation?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> It stores credit card information</div>
@@ -2166,7 +2194,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="A risk register is a repository of all identified risks (D), storing key attributes such as name, description, owner, frequency, inherent/residual levels, business impact, and mitigation plans. The risk register is the central repository for known and potential risks — not unidentified risks (A), frameworks (B), assessments (C), or criteria (E)." data-source-url="">
-<h2>Question 160</h2>
+<h2>Question 164</h2>
 <p class="question-stem">What is a risk register?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Repository for all unidentified risks</div>
@@ -2180,7 +2208,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B,C" data-community="false" data-explanation="Two m2m tables store Entity Type links: sn_compliance_m2m_policy_profile_type (B) links Entity Types to Policies; sn_compliance_m2m_statement_profile_type (C) links Entity Types to Control Objectives. Option A (policy_profile) stores entity-to-policy links. Option D is a risk-specific m2m table. Both B and C have the _profile_type suffix indicating Entity Type relationships." data-source-url="">
-<h2>Question 161</h2>
+<h2>Question 165</h2>
 <p class="question-stem">Which tables store the links from the Entity Types to Policies and Entity Types to Control Objectives? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> [sn_compliance_m2m_policy_profile]</div>
@@ -2192,8 +2220,29 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 166</h2>
+<p class="question-stem">Inferential Statistics is largely about Significance. There are both Practical and _______________ Significance to consider during an analysis of data in a Lean Six Sigma project.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Problematic<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Impractical<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Usable<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Statistical</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 167</h2>
+<p class="question-stem">The Central Limit Theorem helps us understand the ___________ we are taking and is the basis for using sampling to estimate population parameters.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Analysis<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Kurtosis<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Risk<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Route</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 168</h2>
+<p class="question-stem">Hypothesis Tests determine the probabilities of differences between observed data and the hypothesis being solely due to _________ based on the result of the P-values.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Human error<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Measurement error<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Shift differences<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Chance</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="Control Objectives are not active — cannot generate controls or be assessed — until the parent Policy reaches Published (C) state. In Draft (B), Review (D), and Awaiting Approval (A) states, control objectives exist but are inactive for compliance monitoring purposes." data-source-url="">
-<h2>Question 162</h2>
+<h2>Question 169</h2>
 <p class="question-stem">Control Objectives are not active until the parent policy is in which of the following states?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Awaiting Approval</div>
@@ -2206,7 +2255,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B,C" data-community="false" data-explanation="Issue [sn_grc_issue] (B), which extends Task and has resolution SLAs, and Indicator Task [sn_grc_indicator_task] (C), which also extends Task and has completion SLAs. Risk (A), Control (D), and Control Objective (E) do not extend the Task table and cannot leverage baseline SLA definitions." data-source-url="">
-<h2>Question 163</h2>
+<h2>Question 170</h2>
 <p class="question-stem">What tables can leverage the SLA definition n the baseline? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Risk table</div>
@@ -2220,7 +2269,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,D" data-community="false" data-explanation="Tables extending from Task [task]: Risk Response Task [sn_risk_response_task] (A) and RCM Action Task [sn_risk_action_task] (D). Risk [sn_risk_risk] (B) and Control [sn_compliance_control] (C) extend Item [sn_grc_item]. Risk Statement [sn_risk_definition] (E) extends Content [sn_grc_content]. Task-extending tables relate to workflow actions, not core GRC objects." data-source-url="">
-<h2>Question 164</h2>
+<h2>Question 171</h2>
 <p class="question-stem">Which tables extend from the Task table? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Risk Response Task</div>
@@ -2234,7 +2283,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D,E,F" data-community="false" data-explanation="A control&#x27;s compliance status rolls up through the GRC hierarchy, impacting the Citation score (F), which rolls up to Policy (E) and then Authority Document (D). Audit Engagement (A) uses separate audit scoring; Risk (B) and Risk Statement (C) have independent quantitative/qualitative scoring separate from control compliance." data-source-url="">
-<h2>Question 165</h2>
+<h2>Question 172</h2>
 <p class="question-stem">The compliance or non-compliance of a control impacts the compliance score on records in which tables? (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Audit engagement table</div>
@@ -2249,7 +2298,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="Valid compliance indicator types are Manual (B), Basic (E), Scripted (C), and Performance Analytics (A). &quot;Reference&quot; (D) is not a defined indicator type in ServiceNow GRC. Basic uses automated filter conditions; Scripted uses custom scripts; Performance Analytics uses PA data sources; Manual uses assigned tasks." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/policy-and-compliance-management/create-control-indicator-2.html">
-<h2>Question 166</h2>
+<h2>Question 173</h2>
 <p class="question-stem">Which of the following is not a type of compliance indicator?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Performance Analytics</div>
@@ -2262,8 +2311,22 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 174</h2>
+<p class="question-stem">According to a manager it takes an average weekday commute of 39 minutes with a Standard Deviation of 7 minutes for the employees to get to work when they use their personal vehicles for their office commute while management set a policy of not more than 40 minutes for their daily one-way commute.  A survey conducted one day on 70 employees showed an average of 34 minutes commuting time using the metro public transportation system with a Standard Deviation of 21 minutes. For the employees choosing to increase their chances to come on time using personal transportation their variation should be reduced to ___________?<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											1 minute<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											6 minutes<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											3.5 minutes<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Eliminate it to 0.0 minutes</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 175</h2>
+<p class="question-stem">According to a manager it takes an average weekday commute of 39 minutes with a Standard Deviation of 7 minutes for the employees to get to work while they use their personal vehicles for their office commute while the management set a policy of not more than 40 minutes for their daily one-way commute.  A survey conducted one day on 70 employees showed an average of 34 minutes commuting time using the metro public transportation system with a Standard Deviation of 21 minutes. If the Standard Deviation is uncontrollable then the other option to increase the probability of coming in on time via personal vehicles to work could be ____________?<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Increase the average time of commute<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Maintain the average time of commute and change route to work<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Reduce average commute time to work by departing earlier<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Change policy at work and request for flexible times based on location</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="sn_grc_content is the parent table for Content-type GRC records including Citations, Control Objectives, and Risk Statements (sn_risk_statement / sn_risk_defmition). sn_risk_framework (A) extends Document; sn_grc_profile (B) is the Entity table; sn_risk_risk (D) extends Item — none extend the Content base table." data-source-url="">
-<h2>Question 167</h2>
+<h2>Question 176</h2>
 <p class="question-stem">The content table (sn_grc_content) is a parent table of:</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> sn_risk_framework</div>
@@ -2275,8 +2338,22 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 177</h2>
+<p class="question-stem">Non-parametric testing is done when which of these are applicable? (Note: There are 3 correct answers).<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											When the traditional t tests don’t produce the results we need<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											A Hypothesis Test for the Median of the population is in question<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											It does not require data to come from Normally Distributed populations<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											They look at the Median rather than the Mean of populations<br />										<br /><br /><br /><br /><br /><br />													E.<br />												<br /><br />											<br />											When there are no parameters to measure in the process</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 178</h2>
+<p class="question-stem">The Mann-Whitney Test is used to test if the Means for two samples are different.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											True<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											False</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="B,D" data-community="true" data-explanation="Policy [sn_compliance_policy] (D) and Authority Document [sn_compliance_authority_document] (B) both extend the Document [sn_grc_document] base table, which extends the Task [task] table for workflow capabilities. Control Objective (A) and Citation (C) extend Content [sn_grc_content], which does not extend Task — distinguishing Document-type from Content-type GRC records." data-source-url="">
-<h2>Question 168</h2>
+<h2>Question 179</h2>
 <p class="question-stem">Which tables extend from the Task table? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Control Objective</div>
@@ -2289,7 +2366,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="The maximum file size for OneDrive policy authoring is 4 MB (B). Google Drive has a 10 MB limit. Option C (5 MB) is the ZIP file size limit for TPRM package uploads, not OneDrive policy authoring. Options A (no limit) and D (6 MB) do not correspond to any documented OneDrive limit." data-source-url="">
-<h2>Question 169</h2>
+<h2>Question 180</h2>
 <p class="question-stem">What is the maximum file size that can be uploaded to OneDrive for policy authoring?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> No Limit</div>
@@ -2301,8 +2378,15 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 181</h2>
+<p class="question-stem">Skewed, or Mixed, Distributions occur when data comes from several sources that are supposed to be the same yet are not.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											True<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											False</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="Impact Assessment records are configured using Regulatory Change Assessment Templates (B), which define the methodology for assessing the impact of regulatory changes. Option A (Flow Designer) handles automation workflows, C (Risk Assessment Methodologies) is for risk RAMs, and D (Risk Assessment Templates) is for risk assessments." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/regulatory-change-management-service-portal/respond-to-a-regulatory-alert-risk-assessment.html">
-<h2>Question 170</h2>
+<h2>Question 182</h2>
 <p class="question-stem">Where does a user configure the Impact Assessment record?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Impact Assessment Flow in Flow Designer</div>
@@ -2315,7 +2399,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="When &quot;Creates controls automatically&quot; is enabled on a control objective, associating an Entity Type (B) triggers automatic control generation — one control per entity of that type. Citations (A), indicator templates (C), and policies (D) are not the association that triggers automatic control creation." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/continuous-risk-monitoring/cam-control-req-sca.html">
-<h2>Question 171</h2>
+<h2>Question 183</h2>
 <p class="question-stem">What is associated with the control objective, that is active with the setting to create controls automatically enabled, to generate controls?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Citation</div>
@@ -2328,7 +2412,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="The Policy Acknowledgement Campaign table [sn_compliance_policy_acknowledgement] (C) is the implementer starting point for campaign reports — it contains all campaign metadata, audience definitions, and aggregate results. The Instance table (A) stores individual respondent responses. Audience (B) is a configuration table. Policy (D) is the parent record, not campaign-specific." data-source-url="">
-<h2>Question 172</h2>
+<h2>Question 184</h2>
 <p class="question-stem">What table is an implementer’s starting point to meet a customer requirement to generate a report related to a specific policy acknowledgement campaign?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> sn_compliance_policy_acknowledgement_instance</div>
@@ -2340,8 +2424,29 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 185</h2>
+<p class="question-stem">Having an Alpha of .05 and a Beta of .10 are the most common risk levels when running a Statistical test.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											True<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											False</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 186</h2>
+<p class="question-stem">A 1-Sample t-test is used to compare an expected population Mean to a target.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											True<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											False</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 187</h2>
+<p class="question-stem">Unequal Variances can be the result of differing types of distributions.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											True<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											False</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="B,D" data-community="false" data-explanation="GRC: Advanced Risk scope includes Manual Factor (B) — customer-defined factors for assessing risks in a RAM — and Risk Assessment Methodologies (D) — the RAM records themselves. Risk Framework (A) and Risk Criteria Matrix (C) are components of classic GRC: Risk Management scope, not the Advanced Risk scoped application." data-source-url="">
-<h2>Question 173</h2>
+<h2>Question 188</h2>
 <p class="question-stem">What tables are a part of the GRC: Advanced Risk scope? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Risk Framework</div>
@@ -2353,8 +2458,22 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 189</h2>
+<p class="question-stem">The higher the sigma level of a process the better the performance.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											True<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											False</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 190</h2>
+<p class="question-stem">The Six Sigma methodology had its origins at __________________ in the late 1980’s when William Smith coined the name for quality related work being done there.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Motorola<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Allied Signal<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											General Electric<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Honeywell</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="B,E" data-community="false" data-explanation="When a risk is in the Assess state during a classic risk assessment, assessors can: (B) Answer the assessment - the primary action in Assess state, and (E) Return the risk to Draft via the Return to draft action. The docs show Assess state actions include Save, View assessment, Cancel assessment, and Return to draft. You cannot delete (A), deactivate (C), or move directly to Monitor (D) from Assess." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-risk-management-workspace/risk-lifecycle-using-advanced-risk.html">
-<h2>Question 174</h2>
+<h2>Question 191</h2>
 <p class="question-stem">What can assessors do when a risk is in the state of Assess on a classic risk assessment? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Delete the risk</div>
@@ -2367,8 +2486,57 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 192</h2>
+<p class="question-stem">Lean Six Sigma’s general approach to solving significant challenges related to a process is called _________________.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											DOE<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											SIPOC<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											DMAIC<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											FMEA</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 193</h2>
+<p class="question-stem">Voice of the Customer is a Lean Six Sigma technique to determine ____________________ attributes of a product or service.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											At least 6<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											The profitable<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Critical-to-Quality<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											The majority of the</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 194</h2>
+<p class="question-stem">Those who are trained to the skill levels of a Black Belt are typically utilized to apply Lean Six Sigma methodologies what percentage of their time?<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											25%<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											50%<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											75%<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											100%</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 195</h2>
+<p class="question-stem">A process can be defined as a repetitive and systematic series of steps or activities where inputs are modified or assembled to achieve a customer desired result.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											True<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											False</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 196</h2>
+<p class="question-stem">Customers make a purchase decision based on a number of factors. In Lean Six Sigma we refer to these decision points as CTQ’s or as ____________________.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Critical-to-quality<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Conscious thought qualities<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Conspicuous time quandaries<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Cost of the quantity</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 197</h2>
+<p class="question-stem">Cost of Poor Quality (COPQ) can be classified as Tangible (Visible) Costs and Hidden Costs.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											True<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											False</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 198</h2>
+<p class="question-stem">An employee of ACME Corporation noticed that every loan application that gets approved is copied four times and is stored in different locations in the company for no apparent reason.  This would be an example of __________________.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Internal Failure Costs<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Appraisal Costs<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											External Failure Costs<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Prevention Costs</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="A,B,C" data-community="false" data-explanation="Audience configuration options are: select specific individual users (A), define conditions against the User table via User Filters (B), and select specific predefined groups (C). The three tabs are Users, Groups, and User Filters. ACLs (D), Group table conditions (E), and User Criteria (F) are not standard audience configuration methods." data-source-url="">
-<h2>Question 175</h2>
+<h2>Question 199</h2>
 <p class="question-stem">What choices do implementers have when configuring an audience for policy acknowledgements? (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Select specific users</div>
@@ -2383,7 +2551,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B,E" data-community="false" data-explanation="Two rule types govern the exception process: Verification rules (B) gate who verifies the request, and Approval rules (E) define multi-level approval flows. Alert (A), Entity class (C), Initial Approval (D), and Notification (F) are not defined rule types in the GRC Approval Configurator for policy exceptions." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/policy-and-compliance-management/define-approval-rules-grc-config.html">
-<h2>Question 176</h2>
+<h2>Question 200</h2>
 <p class="question-stem">What rules can be set up to manage policy exceptions? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Alert rule</div>
@@ -2398,7 +2566,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,C" data-community="false" data-explanation="ServiceNow applications outside GRC providing indicator templates when activated are Event Management (A) and Vulnerability Response (C). These integrations extend GRC monitoring with event-based and vulnerability indicators respectively. Customer Service Management (B), Configuration Compliance (D), and Security Incident Response (E) do not provide GRC indicator templates on activation." data-source-url="">
-<h2>Question 177</h2>
+<h2>Question 201</h2>
 <p class="question-stem">Which ServiceNow applications outside of the GRC suite of applications provide indicator templates when activated? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Event Management</div>
@@ -2411,8 +2579,15 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 202</h2>
+<p class="question-stem">What is the Cycle Time, in seconds, for a process having a Throughput of 7,200 units per hour?<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											0.5<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											2<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											4<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											10</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="The Entity table (renamed from Profile in prior releases) has the technical name sn_grc_profile(s) (B), in the GRC: Profiles (sn_grc) application scope. sn_compliance_entities (A) and sn_grc_entities (C) do not exist. sn_compliance_profiles (D) incorrectly combines the compliance scope prefix with the profile table suffix." data-source-url="">
-<h2>Question 178</h2>
+<h2>Question 203</h2>
 <p class="question-stem">What is the technical name of the table that contains entities?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> sn_compliance_entities</div>
@@ -2424,8 +2599,29 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 204</h2>
+<p class="question-stem">To create standardization of financial benefit calculations project savings are typically based on savings over what period of time?<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											6 months<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											12 months<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											24 months<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											The remainder of the calendar year<br />										<br /><br /><br /><br /><br /><br />													E.<br />												<br /><br />											<br />											The remainder of the fiscal year</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 205</h2>
+<p class="question-stem">The essence of Lean is to concentrate effort on removing waste while improving process flow to achieve speed and agility at lower cost.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											True<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											False</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 206</h2>
+<p class="question-stem">Lean had its origins in the development and practice of the ___________ Production System.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Honda<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Toyota<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Ford<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Motorola</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="The Technology Controls Monitoring Accelerator content pack provides Indicator templates (C) as its primary records — 273 templates for CIS v7 (94 Basic, 174 Manual, 5 Scripted) plus 67 for CIS v8. Assessment templates (A), PA indicator templates (B), and test plan templates (D) are not the primary content type delivered by this accelerator." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-common-functions/indicator-templates-for-ctrls.html">
-<h2>Question 179</h2>
+<h2>Question 207</h2>
 <p class="question-stem">What are the primary records provided in the Technology Controls content pack?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Assessment templates</div>
@@ -2438,7 +2634,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,D" data-community="false" data-explanation="Enabling exceptions from a non-GRC application (e.g. HR) requires: Integration Registry (A) to map the non-GRC source table, and an Exception questionnaire (D) for the request form. Approval rules (B), risk rules (C), and verification rules (E) are optional GRC-internal configurations not required for non-GRC integration." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/policy-and-compliance-management/request-pe-from-vr.html">
-<h2>Question 180</h2>
+<h2>Question 208</h2>
 <p class="question-stem">What must an implementer configure to allow users to submit a policy exception from a non-GRC application like HR? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Integration registry</div>
@@ -2451,8 +2647,15 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 209</h2>
+<p class="question-stem">Which element of waste best describes "the cost of an idle resource"?<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Waiting<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Motion<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Inventory<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Correction</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="To roll up quantitative ALE values, the implementer updates the &quot;Calculate ALE based on&quot; field (C) on the RAM, designating which source record column stores the residual ALE result after assessment. This field only appears when Assessment contribution is Quantitative or Both. Options A and D are not valid RAM fields; B governs qualitative score calculation." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-risk-management-workspace/configure-control-assess.html">
-<h2>Question 181</h2>
+<h2>Question 210</h2>
 <p class="question-stem">If an implementer wanted to roll-up the quantitative values for a risk assessment methodology, what field would they update on the RAM?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Roll-up scores</div>
@@ -2464,8 +2667,15 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 211</h2>
+<p class="question-stem">Lean focuses on the sequence of activities and work required to produce a product or a service. This flow is called a ___________________.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Value-add Flow<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Production Map<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Value Stream<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Operating Procedure</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="The default value for the policy exception valid to date system property is 30 days. This property controls how far in the future the Valid To date is set when creating a new policy exception. The GRC Policy and Compliance properties page allows administrators to configure this value." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-compliance-management-workspace/request-policy-exception-ws.html">
-<h2>Question 182</h2>
+<h2>Question 212</h2>
 <p class="question-stem">What is the default value for the policy exception valid to date stored in a system property?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> 30</div>
@@ -2477,8 +2687,15 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 213</h2>
+<p class="question-stem">When constructing a Fishbone Diagram using the ________ approach is the most classic arrangement.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											6M<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											4M<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											5M<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Alphabetical</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="B,E" data-community="false" data-explanation="GRC Business User Lite can respond to GRC issues assigned to them (B) and take/respond to a risk assessment (E). They cannot group control attestations (A — requires full business_user), approve advanced risk assessments (C — separate role configuration required), or create risk assessments (D — restricted to higher roles)." data-source-url="">
-<h2>Question 183</h2>
+<h2>Question 214</h2>
 <p class="question-stem">What actions can be executed by a user with the GRC Business User Lite role? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Group control attestations</div>
@@ -2491,8 +2708,43 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 215</h2>
+<p class="question-stem">The purpose of a Process Map is to identify the complexity of the process and to assist in identifying critical steps in the process.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											True<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											False</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 216</h2>
+<p class="question-stem">The very best way to begin an effort to map a process is to do which of these?<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Interview the process owner<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Interview the manager of the department<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Walk the actual process from beginning to end<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Take pictures of the factory floor at each shift</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 217</h2>
+<p class="question-stem">The X-Y Diagram is a tool used to identify/collate potential X's and assess their relative impact on multiple Y's.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											True<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											False</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 218</h2>
+<p class="question-stem">The term FMEA is an abbreviation for Failures Measure Effective Automation.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											True<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											False</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 219</h2>
+<p class="question-stem">When utilizing Statistics the population is defined as a collection of all the individual data points of interest.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											True<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											False</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="Basic indicators (D) use platform automation — an indicator source specifying a table and collection frequency — to automatically collect records for continuous monitoring. Scripted indicators (B) use custom scripts. Manual indicators (A) use assigned tasks. &quot;Automatic&quot; (C) is not a valid indicator type; the automated type is called Basic." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-risk-management-workspace/manage-indicators-risk.html">
-<h2>Question 184</h2>
+<h2>Question 220</h2>
 <p class="question-stem">Which indicator type uses platform automation to collect records for continuous monitoring?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Manual</div>
@@ -2505,7 +2757,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="Risk score rollup (C) is exclusive to Advanced Risk — scores are aggregated across risk statement hierarchy and entity hierarchy to provide rolled-up risk posture visibility. Classic Risk does not support score rollup/aggregation. Risk indicator management (A), risk response (B), and risk score tracking (D) exist in both classic and advanced risk." data-source-url="">
-<h2>Question 185</h2>
+<h2>Question 221</h2>
 <p class="question-stem">What feature does the GRC: Advanced Risk application have that is not available in the GRC: Risk Management (Classic Risk) application?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Risk indicator management</div>
@@ -2517,8 +2769,22 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 222</h2>
+<p class="question-stem">When looking at a distribution graph, the Mean is defined as the __________.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Average based on the sample size<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Aggression measured<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Total sample size<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Measurement based off a quarter of the sample size</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 223</h2>
+<p class="question-stem">The difference between the largest observation and the smallest observation in the data set is known as the _______________.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Breadth<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Range<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Spread<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Median</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="C,E" data-community="false" data-explanation="Control Objective has m2m relationships with: Citation (C) — via Content Reference to Control Objective [sn_grc_m2m_cont_ref_ps]; and Policy (E) — a control objective can belong to multiple policies and vice versa. Authority Document (A) relates via Citations, not directly. Control (B) and Risk (D) have direct (not m2m) relationships to Control Objectives." data-source-url="">
-<h2>Question 186</h2>
+<h2>Question 224</h2>
 <p class="question-stem">What tables can be related to the Control Objective table with a many-to-many relationship? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Authority Document</div>
@@ -2532,7 +2798,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="The GRC Properties module under the Policy and Compliance menu exposes System Properties for the GRC: Profiles (sn_grc) application scope (C). Option D (Policy and Compliance scope) is incorrect. Options A (Entities scope) and B (all GRC scopes) do not accurately describe the module&#x27;s scope." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/policy-and-compliance-management/pre-req-policy-redlining.html">
-<h2>Question 187</h2>
+<h2>Question 225</h2>
 <p class="question-stem">What is located in the GRC Properties module under the Policy and Compliance application menu?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> System Properties for GRC: Entities scope</div>
@@ -2545,7 +2811,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="Common controls are generated by converting an existing standard control (B) using the &quot;Convert to Common&quot; UI action. There is no direct creation or auto-generation path for common controls. Options A and D (child records) are not valid approaches. Option C (direct creation) is explicitly excluded by documentation." data-source-url="https://www.servicenow.com/docs/r/yokohama/governance-risk-compliance/grc-compliance-management-workspace/common-controls-multiple-rel-entities.html">
-<h2>Question 188</h2>
+<h2>Question 226</h2>
 <p class="question-stem">How can common controls be generated?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Create a common control as a child of a control objective</div>
@@ -2558,7 +2824,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="When a standard control is selected as a reliant entity on a common control, the standard control&#x27;s state changes to Retired (C). The common control inherits responsibility for testing. The standard control is not deleted (A). &quot;Converted&quot; (B) is not a valid control state. Option D (no change) is incorrect." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-compliance-management-workspace/convert-standard-control-common.html">
-<h2>Question 189</h2>
+<h2>Question 227</h2>
 <p class="question-stem">What happens to the standard control if it is selected to become a reliant entity on a common control?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Standard control is deleted</div>
@@ -2570,8 +2836,15 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 228</h2>
+<p class="question-stem">A Belt gathered the following defect data for a shoe production line and wanted to assemble it into a Pareto Chart. The correct order from left to right in the chart would be:<br />Data:<br />Cutting38 -<br />Forming17 -<br />Stitching56 -<br />Sealing42<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Forming, Sealing, Cutting, Stitching<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Sealing, Stitching, Forming, Cutting<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Stitching, Sealing, Cutting, Forming<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Forming, Cutting, Sealing, Stitching</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="Doc The docs state controls in the Review state are automatically moved there — confirming Review (A) is the automatic next state once all control attestations are completed. After the compliance manager reviews results in Review, controls advance to Monitor for ongoing monitoring. Lifecycle: Draft -&gt; Attest -&gt; Review -&gt; Monitor -&gt; Retired." data-source-url="">
-<h2>Question 190</h2>
+<h2>Question 229</h2>
 <p class="question-stem">What state do controls enter once all control attestations are completed?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Review</div>
@@ -2584,8 +2857,15 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 230</h2>
+<p class="question-stem">Measurement System Analysis is a procedure used to quantify variation of the method or system used for taking measurements.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											True<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											False</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="The Audit Approver [sn_audit.approver] (C) is the persona who approves engagements and audit plans, including formal approval to release audit content to external auditors. Audit Admin (A) manages application configuration; Audit Process Owner (B) is a functional stakeholder; Audit Engagement Project Manager (D) manages execution, not formal release approval." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/audit-management/r_InstallWAudit.html">
-<h2>Question 191</h2>
+<h2>Question 231</h2>
 <p class="question-stem">What persona approves the release of the content for auditors outside the organization?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Audit application technical admin</div>
@@ -2598,7 +2878,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="E" data-community="false" data-explanation="Creating a Risk Assessment Methodology requires the Advanced Risk Assessment Admin [sn_risk_advanced.ara_admin] role (E), as RAM creation is an administrative configuration task. ara_assessor (A) is for taking assessments; sn_risk.manager (B) governs standard risk; sn_risk.user (C) is read/participate; ara_creator (D) is not a valid Advanced Risk role name." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-risk-management-workspace/roles-for-ara.html">
-<h2>Question 192</h2>
+<h2>Question 232</h2>
 <p class="question-stem">What is the minimum role required to create a new RAM?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> sn_risk_advanced.ara_assessor</div>
@@ -2611,8 +2891,29 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 233</h2>
+<p class="question-stem">The deviation of the measured value from the actual value is known as _____________.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Bias<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Linearity<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Repeatability<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Movement</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 234</h2>
+<p class="question-stem">The ability to repeat the same measurement obtained with one measurement instrument used several times by one appraiser while measuring the identical characteristic on the same part is known as ____________.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Repeatability<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Bias<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Linearity<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Reproducibility</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 235</h2>
+<p class="question-stem">Process Capability is a function of which of these?<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Customer requirements<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Process performance<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Output over time<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											All of these answers are correct</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="Rollup Configuration options appear on a RAM only when Assessment Context is set to Risk (A). This context assesses an entity and its related risk statements, requiring score propagation through a rollup hierarchy. Object context (D) assesses arbitrary records without rollup; Entity (B) and blank (C) are not valid Assessment Context values." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/privacy-workspace/risk-assessment-methodology-form-prm.html">
-<h2>Question 193</h2>
+<h2>Question 236</h2>
 <p class="question-stem">What circumstances will cause the Rollup Configuration options to only appear on a risk assessment methodology?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> RAM context is Risk</div>
@@ -2625,7 +2926,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="When auto-update is enabled but the source record owner field is cleared, the entity owner remains unchanged (C). The auto-update only pushes non-empty values; a cleared source field does not clear the entity owner. The Default owner field on the entity filter ensures every entity always retains an owner. Options A, B, and D do not reflect the documented behaviour." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-common-functions/enhancements-for-entities.html">
-<h2>Question 194</h2>
+<h2>Question 237</h2>
 <p class="question-stem">What happens if an entity is set to auto-update the owner value from the source record and the value on the source record field has been cleared?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> The entity owner will be cleared</div>
@@ -2638,7 +2939,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="From within a GRC application, users can submit policy exceptions without any additional configuration (B) — the built-in exception workflow is natively available. Integration Registry (A) and Exception questionnaire (D) are only required when integrating non-GRC applications with the exception process." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/policy-and-compliance-management/request-pe-from-vr.html">
-<h2>Question 195</h2>
+<h2>Question 238</h2>
 <p class="question-stem">What must an implementer configure to allow users to submit a policy exception from a GRC application?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Integration registry</div>
@@ -2653,7 +2954,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="Appetite scales (A) are configurable — administrators define and map qualitative appetite scales to risk rating criteria to calculate appetite status. Tolerance scales (B) are derived from appetite scales. Appetite status (C) and Tolerance status (E) are calculated outputs, not user-configured definitions. Appetite roles (D) is not a risk appetite concept." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-risk-management-workspace/risk-appetite-fields-on-entity.html">
-<h2>Question 196</h2>
+<h2>Question 239</h2>
 <p class="question-stem">What risk appetite definitions are configurable versus customizable?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Appetite scales</div>
@@ -2666,8 +2967,15 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 240</h2>
+<p class="question-stem">Some of the approaches used in Lean include station warning lights, tool boards and jidohka devices in order that which of these apply?<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Workers do not utilize individual methods of cleaning<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Problems are made highly visible<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Work stoppages are documented properly<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Lessen the amount of employee pilferage</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="Entity classes serve two primary purposes — enabling hierarchical reporting (grouping entities for dashboards and metrics) and supporting advanced risk assessment (RAM applicability and risk appetite are defined per entity class) (C). Entity ownership (A) is an entity record attribute, not the purpose of entity classes. Option D describes GRC item-to-content relationships." data-source-url="">
-<h2>Question 197</h2>
+<h2>Question 241</h2>
 <p class="question-stem">What is the overall goal of entity classes?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> To provide specific information about an Entity, such as who owns the Entity</div>
@@ -2679,8 +2987,15 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 242</h2>
+<p class="question-stem">Standardized work instructions apply to which resource in the process of interest?<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											People<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Machines<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Supervision<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Engineering</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="Indicator templates in the Technology Controls content pack are connected to the ISO 27002 regulation via the Related source IDs (C) field, which stores cross-framework regulatory reference identifiers enabling multi-standard mapping. Options A and B reference non-existent field names; D (UCF Content Reference ID) maps to UCF content, not ISO 27002 specifically." data-source-url="">
-<h2>Question 198</h2>
+<h2>Question 243</h2>
 <p class="question-stem">In the Technology Controls content pack, some of the indicator templates are related to the ISO 27002 regulation. What field connects the indicator templates to the regulation?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> ISO 27002 Control Objective ID</div>
@@ -2693,7 +3008,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="All tables in the GRC: Advanced Risk application scope use the prefix sn_risk_advanced_ (A), e.g. sn_risk_advanced_risk_assessment_methodology and sn_risk_advanced_factor. The prefix sn_risk_ara_ (B) does not exist; sn_advanced_risk_ (C) and sn_ara_ (D) are not ServiceNow Advanced Risk table naming conventions." data-source-url="">
-<h2>Question 199</h2>
+<h2>Question 244</h2>
 <p class="question-stem">What is the prefix for tables in the Advanced Risk scope?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> sn_risk_advanced_</div>
@@ -2705,8 +3020,22 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 245</h2>
+<p class="question-stem">Examples of Mistake Proofing for a laptop computer include which of these? (Note: There are 2 correct answers).<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											USB connection for a mouse<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Open/Close button for CD Drive<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Battery alignment pins<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											On/Off switch for computer</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 246</h2>
+<p class="question-stem">The reason(s) for not marking the customer Specification Limits (SL) on a Control Chart is which of these? (Note: There are 4 correct answers).<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Process control teams should not control a process based on SLs<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Displaying the SLs on a Control Chart sends a wrong signal toward process control<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Marking the SLs on a Control Chart is against the principle of charting<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											By marking the SLs, one can confuse the operator as to what limits are critical<br />										<br /><br /><br /><br /><br /><br />													E.<br />												<br /><br />											<br />											By using mere Control Limits the process only needs to be in Statistical Control</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="A,C" data-community="false" data-explanation="The GRC Business User role permits: taking risk assessments (A) when assigned as an assessor, and participating in group attestations (C). Business users have read access to policies and control objectives and can submit issues or exceptions. Grouping issues (B), creating policies (D), and creating risks (E) require manager or admin roles." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/policy-and-compliance-management/r_InstallWPolAndCompl.html">
-<h2>Question 200</h2>
+<h2>Question 247</h2>
 <p class="question-stem">What actions can be executed by a user with the GRC Business User role? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Take risk assessments</div>
@@ -2720,7 +3049,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="The GRC: Technology Controls Monitoring Accelerator delivers Indicator templates (D) as its primary pre-built content for automating cybersecurity control monitoring. Risk templates (A) belong to GRC: Risk Management; Metric templates (B) are not a GRC template type; Control test templates (C) belong to GRC: Audit Management." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-common-functions/indicator-templates-for-ctrls.html">
-<h2>Question 201</h2>
+<h2>Question 248</h2>
 <p class="question-stem">What templates are provided in the GRC: Technology Controls Monitoring Accelerator application?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Risk templates</div>
@@ -2732,8 +3061,15 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 249</h2>
+<p class="question-stem">Six Sigma refers to a process whose output has at least 80% of its data points within +/- 6 Standard Deviations from the Mean.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											True<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											False</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="The Risk assessment planning section uses a Playbook (A) — the Risk assessment scope playbook — to guide users through defining the RAM, scoping entities, and initiating assessments. Runbooks (B) are an IT Operations feature; Guidebook (C) and Now Assist (D) are not the guided workflow function for RAM instance generation." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-risk-management-workspace/create-risk-asses-scope-workspace.html">
-<h2>Question 202</h2>
+<h2>Question 250</h2>
 <p class="question-stem">Using the Risk Workspace, the Risk assessment planning section allows a user to generate RAM instances. What is the ServiceNow guided set up function used?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Playbook</div>
@@ -2746,7 +3082,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="E" data-community="false" data-explanation="The Policy table [sn_compliance_policy] is related to Control Objectives via the m2m table sn_compliance_m2m_policy_statement (E). Risk (A), Authority Document (B), Citation (C), and Control (D) are not directly related to Policy via an m2m relationship — they connect through other parts of the GRC content hierarchy." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-compliance-management-workspace/convert-standard-control-common.html">
-<h2>Question 203</h2>
+<h2>Question 251</h2>
 <p class="question-stem">What table can be related to the Policy table with a many-to-many relationship?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Risk</div>
@@ -2759,8 +3095,29 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 252</h2>
+<p class="question-stem">The acronym for the defined approach taken by Lean Six Sigma to solve significant challenges related to a process is which of these?<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											DOE<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											DMAIC<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											SIPOC<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											FMEA</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 253</h2>
+<p class="question-stem">Typically a person who is trained to the skill level of a Black Belt is nearly 80% dedicated to applying Lean Six Sigma methodologies towards process solutions.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											True<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											False</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 254</h2>
+<p class="question-stem">A process can be defined as a repetitive and systematic series of steps or activities where inputs are modified or assembled to achieve a _______________ result.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Revenue total<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Month end<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Customer desired<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Budgeted</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="The Reviewer field (D) on the Policy record defines which users can perform the redlining function once Office 365/OneDrive integration is configured. Reviewers are designated policy collaborators with edit and mark-up access. Contributor (A), Knowledgebase Admin (B), and Acknowledgement Manager (C) do not govern redlining access." data-source-url="">
-<h2>Question 204</h2>
+<h2>Question 255</h2>
 <p class="question-stem">What policy field defines who can perform the redlining function once the integration with Office 365 is configured for a customer?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Contributor</div>
@@ -2772,8 +3129,22 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 256</h2>
+<p class="question-stem">Cost of Poor Quality (COPQ) can be classified as either Tangible (Visible) Costs or Hidden Costs.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											True<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											False</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 257</h2>
+<p class="question-stem">The Purchase Orders for Glenn Manufacturing Company were being copied by an employee and sent to four different departments yet only one department took an action based on the information in the PO.  This is an example of ____________.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											External Failure Costs<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Appraisal Costs<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Internal Failure Costs<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Prevention Costs</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="The minimum role to use the Scheduled Assessments module and generate RAM instances is Risk Manager [sn_risk.manager] (D). Risk Manager can schedule and initiate assessments. Risk User (A) can only participate; Risk Admin (B) has full access but is not the minimum; Sys Admin (C) has platform-wide access but is not the minimum GRC-specific role." data-source-url="">
-<h2>Question 205</h2>
+<h2>Question 258</h2>
 <p class="question-stem">What minimum role is required to use the Scheduled assessments module to generate RAM instances on the workspace?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Risk User</div>
@@ -2786,7 +3157,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="The Compliance Score (B) field is stored on the Entity Type record, representing the aggregate compliance score calculated across all entities of that type. Entity Class (A) is a separate dimensional record; Entity Owner (C) and Auto-Update flag (D) are on the individual Entity record; Source (E) is an Entity record field, not an Entity Type attribute." data-source-url="">
-<h2>Question 206</h2>
+<h2>Question 259</h2>
 <p class="question-stem">Which attribute is stored on the entity type record?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Entity Class</div>
@@ -2799,8 +3170,15 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 260</h2>
+<p class="question-stem">The following Business Case is constructed properly.<br />“During fiscal year 2008 the warranty returns for electric razor Model 312 were 1.3%. This represents a gap of 0.5% over target costing the company $18,500 per month.”<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											True<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											False</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="The Entity Class (D) record maintains the primary RAM displayed on the entity record, defining the applicable risk framework for groups of similarly classified entities. The Entity record (A) displays the RAM but does not define it; Entity Type (B) scopes GRC items; Entity Tier (C) is not a standard GRC term." data-source-url="https://www.servicenow.com/docs/r/washingtondc/governance-risk-compliance/grc-common-functions/create-new-entity-class-ws.html">
-<h2>Question 207</h2>
+<h2>Question 261</h2>
 <p class="question-stem">What record maintains the primary Risk Assessment Methodology that is displayed on the entity record?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Entity</div>
@@ -2813,7 +3191,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="The Technology Controls Monitoring Accelerator indicator templates are directly related to CIS Controls (A) — specifically CIS Controls v7.1 and v8 authority documents and their citations. ISO 27002 (B) links via Related source IDs; SOX (C) and COBIT (D) are not directly mapped as citation sources in this content pack." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-common-functions/cybersecurity-controls-accelerator.html">
-<h2>Question 208</h2>
+<h2>Question 262</h2>
 <p class="question-stem">In the Technology Controls content pack, what citations are directly related to the indicator templates?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> CIS Controls</div>
@@ -2826,7 +3204,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B,C" data-community="false" data-explanation="The Advanced Audit application adds Resource plans (B) and Cost plans (C) via PPM integration, creating an equivalent PPM project for each engagement. Observation management (A) is standard audit functionality; WBS structure (D) is not added by Advanced Audit; auto-generation of audit tasks (E) is a standard feature, not specific to Advanced Audit." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/audit-management/r_InstallWAudit.html">
-<h2>Question 209</h2>
+<h2>Question 263</h2>
 <p class="question-stem">What additional capabilities does the Advanced Audit application provide? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Observation management</div>
@@ -2839,8 +3217,22 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 264</h2>
+<p class="question-stem">When creating a Cause and Effect Diagram the team needs to continually broaden their view as well as drill down until they identify all the potential ______________ impacting their process.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Line operators<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Root Causes<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Inventory issues<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Customer requests</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 265</h2>
+<p class="question-stem">The purpose of a Process Map is to identify the complexity of the process and to record all actions and decision points in the process.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											True<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											False</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="Group factor assessment responses are converted to a score using the Qualitative Transformation Criteria (A) defined on the group factor, mapping response value ranges to score values. Factor Contribution Criteria (B) governs individual factor contribution; Aggregation method (C) and Factor Weights (D) are not the scoring transformation mechanism." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-risk-management-workspace/define-group-factor.html">
-<h2>Question 210</h2>
+<h2>Question 266</h2>
 <p class="question-stem">How are advanced risk assessment responses to a group factor turned into a score?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> By Qualitative Transformation Criteria on the Group Factor</div>
@@ -2852,8 +3244,15 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 267</h2>
+<p class="question-stem">With the use of Statistics we define the population to be a large enough sample set of data such that you can analyze it and draw conclusions as to all of the data.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											True<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											False</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="The GRC Profile Generation scheduled job (D) generates entities from entity filters by scanning filter conditions and creating entity records from matching source table records. Despite the Zurich rename from &quot;Profile&quot; to &quot;Entity&quot;, the scheduled job retains the legacy name. GRC Cleanup (A) removes stale records; GRC Entity/Item Generation (B, C) are not valid job names." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/operational-resilience-dashboard/conf-end-to-end-wf-for-ser.html">
-<h2>Question 211</h2>
+<h2>Question 268</h2>
 <p class="question-stem">What is the name of the job that generates entities from the entity filters?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> GRC Cleanup</div>
@@ -2865,8 +3264,29 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 269</h2>
+<p class="question-stem">If the data displayed in a Histogram displays two peaks the distribution would likely be _____________.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Transformed<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Multi-skewed<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Bi-attribute<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Bimodal</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 270</h2>
+<p class="question-stem">Measurement System Analysis is a procedure used to quantify all ____________ in the method or system used for taking measurements.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Totals<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											People involved<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Variation<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Summations</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 271</h2>
+<p class="question-stem">The deviation of the measured value from the actual value regardless of the operator is known as ______________.<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Linearity<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Bias<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Repeatability<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Movement</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="E,F" data-community="false" data-explanation="Indicator templates support Sample size (E), defining how many records are evaluated per execution, and Supporting data fields (F), specifying additional data collected with each indicator run. Tracking options (A), Virtualization options (B), User Criteria (C), and Alert rules (D) are not configurable attributes on indicator templates." data-source-url="https://www.servicenow.com/docs/r/governance-risk-compliance/grc-risk-management-workspace/create-a-manual-indicator-risk-ws.html">
-<h2>Question 212</h2>
+<h2>Question 272</h2>
 <p class="question-stem">What attributes can be set on an indicator template? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Tracking options</div>
@@ -2879,6 +3299,48 @@
 <button class="reveal-btn">Show Answer</button>
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 273</h2>
+<p class="question-stem">Testing Process -<br />Consider an information system of a Pay-Tv company based on a SOA architecture.<br />The integrated system currently consists of three core systems:<br />- a CRM (Customer Relationship Management) system<br />- a BRM (Billing and Revenue Management) system<br />- a CAS (Conditional Access System) system<br />all of them communicating with SOA Middleware.<br />You have been asked to manage the testing activities for the integration of two additional off-the-shelf systems from two different vendors: a SMS (Short Message Service) server and an IVR (Interactive Voice Response) system.<br />Assume that there is a high likelihood that the two off-the-shelf systems will be low-quality and that you have a clear proof that the testing performed by the two vendors on their systems has been unsystematic and unprofessional. This obviously leads to higher quality risk for the overall integrated system.<br />You are the Test Manager of this project. Your main goal is to plan for testing activities to mitigate this risk.<br />Which of the following answers best describes the test activities (assuming it is possible to perform all of them) you should plan for?<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											You should plan for an informal and minimal acceptance test of the two off-the-shelf systems and then a single end-to-end test of the overall integrated system<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											You should directly plan for a single end-to-end test focused on end-to-end tests of the overall integrated system without an acceptance test of the two off-the-shelf systems<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											You should plan for two levels: a system integration test and an end-to-end test of the overall integrated system<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											You should plan for adequate re-testing of both the systems followed by a system integration test and an end-to-end test of the overall integrated system</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 274</h2>
+<p class="question-stem">Testing Process -<br />Assume you are the Test Manager for a new software release of an e-commerce application.<br />The server farm consists of six servers providing different capabilities. Each capability is provided through a set of web services.<br />The requirements specification document contains several SLAs (Service Level Agreements) like the following:<br />SLA-001: 99.5 percent of all transactions shall have a response time less than five seconds under a load of up-to 5000 concurrent users<br />The main objective is to assure that all the SLAs specified in the requirements specification document will be met before system release. You decide to apply a risk-based testing strategy and an early risk analysis confirms that performance is high risk.  You can count on a well-written requirements specification and on a model of the system behavior under various load levels produced by the system architect.<br />Which of the following test activities would you expect to be the less important ones to achieve the test objectives in this scenario?<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Perform unit performance testing for each single web service<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Monitor the SLAs after the system has been released into the production environment<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Perform system performance testing, consisting of several performance testing sessions, to verify if all the SLAs have been met<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Perform static performance testing by reviewing the architectural model of the system under various load levels</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 275</h2>
+<p class="question-stem">The following is the unique “critical” quality risk item that has been identified:<br />CR-RSK-1. The GUI of the application might accept non-integer values for the input field designed to get the number of bottles from the user<br />Test analysis for system testing has just begun and the following test conditions have been identified:<br />TC-SEL-2. Test the selection of the package sizes<br />TC-SEL-4. Test wrong numbers of bottles for an order<br />TC-CR-RSK-1. Test the accepted values from the input field designed to get the number of bottles from the user<br />What is the MINIMUM number of test conditions that must be added to fulfill both the EXCR1 and EXCR2 exit criteria?<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											4<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											3<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											2<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											1</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 276</h2>
+<p class="question-stem">The following are the requirements identified as “critical”:<br />REQ-SEL-001. The user shall be able to combine all the three products with all the four durations to define an item to purchase<br />REQ-SEL-002. The user shall be able to add a maximum of six different items to the shopping cart<br />REQ-PUR-001. The user shall be able to purchase all the items in the shopping cart using a credit voucher<br />REQ-PUR-002. The user shall be able to purchase all the items in the shopping cart using the available credit already charged on the smartcard<br />REQ-PUR-003. The user shall be able to purchase all the items in the shopping cart using all the accepted credit cards (Visa, MasterCard and Great Wall Card)<br />REG-LOGO-001. The user shall be able to logout (by clicking the logout button) from both the “select” and “purchase” pages going back to the “browse” page (anonymous navigation)<br />Moreover the following quality risk item has been identified as “critical”:<br />QR-P1. The web customer portal might not be able to provide the expected response time (less than 10 sec) for the purchase transactions under a load of up-to 1000 concurrent users<br />Test analysis for system testing has just begun and the following test conditions have been identified:<br />TC-SEL-01. Test the combinations of products and durations to define an item to purchase<br />TC-SEL-02. Test the maximum number of items, which can be added to the shopping cart<br />TC-PUR-01. Test the purchase of an item<br />TC-PUR-02. Test the purchase of an item with the credit charged on the smartcard<br />What is the MINIMUM number of test conditions that must be added to fulfill both the EXCR1 and EXCR2 exit criteria?<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											1<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											2<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											3<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											4</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 277</h2>
+<p class="question-stem">Testing Process -<br />Which of the following statements describing the consequences of specifying test conditions at a detailed level is NOT true?<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											In an environment where the test basis is continuously changing, it is recommended to specify test conditions at a detailed level in order to achieve a better maintainability<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											The specification of test conditions at a detailed level can be effective when no formal requirements or other development work products are available<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											The specification of test conditions at a detailed level can require the implementation of an adequate level of formality across the team<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											For system testing, the specification of test conditions at a detailed level, carried out early in the project as soon as the test basis is established, can contribute to defect prevention</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 278</h2>
+<p class="question-stem">The following is the unique “critical” quality risk item that has been identified:<br />CR-RSK-1. The GUI of the application might accept non-integer values for the input field designed to get the number of bottles from the user<br />Test analysis for system testing has just begun and the following test conditions have been identified:<br />TC-SEL-2. Test the selection of the package sizes<br />TC-SEL-4. Test wrong numbers of bottles for an order<br />TC-CR-RSK-1. Test the accepted values from the input field designed to get the number of bottles from the user<br />Assume that you have used traceability to determine the logical test cases that cover all the requirements and the single risk item identified in that scenario.<br />Which of the following is a positive logical test that is complete and correct, and covers the REQ-SEL-4 requirement?<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Select a 6-bottles package, then try to insert 5 bottles; verify that no error messages are displayed<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Select a 6-bottles package, then try to insert 7 bottles; verify that no error messages are displayed<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Select a 6-bottles package, then try to insert 7 bottles; verify that the "Invalid number of bottles" message is displayed<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Select a 6-bottles package, then try to insert 7 bottles</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
 </div>
     </main>
     <footer class="site-footer">

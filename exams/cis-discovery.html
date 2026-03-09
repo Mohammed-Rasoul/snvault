@@ -379,8 +379,15 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C,D" data-community="false" data-explanation="The two horizontal pattern types are Infrastructure (C) and Application (D). Infrastructure patterns discover hardware and OS-level CIs. Application patterns discover software applications and their configurations. Hardware (A) and Software (B) are CI categories, not pattern type names." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 28</h2>
+<p class="question-stem">Which choices are necessary to launch any pattern? (Choose two.)<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											CI Classification<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											CI Serial Number Attribute<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Data Certification<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											CI Type</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="C,D" data-community="false" data-explanation="The two horizontal pattern types are Infrastructure (C) and Application (D). Infrastructure patterns discover hardware and OS-level CIs. Application patterns discover software applications and their configurations. Hardware (A) and Software (B) are CI categories, not pattern type names." data-source-url="">
+<h2>Question 29</h2>
 <p class="question-stem">Which of the below choices are horizontal pattern types? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Hardware</div>
@@ -393,7 +400,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="The MID Server needs the vCenter Event Collector extension (A) to collect vCenter events. Per the docs: the VMware Alert Configuration uses the vCenter Event Collector Context form to configure event collection from vCenter. MID SNMP Trap Listener (B) is for SNMP traps. Firewalls (C) are network devices. vCenter probes (D) are used for CI discovery, not event collection." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery/vmware-events-service-cloud-mgt.html">
-<h2>Question 29</h2>
+<h2>Question 30</h2>
 <p class="question-stem">What does the MID Server need to collect vCenter events?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> vCenter Event Collector extension</div>
@@ -406,7 +413,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="Only 1 Shazzam probe is launched (A). A /24 subnet has 254 usable IP addresses. With a batch size of 5000, all 254 IPs fit within a single probe batch. Per the docs: probes are created based on dividing the total IPs by batch size. 254 ÷ 5000 = less than 1, so one probe handles all IPs. Two probes (B) would only be needed if IPs exceeded the batch size." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery/discovery-schedule-form-table.html">
-<h2>Question 30</h2>
+<h2>Question 31</h2>
 <p class="question-stem">A Discovery Schedule contains a /24 subnet IP Range and a Shazzam batch size of 5000.<br />How many times will a Shazzam probe be launched during discovery?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> 1</div>
@@ -419,7 +426,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="Discovery uses Port Scan (A) via the Shazzam probe to determine if a host IP is active or alive. The Shazzam probe performs TCP port scanning to detect responsive hosts. Traceroute (B) maps network paths but doesn&#x27;t confirm host availability. Ping can be blocked by firewalls. Classification (D) occurs after host detection, not before." data-source-url="">
-<h2>Question 31</h2>
+<h2>Question 32</h2>
 <p class="question-stem">Which method is used by Discovery to determine if a Host IP is active or alive?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Port Scan</div>
@@ -432,7 +439,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,B,C" data-community="false" data-explanation="Discovery finds and maps dependencies for Direct-attached storage (A), Network-attached storage (B), and Storage area network (C). Per the docs: &#x27;Discovery finds and maps dependencies for the following types of storage: Direct-attached storage (DAS), network-attached storage (NAS), or storage area network (SAN).&#x27; Multiple area network (D) and RAID (E) are not Discovery storage dependency types." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/itom-visibility/c_Storage.html">
-<h2>Question 32</h2>
+<h2>Question 33</h2>
 <p class="question-stem">Discovery finds and maps dependencies for the following types of storage devices. (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Direct-attached storage (DAS)</div>
@@ -446,7 +453,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="The Shazzam Batch Size (C) controls probe creation. Per the docs: &#x27;The value is set to 1000 and a discovery scans 10,000 IP addresses using a single MID Server. It creates 10 Shazzam probes with each probe scanning 1000 IP addresses.&#x27; MID Server Clusters (A) and selection method (B) affect which MID Server runs. Behaviors (D) control MID Server assignment rules." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery/discovery-schedule-form-table.html">
-<h2>Question 33</h2>
+<h2>Question 34</h2>
 <p class="question-stem">Which choice allows the following functionality to occur?<br />If this value is set to 1000 and a discovery must scan 10,000 IP addresses using a single MID Server, it creates 10 Shazzam probes with each probe scanning 1000 IP addresses.</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> MID Server Clusters</div>
@@ -459,7 +466,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="A Behavior is applied via the MID Server selection method on a Discovery Schedule (A). Per the docs: &#x27;In the MID Server selection method field, select Use Behavior.&#x27; This tells the Discovery Schedule to use the configured behavior to determine which MID Server scans which IP ranges. IP Range (B), Discovery Status (C), and CI checkbox (D) are not where Behaviors are applied." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery/t_SetUpLoadBalDiscoBehavr.html">
-<h2>Question 34</h2>
+<h2>Question 35</h2>
 <p class="question-stem">Which choice best describes how to use a Behavior for discovery?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> The MID Server selection method on a Discovery Schedule.</div>
@@ -472,7 +479,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,C" data-community="false" data-explanation="WMI Query (A) and Get Process (C) are pattern operations that query targets. WMI Query executes Windows Management Instrumentation queries against a target host. Get Process retrieves running process information from a target. Merge Table (B) combines data from two tables internally. Parse Variable (D) parses data from existing variables without querying a target." data-source-url="">
-<h2>Question 35</h2>
+<h2>Question 36</h2>
 <p class="question-stem">Which of the following pattern operations query targets? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> WMI Query</div>
@@ -485,7 +492,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="File-based Discovery is triggered during the Exploration Phase (C). The exploration phase collects detailed information from already-classified hosts, including file system data. The Scan Phase (B) detects active IPs. The Classify Phase (A) identifies CI types. Pattern Phase (D) and Identification Phase (E) are pattern-specific terms, not where file-based discovery triggers." data-source-url="">
-<h2>Question 36</h2>
+<h2>Question 37</h2>
 <p class="question-stem">File-based Discovery is triggered during the __________.</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Classify Phase</div>
@@ -499,7 +506,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="The correct syntax for a custom column on cmdb_ci_linux_server using Set Parameter Value is $cmdb_ci_linux_server[*].u_custom_column (D). This syntax references all rows [*] of the CMDB table variable and the specific column. $user_var_custom_column (A) is for user-defined variables. Option B uses .INSERT which is not valid syntax. Option C has incorrect ordering of the index and table name." data-source-url="">
-<h2>Question 37</h2>
+<h2>Question 38</h2>
 <p class="question-stem">Given a custom column named u_custom_column on table cmdb_ci_linux_server, which variable syntax should be used to populate the column in a horizontal discovery pattern using the Set Parameter Value operation?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> $user_var_custom_column</div>
@@ -512,7 +519,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="A horizontal pattern must have TCP entry point type or ALL entry point type (C) to execute from a process classifier. Process classifiers work at the TCP layer, so the pattern&#x27;s entry point must be TCP or ALL to be compatible with process classification triggers. Subnet (A) is an IP range, not an entry point type. HTTP(S) (B) is too specific. Entry point type does matter (D is false)." data-source-url="">
-<h2>Question 38</h2>
+<h2>Question 39</h2>
 <p class="question-stem">What entry point type must a horizontal pattern have to execute from a process classifier?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> A subnet entry point type.</div>
@@ -525,7 +532,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,B" data-community="false" data-explanation="The Completeness KPI for CMDB Health is comprised of Required (A) and Recommended (B) attribute metrics. Completeness measures whether required and recommended fields are populated on CI records. Audit (C) is a separate CMDB Health KPI. Overall (D) is a composite score, not a component of Completeness." data-source-url="">
-<h2>Question 39</h2>
+<h2>Question 40</h2>
 <p class="question-stem">Which metrics comprise the Completeness KPI for CMDB Health? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Required</div>
@@ -538,7 +545,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C,D" data-community="false" data-explanation="Discovery utilizes IP address ranges for initial discovery, Service Mapping uses entry points (C). Discovery addresses inventory use-cases while Service Mapping creates accurate maps of application service topologies (D). Per the docs, and, these are the fundamental architectural differences. Agents are not required by either (A is false). Discovery finds — not monitors — devices (B is false)." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/service-mapping/cloud-discovery-service-mapping.html">
-<h2>Question 40</h2>
+<h2>Question 41</h2>
 <p class="question-stem">Which of the following choices explain differences between Service Mapping and Discovery? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Discovery requires agent installation to find hardware devices, Service Mapping requires agents for software.</div>
@@ -551,7 +558,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="The two main options within a Parse File operation are Select File and Define Parsing (C). Select File specifies the file to parse on the target, and Define Parsing configures the parsing strategy (regex, delimited, etc.). Discover Now and Quick Discovery (A) are schedule types. Select Operating System and Method (B) are Application pattern fields. Match and Select File (D) is not the correct option names." data-source-url="">
-<h2>Question 41</h2>
+<h2>Question 42</h2>
 <p class="question-stem">What are the two main options within a Parse File operation?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Discover Now and Quick Discovery</div>
@@ -564,7 +571,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="true" data-explanation="Based on the image (not visible in text), London Linux Servers is a CMDB Group with Health Group type (B). CMDB Groups can be of type Default, Dashboard, or Health. A Health Group type tracks CMDB health metrics for the group. Community consensus (100%) confirms B. Option A uses Dashboard Group type. Option C incorrectly describes it as a Datacenter Group. Option D uses Default Group type." data-source-url="">
-<h2>Question 42</h2>
+<h2>Question 43</h2>
 <p class="question-stem">Based on the following image, which of the following choices is also true about London Linux Servers?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> It is a CMDB Group with Dashboard Group type.</div>
@@ -577,7 +584,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="Quotes (C) are used in the syntax to declare a constant, unchanging value in the Set Parameter Value operation. Placing a value in quotes treats it as a literal string constant rather than a variable reference. Dollar sign (D) is used to reference variables. Hash tags (A) and brackets (B) serve different purposes in pattern syntax." data-source-url="">
-<h2>Question 43</h2>
+<h2>Question 44</h2>
 <p class="question-stem">For the Set Parameter Value operation, which of the following is used in the syntax to declare a constant, unchanging Value?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Hash tag</div>
@@ -590,7 +597,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B,C" data-community="false" data-explanation="From an SNMP Query pattern operation, valid variable types are Table (B) and Scalar (C). Per the docs: &#x27;SNMP Query (Tabular)&#x27; and scalar types are supported. Tabular variables hold multi-row SNMP table data; scalar variables hold single-value SNMP OID data. Test (A) and CI Type (D) are not SNMP Query variable types." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery/commands-list-discovery.html">
-<h2>Question 44</h2>
+<h2>Question 45</h2>
 <p class="question-stem">From an SNMP Query pattern operation, which of the choices are valid Variable Types? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Test</div>
@@ -603,7 +610,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="When duplicate CIs are detected during identification and reconciliation, each set of duplicate CIs is added to a de-duplication task (C). ServiceNow creates deduplication tasks that allow administrators to review and remediate detected duplicates. No automatic notification to CI owner (A) or automatic rule creation (B) occurs. Discovery is not stopped for the CI (D)." data-source-url="">
-<h2>Question 45</h2>
+<h2>Question 46</h2>
 <p class="question-stem">Which choice best describes what happens when, by default, duplicate CIs are detected during identification and reconciliation?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> A notification is sent to the CI owner.</div>
@@ -616,7 +623,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="A horizontal discovery pattern is best described as steps that execute operations (A). Per the docs: &#x27;The operations in the pattern cover both the identification and exploration phases.&#x27; A pattern is an ordered sequence of steps, each executing a specific operation (WMI Query, Parse File, SNMP Query, etc.). It is not a credential depot (B), port scanning tool (C), or classifiers executing probes (D)." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery/c_DiscoProcessFlows.html">
-<h2>Question 46</h2>
+<h2>Question 47</h2>
 <p class="question-stem">Which choice best describes a horizontal discovery pattern?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Steps that execute operations</div>
@@ -629,7 +636,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C,D" data-community="false" data-explanation="Parse File with Delimited Text parsing strategy (C) and Parse File with Regular Expression parsing strategy (D) can extract build and version data from config file lines. Delimited Text handles key=value format (line 2, 3). Regular Expression handles complex patterns like &#x27;app build 1.2.3.4 version 5.14&#x27; (line 1). Get Process (A) retrieves running processes. Find Matching URL (B) is for web-based discovery." data-source-url="">
-<h2>Question 47</h2>
+<h2>Question 48</h2>
 <p class="question-stem">A config file for an application has the following three lines:<br />Line 1: app build 1.2.3.4 version 5.14<br />Line 2: installation_dir=c:\opt\bin<br />Line 3: build_type=Server.<br />Which methods below will extract the build and version numbers from these lines using a horizontal discovery pattern? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Get Process operation with correct Port</div>
@@ -642,7 +649,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="true" data-explanation="Based on the image (not visible in text), Step 25 uses a shared library (C). Per the docs: shared libraries are reusable sequences of discovery steps referenced via the Library Reference operation. Step 26 (A) does not use a shared library. Community consensus (100%) confirms C. The Library Reference operation in Step 25 links to a reusable shared library." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery-and-service-mapping-patterns/modify-pattern-using-extensions.html">
-<h2>Question 48</h2>
+<h2>Question 49</h2>
 <p class="question-stem">The following shows part of the Windows OS - Servers pattern in Pattern Designer:<br /><br />Which of the steps above use(s) a shared library?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Step 26</div>
@@ -655,7 +662,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="The MID Server requires access to install.service-now.com (A) to automatically stay up-to-date with instance versions. This URL hosts MID Server upgrade packages. When a new version is available, the MID Server downloads the update from this endpoint. docs.servicenow.com (B) is documentation. developer.service-now.com (C) is the developer portal. service-now.com (D) is too generic." data-source-url="">
-<h2>Question 49</h2>
+<h2>Question 50</h2>
 <p class="question-stem">Which of the following is required for a MID Server to have access to automatically stay up-to-date with instance versions?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> install.service-now.com</div>
@@ -668,7 +675,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="Best practice when designing steps with operations requiring variables is to query targets for variables (C). Dynamically querying the target for values ensures accuracy across different environments. Hard-coding variables (A) breaks portability. Always using scalar variables (B) is limiting. Designing for a static environment (D) contradicts Discovery&#x27;s dynamic nature." data-source-url="">
-<h2>Question 50</h2>
+<h2>Question 51</h2>
 <p class="question-stem">When designing steps with operations requiring variables, it is best practice to do what?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> hard core variables</div>
@@ -681,7 +688,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="File-based Discovery is used to discover file paths to recognize the signature of installed software (D). Per the docs: &#x27;File-based Discovery uses file signatures to detect software that might not have been registered.&#x27; File signatures match software by file name, size, and version. It does not primarily track file checksums (A), read config file contents (B), or enforce naming standards (C)." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery/file-based-discovery.html">
-<h2>Question 51</h2>
+<h2>Question 52</h2>
 <p class="question-stem">For what is File Based Discovery used?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> To discover the checksum of a file and store it to track for changes</div>
@@ -694,7 +701,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="The property mid.discovery.max_pattern_payload_size (D) defines the maximum overall size for the returned payload from patterns. This MID Server-side property limits pattern payload sizes. cmdb.properties.payload_max_size (A) and glide.discovery.payload_max (B) are not valid property names. mid.discovery.max_payload_size (C) is for non-pattern discovery payloads." data-source-url="">
-<h2>Question 52</h2>
+<h2>Question 53</h2>
 <p class="question-stem">Which of the following properties define the maximum overall size for the returned payload that comes from patterns?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> cmdb.properties.payload_max_size</div>
@@ -707,7 +714,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="true" data-explanation="Based on the image (not visible in text), there is a tabular variable named &#x27;name_details&#x27; (D). Community consensus (100%) confirms D. Tabular variables hold multi-row data from operations like WMI queries. A scalar variable (B) holds single values. WMI query operation (A) is one possibility but not confirmed from image. The value can be used in pattern steps (C is false)." data-source-url="">
-<h2>Question 53</h2>
+<h2>Question 54</h2>
 <p class="question-stem">Based on this image, which of the following choices is true?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> This is from a WMI query operation step.</div>
@@ -720,7 +727,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="Best practice for a custom device SNMP Query is to use the published manufacturer&#x27;s device MIB (D). The manufacturer&#x27;s MIB contains the correct OID definitions for the device. Modifying default MIBs (A) risks breaking existing discovery. Enabling SSH as secondary (B) is unrelated to SNMP. Using live production devices for testing (C) is risky and not best practice." data-source-url="">
-<h2>Question 54</h2>
+<h2>Question 55</h2>
 <p class="question-stem">Using the SNMP Query operation on a pattern for a custom device query, it is best practice to do what?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Modify the default MIB information</div>
@@ -733,7 +740,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B,E,F" data-community="false" data-explanation="Default fields on the ECC Queue tab after Discovery are Topic (B), Queue (E), and Source (F). These are standard ECC Queue record fields that identify the probe type (Topic), queue direction (Queue), and originating system (Source). Details (A) is not a default display field. Pattern log link (C) is not a default ECC field. CMDB CI (D) and Discovery schedule name (G) are not default ECC Queue tab columns." data-source-url="">
-<h2>Question 55</h2>
+<h2>Question 56</h2>
 <p class="question-stem">After running Discovery and viewing the ECC Queue tab, what are some of the displayed default fields? (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Details</div>
@@ -749,7 +756,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,C,E" data-community="false" data-explanation="Hardware Models can have a one-to-many relationship with Assets (A), Configuration Items (C), and Model Categories (E). One Hardware Model can be associated with many Assets and many CIs. A Model Category contains many Hardware Models (one category to many models). Manufacturer (B) is a many-to-one relationship (many models to one manufacturer). Product owner (D) is not a standard one-to-many relationship." data-source-url="">
-<h2>Question 56</h2>
+<h2>Question 57</h2>
 <p class="question-stem">Hardware Models can have a one-to-many relationship with the following:<br />(Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Assets</div>
@@ -763,7 +770,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="true" data-explanation="Based on the image (not visible in text), the functionality shown is modified from a Discovery Pattern (B). Pattern Designer is used to modify identification, connection, and extension steps in patterns. Community consensus (100%) confirms B. Classifiers (A) control CI type identification. The MID Server (C) executes discovery. Probes (D) are individual data collection units." data-source-url="">
-<h2>Question 57</h2>
+<h2>Question 58</h2>
 <p class="question-stem">Which choice best represents how to modify the functionality shown in this image?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> From a Classifier</div>
@@ -776,7 +783,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="The Duplicate CI Remediator (A) is the recommended method for consolidating duplicate CIs. This ServiceNow tool identifies duplicate CI records and provides a guided workflow to merge or remediate them. Event CI Remediation (B) handles alert-CI binding issues. Ignore Duplicate CI (C) bypasses the problem. Manual CI Remediation (D) is possible but not recommended as the primary method." data-source-url="">
-<h2>Question 58</h2>
+<h2>Question 59</h2>
 <p class="question-stem">What is the recommended method of consolidating duplicate CIs?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Duplicate CI Remediator</div>
@@ -789,7 +796,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="The Model Category (B) determines if an Asset record is created during Discovery. If the Model Category is configured to create assets, Discovery will generate an Asset record when it discovers a matching CI. CMDB (A) stores CI records but doesn&#x27;t control asset creation. Model Product (C), ECC Queue (D), and Configuration Item (E) do not determine asset record creation." data-source-url="">
-<h2>Question 59</h2>
+<h2>Question 60</h2>
 <p class="question-stem">During the Discovery process, what determines if an Asset record is created?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> CMDB</div>
@@ -803,7 +810,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="The Put file operation (C) allows the transfer of a file from the MID Server to a target. Similar to FTP&#x27;s PUT command, this operation pushes a file from the MID Server to the remote target system. Parse file (A) reads and parses file content from a target. Create Connection (B) establishes connectivity. Manage Attachments (D) handles attachments within ServiceNow." data-source-url="">
-<h2>Question 60</h2>
+<h2>Question 61</h2>
 <p class="question-stem">What pattern operation allows the transfer of a file from the MID Server to a target?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Parse file</div>
@@ -816,7 +823,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="Sensor records have a Queue value of input and probe records have a Queue value of output (A). Probes send requests OUT from the instance to the MID Server (output queue). Sensors process results coming IN from the MID Server back to the instance (input queue). Options B and C use started/ready which are ECC queue state values, not queue direction values. Option D reverses the correct assignment." data-source-url="">
-<h2>Question 61</h2>
+<h2>Question 62</h2>
 <p class="question-stem">On the ECC Queue, sensor records have a Queue value of ___________ and probe records have a Queue value of ___________.</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> input, output</div>
@@ -829,7 +836,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="The Credential Affinity table (A) associates an IP address with a credential. When Discovery successfully uses a credential for an IP, it records this association in Credential Affinity so the same credential is tried first on subsequent discoveries. Service Affinity (B) tracks which service protocol worked for an IP. Service CI Association (C) links services to CIs. Tags (D) are metadata labels." data-source-url="">
-<h2>Question 62</h2>
+<h2>Question 63</h2>
 <p class="question-stem">In Discovery, what table associates an IP address and a credential?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Credential Affinity</div>
@@ -841,8 +848,15 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 64</h2>
+<p class="question-stem">If the WMI service is not running on a host, it will prevent the discovery of which devices?<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											Network<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Windows<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Storage<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Unix</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="B,D" data-community="false" data-explanation="Discovery can provide application to application (B) and host to application (D) relationships. Discovery patterns can map connections between applications (B) and link applications to their host servers (D). TCP to UDP (A) describes protocol types, not CI relationships. MID Server to target (C) is a discovery infrastructure relationship, not a CMDB CI relationship." data-source-url="">
-<h2>Question 63</h2>
+<h2>Question 65</h2>
 <p class="question-stem">In general, Discovery can provide which of the following kinds of application relationships? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> tcp to udp</div>
@@ -855,7 +869,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B,C" data-community="false" data-explanation="MID Servers must be configured as a trusted source with DNS (B) and MID Servers need to be added to the WinRM Group policy on the Servers (C) to access servers using WinRM. These two configurations establish the trust relationship and policy permissions needed for WinRM connectivity. JEA Properties set to True (A) is for Just Enough Administration. MID Server Parameters Add WinRM (D) is not a standard configuration." data-source-url="">
-<h2>Question 64</h2>
+<h2>Question 66</h2>
 <p class="question-stem">Which of the following must be configured to allow a MID Server to access servers using WinRM? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> JEA Properties set to True</div>
@@ -868,7 +882,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,E,F" data-community="false" data-explanation="Valid replacements for &lt;_&gt; in $IfTable&lt;_&gt;.InstanceID are [3] (A) for a specific row index, [*] (E) for all rows, and [] (F) for default/empty index. These are valid table variable index notations in Discovery patterns. [X] (B) uses an alphabetic character which is not valid. [&amp;] (C) and [.] (D) contain special characters that are not valid index syntax." data-source-url="">
-<h2>Question 65</h2>
+<h2>Question 67</h2>
 <p class="question-stem">For a pattern operation, which of the below choices could be a valid replacement for <_>? (Choose three.)<br />$IfTable<_>.InstanceID</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> [3]</div>
@@ -883,7 +897,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B,C,E" data-community="true" data-explanation="Based on the image (not visible in text), the most probable results are a scalar variable named MaximumWorkingSetSize (B), a scalar variable named PageFaults (C), and a tabular variable named more_process_info (E). Community consensus (100%) confirms BCE. WMI queries against Win32_Process return individual scalar columns and can also populate tabular variables for the full result set." data-source-url="">
-<h2>Question 66</h2>
+<h2>Question 68</h2>
 <p class="question-stem">Which of the below choices are the most probable results of the following image? (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> A tabular variable named ‘WMI Query’.</div>
@@ -898,7 +912,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,C" data-community="false" data-explanation="The far-right section of Pattern Designer for horizontal patterns contains CI Attributes (A) and Temporary Variables (C). The CI Attributes pane shows main pattern and related CI type attributes for mapping. The Variables pane shows temporary variables created by pattern steps. Operations (B) are in the step configuration area. CMDB Dashboard (D) is a separate application." data-source-url="">
-<h2>Question 67</h2>
+<h2>Question 69</h2>
 <p class="question-stem">What is found on the far-right section of the Pattern Designer for horizontal patterns? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> CI Attributes</div>
@@ -911,7 +925,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C,D" data-community="false" data-explanation="Key capabilities of ServiceNow ITOM Enterprise solution are Manage Hybrid Clouds (C) and Proactively Eliminate Service Outages (D). ITOM Visibility manages cloud and on-premise infrastructure (C), while ITOM Health proactively detects and prevents service outages (D). Create an Engaging User Experience (A) and Build New Apps Fast (B) are Creator Workflow and App Engine capabilities, not ITOM." data-source-url="">
-<h2>Question 68</h2>
+<h2>Question 70</h2>
 <p class="question-stem">Which of the choices below best represent key capabilities of a ServiceNow ITOM Enterprise solution? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Create an Engaging User Experience</div>
@@ -924,7 +938,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,C" data-community="false" data-explanation="To create a custom horizontal pattern to discover an undiscovered OS, you must select a CI Type (A) and select Infrastructure Pattern Type (C). CI Type specifies what CMDB table the pattern populates. Infrastructure Pattern Type is correct for OS/hardware discovery. Define Process Strategy (B) is not a standard field. Application Pattern Type (D) is for software applications, not OS-level discovery." data-source-url="">
-<h2>Question 69</h2>
+<h2>Question 71</h2>
 <p class="question-stem">Which choices best describe what is necessary to create a custom horizontal pattern to discover an operating system that is not discovered by the base installation patterns? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Select a CI Type</div>
@@ -937,7 +951,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B,C" data-community="false" data-explanation="The Tomcat table extends the Application Server table (B) and is a child of the Application Server table (C). In ServiceNow&#x27;s CMDB hierarchy, cmdb_ci_app_server_tomcat extends cmdb_ci_app_server — the Tomcat table inherits all Application Server fields and adds Tomcat-specific ones. Options B and C describe the same inheritance relationship. Tomcat does not fail to extend it (A), nor is it a parent (D)." data-source-url="">
-<h2>Question 70</h2>
+<h2>Question 72</h2>
 <p class="question-stem">Which of the following best describes the relationship between the Tomcat [cmdb_ci_app_server_tomcat] table and the Application Server [cdmb_ci_app_server] table? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Tomcat does not extend the Application Server table</div>
@@ -950,7 +964,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B,C" data-community="false" data-explanation="In Pattern Designer, CI Attributes are available as Main pattern CI type (B) and Related CI types (C). Per the docs: &#x27;Pattern Designer displays attributes of related CI types... while creating or modifying the main CI pattern.&#x27; The right panel shows main CI type attributes and related CI type attributes. Global CI types (A) and All CI types (D) are not the available CI attribute categories." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery-and-service-mapping-patterns/add-related-cis-to-the-main-ci-pattern.html">
-<h2>Question 71</h2>
+<h2>Question 73</h2>
 <p class="question-stem">In a discovery pattern, which types are available with CI Attributes in the Pattern Designer? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Global CI types</div>
@@ -963,7 +977,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,B" data-community="false" data-explanation="Benefits of Tracked Configuration Files are content version comparison (A) and files tracked as CIs (B). Per the docs: version comparison shows side-by-side file differences. Per the docs: &#x27;All configuration files are saved as a CI in the Tracked Configuration file [cmdb_ci_config_file_tracked] table.&#x27; Tracked files do not remove files from targets (C). Credentials are still needed for file access (D)." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/service-mapping/t_CompareBS.html">
-<h2>Question 72</h2>
+<h2>Question 74</h2>
 <p class="question-stem">Which of the below choices are benefits of Tracked Configuration Files? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Content version comparison</div>
@@ -976,7 +990,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="A Functionality Definition defines what protocols to detect from within a Behavior (D). Per the docs: &#x27;Discovery Functionality defines what each MID Server in this behavior must do, specifically which protocols to detect.&#x27; CI identifiers (A) are separate rules. IP addresses to discover (B) are defined in Discovery Schedules. What Behavior to use (C) is configured on the Discovery Schedule itself." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery/create-disco-behavior.html">
-<h2>Question 73</h2>
+<h2>Question 75</h2>
 <p class="question-stem">Which choice best describes a Functionality Definition?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Defines what CI identifiers to use.</div>
@@ -989,7 +1003,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="As a first step in horizontal discovery, the Shazzam probe is placed in a request in the ECC queue (C). Per the docs: &#x27;Discovery first takes the Shazzam probe (and then port probes) and places it in a request in the External Communication Channel (ECC) queue.&#x27; The MID Server then retrieves this request. Target (A), Pattern Log (B), and Discovery Log (D) are not where the initial probe request is placed." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery/c_DiscoProcessFlows.html">
-<h2>Question 74</h2>
+<h2>Question 76</h2>
 <p class="question-stem">As a first step in horizontal discovery, which of the following is where the Shazzam probe is placed in a request?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Target</div>
@@ -1002,7 +1016,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,C" data-community="false" data-explanation="Switching (A) and Downgrading (C) have a higher chance of leading to lost data during CI reclassification. Switching between unrelated CI types can lose data that doesn&#x27;t map to the new type. Downgrading to a less specific CI type (parent table) loses child-table-specific fields. Identifying (B) does not reclassify CIs. Upgrading (D) to a more specific type typically adds rather than loses fields." data-source-url="">
-<h2>Question 75</h2>
+<h2>Question 77</h2>
 <p class="question-stem">Which of the choices have a higher chance of leading to lost data during CI reclassification? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Switching</div>
@@ -1015,7 +1029,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,C,E" data-community="false" data-explanation="The three kinds of variables used in discovery patterns are CI attributes (A), Temporary (C), and Global (E). CI attribute variables map to CMDB fields. Temporary variables store intermediate data within a pattern step. Global variables are accessible across all steps in a pattern. Prefix (B) and Fixed (D) are not standard variable kinds in Discovery patterns." data-source-url="">
-<h2>Question 76</h2>
+<h2>Question 78</h2>
 <p class="question-stem">Which of the below choices are kinds of variables used in discovery patterns? (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> CI attributes</div>
@@ -1029,7 +1043,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B,C" data-community="false" data-explanation="Global variables for steps in horizontal discovery patterns include computer_system (B) and process (C). These are standard pre-defined global variables available across all steps. computer_system represents the discovered host CI. process represents running process data. system (A) is not a specific Discovery global variable. baseline (D) is not a standard pattern global variable name." data-source-url="">
-<h2>Question 77</h2>
+<h2>Question 79</h2>
 <p class="question-stem">Which of the following choices may be global variables for steps in horizontal discovery patterns? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> system</div>
@@ -1042,7 +1056,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="The Input (D) ECC Queue message contains the XML payload returned from the MID Server. When the MID Server executes a probe and sends results back to the instance, those results arrive in the Input queue. The instance&#x27;s sensor then processes this input payload. Per the docs: &#x27;Note the XML payload it returned as the discovery task collected data.&#x27; Output (B) contains requests going TO the MID Server. Ready (A) and Pending (C) are states." data-source-url="https://www.servicenow.com/docs/r/yokohama/it-operations-management/discovery/t_ValidateDiscoveryResults.html">
-<h2>Question 78</h2>
+<h2>Question 80</h2>
 <p class="question-stem">Which ECC Queue message contains the XML payload returned from the MID Server?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Ready</div>
@@ -1055,7 +1069,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="Check Definitions (D) execute the osquery commands on agents to gather attribute details. Per the docs: &#x27;Create a check definition to execute the osquery command on the Agent.&#x27; Check Definitions specify the osquery command, type, and parameters. Agent Collector (A) is the software installed on hosts. Agent listener (B) is not standard. ACC for Discovery (C) is a broader application. Policies (E) deploy check definitions but don&#x27;t execute commands." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/agent-client-collector/acc-api-check-def.html">
-<h2>Question 79</h2>
+<h2>Question 81</h2>
 <p class="question-stem">Which of the following executes the osquery commands on agents to gather attribute details from a CI?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Agent Collector</div>
@@ -1069,7 +1083,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="Discovery Range Sets provide flexibility in management and identification of known networks for simplicity of administration (D). Range Sets group IP ranges into named sets that can be reused across multiple Discovery Schedules. Range Sets are not the only way to define multiple IP ranges (A). They don&#x27;t show subnet IP counts (B). Not all needed range sets come pre-installed (C)." data-source-url="">
-<h2>Question 80</h2>
+<h2>Question 82</h2>
 <p class="question-stem">What is the advantage of Discovery Range Sets?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Range Sets are the only way to have more than one IP Range defined within a Discovery Schedule.</div>
@@ -1082,7 +1096,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="true" data-explanation="Based on the image (not visible in text), this is an Application horizontal pattern type (A). The two pattern types are Infrastructure and Application. Application patterns discover software applications and can be used for both Service Mapping top-down discovery and horizontal Discovery. Community consensus (50%) indicates A. Infrastructure patterns (C) are for OS/hardware level discovery." data-source-url="">
-<h2>Question 81</h2>
+<h2>Question 83</h2>
 <p class="question-stem">From Pattern Designer, which horizontal pattern type is the image below showing?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Application</div>
@@ -1095,7 +1109,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,B,D" data-community="false" data-explanation="The editable fields in a Merge Table operation are Target Table (A), Second Table (B), and First Table (D). A Merge Table combines First Table and Second Table data into the Target Table. Primary Table (C) is not a field in the Merge Table operation — the result is called the Target Table. These three fields define the source and destination of the merge operation." data-source-url="">
-<h2>Question 82</h2>
+<h2>Question 84</h2>
 <p class="question-stem">Which of the following fields are editable from a Merge Table pattern operation? (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Target Table</div>
@@ -1108,7 +1122,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="SNMP credentials being incorrect (B) could cause &#x27;Active, couldn&#x27;t classify&#x27; during discovery of an SNMP network device. If Discovery finds port 161 open but cannot authenticate via SNMP due to wrong credentials, the classification phase fails. A firewall (A) would cause no response, not &#x27;Active.&#x27; Missing SNMP behavior (C) affects which protocols are tried. Missing classification (D) would also cause this but credentials are the more immediate cause." data-source-url="">
-<h2>Question 83</h2>
+<h2>Question 85</h2>
 <p class="question-stem">While discovering a new SNMP network device, which choice could cause the error “Active, couldn’t classify” to occur on a Discovery Status?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> A firewall blocking the communication between the MID Server and the target device.</div>
@@ -1121,7 +1135,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="When the deletion strategy is &#x27;Mark as absent&#x27; and a related Disk CI is not found in a subsequent discovery, the Disk Status CI (install_status) is set to Absent (A). Per the docs: &#x27;Mark as absent: Marks the Status [install_status] field of the CI record as Absent.&#x27; The Disk CI&#x27;s install_status is affected, not the operational_status (B), and not the Linux Server CI fields (C, D)." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery/deletion-strategy.html">
-<h2>Question 84</h2>
+<h2>Question 86</h2>
 <p class="question-stem">The deletion strategy is set to ‘Mark as absent’ for related Disk CIs discovered via the Linux Server pattern. If a related Disk CI is discovered during the Linux Server discovery and then the same related Disk CI is not found the next time the Linux Server is discovered, the following will happen:</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> The Disk Status CI (install_status) is set to Absent.</div>
@@ -1134,7 +1148,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="The Discovery pattern log shows success or failure of individual pattern steps (A), which is not visible in the ECC Queue. The pattern log provides step-level execution results, helping troubleshoot which specific operation failed. The ECC Queue shows XML payloads (B), Shazzam probe data (C), and relationship records (D), but does not show per-step pass/fail status for individual pattern operations." data-source-url="">
-<h2>Question 85</h2>
+<h2>Question 87</h2>
 <p class="question-stem">What would you see in the Discovery pattern log that you would not see in the ECC Queue?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Success or failure of the individual pattern steps</div>
@@ -1147,7 +1161,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="Most Discovery properties start with glide.discovery (D). This is the standard ServiceNow naming convention for Discovery configuration properties (e.g., glide.discovery.enable_adme, glide.discovery.payload_max_size). discovery.prop (A), disco.release (B), and glide.itom (C) are not the standard prefix for Discovery system properties." data-source-url="">
-<h2>Question 86</h2>
+<h2>Question 88</h2>
 <p class="question-stem">What do most Discovery properties start with?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> discovery.prop</div>
@@ -1160,7 +1174,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="The default thread count for a MID Server is 25 (D). This determines how many concurrent threads the MID Server uses to process ECC queue requests and run discovery probes. 5 (A) is too low for typical MID Server operation. 1 (B) would severely limit performance. 50 (C) is higher than the default value." data-source-url="">
-<h2>Question 87</h2>
+<h2>Question 89</h2>
 <p class="question-stem">What is the default thread count for a MID Server?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> 5</div>
@@ -1173,7 +1187,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="The Configuration Console (C) is the recommended method for excluding specific software from discovery on Windows and Unix Servers. Per the docs, navigating through Discovery Definition &gt; Application Categories allows customizing which applications are discovered by unlocking and modifying the process classifier list. Pattern Modification (A) is complex. Probe Modification (B) requires development. Discovery Properties (D) don&#x27;t control specific software exclusion." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery/c_DiscoveryConfigurationConsole.html">
-<h2>Question 88</h2>
+<h2>Question 90</h2>
 <p class="question-stem">What is the recommended method for excluding specific software from discovery on Windows and Unix Servers?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Pattern Modification</div>
@@ -1186,7 +1200,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="A tabular variable in a discovery pattern is best described as one where each cell is a scalar variable (D). A tabular variable has multiple rows and columns, and each cell holds an individual scalar value. It is not a single column (A) — that would be a scalar list. A single string (B) describes a scalar variable. CI attributes (C) are a different variable type category." data-source-url="">
-<h2>Question 89</h2>
+<h2>Question 91</h2>
 <p class="question-stem">Which of the choices best describes a tabular variable in a discovery pattern?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> A single column</div>
@@ -1199,7 +1213,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="mid.server1 (C) is not a valid MID Server name because it contains a period (.). MID Server names must use only alphanumeric characters and underscores. my_mid_server1 (A) uses underscores which are valid. mid_server1 (B) is valid. midserver1 (D) is valid with only alphanumeric characters." data-source-url="">
-<h2>Question 90</h2>
+<h2>Question 92</h2>
 <p class="question-stem">When configuring the MID Server Service Settings, which of the following is not a valid MID Server name?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> my_mid_server1</div>
@@ -1212,7 +1226,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="Connectivity section (B) is not used in a horizontal discovery pattern. Connectivity sections are used in Service Mapping application patterns to discover outbound connections. Horizontal discovery patterns use Variables (A), Operations (C), and Identification sections (D). The connectivity section concept is specific to top-down Service Mapping patterns." data-source-url="">
-<h2>Question 91</h2>
+<h2>Question 93</h2>
 <p class="question-stem">Which one of the following is not used in a horizontal discovery pattern?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Variables</div>
@@ -1225,7 +1239,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="The Warning level error &#x27;No results returned from probe&#x27; during Port Scan most likely means a logical or physical firewall is preventing connectivity (B). If a firewall blocks the port scan probe, no port data is returned. A Process Classifier issue (A) occurs after classification, not during port scan. Wrong credentials (C) apply to the identification phase. Datasource Precedence (D) affects reconciliation, not port scanning." data-source-url="">
-<h2>Question 92</h2>
+<h2>Question 94</h2>
 <p class="question-stem">During the Port Scan phase what could the Warning level error “No results returned from probe.” mean?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Process Classifier incorrectly configured</div>
@@ -1238,7 +1252,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B,D" data-community="false" data-explanation="The two types of temporary variables in discovery patterns are Tabular/Table (B) and Scalar/List (D). Per the docs: &#x27;SNMP Query (Tabular and Scalar)&#x27; — these correspond to the two temporary variable types. Tabular holds multi-row data; scalar holds single values or lists. SQL statement (A) and Command (C) are operation types, not variable types." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery/commands-list-discovery.html">
-<h2>Question 93</h2>
+<h2>Question 95</h2>
 <p class="question-stem">Which of the choices are types of temporary variables in a discovery pattern? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> SQL statement</div>
@@ -1251,7 +1265,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="Based on the image (not visible in text), the operation shown is Transform Table (C). The Transform Table operation applies a transformation to table variable data. Community consensus confirms C. Put File (A) transfers files. Parse Variable (B) parses data. Union Table (D) combines tables without transformation." data-source-url="">
-<h2>Question 94</h2>
+<h2>Question 96</h2>
 <p class="question-stem">What operation is shown in this image?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Put File</div>
@@ -1264,7 +1278,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="The recommended permission for discovering Windows Servers is a domain user with local administrator access (B). Per the docs: &#x27;A domain user with local administrator access on the target Windows hosts&#x27; is the recommended credential level. A standard domain user with read access (A) lacks sufficient privileges. Root access (C) is a Linux concept. Domain administrator (D) is overly permissive and only needed for specific scenarios like domain controllers." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/service-mapping/r_Credentials4HostDiscovery.html">
-<h2>Question 95</h2>
+<h2>Question 97</h2>
 <p class="question-stem">Which of the following describes the recommended permission level for credentials to discover Windows Servers?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> A standard domain user with read access</div>
@@ -1277,7 +1291,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="Extension sections of a discovery pattern contain shared libraries (A). Per the docs: extension sections hold reusable sequences of discovery steps called shared libraries. The Library Reference operation links to these shared libraries. Connection sections (B) are for Service Mapping patterns. Identification sections (C) are the main discovery sections. Network libraries (D) is not a standard Discovery term." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery-and-service-mapping-patterns/modify-pattern-using-extensions.html">
-<h2>Question 96</h2>
+<h2>Question 98</h2>
 <p class="question-stem">Which of the following are contained in an extension section of a discovery pattern?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Shared libraries</div>
@@ -1290,7 +1304,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B,C" data-community="false" data-explanation="Under ACTION ON ALL in the Recommended Actions pane for Automated Error Messages, the options include Retry Discovery (B) and View instructions (C). These actions apply to all errors in the list simultaneously. Ping IP Addresses (A) and Make Ranges (D) are not standard ACTION ON ALL options in the Discovery error remediation interface." data-source-url="">
-<h2>Question 97</h2>
+<h2>Question 99</h2>
 <p class="question-stem">Which of the below choices are possible options under ACTION ON ALL in the Recommended Actions pane for an Automated Error Messages list within Discovery > Home? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Ping IP Addresses</div>
@@ -1303,7 +1317,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,C" data-community="false" data-explanation="For a Parse Variable operation using Delimited Text parsing strategy, the available options are Positions (A) and Delimiters (C). Per the docs: &#x27;Enter a value for the delimiter&#x27; and &#x27;Enter a value for the position.&#x27; Position specifies which delimited field to extract; Delimiter defines the separator character. Use SNMP Browser (B) is for SNMP operations. Merge Criteria (D) is for Merge Table operations." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery-and-service-mapping-patterns/aws-dynamoDB-discovery.html">
-<h2>Question 98</h2>
+<h2>Question 100</h2>
 <p class="question-stem">For a Parse Variable operation, when using the Delimited Text parsing strategy, which options are available in a step? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Positions</div>
@@ -1316,7 +1330,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="To create relationships between CIs in a horizontal pattern, you use the Create Relation/Reference operation (C). This operation explicitly defines CI-to-CI relationships within a pattern step. Relationships are not created automatically for connection sections in horizontal patterns (A). Create Connections operation (B) is not the standard operation name. Relationships can be created via patterns (D is false)." data-source-url="">
-<h2>Question 99</h2>
+<h2>Question 101</h2>
 <p class="question-stem">How do you create relationships between CIs in a horizontal pattern?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Relationships are created automatically for each successful connection section.</div>
@@ -1329,7 +1343,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="CI identifiers can be viewed under CI Class Manager (B). The CI Class Manager provides a hierarchical view of CI classes and their associated identifiers, reconciliation rules, and other configuration. Discovery Dashboard (A) shows discovery status. Process Handlers (C) are scripts for process classification. Processes and Classification (D) manages classifiers. The CI record (E) shows the CI&#x27;s data but not identifier configuration." data-source-url="">
-<h2>Question 100</h2>
+<h2>Question 102</h2>
 <p class="question-stem">CI identifiers can be viewed under which of the following?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Discovery Dashboard</div>
@@ -1343,7 +1357,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="When increasing the max number of threads for a MID Server, increasing the memory allocated to the MID Server app (C) may also be required. Each additional thread consumes memory resources, so the JVM heap size allocated to the MID Server must be increased to support more concurrent threads. Updating ACL rules (A) is unrelated. More disk space (B) doesn&#x27;t affect thread performance. Max payload size (D) is a separate capacity setting." data-source-url="">
-<h2>Question 101</h2>
+<h2>Question 103</h2>
 <p class="question-stem">Which of the following best describes what may also be required when increasing the max number of threads for a MID Server?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> updating the acl rules for the CMDB tables in ServiceNow</div>
@@ -1356,7 +1370,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="A Check (C) must be configured in ACC to run osquery commands on a CI. Per the docs: &#x27;Create a check definition to execute the osquery command on the Agent.&#x27; Check definitions specify the osquery command type and script. ACC Websocket Endpoint (A) handles ACC connectivity. Credential-less Discovery (B) is a separate feature. Infrastructure Patterns (D) are for horizontal Discovery. Policies (E) deploy checks to agents but don&#x27;t define the commands." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/agent-client-collector/acc-custom-checks.html">
-<h2>Question 102</h2>
+<h2>Question 104</h2>
 <p class="question-stem">Which part of Agent Client Collector must be configured to run osquery commands on a CI?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> ACC Websocket Endpoint</div>
@@ -1370,7 +1384,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,D" data-community="false" data-explanation="A CI Type (A) and a CI Entry Point (D) are necessary to trigger a custom pattern. The CI Type associates the pattern with the correct CMDB class, and the Entry Point defines how Service Mapping or Discovery identifies and triggers the pattern for that CI type. An Asset Record (B) is not needed for pattern triggering. CI Classification (C) triggers existing patterns via classifiers. CI Class Process Handler (E) is for process-based detection." data-source-url="">
-<h2>Question 103</h2>
+<h2>Question 105</h2>
 <p class="question-stem">Which selections are necessary to trigger a custom pattern? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> CI Type</div>
@@ -1384,7 +1398,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="The three ways of extending Discovery are Classifiers, Probes &amp; Sensors, and Discovery Patterns (C). Per the docs: classifiers identify CI types and trigger patterns; probes &amp; sensors collect and process data; discovery patterns define multi-step CI discovery logic. Fingerprinting (A, D) is not a standard extension method. Flow Designer (B) is for workflow automation. This is consistent with the three core Discovery extension mechanisms." data-source-url="https://www.servicenow.com/docs/r/xanadu/it-operations-management/itom-visibility/c_DataCollDiscoWebLogicServers.html">
-<h2>Question 104</h2>
+<h2>Question 106</h2>
 <p class="question-stem">What are three ways of extending Discovery?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Classifiers, Fingerprinting, Probes & Sensors</div>
@@ -1397,7 +1411,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,B,D" data-community="false" data-explanation="The three main KPIs for the CMDB Health scorecard are Completeness (A), Compliance (B), and Correctness (D). Completeness measures required/recommended field population. Compliance checks adherence to defined rules. Correctness validates data accuracy. Duplicates (C) is tracked as a relationship health metric but is not one of the three main scorecard KPIs. Staleness (E) is a CI health indicator, not a primary scorecard KPI." data-source-url="">
-<h2>Question 105</h2>
+<h2>Question 107</h2>
 <p class="question-stem">What are the main KPIs for CMDB Health scorecard? (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Completeness</div>
@@ -1411,7 +1425,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="As a first step in horizontal discovery, the Shazzam probe input is placed in a request in the ECC queue (B). Per the docs, and: &#x27;Discovery first takes the Shazzam probe and places it in a request in the External Communication Channel (ECC) queue.&#x27; The MID Server then retrieves and executes it. IP services (A) and Target IP (C) are discovery targets, not where the probe request is placed. Port probes (D) come after Shazzam." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery/c_DiscoProcessFlows.html">
-<h2>Question 106</h2>
+<h2>Question 108</h2>
 <p class="question-stem">As a first step in horizontal discovery, where is the Shazzam probe input placed in a request?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> IP services</div>

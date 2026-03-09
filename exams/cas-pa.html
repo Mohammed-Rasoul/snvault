@@ -716,8 +716,15 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="&#x27;Number of open problems not updated in last 90 days&#x27; (B) should be excluded from Historic Data Collection because its condition uses a relative time filter (&#x27;last 90 days&#x27;) that cannot be accurately evaluated for historical dates. When collecting data historically, relative time conditions are calculated against the historical collection date, but whether problems were &#x27;not updated&#x27; 90 days before a historical date cannot be determined accurately from current data." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 54</h2>
+<p class="question-stem">Before you can author a new Resource Block, what information do you require about the Host Resource Block that the Resource Block you are authoring will connect to?<br />							<br />						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />													A.<br />												<br /><br />											<br />											CI Class of the Host<br />										<br /><br /><br /><br /><br /><br />													B.<br />												<br /><br />											<br />											Guest Interface of the Host<br />										<br /><br /><br /><br /><br /><br />													C.<br />												<br /><br />											<br />											Host Interface of the Host<br />										<br /><br /><br /><br /><br /><br />													D.<br />												<br /><br />											<br />											Endpoint Mappings of the Host</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="B" data-community="false" data-explanation="&#x27;Number of open problems not updated in last 90 days&#x27; (B) should be excluded from Historic Data Collection because its condition uses a relative time filter (&#x27;last 90 days&#x27;) that cannot be accurately evaluated for historical dates. When collecting data historically, relative time conditions are calculated against the historical collection date, but whether problems were &#x27;not updated&#x27; 90 days before a historical date cannot be determined accurately from current data." data-source-url="">
+<h2>Question 55</h2>
 <p class="question-stem">Which Indicator should you exclude from a Historic Data Collection because its scores cannot be accurately collected?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Number of incidents resolved in time</div>
@@ -730,7 +737,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="The formula [[Number of new incidents]] / {{Number of new incidents}} * 100 returns the Breakdown score as a percentage of the overall score (B). [[ ]] returns the score filtered by the applied breakdown element; {{ }} returns the aggregate total score regardless of breakdown. When divided and multiplied by 100, the result shows what percentage of the total the breakdown element represents. This compares breakdown to total, not to previous scores (A) or time series (D)." data-source-url="">
-<h2>Question 55</h2>
+<h2>Question 56</h2>
 <p class="question-stem">Consider the example formula below. What is the formula output when a Breakdown is applied?<br /><br />[[Number of new incidents]] / {{Number of new incidents}} * 100;</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> The formula compares the current score to the previous score.</div>
@@ -743,7 +750,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="The code in the Formula box of a Formula Indicator is JavaScript (D). Per the docs: Performance Analytics formula indicators use JavaScript syntax with PA-specific variables and methods. Formulas reference indicators using [[ ]] and {{ }} notation within JavaScript code. Formula errors (A) are reported in data collection job logs, not a separate Formula Error log. PA Scripts (B) are separate from formula indicators. Formula scores (C) are calculated at collection time, but this is a property of data collection, not a characteristic of the formula language." data-source-url="https://www.servicenow.com/docs/r/now-intelligence/performance-analytics/pa-scripts.html">
-<h2>Question 56</h2>
+<h2>Question 57</h2>
 <p class="question-stem">Which is a true statement about a Formula Indicator?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Any formula errors are reported in the Formula Error log.</div>
@@ -756,7 +763,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A,C" data-community="false" data-explanation="Indicators NOT to include in Historical Collection are Average age of open incidents (A) and Number of incidents not updated in last 5 days (C). Both use relative time-based conditions that cannot be accurately computed for historical dates: &#x27;age&#x27; would be calculated from collection date (not the historical date), and &#x27;not updated in last 5 days&#x27; is relative to the historical date and cannot be verified from current data. Number of new incidents (B) and incidents with no assignment group (D) can be accurately collected historically." data-source-url="">
-<h2>Question 57</h2>
+<h2>Question 58</h2>
 <p class="question-stem">Which of these Indicators should NOT be included in a Historical Collection? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Average age of open incidents</div>
@@ -769,7 +776,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C,D" data-community="false" data-explanation="Currently Active Incidents with Open Problems (C) and Current view of Employees by Department (D) can be obtained using Reporting. These are point-in-time snapshots of current table data — exactly what Reporting provides. Weekly comparison of resolution time vs SLA (A) and Department Headcount Over Time (E) require time-series trending data — better obtained from Performance Analytics. Forecast of HR Case Resolution Times (B) requires forecasting functionality available in Performance Analytics, not basic Reporting." data-source-url="">
-<h2>Question 58</h2>
+<h2>Question 59</h2>
 <p class="question-stem">Which of the following measurements can be obtained using Reporting? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Weekly comparison of Incident resolution time vs SLA met percentage</div>
@@ -783,7 +790,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="To limit exponential growth of Breakdown element scores, uncheck the &#x27;Collect breakdown matrix&#x27; property of an indicator (B). Breakdown matrix collection creates scores for ALL combinations of two breakdowns, which grows exponentially. Per the docs: with two breakdowns of 100 elements each, the matrix creates up to 10,000 combinations. Unchecking this property prevents matrix collection. Consolidating breakdowns (A) or limiting to 2 breakdowns (C) reduces scope but does not address the root cause. The maximum elements property (D) limits storage but does not prevent exponential growth." data-source-url="https://www.servicenow.com/docs/r/now-intelligence/performance-analytics/pa-dc-props.html">
-<h2>Question 59</h2>
+<h2>Question 60</h2>
 <p class="question-stem">What is the best way to limit the exponential growth of Breakdown element scores?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> By consolidating Breakdowns</div>
@@ -796,7 +803,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="An Indicator Source is used in data collection to collect all matching records into a temporary result set (A). The indicator source defines the facts table and conditions; during collection, the data collector queries the table with those conditions to gather matching records, then calculates aggregate scores from that temporary set. It builds a full query (not just the first half - B is wrong), does not create a new Scores table (C), and is not a folder for organization (D)." data-source-url="">
-<h2>Question 60</h2>
+<h2>Question 61</h2>
 <p class="question-stem">How is an Indicator Source used in data collection?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Collect all the matching records into a temporary result set</div>
@@ -809,7 +816,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="To ensure report widgets are filtered correctly when configuring an Interactive Filter, edit each widget and enable &#x27;Follow interactive filter&#x27; (D). Per the docs: &#x27;This option is available for all report widgets... select Follow interactive filter.&#x27; Per the docs: &#x27;Select the Edit widget icon on each visualization that should follow the filter and select Follow interactive filter.&#x27; Apply Dashboard Filter (A) and Follow element (B) are for PA widgets. Act as interactive filter (C) is configured on the filter, not the widget." data-source-url="https://www.servicenow.com/docs/r/now-intelligence/interactive-filters/t_MakeAReportASubscriber.html">
-<h2>Question 61</h2>
+<h2>Question 62</h2>
 <p class="question-stem">When configuring an Interactive Filter on a dashboard, how do you ensure that Report widgets will be filtered correctly.</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Edit each widget and enable “Apply Dashboard Filter”</div>
@@ -822,7 +829,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B,D" data-community="false" data-explanation="Scripted Breakdown Mappings are needed for categorizing the length of time since tasks updated into Age Ranges (B) — requires calculating elapsed duration; and categorizing tasks by Hour of Day they were created (D) — requires extracting the hour from a datetime field. Both require scripts since no direct field contains those calculated values. Priority (C) is a simple direct field reference requiring no script. Categorizing by number of updates (A) would also need a script but B and D are the most clearly scripted scenarios." data-source-url="">
-<h2>Question 62</h2>
+<h2>Question 63</h2>
 <p class="question-stem">Which of the following scenarios require the use of a scripted Breakdown Mapping? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Categorizing Requests based on the number of times they were updated.</div>
@@ -835,7 +842,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="The on-click behavior configuration in a PA widget allows navigation to a URL within the ServiceNow instance instead of the default Analytics Hub (D). Per the docs: &#x27;By default, clicking a widget opens the detailed Analytics Hub. You can configure a widget to navigate to a URL. Only URLs relative to the instance URL are allowed.&#x27; It does not enable real-time updates (A), add a secondary Y-axis (B), or navigate to external URLs (C)." data-source-url="https://www.servicenow.com/docs/r/now-intelligence/performance-analytics/add-indicators-to-widget.html">
-<h2>Question 63</h2>
+<h2>Question 64</h2>
 <p class="question-stem">What is the purpose of an On-click behavior configuration in a Performance Analytics Widget?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Enable real-time data updates to the widget</div>
@@ -848,7 +855,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="The Field attribute on a Breakdown Source form identifies the field that contains a unique value for every record in the breakdown source facts table (D). Per the docs: &#x27;Always use a facts table with a field that has a unique value for every record, usually Sys ID.&#x27; This unique field is used to identify and distinguish breakdown elements. It does not define relationships between breakdowns and indicators (A), provide security (B), or limit the number of values returned (C)." data-source-url="https://www.servicenow.com/docs/r/now-intelligence/performance-analytics/t_DefiningABreakdownSource.html">
-<h2>Question 64</h2>
+<h2>Question 65</h2>
 <p class="question-stem">What is the purpose of the Field attribute on a Breakdown Source form?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Defines the relationship between the corresponding Breakdown and Indicators</div>
@@ -861,7 +868,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C,D" data-community="false" data-explanation="True statements are: Breakdowns require a Breakdown Mapping to be added to an Automated Indicator (C), and Indicator Sources with Monthly frequency can still be collected in a Daily job (D). Per the docs: &#x27;The breakdown must have a breakdown mapping for the indicator source table&#x27; before associating with indicators. A daily job can include monthly indicators; it generates new scores only when the monthly period changes. Frequency can differ from the source (A is false). Data collection does not need to complete before assigning breakdowns (B is false)." data-source-url="https://www.servicenow.com/docs/r/now-intelligence/performance-analytics/t_AssigningAnIndicatorToABreakdown.html">
-<h2>Question 65</h2>
+<h2>Question 66</h2>
 <p class="question-stem">Select the statements which correctly describe the respective Performance Analytics object behavior. (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> The frequency of an Indicator can differ from that of an Indicator Source</div>
@@ -874,7 +881,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="Dashboards are empty after importing an Update Set because &#x27;Unload Dashboard&#x27; was not performed before migrating (D). Per the docs: &#x27;Dashboard tabs aren&#x27;t automatically transferred in update sets. You can add a dashboard&#x27;s components to update sets from a dashboard record using the Unload Dashboard function.&#x27; Permissions (A) would show the dashboard with content, not empty. Data collection jobs (B) affect scores, not dashboard structure. Widget corruption (C) would cause errors, not simply empty dashboards." data-source-url="https://www.servicenow.com/docs/r/yokohama/now-intelligence/set-one-pae-db-as-home-for-specified-users.html">
-<h2>Question 66</h2>
+<h2>Question 67</h2>
 <p class="question-stem">After importing an Update set from another instance, the Indicators, Breakdowns, and Jobs are imported correctly, but all of the Dashboards are completely empty. What is the most likely cause of this?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> The user does not have permissions to view the Dashboard.</div>
@@ -887,7 +894,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="The best way to show groups managed by a selected manager when drilling down is to create a Breakdown Relation between the Assignment Group Manager and Assignment Group breakdowns (A). Per the docs: Breakdown Relations create navigational connections between breakdowns, allowing users to navigate from one breakdown element (manager) to its related elements (groups managed). Creating separate indicators per manager (B) or dynamic filters (C/D) are impractical and not the intended approach for breakdown navigation." data-source-url="https://www.servicenow.com/docs/r/now-intelligence/interactive-filters/create-cascading-filter.html">
-<h2>Question 67</h2>
+<h2>Question 68</h2>
 <p class="question-stem">You have the following configuration:<br />• Indicator Average age open incidents with two Breakdowns:<br />o Assignment Group Manager<br />o Assignment Group<br /><br />You have this new requirement:<br />• When navigating the Average age open incidents Indicator and drilling into an Assignment Group Manager Breakdown element, the viewer should see the groups managed by the selected manager.<br /><br />Which is the best way to achieve the desired result?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Create a Breakdown relation between the Assignment Group Manager and the Assignment Group breakdowns.</div>
@@ -900,7 +907,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="The correct syntax to return the global target is pa.getGlobalTarget($[[Number of open incidents]], score_end) (C). Per the docs: the PA API uses pa.getGlobalTarget() with the $ prefix followed by [[ ]] notation for indicator reference. pa.getTarget() (A) is not the correct method name. pa.getTargetGap() (B) returns the gap between score and target. pa.Target() (D) is not a valid API method. The $ prefix before [[ ]] is required." data-source-url="https://www.servicenow.com/docs/r/now-intelligence/performance-analytics/index-indicators.html">
-<h2>Question 68</h2>
+<h2>Question 69</h2>
 <p class="question-stem">Select the statement which correctly returns the global target.</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> pa.getTarget([[Number of open incidents]], score_end)</div>
@@ -913,7 +920,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="The scores of an Automated Indicator are correct as of the most recent collection time (A). Automated indicators collect scores via scheduled data collection jobs that run at defined intervals. The score represents the state of data at the moment the job ran, not when viewed. Viewing an indicator (B) reads the last stored score — it does not recollect data. Real-time indicators update at view time, but standard automated indicators reflect the most recent collection job run." data-source-url="">
-<h2>Question 69</h2>
+<h2>Question 70</h2>
 <p class="question-stem">The scores of an Automated Indicator are correct as of:</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Most recent Collection time</div>
@@ -926,7 +933,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="With Precision set to 2 and a value of 4250.2, the score displays as 4.250.20 (D) — showing two decimal places with a thousands separator. Per the docs: an indicator with Precision 2 rounds to the nearest two decimal places (4250.2 becomes 4250.20). The thousands separator formats it as 4.250.20 in some locale settings. Values above 10,000 would use letter abbreviations (4.25k) but 4250.2 is below this threshold so abbreviation does not apply." data-source-url="https://www.servicenow.com/docs/r/now-intelligence/performance-analytics/r_FormulaRounding.html">
-<h2>Question 70</h2>
+<h2>Question 71</h2>
 <p class="question-stem">An Indicator stores the value 4250.2.<br /><br />If the Precision is set to 2, what is displayed in a Score widget?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> 4.25k</div>
@@ -939,7 +946,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="When &#x27;Collect records&#x27; is enabled on the Indicator form, a list of sys_ids is stored during collection to allow drill-down to the underlying records (B). This enables users to click on a score in the Analytics Hub or KPI Details and see the actual records that contributed to that score. A preview of matching records (A) is available via Test/Preview buttons, not Collect records. An ad-hoc job (C) is separate functionality. Records are not copied or retained as duplicates (D)." data-source-url="">
-<h2>Question 71</h2>
+<h2>Question 72</h2>
 <p class="question-stem">What happens when Collect records is enabled on the Indicator form?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> A preview of the records that match the condition is displayed.</div>
@@ -952,7 +959,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="The correct Indicator Source configuration is Facts table: Incident Metric with Conditions: Resolved on Today AND Definition is Assignment Group (A). The Incident Metric table stores time-based assignment group tracking data. The Definition condition filters for the specific Assignment Group metric definition. Options B and C using the Incident table directly would not capture assignment durations. Option D uses the wrong condition (Value instead of Definition for identifying the metric type)." data-source-url="">
-<h2>Question 72</h2>
+<h2>Question 73</h2>
 <p class="question-stem">Consider the following configurations and requirements:<br />• You plan to set up an Indicator, Average Assignment Duration, to trend the duration of time Resolved Incidents are assigned to Assignment Groups.<br />• There is an existing metric called Assignment Group which already tracks the duration of time an Incident is assigned to different Assignment Groups.<br /><br />How would you configure the Indicator Source for the Average Assignment Duration Indicator?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Facts table: Incident Metric | Conditions: Resolved on Today AND Definition is Assignment Group</div>
@@ -965,7 +972,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="To return 0 instead of &#x27;No Score&#x27; when the Number of Resolved Incidents is 0, enable &#x27;Allow formula component to be NULL&#x27; (B). Per the docs: when this property is enabled, the formula can use null contributing indicators without returning &#x27;No Score&#x27; for the entire formula — allowing conditional null value handling. A conditional JavaScript statement (A) could also work but is not the standard PA approach. &#x27;Value when nil&#x27; (C) and &#x27;Render continuous lines&#x27; (D) serve different purposes." data-source-url="https://www.servicenow.com/docs/r/now-intelligence/performance-analytics/detect-indicators-no-scores-formula.html">
-<h2>Question 73</h2>
+<h2>Question 74</h2>
 <p class="question-stem">The formula for % of incidents resolved by first assigned group is configured as follows:<br /><br />([[ Number of resolved incidents by first assigned group ]] / [[ Number of resolved incidents ]]) * 100<br /><br />You observe “No Score” whenever the value of Number of resolved incidents component indicator is 0.<br /><br />What can be done to enhance the formula so it returns 0 instead of “No Score” when there are no resolved incidents?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Add a conditional JavaScript statement in the formula to return 0 if the value of Number of Resolved Incidents is 0.</div>
@@ -978,7 +985,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="The report_admin role (C) can create new Interactive Filters. Per the docs: creating interactive filters requires report-level admin access for managing filter records and their configurations. report_admin controls report and dashboard filter creation. pa_admin (A) manages PA indicators and breakdowns, not interactive filter creation. pa_power_user (B) has limited PA object creation but not interactive filter management. interactive_filter_user (D) is not a standard ServiceNow role." data-source-url="https://www.servicenow.com/docs/r/now-intelligence/interactive-filters/t_CreateABooleanPublisher.html">
-<h2>Question 74</h2>
+<h2>Question 75</h2>
 <p class="question-stem">Select the role which can create new Interactive Filters.</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> pa_admin</div>
@@ -991,7 +998,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="Historical Collection should be configured to run Once or On Demand (D). Per the docs: &#x27;Run historical data collection jobs, which have longer collection periods, only once. Schedule the job to run On demand.&#x27; Historical jobs collect past data and should only run once during initial setup to avoid overwriting existing correct scores. Running Weekly (A), Daily (B), or Monthly (C) would repeatedly overwrite historical data with each execution, corrupting the stored history." data-source-url="https://www.servicenow.com/docs/r/now-intelligence/performance-analytics/t_CreatASchedDataCollJob.html">
-<h2>Question 75</h2>
+<h2>Question 76</h2>
 <p class="question-stem">As a good practice, Historical Collection should be configured to run:</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Weekly</div>
@@ -1004,7 +1011,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="A script is required to perform a Breakdown Mapping for a Bucket group Breakdown when there is no field in the indicator facts table that directly matches the value to be bucketed (A). Per the docs: &#x27;When you have a breakdown mapping script that collects a range of values, you can define a bucket group.&#x27; When the bucket value must be calculated (e.g., elapsed time) rather than read from an existing field, a script is necessary. For direct field matches, a simple field-based mapping works without scripting." data-source-url="https://www.servicenow.com/docs/r/now-intelligence/performance-analytics/c_BucketGroups.html">
-<h2>Question 76</h2>
+<h2>Question 77</h2>
 <p class="question-stem">When is a script required to perform a Breakdown Mapping for a Breakdown based on a Bucket group?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> When there is no field in the indicator Facts table that matches the value to be bucketed</div>
@@ -1017,7 +1024,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="Text Analytics analyzes configured String fields from Indicator sources that have scores collected (C). Per the docs: Text Analytics is set up for specific text fields on indicators configured for text indexing — not all journal fields (A) or all string fields (B) on all records. Only the specific string fields enabled in the Text Analytics setup for active indicator sources are processed. Per the docs: only fields with maximum column length of 250 characters are allowed, not all short string fields (D)." data-source-url="https://www.servicenow.com/docs/r/now-intelligence/process-mining/reco-setup.html">
-<h2>Question 77</h2>
+<h2>Question 78</h2>
 <p class="question-stem">When using Text Analytics in Performance Analytics, what fields are analyzed?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> All Journal fields on all records</div>
@@ -1030,7 +1037,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="The &#x27;Show multiple elements as&#x27; property enables multi-element select on a Breakdown Dashboard (C). Per the docs: when set to Aggregate, a single aggregated score shows for all selected elements; when set to separate trends, each element shows individually. This property controls how multiple simultaneously-selected breakdown elements are displayed, enabling the multi-element display behavior. Applying an element filter (A) and following a breakdown source (D) are separate widget settings." data-source-url="https://www.servicenow.com/docs/r/now-intelligence/performance-analytics/create-relative-compare-ts.html">
-<h2>Question 78</h2>
+<h2>Question 79</h2>
 <p class="question-stem">What is the purpose of the Show multiple elements as property of a widget?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Apply an Element filter to Breakdown element trends</div>
@@ -1043,7 +1050,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="When configuring a Breakdown Source on a Dashboard, edit each PA widget and enable &#x27;Follow element&#x27; (C) to ensure PA widgets are filtered correctly by the selected breakdown element. Per the docs: &#x27;To have the widget follow the breakdown elements selected on a breakdown dashboard: Select Follow element.&#x27; This is distinct from Report widgets which use &#x27;Follow interactive filter&#x27; (B). Apply Dashboard Filter (A) does not exist. Act as interactive filter (D) is configured on the filter, not the widget." data-source-url="https://www.servicenow.com/docs/r/now-intelligence/performance-analytics/t_EditADashboard.html">
-<h2>Question 79</h2>
+<h2>Question 80</h2>
 <p class="question-stem">When configuring a Breakdown Source on a Dashboard, how do you ensure that Performance Analytics widgets are filtered correctly?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Edit each widget and enable “Apply Dashboard Filter”</div>
@@ -1056,7 +1063,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="Without &#x27;Collect breakdown matrix&#x27; checked on the Indicator, only a single level of Breakdowns is collected (D). Per the docs: &#x27;For two levels of breakdown to apply, also select Collect breakdown matrix.&#x27; Without the matrix, only the first breakdown level is collected per collection job run. Breakdowns CAN be collected without the matrix (A is wrong — 1 level works). There is no unlimited level option without data snapshots (B is wrong). Two levels require the matrix to be explicitly enabled (C is wrong — 2 levels are not automatically collected)." data-source-url="https://www.servicenow.com/docs/r/now-intelligence/performance-analytics/t_CrtIndctrIndctrWzrd.html">
-<h2>Question 80</h2>
+<h2>Question 81</h2>
 <p class="question-stem">How many levels of Breakdowns are available if Collect breakdown matrix is NOT checked on the Indicator?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> 0 - This must be checked to collect Breakdowns.</div>
