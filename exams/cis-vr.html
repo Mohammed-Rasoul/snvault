@@ -25,7 +25,7 @@
     <main>
         <div class="quiz-banner"><a href="../quiz/cis-vr.html">Test yourself on Vulnerability Response &rarr;</a></div>
 <div class="ai-notice">Answers verified with AI using ServiceNow documentation. Exercise your own judgement.</div>
-<div class="question-card" data-answer="A,C,D" data-community="false" data-explanation="The three components of a Filter Condition are Field (A), Operator (C), and Value (D). This is standard ServiceNow platform knowledge — every filter condition specifies a field to evaluate, an operator (equals, contains, is empty, etc.), and the comparison value. Sum (B) is a mathematical aggregation function, not a filter condition component." data-source-url="">
+<div class="question-card" data-answer="A,C,D" data-community="false" data-explanation="A Filter Condition in ServiceNow consists of three components: Field (A) which specifies the column to evaluate, Operator (C) which defines the comparison type (equals, contains, greater than, etc.), and Value (D) which provides the comparison target. Together these form conditions like &#x27;Priority equals 1&#x27;. Sum (B) is an aggregate function used in reports, not a filter condition component." data-source-url="">
 <h2>Question 1</h2>
 <p class="question-stem">Select the three components of a Filter Condition: (Choose three.)</p>
 <div class="answer-options">
@@ -38,7 +38,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The Remediation Target field on a Vulnerable Item determines the expected timeframe for remediation. SLAs in Vulnerability Response use remediation target rules that set a remediation date. A scheduled job &#x27;Evaluate remediation targets&#x27; runs daily comparing the current date against this target date, updating the record status when approaching or past due." data-source-url="https://www.servicenow.com/docs/r/security-management/vulnerability-response/view-remed-target-task.html">
 <h2>Question 2</h2>
 <p class="question-stem">SLAs are used to ensure VUL are processed in a timely matter. Which field is used to determine the expected timeframe for remediating a VIT?</p>
 <div class="answer-options">
@@ -48,8 +48,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Closed</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="The minimum role required to create and change SLAs for Vulnerability Response groups is sn_vul.admin (D). Per the docs: &#x27;Vulnerability managers and senior analysts [sn_vul.vulnerability_admin or sn_vul.admin]: Update properties and vulnerability configurations.&#x27; The admin role for VR manages application configuration including SLAs. sla_manager (A) is not a VR-specific role. sn_vul.vulnerability_write (C) manages remediation tasks, not SLA configuration." data-source-url="https://www.servicenow.com/docs/r/security-management/vulnerability-response/vr-persona-overview.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The sn_vul.admin role is the minimum required to create and change Service Level Agreements for Vulnerability Response groups. SLA creation is an administrative function within the VR application scope, requiring admin-level permissions. sla_manager (A) is a platform-wide SLA role but may not have VR scope access. admin (B) is the system admin which works but isn&#x27;t the minimum. sn_vul.vulnerability_write (C) grants write access to vulnerability records but not SLA administration." data-source-url="">
 <h2>Question 3</h2>
 <p class="question-stem">What is the minimum role required to create and change Service Level Agreements for Vulnerability Response groups?</p>
 <div class="answer-options">
@@ -62,7 +64,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Changes made within a named Update Set in a different application scope will be captured (A). ServiceNow Update Sets capture customizations across scopes when the Update Set is active during the session. The Update Set records changes regardless of which application scope is active when the change is made. Changes are not excluded (C), partially captured (D), or cause errors (B) simply due to scope differences." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Changes made within a named Update Set in a different application scope will not be captured. Update Sets only capture changes within their own application scope. If you&#x27;re working in the Vulnerability Response scope but your active Update Set belongs to the Global scope, changes to VR-scoped records won&#x27;t be tracked. This is a fundamental ServiceNow scoping mechanism that protects application data integrity." data-source-url="">
 <h2>Question 4</h2>
 <p class="question-stem">Changes made within a named Update Set in a different application scope:</p>
 <div class="answer-options">
@@ -75,7 +77,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="ServiceNow Vulnerability Response is a scoped application that uses the prefix sn_vul_ for all its tables. Examples include sn_vul_vulnerable_item (Vulnerable Items), sn_vul_entry (Vulnerability Entries/Third Party Entries), and sn_vul_third_party_entry. The &#x27;sn_&#x27; prefix indicates it&#x27;s a ServiceNow-developed scoped app, and &#x27;vul&#x27; identifies the Vulnerability Response module." data-source-url="">
 <h2>Question 5</h2>
 <p class="question-stem">ServiceNow Vulnerability Response tables typically start with which prefix?</p>
 <div class="answer-options">
@@ -85,8 +87,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> sn_vul_</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="The &#x27;Identify&#x27; phase defines: what processes and assets need protection (A). Per the NIST Cybersecurity Framework: Identify = understand assets/processes requiring protection; Protect = implement safeguards (C); Detect = identify incidents (B); Respond = contain impacts (E); Recover = restore capabilities (D). The Identify phase is foundational — knowing what needs protection before implementing controls." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="In the NIST Cybersecurity Framework, the &#x27;Identify&#x27; function focuses on understanding what processes and assets need protection. It develops organizational understanding of cybersecurity risk to systems, people, assets, and data. Detect (B) is about identifying incidents. Protect (C) covers safeguards. Recover (D) restores capabilities. Respond (E) contains incident impacts. The five functions are: Identify, Protect, Detect, Respond, Recover." data-source-url="">
 <h2>Question 6</h2>
 <p class="question-stem">In regard to the Security Operations Process, which of the following statements defines the “Identify” phase?</p>
 <div class="answer-options">
@@ -100,7 +104,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="The NVD Auto-update module (A) is used to adjust the frequency at which CVEs are updated. Per the docs: &#x27;The default day for the NVD update is Weekly on Monday.&#x27; The NVD Auto-update scheduled job controls the update interval for CVE data from the National Vulnerability Database. Update (B) is too generic. CVE Auto-update (C) is not the module name. On-demand update (D) allows immediate updates, not frequency adjustment." data-source-url="https://www.servicenow.com/docs/r/security-management/vulnerability-response/nvd-vuln-integration.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The NVD Auto-update module is used to adjust the frequency of CVE updates in Vulnerability Response. This scheduled job periodically pulls new and updated CVE data from the National Vulnerability Database (NVD) maintained by NIST. You can modify the schedule to control how often the update runs. There is no &#x27;CVE Auto-update&#x27; (C) module — the correct terminology references NVD since that&#x27;s the data source." data-source-url="">
 <h2>Question 7</h2>
 <p class="question-stem">Which module is used to adjust the frequency in which CVEs are updated?</p>
 <div class="answer-options">
@@ -113,7 +117,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Common Weakness Enumeration (CWE) is a community-developed list of software and hardware weakness types maintained by MITRE. It serves as a common language for describing security weaknesses in architecture, design, or code. NVD (A) is a database of specific vulnerabilities, CVE (B) identifies specific vulnerability instances, and NIST (C) is a standards organization, not a weakness list." data-source-url="">
 <h2>Question 8</h2>
 <p class="question-stem">A list of software weaknesses is known as:</p>
 <div class="answer-options">
@@ -123,8 +127,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Common Weaknesses Enumeration (CWE)</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Vulnerability Response is best categorized as a proactive process. It focuses on identifying and remediating vulnerabilities before they can be exploited, rather than reacting after an incident occurs. By continuously scanning, assessing, and prioritizing vulnerabilities, organizations take preventive action to reduce their attack surface rather than waiting for security events." data-source-url="">
 <h2>Question 9</h2>
 <p class="question-stem">Vulnerability Response can be best categorized as a ____________, focused on identifying and remediating vulnerabilities as early as possible.</p>
 <div class="answer-options">
@@ -134,8 +140,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> A reactive process</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="For 2 million vulnerabilities during initial load, recommend an XXL instance size (C). Per the docs: &#x27;Validate your instance sizing based on the number of application vulnerable items you expect to import. An undersized instance can lead to long load times.&#x27; 2 million records requires XXL-tier resources. L (A) and XL (B) are insufficient. Ultra (D) is for the largest enterprise deployments." data-source-url="https://www.servicenow.com/docs/r/security-management/application-vulnerability-response/veracode-prerequisites.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="For an initial load of 2 million vulnerabilities, an XL (Extra Large) instance size is recommended. ServiceNow instance sizing for Vulnerability Response depends on the volume of vulnerability data being processed. L (A) handles smaller volumes up to approximately 1 million. XL (B) handles up to approximately 2 million. XXL (C) and Ultra (D) are for larger deployments exceeding 2 million items." data-source-url="">
 <h2>Question 10</h2>
 <p class="question-stem">If a customer expects to ingest 2 million vulnerabilities during its initial load, which instance size should you recommend?</p>
 <div class="answer-options">
@@ -148,7 +156,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="The Business Rule &#x27;Create CI from Vulnerable Item Details&#x27; (D) creates a Configuration Item from a Vulnerable Item record. This business rule parses the network and host details within the VI record to identify and create or update the associated CI in the CMDB. Options A (Vulnerable Group) and B (Closed Item) reference incorrect source records. Option C &#x27;Determine CI from Network Details&#x27; is a lookup rule, not a CI creation rule." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The &#x27;Create CI from Vulnerable Item Details&#x27; business rule creates a Configuration Item from a Vulnerable Item record. When a vulnerability scan identifies a resource that doesn&#x27;t exist as a CI in the CMDB, this business rule automatically creates the CI record using the details from the Vulnerable Item. Options A (from Vulnerable Group) and B (from Closed Item) don&#x27;t match the standard VR business rule naming. Option C (Determine CI from Network) is not a standard VR rule." data-source-url="">
 <h2>Question 11</h2>
 <p class="question-stem">What Business Rule creates a Configuration Item from a Vulnerable Item record?</p>
 <div class="answer-options">
@@ -161,7 +169,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Components installed with Vulnerability Response include Tables, Scheduled Jobs, and Security Operations Common (A). Per the docs: &#x27;Several types of components are installed with activation of the Vulnerability Response application, including tables, user roles, and scheduled jobs.&#x27; Security Operations Common is the shared dependency plugin. Business Rules/Roles/Workflows (B), Properties/Client Scripts/Wizards (C), and Vulnerability Scanners (D) are not the primary installation components." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Vulnerability Response installs Tables (sn_vul_vulnerable_item, sn_vul_vulnerability, etc.), Scheduled Jobs (NVD Auto-Update, vulnerability calculators), and depends on Security Operations Common as a foundational framework. Security Operations Common provides shared functionality like filter groups, integrations, and dashboards used across all SecOps apps. Options B, C, and D list components that exist within VR but don&#x27;t capture the key dependency on Security Operations Common." data-source-url="">
 <h2>Question 12</h2>
 <p class="question-stem">The components installed with Vulnerability Response include:</p>
 <div class="answer-options">
@@ -174,7 +182,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="The purpose of Scoped Applications is to encapsulate and protect data and functionality (C). Scoped applications isolate their data, scripts, and UI elements from other applications, preventing interference and enabling clean separation of concerns. This is standard ServiceNow platform architecture. Pricing (A) is unrelated to scoping. Scalability (B) is not the purpose. Plugins can be global or scoped (D is incorrect)." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Scoped applications encapsulate and protect data and functionality. Application scoping in ServiceNow isolates an application&#x27;s resources (tables, scripts, business rules) within a defined namespace, preventing unintended access or modification by components outside the scope. This isn&#x27;t about charging (A), scalability (B), or being a deployment requirement (D). Global applications also function properly; scoping adds an extra layer of protection." data-source-url="">
 <h2>Question 13</h2>
 <p class="question-stem">What is the purpose of Scoped Applications?</p>
 <div class="answer-options">
@@ -187,7 +195,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="The Vulnerability Response plugin ID is com.snc.vulnerability (B). This is the plugin identifier used to activate the application. com.snc.threat.intelligence (A) is Threat Intelligence. com.snc.threat.feeds (C) is Threat Feeds. com.snc.security_incident (D) is Security Incident Response." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="The Vulnerability Response plugin ID is com.snc.vulnerability. This follows the standard ServiceNow plugin naming convention where &#x27;com.snc&#x27; is the ServiceNow namespace. com.snc.threat.intelligence (A) is for Threat Intelligence. com.snc.threat.feeds (C) is for threat feed data. com.snc.security_incident (D) is the Security Incident Response plugin. Each SecOps application has its own distinct plugin ID." data-source-url="">
 <h2>Question 14</h2>
 <p class="question-stem">What is the ID associated with the Vulnerability Response plugin?</p>
 <div class="answer-options">
@@ -200,7 +208,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="CVE (Common Vulnerabilities and Exposures) information is found at MITRE (B). Per the docs: &#x27;Common Vulnerabilities and Exposures (CVE): Dictionary of publicly known information-security vulnerabilities and exposures.&#x27; The CVE program is managed and maintained by MITRE Corporation at cve.mitre.org. NIST (C) manages the NVD which enriches CVE data. Tenable (A) and Qualys (D) are vulnerability scanning vendors that consume CVE data." data-source-url="https://www.servicenow.com/docs/r/security-management/application-vulnerability-response/avm-references.html">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="NIST (National Institute of Standards and Technology) maintains the National Vulnerability Database (NVD), which is the primary source for CVE (Common Vulnerabilities and Exposures) information. The NVD contains detailed analysis of each CVE including severity scores (CVSS), affected software, and remediation guidance. ServiceNow VR integrates directly with the NVD for vulnerability data. Tenable (A) and Qualys (D) are vulnerability scanners, not CVE databases. MITRE (B) maintains the CVE enumeration system but NVD provides the comprehensive data." data-source-url="">
 <h2>Question 15</h2>
 <p class="question-stem">Where can you find information related to the Common Vulnerabilities and Exposures (CVE)?</p>
 <div class="answer-options">
@@ -213,7 +221,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The Vulnerable Item (VI/VIT) record is the intersection of vulnerability source information and CMDB CI records. Each Vulnerable Item links a specific Vulnerability (from scanner data/Third Party Entries) to a specific Configuration Item in the CMDB, representing that a particular CI is affected by a particular vulnerability. This is the core operational record in VR." data-source-url="">
 <h2>Question 16</h2>
 <p class="question-stem">Which one of the following record types can be considered the intersection of Vulnerability source information and CMDB CI records?</p>
 <div class="answer-options">
@@ -223,8 +231,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Vulnerable Item (VI)</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Common Weakness Enumeration (CWE) provides a categorized list of software weaknesses. It is maintained by MITRE and catalogs types of software security weaknesses (like buffer overflow, SQL injection). NVD (B) is a database of specific vulnerability instances (CVEs), not a list of weakness types. Third Party Entries (A) and Vulnerable Items (D) are ServiceNow VR record types." data-source-url="">
 <h2>Question 17</h2>
 <p class="question-stem">Which of the following provides a list of software weaknesses?</p>
 <div class="answer-options">
@@ -234,8 +244,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Vulnerable Items</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Filter Groups provide all of the above capabilities (D): decoupling use of grouping from definition (A), building criteria once (B), and reusing criteria in a variety of places (C). Per the docs: Filter Groups allow building reusable criteria sets that can be referenced across different application areas. All three benefits (A, B, C) apply to Filter Groups simultaneously." data-source-url="https://www.servicenow.com/docs/r/security-management/vulnerability-manager-workspace/requesting-approving-risk-reduction.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Filter Groups provide all of these capabilities: they decouple the use of the grouping from its definition (A), allow you to build criteria once (B), and reuse that criteria in a variety of places across the platform (C). Filter Groups are part of Security Operations Common and enable consistent, reusable filtering logic that can be applied to vulnerability groups, dashboards, reports, and other platform features without redefining the criteria each time." data-source-url="">
 <h2>Question 18</h2>
 <p class="question-stem">Filter Groups provide a way to:</p>
 <div class="answer-options">
@@ -248,7 +260,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="The On-Demand Update module (A) is used to get NVD information at any moment. Per the docs: &#x27;You perform CWE updates On Demand from the integration record by default.&#x27; The On-Demand Update allows immediate retrieval outside of the scheduled update window. NVD Auto-Update (B) handles scheduled automatic updates, not on-demand retrieval. Vulnerable Software (C) stores software vulnerability data. NVD Patch (D) is not a VR module." data-source-url="https://www.servicenow.com/docs/r/security-management/vulnerability-response/nvd-vuln-integration.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The On-Demand Update module within Vulnerability Response lets you fetch data from the National Vulnerability Database (NVD) at any moment. Unlike the NVD Auto-Update (B) which runs on a schedule, On-Demand Update triggers an immediate pull of NVD data when executed manually. This is useful when you need the latest CVE information without waiting for the next scheduled update cycle. Vulnerable Software (C) is a reference table, and NVD Patch (D) is not a standard VR module." data-source-url="">
 <h2>Question 19</h2>
 <p class="question-stem">Which module within the Vulnerability Response application could be used to get information from the National Vulnerability Database (NVD) at any moment?</p>
 <div class="answer-options">
@@ -261,7 +273,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Patching is one of many responses to a vulnerability. Other valid responses include deferral/exception (accepting risk), compensating controls, configuration changes, network segmentation, or decommissioning the affected system. Mature organizations don&#x27;t abandon patching (A), patch management is a subset of VR not interchangeable (B), and patching alone doesn&#x27;t eliminate the need for VR (D)." data-source-url="">
 <h2>Question 20</h2>
 <p class="question-stem">Which statement about patching is most correct?</p>
 <div class="answer-options">
@@ -271,8 +283,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> As long as you are patching actively, Vulnerability Response isn’t necessary</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The sn_vul.admin role (Vulnerability Response Admin) has full administrative access to VR application properties and configuration. This role can be delegated to multiple security-related roles including sn_sec.admin (Security Operations Admin), security.admin (Security Admin), and sn_vul_resp.admin. All of the above (D) is correct since all listed roles can receive delegation." data-source-url="">
 <h2>Question 21</h2>
 <p class="question-stem">The Vulnerability Admin role (sn_vul.admin) can modify Vulnerability Application Properties and can be delegated to the following role(s):</p>
 <div class="answer-options">
@@ -283,8 +297,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> None of the above</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The statement is True. The system property sn_vul.itsm_popup controls whether a confirmation popup appears when creating a Problem or Change record from a Vulnerability or Vulnerable Item record. When set to True, users see a popup confirmation dialog; when False, the record is created without the popup. This is a configurable application property in VR settings." data-source-url="">
 <h2>Question 22</h2>
 <p class="question-stem">sn_vul.itsm_popup is the property that is set to True or False based on the customer desire for a popup when creating a Problem or Change record from a Vulnerability or VI record.</p>
 <div class="answer-options">
@@ -292,8 +308,10 @@
 <div class="answer-option" data-key="B"><span class="option-key">B.</span> False</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Items in the ServiceNow Store are built and supported by the company that created the application. Third-party developers, technology partners, and ServiceNow itself publish apps to the Store, and each app is supported by its creator. ServiceNow does not provide technical support for third-party Store apps — the original developer/company maintains and supports their own applications." data-source-url="">
 <h2>Question 23</h2>
 <p class="question-stem">Items in the ServiceNow Store are built and supported by:</p>
 <div class="answer-options">
@@ -303,8 +321,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> ServiceNow Technical Support</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="To include asset tag information from Qualys in the XML payload, set the Qualys Host parameter asset_tags to a value of 1. In the Qualys API integration, setting this parameter to 1 enables the inclusion of asset tag data in the host detection response, which ServiceNow then imports into a related table on the CI for use in business processes or reporting." data-source-url="">
 <h2>Question 24</h2>
 <p class="question-stem">Qualys asset tags can be loaded into a table related to the configuration item and used to support business processes or reporting. Set the Qualys Host parameter of asset_tags to a value of __________ to have asset tag information from Qualys be included in the XML payload.</p>
 <div class="answer-options">
@@ -314,8 +334,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> 0</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The Vulnerability Response plugin must be installed to enable vulnerability integration with third-party scanners like Qualys, Tenable, or Rapid7. The base Vulnerability Response application provides the framework, tables, and integration points needed to import vulnerability data from these scanners. Additional scanner-specific plugins are then installed on top of the base VR plugin." data-source-url="">
 <h2>Question 25</h2>
 <p class="question-stem">In ServiceNow, which plugin needs to be added to enable Vulnerability Integration with Qualys, Tenable, or Rapid7?</p>
 <div class="answer-options">
@@ -325,8 +347,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Security Incident Response</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="To configure integrations, Vulnerability admins need both the admin role AND integration-specific roles like sn_vul_qualys.admin (D). Per the docs: &#x27;The system administrator [admin] downloads and installs the app. The sn_vul.vulnerability_admin or sn_vul.admin oversees configuration.&#x27; Integration setup requires platform admin permissions plus the specific integration admin role. admin alone (A) lacks VR-specific integration access. sn_vul.admin alone (B) lacks platform admin permissions." data-source-url="https://www.servicenow.com/docs/r/security-management/vulnerability-response/r7-setup-dw.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="To configure integrations in Vulnerability Response, administrators need both the admin role and the integration-specific admin role such as sn_vul_qualys.admin. The base admin role provides system-level access for configuring REST connections and transform maps, while the integration admin role grants access to the integration-specific settings. sn_vul.admin alone (B) covers VR administration but may not grant access to integration-specific configurations. sn_vul.vulnerability_write (C) is insufficient for admin tasks." data-source-url="">
 <h2>Question 26</h2>
 <p class="question-stem">In order for Vulnerability admins to configure integrations, they must have the following Role(s):</p>
 <div class="answer-options">
@@ -339,7 +363,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="To more easily manage large sets of Vulnerable Items, create Vulnerability Groups (A). Vulnerability Groups organize VIs into logical collections for bulk management, assignment, and reporting. Per the docs: vulnerability groups group items for remediation tracking. Filter Groups (C) are for reusable criteria. Calculator Group (B) is for scoring calculators. Vulnerable Item Conditions (D) define matching rules, not groupings." data-source-url="https://www.servicenow.com/docs/r/security-management/vulnerability-response/vuln-automated-triage.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Vulnerability Groups are used to manage large sets of Vulnerable Items by grouping them based on common characteristics such as the underlying vulnerability, affected CI type, or business service. This allows security teams to take bulk actions, track remediation progress, and assign work at the group level rather than managing individual VIs. Calculator Groups (B) and Vulnerable Item Conditions (D) are not standard VR features. Filter Groups (C) define reusable filter criteria but don&#x27;t directly group VIs." data-source-url="">
 <h2>Question 27</h2>
 <p class="question-stem">In order to more easily manage large sets of Vulnerable Items, what should you create?</p>
 <div class="answer-options">
@@ -352,7 +376,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="Filter Group (C) provides a simple way to build criteria once and reuse them in other platform areas. Per the docs: Filter Groups allow defining conditions that can be referenced across multiple application contexts. Conditions (A) and Filters (D) are single-use constructs. Favorites (B) save navigation shortcuts, not criteria. Filter Groups specifically support the build-once-reuse-everywhere pattern." data-source-url="https://www.servicenow.com/docs/r/security-management/create-filter-group.html">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Filter Groups provide a simple way to build filtering criteria once, which can then be reused in other platform areas such as vulnerability groups, dashboards, SLAs, and reports. They belong to the Security Operations Common framework and are shared across all SecOps applications. Conditions (A) are individual filter statements, not reusable groupings. Favorites (B) save personal list views. Filters (D) are applied to individual lists but aren&#x27;t designed for cross-platform reuse like Filter Groups." data-source-url="">
 <h2>Question 28</h2>
 <p class="question-stem">This functionality provides a simple way to build criteria once, which can be reused in other platform areas.</p>
 <div class="answer-options">
@@ -365,7 +389,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="A Change request (D) is most commonly used to facilitate the remediation of a Vulnerable Item. Per the docs: &#x27;Create Change: Create a change request or associate a remediation task to an existing change request.&#x27; Changes are the standard remediation mechanism in ITSM workflows. The change implements the patch or configuration fix. Problems (A) document root causes. Security Incidents (B) address active threats. KB articles (C) document knowledge." data-source-url="https://www.servicenow.com/docs/r/security-management/vulnerability-response/vr-rt-states.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Creating a Change Request is the most common way to facilitate remediation of a Vulnerable Item. Since remediation typically involves applying patches, updating configurations, or modifying systems, these actions require formal change management approval to minimize disruption. Problems (A) identify root causes but don&#x27;t directly remediate. Security Incidents (B) are for active threats, not scheduled remediation. KB articles (C) document solutions but don&#x27;t execute the fix." data-source-url="">
 <h2>Question 29</h2>
 <p class="question-stem">To facilitate the remediation of a Vulnerable Item what type of item is most commonly used?</p>
 <div class="answer-options">
@@ -378,7 +402,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="After closing a Vulnerable Item, it is recommended to update the values in the Vulnerability Score Indicator (VSI) based on the criticality of the Vulnerability (A). This ensures the risk scoring remains accurate and reflects the resolved vulnerability status. The VI doesn&#x27;t remain active waiting for rescanning (B) — closing the VI resolves it. Marking CI as exempt (C) is for ongoing exceptions, not post-remediation." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="After closing a Vulnerable Item, it is recommended to compare the vulnerability with subsequent scans to verify the remediation was effective and the vulnerability doesn&#x27;t reappear. This confirms the fix persists over time and the asset remains secure. Updating VSI values (A) is not a standard post-closure step. Option B describes the normal closure process, not a post-closure recommendation. Marking the CI as exempt (C) is only appropriate if the vulnerability was accepted, not remediated." data-source-url="">
 <h2>Question 30</h2>
 <p class="question-stem">After closing the Vulnerable Item (VI), it is recommended to:</p>
 <div class="answer-options">
@@ -391,7 +415,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Vulnerability Response uses the scoped application prefix sn_vul for all its components. This prefix appears on tables (sn_vul_vulnerable_item), roles (sn_vul.admin), properties (sn_vul.itsm_popup), and script includes. The &#x27;sn_&#x27; indicates a ServiceNow-developed application and &#x27;vul&#x27; identifies the Vulnerability Response scope. Options cmn_vul (A), vul (B), and x_vul (D) are incorrect." data-source-url="">
 <h2>Question 31</h2>
 <p class="question-stem">Vulnerability Response is a scoped application; which prefix is attached to all items related to the application?</p>
 <div class="answer-options">
@@ -401,8 +425,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> x_vul</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The Improved Remediation maturity level provides advanced owner assignment capabilities. VR defines four maturity levels: Manual Operations (basic scanning), Improved Remediation (automated workflows, advanced owner assignment, SLAs), Automated Prioritization (risk-based scoring), and Enterprise Risk Trending (full analytics). Owner assignment automation is introduced at the Improved Remediation level." data-source-url="">
 <h2>Question 32</h2>
 <p class="question-stem">Which Vulnerability maturity level provides advanced owner assignment?</p>
 <div class="answer-options">
@@ -412,8 +438,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Improved remediation</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Governance, Risk, and Compliance (GRC) provides the opportunity to align security events with organizational controls and automatically apprise other business functions of potential impact. GRC tracks organizational policies, controls, and risk indicators, allowing security vulnerabilities to be mapped to business controls and stakeholders to be notified when security events affect their areas." data-source-url="">
 <h2>Question 33</h2>
 <p class="question-stem">Which application provides the opportunity to align security events with organizational controls, automatically appraising other business functions of potential impact?</p>
 <div class="answer-options">
@@ -423,8 +451,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Service Mapping</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Ignoring a Vulnerable Item temporarily removes the item from the list of Active Vulnerable Items (D). The ignore action suppresses the VI from active workflows without permanently deleting it. The item can be un-ignored and will reappear. Permanent removal (A) would require deletion. Slushbucket (B) is not a VI state. The action does impact the active list by hiding the item (C is incorrect)." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Ignoring a Vulnerable Item temporarily removes it from the list of Active Vulnerable Items. The VI record still exists in the system but is filtered out of active views. If the scanner detects the same vulnerability again in a subsequent scan, the VI can reappear. This differs from permanent removal (A) which would delete the record. It does have an impact on the active list (C is wrong). The Slushbucket (B) is a UI element for multi-select fields, not related to VI management." data-source-url="">
 <h2>Question 34</h2>
 <p class="question-stem">Ignoring a Vulnerable Item:</p>
 <div class="answer-options">
@@ -437,7 +467,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="Vulnerability Exceptions require a GRC integration (C). Per the docs: &#x27;Request an exception... using GRC: Policy and Compliance Management&#x27; — the GRC Policy and Compliance Management application must be integrated to process vulnerability exceptions. An approval by default (A) may be required but the core requirement is the GRC integration. An Exception Workflow (B) and Filter Group (D) are not specifically required for exceptions." data-source-url="https://www.servicenow.com/docs/r/security-management/container-vulnerability-response/cvr-request-exception-form.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Vulnerability Exceptions require an Approval by default. When a remediation owner requests an exception for a VI that can&#x27;t be remediated immediately, they submit the request via the &#x27;Request Approval&#x27; button, which changes the VI state to &#x27;In Review&#x27; pending approval. The approval workflow is built into the standard VR exception management process. An Exception Workflow (B) exists but the key requirement is the approval. GRC integration (C) is optional. Filter Groups (D) are for filtering, not exceptions." data-source-url="https://www.servicenow.com/docs/r/security-management/vulnerability-response/raise-exception-vi.html">
 <h2>Question 35</h2>
 <p class="question-stem">What do Vulnerability Exceptions require?</p>
 <div class="answer-options">
@@ -450,7 +480,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Best practices dictate using the Managed By field on the CMDB_CI record when assigning the Assigned To field on a Change task created from a Vulnerable Item. The Managed By field identifies the person responsible for the CI, making them the most appropriate individual to handle remediation changes. This ensures the change task routes to someone with authority and knowledge of the affected CI." data-source-url="">
 <h2>Question 36</h2>
 <p class="question-stem">Best Practices dictate that when creating a Change task from a Vulnerable Item, which of the following fields should be used for assigning the Assigned To field on the Change task?</p>
 <div class="answer-options">
@@ -460,8 +490,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Best Practice does not dictate a specific field</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Approvals in the Vulnerability Application are created based on the sys_approval and sn_vul_vulnerable_item tables (A). sys_approval is ServiceNow&#x27;s standard approval tracking table; VR approval records link to sn_vul_vulnerable_item for context. sn_vul_change_approval (C) handles change-specific approvals only. Using only sys_approval (D) lacks the VI linkage. The sn_vul_vulnerability table (B) is not used in approval creation." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Approvals within the Vulnerability application are created based on both the sys_approval and sn_vul_vulnerable_item tables. The sys_approval table manages the standard ServiceNow approval records (approver, status, comments), while the sn_vul_vulnerable_item table provides the vulnerability context for the approval request. Option D (sys_approval only) is incomplete as it doesn&#x27;t reference the VR-specific table. Options B and C don&#x27;t accurately describe the approval mechanism." data-source-url="">
 <h2>Question 37</h2>
 <p class="question-stem">Approvals within the Vulnerability Application are created based on:</p>
 <div class="answer-options">
@@ -474,7 +506,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="The main advantage of having clearly-defined vulnerability exception documentation is to understand the customer&#x27;s internal process. When translating an exception process into a Flow or Workflow, understanding the existing process ensures the automation accurately reflects the organization&#x27;s established procedures, approval chains, and criteria. This understanding is the foundation before any platform building begins." data-source-url="">
 <h2>Question 38</h2>
 <p class="question-stem">Some customers may have a clearly-defined, well-documented vulnerability exception process and some may even provide a diagram illustrating that process.<br />What is the main advantage of having this documentation when translating it into a Flow or Workflow?</p>
 <div class="answer-options">
@@ -484,8 +516,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> No advantage</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="When an approval is rejected for a VI exception, the State reverts to its previous value (D). Per the docs: submitting an exception request transitions state to &#x27;In Review.&#x27; Upon rejection, the approval workflow restores the field to what it was before the exception request was submitted. It does not reset to Analysis (A), New (B), or remain In Review (C)." data-source-url="https://www.servicenow.com/docs/r/security-management/sem-falsepst-reqst.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="When an approval is rejected for a Vulnerable Item exception, the State field is set back to its previous value. ServiceNow VR stores the previous state in the backup_state field before changing the VI to &#x27;In Review&#x27; status during the exception request. If the approval is rejected, the state reverts to whatever it was before the exception was requested (e.g., Open, Under Investigation, or Awaiting Implementation). It does not default to a fixed state like Analysis (A), New (B), or In Review (C)." data-source-url="https://www.servicenow.com/docs/r/security-management/vulnerability-response/raise-exception-vi.html">
 <h2>Question 39</h2>
 <p class="question-stem">When an approval is rejected for a Vulnerable Item exception, what happens to the State field for that record?</p>
 <div class="answer-options">
@@ -498,7 +532,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The Close/Defer option is used to close out a Vulnerable Item Record or initiate the Exception Process. When a VIT is deferred, the &#x27;Request Exception&#x27; action triggers the exception workflow, setting the item to a Deferred state with a specified reopen date and reason. This is the mechanism for accepting risk or deferring remediation through the formal exception management process." data-source-url="https://www.servicenow.com/docs/r/security-management/vulnerability-response/defer-vul-item.html">
 <h2>Question 40</h2>
 <p class="question-stem">What option can be used to close out a Vulnerable Item Record or initiate the Exception Process?</p>
 <div class="answer-options">
@@ -508,8 +542,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Save</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Vulnerability Exceptions must be supplied with a reason by default (A). Per the docs: &#x27;Justification: Details related to the reason why this request is being made. This mandatory field must be filled in by the remediation owner.&#x27; GRC integration (B) enables policy exceptions but is optional. Requirement Actions (C) is not a standard VR exception field. Manual approval authority (D) depends on configuration." data-source-url="https://www.servicenow.com/docs/r/security-management/container-vulnerability-response/cvr-request-exception-form.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Vulnerability Exceptions must be supplied with a reason for the exception by default. The exception request form has a required &#x27;Reason&#x27; field with choices including Risk Accepted, Awaiting Maintenance Window, Fix Unavailable, Mitigating Control in Place, and Other. An &#x27;Additional information&#x27; field is also required for providing detailed justification. GRC integration (B) is optional. Requirement Actions (C) are not part of the standard exception form. Approval authority (D) is configured separately in exception management settings." data-source-url="https://www.servicenow.com/docs/r/security-management/vulnerability-response/raise-exception-vi.html">
 <h2>Question 41</h2>
 <p class="question-stem">What must Vulnerability Exceptions be supplied by default?</p>
 <div class="answer-options">
@@ -522,7 +558,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="A Vulnerability Group groups VIs using a Filter against Vulnerable Item fields (A). Per the docs, the VG condition filters records on the sn_vul_vulnerable_item table to include matching VIs. Option B describes CI-based filters, not VI filters. Option C is a team assignment group, not a Vulnerability Group. Option D is not a defining characteristic of VGs." data-source-url="https://www.servicenow.com/docs/r/security-management/create-filter-group.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="A Vulnerability Group groups Vulnerable Items (VIs) using a Filter against Vulnerable Item fields. This allows security teams to organize and manage VIs based on shared characteristics like vulnerability type, severity, affected asset class, or business service. Option B describes a Filter Group, not a Vulnerability Group. Option C describes the assignment group on a VI record. Option D is incorrect because Vulnerability Groups don&#x27;t require a corresponding Filter Group; they use their own filter criteria." data-source-url="">
 <h2>Question 42</h2>
 <p class="question-stem">Which of the following best describes a Vulnerability Group?</p>
 <div class="answer-options">
@@ -535,7 +571,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="To manage large sets of Vulnerable Items, create Vulnerability Groups (A). VGs organize VIs into logical collections for bulk management, assignment, and reporting workflows. Script Includes (B) are server-side code objects. Filter Groups (C) are reusable criteria sets for cross-application use. Vulnerability Sets (D) is not a VR concept." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="To more easily manage large sets of Vulnerable Items, you would create Vulnerability Groups. These groups organize VIs by common criteria (such as vulnerability type, affected CI, or business service), enabling bulk actions, progress tracking, and workload assignment at the group level. Script Includes (B) are server-side reusable scripts, not for grouping VIs. Filter Groups (C) define reusable filter criteria but don&#x27;t create VI groupings themselves. Vulnerability Sets (D) is not a standard VR feature." data-source-url="">
 <h2>Question 43</h2>
 <p class="question-stem">In order to more easily manage large sets of Vulnerable Items, you would want to create:</p>
 <div class="answer-options">
@@ -548,7 +584,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="The property sn_vul.autocreate_vul_centric_group (A) controls whether Vulnerability Groups are automatically created based on Vulnerabilities in the system. This enables the system to generate one vulnerability-centric group per unique vulnerability, organizing VIs by their parent vulnerability." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The property sn_vul.autocreate_vul_centric_group controls whether Vulnerability Groups are automatically created based on Vulnerabilities in the system. When set to true, the system automatically generates Vulnerability Groups for each distinct vulnerability, grouping all associated Vulnerable Items together. Options B (autocreate_groups), C (autocreate_vul_grouping), and D (create_default_vul_groups) are not valid VR system property names." data-source-url="">
 <h2>Question 44</h2>
 <p class="question-stem">Which of the following is the property that controls whether Vulnerability Groups are created by default based on Vulnerabilities in the system?</p>
 <div class="answer-options">
@@ -561,7 +597,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="The property sn_vul.autocreate_vul_group_item (C) allows auto-creation of Vulnerability Group memberships based on a Vulnerable Item&#x27;s Vulnerability. This property associates VIs with their corresponding vulnerability-centric groups automatically. sn_vul.autocreate_vul_centric_group (D) controls group creation itself, while this property controls item membership within groups." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The system property sn_vul.autocreate_vul_centric_group allows for the auto creation of Vulnerability Groups based on the Vulnerable Item&#x27;s Vulnerability. When enabled, each unique vulnerability automatically gets a corresponding Vulnerability Group containing all affected VIs. Options A (autocreate_vul_filter_group), B (autocreate_vul_approval_group), and C (autocreate_vul_group_item) are not valid property names in VR." data-source-url="">
 <h2>Question 45</h2>
 <p class="question-stem">What system property allows for the auto creation of Vulnerability Groups based on the Vulnerable Item’s Vulnerability?</p>
 <div class="answer-options">
@@ -574,7 +610,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Filter Groups are created via Security Operations &gt; Groups &gt; Filter Groups (D). Per the docs: &#x27;Groups &gt; Filter Groups: Create and use filter groups to locate records from any table on your instance.&#x27; The path is Security Operations &gt; Groups, not the Vulnerability module options (A/B/C)." data-source-url="https://www.servicenow.com/docs/r/security-management/sec-ops-common-functionality.html">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Filter Groups can be created at Security Operations &gt; Administration &gt; Filter Groups. Filter Groups are part of the Security Operations Common framework, shared across all Security Operations applications (VR, SIR, etc.). They are found under the Security Operations application navigation, not under the Vulnerability-specific menus. The Administration section provides the configuration interface for creating and managing Filter Groups. Options A, B, and D use incorrect navigation paths." data-source-url="">
 <h2>Question 46</h2>
 <p class="question-stem">Where in the platform can you create Filter Groups?</p>
 <div class="answer-options">
@@ -587,7 +623,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Vulnerability records themselves cannot be used for building Vulnerability Groups. Vulnerability Groups are built using three methods: Filter Groups (predefined filter criteria), Condition Builder (defining conditions on the group form), and Advanced Scripts (script-based grouping logic). &#x27;Vulnerability&#x27; is the data being grouped, not a tool or method for creating the groups." data-source-url="">
 <h2>Question 47</h2>
 <p class="question-stem">Which of the following can NOT be used for building Vulnerability Groups?</p>
 <div class="answer-options">
@@ -597,8 +633,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Advanced Scripts</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Filter Groups in Vulnerability Response are used to group Third Party Entries (vulnerability records imported from scanners). By defining filter criteria, organizations can categorize and organize vulnerability data from third-party sources like Qualys, Tenable, and Rapid7 into logical groups for more efficient management, classification, and assignment of remediation work." data-source-url="">
 <h2>Question 48</h2>
 <p class="question-stem">Filter Groups can be used in Vulnerability Response to group what type of vulnerability records?</p>
 <div class="answer-options">
@@ -608,8 +646,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Vulnerable Software</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="When fixing a Vulnerable Item outweighs the benefits, the correct course of action is to record the accepted risk and Close/Defer the Vulnerable Item. This initiates the exception process, documenting the business justification for accepting the risk. Making CIs inactive (A), deprioritizing to ignore (C), or excluding from scanners (D) are all improper handling that loses visibility and accountability." data-source-url="https://www.servicenow.com/docs/r/security-management/vulnerability-response/defer-vul-item.html">
 <h2>Question 49</h2>
 <p class="question-stem">If fixing a Vulnerable Item outweighs the benefits, the correct course of action is:</p>
 <div class="answer-options">
@@ -619,8 +659,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Add the CI to the Vulnerability Scanner’s exclusions Related List</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="A common integration point with Vulnerability Response is Risk Indicators within GRC (Governance, Risk, and Compliance). VR integrates with GRC to feed vulnerability data into risk assessments, allowing organizations to quantify and track risk exposure. Workflow Mappings (A), Service Catalog (C), and Knowledge Base (D) are not primary VR integration points." data-source-url="">
 <h2>Question 50</h2>
 <p class="question-stem">A common integration point with Vulnerability is:</p>
 <div class="answer-options">
@@ -630,8 +672,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Knowledge Base</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Risk Indicators are the common integration point between Vulnerability Response and GRC (D). VR computes risk scores and exposes them as Risk Indicators that GRC consumes for policy compliance and risk management. Security Incident Response (A), Change (B), and Problem (C) are not the primary VR-GRC integration mechanisms." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Risk Indicators are a common integration point between Vulnerability Response and GRC (Governance, Risk, and Compliance). Vulnerability data feeds into GRC risk assessments through risk indicators that reflect the security posture of the organization. High vulnerability counts or critical unpatched systems generate risk indicators that GRC uses for risk scoring and compliance reporting. SIR (A), Change (B), and Problem (C) are ITSM integration points, not specifically VR-GRC integration." data-source-url="">
 <h2>Question 51</h2>
 <p class="question-stem">Which of the following is a common integration point between Vulnerability and GRC?</p>
 <div class="answer-options">
@@ -644,7 +688,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Workflows (now Flow Designer) is the ServiceNow application used for process automation. Workflows/Flows automate multi-step processes including approvals, notifications, task creation, and conditional logic. Knowledge Base (A) stores articles, SLAs (C) track service level agreements, and Service Catalog (D) provides service request forms — none of these are process automation tools." data-source-url="">
 <h2>Question 52</h2>
 <p class="question-stem">What is the ServiceNow application used for process automation?</p>
 <div class="answer-options">
@@ -654,8 +698,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Service Catalog</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="The Vulnerable Item State Approval Workflow exists in the Security Operations Common scope, so it can be modified by any Security Operations Admin (sn_sec.admin). Since it resides in the shared Security Operations Common scope rather than the VR-specific scope, Security Operations administrators with appropriate scope access can customize the workflow to match their organization&#x27;s approval requirements." data-source-url="">
 <h2>Question 53</h2>
 <p class="question-stem">Which of the following best describes the Vulnerable Item State Approval Workflow?</p>
 <div class="answer-options">
@@ -665,8 +711,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> It runs against the [sn_vul_change_approval] table</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="To define SLAs for VR, have the Vulnerability admin role in the Vulnerability application scope (C). VR SLA modules are scoped, requiring the VR admin role within the VR scope. Global admin (B) in global scope cannot access VR-specific SLA configuration. Custom workflows (A) are unnecessary when SLA modules exist. sn_vul.vulnerability_write (D) is insufficient for SLA configuration." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="To define SLAs for Vulnerability Response, you need at least the sn_vul.vulnerability_write role and should use the baseline SLA Application Modules within the VR scope. This approach leverages the built-in SLA framework that ServiceNow provides for vulnerability remediation tracking. Creating custom workflows (A) is unnecessary since baseline modules exist. Using global scope (B) is incorrect because VR SLAs should be in the VR scope. Option C is incomplete as sn_vul.admin alone doesn&#x27;t describe the method." data-source-url="">
 <h2>Question 54</h2>
 <p class="question-stem">To ensure that Vulnerabilities are processed correctly, you can define a Service Level Agreement (SLA) for Vulnerability Response. To achieve this, you would:</p>
 <div class="answer-options">
@@ -679,7 +727,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="The sn_vul.vulnerability.write role is required to view the Vulnerability Overview Dashboard (D). Per the docs, this role provides access to manage and view vulnerability records and dashboards. A read role (A) provides insufficient access. sn_vul.manager (B) and sn_vul.ciso (C) are not standard VR role names in the platform." data-source-url="https://www.servicenow.com/docs/r/security-management/vulnerability-response/installed-with-vr.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The sn_vul.vulnerability.read role is required to view the Vulnerability Overview Dashboard. This read-only role grants access to view vulnerability data, dashboards, and reports without the ability to modify records. sn_vul.manager (B) provides broader management capabilities beyond just viewing. sn_vul.ciso (C) is an executive-level role not required for basic dashboard access. sn_vul.vulnerability.write (D) grants write permissions which exceeds what&#x27;s needed for viewing." data-source-url="">
 <h2>Question 55</h2>
 <p class="question-stem">What role is required to view the Vulnerability Overview Dashboard?</p>
 <div class="answer-options">
@@ -692,7 +740,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,C,D" data-community="false" data-explanation="Managers should have access to Time period views (B), Up-to-the-minute views (C), and Drill-down to granularity (D). These provide trend analysis, real-time status, and detailed investigation for management oversight. Aggregations for priority and workload (A) are more suited to operational analyst views rather than manager-level reporting." data-source-url="">
+<div class="question-card" data-answer="A,B,D" data-community="false" data-explanation="Managers should have access to Aggregations for priority and workload (A) to see the big picture of vulnerability distribution, Time period views (B) for tracking trends and progress over time, and Drill-down to granularity (D) for investigating specific areas when needed. Up-to-the-minute views (C) are more suited for operational teams who need real-time data for active remediation work, whereas managers focus on strategic oversight with aggregated and trend-based data." data-source-url="">
 <h2>Question 56</h2>
 <p class="question-stem">Managers should have access to which role-based data access and visualizations? (Choose three.)</p>
 <div class="answer-options">
@@ -705,7 +753,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="To get useful reporting on the most vulnerable CIs, your CMDB must be up to date and useful. Vulnerability Response relies on accurate CI data to correlate vulnerabilities with infrastructure. Without current CMDB data, VR reports cannot accurately identify which CIs are most at risk. A separate PA module (A) is not required, CI population size (B) is irrelevant, and KPIs (C) help but are secondary to data quality." data-source-url="">
 <h2>Question 57</h2>
 <p class="question-stem">To get useful reporting regarding the most vulnerable CI’s, which statement applies?</p>
 <div class="answer-options">
@@ -715,8 +763,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Your CMDB must be up to date and useful</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The CIO/CISO wants single, clear indicators of organizational health on their dashboard. Executive leadership needs high-level, at-a-glance views showing overall security posture, risk trends, and compliance status rather than granular operational details. Aggregations (A) and drill-downs (B) are more suited for managers, and up-to-the-minute views (D) are for operational analysts." data-source-url="">
 <h2>Question 58</h2>
 <p class="question-stem">What type of data would the CIO/CISO want on the dashboard?</p>
 <div class="answer-options">
@@ -726,8 +776,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Up to the minute views</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A,C,D" data-community="false" data-explanation="The three levels of users needing VR dashboard access are Security Analysts (A) who investigate and triage vulnerabilities, CIO/CISO (C) who need executive-level security posture visibility, and Fulfillers (D) who perform the actual remediation work. Customers (B) are external parties who typically do not have access to internal vulnerability response dashboards." data-source-url="">
 <h2>Question 59</h2>
 <p class="question-stem">The three levels of users you will likely encounter that will need access to data displayed in the Vulnerability Response dashboard are: (Choose three.)</p>
 <div class="answer-options">
@@ -737,8 +789,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Fulfillers</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The best way to develop a complete list of Vulnerability Reports is to work with the customer to identify the things most useful to them. Each organization has unique reporting needs based on their security posture, compliance requirements, and stakeholder expectations. A collaborative approach ensures reports provide actionable value. OOB reports alone (D) rarely cover all needs, and buying PA (A) adds cost without understanding requirements first." data-source-url="">
 <h2>Question 60</h2>
 <p class="question-stem">What is the best way to develop a complete list of Vulnerability Reports?</p>
 <div class="answer-options">
@@ -748,21 +802,11 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Use the standard out of the box reports only</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Filter Group configuration is found under the Security Operations &gt; Groups application module. Filter Groups are a Security Operations Common feature shared across all SecOps applications, so they live under the Security Operations navigation menu. The Groups module provides access to both Filter Groups and other grouping mechanisms. Options B, C, and D place Filter Groups under the Vulnerability module, but they are actually a Security Operations-level feature." data-source-url="">
 <h2>Question 61</h2>
-<p class="question-stem">What is the difference between the ADD and COPY Dockerfile instructions? (Choose two.)</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> ADD supports regular expression handling while COPY does not.</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> COPY supports compression format handling while ADD does not.</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> ADD supports compression format handling while COPY does not.</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> COPY supports regular expression handling while ADD does not.</div>
-<div class="answer-option" data-key="E"><span class="option-key">E.</span> ADD supports remote URL handling while COPY does not.</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Filter Group configuration is found under Security Operations &gt; Groups module (A). Per the docs, Filter Groups are listed under &#x27;Groups&#x27; within Security Operations, not within the Vulnerability module (B/C/D). The Security Operations &gt; Groups area hosts shared security tooling including Filter Groups used across VR, SIR, and related apps." data-source-url="https://www.servicenow.com/docs/r/security-management/application-vulnerability-response/avm-manage-roles.html">
-<h2>Question 62</h2>
 <p class="question-stem">Filter Group configuration is found under which Application module?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Security Operations > Groups</div>
@@ -774,134 +818,8 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 63</h2>
-<p class="question-stem">A user’s attempts to set the system time from inside a Docker container are unsuccessful.<br />Could this be blocking this operation?<br />SELinux</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 64</h2>
-<p class="question-stem">One of several containers in a pod is marked as unhealthy after failing its livenessProbe many times.<br />Is this the action taken by the orchestrator to fix the unhealthy container?<br />The unhealthy container is restarted.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 65</h2>
-<p class="question-stem">Is this a way to configure the Docker engine to use a registry without a trusted TLS certificate?<br />Set INSECURE_REGISTRY in the ‘/etc/docker/default’ configuration file.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 66</h2>
-<p class="question-stem">Is this a way to configure the Docker engine to use a registry without a trusted TLS certificate?<br />Set and export the IGNORE_TLS environment variable on the command line.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 67</h2>
-<p class="question-stem">Is this a way to configure the Docker engine to use a registry without a trusted TLS certificate?<br />Pass the ‘--insecure registry’ flag to the daemon at run time.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 68</h2>
-<p class="question-stem">Is this an advantage of multi-stage builds?<br />better logical separation of Dockerfile instructions for increased readability</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 69</h2>
-<p class="question-stem">Is this an advantage of multi-stage builds?<br />better caching when building Docker images</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 70</h2>
-<p class="question-stem">You add a new user to the engineering organization in DTR.<br />Will this action grant them read/write access to the engineering/api repository?<br />Add the user directly to the list of users with read/write access under the repository’s Permissions tab.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 71</h2>
-<p class="question-stem">You add a new user to the engineering organization in DTR.<br />Will this action grant them read/write access to the engineering/api repository?<br />Mirror the engineering/api repository to one of the user’s own private repositories.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 72</h2>
-<p class="question-stem">You add a new user to the engineering organization in DTR.<br />Will this action grant them read/write access to the engineering/api repository?<br />Add them to a team in the engineering organization that has read/write access to the engineering/api repository.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 73</h2>
-<p class="question-stem">Seven managers are in a swarm cluster.<br />Is this how should they be distributed across three datacenters or availability zones?<br />3-2-2</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 74</h2>
-<p class="question-stem">Seven managers are in a swarm cluster.<br />Is this how should they be distributed across three datacenters or availability zones?<br />5-1-1</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 75</h2>
-<p class="question-stem">Is this a function of UCP?<br />image role-based access control</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 76</h2>
-<p class="question-stem">Is this a function of UCP?<br />enforces the deployment of signed images to the cluster</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="The property sn_vul.popup (D) controls whether a popup appears when creating a Problem or Change from a Vulnerability/VI record. Per the docs: &#x27;popup property (sn_vul.popup)&#x27; is explicitly named. sn_si.popup is the equivalent for Security Incident Response, not VR. Options A, B, C are not valid VR property names." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/t_CrtChgOrPrbFromSI.html">
-<h2>Question 77</h2>
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The property sn_vul.itsm_popup controls whether a popup appears when creating a Problem or Change record from a Vulnerability or Vulnerable Item record. When set to True, users see a popup confirmation dialog before the ITSM record is created. When False, the record is created directly without the popup. Note that options B and C have identical text; both show sn_vul.itsm_popup as the answer. Options A (popup_ui_page) and D (popup) are not the correct property names." data-source-url="">
+<h2>Question 62</h2>
 <p class="question-stem">Which is the property that is set to True or False based on the customer desire fora popup when creating a Problem or Change record from a Vulnerability or Vulnerable Item (VI) record?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> sn_vul.popup_ui_page</div>
@@ -912,504 +830,6 @@
 <button class="reveal-btn">Show Answer</button>
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 78</h2>
-<p class="question-stem">Is this the purpose of Docker Content Trust?<br />Sign and verify image tags.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 79</h2>
-<p class="question-stem">Is this the purpose of Docker Content Trust?<br />Indicate an image on Docker Hub is an official image.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 80</h2>
-<p class="question-stem">In the context of a swarm mode cluster, does this describe a node? an instance of the Docker CLI connected to the swarm</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 81</h2>
-<p class="question-stem">In the context of a swarm mode cluster, does this describe a node? a virtual machine participating in the swarm</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 82</h2>
-<p class="question-stem">Is this a supported user authentication method for Universal Control Plane?<br />SAML</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 83</h2>
-<p class="question-stem">Is this a supported user authentication method for Universal Control Plane?</p>
-<div class="answer-options">
-<div class="answer-option" data-key="X"><span class="option-key">X.</span> 500</div>
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 84</h2>
-<p class="question-stem">Is this statement correct?<br />A Dockerfile provides instructions for building a Docker image.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 85</h2>
-<p class="question-stem">Is this statement correct?<br />A Dockerfile stores persistent data between deployments of a container.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 86</h2>
-<p class="question-stem">Will this command ensure that overlay traffic between service tasks is encrypted? docker network create -d overlay --secure <network-name></p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 87</h2>
-<p class="question-stem">An application image runs in multiple environments, with each environment using different certificates and ports. Is this a way to provision configuration to containers at runtime?<br />Create a Dockerfile for each environment, specifying ports and Docker secrets for certificates.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 88</h2>
-<p class="question-stem">Will this sequence of steps completely delete an image from disk in the Docker Trusted Registry?<br />Delete the image and delete the image repository from Docker Trusted Registry</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 89</h2>
-<p class="question-stem">Will this sequence of steps completely delete an image from disk in the Docker Trusted Registry?<br />Delete the image and run garbage collection on the Docker Trusted Registry.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 90</h2>
-<p class="question-stem">Does this describe the role of Control Groups (cgroups) when used with a Docker container? user authorization to the Docker API</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 91</h2>
-<p class="question-stem">Does this describe the role of Control Groups (cgroups) when used with a Docker container? role-based access control to clustered resources</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 92</h2>
-<p class="question-stem">Does this describe the role of Control Groups (cgroups) when used with a Docker container? accounting and limiting of resources</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 93</h2>
-<p class="question-stem">Two development teams in your organization use Kubernetes and want to deploy their applications while ensuring that Kubernetes-specific resources, such as secrets, are grouped together for each application.<br />Is this a way to accomplish this?<br />Create one pod and add all the resources needed for each application.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 94</h2>
-<p class="question-stem">Two development teams in your organization use Kubernetes and want to deploy their applications while ensuring that Kubernetes-specific resources, such as secrets, are grouped together for each application.<br />Is this a way to accomplish this?<br />Create one namespace for each application and add all the resources to it.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 95</h2>
-<p class="question-stem">Two development teams in your organization use Kubernetes and want to deploy their applications while ensuring that Kubernetes-specific resources, such as secrets, are grouped together for each application.<br />Is this a way to accomplish this?<br />Create a collection for each application.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 96</h2>
-<p class="question-stem">You created a new service named ‘http’ and discover it is not registering as healthy.<br />Will this command enable you to view the list of historical tasks for this service?<br />‘docker inspect http’</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 97</h2>
-<div class="question-image"><img src="../images/questions/cis-vr/image1.png" alt="Question image" loading="lazy"></div>
-<p class="question-stem">The Kubernetes yaml shown below describes a clusterIP service.<br />Is this a correct statement about how this service routes requests?<br />Traffic sent to the IP of any pod with the label app: nginx on port 8080 will be forwarded to port 80 in that pod.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 98</h2>
-<p class="question-stem">A company’s security policy specifies that development and production containers must run on separate nodes in a given Swarm cluster.<br />Can this be used to schedule containers to meet the security policy requirements? label constraints</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 99</h2>
-<p class="question-stem">A company’s security policy specifies that development and production containers must run on separate nodes in a given Swarm cluster. Can this be used to schedule containers to meet the security policy requirements? environment variables</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 100</h2>
-<p class="question-stem">Will a DTR security scan detect this?<br />private keys copied to the image</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 101</h2>
-<p class="question-stem">Will a DTR security scan detect this?<br />image configuration poor practices, such as exposed ports or inclusion of compilers in production images</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 102</h2>
-<p class="question-stem">You configure a local Docker engine to enforce content trust by setting the environment variable DOCKER_CONTENT_TRUST=1.<br />If myorg/myimage:1.0 is unsigned, does Docker block this command? docker image build, from a Dockerfile that begins FROM myorg/myimage:1.0</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 103</h2>
-<p class="question-stem">Can this set of commands identify the published port(s) for a container?<br />‘docker container inspect’, ‘docker port’</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 104</h2>
-<p class="question-stem">Can this set of commands identify the published port(s) for a container?<br />‘docker port inspect’, ‘docker container inspect’</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 105</h2>
-<p class="question-stem">A persistentVolumeClaim (PVC) is created with the specification storageClass: "", and size requirements that cannot be satisfied by any existing persistentVolume.<br />Is this an action Kubernetes takes in this situation?<br />The PVC remains unbound until a persistentVolume that matches all requirements of the PVC becomes available.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 106</h2>
-<p class="question-stem">Will this configuration achieve fault tolerance for managers in a swarm? an odd number of manager nodes, totaling more than two</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 107</h2>
-<p class="question-stem">Will this configuration achieve fault tolerance for managers in a swarm? only two managers, one active and one passive</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 108</h2>
-<p class="question-stem">You want to provide a configuration file to a container at runtime.<br />Does this set of Kubernetes tools and steps accomplish this?<br />Turn the configuration file into a configMap object, use it to populate a volume associated with the pod, and mount that file from the volume to the appropriate container and path.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 109</h2>
-<p class="question-stem">You want to create a container that is reachable from its host’s network.<br />Does this action accomplish this?<br />Use either EXPOSE or --publish to access the container on the bridge network.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 110</h2>
-<p class="question-stem">You want to create a container that is reachable from its host’s network.<br />Does this action accomplish this?<br />Use network connect to access the container on the bridge network.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 111</h2>
-<p class="question-stem">Will this action upgrade Docker Engine CE to Docker Engine EE?<br />Disable the Docker service via ‘chkconfig’ or ‘systemctl’.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 112</h2>
-<p class="question-stem">Will this action upgrade Docker Engine CE to Docker Engine EE?<br />Run docker engine activate.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 113</h2>
-<p class="question-stem">Will this command display a list of volumes for a specific container?<br />‘docker container logs nginx --volumes’</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 114</h2>
-<p class="question-stem">Will this command display a list of volumes for a specific container?<br />‘docker container inspect nginx’</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 115</h2>
-<p class="question-stem">In Docker Trusted Registry, is this how a user can prevent an image, such as ‘nginx:latest’, from being overwritten by another user with push access to the repository?<br />Use the DTR web UI to make all tags in the repository immutable.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 116</h2>
-<p class="question-stem">In Docker Trusted Registry, is this how a user can prevent an image, such as ‘nginx:latest’, from being overwritten by another user with push access to the repository?<br />Tag the image with ‘nginx:immutable’.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 117</h2>
-<p class="question-stem">Does this command display all the pods in the cluster that are labeled as ‘env: development’?<br />‘kubectl get pods -l env=development’</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 118</h2>
-<p class="question-stem">Does this command display all the pods in the cluster that are labeled as ‘env: development’?<br />‘kubectl get pods --all-namespaces -l ‘env in (development)’ ’</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 119</h2>
-<p class="question-stem">Your organization has a centralized logging solution, such as Splunk.<br />Will this configure a Docker container to export container logs to the logging solution? docker system events --filter splunk</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 120</h2>
-<p class="question-stem">Your organization has a centralized logging solution, such as Splunk.<br />Will this configure a Docker container to export container logs to the logging solution? docker logs <container-id></p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 121</h2>
-<p class="question-stem">Your organization has a centralized logging solution, such as Splunk.<br />Will this configure a Docker container to export container logs to the logging solution?<br />Set the log-driver and log-opt keys to values for the logging solution (Splunk) in the daemon.json file.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 122</h2>
-<div class="question-image"><img src="../images/questions/cis-vr/image2.png" alt="Question image" loading="lazy"></div>
-<p class="question-stem">The Kubernetes yaml shown below describes a networkPolicy.<br />Will the networkPolicy BLOCK this traffic?<br />a request issued from a pod bearing the tier: backend label, to a pod bearing the tier: frontend label</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 123</h2>
-<p class="question-stem">Is this a Linux kernel namespace that is disabled by default and must be enabled at Docker engine runtime to be used? pid</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 124</h2>
-<p class="question-stem">Is this a Linux kernel namespace that is disabled by default and must be enabled at Docker engine runtime to be used? net</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 125</h2>
-<p class="question-stem">Is this a Linux kernel namespace that is disabled by default and must be enabled at Docker engine runtime to be used? user</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 126</h2>
-<p class="question-stem">Will this command mount the host’s ‘/data’ directory to the ubuntu container in read-only mode?<br />‘docker run -v /data:/mydata --mode readonly ubuntu’</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 127</h2>
-<p class="question-stem">Will this command mount the host’s ‘/data’ directory to the ubuntu container in read-only mode?<br />‘docker run --add-volume /data /mydata --read only ubuntu’</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 128</h2>
-<p class="question-stem">Will this command list all nodes in a swarm cluster from the command line?<br />‘docker inspect nodes’</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 129</h2>
-<p class="question-stem">Will this command list all nodes in a swarm cluster from the command line?<br />‘docker swarm nodes’</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 130</h2>
-<p class="question-stem">Will this command list all nodes in a swarm cluster from the command line?<br />‘docker node ls’</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 131</h2>
-<p class="question-stem">Is this a type of Linux kernel namespace that provides container isolation?<br />Process ID</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-</div>
-<div class="question-card" data-answer="A" data-community="true">
-<h2>Question 132</h2>
-<p class="question-stem">The following Docker Compose file is deployed as a stack:<br />Is this statement correct about this health check definition?<br />Health checks test for app health ten seconds apart. Three failed health checks transition the container into “unhealthy” status.</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
 </div>
     </main>
     <footer class="site-footer">

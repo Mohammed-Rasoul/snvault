@@ -25,7 +25,7 @@
     <main>
         <div class="quiz-banner"><a href="../quiz/cis-fsm.html">Test yourself on Field Service Management &rarr;</a></div>
 <div class="ai-notice">Answers verified with AI using ServiceNow documentation. Exercise your own judgement.</div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="A regional bank servicing its own ATMs is an example of Internal field service (B). Internal field service involves organizations maintaining their own equipment and infrastructure with their own staff. External field service (C) involves third-party companies providing services to customers. Reactive (A) is break-fix service type. Predictive (D) uses IoT/sensor data to anticipate failures." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="A bank servicing its own ATMs at external customer locations is external field service. External field service involves technicians traveling to locations outside the organization&#x27;s premises to service equipment. Reactive field service responds to breakdowns; internal field service covers in-house maintenance; predictive field service uses sensor data to anticipate failures." data-source-url="">
 <h2>Question 1</h2>
 <p class="question-stem">A regional bank servicing its Automated Teller Machines (ATMs) is an example of what type of field service?</p>
 <div class="answer-options">
@@ -38,7 +38,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Planned field service is used for maintenance at regular intervals (D). Per the docs: &#x27;Planned Work Management... create and manage planned work activities with recurring schedules at regular intervals.&#x27; Planned work includes scheduled maintenance, inspections, and audits on fixed time or meter-based intervals. Predictive (A) uses sensor/IoT data. Reactive (C) is break-fix. Project (B) is project-based work." data-source-url="https://www.servicenow.com/docs/r/field-service-management/work-order-management/configuring-planned-work-management.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Planned (preventive) maintenance is performed at regular scheduled intervals regardless of equipment condition. This contrasts with predictive maintenance (based on data/sensor analysis), reactive maintenance (responding to breakdowns), and project-based maintenance (one-off initiatives). Planned maintenance follows a fixed schedule such as quarterly or monthly." data-source-url="">
 <h2>Question 2</h2>
 <p class="question-stem">What field service model is used for maintenance at regular intervals?</p>
 <div class="answer-options">
@@ -51,7 +51,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Work order must be in Draft state (A) to set dependencies for work order tasks. Per the docs: dependencies between tasks are configured when the work order is in Draft status. The wm_task_initiator role enables creating tasks in Draft status. Dependencies define the order of task execution before the work order proceeds to qualification and dispatch stages." data-source-url="https://www.servicenow.com/docs/r/field-service-management/work-order-management/t_CreateAWorkOrder.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The work order must be in Draft state to set dependencies between its work order tasks. Dependencies are configured during work order setup before the order is promoted through the qualification process. Once the work order advances beyond draft, dependency configuration is locked." data-source-url="">
 <h2>Question 3</h2>
 <p class="question-stem">What state must a work order request be in to set dependencies for work order tasks?</p>
 <div class="answer-options">
@@ -65,7 +65,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="Administrators use the Survey Designer (C) to create questionnaires for work orders and work order tasks. Per the docs: &#x27;Admin can create survey-based questionnaires and associate them with work order tasks. The Survey Designer tool is used to create the questionnaires.&#x27; Process Automation Designer (A) is for automation flows. Assessment Designer (D) and Targeted Communication (B) are not used for FSM work order questionnaires." data-source-url="https://www.servicenow.com/docs/r/field-service-management/work-order-management/work-order-questionnaire.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Assessment Designer is the ServiceNow platform tool used to create questionnaires for work orders and work order tasks. Assessment Designer allows admins to build custom questionnaire templates with different question types that can be attached to FSM records. Process Automation Designer is for workflows, Survey Designer is a different tool, and Targeted Communication is for notifications." data-source-url="">
 <h2>Question 4</h2>
 <p class="question-stem">What do administrators use to create questionnaires for work orders and work order tasks?</p>
 <div class="answer-options">
@@ -78,7 +78,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Work order tasks can be dispatched when the Dispatch group is assigned (D). The dispatch group routes the task to the appropriate pool of agents. Per the docs: the dispatch group is automatically populated based on territory, enabling dispatcher assignment. The field agent being assigned (B) is the result of dispatching, not the prerequisite. Parts (A) and appointments (C) are not required conditions for task dispatch." data-source-url="https://www.servicenow.com/docs/r/field-service-management/work-order-management/t_SourceAPartAndAssignAnAgent.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Work order tasks can be dispatched once a dispatch group is assigned to the task. The dispatch group determines which dispatchers can manage and assign the task. Without a dispatch group, the task cannot enter the dispatch workflow. Parts sourcing, agent assignment, and appointment booking occur after or during the dispatch process." data-source-url="">
 <h2>Question 5</h2>
 <p class="question-stem">When can work order tasks be dispatched?</p>
 <div class="answer-options">
@@ -91,7 +91,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="The Dispatcher Workspace looks at the Agent calendar (B) to auto-assign tasks based on agent availability. Per the docs: the dispatcher workspace considers agent availability, schedules, and locations when assigning tasks. Agent calendars contain shifts, time-off, and existing assignments. Outlook (A) and Google (D) calendars are external and not used. Team calendar (C) is for managers." data-source-url="https://www.servicenow.com/docs/r/field-service-management/field-service-manager-workforce/using-territory-planning-console.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Dispatcher workspace checks the Agent calendar to determine agent availability when auto-assigning tasks. The agent calendar contains work schedules, personal time off, shift information, and blocked time. The system evaluates agent calendars to find available time slots that match task requirements." data-source-url="">
 <h2>Question 6</h2>
 <p class="question-stem">Dispatcher workspace looks at which calendar to auto-assign tasks to agents based on availability?</p>
 <div class="answer-options">
@@ -104,7 +104,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="The wm_agent role (B) typically creates personal events for an agent&#x27;s calendar. Per the docs: &#x27;Agents and technicians typically add personal events to their own calendars.&#x27; The agent_schedule_admin role can also create events on behalf of agents, but the typical operational user is the agent themselves (wm_agent). wm_manager (A), wm_dispatcher (C), and wm_admin (D) manage broader scheduling but don&#x27;t typically create personal events." data-source-url="https://www.servicenow.com/docs/r/field-service-management/workforce-optimization-for-field-service/configure-agent-calendar.html">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The wm_dispatcher role typically creates personal events on an agent&#x27;s calendar in the Dispatcher Workspace. Dispatchers manage agent schedules and create events to block time for appointments, meetings, training, or unavailability. While agents (wm_agent) can see their calendars, dispatchers are the operational role that manages personal event creation." data-source-url="">
 <h2>Question 7</h2>
 <p class="question-stem">Which operational role typically creates personal events for an agent's calendar?</p>
 <div class="answer-options">
@@ -117,7 +117,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="Dispatch groups are filtered by Location coverage (B) for work order tasks. Per the docs: &#x27;The best match dispatch group is automatically populated based on the territory mentioned in the task only if the Field_Service_Territories territory model is enabled.&#x27; Territories represent geographic coverage areas, so location coverage determines which dispatch groups appear. Manager (A), Group type (C), and Group members (D) do not filter dispatch group selection." data-source-url="https://www.servicenow.com/docs/r/field-service-management/work-order-management/c_WorkOrderTemplates.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Dispatch groups available on work order tasks are filtered by location coverage. Each dispatch group defines the geographic areas it covers, and only groups whose coverage area includes the task&#x27;s location are shown as options on the work order task form. This ensures tasks are routed to dispatchers responsible for that area." data-source-url="">
 <h2>Question 8</h2>
 <p class="question-stem">How are dispatch groups that can be selected from work order tasks filtered?</p>
 <div class="answer-options">
@@ -130,7 +130,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Dispatchers view real-time locations of agents in the Dispatch map (D). Per the docs: &#x27;the Dispatcher Workspace map... track, manage, and analyze agent assignments and work order tasks in specific locations.&#x27; Per the docs: the Dispatcher Dashboard displays real-time agent presence status, locations, and dispatch maps. Agent map (A) is the agent&#x27;s own view. Manager map (C) is not a standard FSM component." data-source-url="https://www.servicenow.com/docs/r/field-service-management/field-service-scheduling/using-dispatcher-workspace.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The Dispatch Map in Dispatcher Workspace shows real-time locations of field agents on an interactive map. This allows dispatchers to see where agents currently are, track their movements, and make informed assignment decisions based on agent proximity to tasks. The Agent map is for agents, not dispatchers." data-source-url="">
 <h2>Question 9</h2>
 <p class="question-stem">Where can dispatchers view real-time locations of agents?</p>
 <div class="answer-options">
@@ -143,7 +143,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="With territory management, field service admins assign Locations (D) to individuals or groups. Per the docs: &#x27;Territory management allows the assignment of a set of geographical locations to an individual or group. This assignment creates a territory.&#x27; Territories are geographic assignments, not skill (A), parts (B), or route (C) assignments." data-source-url="https://www.servicenow.com/docs/r/field-service-management/workforce-optimization-for-field-service/c_TerritoryManagement.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Territory management allows field service admins to assign locations (geographic territories/coverage areas) to individual agents or groups. Territories define which agents can be assigned tasks in specific regions. Skills are managed separately via skills management, and parts/routes are not directly assigned through territory management." data-source-url="">
 <h2>Question 10</h2>
 <p class="question-stem">When using territory management, what can field service admins assign to an individual or group?</p>
 <div class="answer-options">
@@ -156,7 +156,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="When a dispatcher drags a lower priority task over a higher priority task in the dispatcher workspace with dynamic scheduling, a warning is displayed and dispatcher confirmation is required. This safeguard prevents accidental priority overrides. The system alerts the dispatcher that the action may delay a higher-priority task and requires explicit confirmation before proceeding." data-source-url="">
 <h2>Question 11</h2>
 <p class="question-stem">When using the dispatcher workspace integration with dynamic scheduling, if a dispatcher drags a lower priority task over a higher priority task, what will occur?</p>
 <div class="answer-options">
@@ -166,8 +166,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> The higher priority task is automatically reassigned</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Work order tasks must be in &#x27;Pending dispatch&#x27; state for dynamic scheduling to assign them. This state indicates the task has been qualified and is ready for scheduling but hasn&#x27;t been assigned to an agent yet. Dynamic scheduling picks up tasks in Pending dispatch state and automatically assigns them based on agent availability, location, skills, and other matching criteria." data-source-url="">
 <h2>Question 12</h2>
 <p class="question-stem">What state do work order tasks need to be in for dynamic scheduling to assign them?</p>
 <div class="answer-options">
@@ -177,8 +179,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Approved</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="&#x27;Out of office&#x27;, &#x27;Meeting&#x27;, and &#x27;Training&#x27; are examples of Time worked categories (C). These are non-productive time classifications used in FSM time recording to categorize how agents spend their time beyond direct work order task execution. Labor rate cards (A) determine billing rates. Time sheet policies (B) govern submission rules. Standard rate types (D) are cost structures, not time classification categories." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Out of office, Meeting, and Training are examples of time worked categories in FSM time recording. Time worked categories classify different types of time entries agents can log, including productive work time and non-productive time like meetings or training. Labor rate cards define billing rates, time sheet policies govern recording rules, and rate types categorize billing." data-source-url="">
 <h2>Question 13</h2>
 <p class="question-stem">In the context of time recording, “Out of office”, “Meeting”, and “Training” are examples of what?</p>
 <div class="answer-options">
@@ -191,7 +195,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Geolocation allows for more accurately tracking agents&#x27; locations through mobile devices. FSM uses the mobile device&#x27;s GPS capabilities to track field agent positions in real-time, enabling accurate travel time estimates, proximity-based task assignment, and live map views in the dispatcher workspace showing current agent locations relative to task sites." data-source-url="">
 <h2>Question 14</h2>
 <p class="question-stem">What allows for more accurately tracking agent’s locations through mobile devices?</p>
 <div class="answer-options">
@@ -201,8 +205,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Service level agreements</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="Route Optimization (B) reorders an agent&#x27;s tasks for the day as efficiently as possible using geolocation or straight-line estimation. Per the docs: &#x27;The route optimization feature considers... reordering the agent tasks for the day&#x27; and respects personal time-off while avoiding locked tasks. Dynamic Scheduling (A) assigns tasks to agents initially. Dispatch Workflow (C) manages the assignment process. Appointment Booking (D) schedules customer appointments." data-source-url="https://www.servicenow.com/docs/r/field-service-management/field-service-scheduling/show-hide-agent-route-dispatcher-wrkspc.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Route Optimization reorders an agent&#x27;s tasks for the day to minimize travel time using either geolocation (Google Maps API for real-time travel estimates) or straight-line estimation. Dynamic Scheduling assigns tasks to agents but does not reorder existing task sequences. Dispatch Workflow manages the dispatch process, and Appointment Booking handles customer scheduling." data-source-url="https://www.servicenow.com/docs/r/field-service-management/field-service-scheduling/configuring-route-optimization.html">
 <h2>Question 15</h2>
 <p class="question-stem">What feature reorders an agent’s tasks for the day as efficiently as possible, using either geolocation or straight-line estimation?</p>
 <div class="answer-options">
@@ -215,7 +221,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="Setting a work order task as an upstream task means the task must be completed before any downstream tasks can be started (B). Per the docs: &#x27;Finish to start — the successor (downstream) task should be started after finishing its predecessor (upstream) task.&#x27; The upstream task is the predecessor. Downstream tasks cannot start until the upstream task is complete. D describes the downstream task, not the upstream task." data-source-url="https://www.servicenow.com/docs/r/field-service-management/work-order-management/t_SetAnUpstreamTask.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Setting a work order task as an upstream task means it must be completed before any downstream (successor) tasks can be started. This creates a Finish-to-Start dependency where the downstream task waits until the upstream task is done. Dynamic scheduling only supports Finish-to-Start dependencies with no max/min lag time." data-source-url="https://www.servicenow.com/docs/r/field-service-management/field-service-scheduling/create-dynamic-scheduling-config.html">
 <h2>Question 16</h2>
 <p class="question-stem">What does it mean when you set a work order task as an upstream task?</p>
 <div class="answer-options">
@@ -228,7 +234,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="Work Order Dependencies (C) set and enforce the order in which a single field agent or multiple field agents perform their tasks. Per the docs: task dependency relationships (finish-to-start, start-after-start, etc.) define and enforce task sequencing. Dependencies specify predecessor/successor relationships across agents. Qualification (A) validates tasks. Circular relationships (B) are invalid. Work order templates (D) define task structure, not execution order." data-source-url="https://www.servicenow.com/docs/r/field-service-management/work-order-management/create-a-work-order-advanced-task-dependency-using-a-work-order-template.html">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Work Order Dependencies set and enforce the order in which field agents perform tasks. Dependencies define upstream/downstream relationships between tasks, creating Finish-to-Start chains. Task dependencies override task ordering rules to ensure proper task flow. Work Order Qualification is a state, circular relationships are invalid, and templates organize but don&#x27;t enforce order." data-source-url="https://www.servicenow.com/docs/r/field-service-management/field-service-scheduling/create-dynamic-scheduling-config.html">
 <h2>Question 17</h2>
 <p class="question-stem">What sets and enforces the order in which a single field agent or multiple field agents perform the tasks assigned to them?</p>
 <div class="answer-options">
@@ -241,7 +247,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Reactive, Planned, and Predictive are examples of field service models. These represent different maturity levels: Reactive (break-fix, respond as issues occur), Planned (scheduled maintenance, preventive work), and Predictive (using data/IoT to anticipate failures). Organizations progress through these models as FSM maturity increases, moving from firefighting to proactive service delivery." data-source-url="">
 <h2>Question 18</h2>
 <p class="question-stem">Reactive, Planned, and Predictive are examples of what?</p>
 <div class="answer-options">
@@ -251,8 +257,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> ServiceNow maturity levels</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C,D,E,F" data-community="false" data-explanation="Field agents can provide these reasons when rejecting tasks: Parts unavailable (C), Customer unavailable (D), Skills mismatch (E), and Schedule conflict (F). Per the docs: available rejection options include &#x27;Schedule conflict&#x27;, &#x27;Skills mismatch&#x27;, &#x27;Location mismatch&#x27;, &#x27;Duplicate task&#x27;, &#x27;Parts unavailable&#x27;, &#x27;Customer unavailable.&#x27; Not a preferred customer (A) and Type of work not preferred (B) are not listed agent rejection reasons." data-source-url="https://www.servicenow.com/docs/r/field-service-management/work-order-management/t_AcceptOrRejectAWorkOrderTask.html">
+<div class="question-card" data-answer="B,C,D,F" data-community="false" data-explanation="Standard FSM task rejection reasons for field agents are: Type of work not preferred (B), Parts unavailable (C), Customer unavailable (D), and Schedule conflict (F). &quot;Not a preferred customer&quot; (A) is not a standard rejection reason in FSM. Skills mismatch (E) is handled during the dynamic scheduling matching phase before assignment, not as a post-assignment rejection reason." data-source-url="">
 <h2>Question 19</h2>
 <p class="question-stem">Which reasons can field agents provide when rejecting tasks that were assigned to them? (Choose four.)</p>
 <div class="answer-options">
@@ -267,7 +275,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Customer service agents use Agent Workspace to create and view associated work order tasks for customer cases. The CSM Agent Workspace provides a unified interface where agents can manage cases and directly create field service work orders linked to those cases, view existing work order tasks, and track their progress without switching applications." data-source-url="">
 <h2>Question 20</h2>
 <p class="question-stem">What can customer service agents use to create and view associated work order tasks for customer cases?</p>
 <div class="answer-options">
@@ -277,8 +285,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Dispatcher workspace</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Field agents can use the Time sheet portal to record time spent on tasks on a day-to-day basis and submit the time sheet in a single action. This portal provides a streamlined interface for logging hours against specific work order tasks and submitting completed time sheets, simplifying the time tracking and approval process for field service operations." data-source-url="">
 <h2>Question 21</h2>
 <p class="question-stem">What can field agents use to record time spent on tasks on a day-to-day basis and submit the time sheet in a single action?</p>
 <div class="answer-options">
@@ -288,8 +298,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Planning console</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="B,C,D" data-community="false" data-explanation="Field Service Management is a solution for anything that uses Skills, Locations, and Time. These three elements are fundamental to FSM: Skills define agent capabilities needed for tasks, Locations determine where work must be performed and enable proximity-based routing, and Time governs scheduling, SLA management, and agent availability. Problems, Requests, and Incidents are ITSM concepts, not FSM core elements." data-source-url="">
 <h2>Question 22</h2>
 <p class="question-stem">Field Service Management (FSM) is a solution for anything that uses which of the following? (Choose three.)</p>
 <div class="answer-options">
@@ -301,8 +313,10 @@
 <div class="answer-option" data-key="F"><span class="option-key">F.</span> Incidents</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Location, skills, and availability are used to determine the best field agent for a task. Dynamic scheduling evaluates these three criteria to optimally match tasks to agents: the agent must have the required skills, be available during the needed timeframe, and be within reasonable travel distance. This ensures efficient resource utilization and timely service delivery." data-source-url="">
 <h2>Question 23</h2>
 <p class="question-stem">Location, skills, and availability are used to determine what?</p>
 <div class="answer-options">
@@ -312,8 +326,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Agent schedules</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="The Qualification phase (B) immediately precedes the Scheduling and Dispatch phase in the baseline FSM process lifecycle. The standard FSM lifecycle is: Initiation → Qualification → Scheduling and Dispatch → Delivery and Confirmation → Analyze and Improve. During Qualification, tasks are created and validated before being routed to dispatchers. Initiation (A) precedes Qualification. Analyze and Improve (C) is the final phase." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="The FSM process lifecycle follows: Initiation &gt; Qualification &gt; Scheduling &amp; Dispatch &gt; Delivery &amp; Confirmation &gt; Analyze &amp; Improve. Qualification immediately precedes the scheduling and dispatch phase. During qualification, the work order is reviewed, tasks are created, and the work is prepared for dispatch." data-source-url="https://www.servicenow.com/docs/r/field-service-management/explore-fsm.html">
 <h2>Question 24</h2>
 <p class="question-stem">What phase in the baseline ServiceNow field service management process lifecycle immediately precedes the scheduling and dispatch phase?</p>
 <div class="answer-options">
@@ -326,7 +342,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="A system property (A) determines whether a rejected task is dynamically assigned to the same agent again within the next 24 hours. This configurable property controls the re-assignment exclusion window after an agent rejects a task. Unassignment constraints (B) govern unassignment, not rejection re-assignment. Agent task rejection preferences (C) are the rejection options, not the re-assignment control. Multiple assignment rules (D) is not a standard FSM concept." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The system property work.management.rejected.technician.duration determines whether a rejected task is dynamically assigned to the same agent within the next 24 hours. The &quot;Ignore Rejected Technician&quot; matching criterion in dynamic scheduling reads this property to enforce the exclusion period. Unassignment constraints serve a different purpose (preventing task unassignment)." data-source-url="https://www.servicenow.com/docs/r/field-service-management/field-service-scheduling/create-dynamic-scheduling-config.html">
 <h2>Question 25</h2>
 <p class="question-stem">What determines if a rejected task is dynamically assigned to the same agent in the next 24 hours or not?</p>
 <div class="answer-options">
@@ -339,7 +355,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,D" data-community="false" data-explanation="SMS notifications with agent location and ETA depend on Notify - Twilio Direct Driver (A) and Field Service Management - Customer Experience (D). Per -257: the FSM Customer Experience plugin enables email and SMS customer notifications. Per the docs: customers can track agent geolocation via the portal. Notify - Twilio Direct Driver provides the SMS delivery mechanism. Notification Preferences (B) and Push Notifications (C) for FSM are not required for SMS with location/ETA." data-source-url="https://www.servicenow.com/docs/r/field-service-management/work-order-management/activate-process-automation-designer-for-fsm.html">
+<div class="question-card" data-answer="A,D" data-community="false" data-explanation="SMS notifications with agent location and ETA to customers require two plugins: Notify - Twilio Direct Driver (A) provides the SMS delivery capability via Twilio, and Field Service Management - Customer Experience (D) provides customer-facing location tracking and ETA functionality. Push Notifications (C) handles push not SMS, and Notification Preferences (B) manages preferences, not delivery." data-source-url="">
 <h2>Question 26</h2>
 <p class="question-stem">Configuring SMS notifications to customers that include an agent's current location and estimated time of arrival depends on which plugins? (Choose two.)</p>
 <div class="answer-options">
@@ -352,7 +368,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,D,E" data-community="false" data-explanation="The From Stockroom field auto-populates when: the Reserve parts in agent stockroom option is enabled (B), the part is available in the agent&#x27;s personal stockroom (D), and the part is available in the assignment group&#x27;s stockroom (E). These three conditions trigger automatic stockroom selection. Parts scheduling plugin activation (A) enables the feature but doesn&#x27;t auto-populate the field. Preferred stockrooms defined (C) is not a documented auto-population condition." data-source-url="">
+<div class="question-card" data-answer="A,B,D" data-community="false" data-explanation="The From Stockroom field auto-populates with a default stockroom only if all three conditions are met: the parts scheduling plugin is activated (A) enabling the feature, the &quot;Reserve parts in agent stockroom&quot; configuration option is enabled (B), and the required part is available in the agent&#x27;s personal stockroom (D). Without any of these conditions, auto-population does not occur." data-source-url="">
 <h2>Question 27</h2>
 <p class="question-stem">When sourcing a part, the From Stockroom field is auto-populated with a default stockroom location, only if: (Choose three.)</p>
 <div class="answer-options">
@@ -366,7 +382,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Map page markers, map filters, and map data are key components of Advanced Map Pages (D). Per the docs: &#x27;create custom map markers... used in the marker layer map overlay definition&#x27; for Advanced Map Pages. Advanced Map Pages provide a customizable map framework with overlay layers, markers, and data filtering. Territory Management (A) uses maps but is a different feature. Geolocation (B) and Dispatcher Workspace (C) use maps but are not defined by these components." data-source-url="https://www.servicenow.com/docs/r/field-service-management/configuring-map-overlay.html">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Map page markers, map filters, and map data are key components of the Dispatcher Workspace. The dispatch map within the workspace uses markers to show agent and task locations, filters to refine the map view, and map data sources to populate location information. Territory Management uses territories, and Geolocation is a capability, not a UI component." data-source-url="">
 <h2>Question 28</h2>
 <p class="question-stem">Map page markers, map filters, and map data are key components of what?</p>
 <div class="answer-options">
@@ -379,7 +395,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Dispatchers view location history in the Agent Location History Map (A). Per the docs: &#x27;View agent location history map — Access a historical map of field service agents&#x27; locations to track and analyze their activities over time.&#x27; This is a dedicated historical view separate from the real-time Dispatch Map. Territory Management (B) is for geographic assignment. My Dispatch Queue (D) shows pending tasks, not agent location history." data-source-url="https://www.servicenow.com/docs/r/field-service-management/field-service-manager-workforce/view-agent-location.html">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The Dispatch Map provides location history functionality for field agents, allowing dispatchers to track and review agent activities over a historical period. While Agent Location History Map (A) sounds plausible, the standard FSM feature for viewing agent location history is within the Dispatch Map in Dispatcher Workspace." data-source-url="">
 <h2>Question 29</h2>
 <p class="question-stem">Where can dispatchers view the location history of field agents to track and review their activities over a historical period?</p>
 <div class="answer-options">
@@ -392,7 +408,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="B,D" data-community="false" data-explanation="When rejecting assigned tasks, field agents can provide two reasons: (B) Skills mismatch — the agent doesn&#x27;t have the required skills for the task, and (D) Parts unavailable — necessary parts or equipment aren&#x27;t available. These are legitimate operational reasons. &#x27;Type of work not preferred&#x27; (A) and &#x27;Not a preferred customer&#x27; (C) are subjective preferences, not valid business reasons for rejection." data-source-url="">
 <h2>Question 30</h2>
 <p class="question-stem">Which reasons can field agents provide when rejecting tasks that were assigned to them? (Choose two.)</p>
 <div class="answer-options">
@@ -402,8 +418,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Parts unavailable</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Work order templates (A) organize work into tasks and can be published in the service catalog as catalog items. Per the docs: templates define task structures and per the catalog configuration, &#x27;enable automatic publishing of request templates to the catalog.&#x27; Appointment booking (B), Dynamic scheduling (C), and SLAs (D) do not organize work into tasks or publish as catalog items." data-source-url="https://www.servicenow.com/docs/r/field-service-management/work-order-management/t_CreateAKnowledgeArticle.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Work order templates organize work into predefined tasks and can be published as catalog items in the service catalog. This enables end users to create work orders with pre-configured task structures through self-service. Appointment booking, dynamic scheduling, and SLAs serve different purposes and cannot be published as catalog items." data-source-url="">
 <h2>Question 31</h2>
 <p class="question-stem">What is used to organize work into tasks and can also be published in the service catalog as catalog items?</p>
 <div class="answer-options">
@@ -416,7 +434,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Domain separation is used to separate field service management data, processes, and administrative tasks into logical groupings called domains. This ServiceNow platform feature enables multi-tenant configurations where different business units or regions can have isolated FSM data and processes within a single instance while sharing the same infrastructure." data-source-url="">
 <h2>Question 32</h2>
 <p class="question-stem">What can be used to separate field service management data, processes, and administrative tasks into logical groupings called domains?</p>
 <div class="answer-options">
@@ -426,8 +444,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Groups</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C,E" data-community="false" data-explanation="Available FSM integrations include Asset Management integration (C) and Customer Service Management (CSM) integration (E). Asset Management integration enables tracking of parts, assets, and inventory for field service tasks. CSM integration allows customer service agents to create work orders from cases. PPM integration (A), standalone Work Order Management (B), and Outlook Calendar (D) are not standard OOB FSM integrations." data-source-url="">
 <h2>Question 33</h2>
 <p class="question-stem">Which ServiceNow integrations for Field Service Management (FSM) are available? (Choose two.)</p>
 <div class="answer-options">
@@ -438,8 +458,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> Customer Service Management (CSM) Integration</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Signature Capture and PDF Order Summary must be enabled in the field service configuration to allow customers to digitally sign and confirm work orders. This feature enables field agents to collect customer signatures on mobile devices and generate a PDF summary of the completed work order for customer records and proof of service delivery." data-source-url="">
 <h2>Question 34</h2>
 <p class="question-stem">What needs to be enabled in the field service configuration order to allow customers to digitally sign and confirm work orders?</p>
 <div class="answer-options">
@@ -449,8 +471,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Copy task work notes to request</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="Enabling the &#x27;Use dispatch queue&#x27; option allows dispatchers to use the dispatch queue for manual assignment of tasks (B). Per the docs: &#x27;Use dispatch queue: Enable this option to use the dispatch group for manual assignment.&#x27; This enables the queue-based manual dispatch workflow. Agent/task scheduling (A) is separate. Coverage area assignment (C) uses territories. Auto-selection by skill (D) is dynamic scheduling." data-source-url="https://www.servicenow.com/docs/r/field-service-management/t_ConfigureFieldService.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Enabling the Use dispatch queue option in the field service assignment configuration allows dispatchers to use the dispatch queue for manual assignment of tasks. Tasks enter the dispatch queue where dispatchers can review and manually assign them to appropriate agents rather than relying on automatic assignment methods." data-source-url="">
 <h2>Question 35</h2>
 <p class="question-stem">Enabling the Use dispatch queue option in the field service assignment configuration allows dispatchers to?</p>
 <div class="answer-options">
@@ -463,7 +487,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="Rate Types (B) are used to categorize different types of work for time reporting. Per the docs: &#x27;Select a Rate type for the time being recorded. When multiple rate types are enabled... agents can specify multiple rate types for time worked.&#x27; Rate types distinguish standard, overtime, and other work categories. Time Cards (A) record individual time entries. Rate Models (C) and Rate Lines (D) are not standard FSM time categorization terms." data-source-url="https://www.servicenow.com/docs/r/field-service-management/work-order-management/field-service-agent-record-time.html">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Rate Models categorize different types of work for time reporting in FSM. Rate models group rate types and rate lines into organized structures that define how time entries are classified, billable versus non-billable, and at what rates. Time Cards are individual time entries, Rate Types classify rate categories, and Rate Lines are specific rate values." data-source-url="">
 <h2>Question 36</h2>
 <p class="question-stem">What is used to categorize different types of work for time reporting?</p>
 <div class="answer-options">
@@ -476,7 +500,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="When Google Maps API is not configured, straight line estimates (Haversine distance) are used to estimate distance and time for determining the best route for an agent. This calculates the direct geographic distance between two points using latitude/longitude coordinates. While less accurate than actual road routing, it provides a reasonable approximation for scheduling decisions." data-source-url="">
 <h2>Question 37</h2>
 <p class="question-stem">What is used to estimate distance and time to determine the best route for an agent if Google Maps API is not configured?</p>
 <div class="answer-options">
@@ -486,8 +510,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> It cannot be estimated</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="A task that cannot be auto-assigned due to impractical/missing location or unschedulable window is returned to the pending dispatch state (B). This makes the task available for manual dispatcher assignment. Constraints are not overridden (A). The task is not put in a separate &#x27;unassigned&#x27; state (C). Constraints are not presented to the dispatcher for override (D) — the task simply reverts to pending dispatch." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="When a task cannot be auto-assigned because of an impractical location, missing location, or an unschedulable time window, it is returned to the pending dispatch state. This allows dispatchers to manually review and handle the task. The system does not override constraints, set to unassigned, or prompt for confirmation in this scenario." data-source-url="https://www.servicenow.com/docs/r/field-service-management/field-service-scheduling/create-dynamic-scheduling-config.html">
 <h2>Question 38</h2>
 <p class="question-stem">What happens to a task that cannot be auto-assigned because of an impractical or missing location or because the task window cannot be scheduled?</p>
 <div class="answer-options">
@@ -500,7 +526,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Transfer order line tasks are used to move Transfer order line records through the asset shipment and drop-off transfer process. Transfer order lines represent individual items being transferred between stockrooms. The line tasks track the shipping and receiving steps for each line item, managing the logistics of moving parts and assets to where field agents need them." data-source-url="">
 <h2>Question 39</h2>
 <p class="question-stem">Transfer order line tasks are used to move which type of record through the asset shipment and drop-off transfer process?</p>
 <div class="answer-options">
@@ -510,8 +536,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Part requirement</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Field Service uses the Now Mobile (A) application. Per -435: &#x27;Now Mobile Agent application&#x27; is the mobile app for FSM agents to manage tasks, accept/reject work, and track activities. The app is downloadable from App Store (iOS) or Play Store (Android). Mobile Agent (B) is a generic descriptor. Mobile Studio (C) is an application builder. Mobile Onboarding (D) is not an FSM mobile application." data-source-url="https://www.servicenow.com/docs/r/field-service-management/mobile-experience-for-field-service-management/configure-field-service-mobile.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Field Service Management uses the Mobile Agent application. Mobile Agent is a native mobile app providing field agents an intuitive interface to view assigned tasks, record time, manage parts, capture signatures, and work online or offline. Now Mobile is a general-purpose mobile app, Mobile Studio is for app development, and Mobile Onboarding is for HR." data-source-url="https://www.servicenow.com/docs/r/field-service-management/explore-fsm.html">
 <h2>Question 40</h2>
 <p class="question-stem">Which mobile application does field service use?</p>
 <div class="answer-options">
@@ -524,7 +552,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="Auto-assignment (C) uses the weighted criteria calculation formula. Per the docs: &#x27;(Criteria_1 rating × Criteria_1 weight) / total criterion weight +...&#x27; — this formula ranks agents for automated task assignment. Dynamic Scheduling is the framework; auto-assignment executes the ranking to assign tasks automatically. Manual task assignment (B) does not use calculated ranking. Workflow task assignment (D) is not a dynamic scheduling method." data-source-url="https://www.servicenow.com/docs/r/xanadu/field-service-management/field-service-scheduling/task-assignment-matching-criteria.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="This formula is the Dynamic Scheduling agent ranking calculation. Dynamic scheduling multiplies each criterion&#x27;s rating by its weight, divides by the total weight of all criteria, and sums the results to produce an agent score. Agents are ranked by this score, with the highest score earning the highest ranking for task assignment." data-source-url="https://www.servicenow.com/docs/r/field-service-management/field-service-scheduling/create-dynamic-scheduling-config.html">
 <h2>Question 41</h2>
 <p class="question-stem">What assignment method uses this calculation for task assignment '(Criteria_1 rating x Criteria_1 weight) / total criterion weight + (Critena_2 rating x Critena_2 weight) / total criterion weight + (Critena_3 rating x Criteria_3 weight) / total of criterion weight'?</p>
 <div class="answer-options">
@@ -537,7 +565,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Each matching criteria defined in the dynamic scheduling configuration task filter is assigned a default weight of 10. This default weight provides equal importance to all matching criteria initially. Administrators can adjust individual weights to prioritize certain criteria (like skills match or proximity) over others when the dynamic scheduling engine evaluates and ranks potential agents for a task." data-source-url="">
 <h2>Question 42</h2>
 <p class="question-stem">Each matching criteria defined in the dynamic scheduling configuration task filter is assigned a default weight of?</p>
 <div class="answer-options">
@@ -547,8 +575,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> 20</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="When auto assignment frequency is set to Immediate, tasks are auto-assigned as soon as they are ready to be assigned (A). Per the docs: &#x27;Immediate: Tasks are assigned as soon as they are ready.&#x27; The Interval option (B/D) assigns at defined intervals. Tasks are not assigned specifically at the qualified state (C) — &#x27;ready to be assigned&#x27; is the trigger condition regardless of qualification state." data-source-url="https://www.servicenow.com/docs/r/xanadu/field-service-management/field-service-scheduling/create-task-filter.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="When a task filter&#x27;s auto assignment frequency is set to Immediate, tasks are auto-assigned as soon as they are ready to be assigned. This contrasts with Interval mode where tasks are batched and assigned at defined time intervals. The Immediate setting triggers Dynamic Scheduling instantly when a task meets the filter conditions." data-source-url="https://www.servicenow.com/docs/r/field-service-management/field-service-scheduling/create-dynamic-scheduling-config.html">
 <h2>Question 43</h2>
 <p class="question-stem">When a dynamic scheduling task filter's auto assignment frequency is set to immediate, what happens?</p>
 <div class="answer-options">
@@ -561,7 +591,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Task filters, task ordering rules, and un-assignment constraints are key components of Dynamic Scheduling. Dynamic scheduling uses these three components together: task filters define which tasks to process and matching criteria, task ordering rules determine the sequence in which tasks are scheduled, and un-assignment constraints define conditions under which already-assigned tasks can be reassigned." data-source-url="">
 <h2>Question 44</h2>
 <p class="question-stem">Task filters, task ordering rules, and un-assignment constraints are key components of which feature?</p>
 <div class="answer-options">
@@ -571,8 +601,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Dynamic Scheduling</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="FSM Rate Card Task Work (Billable) and FSM Rate Card Task Work OT (Billable) are examples of Labor rate cards (B). Per the docs: &#x27;Labor rate cards: FSM Rate Card Task Work (Billable), FSM Rate Card Task Work OT (Billable), FSM Rate Card (Default).&#x27; Labor rate cards determine the billing rate for recorded time. Rate types (C) include FSM Billable Overtime and FSM Billable Standard — separate from rate cards." data-source-url="https://www.servicenow.com/docs/r/field-service-management/work-order-management/using-rate-types-labor-rate-cards.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="&quot;FSM Rate Card Task Work (Billable)&quot; and &quot;FSM Rate Card Task Work OT (Billable)&quot; are examples of labor rate cards. Labor rate cards define billing rates for different categories of field service work including standard task work and overtime (OT) work. Rate types classify categories, time cards are individual entries, and time worked is logged hours." data-source-url="">
 <h2>Question 45</h2>
 <p class="question-stem">As it pertains to time recording, FSM Rate Card Task Work (Billable) and FSM Rate Card Task Work OT (Billable), are examples of what?</p>
 <div class="answer-options">
@@ -585,7 +617,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="The Duration or Meter trigger type is used for maintenance based on both time and count (B). Per the docs: &#x27;Duration or Meter: Maintenance to be performed based on both time and count, whichever comes first.&#x27; This trigger monitors both elapsed time (duration) and meter readings, triggering maintenance when either threshold is reached first. Script (A/C/D) triggers are for condition-based maintenance, not combined time+count." data-source-url="https://www.servicenow.com/docs/r/field-service-management/work-order-management/configure-work-plan.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="When defining a maintenance schedule where work is performed based on both time and count, use the &quot;Duration or Meter&quot; trigger type. Duration handles time-based intervals (e.g., every 6 months) and Meter handles count-based intervals (e.g., every 1000 units). The &quot;or&quot; means either threshold triggers the maintenance work order." data-source-url="">
 <h2>Question 46</h2>
 <p class="question-stem">When defining a maintenance schedule, what type of trigger would you use for work to be performed based on time and count?</p>
 <div class="answer-options">
@@ -598,7 +630,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="To allow field agents to record beyond the standard 40 hours per week, create a new time sheet policy for the specified field agents (B). Time sheet policies define maximum hours and overtime thresholds. Creating a custom policy with a higher limit or overtime allowance enables tracking beyond 40 hours. Notifications (A), portal widgets (C), and plugin activation (D) do not control the weekly hour limit for agents." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="To allow field agents to record time beyond the standard 40 hours per week, create a new time sheet policy with a higher maximum weekly hours limit. Time sheet policies define rules for time recording including max hours. Activating the plugin (D) enables the feature but doesn&#x27;t change the hour limit. Notifications (A) and portal widgets (C) don&#x27;t affect hour limits." data-source-url="">
 <h2>Question 47</h2>
 <p class="question-stem">As it pertains to time recording, what allows field agents to record beyond the standard 40 hours of time per week?</p>
 <div class="answer-options">
@@ -611,7 +643,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The accept or reject task option can be disabled in the Field Service Configuration Business Process settings. This configuration controls the business process lifecycle for work order tasks, including whether field agents have the ability to accept or reject assigned tasks. When disabled, tasks are directly assigned without requiring agent acceptance." data-source-url="">
 <h2>Question 48</h2>
 <p class="question-stem">Where can you disable the accept or reject task option if business process dictates that field agents should not have the ability to accept or reject tasks?</p>
 <div class="answer-options">
@@ -621,8 +653,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Field Service Configuration Add-Ons</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="In the Auto-Assignment Confirmation window, a previously assigned task that was unassigned but could not be assigned to any agent is categorized as Not Assigned (A). Per the docs: &#x27;Not Assigned: Tasks that were previously assigned, have been unassigned to allow for the assignment of the selected tasks.&#x27; The task was cleared for reassignment but no suitable agent was found. Unassigned (B) means the task was never assigned." data-source-url="https://www.servicenow.com/docs/r/field-service-management/field-service-scheduling/dynamic-sched-confirm-assignment.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="In the Auto-Assignment Confirmation popup, a previously assigned task that was unassigned by dynamic scheduling but then could not be assigned to any other agent is categorized as &quot;Not Assigned.&quot; This indicates the system attempted reassignment but no suitable agent was found, leaving the task in an unassigned state requiring manual intervention." data-source-url="">
 <h2>Question 49</h2>
 <p class="question-stem">In the Auto-Assignment Confirmation pop up window, what is the category of a previously assigned task which was unassigned, but, then, could not be assigned to any agent?</p>
 <div class="answer-options">
@@ -635,7 +669,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The wm_agent (field agent) operational role is responsible for performing work onsite and reporting status. Field agents are the front-line workers who travel to customer locations, execute the work described in work order tasks, and update task status upon completion. The manager (A) oversees operations, qualifier (B) manages qualifications, and dispatcher (C) handles scheduling." data-source-url="">
 <h2>Question 50</h2>
 <p class="question-stem">Which operational role is responsible for performing work onsite and reporting status?</p>
 <div class="answer-options">
@@ -645,8 +679,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> wm_agent</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="When using mandatory skills with dynamic scheduling, configure the Matching Mandatory Skills for Dynamic Scheduling criteria (B). Per the docs: &#x27;Matching Mandatory Skills For Dynamic Scheduling: Ranks agents based on the availability of mandatory skills and optional skills.&#x27; This criteria specifically handles mandatory skill requirements for task assignment. General Matching Skills (A) doesn&#x27;t enforce mandatory requirements." data-source-url="https://www.servicenow.com/docs/r/xanadu/field-service-management/field-service-scheduling/task-assignment-matching-criteria.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="&quot;Matching Mandatory Skills For Dynamic Scheduling&quot; is the matching criterion to configure when using mandatory skills with dynamic scheduling. This criterion ranks agents based on mandatory and optional skills defined in Task Skills. It evaluates whether agents possess the required mandatory skills for the task. The Matching Skills - Mandatory Skills Support criterion applies to CSM cases, not FSM tasks." data-source-url="https://www.servicenow.com/docs/r/field-service-management/field-service-scheduling/create-dynamic-scheduling-config.html">
 <h2>Question 51</h2>
 <p class="question-stem">When using mandatory skills and dynamic scheduling, which matching criteria should be configured in the dynamic scheduling task filter?</p>
 <div class="answer-options">
@@ -659,7 +695,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C,D,E" data-community="false" data-explanation="Auto-assignment of work order tasks utilizes three criteria: (C) Skills — matching agent capabilities to task requirements, (D) Task windows — ensuring the task falls within allowable scheduling windows, and (E) Geolocation — considering agent proximity to the task location. SLA status (A) and age of task (B) are not primary criteria used by the auto-assignment algorithm." data-source-url="">
 <h2>Question 52</h2>
 <p class="question-stem">What criteria are utilized in auto-assignment of work order tasks? (Choose three.)</p>
 <div class="answer-options">
@@ -670,8 +706,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> Geolocation</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The wm_qualifier operational role can view calendars of team members to check availability, view skill distribution, and create or edit skills of team members. The qualifier is responsible for managing field agent qualifications and skills, ensuring agents are properly certified and skilled for their assigned work. This includes maintaining the skills database and verifying agent capabilities." data-source-url="">
 <h2>Question 53</h2>
 <p class="question-stem">Which operational rote can view the calendars of team members to check availability, view the skid distribution, and create or edit skills of team members?</p>
 <div class="answer-options">
@@ -681,8 +719,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> wm_dispatcher</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="In dynamic scheduling configuration, matching criteria, weighting, and ranking method are components of Task Filters. Task filters define how the dynamic scheduling engine evaluates and ranks potential agents: matching criteria specify what agent attributes to evaluate, weighting determines the relative importance of each criterion, and the ranking method defines how agents are scored and ordered." data-source-url="">
 <h2>Question 54</h2>
 <p class="question-stem">As it pertains to dynamic scheduling configuration, matching criteria, weighting, and ranking method are components of what?</p>
 <div class="answer-options">
@@ -692,8 +732,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Execution order</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="When the reserve parts in agent stockroom option is enabled, the From Stockroom field auto-populates with a default stockroom location only if the part is available in the agent&#x27;s personal stockroom. The system checks the assigned agent&#x27;s personal stockroom first. If the part exists there, it&#x27;s automatically selected as the source, streamlining the parts sourcing process." data-source-url="">
 <h2>Question 55</h2>
 <p class="question-stem">Assuming the reserve parts in agent stockroom configuration option is enabled, when sourcing a part, the From Stockroom field is auto-populated with a default stockroom location, only if:</p>
 <div class="answer-options">
@@ -703,8 +745,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> The field agent has preferred stockrooms defined</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Task Panel Filters (A) determine which tasks appear on the task panel in Dispatcher Workspace. Per the docs: &#x27;Define default filters to determine which tasks appear on the task panel.&#x27; Administrators configure default filters to control task visibility for dispatchers. Task Panel Sorting (B) controls order, not visibility. Task Panel Card Fields (D) configure what information appears on task cards, not which tasks show." data-source-url="https://www.servicenow.com/docs/r/yokohama/field-service-management/configuring-dispatcher-workspace.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Task Panel Filters determine which tasks appear on the task panel in the Dispatcher Workspace. Dispatchers configure these filters to display specific subsets of tasks based on criteria like state, priority, assignment group, or other task attributes. Task Panel Sorting controls order, Card Fields controls data displayed, and Dispatcher filters is not a specific feature." data-source-url="">
 <h2>Question 56</h2>
 <p class="question-stem">What determines which tasks appear on the task panel in dispatcher workspace?</p>
 <div class="answer-options">
@@ -717,7 +761,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Contextual search helps field agents by providing relevant knowledge for the task at hand and displaying search results on forms when users enter text in a field. As agents type in fields like short description or work notes, contextual search automatically queries the knowledge base and displays related articles, helping agents find solutions, procedures, and reference material without leaving the form." data-source-url="">
 <h2>Question 57</h2>
 <p class="question-stem">What feature helps field agents by providing relevant knowledge for the task at hand and displaying search results on forms when users enter text in a field?</p>
 <div class="answer-options">
@@ -727,8 +771,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Filter navigator</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Targeted communication is used to send articles, notices, and announcements to relevant customers. This FSM feature enables proactive customer communication by allowing organizations to publish targeted messages to specific customer segments through the service portal. Unlike generic email notifications (A) or portal notifications (B), targeted communication delivers curated content to specific audiences." data-source-url="">
 <h2>Question 58</h2>
 <p class="question-stem">What can be used to send articles, notices, and announcements to relevant customers?</p>
 <div class="answer-options">
@@ -738,8 +784,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> SMS Message</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="The Appointment booking variable set (C) must be enabled to display the appointment selection widget on the record producer. Per the docs: the variable set is linked to the record producer to surface the appointment selection UI. Work order templates (A) define task structure. Appointment booking service (B) is the broader feature activation. Catalog definition (D) is the record producer itself, not the widget control." data-source-url="https://www.servicenow.com/docs/r/field-service-management/field-service-scheduling/create-variable-in-catalog-record-producer-for-appoinment-booking.html">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The appointment booking variable set must be enabled and added to the record producer to display the appointment selection widget. Variable sets bundle form fields together, and the appointment booking variable set specifically contains the appointment scheduling UI elements. Work order templates and catalog definitions serve different purposes." data-source-url="">
 <h2>Question 59</h2>
 <p class="question-stem">When configuring an appointment booking record producer, what must be enabled in order to display the appointment selection widget on the record producer?</p>
 <div class="answer-options">
@@ -752,7 +800,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B" data-community="false" data-explanation="Appointment slot timezones are displayed based on the location where the appointment for the task is scheduled (A) and the timezone specified in the user contact record (B). These two values determine the timezone context shown to the user booking the appointment. Agent timezone (C) and agent location (D) are not used to determine the displayed appointment slot timezone." data-source-url="">
+<div class="question-card" data-answer="A,B" data-community="false" data-explanation="When booking an appointment, the timezone of displayed appointment slots is based on: the location where the appointment for the task is scheduled (A) which provides the service area timezone, and the timezone specified in the user contact record (B) which determines the end user&#x27;s preferred timezone for display. Agent timezone and location are considered for availability, not slot display." data-source-url="">
 <h2>Question 60</h2>
 <p class="question-stem">When you book an appointment, the timezone of appointment slots will be displayed based on? (Choose two.)</p>
 <div class="answer-options">
@@ -765,7 +813,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="For precise time estimates with auto-routing or auto-dispatch, the Private Key and Client ID for Google Maps API (B) must be set in system properties. Per -78: &#x27;Field Service requires Google Maps API configuration — setting client and server API keys.&#x27; These credentials enable distance matrix and routing calculations. Latitude/longitude (A) and Geocoding (C) are map data, not API authentication. Distance Matrix (D) is a specific API service, not a system property credential." data-source-url="https://www.servicenow.com/docs/r/yokohama/field-service-management/workforce-optimization-for-field-service/google-maps-api-keys.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="For precise time estimates in auto-routing and auto-dispatch, you must set the Private Key and Client ID for Google Maps API in system properties. These credentials authenticate requests to the Google Maps Distance Matrix API which calculates accurate travel time and distance between locations, replacing less precise straight-line estimates." data-source-url="">
 <h2>Question 61</h2>
 <p class="question-stem">If you are using auto-routing or auto-dispatch, what must be set in system properties for precise time estimates?</p>
 <div class="answer-options">
@@ -778,7 +826,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="Task filters (C) are used to identify specific lists of tasks for dynamic scheduling. Per the docs: &#x27;Task filters help you refine how tasks are assigned... You can use the default filters provided by the Dynamic Scheduling plugin or create custom filters.&#x27; Task filters define which tasks are included in each dynamic scheduling configuration. Schedules (A), assignment filters (B), and agent filters (D) are not used to identify task lists." data-source-url="https://www.servicenow.com/docs/r/xanadu/field-service-management/field-service-scheduling/create-task-filter.html">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Task filters in dynamic scheduling allow you to define criteria for identifying specific lists of tasks. Each filter has conditions that specify which tasks to include, resource type settings, and auto assignment configuration. Task filters are the primary mechanism for organizing tasks into groups for dynamic scheduling assignment." data-source-url="https://www.servicenow.com/docs/r/field-service-management/field-service-scheduling/create-dynamic-scheduling-config.html">
 <h2>Question 62</h2>
 <p class="question-stem">When configuring dynamic scheduling, what can you use or create to identify specific lists of tasks?</p>
 <div class="answer-options">
@@ -791,7 +839,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The recommended maximum number of tasks that can be selected when running dynamic scheduling manually is 50, as defined in the dynamic scheduling system properties. Selecting more tasks increases processing time and may impact scheduling quality. This limit balances scheduling accuracy with system performance for manual scheduling operations." data-source-url="">
 <h2>Question 63</h2>
 <p class="question-stem">As it pertains to dynamic scheduling system properties, what is the recommended maximum number of tasks that can be selected when running dynamic scheduling manually?</p>
 <div class="answer-options">
@@ -801,8 +849,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> 50</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Dynamic scheduling uses the Ranking method to stack rank each field agent to determine the best agent for routing. The ranking method defines how agents are scored based on weighted matching criteria (like skills match, proximity, availability). Agents are ranked from best to worst fit using the formula: (Criteria_rating x Criteria_weight) / total_weight for each criterion, producing a final ranking score." data-source-url="">
 <h2>Question 64</h2>
 <p class="question-stem">What does dynamic scheduling use to stack rank each field agent to determine the best agent for routing?</p>
 <div class="answer-options">
@@ -812,8 +862,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Execution order</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="The Optimize Task Routing (D) scheduled job considers tasks assigned to or accepted by agents on the current date and automatically enhances their routes. This job runs automatically to optimize the sequence of tasks for each agent&#x27;s day. Calc Estimated Duration (A) calculates time estimates. Process Dynamic Scheduling Auto Assignment (B) handles task-to-agent assignment. Show Auto Route (C) is not a standard scheduled job name." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The &quot;Optimize Task Routing&quot; scheduled job runs daily at 3:00 AM system time. It considers tasks assigned to or accepted by agents on the current date and automatically enhances their routes to minimize travel time. This is the standard scheduled job for automatic route optimization in FSM." data-source-url="https://www.servicenow.com/docs/r/field-service-management/field-service-scheduling/configuring-route-optimization.html">
 <h2>Question 65</h2>
 <p class="question-stem">What scheduled job considers the tasks assigned to or accepted by agents on the current date and automatically enhances the routes for those tasks?</p>
 <div class="answer-options">
@@ -826,7 +878,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Route Optimization considers time between tasks, task dependencies, toll roads, and other specified time buffers when scheduling. It goes beyond basic scheduling by calculating optimal travel routes that account for real-world factors like road conditions, toll costs, travel time between consecutive tasks, and required buffer time. The Dispatcher Workspace (A) and Dynamic Scheduling (B) use route optimization data but don&#x27;t perform these calculations themselves." data-source-url="">
 <h2>Question 66</h2>
 <p class="question-stem">As it pertains to scheduling, what considers time between tasks, task dependencies, toll roads, and other specified time buffers?</p>
 <div class="answer-options">
@@ -836,8 +888,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Geolocation</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A,B,E" data-community="false" data-explanation="The main components of task filters in dynamic scheduling configuration are: (A) Weighting — assigns relative importance to each criterion, (B) Matching criteria — defines what agent attributes are evaluated against task requirements, and (E) Ranking method — determines how matched agents are scored and ordered. Un-assignment constraints (C) and ordering rules (D) are separate dynamic scheduling components, not part of task filters." data-source-url="">
 <h2>Question 67</h2>
 <p class="question-stem">As it pertains to dynamic scheduling configuration, what are the main components of task filters? (Choose three.)</p>
 <div class="answer-options">
@@ -848,8 +902,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> Ranking method</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The recommended maximum number of tasks when running dynamic scheduling manually is 50. This system property limit ensures the scheduling engine can process tasks efficiently without degrading performance. Selecting too many tasks at once (75 or 100) increases computation time exponentially as the engine must evaluate all possible agent-task combinations." data-source-url="">
 <h2>Question 68</h2>
 <p class="question-stem">What is the recommended maximum number of tasks that can be selected when running dynamic scheduling manually?</p>
 <div class="answer-options">
@@ -859,8 +915,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> 25</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="The maximum number of tasks selectable when manually running dynamic scheduling is controlled in Dynamic scheduling system properties (B). Per the docs: &#x27;Review system properties and components installed with Dynamic Scheduling.&#x27; System properties include limits on manual scheduling operations. Field service assignment configuration (A) sets the assignment method. Dynamic scheduling configuration (D) sets the overall approach." data-source-url="https://www.servicenow.com/docs/r/field-service-management/field-service-scheduling/dynamic-sched-config-field-service.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="The maximum number of tasks that can be selected when manually running dynamic scheduling is controlled via Dynamic scheduling system properties. System properties provide global configuration settings including task selection limits for manual scheduling operations. The dynamic scheduling configuration defines filters and criteria, not task count limits." data-source-url="">
 <h2>Question 69</h2>
 <p class="question-stem">Where can you control the maximum number of tasks that can be selected when manually running dynamic scheduling?</p>
 <div class="answer-options">
@@ -873,7 +931,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The example of government customers being higher rank and private sector customers being lower is a Task ordering rule. Task ordering rules define the sequence in which tasks are processed by dynamic scheduling based on business priorities. By ranking government customers higher, their tasks are scheduled first, ensuring priority service. This differs from task filters (which select tasks) and matching criteria (which evaluate agents)." data-source-url="">
 <h2>Question 70</h2>
 <p class="question-stem">As it pertains to dynamic scheduling, what is this an example of government customers are higher rank and private sector customers are lower?</p>
 <div class="answer-options">
@@ -883,8 +941,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Matching criteria</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The wm_manager operational role is responsible for reviewing reports, metrics, and team performance. FSM managers focus on operational oversight — monitoring KPIs like first-time fix rates, SLA compliance, and agent utilization. They use dashboards and reports to identify trends, address performance issues, and make strategic decisions about resource allocation and process improvements." data-source-url="">
 <h2>Question 71</h2>
 <p class="question-stem">Which operational role is responsible for reviewing reports, metrics, and team performance?</p>
 <div class="answer-options">
@@ -894,8 +954,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> wm_admin</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The wm_dispatcher operational role is responsible for scheduling appointments and assigning tasks to agents. Dispatchers use the dispatcher workspace to view agent calendars, manage task queues, manually assign or reassign tasks, and coordinate the daily schedule. They serve as the bridge between incoming work orders and field agents, ensuring optimal task distribution." data-source-url="">
 <h2>Question 72</h2>
 <p class="question-stem">Which operational role is responsible for scheduling appointments and assigning tasks to agents?</p>
 <div class="answer-options">
@@ -905,8 +967,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> wm_dispatcher</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="ServiceNow calculates the average rating of a field agent from the Agent Feedback feature and stores it in the wm_agent_rating table. This table aggregates customer feedback scores into an average rating per agent, which can be used in reports, dashboards, and potentially as input to dynamic scheduling ranking criteria to factor agent quality into task assignments." data-source-url="">
 <h2>Question 73</h2>
 <p class="question-stem">As it pertains to the Agent Feedback feature, ServiceNow calculates the average rating of a field agent and stores it in which table?</p>
 <div class="answer-options">
@@ -916,8 +980,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> asmt_metric</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="To rank agents based on parts available in their stockroom, configure the Matching Mandatory Parts for Dynamic Scheduling criteria (A). Per the docs: &#x27;Matching Mandatory Parts For Dynamic Scheduling: Assigning only the agents with the mandatory parts. Ranks agents based on the availability of mandatory parts required for the job.&#x27; Matching Skills criteria (C/D) rank by skills, not parts. Matching Agents With Most Parts (B) is not a documented criteria name." data-source-url="https://www.servicenow.com/docs/r/xanadu/field-service-management/field-service-scheduling/task-assignment-matching-criteria.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="&quot;Matching Agents With Most Parts For Dynamic Scheduling&quot; (documented as &quot;Agents with most parts&quot;) is the matching criterion for ranking agents based on the number of available parts in their stockroom. It&#x27;s a scripted criterion that identifies agents with the most required parts for a task. Matching Mandatory Parts only checks mandatory parts, and the Skills criteria are unrelated to parts." data-source-url="https://www.servicenow.com/docs/r/field-service-management/field-service-scheduling/create-dynamic-scheduling-config.html">
 <h2>Question 74</h2>
 <p class="question-stem">As it pertains to dynamic scheduling configuration, if you are ranking agents based on the number of parts available in the agent stockroom, which matching criterion should you configure in the task filters?</p>
 <div class="answer-options">
@@ -930,7 +996,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="The wm_qualifier operational role can view calendars of team members to check availability, view skill distribution, and create or edit skills of team members. Qualifiers are responsible for managing the technical qualifications and skills of the field workforce, ensuring agents are properly certified and that skills data is accurate for dynamic scheduling decisions." data-source-url="">
 <h2>Question 75</h2>
 <p class="question-stem">Which operational role can view the calendars of team members to check availability, view the skill distribution, and create or edit skills of team members?</p>
 <div class="answer-options">
@@ -940,8 +1006,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> wm_manager</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="The visibility of the &#x27;Optimize route&#x27; option in the more actions menu on the agent card in Dispatcher Workspace is controlled by a System property (D). System properties in FSM control feature availability and UI element visibility. UI actions (A) handle button execution. Client scripts (B) handle form behavior. Business rules (C) handle server-side processing. The enable/disable toggle for route optimization visibility is a system property setting." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The system property sn_fsm_disp_wrkspc.enable_optimize_route controls the visibility of the &quot;Optimize route&quot; option in the more actions menu on the agent card in Dispatcher Workspace. Setting it to true enables the route optimization option. UI actions, client scripts, and business rules do not control this specific visibility." data-source-url="https://www.servicenow.com/docs/r/field-service-management/field-service-scheduling/configuring-route-optimization.html">
 <h2>Question 76</h2>
 <p class="question-stem">What controls the visibility of the ‘Optimize route’ option in the more actions menu in the agent card on dispatcher workspace?</p>
 <div class="answer-options">
@@ -954,7 +1022,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Customers can use the Appointment booking feature on the service portal to view and select available service windows. This self-service capability shows customers the available time slots based on agent availability and scheduling rules, allowing them to pick a convenient window for their field service visit. It improves customer experience by giving them control over scheduling." data-source-url="">
 <h2>Question 77</h2>
 <p class="question-stem">What can customers use on the service portal to view and select available service windows?</p>
 <div class="answer-options">
@@ -964,8 +1032,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Agent calendar</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="B,C,D" data-community="false" data-explanation="To configure an appointment booking service, you need: (B) a record producer to create the service request, (C) an appointment booking variable set to display available time slots and capture the customer&#x27;s selection, and (D) a work order template to define the type of work being scheduled. Contextual search (A), recipients list (E), and publication article (F) are unrelated to appointment booking setup." data-source-url="">
 <h2>Question 78</h2>
 <p class="question-stem">What do you need to configure an appointment booking service? (Choose three.)</p>
 <div class="answer-options">
@@ -977,8 +1047,10 @@
 <div class="answer-option" data-key="F"><span class="option-key">F.</span> Publication article</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="When task-driven process lifecycle is enabled, at least one work order task is required for a work order request. The task-driven lifecycle means the work order&#x27;s state progression is driven by its child tasks — the work order cannot advance through its lifecycle stages without at least one task to drive the process. This enforces proper work breakdown and task tracking." data-source-url="">
 <h2>Question 79</h2>
 <p class="question-stem">Assuming task-driven process lifecycle is enabled, how many work order tasks are required for a work order request?</p>
 <div class="answer-options">
@@ -988,8 +1060,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> At least three tasks</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="To prevent a rejected task from being dynamically assigned to the same agent within 24 hours, configure the rejected technician duration system property (B). Per the docs: &#x27;The rejected task is not dynamically scheduled to the same agent for the next 24 hours. This is controlled by the work[.management.*] system property.&#x27; Custom assignment rules (A) and unassignment constraints (C) address different scenarios. Rejection preferences (D) record the reason, not the re-assignment window." data-source-url="https://www.servicenow.com/docs/r/field-service-management/work-order-management/t_AcceptOrRejectAWorkOrderTask.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="To prevent a rejected task from being dynamically assigned to the same agent in the next 24 hours, configure the rejected technician duration system property (work.management.rejected.technician.duration). The &quot;Ignore Rejected Technician&quot; matching criterion reads this property to exclude recently-rejecting agents during the specified period." data-source-url="https://www.servicenow.com/docs/r/field-service-management/field-service-scheduling/create-dynamic-scheduling-config.html">
 <h2>Question 80</h2>
 <p class="question-stem">How do you prevent a task which has been rejected by an agent from being dynamically assigned to the same agent in the next 24 hours?</p>
 <div class="answer-options">
@@ -1002,7 +1076,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C,D" data-community="false" data-explanation="Users can be assigned and edit work order tasks when assigned the wm_agent role (C) and belonging to the Assignment Group the task is assigned to (D). Per the docs: belonging to the assignment group enables task acceptance and editing. The wm_agent role grants FSM agent permissions. Belonging to the Dispatch Group (A) provides routing visibility but not editing rights. wm_edit (B) is not a standard FSM role." data-source-url="https://www.servicenow.com/docs/r/field-service-management/work-order-management/t_PickUpAnUnassignedTask.html">
+<div class="question-card" data-answer="C,D" data-community="false" data-explanation="Users can be assigned work order tasks and edit records if they have the wm_agent role (C) which grants agent permissions for FSM tasks, AND belong to the Assignment Group the task is assigned to (D) which determines task access. The Dispatch Group is for dispatchers not agents, and wm_edit is not a standard FSM role." data-source-url="">
 <h2>Question 81</h2>
 <p class="question-stem">Users can be assigned work order tasks and edit these records if they: (Choose two.)</p>
 <div class="answer-options">
@@ -1015,7 +1089,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Dispatch groups are filtered in the lookup by Location coverage. When dispatchers select a dispatch group, the lookup filters available groups based on the location coverage areas they serve. This ensures dispatchers only see groups that are relevant to the geographic area of the work order, preventing assignment to groups that don&#x27;t serve that location." data-source-url="">
 <h2>Question 82</h2>
 <p class="question-stem">How are dispatch groups filtered in the lookup?</p>
 <div class="answer-options">
@@ -1025,8 +1099,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> By Location coverage</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="Dependencies can only be set for work order tasks in the Draft state (B). Per the docs: task dependencies are configured when the work order is in Draft status, before qualification. Setting dependencies defines the execution order before tasks enter the scheduling pipeline. Approved (A), Waiting Approval (C), and Qualified (D) are states after Draft — dependencies cannot be added at those stages." data-source-url="https://www.servicenow.com/docs/r/field-service-management/work-order-management/t_CreateAWorkOrder.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Dependencies can only be set for work order tasks in Draft state. Tasks are created in Draft state where they can be fully configured including dependency relationships. Once tasks are promoted from Draft to Pending Dispatch, their dependency configuration is locked. The t_PromoteDraftWorkOrderTasks process advances tasks from Draft." data-source-url="">
 <h2>Question 83</h2>
 <p class="question-stem">Dependencies can only be set for work order tasks in which state?</p>
 <div class="answer-options">
@@ -1039,7 +1115,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="If geolocation is not enabled, the agent&#x27;s starting position for a given day defaults to the agent&#x27;s home office location (C). This is the configured fallback when live GPS tracking is unavailable. The home office location provides a reasonable geographic starting point for route calculations and scheduling. Last task location (A) and first task location (B) require GPS tracking. Mobile device coordinates (D) require geolocation to be enabled." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="When geolocation is not enabled, the agent&#x27;s starting position for a given day defaults to the first task location. Without real-time GPS data from the mobile device, the system uses the first scheduled task&#x27;s location as a proxy for the agent&#x27;s starting position when calculating travel times and optimizing routes." data-source-url="">
 <h2>Question 84</h2>
 <p class="question-stem">If geolocation is not enabled, the agent’s starting position for a given day defaults to what?</p>
 <div class="answer-options">
@@ -1052,7 +1128,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C,E,F,G,H" data-community="false" data-explanation="Five critical resources for a successful FSM implementation: (C) Field service manager for process design and operational leadership, (E) Field service agent for UAT and workflow validation, (F) System Administrator for technical configuration, (G) Dispatcher for scheduling process design, and (H) Qualifier for skills and qualification framework setup. CEO and CIO provide sponsorship but aren&#x27;t hands-on implementation resources." data-source-url="">
 <h2>Question 85</h2>
 <p class="question-stem">Which of the following resources are critical for a successful implementation? (Choose five.)</p>
 <div class="answer-options">
@@ -1065,8 +1141,10 @@
 <div class="answer-option" data-key="G"><span class="option-key">G.</span> Dispatcher H. Qualifier</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The wm_qualifier operational role is responsible for managing field agent skills. Qualifiers maintain the skills database, assign skills to agents, verify certifications, and ensure agents&#x27; skill profiles are accurate and up-to-date. This is critical for dynamic scheduling, which relies on accurate skill data to match the right agents to tasks requiring specific competencies." data-source-url="">
 <h2>Question 86</h2>
 <p class="question-stem">Which operational role is responsible for managing field agent skills?</p>
 <div class="answer-options">
@@ -1076,8 +1154,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> wm_manager</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,E" data-community="false" data-explanation="When removing a part from a task, agents can set the part as defective (B) and replace the part (E). Per the docs: the &#x27;Remove Part&#x27; action allows selecting &#x27;Defective&#x27; as the removed part status; the &#x27;Swap part&#x27; action allows replacing with another part. Donating to a warehouse (A) and throwing away (C) are not system-supported actions. Setting as &#x27;available but defective&#x27; (D) is not a valid combined asset status." data-source-url="https://www.servicenow.com/docs/r/field-service-management/work-order-management/use-create-asset-mobile.html">
+<div class="question-card" data-answer="B,E" data-community="false" data-explanation="When removing a part from a task, an agent can: set the part as defective (B) to flag it for repair or disposal, or replace the part (E) by substituting it with a different part. Donating to a warehouse (A), throwing away (C), and marking as &quot;available but defective&quot; (D) are not standard FSM part removal actions." data-source-url="">
 <h2>Question 87</h2>
 <p class="question-stem">What actions can an agent perform when removing a part from a task? (Choose two.)</p>
 <div class="answer-options">
@@ -1091,7 +1171,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="The maximum number of tasks selectable when manually running dynamic scheduling is controlled in Dynamic Scheduling System Properties (D). Per the docs: &#x27;Review system properties and components installed with Dynamic Scheduling.&#x27; The system property defines the cap for manual scheduling batch operations. Schedule Optimization Batch (A), Policy (B), and Scope (C) are components of the Schedule Optimization feature, not dynamic scheduling task limits." data-source-url="https://www.servicenow.com/docs/r/field-service-management/field-service-scheduling/create-an-optimization-batch.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The maximum number of tasks that can be selected when manually running dynamic scheduling is controlled via Dynamic Scheduling System Properties. These system properties configure global parameters for the dynamic scheduling engine including selection limits, batch sizes, and scheduling behavior." data-source-url="">
 <h2>Question 88</h2>
 <p class="question-stem">Where can users control the maximum number of tasks that can be selected when manually running dynamic scheduling?</p>
 <div class="answer-options">
@@ -1104,7 +1184,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,C,D" data-community="false" data-explanation="Intraday schedule automation considers time of day (B), number of incomplete tasks pending (C), and whether the agent is running early or late (D). Per the docs: the intraday system tracks agent running late events, incomplete tasks requiring scheduling, and operates within the current workday time window. Tasks completed yesterday (A) and tasks for tomorrow (E) are outside the intraday scope, which focuses on the current day&#x27;s schedule." data-source-url="https://www.servicenow.com/docs/r/field-service-management/field-service-scheduling/config-intraday-scheduling-steps.html">
+<div class="question-card" data-answer="B,C,D" data-community="false" data-explanation="Intraday schedule automation considers three factors: time of day (B) to assess current schedule position, number of incomplete tasks pending (C) to evaluate remaining workload, and whether the agent is running early or late (D) to trigger schedule adjustments. Tasks completed yesterday (A) and tasks scheduled for tomorrow (E) are not relevant to intraday optimization." data-source-url="">
 <h2>Question 89</h2>
 <p class="question-stem">What factors does intraday schedule automation consider? (Choose three.)</p>
 <div class="answer-options">

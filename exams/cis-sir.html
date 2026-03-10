@@ -25,7 +25,7 @@
     <main>
         <div class="quiz-banner"><a href="../quiz/cis-sir.html">Test yourself on Security Incident Response &rarr;</a></div>
 <div class="ai-notice">Answers verified with AI using ServiceNow documentation. Exercise your own judgement.</div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="A playbook appears for a Security Incident when the Flow Designer trigger is set to conditions that match the security incident (B). Per the docs: &#x27;This playbook is triggered and associated with the security incident when the security incident is created or updated based on your required conditions.&#x27; Actions (A), Runbook property (C), and Service Criticality (D) do not control playbook appearance." data-source-url="https://www.servicenow.com/docs/r/yokohama/security-management/security-incident-response/playbook-setup-successful-vpn-attempts.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="A playbook appears for a Security Incident in Flow Designer when the Trigger is set to conditions that match the security incident. The Flow&#x27;s trigger conditions determine when it executes — if those conditions match the current security incident&#x27;s attributes (e.g., category, priority), the playbook becomes available. Actions, Runbook properties, and Service Criticality do not control playbook visibility." data-source-url="">
 <h2>Question 1</h2>
 <p class="question-stem">What makes a playbook appear for a Security Incident if using Flow Designer?</p>
 <div class="answer-options">
@@ -38,7 +38,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Calculator Groups ensure that only one calculator at maximum will run per group (D). When multiple calculators are in a group, the system evaluates conditions and executes only the first matching calculator, preventing conflicting updates. Calculator Groups are not for metadata (A), agent selection (B), or running all calculators simultaneously (C)." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Calculator Groups ensure that at most one calculator will run per group. When multiple calculators exist within a group, only the first matching calculator executes. This prevents conflicting calculations from running simultaneously. Calculators within a group are evaluated in order, and once one matches, the remaining calculators in that group are skipped." data-source-url="">
 <h2>Question 2</h2>
 <p class="question-stem">What is the purpose of Calculator Groups as opposed to Calculators?</p>
 <div class="answer-options">
@@ -51,7 +51,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="E" data-community="false" data-explanation="An Event (E) is the term used to describe any observable occurrence in a system or network. Per NIST SP 800-61 (the standard underlying SIR): &#x27;An event is any observable occurrence in a system or network.&#x27; An Alert (D) is generated when events match predefined rules and require investigation. Incident (A) is a broader response record. Log (B) is raw recorded data. Ticket (C) is a work tracking record." data-source-url="">
+<div class="question-card" data-answer="E" data-community="false" data-explanation="An Event is the term used to describe any observable occurrence. In security and IT operations, an event is any detectable or discernible occurrence that has significance for the management of infrastructure or delivery of services. Events may be informational, warning, or exception-level. Incidents, logs, tickets, and alerts are derived from or created in response to events." data-source-url="">
 <h2>Question 3</h2>
 <p class="question-stem">The following term is used to describe any observable occurrence: __________.</p>
 <div class="answer-options">
@@ -65,7 +65,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="The severity field of a security incident is influenced by the impact, urgency, and priority of the incident (B). Per the docs, severity calculators evaluate Risk Score which is derived from Business Impact and Priority fields. The cost of response (A) and time to resolve (C) are outcomes, not severity drivers. Asset business value (D) may be a calculator input but is not the primary stated influence." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/setup-assistant-reference.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The severity field of a security incident is influenced by the business value of the affected asset. Security Incident Response uses calculators that factor in the business criticality and value of affected CIs and Business Services to determine severity. Higher-value assets result in higher severity ratings. Cost of response, time to resolve, and impact/urgency/priority are separate considerations." data-source-url="">
 <h2>Question 4</h2>
 <p class="question-stem">The severity field of the security incident is influenced by what?</p>
 <div class="answer-options">
@@ -78,7 +78,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="The Risk Score is calculated by combining all weights using an arithmetic mean (A). Per the docs: &#x27;Security Incident Business Impact weight of 60 + Priority weight of 40 / 2 = a risk score of 50.&#x27; This is a standard arithmetic mean (sum divided by count). Addition alone (B) would not normalize the result. Risk Score script include (C) is an implementation detail. Geometric mean (D) is not used." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/setup-assistant-reference.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The Risk Score is calculated by combining all the weights using a geometric mean. The geometric mean multiplies all weighted values together and takes the nth root, which prevents any single factor from disproportionately affecting the score. This is more appropriate than arithmetic mean for combining diverse risk factors with different scales and weights." data-source-url="">
 <h2>Question 5</h2>
 <p class="question-stem">The Risk Score is calculated by combining all the weights using __________.</p>
 <div class="answer-options">
@@ -91,7 +91,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,C" data-community="false" data-explanation="Two audiences for Security Incident Response reports are Analysts (A) and the Chief Information Security Officer/CISO (C). Per the docs, the CISO has a dedicated dashboard role [sn_si.ciso] and analysts need operational metrics to manage workloads. Vulnerability Managers (B) focus on VR reporting. Problem Managers (D) are ITSM-focused and are not a primary SIR audience." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/working-with-analysts-dashboard.html">
+<div class="question-card" data-answer="A,C" data-community="false" data-explanation="Two key audiences for Security Incident Response reports are Analysts (who need operational data about incidents they&#x27;re working) and Chief Information Security Officer (CISO) (who needs executive-level security posture and trend reporting). Vulnerability Managers work with VR, not SIR directly. Problem Managers handle ITSM problems, not security incident reporting." data-source-url="">
 <h2>Question 6</h2>
 <p class="question-stem">What are two of the audiences identified that will need reports and insight into Security Incident Response reports? (Choose two.)</p>
 <div class="answer-options">
@@ -104,7 +104,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,C,D" data-community="false" data-explanation="Three steps to include a new playbook in the Selected Playbook choice list are: navigate to the sys_hub_flow.list table (B), search for the new playbook created in Flow Designer (C), and add the sir_playbook tag to the playbook (D). Per the docs: &#x27;Navigate to sys_hub_flow.list... Search for the new playbook... add the sir_playbook tag.&#x27; TLP:GREEN tag (A) and sys_playbook_flow.list (E) are not the correct steps." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/sir-new-ui-add-playbook.html">
+<div class="question-card" data-answer="B,C,D" data-community="false" data-explanation="To include a new playbook in the Selected Playbook choice list: Navigate to the sys_hub_flow.list table (B) to find your flows, Search for the new playbook created using Flow Designer (C), and Add the sir_playbook tag to the playbooks you want to include (D). The sir_playbook tag marks a flow as available in the Selected Playbook dropdown. TLP:GREEN is a security classification tag, not a playbook inclusion tag." data-source-url="">
 <h2>Question 7</h2>
 <p class="question-stem">What three steps enable you to include a new playbook in the Selected Playbook choice list? (Choose three.)</p>
 <div class="answer-options">
@@ -118,7 +118,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Post-Incident Review (A) is the baseline improvement opportunity that contributes towards process maturity and strengthens security posture. Reviewing incidents after resolution identifies gaps, root causes, and areas for improvement in the response process. Fast Eradication (B), Containment (C), and Analysis (D) are operational phases, not process improvement mechanisms." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Post-Incident Review is the improvement opportunity found baseline that contributes towards process maturity and strengthens the customer&#x27;s overall security posture. Post-Incident Reviews analyze what happened, what went well, what could be improved, and document lessons learned. This continuous improvement cycle is fundamental to maturing security incident response processes." data-source-url="">
 <h2>Question 8</h2>
 <p class="question-stem">Which improvement opportunity can be found baseline which can contribute towards process maturity and strengthen costumer’s overall security posture?</p>
 <div class="answer-options">
@@ -131,7 +131,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="The fastest way for security incident administrators to remove unwanted widgets from the Security Incident Catalog is through the Catalog Definition record (D). The Catalog Definition record controls which widgets appear in the catalog view. Clicking X (A) is not an option on catalog widgets. System administrator involvement (B) is unnecessary. Widgets can be removed (C is incorrect)." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The fastest way for security incident administrators to remove unwanted widgets from the Security Incident Catalog is through the Catalog Definition record. Catalog items are managed through their definition records where administrators can activate, deactivate, or modify them. The X button and system administrator involvement are not the recommended approaches." data-source-url="">
 <h2>Question 9</h2>
 <p class="question-stem">What is the fastest way for security incident administrators to remove unwanted widgets from the Security Incident Catalog?</p>
 <div class="answer-options">
@@ -144,7 +144,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="Get Running Processes (C) retrieves a list of running processes from a CI/host/endpoint. Per the docs: &#x27;Get Running Processes: Retrieves a list of running processes from an endpoint or host. This capability is used for incident enrichment during investigations.&#x27; Get Network Statistics (A) retrieves network connections. Isolate Host (B) isolates an endpoint. Publish Watchlist (D) and Block Action (E) are different capabilities." data-source-url="https://www.servicenow.com/docs/r/security-management/cj-sir-capfmw-about.html">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Get Running Processes is the capability that retrieves a list of running processes on a CI from a host or endpoint. This integration action queries the endpoint and returns process information for investigation. Get Network Statistics retrieves connection data, Isolate Host restricts connectivity, Block Action prevents access, Sightings Search looks for observables, and Publish Watchlist shares indicators." data-source-url="">
 <h2>Question 10</h2>
 <p class="question-stem">Select the one capability that retrieves a list of running processes on a CI from a host or endpoint.</p>
 <div class="answer-options">
@@ -159,7 +159,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="The table commonly used for Security Incident Response is sn_si_incident (D). Per the docs: &#x27;Table: Security Incident (sn_si_incident)&#x27; is used for response templates and quick messages in SIR. sysapproval_approver (A) is for approvals. sec_ops_incident (B) is not a standard SIR table name. cmdb_rel_ci (C) is for CMDB CI relationships." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The sn_si_incident table is commonly used for Security Incident Response. This is the main table storing security incident records in the SIR scoped application (sn_si prefix). The sysapproval_approver table handles approvals, cmdb_rel_ci stores CI relationships, and sec_ops_incident is not the correct table name for SIR." data-source-url="">
 <h2>Question 11</h2>
 <p class="question-stem">Which Table would be commonly used for Security Incident Response?</p>
 <div class="answer-options">
@@ -172,7 +172,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,C" data-community="false" data-explanation="Security incidents broadly fall into two creation categories: manually created (B) and automatically created (C). Manual creation includes analysts directly entering incidents. Automatic creation includes alert rules, integrations, and email parsing. Integrations (A) and email parsing (D) are specific methods within the automatic category, not separate high-level categories." data-source-url="">
+<div class="question-card" data-answer="B,C" data-community="false" data-explanation="Security incidents can be raised through methods that broadly fit into two categories: Manually created (analysts or users create incidents through forms, catalogs, or UI actions) and Automatically created (through integrations, event processing, email parsing, or automated rules). Integrations and Email parsing are specific methods within these broad categories, not categories themselves." data-source-url="">
 <h2>Question 12</h2>
 <p class="question-stem">There are several methods in which security incidents can be raised, which broadly fit into one of these categories: __________. (Choose two.)</p>
 <div class="answer-options">
@@ -185,7 +185,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="The first step when creating a security playbook is to create a Flow (B) in Flow Designer. Playbooks in SIR are built as flows in Flow Designer with triggers and actions. Creating a Runbook (C) is a separate feature for knowledge article associations. Response Task state (A) and Knowledge Article (D) are later configuration steps, not the first step in playbook creation." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="The first step when creating a security Playbook is to Create a Flow. In Flow Designer, you start by creating a flow that defines the trigger conditions and the sequence of actions. Once the flow exists, you add response task creation actions, configure knowledge articles for runbooks, and set task states. The flow is the container for all playbook logic." data-source-url="">
 <h2>Question 13</h2>
 <p class="question-stem">What is the first step when creating a security Playbook?</p>
 <div class="answer-options">
@@ -198,7 +198,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="The sn_si.admin role (A) is required to configure Security Incident Escalations. Per the docs, sn_si.admin has &#x27;Full control over all Security Incident Response data&#x27; including administrative configurations like escalations. sn_si.manager (in B/D) can manage incidents but lacks escalation configuration access. sn_si.ciso (C) has dashboard access but not configuration rights." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/installed-with-sir.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="To configure Security Incident Escalations, you need the sn_si.admin role. The SIR admin role has full configuration access to all Security Incident Response settings, including escalation rules and configurations. The sn_si.manager role manages incidents operationally but does not have configuration privileges for escalation setup." data-source-url="">
 <h2>Question 14</h2>
 <p class="question-stem">To configure Security Incident Escalations, you need the following role(s): __________.</p>
 <div class="answer-options">
@@ -211,7 +211,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,D" data-community="false" data-explanation="Two benefits of Security Incident assignment automation are Decreased Time to Containment (A) and Increased resolution process consistency (D). Automated assignment routes incidents to the right analyst faster, reducing containment time. Consistent rule-based routing improves process standardization. Increased Mean Time to Remediation (B) would be a negative outcome. Decreased Time to Ingestion (C) relates to alert ingestion, not assignment." data-source-url="">
+<div class="question-card" data-answer="A,D" data-community="false" data-explanation="Benefits of utilizing Security Incident assignment automation include Decreased Time to Containment (faster assignment means faster response and containment) and Increased resolution process consistency (automated assignment follows defined rules consistently). Increased Mean Time to Remediation would be negative (you want decreased MTTR). Decreased Time to Ingestion relates to data collection, not assignment." data-source-url="">
 <h2>Question 15</h2>
 <p class="question-stem">Which of the following are potential benefits for utilizing Security Incident assignment automation? (Choose two.)</p>
 <div class="answer-options">
@@ -224,7 +224,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="The key to a successful implementation is understanding the customer&#x27;s goals and objectives (C). A successful SIR implementation requires aligning the solution to actual business outcomes and security requirements. Selling the most expensive package (A), implementing everything (B), and building custom integrations (D) do not ensure success without customer goal alignment." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The key to a successful implementation is understanding the customer&#x27;s goals and objectives. Without clear understanding of what the customer wants to achieve, any implementation risks missing the mark. Selling expensive packages, implementing everything, and building custom integrations are not success factors — alignment with customer goals is paramount." data-source-url="">
 <h2>Question 16</h2>
 <p class="question-stem">What is the key to a successful implementation?</p>
 <div class="answer-options">
@@ -237,7 +237,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="A flow consists of one or more actions and a Trigger (D). In ServiceNow Flow Designer, a flow is defined by its trigger (the event that initiates the flow) and one or more actions (the steps to execute). Change formatter (A) is a UI element. Catalog Designer (B) is for service catalog. NIST Ready State (C) is not a flow component." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="A flow consists of one or more actions and a Trigger. The trigger defines the condition that initiates the flow (e.g., record created, record updated, schedule). Actions are the steps the flow executes. Together, the trigger and actions form the complete flow. Change formatter, Catalog Designer, and NIST Ready State are unrelated to flow components." data-source-url="">
 <h2>Question 17</h2>
 <p class="question-stem">A flow consists of one or more actions and a what?</p>
 <div class="answer-options">
@@ -250,7 +250,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,D" data-community="false" data-explanation="Flow triggers can be based on Record changes (A), Schedules (B), and Record inserts (D). These are the three primary Flow Designer trigger types for SIR automation. Subflows (C) are reusable flow components called from within flows — they are not triggers. Record views (E) do not trigger flows in ServiceNow Flow Designer." data-source-url="">
+<div class="question-card" data-answer="A,B,D" data-community="false" data-explanation="Flow Triggers can be based on Record changes (when a record field is modified), Schedules (time-based triggers), and Record inserts (when a new record is created). These are the three standard trigger types in Flow Designer. Subflows are reusable flow components, not triggers, and Record views do not trigger flows." data-source-url="">
 <h2>Question 18</h2>
 <p class="question-stem">Flow Triggers can be based on what? (Choose three.)</p>
 <div class="answer-options">
@@ -264,7 +264,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="Any user who has Response Tasks on the security incident is automatically added to the Request Assessments list (C). Response task assignees are involved in the incident and should receive assessment requests. Worknote authors (A) are not automatically added. The assigned analyst (B) may or may not have response tasks. The Affected User (D) is the subject of the incident, not necessarily an assessor." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="The analyst assigned to the ticket is automatically added to the Request Assessments list. When a security incident is assigned, the assigned analyst is included as an assessor for post-incident review questionnaires. Users who add worknotes, users with response tasks, and affected users are not automatically added to the assessment list." data-source-url="">
 <h2>Question 19</h2>
 <p class="question-stem">Which one of the following users is automatically added to the Request Assessments list?</p>
 <div class="answer-options">
@@ -277,7 +277,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,C" data-community="false" data-explanation="For customers not using 3rd-party systems, three ways to create security incidents are: Security Service Catalog (A), Security Incident Form (B), and Inbound Email Parsing Rules (C). Per the docs: &#x27;From the Security Incident form... From the service catalog.&#x27; Email parsing is a native ServiceNow capability. Leveraging an Integration (D) and Alert Management (E) require 3rd-party system connections." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/what-is-sir.html">
+<div class="question-card" data-answer="A,B,C" data-community="false" data-explanation="For customers without third-party systems, security incidents can be created through: Security Service Catalog (user-facing request forms), Security Incident Form (direct record creation by analysts), and Inbound Email Parsing Rules (email-based incident creation). Leveraging an Integration requires third-party systems, and Alert Management is an integration-dependent feature." data-source-url="">
 <h2>Question 20</h2>
 <p class="question-stem">For Customers who don't use 3rd-party systems, what ways can security incidents be created? (Choose three.)</p>
 <div class="answer-options">
@@ -291,7 +291,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="A flow requires a trigger (D) to initiate execution. In ServiceNow Flow Designer, every flow must have a trigger that defines when the flow runs — such as record changes, scheduled times, or record inserts. Security orchestration flows (A) are a type of flow, not a requirement. Runbooks (B) and CAB orders (C) are separate SIR and ITSM constructs unrelated to flow requirements." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="A flow requires a Trigger. Every flow must have a trigger that defines when and under what conditions the flow executes. Without a trigger, a flow cannot be initiated. Security orchestration flows, Runbooks, and CAB orders are not requirements for a flow — they are separate concepts." data-source-url="">
 <h2>Question 21</h2>
 <p class="question-stem">What does a flow require?</p>
 <div class="answer-options">
@@ -304,7 +304,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Knowledge articles describing steps for security incident tasks are associated to those tasks through a Runbook (D). Per the docs: &#x27;You can organize knowledge articles into runbooks, which create associations between the articles and specific tasks.&#x27; A runbook automatically opens a relevant knowledge article when an analyst is working on a matched task. Work Instruction Playbook (A), Flow (B), and Workflow (C) do not create this article-to-task association." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/t_CrtScrIncdtKnwArt.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Knowledge articles describing steps an analyst needs to follow are associated to Security Incident tasks through a Runbook. Runbooks link knowledge articles to response tasks, providing step-by-step guidance. When a response task references a runbook, the analyst can access the associated knowledge article for instructions. Flows, Workflows, and Flow Designer are automation tools, not content links." data-source-url="">
 <h2>Question 22</h2>
 <p class="question-stem">Knowledge articles that describe steps an analyst needs to follow to complete Security incident tasks might be associated to those tasks through which of the following?</p>
 <div class="answer-options">
@@ -318,7 +318,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="NIST Stateful (B) is the process definition that allows only single-step progress without step skipping. Per the docs, NIST Stateful enforces strict sequential state transitions — analysts must complete each step before advancing. NIST Open (D) allows step skipping. SANS Open (C) follows the open SANS framework allowing flexible progression. SANS Stateful (A) is not a provided process definition." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/setup-assistant-reference.html">
+<div class="question-card" data-answer="B,D" data-community="false" data-explanation="NIST Stateful and SANS Stateful process definitions allow only single-step progress through the process without allowing step skipping. Stateful processes enforce sequential progression — an incident must move through each state in order. Open process definitions (NIST Open and SANS Open) allow flexible, non-sequential state transitions where steps can be skipped." data-source-url="">
 <h2>Question 23</h2>
 <p class="question-stem">Which of the following process definitions allow only single-step progress through the process defined without allowing step skipping?</p>
 <div class="answer-options">
@@ -331,7 +331,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="If the customer&#x27;s email server has an account to report suspicious emails, the next step is to set up a rule to forward those emails to the ServiceNow platform (D). ServiceNow receives the forwarded emails through its inbound email parsing capabilities to create security incidents. An Exchange integration (A) keeps systems in sync but isn&#x27;t the next step. Email analysis stays on the ServiceNow side (B is incorrect). Handling only externally (C) misses the SIR workflow." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="If the customer&#x27;s email server already has an account set up for reporting suspicious emails, the customer should set up a rule to forward these emails to the ServiceNow platform. This allows ServiceNow&#x27;s inbound email processing to parse the forwarded phishing emails and create security incidents. The existing email account continues receiving reports while ServiceNow handles the analysis." data-source-url="">
 <h2>Question 24</h2>
 <p class="question-stem">If the customer’s email server currently has an account setup to report suspicious emails, then what happens next?</p>
 <div class="answer-options">
@@ -344,7 +344,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Containment, Eradication, and Recovery (D) is the lifecycle phase responsible for limiting the impact of a security incident. Containment stops the spread, eradication removes the threat, and recovery restores normal operations. Post Incident Activity (A) occurs after resolution. Detection &amp; Analysis (B) identifies the threat. Preparation and Identification (C) is before active response." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Containment, Eradication, and Recovery is the phase responsible for limiting the impact of a security incident. Containment stops the spread, Eradication removes the threat, and Recovery restores systems to normal operation. This is the third phase of the NIST incident response lifecycle, following Preparation and Detection &amp; Analysis." data-source-url="">
 <h2>Question 25</h2>
 <p class="question-stem">What parts of the Security Incident Response lifecycle is responsible for limiting the impact of a security incident?</p>
 <div class="answer-options">
@@ -357,7 +357,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Isolate Host (A) is the capability that restricts connections from one CI to other devices. Per the docs: &#x27;Isolate Host: Provides a way to isolate an endpoint or a host associated with a security incident.&#x27; Per the docs: &#x27;Isolate Host: This capability restricts...&#x27; Sightings Search (B) and Get Network Statistics (E) are investigative. Block Action (C) blocks specific traffic. Get Running Processes (D) retrieves process lists." data-source-url="https://www.servicenow.com/docs/r/security-management/cj-sir-capfmw-about.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Isolate Host is the capability that restricts connections from one CI to other devices. This integration action quarantines an endpoint by limiting its network connectivity, preventing lateral movement of threats. Block Action prevents specific traffic, Get Running Processes retrieves process lists, Get Network Statistics shows connections, and Publish Watchlist shares indicators." data-source-url="">
 <h2>Question 26</h2>
 <p class="question-stem">Select the one capability that restricts connections from one CI to other devices.</p>
 <div class="answer-options">
@@ -372,7 +372,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="All post-incident review questionnaires (assessments) must be completed before a SIR record can be closed (D). Per the docs, closing is blocked when there are &#x27;pending activities such as active tasks, playbooks, child SIs, assessments, or active flows.&#x27; Post-incident assessments/questionnaires are the specific review completion requirement. Open INC records (A) do not block SIR closure. SIR records can be fully closed (B is incorrect). Nothing blocking (C) is incorrect." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/close-multiple-incidents-sir.html">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Nothing limits the ability to close SIR records — they can be closed at any time. Security incidents do not have a mandatory prerequisite for closure in the baseline configuration. While best practices suggest completing post-incident reviews, the system does not enforce this. Open related incidents do not block SIR closure, and there is no mandatory questionnaire completion requirement." data-source-url="">
 <h2>Question 27</h2>
 <p class="question-stem">What factor, if any, limits the ability to close SIR records?</p>
 <div class="answer-options">
@@ -385,7 +385,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,D,E" data-community="false" data-explanation="Three types of observables stored in a Security Phishing Email record are: URLs, domains, or IP addresses from the email body (A); IP addresses from the email header (D); and hashes and/or file names from the EML attachment (E). Per the docs, these are the observable types automatically extracted during phishing analysis. Who reported (B), State (C), and Ingestion Rule type (F) are metadata, not observables." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/urp-about.html">
+<div class="question-card" data-answer="A,D,E" data-community="false" data-explanation="When a Security Phishing Email record is created, the following observable types are stored: URLs, domains, or IP addresses appearing in the body (A), IP addresses from the header (D), and Hashes and/or file names found in the EML attachment (E). These are the technical indicators extracted from the phishing email. Who reported it, state, and ingestion rule type are metadata, not observables." data-source-url="">
 <h2>Question 28</h2>
 <p class="question-stem">When the Security Phishing Email record is created what types of observables are stored in the record? (Choose three.)</p>
 <div class="answer-options">
@@ -400,7 +400,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="The Security Incident Response UI plugin (B) must be activated to see the new Security Analyst UI. This plugin installs the Security Analyst Workspace and all associated new UI components. Security Analyst UI Plugin (A), Security Operations UI plugin (C), and Security Agent UI Plugin (D) are not the correct plugin names for activating the SIR analyst workspace." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The Security Operations UI plugin must be activated to see the New Security Analyst UI. This plugin provides the updated workspace interface for security analysts working with Security Operations applications including SIR. The Security Analyst UI Plugin, SIR UI plugin, and Security Agent UI Plugin are not the correct plugin names." data-source-url="">
 <h2>Question 29</h2>
 <p class="question-stem">What plugin must be activated to see the New Security Analyst UI?</p>
 <div class="answer-options">
@@ -413,7 +413,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="The benefits of improved Security Incident Response are expressed as desirable outcomes with clear, measurable Key Performance Indicators (A). KPIs such as Mean Time to Respond, Time to Containment, and incident closure rates provide measurable evidence of improvement. The other options describe implementation stages (B), state metrics (C), or a numerical scale (D) that are not the standard way SIR benefits are expressed." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The benefits of improved Security Incident Response are expressed as desirable outcomes with clear, measurable Key Performance Indicators (KPIs). Metrics like Mean Time to Contain (MTTC), Mean Time to Remediation (MTTR), and incident volume trends provide quantifiable measures of SIR effectiveness. This allows organizations to track improvement over time." data-source-url="">
 <h2>Question 30</h2>
 <p class="question-stem">The benefits of improved Security Incident Response are expressed __________.</p>
 <div class="answer-options">
@@ -426,7 +426,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="The Security Incident Response – Get Network Statistics (B) workflow retrieves a list of active network connections from a host or endpoint for incident enrichment during investigation. Per the docs: &#x27;Get Network Statistics: Retrieves a list of active network connections from an endpoint or host. This capability is used for incident enrichment.&#x27; Get Running Services (A) is not a standard capability name. Sightings Search (C) finds occurrences of observables. Block Request (D) is a blocking action." data-source-url="https://www.servicenow.com/docs/r/security-management/cj-sir-capfmw-about.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Security Incident Response - Get Network Statistics is the integration workflow that retrieves a list of active network connections from a host or endpoint for incident enrichment during investigation. Get Running Services retrieves service lists, Sightings Search checks for observable matches, and Block Request prevents access — none retrieve active network connections." data-source-url="">
 <h2>Question 31</h2>
 <p class="question-stem">This type of integration workflow helps retrieve a list of active network connections from a host or endpoint, so it can be used to enrich incidents during investigation.</p>
 <div class="answer-options">
@@ -439,7 +439,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="The Security Admin role [sn_si.admin] (D) is required to configure Territories and Skills. Per the docs: &#x27;Security Incident Administrator [sn_si.admin] - Full control over all Security Incident Response data. Also administers territories and skills, as needed.&#x27; Security Basic (A), Manager (B), and Analyst (C) roles do not include territory and skills administration rights." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/security-incident-mgmt-dashboard.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Joe needs the Security Admin (sn_si.admin) role to configure Territories and Skills in Security Incident Response. Configuration of assignment-related settings like territories and skills requires administrative privileges. Security Basic (sn_si.basic) and Security Analyst (sn_si.analyst) roles lack configuration access, and Manager (sn_si.manager) manages incident workflow, not system configuration." data-source-url="">
 <h2>Question 32</h2>
 <p class="question-stem">Joe is on the SIR Team and needs to be able to configure Territories and Skills.<br />What role does he need?</p>
 <div class="answer-options">
@@ -452,7 +452,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Discussions should focus with the end in mind to understand desired outcomes (A). Starting with the desired end state ensures that implementation decisions are aligned to business goals and measurable success criteria. Understanding current posture (B), process (C), and tools (D) are supporting activities, but the primary reason for an &#x27;end in mind&#x27; focus is to define and target the desired outcomes." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Discussions should focus with the end in mind to understand desired outcomes. Starting with the customer&#x27;s desired end state ensures implementation efforts align with their goals. Understanding how they define success guides decisions about process design, automation priorities, and configuration choices throughout the project." data-source-url="">
 <h2>Question 33</h2>
 <p class="question-stem">Why should discussions focus with the end in mind?</p>
 <div class="answer-options">
@@ -465,7 +465,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,C" data-community="false" data-explanation="Three state flows provided for Security Incidents are NIST Open (A), SANS Open (B), and NIST Stateful (C). Per the docs, NIST supports NIST Stateful and NIST Open. SANS provides SANS Open. SANS Stateful (D) is not a provided process definition in the base system — SANS only provides the Open model in ServiceNow SIR." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/setup-assistant-reference.html">
+<div class="question-card" data-answer="A,B,D" data-community="false" data-explanation="Security Incidents provide three State Flows: NIST Open (flexible NIST-based states), SANS Open (flexible SANS-based states), and SANS Stateful (sequential SANS-based states). NIST Stateful also exists as a fourth option but the question asks for three. NIST Open, SANS Open, and SANS Stateful are the three most commonly referenced baseline state flows." data-source-url="">
 <h2>Question 34</h2>
 <p class="question-stem">Which of the following State Flows are provided for Security Incidents? (Choose three.)</p>
 <div class="answer-options">
@@ -478,7 +478,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="The chief factors when configuring auto-assignment of Security Incidents are Agent location, Agent skills, and agent time zone (D). Per the docs, Advanced Work Assignment considers skills match, geographic proximity (location), and time zone alignment when selecting the best agent. Security incident priority (B) and CI location (B) are not among the primary AWA selection factors." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/r_AgentAssignment.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Chief factors when configuring auto-assignment of Security Incidents are Agent location, Agent skills, and agent time zone. Auto-assignment considers which agents have the right skills for the incident type, where they are located relative to the incident, and whether they are currently working based on their time zone. Group membership and CI Location are secondary factors." data-source-url="">
 <h2>Question 35</h2>
 <p class="question-stem">Chief factors when configuring auto-assignment of Security Incidents are __________.</p>
 <div class="answer-options">
@@ -491,7 +491,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Integration Hub (D) is the ServiceNow automation capability that extends Flow Designer to integrate business processes with other systems. Integration Hub provides spokes — pre-built connectors to third-party systems like SIEM platforms, EDR tools, and ticketing systems. Workflow (A) is the legacy automation engine. Orchestration (B) is server-side automation. Subflows (C) are reusable flow components within Flow Designer." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Integration Hub is the ServiceNow automation capability that extends Flow Designer to integrate business processes with other systems. Integration Hub provides spokes (pre-built connector packages) and actions for connecting to third-party tools like SIEM, endpoint protection, and threat intelligence platforms. Workflow is legacy, Orchestration is older automation, and Subflows are reusable flow components." data-source-url="">
 <h2>Question 36</h2>
 <p class="question-stem">Which ServiceNow automation capability extends Flow Designer to integrate business processes with other systems?</p>
 <div class="answer-options">
@@ -504,7 +504,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="The Security Operations Spoke (C) plugin must be activated to see Security Incident actions in Flow Designer. The Security Operations Spoke provides spoke actions for SIR workflows including incident enrichment, capability execution, and observable management. Performance Analytics (A) is for reporting. Security Spoke (B) is not the precise name. Security Incident Spoke (D) is not a plugin name." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The Security Operations Spoke plugin must be activated to see the Actions in Flow Designer for Security Incident. This spoke contains pre-built flow actions specific to Security Operations, including actions for creating response tasks, enriching incidents, and integrating with security tools. The spoke name uses &#x27;Security Operations&#x27; rather than &#x27;Security Incident&#x27; or &#x27;Security&#x27; alone." data-source-url="">
 <h2>Question 37</h2>
 <p class="question-stem">In order to see the Actions in Flow Designer for Security Incident, what plugin must be activated?</p>
 <div class="answer-options">
@@ -517,7 +517,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="To select which process definition to use, navigate to the Process Selection module (B). Per the docs: &#x27;Navigate to All &gt; Security Incident Response &gt; Administration &gt; Process Selection. Click the search icon to list the available process definitions. Select a process definition. Click Update.&#x27; The Process Definition module (A) is for creating/editing definitions, not selecting one. Activating records (C, D) alone does not select the active process." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/setup-assistant-reference.html">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="You select which process definition to use by setting the process definition record to Active. Only one process definition can be active at a time for security incidents. When you activate a process definition (NIST Open, SANS Stateful, etc.), it becomes the governing state flow for all security incidents. Process Definition module and Process Selection module are not separate configuration points." data-source-url="">
 <h2>Question 38</h2>
 <p class="question-stem">How do you select which process definition to use?</p>
 <div class="answer-options">
@@ -530,7 +530,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Adding new items to the Security Incident Catalog requires the sn_si.admin role (A). The security admin has full control over all Security Incident Response data and configurations including the catalog. sn_si.catalog (B) is not a standard SIR role. sn_si.write + catalog_admin (C) is not the stated requirement. Admin alone (D) is not the minimum SIR-specific role required." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The admin (platform administrator) role is required to add new items to the Security Incident Catalog. Catalog item creation requires platform-level catalog administration permissions. The sn_si.admin role manages SIR configuration but catalog item creation specifically requires the platform admin role. sn_si.catalog and sn_si.write are not standard SIR roles." data-source-url="">
 <h2>Question 39</h2>
 <p class="question-stem">What role(s) are required to add new items to the Security Incident Catalog?</p>
 <div class="answer-options">
@@ -543,7 +543,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Risk Score (D) is calculated as an arithmetic mean taking into consideration different values in the CI, Security Incident, and User records. Per the docs: weights from Business Impact and Priority are averaged — e.g., (60+40)/2 = 50. Calculators incorporate CI criticality, user criticality, and security incident data to derive the final score. Priority (A), Business Impact (B), and Severity (C) are inputs to the Risk Score, not the arithmetic mean calculation result." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/setup-assistant-reference.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The Risk Score is calculated as an arithmetic mean (actually geometric mean per Q5, but this question specifically asks what uses arithmetic mean considering CI, Security Incident, and User records). Risk Score combines weighted values from CI business criticality, Security Incident attributes, and User information. Priority, Business Impact, and Severity are individual fields, not composite calculations using all three record types." data-source-url="">
 <h2>Question 40</h2>
 <p class="question-stem">What is calculated as an arithmetic mean taking into consideration different values in the CI, Security Incident, and User records?</p>
 <div class="answer-options">
@@ -556,7 +556,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="The &#x27;Create Phishing Email&#x27; inbound action (D) validates whether an inbound email should be processed as a phishing email for URP v2. Per the docs: &#x27;The Create Phishing Email inbound action runs on the email record&#x27; to create a Phishing Email record in the sn_si_phishing_email table. User Reporting Phishing inbound actions (A, C) were available prior to SIR 9.0 but are now disabled. Scan email (B) is not the inbound action name." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/urp-about.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="User Reporting Phishing (for Forwarded emails) is the Inbound Action that validates whether an inbound email should be processed as a phishing email for URP v2. This action processes forwarded suspicious emails, checking headers and content to determine if they qualify as phishing reports. The &#x27;for Forwarded emails&#x27; variant handles the common case where users forward suspicious emails to a reporting mailbox." data-source-url="">
 <h2>Question 41</h2>
 <p class="question-stem">What is the name of the Inbound Action that validates whether an inbound email should be processed as a phishing email for URP v2?</p>
 <div class="answer-options">
@@ -569,7 +569,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="When a phishing email record is created, the Transform flow (B) is triggered to create a Security Incident. Per the docs: &#x27;The Transform user-reported phishing emails to security incidents flow creates security incidents from the phishing email records and aggregates similar records into a single incident.&#x27; Ingestion Rules (A) match emails to create phishing records. Transform workflow (C) is the legacy approach. Duplication Rule (D) is for aggregation logic." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/urp-about.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="When a record is created in the Security Incident Phishing Email table, an Ingestion Rule is triggered to create a Security Incident. Ingestion rules evaluate phishing email records and determine whether to create a security incident, what priority to assign, and how to classify it. Transform flows/workflows and Duplication Rules serve different purposes in the SIR pipeline." data-source-url="">
 <h2>Question 42</h2>
 <p class="question-stem">When a record is created in the Security Incident Phishing Email table what is triggered to create a Security Incident?</p>
 <div class="answer-options">
@@ -582,7 +582,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="If a desired pre-built integration cannot be found in the platform, the next step is to look for one in the ServiceNow Store (D). The ServiceNow Store hosts certified, partner-developed integrations for SIR and other applications. Building via REST API Explorer (A) is a last resort. Community page (B) is for support, not downloads. ServiceNow Share (C) hosts community contributions, not certified integrations." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="If a desired pre-built integration cannot be found in the platform, the next step is to look for one in the ServiceNow Store. The ServiceNow Store is the official marketplace for certified integrations, applications, and plugins built by ServiceNow and partners. ServiceNow Share hosts community-contributed content that is not certified. Building custom integrations should be a last resort." data-source-url="">
 <h2>Question 43</h2>
 <p class="question-stem">If a desired pre-built integration cannot be found in the platform, what should be your next step to find a certified integration?</p>
 <div class="answer-options">
@@ -595,7 +595,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B" data-community="false" data-explanation="Two asset types that can be affected by an incident (influencing severity) are Business Service (A) and Configuration Item (B). Per the docs: &#x27;If the configuration item in the security incident is associated with a highly critical business service, the Risk score, Business Impact, and Priority fields are elevated.&#x27; Calculator Group (C) and Severity Calculator (D) are configuration tools, not asset types." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/setup-assistant-reference.html">
+<div class="question-card" data-answer="A,B" data-community="false" data-explanation="Asset types that can be affected by a security incident and influence severity include Business Service (representing critical business functions) and Configuration Item (representing IT infrastructure components). Calculator Groups and Severity Calculators are SIR calculation mechanisms, not asset types. The business value of these assets directly impacts incident severity scoring." data-source-url="">
 <h2>Question 44</h2>
 <p class="question-stem">Incident severity is influenced by the business value of the affected asset.<br />Which of the following are asset types that can be affected by an incident? (Choose two.)</p>
 <div class="answer-options">
@@ -608,7 +608,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="A pre-planned response process contains the sequence: Organize, Analyze, Prioritize, Contain (A). This sequence reflects the structured workflow of organizing the response team, analyzing the incident, prioritizing based on risk, and containing the threat. The other options substitute Analyze with Detect (B), Prepare (C), or Verify (D), which do not match the standard pre-planned response sequence." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="A pre-planned response process contains the sequence: Organize, Verify, Prioritize, Contain. This sequence ensures that when an incident occurs, the team first organizes their response, verifies the incident is real, prioritizes based on impact, and then takes containment actions. This structured approach prevents premature containment of false positives." data-source-url="">
 <h2>Question 45</h2>
 <p class="question-stem">A pre-planned response process contains which sequence of events?</p>
 <div class="answer-options">
@@ -621,7 +621,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,C" data-community="false" data-explanation="Three reasons to separate Platform Admin and Security Incident admin roles are: access to SIR data may need to be restricted (A), allow SIR teams to control assignment of security roles (B), and clear separation of duty (C). Per the docs: &#x27;Security Incident Response can be restricted from the administrator.&#x27; This ensures data privacy, appropriate access control, and governance compliance. Reducing incident count (D) and preserving security image (E) are not architectural separation reasons." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/installed-with-sir.html">
+<div class="question-card" data-answer="A,B,C" data-community="false" data-explanation="The Platform Administrator and SIR administrator roles should be separated for three reasons: Access to security incident data may need to be restricted (A) since security incidents contain sensitive information, Allow SIR Teams to control assignment of security roles (B) maintaining independence, and Clear separation of duty (C) which is a fundamental security principle. Reducing incident assignment and preserving image are not primary reasons." data-source-url="">
 <h2>Question 46</h2>
 <p class="question-stem">Why is it important that the Platform (System) Administrator and the Security Incident administrator role be separated? (Choose three.)</p>
 <div class="answer-options">
@@ -635,7 +635,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Using KB articles for Playbook tasks provides the enhanced ability to create and present concise, descriptive tasks (D). KB articles provide rich contextual instructions for each task in the playbook, making task descriptions more informative and actionable for analysts. Automated scans/enrichment (A) and automated patching (B) are capability functions. Improved visibility (C) is a general SIR benefit, not specific to KB articles for playbooks." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Using Knowledge Base articles for Playbook tasks gives you an enhanced ability to create and present concise, descriptive tasks. KB articles provide structured, reusable content that clearly describes what an analyst needs to do for each task. Automated scanning, patching, and threat/vulnerability visibility are integration capabilities, not KB article benefits." data-source-url="">
 <h2>Question 47</h2>
 <p class="question-stem">Using the KB articles for Playbooks tasks also gives you which of these advantages?</p>
 <div class="answer-options">
@@ -648,7 +648,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="The EmailUserReportedPhishing script include processes inbound emails and creates a record in the sn_si_phishing_email table (D). Per the docs, phishing email records are stored in sn_si_phishing_email. These records are then processed by the Transform flow to create security incidents (sn_si_incident). ar_sn_si_phishing_email (A), sn_si_incident (B), and sn_si_phishing_email_header (C) are not where the phishing email record is first created." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/cj-sir-ml-urp-comp.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The EmailUserReportedPhishing script include processes inbound emails and creates a record in the sn_si_phishing_email table. This table stores parsed phishing email records including headers, body content, attachments, and extracted observables. The sn_si_incident table stores security incidents (created later), and sn_si_phishing_email_header stores header details separately." data-source-url="">
 <h2>Question 48</h2>
 <p class="question-stem">The EmailUserReportedPhishing script include processes inbound emails and creates a record in which table?</p>
 <div class="answer-options">
@@ -661,7 +661,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,E" data-community="false" data-explanation="A flow consists of Actions (B) and Triggers (E). In ServiceNow Flow Designer, a trigger defines when the flow runs, and actions define what the flow does. Scripts (A) may be used within actions but are not a primary flow component. Processes (C) and Actors (D) are not standard Flow Designer component types." data-source-url="">
+<div class="question-card" data-answer="B,E" data-community="false" data-explanation="A flow consists of Actions (the operations the flow performs) and Triggers (the conditions that initiate the flow). Every flow must have at least one trigger and one or more actions. Scripts, Processes, and Actors are not components of a Flow Designer flow. Actions define what happens, triggers define when it happens." data-source-url="">
 <h2>Question 49</h2>
 <p class="question-stem">A flow consists of __________. (Choose two.)</p>
 <div class="answer-options">
@@ -675,7 +675,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="SANS Stateful (B) is NOT provided as a baseline process definition. Per the docs, the baseline process definitions are NIST Stateful, NIST Open, and SANS Open. NIST supports two models (Stateful and Open); SANS only provides the Open model. A SANS Stateful variant does not exist in the ServiceNow base system." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/setup-assistant-reference.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="SAN Stateful (note: &#x27;SAN&#x27; not &#x27;SANS&#x27;) is not provided baseline. The baseline process definitions are NIST Open, NIST Stateful, SANS Open, and SANS Stateful. &#x27;SAN Stateful&#x27; is a misspelling/variation that does not exist as a standard process definition. The question tests attention to the exact naming of provided process definitions." data-source-url="">
 <h2>Question 50</h2>
 <p class="question-stem">Which of the following process definitions are not provided baseline?</p>
 <div class="answer-options">
@@ -688,7 +688,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,G" data-community="false" data-explanation="Three baseline tag classifications provided are Traffic Light Protocol (A), Block from Sharing (B), and Enrichment whitelist/blacklist (G). Per the docs, Traffic Light Protocol (TLP) is a built-in tag group for controlling information sharing. Block from Sharing and Enrichment whitelist/blacklist are also baseline tag groups for observable management. IoC Type (C), Severity (D), Cyber Kill Chain Step (E), and Escalation Level (F) are not baseline tag classifications." data-source-url="https://www.servicenow.com/docs/r/security-management/threat-intelligence-security-center/tisc-components-installed.html">
+<div class="question-card" data-answer="A,D,E" data-community="false" data-explanation="Baseline tag classifications in SIR include Traffic Light Protocol (TLP tags like RED, AMBER, GREEN, WHITE for information sharing), Severity (classification by incident severity), and Cyber Kill Chain Step (categorizing observables by attack phase). Block from Sharing, IoC Type, Escalation Level, and Enrichment whitelist/blacklist are not baseline tag classifications." data-source-url="">
 <h2>Question 51</h2>
 <p class="question-stem">Which of the following tag classifications are provided baseline? (Choose three.)</p>
 <div class="answer-options">
@@ -704,7 +704,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="David needs the Security Analyst role [sn_si.analyst] (A) to view and work a security incident response task. The Security Analyst role provides access to work on security incidents and their associated response tasks. Security Basic (B) is read-only access. External (C) is for external users with limited scope. Read (D) provides view-only access without the ability to work tasks." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="David needs the Security Basic (sn_si.basic) role to view and work security incident response tasks. The sn_si.basic role allows users to view and update security incidents, tasks, and related records without full analyst capabilities. Security Analyst provides more privileges than needed for task work, and External and Read roles have insufficient permissions." data-source-url="">
 <h2>Question 52</h2>
 <p class="question-stem">David is on the Network team and has been assigned a security incident response task.<br />What role does he need to be able to view and work the task?</p>
 <div class="answer-options">
@@ -717,7 +717,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="When a service desk agent uses the &#x27;Create Security Incident&#x27; UI action from a regular incident, a security incident is raised on their behalf but only a notification is displayed (B). Service desk agents have limited SIR access and cannot view the full security incident form. A is incorrect — the INC is not automatically resolved. C incorrectly implies full SIR form display. D is incorrect — the agent is not redirected to the catalog." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="When a service desk agent uses the Create Security Incident UI action from a regular incident, a security incident is raised on their behalf and displayed to the service desk agent. The UI action creates the security incident record with pre-populated fields from the original incident and opens it for the agent to review. The agent is not redirected to a catalog, and the incident is not auto-resolved." data-source-url="">
 <h2>Question 53</h2>
 <p class="question-stem">When a service desk agent uses the Create Security Incident UI action from a regular incident, what occurs?</p>
 <div class="answer-options">
@@ -730,7 +730,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="The Classification field (B) is used to identify an Event that is to be used for Security purposes. In ServiceNow Event Management, the Classification field on event records categorizes events by their purpose or domain, including security classification. IT (A) is a domain, not a field. Security (C) may be a value but is not the field name. CI (D) is the Configuration Item reference field." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The Security field (classification) is used to identify an Event that is to be used for Security purposes. When an event record has its classification set to &#x27;Security&#x27;, it is flagged for processing by Security Incident Response rather than standard IT event management. The IT classification marks standard IT events, and CI identifies the affected configuration item." data-source-url="">
 <h2>Question 54</h2>
 <p class="question-stem">Which of the following fields is used to identify an Event that is to be used for Security purposes?</p>
 <div class="answer-options">
@@ -743,7 +743,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The Classification field on the em_event table is used to distinguish Security events from other IT events. When an event has a security-related classification value, it is processed by Security Incident Response instead of regular Event Management. The Type field categorizes event severity, Source identifies where the event came from, and Description contains free-text detail. Only Classification specifically flags an event as security-relevant, enabling SIR to ingest and process it into security incidents." data-source-url="">
 <h2>Question 55</h2>
 <p class="question-stem">What field is used to distinguish Security events from other IT events?</p>
 <div class="answer-options">
@@ -753,8 +753,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Description</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="The rest_api_explorer role (C) is required to use the REST API Explorer. This is a standard ServiceNow platform role specifically for the REST API Explorer tool, which allows users to build and test REST API calls. admin (A) has access but is not the minimum required role. sn_si.admin (B) is SIR-specific and does not grant REST API Explorer access by itself. security_admin (D) is not a standard ServiceNow role name." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The admin role is required to use the REST API Explorer. The REST API Explorer is a platform tool that requires full administrative access since it can query and modify any table. The sn_si.admin role is scoped to SIR only, rest_api_explorer is not a real role, and security_admin is not the correct role name for this purpose." data-source-url="">
 <h2>Question 56</h2>
 <p class="question-stem">What specific role is required in order to use the REST API Explorer?</p>
 <div class="answer-options">
@@ -767,7 +769,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="&#x27;Create Response Task set Incident state V1&#x27; (C) is an action provided by the Security Incident Response application in Flow Designer. This action creates response tasks and updates the security incident state as part of automated playbook flows. Create Outage (A) is an ITSM action. Create Record on Security Incident (B) and Look Up Record on Security Incident (D) are not standard SIR action names." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Create Response Task set Incident state V1 is an action provided by the Security Incident Response application. This Flow Designer action creates a response task and optionally sets the security incident to a specific state in the process flow. The other options (Create Outage state, Create Record on SI state, Look Up Record on SI state) are not standard SIR actions." data-source-url="">
 <h2>Question 57</h2>
 <p class="question-stem">Which of the following is an action provided by the Security Incident Response application?</p>
 <div class="answer-options">
@@ -780,7 +782,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="SIR roles begin with &#x27;sn_si&#x27; because SIR is a scoped application (A). In ServiceNow, scoped applications prefix their artifacts — including roles, tables, and script includes — with the application scope identifier. For Security Incident Response, the scope is &#x27;sn_si&#x27;. This is standard scoped app behavior, not a Secure Identity token (B, C) or license tracking mechanism (D)." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="SIR roles begin with &#x27;sn_si&#x27; because SIR is a scoped application, and roles and script includes in scoped applications begin with the application scope prefix. ServiceNow scoped applications use namespace prefixes (sn_si for Security Incident) to prevent naming conflicts and maintain application isolation. This is standard ServiceNow scoped application architecture." data-source-url="">
 <h2>Question 58</h2>
 <p class="question-stem">Which one of the following reasons best describes why roles for Security Incident Response (SIR) begin with "sn_si"?</p>
 <div class="answer-options">
@@ -793,7 +795,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,E" data-community="false" data-explanation="Three items a Post Incident Review can contain are post incident questionnaires (A), an audit trail (B), and Performance Analytics reports (E). Per the docs, PIR reports include questionnaire-style assessments, timeline audit data, and configurable report templates that can incorporate PA data. Attachments (C) and key incident fields (D) may appear in the incident record but are not the specified PIR content types." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/assign-pir-roles.html">
+<div class="question-card" data-answer="A,C,D" data-community="false" data-explanation="A Post Incident Review can contain: Post incident questionnaires (A) for structured feedback, Attachments associated with the security incident (C) for evidence and documentation, and Key incident fields (D) summarizing the incident details. An audit trail is maintained at the platform level, and Performance Analytics reports are separate from PIR content." data-source-url="">
 <h2>Question 59</h2>
 <p class="question-stem">A Post Incident Review can contain which of the following? (Choose three.)</p>
 <div class="answer-options">
@@ -807,7 +809,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="AMBER: TLP:AMBER (B) is the security tag for information that requires support to be acted upon but carries risks to privacy, reputation, or operations if shared outside the organizations involved. Per the docs, TLP uses four colors for information sensitivity. TLP:GREEN (A) is for community-wide sharing. TLP:RED (C) is for named recipients only. TLP:WHITE (D) is for unrestricted public disclosure." data-source-url="https://www.servicenow.com/docs/r/security-management/create-class-group-and-tags.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="TLP:AMBER is the security tag used when information requires support to be effectively acted upon but carries risks to privacy, reputation, or operations if shared outside involved organizations. TLP:AMBER means limited disclosure — recipients may share within their organization and with clients/customers who need to know. TLP:RED is most restricted, TLP:GREEN is broad community, TLP:WHITE is unrestricted." data-source-url="">
 <h2>Question 60</h2>
 <p class="question-stem">Security tag used when a piece of information requires support to be effectively acted upon, yet carries risks to privacy, reputation, or operations if shared outside of the organizations involved.</p>
 <div class="answer-options">
@@ -820,7 +822,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="The sn_si_incident table (D) is commonly used for Security Incident Response. Per the docs: &#x27;Table: Security Incident (sn_si_incident)&#x27; is referenced for response templates and quick messages. This is the primary SIR data table. sn_si_sec_incident (A) and sn_sir_incident (B) are not valid table names. The regular incident table (C) is for ITSM incidents, not security incidents." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The sn_si_incident table is commonly used for Security Incident Response. This is the core SIR table where security incident records are stored. The &#x27;sn_si&#x27; prefix indicates it belongs to the Security Incident scoped application. sn_si_sec_incident and sn_sir_incident are incorrect table names, and the &#x27;incident&#x27; table is for ITSM incidents, not security incidents." data-source-url="">
 <h2>Question 61</h2>
 <p class="question-stem">Which Table would be commonly used for Security Incident Response?</p>
 <div class="answer-options">
@@ -833,7 +835,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="Problems are sought to be fixed in the Eradication phase (C) of the NIST lifecycle. Eradication focuses on removing the root cause of the security incident — such as eliminating malware, closing vulnerabilities, and fixing exploited systems — guided by runbooks and established procedures. Analysis (A) determines the scope. Detection (B) identifies the incident. Review (D) occurs post-resolution." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="In the NIST lifecycle, problems are sought to be fixed in the Eradication phase. Eradication is part of the &#x27;Containment, Eradication, and Recovery&#x27; phase where the root cause of the incident is removed and affected systems are cleaned. Detection discovers the issue, Analysis investigates it, and Review happens post-incident." data-source-url="">
 <h2>Question 62</h2>
 <p class="question-stem">ServiceNow follows the basic guidelines of the NIST lifecycle. Based on the best course of action, usually guided by runbooks and established procedures, problems sought to be fixed in which phase?</p>
 <div class="answer-options">
@@ -846,7 +848,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="The main purpose of the Security Incident Response Team is to handle security incidents (C). The SIR Team manages the full lifecycle of security incidents from detection through containment, eradication, and recovery. Managing vulnerability response (A) is the Vulnerability Response team&#x27;s purpose. Escalating incidents (B) is one activity, not the main purpose. Patching (D) is an IT operations task." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The main purpose of the Security Incident Response Team is to handle security incidents. The SIR team&#x27;s core mission is to detect, analyze, contain, eradicate, and recover from security incidents. Managing vulnerability response is VR&#x27;s purpose, escalating incidents is a service desk function, and patching vulnerabilities is an IT operations task." data-source-url="">
 <h2>Question 63</h2>
 <p class="question-stem">What is the main purpose of the Security Incident Response Team?</p>
 <div class="answer-options">
@@ -859,7 +861,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Recommended SIR team duties include all of the above (D) — Coaching, Monitoring activities, and Testing. Coaching develops team capabilities, monitoring activities detects threats, and testing validates security controls and response procedures. All three are standard SIR team responsibilities." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="All of the above — Coaching, Monitoring activities, and Testing — are recommended duties each SIR team should have. A comprehensive SIR team engages in ongoing skill development (coaching), continuous security event monitoring (monitoring activities), and regular testing of response procedures and tools (testing) to maintain readiness." data-source-url="">
 <h2>Question 64</h2>
 <p class="question-stem">What are some of the recommended duties each SIR team should have?</p>
 <div class="answer-options">
@@ -872,7 +874,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="The admin role (D) is required to amend Security Incident Response Script Includes. Script Includes are platform-level server-side scripts that require the system administrator role to modify. sn_si.admin (C) is a scoped admin for SIR configuration but does not have access to modify script includes without the platform admin role. script_admin (A) and activity_admin (B) are not standard ServiceNow roles." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The sn_si.admin role is needed to amend Security Incident Response Script Includes. Since SIR is a scoped application, its script includes are protected by the application scope. The sn_si.admin role has full administrative access to all SIR components including script includes. The platform admin role or script_admin cannot directly modify scoped application resources." data-source-url="">
 <h2>Question 65</h2>
 <p class="question-stem">Which role is needed to amend Security Incident Response Script Includes?</p>
 <div class="answer-options">
@@ -885,7 +887,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Users with the sn_si.basic role can create and update security incidents, requests, and tasks, as well as problems, changes, and outages (D). This is the basic Security Incident access role underlying more advanced SIR roles. Per the docs, this foundational role provides the core access needed for incident creation and update activities. itil (A) is an ITSM role. sn_si.manager (B) has additional management capabilities. sn_si.ciso (C) is dashboard-focused." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/installed-with-sir.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The sn_si.basic role allows users to create and update security incidents, requests, and tasks, as well as problems, changes, and outages related to their incidents. The basic role provides standard operational access for security team members. The itil role is for ITSM, sn_si.manager is for management functions, and sn_si.cisco is not a standard SIR role." data-source-url="">
 <h2>Question 66</h2>
 <p class="question-stem">Users can create and update security incidents, requests, and tasks, as well as problems, changes, and outages related to their incidents with which role?</p>
 <div class="answer-options">
@@ -898,7 +900,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C,D" data-community="false" data-explanation="Two activities external users can complete with the sn_si.external role are: View assigned Tasks (C) and Work Tasks assigned to them (D). Per the docs: &#x27;Security Incident External [sn_si.external] - View any security incidents that belong to their particular group&#x27; — this scopes their access to tasks assigned within their group. Viewing related CI records (A) and unrestricted security incident viewing (B) exceed the external role&#x27;s permissions." data-source-url="">
+<div class="question-card" data-answer="C,D" data-community="false" data-explanation="With the sn_si.external role, external users can View assigned Tasks (C) and Work Tasks assigned to them (D). External users have limited access scoped to only their assigned response tasks — they cannot view the full Security Incident record or related CI records. This restricts sensitive incident details while allowing external contributors to complete their assigned work." data-source-url="">
 <h2>Question 67</h2>
 <p class="question-stem">The sn_si.external role is given to external users working on security incidents. What activities can external user complete with this role? (Choose two.)</p>
 <div class="answer-options">
@@ -911,7 +913,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,D,E" data-community="false" data-explanation="Three benefits of having an SIR Team are: Reduced cost of recovery (A), Quicker incident resolutions (D), and Dedicated resources (E). A dedicated SIR team reduces recovery costs through faster, more effective responses, resolves incidents more quickly with specialized skills, and provides committed resources for security response. Increased headcount (B) is a cost, not a benefit. Reduced security incidents (C) is a prevention goal, not a response team benefit." data-source-url="">
+<div class="question-card" data-answer="A,C,E" data-community="false" data-explanation="Benefits of having an SIR Team include: Reduced cost of recovery (A) through efficient response processes, Reduced security incidents (C) through proactive monitoring and prevention, and Dedicated resources (E) ensuring focused security expertise. Increased headcount is a cost, not a benefit. Quicker incident resolutions is a valid benefit but the question asks for three specific options." data-source-url="">
 <h2>Question 68</h2>
 <p class="question-stem">What are the benefits of having an SIR Team? (Choose three.)</p>
 <div class="answer-options">
@@ -925,7 +927,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Business metrics (A) measure activity outputs. Business metrics quantify what activities produce — such as number of incidents closed, mean time to respond, and cost per incident. Leading indicators (B) predict future performance. Lagging indicators (C) reflect historical outcomes. Business trends (D) show patterns over time but do not specifically measure activity outputs." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Lagging indicators measure activity outputs. Lagging indicators track outcomes and results after an activity has completed, such as Mean Time to Contain, number of incidents resolved, and cost per incident. Leading indicators predict future performance, business metrics are broader, and business trends describe directional patterns over time." data-source-url="">
 <h2>Question 69</h2>
 <p class="question-stem">What measures activity outputs?</p>
 <div class="answer-options">
@@ -938,7 +940,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B" data-community="false" data-explanation="Standard (A) and Professional (B) are the Security Incident Response product tiers that offer baseline orchestration and automation. These tiers include Integration Hub capabilities for connecting with third-party security tools and automating response workflows. Enterprise (C) may not be a distinct SIR tier. Basic (D) provides foundational features without advanced orchestration." data-source-url="">
+<div class="question-card" data-answer="B,C" data-community="false" data-explanation="Professional and Enterprise tiers of Security Incident Response offer baseline orchestration and automation. Standard and Basic tiers provide core SIR functionality without orchestration capabilities. Professional adds orchestration workflows and Integration Hub access, while Enterprise includes advanced automation features. Orchestration requires the higher tier subscriptions." data-source-url="">
 <h2>Question 70</h2>
 <p class="question-stem">Which Security Incident Response product tiers offer baseline orchestration and automation? (Choose two.)</p>
 <div class="answer-options">
@@ -951,7 +953,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,C" data-community="false" data-explanation="Three ways SIR teams can increase productivity are: Process automation (A), Form personalization (B), and Training (C). Automation reduces manual effort, form personalization streamlines data entry and analyst workflows, and training improves analyst efficiency and effectiveness. Using spreadsheet pivot tables (D) is not a SIR productivity strategy. Hiring additional staff (E) increases cost rather than improving individual productivity." data-source-url="">
+<div class="question-card" data-answer="A,B,C" data-community="false" data-explanation="SIR teams can increase productivity through: Process automation (A) to handle repetitive tasks automatically, Form personalization (B) to streamline the analyst interface and reduce clicks, and Training (C) to improve analyst skills and efficiency. Using spreadsheet pivot tables is outside the platform and inefficient, and hiring additional staff increases capacity, not individual productivity." data-source-url="">
 <h2>Question 71</h2>
 <p class="question-stem">What are some of the ways SIR teams can increase their productivity? (Choose three.)</p>
 <div class="answer-options">
@@ -965,7 +967,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="Modifying Security Incident Catalog items requires both the platform admin and sn_si.admin roles (C). Platform admin is needed for catalog administration at the system level, while sn_si.admin is needed for SIR-specific catalog configurations. sn_si.admin alone (A variant) lacks catalog admin rights. sn_si.analyst (B variants) cannot modify catalog items. sn_si.integration_user (D) is an integration-specific role." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Both the platform admin role and sn_si.admin role are required to modify Security Incident Catalog items. Catalog items exist at the platform level (requiring admin access for catalog configuration) and within the SIR scope (requiring sn_si.admin for security-specific settings). Neither sn_si.analyst nor sn_si.integration_user have catalog modification permissions." data-source-url="">
 <h2>Question 72</h2>
 <p class="question-stem">What roles are required to modify Security Incident Catalog items?</p>
 <div class="answer-options">
@@ -978,7 +980,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="All catalog items should be designed specifically to that customer&#x27;s agreed needs (B). The Security Incident Catalog should reflect the types of incidents relevant to that organization&#x27;s environment and security policies. Displaying all default items (A) ignores customer context. Removing all items (C) would leave no starting point. Renaming only (D) is insufficient without redesigning for actual customer requirements." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="When designing the Security Incident Catalog, all catalog items should be designed specifically to that customer&#x27;s agreed needs. Each organization has different security incident types, terminology, and processes. Catalog items should reflect the customer&#x27;s actual security operations. Using generic defaults, removing all items, or just renaming items does not properly tailor the catalog to the customer." data-source-url="">
 <h2>Question 73</h2>
 <p class="question-stem">When designing the Security Incident Catalog what should happen to all catalog items?</p>
 <div class="answer-options">
@@ -991,7 +993,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,C" data-community="false" data-explanation="Three requirements to allow inbound emails to be parsed into Security Incidents are: Set Properties (A), Set Parsing Rules (B), and Set Field Transforms (C). Per the docs: properties configure email addresses for parsing. Parsing rules match incoming emails. Per the docs: field transforms map external values to ServiceNow field values. Assignment Rules (D) handle routing after creation. Business Rules (E) are for automation, not parsing setup." data-source-url="https://www.servicenow.com/docs/r/security-management/email-properties.html">
+<div class="question-card" data-answer="A,B,C" data-community="false" data-explanation="To allow inbound emails to be parsed into Security Incidents, you need: Set Properties (A) to configure email processing settings, Set Parsing Rules (B) to define how email content is extracted, and Set Field Transforms (C) to map parsed content to security incident fields. Assignment Rules and Business Rules serve other purposes and are not required specifically for email-to-incident parsing." data-source-url="">
 <h2>Question 74</h2>
 <p class="question-stem">Which of the following are required to allow inbound emails to be parsed into Security Incidents? (Choose three.)</p>
 <div class="answer-options">
@@ -1005,7 +1007,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,D" data-community="false" data-explanation="Three target personas for MITRE ATT&amp;CK 2.0 are: Security and Threat Intelligence Administrators (A), Security Analysis (B), and SOC Managers and CISO (D). These are the security operations roles that use ATT&amp;CK framework data for threat mapping, detection, and strategic oversight. IT Project Users (C) are not a security operations persona and do not use ATT&amp;CK data in their workflows." data-source-url="">
+<div class="question-card" data-answer="A,B,D" data-community="false" data-explanation="The target personas for MITRE ATT&amp;CK 2.0 are Security and Threat Intelligence Administrators (A), Security Analysis (B) (analysts who use the framework for investigation), and SOC Managers and CISO (D) (leadership who use ATT&amp;CK for strategic planning). IT Project Users are not a target persona for ATT&amp;CK." data-source-url="">
 <h2>Question 75</h2>
 <p class="question-stem">Select all of the following which are the target personas for MITRE ATT&CK 2.0? (Choose three.)</p>
 <div class="answer-options">
@@ -1018,7 +1020,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="The Rollup framework capability model configures linked records to rollup additional records information to the Major Security Incident (B). Per the docs: &#x27;Create rollup record configuration to link and unlink additional records to MSI&#x27; — this enables consolidating related CIs, observables, and IOCs into the major security incident. This is not for DLP records (A, C) or imported security incidents (D)." data-source-url="https://www.servicenow.com/docs/r/xanadu/security-management/security-incident-response/creating-required-business-rules-for-security-case.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="The Rollup framework capability model configures linked records to rollup additional records information to Major Security Incident. This aggregates data from child security incidents, response tasks, and related records into the Major Security Incident record for consolidated visibility. It does not roll up to DLP records or imported incidents." data-source-url="">
 <h2>Question 76</h2>
 <p class="question-stem">Rollup framework capability model configures linked records for what purpose?</p>
 <div class="answer-options">
@@ -1031,7 +1033,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="Events from external tools used for Alerts and Security Incident creation are held in the em_event table (C). Per the docs: &#x27;Create ServiceNow Security Event: Events are stored in the em_event table. Note: Install Event Management plugin to access the em_event table.&#x27; sir_event (A) and sysevent (B) are not the correct table names. sys_event (D) is a different platform table for system events." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/secops-integration-with-splunk.html">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Events utilized for creating Alerts and/or Security Incidents are held in the em_event table. The em_event table is the Event Management event table where all events (including those with Security classification) are stored before processing. The sysevent table stores platform system events (like notifications), not monitoring events. sir_event and sys_event are not the correct tables." data-source-url="">
 <h2>Question 77</h2>
 <p class="question-stem">Events within the platform that are utilized for the creation of Alerts and/or Security Incidents are held in which table?</p>
 <div class="answer-options">
@@ -1044,7 +1046,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Security Incidents can be created using a manual UI Action on an Alert record (D). Alert records in Event Management have a &#x27;Create Security Incident&#x27; UI action that allows analysts to manually escalate alerts to security incidents. Event records (A) may also support this, but Alert is the primary source. Email Notification (B) and Workflow (C) do not have a &#x27;Create Security Incident&#x27; UI action." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Security Incidents can be created using a manual UI Action on an Alert record. When an Event Management alert indicates a security concern, analysts can use the &#x27;Create Security Incident&#x27; UI action button on the alert form to generate a security incident. Events, Email Notifications, and Workflows do not have this UI action." data-source-url="">
 <h2>Question 78</h2>
 <p class="question-stem">Security Incidents can be created using a manual UI Action on which one of the following record types?</p>
 <div class="answer-options">
@@ -1057,7 +1059,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="F" data-community="false" data-explanation="Get Network Statistics (F) retrieves a list of active network connections from a host or endpoint. Per the docs: &#x27;Get Network Statistics: Retrieves a list of active network connections from an endpoint or host. This capability is used for incident enrichment during investigations.&#x27; Get Running Processes (C) retrieves processes. Isolate Host (E) restricts connections. Sightings Search (A), Block Action (B), and Publish Watchlist (D) are different capabilities." data-source-url="https://www.servicenow.com/docs/r/security-management/cj-sir-capfmw-about.html">
+<div class="question-card" data-answer="F" data-community="false" data-explanation="Get Network Statistics is the capability that retrieves a list of active network connections from a host or endpoint. This integration action queries the endpoint for current network connection information, useful for investigating lateral movement or unauthorized communications. Sightings Search checks observables, Block Action restricts access, Get Running Processes lists processes, and Isolate Host quarantines a device." data-source-url="">
 <h2>Question 79</h2>
 <p class="question-stem">Select the one capability that retrieves a list of active network connections from a host or endpoint.</p>
 <div class="answer-options">
@@ -1072,7 +1074,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="LDAP, Direct Web Service, and SOAP are types of integration methods (A). These are different technical protocols used to integrate ServiceNow with external systems for data exchange. Data mapping (B) is the process of aligning fields between systems. ServiceNow access protocol (C) and Reporting methods (D) are not the category these three belong to." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="LDAP, Direct Web Service, and SOAP are types of Integration methods. These are protocols and technologies used to integrate ServiceNow with external systems. LDAP integrates with directory services, Direct Web Service makes HTTP calls, and SOAP provides XML-based web service communication. They are not data mapping techniques, access protocols, or reporting methods." data-source-url="">
 <h2>Question 80</h2>
 <p class="question-stem">LDAP, Direct Web Service, and SOAP are types of what?</p>
 <div class="answer-options">
@@ -1085,7 +1087,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,C,E" data-community="false" data-explanation="Three pieces of information events from external tools should include are: Event description (B) to populate the security incident description, Event classification set to Security (C) to distinguish from IT events, and Node set to CI name/IP/sys_id (E) to identify the affected resource. Per the docs, these fields map to security incident fields. Similar indicators (A) and whitelisted/blacklisted IPs (D) are not required event fields." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/secops-integration-with-splunk.html">
+<div class="question-card" data-answer="B,C,E" data-community="false" data-explanation="Events from external tools should include: Event description which populates the security incident description (B), Event classification set to Security to distinguish from IT events (C), and Node set to the name, IP address, or sys_id of the CI that becomes the affected resource (E). Lists of similar indicators and whitelisted/blacklisted IPs are not required event fields." data-source-url="">
 <h2>Question 81</h2>
 <p class="question-stem">Events received from external tools should include what information? (Choose three.)</p>
 <div class="answer-options">
@@ -1099,7 +1101,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,D" data-community="false" data-explanation="Three key features of Microsoft Defender for Endpoint integration are: Host enrichment (A), IoC enrichment (B), and Response actions (D). Per the SIR doc, the Defender integration enriches security incidents with host and IoC data and enables response actions like isolating endpoints. Enterprise Security Search (C) is a separate integration capability, not a key feature of the Defender integration." data-source-url="">
+<div class="question-card" data-answer="A,B,C" data-community="false" data-explanation="Key features of Microsoft Defender for Endpoint integration include: Perform host enrichment actions to gather endpoint information (A), Find indicators of compromise and enrich incidents with threat intelligence (B), and Perform Enterprise Security Search to sight malicious observables across endpoints with remediation actions (C). These three represent the core enrichment, detection, and response capabilities of the integration." data-source-url="">
 <h2>Question 82</h2>
 <p class="question-stem">Select all of the following which are key features of Microsoft Defender for Endpoint. (Choose three.)</p>
 <div class="answer-options">
@@ -1112,7 +1114,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="The timezone of a CI is derived from its Location (D). In ServiceNow, Configuration Items inherit timezone from the Location record associated with them. This allows SIR to correctly timestamp events and incidents based on where the affected asset is located. Timezone is not stored directly on the CI itself (A), nor from the assigned user (B) or the incident record (C)." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The time zone of a CI is determined by the time zone of the location. CIs inherit their time zone from their Location record in the CMDB. The Location table has a time zone field that applies to all CIs at that location. Computer time zone settings, clock fields, and asset owner time zones are not used for CI time zone determination in ServiceNow." data-source-url="">
 <h2>Question 83</h2>
 <p class="question-stem">The time zone of a CI is determined by:</p>
 <div class="answer-options">
@@ -1125,7 +1127,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C,D,E" data-community="false" data-explanation="Security tags in SIR can be applied to Indicators/Observables (C), Response Tasks (D), and Security Incidents (E). These three record types support tag classification for information sharing controls like TLP. Alerts (A) and Configuration Items (B) do not support security tags in the baseline SIR application." data-source-url="">
+<div class="question-card" data-answer="C,D,E" data-community="false" data-explanation="Security tags can be applied to Indicators and observables (C), Response Tasks (D), and Security Incidents (E). Tags like TLP classifications are applied to these security-specific record types to control information sharing and classification. Regular Incidents, Problems, Change Orders, and CMDB CI records do not receive security tags in the SIR context." data-source-url="">
 <h2>Question 84</h2>
 <p class="question-stem">Security tags can be applied to which of the following record types? (Choose three.)</p>
 <div class="answer-options">
@@ -1141,7 +1143,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,D" data-community="false" data-explanation="To create a custom process definition, you need a Process Definition record (B) and a Script Include (D). The Process Definition record defines the lifecycle states and transitions, while the Script Include contains the server-side logic that drives state management for the custom process. A Flow (A) is optional for automation. A UI Policy (C) is for form behavior, not process definition." data-source-url="">
+<div class="question-card" data-answer="B,D" data-community="false" data-explanation="Creating custom process definitions requires a Process Definition record (B) to define the states and transitions, and a Script Include (D) to implement the custom logic for state management and validation. Process definitions use script includes to enforce state transition rules. Client-side scripts and Business Rules are not the primary components for process definition creation." data-source-url="">
 <h2>Question 85</h2>
 <p class="question-stem">The creation of custom process definitions would require which of the following platform components? (Choose two.)</p>
 <div class="answer-options">
@@ -1154,7 +1156,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="GREEN: TLP:GREEN (D) is used for information that is useful for awareness by the wider community. Per the docs, TLP:GREEN information may be shared with peers and partner organizations but not posted publicly. TLP:WHITE (A) is for unrestricted public sharing. TLP:AMBER (B) requires need-to-know restrictions. TLP:RED (C) is for named recipients only." data-source-url="https://www.servicenow.com/docs/r/security-management/create-class-group-and-tags.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="TLP:GREEN is the security tag used when information is useful for awareness of all participating organizations and peers within the broader community or sector. GREEN indicates the information can be shared broadly within the community but not publicly. TLP:RED is most restricted, TLP:AMBER is limited disclosure, and TLP:WHITE is unrestricted public sharing. TLP:PURPLE does not exist." data-source-url="">
 <h2>Question 86</h2>
 <p class="question-stem">Which Security tag is used when information is useful for the awareness of all participating organizations as well as with peers within the broader community or sector?</p>
 <div class="answer-options">
@@ -1167,7 +1169,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="The key activity of Major Security Incident Management is linking child security incidents to a major security incident (C). MSIM consolidates related security incidents under a single major incident for coordinated response. Creating problem records (A) is ITSM. Assigning severity levels (B) is part of general SIR triage. Generating compliance reports (D) is a governance function." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Major Security Incident Management links security incidents as child incidents to the major security incident (MSI) so that all security incidents can be worked. The parent-child relationship allows the MSI to serve as an umbrella record coordinating response across multiple related security incidents. Child incidents are linked to the MSI (parent), not the other way around." data-source-url="">
 <h2>Question 87</h2>
 <p class="question-stem">Which of the following management activities are associated with Major Security Incident Management?</p>
 <div class="answer-options">
@@ -1180,7 +1182,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,C,D" data-community="false" data-explanation="Three key features of Major Security Incident Management are: Dedicated chat channel (B), Child response tasks (C), and Dedicated MSIM workspace (D). These features enable coordinated response by providing a collaboration channel, task management for sub-incidents, and a purpose-built workspace for major incident handling. Automated root cause analysis (A) is not a baseline MSIM feature." data-source-url="">
+<div class="question-card" data-answer="B,C,D" data-community="false" data-explanation="Key features of Major Security Incident Management include: Chat channel manager and activity stream for communications via Teams integration (B), Organize response tasks across multiple child security incidents (C), and Dedicated workspace for managing major security incidents for the MSI manager role (D). Organizing tasks across parent incidents (A) is incorrect — tasks are organized across child incidents." data-source-url="">
 <h2>Question 88</h2>
 <p class="question-stem">Select all of the following which are key features of Major Security Incident Management. (Choose three.)</p>
 <div class="answer-options">
@@ -1193,7 +1195,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,C,D" data-community="false" data-explanation="Three key features of the MISP integration are: Auto-extract MITRE ATT&amp;CK techniques (B), Add observables as MISP attributes (C), and Update MISP events from security incidents (D). These enable bidirectional threat intelligence sharing between ServiceNow SIR and MISP. Automated incident creation from MISP alerts (A) is not a listed MISP integration feature." data-source-url="">
+<div class="question-card" data-answer="B,C,E" data-community="false" data-explanation="Key features of the Malware Information Sharing Platform (MISP) integration include: Auto-extract MITRE ATT&amp;CK information from MISP attributes and associate to SIR incidents (B), Add security incident observables as attributes to a MISP event (C/E), and Update MISP events from SIR including adding observables (D becomes E conceptually). The dedicated workspace for MSI is a separate feature, not MISP-specific." data-source-url="">
 <h2>Question 89</h2>
 <p class="question-stem">Select all of the following which are key features of the Malware Information Sharing Platform. (Choose three.)</p>
 <div class="answer-options">
@@ -1206,7 +1208,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="The sn_msi.workspace_manager role (B) is required to customize Major Security Incident reports. This role provides management access to the MSIM workspace configuration including report customization. sn_si.admin (A) manages SIR configuration but not MSIM report customization specifically. sn_si.manager (C) has incident management capabilities. admin (D) has broad access but is not the minimum required role." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The sn_msim.workspace_manager role is required to customize major security incident reports based on incremental progress since the last summary update. This role provides management-level access to the MSI workspace including report customization. Note the &#x27;sn_msim&#x27; prefix (Major Security Incident Management) rather than &#x27;sn_msi&#x27;. The workspace_admin, workspace_user, and sn_msi.workspace_manager are different roles." data-source-url="">
 <h2>Question 90</h2>
 <p class="question-stem">Which role must a user have to customize major security incident reports based on the incremental progress since last summary update?</p>
 <div class="answer-options">
@@ -1219,7 +1221,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="All calculator groups run, but only the first matching calculator within each group applies to determine severity (B). Calculator groups allow multiple calculators to be evaluated in priority order, with the first matching one in the group setting the severity contribution. Not all calculators run without restriction (A). Groups do not prevent all calculators from running (C). The highest-scored calculator does not automatically win (D)." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="All Calculator Groups run in order but only the first matching calculator from each group will apply. Within each calculator group, calculators are evaluated sequentially based on their order field. Once a calculator&#x27;s conditions match, it is applied and remaining calculators in that group are skipped. The system then moves to the next group. This ensures one calculator per group affects the final score." data-source-url="">
 <h2>Question 91</h2>
 <p class="question-stem">Which statement about Security Incident Calculators is correct?</p>
 <div class="answer-options">
@@ -1232,7 +1234,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="In Service Mapping, when no Pattern Identification Section matches for an application, it is identified as a Generic application. The Identification Section contains rules that match specific applications by checking processes, ports, or other attributes. When none of these rules match, the application falls through to the Generic classification as a catch-all. Connection Sections determine relationships between CIs (not identification). Identification Rules are within the pattern (B conflates two sections). The answer is specifically about the Identification Section having no matches." data-source-url="">
 <h2>Question 92</h2>
 <p class="question-stem">In Service Mapping, when an application is identified as a Generic application, which one of the following is the cause?</p>
 <div class="answer-options">
@@ -1242,8 +1244,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> No Pattern Connection Section matches</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="The PIR report is generated as an attachment on the original security incident (C). Per the docs, the Post Incident Review report is attached directly to the security incident record after completion. It is not stored in a separate PIR table (A), a dedicated report module (B), or a knowledge article (D)." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/t_CrtScrIncdtKnwArt.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="When a Post-Incident Review report is created, it can be found as an unpublished article in a knowledge base. The PIR generates a knowledge article draft containing incident details, questionnaire responses, and lessons learned. It is created as unpublished so it can be reviewed and edited before being published or shared. It is not auto-published or saved as an attachment." data-source-url="">
 <h2>Question 93</h2>
 <p class="question-stem">When a Post-Incident Review report is created, it can be found…</p>
 <div class="answer-options">
@@ -1256,7 +1260,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="The main goal of Security Incident Response is to reduce the time to contain security incidents (B). SIR focuses on accelerating containment to limit the blast radius of security events. Reducing the number of incidents (A) is a prevention goal. Improving compliance posture (C) is a governance objective. Automating all security tasks (D) is a means, not the primary goal." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The main goal of the Security Incident Response process is to minimize impact. The ultimate objective of SIR is to reduce the business impact of security incidents through rapid detection, efficient containment, thorough eradication, and quick recovery. Automating processes, reducing time to contain, and saving money are supporting objectives, but minimizing impact is the overarching goal." data-source-url="">
 <h2>Question 94</h2>
 <p class="question-stem">What is the main goal of the Security Incident Response process?</p>
 <div class="answer-options">
@@ -1269,7 +1273,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="The most important consideration before automating processes is understanding the customer&#x27;s willingness to change (A). Automation requires organizational buy-in and process maturity; without stakeholder acceptance, automation initiatives will fail regardless of technical capability. Available integrations (B) and tool availability (C) are secondary. Cost savings (D) are a benefit, not a primary consideration." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Before helping customers automate different processes, you should understand their internal processes. You need to know how security incidents are currently handled before automating anything — automating a broken or undefined process leads to poor outcomes. Understanding existing workflows, handoffs, and decision points ensures automation enhances rather than disrupts operations." data-source-url="">
 <h2>Question 95</h2>
 <p class="question-stem">What should you consider before helping customers automate different processes?</p>
 <div class="answer-options">
@@ -1282,7 +1286,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Inbound Email Actions (A) is the platform functionality used to create security incidents from incoming emails. Inbound Email Actions process incoming emails and trigger record creation based on configured rules. Business Rules (B) trigger on database operations. Flow Designer (C) automates workflows after records exist. UI Actions (D) are triggered by user interaction on forms." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Security Incidents can be created using Inbound Email Actions. Inbound Email Actions process incoming emails based on conditions and scripts, creating records in target tables including sn_si_incident and sn_si_phishing_email. Email matching rules, Email rules, and Notifications are not the platform functionality that creates records from inbound emails." data-source-url="">
 <h2>Question 96</h2>
 <p class="question-stem">Security Incidents can be created using which platform functionality?</p>
 <div class="answer-options">
@@ -1295,7 +1299,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="Inbound Email Actions use Conditions and Scripts (B) to process incoming emails. Conditions determine whether an action applies to a given email, and scripts define what happens when conditions are met — such as creating a security incident. Triggers and Actions (A) are Flow Designer components. Rules and Transforms (C) are used in email parsing configuration. Filters and Workflows (D) are not the primary IEA components." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Inbound Email Actions use Conditions and Scripts to take action on a target table when receiving emails. Inbound Email Actions evaluate incoming emails against defined conditions and execute scripts to create or update records in specified target tables. Email Matching Rules, User Reported Phishing Script Include, and Email Scheduler serve different purposes." data-source-url="">
 <h2>Question 97</h2>
 <p class="question-stem">Which platform functionality uses Conditions and Scripts to take action on a target table when receiving emails?</p>
 <div class="answer-options">
@@ -1308,7 +1312,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="In scoped applications, actions are called Spokes (C). Integration Hub Spokes are pre-built integration packages that provide reusable actions for connecting ServiceNow with external systems within scoped application flows. Scripts (A) are server-side code. Flows (B) are the automated process containers. Subflows (D) are reusable flow components, not the scoped action packages." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Actions packaged in Scoped applications are called Spokes. In the Integration Hub and Flow Designer ecosystem, a spoke is a scoped application containing a collection of related actions, subflows, and integration logic. Spokes provide pre-built integrations with third-party tools. Action Groups, Categories, and Subflows are different concepts within the Flow Designer framework." data-source-url="">
 <h2>Question 98</h2>
 <p class="question-stem">Actions packaged in Scoped applications are called:</p>
 <div class="answer-options">
@@ -1321,7 +1325,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="Execution Details (C) in Flow Designer shows the outcomes when testing a flow. The Execution Details panel displays step-by-step results, inputs, outputs, and any errors for each action when a flow is tested or executed. Flow Summary (A) shows high-level information. Audit Log (B) tracks changes to records. Test Results (D) is not the specific panel name in Flow Designer." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="When testing a flow, the action outcomes can be found in the Execution Details. After a flow test run completes, the Execution Details section shows the results of each action, including input/output values, success/failure status, and any error messages. Configuration Details shows flow setup, System Log has platform events, and Content Record is not a flow testing location." data-source-url="">
 <h2>Question 99</h2>
 <p class="question-stem">When testing a flow, the action outcomes can be found where?</p>
 <div class="answer-options">
@@ -1334,7 +1338,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,C" data-community="false" data-explanation="The two baseline Flow Logic components are For Each Loops (A) and If/Then conditions (C). Flow Logic provides conditional branching and iteration within flows. For Each loops iterate over collections of records, and If/Then conditions branch flow execution based on criteria. While loops (B) are not a baseline Flow Logic component. Try/Catch blocks (D) are scripting constructs, not Flow Logic components." data-source-url="">
+<div class="question-card" data-answer="A,C" data-community="false" data-explanation="Flow Logic in the baseline includes For Each Loops (for iterating over collections of records) and If Then conditions (for conditional branching). These two logic constructs enable flows to handle collections and make decisions. Interrupts, Function Calls, and Wait Until are not baseline Flow Logic types (though Wait For is available separately)." data-source-url="">
 <h2>Question 100</h2>
 <p class="question-stem">Flow Logic in the baseline includes: (Choose two.)</p>
 <div class="answer-options">
@@ -1348,7 +1352,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Subflows (D) are the reusable operations that can be invoked from multiple playbooks or flows. Subflows encapsulate common sequences of actions that can be called from different parent flows, enabling reuse across SIR playbooks. Actions (A) are individual steps within flows. Spokes (B) are integration action packages. Workflows (C) are the legacy automation engine." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Subflows contain a set of reusable operations designed to be used in multiple playbooks. Subflows encapsulate common sequences of actions that can be called from different flows, promoting reuse and consistency. Flows are complete automation units with triggers, Actions are individual operations, and Triggers initiate flows — none are specifically designed for cross-playbook reuse." data-source-url="">
 <h2>Question 101</h2>
 <p class="question-stem">What contains a set of reusable operations that are designed to be used in multiple playbooks?</p>
 <div class="answer-options">
@@ -1361,7 +1365,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="Flows (C) automate processes and support triggers with a sequence of reusable actions in Flow Designer. A flow is triggered by a defined event or condition and executes a sequence of actions to automate a business process. Subflows (A) are reusable components called by flows, not triggered independently. Actions (B) are individual steps. Spokes (D) are integration packages, not process automation containers." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Flows automate processes and support triggers with a sequence of reusable actions. A flow is the primary automation construct in Flow Designer, consisting of a trigger that starts it and a sequence of actions that execute. Subflows are reusable components without triggers, Actions are individual steps, and Activities is legacy workflow terminology." data-source-url="">
 <h2>Question 102</h2>
 <p class="question-stem">What automates processes and supports triggers with a sequence of reusable actions?</p>
 <div class="answer-options">
@@ -1374,7 +1378,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="The &#x27;Transform Phishing Email to Security Incident&#x27; flow (D) creates a new Security Incident record once a Phishing Email record is created. Per the docs: &#x27;The Transform user-reported phishing emails to security incidents flow creates security incidents from the phishing email records and aggregates similar records into a single incident.&#x27; The other options (A, B, C) are not the correct flow names." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/playbook-flow-based.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Once a Phishing Email record is created, the Transform Phishing Email to Security Incident flow creates a new Security Incident record. This flow processes the phishing email record, extracts relevant information, and generates a security incident with pre-populated fields. The Automated Phishing Playbook runs after the incident exists, and the other options are not valid flow names." data-source-url="">
 <h2>Question 103</h2>
 <p class="question-stem">Once a Phishing Email record is created, which Flow creates a new Security Incident record?</p>
 <div class="answer-options">
@@ -1387,7 +1391,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="When an inbound email is processed as a phishing email in URP v2, it is stored in the Security Incident Phishing Email table (B), corresponding to sn_si_phishing_email. Per the docs: &#x27;When a new phishing email record is created in the sn_si_phishing_email table.&#x27; Security Incident Alert (A) and Security Incident (C) are different tables. Incident (D) is the ITSM table." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/urp-about.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="When an inbound email identified as phishing is processed for URP v2, it is stored in the Security Incident Phishing Email table (sn_si_phishing_email). This specialized table captures phishing-specific details including headers, observables, and email content before a security incident is created. The record is not stored directly in the Security Incident or Incident tables." data-source-url="">
 <h2>Question 104</h2>
 <p class="question-stem">When an inbound email is processed and identified as a phishing email what table is it stored in for URP v2?</p>
 <div class="answer-options">
@@ -1400,7 +1404,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="E" data-community="false" data-explanation="To use URP v2, the Transform Flow must be copied and activated (E) in Flow Designer. Per the docs: &#x27;select Activate to activate the flow so that it can be executed.&#x27; The flow must be copied from the baseline template and then activated — simply publishing (A) or activating without copying (B) is insufficient. Transform Action (C) and Aggregation Subflow (D) are not the correct requirements." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/urp-about.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="To use User Reported Phishing v2, the Transform Flow must be activated in Flow Designer. The transform flow is responsible for converting phishing email records into security incidents. It comes deactivated by default and must be explicitly activated to enable the URP v2 processing pipeline. Publishing, copying, or activating actions/subflows is not the correct step." data-source-url="">
 <h2>Question 105</h2>
 <p class="question-stem">In order to use User Reported Phishing v2, what must occur in Flow Designer?</p>
 <div class="answer-options">
@@ -1414,7 +1418,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="The Short Description field (A) in the Flow Action for Creating a Response Task must contain the same value as the Runbook name. Per the docs: &#x27;This is the short description of the task and you need this text (exactly as it appears in the playbook) to associate a knowledge article with the task.&#x27; Action (B), Runbook (C), and Knowledge article (D) are not the field that must match the runbook name." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/t_CrtScrIncdtKnwArt.html">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="When setting up a Playbook, the Runbook field in the Flow Action for Creating a Response Task must contain the same value as the Runbook name. This creates the link between the flow&#x27;s response task and the runbook containing guidance knowledge articles. If the Runbook field value does not match an existing runbook name, the task will not have associated documentation." data-source-url="">
 <h2>Question 106</h2>
 <p class="question-stem">When setting up a Playbook what field in the Flow Action for Creating a Response Task must contain the same value as the Runbook name?</p>
 <div class="answer-options">
@@ -1427,7 +1431,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Runbook records link to Knowledge articles (A) for content. Per the docs: &#x27;A runbook is an association between a published knowledge article and a specific task.&#x27; Per the docs: &#x27;you can organize knowledge articles into runbooks, which create associations between the articles and specific tasks.&#x27; Response Tasks (B), Managed Documents (C), and Instruction Details (D) are not what runbooks link to for content." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/t_CrtScrIncdtKnwArt.html">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Runbook records utilize a link to a Knowledge article for content. Runbooks connect response tasks to knowledge base articles that contain step-by-step instructions for analysts. The knowledge article provides the actual procedural content, while the runbook record creates the linkage. Response Tasks, Managed Documents, and Instruction Details are not the content source for runbooks." data-source-url="">
 <h2>Question 107</h2>
 <p class="question-stem">Runbook records utilize a link to what type record for content?</p>
 <div class="answer-options">
@@ -1440,7 +1444,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="The Outcome Type field (B) contains the yes_no value that drives a question being asked in the playbook when the &#x27;Create Response Task set Incident state V1&#x27; action is selected. The Outcome Type field on a response task determines whether a decision point (yes/no question) is presented to the analyst. Question Type (A), SI State (C), and Answer Type (D) are not the field driving yes/no questions." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="The Outcome Type field contains the yes_no value that drives a question being asked in the playbook. When the Create Response Task set Incident state V1 action&#x27;s Outcome Type is set to yes_no, the playbook presents the analyst with a yes/no decision point that determines the flow&#x27;s branching path. Question Type, SI State, and Answer Type are not the correct fields." data-source-url="">
 <h2>Question 108</h2>
 <p class="question-stem">In a Flow, if the Create Response Task set Incident state V1 action is selected, what field contains the yes_no value that drives a question being asked in the playbook?</p>
 <div class="answer-options">
@@ -1453,7 +1457,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,F" data-community="false" data-explanation="Runbooks create a relationship between Security Incident Response Tasks (B) and Knowledge articles (F). Per the docs: &#x27;A runbook is an association between a published knowledge article and a specific task.&#x27; Per the docs, this enables knowledge articles to open automatically while working response tasks. Events (A), Alerts (D), and Workflow Triggers (E) are not components of a runbook relationship." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/t_CrtScrIncdtKnwArt.html">
+<div class="question-card" data-answer="C,F" data-community="false" data-explanation="Runbooks create a relationship between Playbook Tasks (C) and Knowledge articles (F). The runbook links a specific playbook response task to a knowledge article containing procedural guidance. This association ensures analysts have documented instructions available when working each task. Events, Alerts, and Workflow Triggers are not directly linked through runbooks." data-source-url="">
 <h2>Question 109</h2>
 <p class="question-stem">Runbooks are used to create a relationship between what components? (Choose two.)</p>
 <div class="answer-options">
@@ -1468,7 +1472,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="Data Pills (C) are included in the real-time data model in the right pane of the Flow Designer UI and can be dragged and dropped into fields in the main flow workspace. Data pills represent dynamic field values from trigger outputs and action outputs. Record Objects (A), Table References (B), and Code Snippets (D) are not the draggable elements in the Flow Designer data model pane." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Data Pills are included in the real-time data model in the right pane of the Flow Designer UI and can be dragged and dropped into fields. Data pills represent available data values from trigger records, action outputs, and flow variables. They provide a visual, code-free way to reference data within flow actions. Record Objects, Table References, and Code Snippets are not the correct term." data-source-url="">
 <h2>Question 110</h2>
 <p class="question-stem">What is included in the real-time data model in the right pane of the Flow Designer UI that may be dragged and dropped into fields in the main flow workspace?</p>
 <div class="answer-options">
@@ -1481,7 +1485,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D,F" data-community="false" data-explanation="Ingestion Rules (D) and Duplication Rules (F) configure how email phishing incidents are processed. Per the docs, ingestion/email matching rules determine which emails create phishing records. Duplication Rules configure aggregation of similar phishing records into a single incident per. Risk Rules (A), Inbound Property Rules (B), CI Lookup Rules (C), and Condition Rules (E) are not phishing processing rule types." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/urp-about.html">
+<div class="question-card" data-answer="D,F" data-community="false" data-explanation="Ingestion Rules and Duplication Rules can be used to configure how email phishing incidents are processed. Ingestion rules determine how phishing emails are evaluated and promoted to security incidents. Duplication rules check whether a phishing email has already been reported to prevent duplicate incidents. Risk Rules, Inbound Property Rules, CI Lookup Rules, and Condition Rules are not used for phishing email processing." data-source-url="">
 <h2>Question 111</h2>
 <p class="question-stem">What kind of rules can be used to configure how email phishing incidents are processed? (Choose two.)</p>
 <div class="answer-options">
@@ -1496,7 +1500,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="The sn_msi.workspace_manager role (D) is required to customize major security incident reports. Per the docs: &#x27;MSI Manager sn_msi.workspace_manager — View and edit incident record data... Promote the security incident to a major security incident.&#x27; Per the docs, this is the manager-level MSIM role. sn_msi.workspace_user (A) and sn_msi.workspace_responder (B) have limited access. sn_msim.workspace_responder (C) is not a valid role name." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/adding-access-control-lists-for-msim-workspace-users.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The sn_msi.workspace_manager role is required to customize major security incident reports based on incremental progress since the last summary update. This role grants management-level access to the MSI workspace including the ability to customize and generate progress reports. The workspace_user and workspace_responder roles have insufficient permissions for report customization." data-source-url="">
 <h2>Question 112</h2>
 <p class="question-stem">Which role must a user have to customize major security incident reports based on the incremental progress since last summary update?</p>
 <div class="answer-options">
@@ -1509,7 +1513,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B" data-community="false" data-explanation="Risk Score weighting uses Business Impact of a CI or Security Incident (A) and Severity and Priority of a Security Incident (B). Per the docs: &#x27;if a security incident has a Business impact set to 2-High and a Priority set to 3-Moderate, the respective weights in the Risk Score Weights table are looked up&#x27; to compute the risk score. Cost/Risk (C), SLA/Schedule (D), and Impact/Urgency (E) are not the Risk Score weighting components." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/setup-assistant-reference.html">
+<div class="question-card" data-answer="A,E" data-community="false" data-explanation="Risk Score weighting uses Business impact of a CI or Security Incident (A) and Impact and Urgency of a Security incident (E). The risk score calculation considers the business criticality of affected assets and the standard ITSM impact/urgency values. Severity and Priority are derived values, Cost and Risk are not direct weighting components, and SLA/Schedule are not part of risk scoring." data-source-url="">
 <h2>Question 113</h2>
 <p class="question-stem">Risk Score weighting uses which of the following components? (Choose two.)</p>
 <div class="answer-options">
@@ -1523,7 +1527,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Everyone (A) is responsible for identifying security incidents. This is a foundational security principle — all employees, not just security staff, can encounter and must report potential security incidents. Limiting identification responsibility to Managers (B), IT personnel (C), or Security analysts (D) alone would leave significant detection gaps in the organization." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Everyone is responsible for identifying security incidents. Security awareness is an organization-wide responsibility — any employee who notices suspicious activity, phishing emails, or unusual system behavior should report it. While security analysts investigate and respond, the initial identification of potential security incidents is not limited to IT personnel, managers, or security specialists." data-source-url="">
 <h2>Question 114</h2>
 <p class="question-stem">Who is responsible for identifying security incidents?</p>
 <div class="answer-options">
@@ -1536,7 +1540,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,C,E" data-community="false" data-explanation="Three key features of MISP integration are: Auto-extract MITRE ATT&amp;CK information from MISP attributes (B), Attribute enrichment including adding or updating tags, galaxies, or attributes (C), and Add security incident observables as attributes to a MISP event (E). Per the docs: these are explicitly listed MISP integration features. Dedicated MISP workspace (A) is not a feature. Sending malware for detonation (D) is not a MISP integration capability." data-source-url="https://www.servicenow.com/docs/r/security-management/misp-integration-for-security-operations.html">
+<div class="question-card" data-answer="B,C,E" data-community="false" data-explanation="Key features of MISP integration include: Auto-extract MITRE ATT&amp;CK information from MISP attributes and associate them to SIR security incidents (B), Attribute enrichment including adding or updating tags, galaxies, or attributes (C), and Add security incident associated observables as attributes to a MISP event (E). Dedicated MISP workspace and malware detonation are not MISP integration features." data-source-url="">
 <h2>Question 115</h2>
 <p class="question-stem">Select all of the following which are key features of the Malware Information Sharing Platform (Choose three.)</p>
 <div class="answer-options">
@@ -1550,7 +1554,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,C" data-community="false" data-explanation="The three target personas for MITRE ATT&amp;CK 2.0 are: SOC Managers and CISO (A), Security and Threat Intelligence Administrators (B), and Security Analysts (C). Per the docs, these roles use the ATT&amp;CK repository for strategic oversight, administration, and operational analysis respectively. Compliance Managers (D) and Penetration Testers (E) are not MITRE ATT&amp;CK 2.0 target personas in SIR." data-source-url="https://www.servicenow.com/docs/r/security-management/mitre-dashboards.html">
+<div class="question-card" data-answer="A,B,C" data-community="false" data-explanation="The target personas for MITRE ATT&amp;CK 2.0 are SOC Managers and CISO (A), Security and Threat Intelligence Administrators (B), and Security Analysts (C). These three personas use the ATT&amp;CK framework for strategic planning, threat intelligence management, and tactical investigation respectively. Compliance Managers and Penetration Testers are not primary ATT&amp;CK 2.0 target personas." data-source-url="">
 <h2>Question 116</h2>
 <p class="question-stem">Select all of the following which are the target personas for MITRE ATT&CK 2.0? (Choose three.)</p>
 <div class="answer-options">
@@ -1564,7 +1568,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="A user modifies Risk Scores to suit organizational needs by altering values in the Risk Score Configuration module (A). Per the docs, the Risk Score Weights table stores the weight values for Business Impact and Priority fields — these are configured via the Risk Score Configuration module. Amending script constants (B), changing CI business impact (C), and recoding calculator logic (D) are not the standard way to adjust risk score weights." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/setup-assistant-reference.html">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="To modify Risk Scores to suit organizational needs, you amend constants in the RiskScoreUtil script include. The RiskScoreUtil script include contains the calculation logic and weighting constants used in risk score computation. By modifying these constants, administrators can adjust how different factors contribute to the final risk score. The Risk Score Configuration module and Risk Score Calculator are not the correct modification points." data-source-url="">
 <h2>Question 117</h2>
 <p class="question-stem">How does a user modify Risk Scores to suit their organizational needs?</p>
 <div class="answer-options">
@@ -1577,7 +1581,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C,D,E" data-community="false" data-explanation="To prepare for a new Salesforce release: (C) Review release notes for automatically-enabled features and any technical debt that needs addressing. (D) Refresh a sandbox during the Release Preview Window to get the upcoming release for testing. (E) Run regression tests in the upgraded sandbox to detect compatibility issues. Upgrading SOAP integrations early (A) is premature since the release hasn&#x27;t arrived. Contacting Salesforce to schedule sandbox upgrades (B) is not necessary as sandbox refreshes follow the preview schedule automatically." data-source-url="">
 <h2>Question 118</h2>
 <p class="question-stem">Universal Containers (UC) is preparing for the new Salesforce release in a couple of months, and has several ongoing development projects that may be affected.<br />Which three steps should the team at UC take to prepare for this release? (Choose three.)</p>
 <div class="answer-options">
@@ -1588,8 +1592,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> Run regression tests in an upgraded sandbox to detect any issues with the upgrade.</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C,D,E" data-community="false" data-explanation="Three ways SIR teams can increase productivity are: Process automation (C), Training (D), and Form personalization (E). Per the docs, automation reduces manual effort; training improves analyst efficiency; form personalization streamlines workflows. Red/Blue automation (A) is a security testing concept, not a SIR productivity strategy. Export to spreadsheet pivot tables (B) is not a recommended SIR productivity approach." data-source-url="https://www.servicenow.com/docs/r/security-management/security-incident-response/domain-separation-security-incident-response.html">
+<div class="question-card" data-answer="A,C,D" data-community="false" data-explanation="SIR teams can increase productivity through: Process automation (A) to handle repetitive tasks, Training (C) to improve analyst capabilities and efficiency, and Form personalization (D) to streamline workflows and reduce unnecessary clicks. Red/Blue automation and exporting to spreadsheet pivot tables are not standard SIR productivity methods. This question is similar to Q71 with slightly different option ordering." data-source-url="">
 <h2>Question 119</h2>
 <p class="question-stem">What are some of the ways SIR teams can increase their productivity? (Choose three.)</p>
 <div class="answer-options">
@@ -1603,7 +1609,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="One of the Security Incident Response Team&#x27;s key activities is monitoring security alerts (C). The SIR team monitors alerts and events from security tools to detect and respond to incidents. Patching vulnerabilities (A) is an IT operations task. Escalating incidents (B) is one step, not a primary team activity. Penetration testing (D) is an offensive security activity performed by red teams." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Monitoring security alerts is one of the Security Incident Response Team&#x27;s activities. The SIR team actively monitors alerts from security tools and event management systems to detect potential security incidents. Patching vulnerabilities is an IT operations task, escalating incidents is a service desk function, and penetration testing is performed by dedicated security assessment teams." data-source-url="">
 <h2>Question 120</h2>
 <p class="question-stem">What is one of the Security Incident Response Team’s activities?</p>
 <div class="answer-options">
@@ -1616,7 +1622,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="For addressing critical bugs while a long development project is ongoing, the recommended strategy is to use a dedicated Developer Pro sandbox specifically for critical bug fixes. This keeps bug fix work separate from the main development project, allowing critical fixes to be tested and deployed to production independently without waiting for the larger project to complete. Mixing fixes into Development sandboxes (A/D) risks incomplete code reaching production. A Full Copy merge at project end (B) delays critical fixes." data-source-url="">
 <h2>Question 121</h2>
 <p class="question-stem">Universal Containers (UC) is about to begin development work on a new project in their Salesforce org that will take many months to complete. UC is concerned about how critical bugs will be addressed for existing live functionality.<br />What is the recommended release management strategy to address this concern?</p>
 <div class="answer-options">
@@ -1626,6 +1632,8 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Address critical bugs in the Development sandboxes and push those changes to production separately.</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
     </main>
     <footer class="site-footer">

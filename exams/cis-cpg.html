@@ -25,7 +25,7 @@
     <main>
         <div class="quiz-banner"><a href="../quiz/cis-cpg.html">Test yourself on Cloud Provisioning and Governance &rarr;</a></div>
 <div class="ai-notice">Answers verified with AI using ServiceNow documentation. Exercise your own judgement.</div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Schedule Profile defines when to start and stop a resource (D). It specifies time-based availability windows for cloud resources. Security Profile (A) manages security group assignments. Application Profile (B) handles post-provision app configuration. Lease Profile (C) defines duration-based lifecycle controls, not start/stop schedules." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The Schedule Profile defines when to start and stop a resource. It lets administrators specify the days of the week and times of day when a stack should be started, stopped, or deprovisioned. Security Profiles and Lease Profiles are not real CPG resource profile types. Application Profiles install software on provisioned resources, not control timing." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/cloud-resource-profiles.html">
 <h2>Question 1</h2>
 <p class="question-stem">Which Resource Profile can be used to define when start and stop a resource?</p>
 <div class="answer-options">
@@ -38,7 +38,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,E" data-community="false" data-explanation="Compute Profile defines custom t-shirt sizes (B) such as small/medium/large for virtual hardware, and defines when virtual hardware can be provisioned (E). It does not define virtual hardware presented to end users (A — that is Catalog Item), OS choices (C — OS Profile), or Security Groups (D — Security Profile)." data-source-url="">
+<div class="question-card" data-answer="A,B" data-community="false" data-explanation="A Compute Profile specifies the virtual hardware for newly-provisioned VMs, including virtual CPUs, memory, and local storage (A). It also defines custom t-shirt sizes like Micro, Small, Medium, and Large that map to specific hardware configurations (B). OS choices belong to OS Profiles (C), Security Group offerings to Compute Security Group Profiles (D), and provisioning schedules to Schedule Profiles (E)." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/cloud-resource-profiles.html">
 <h2>Question 2</h2>
 <p class="question-stem">Which of the following is true for a Compute Profile? (Choose two.)</p>
 <div class="answer-options">
@@ -52,7 +52,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="The Viewer permission makes a Catalog Item visible but not executable (C). Users with Viewer can browse and inspect the item without running it. Execute (D) allows provisioning. Access (B) provides broader access. All (A) grants all permissions. Viewer satisfies the &#x27;viewable but not executable&#x27; requirement for Marketing Developers." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="The Access permission (also called Read) allows users to see a record but not edit, delete, or execute it. This makes a catalog item viewable but not executable. Execute permission would allow running actions, All grants full permissions, and &#x27;Viewer&#x27; is not a real CPG permission type. The five permission types in CPG are: Access [Read], Manage [Create &amp; Update], Delete, Execute, and All." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/cloud-permissions.html">
 <h2>Question 3</h2>
 <p class="question-stem">Which Permission would you use to make a Catalog Item for a cloud native application that you plan to release, viewable but not executable, for users who belong to the Marketing Developers group?</p>
 <div class="answer-options">
@@ -65,7 +65,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,C,D" data-community="false" data-explanation="Governance objects in CPG are Quotas (A), Policies (C), and Permissions (D). Quotas limit resource consumption, Policies enforce compliance rules, Permissions control who can provision what. Credentials (B) are configuration objects for cloud provider authentication. SLAs (E) are service management objects not part of CPG governance." data-source-url="">
+<div class="question-card" data-answer="A,C,D" data-community="false" data-explanation="Cloud Governance in CPG provides four types of governance objects: Quotas (A), Policies (C), Pools, and Permissions (D). Quotas limit resource usage, Policies control approvals and override settings system-wide, and Permissions define group-level access rights. Credentials (B) are authentication objects, not governance, and SLAs (E) are not a CPG governance type." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/cloud-governance.html">
 <h2>Question 4</h2>
 <p class="question-stem">What governance objects are available in Cloud Provisioning and Governance? (Choose three.)</p>
 <div class="answer-options">
@@ -79,7 +79,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="Puppet, Chef, Ansible Tower, and Salt are configuration management tools (B). They automate software configuration and enforce desired state on servers. They are not cost control (A), cloud monitoring (C), or continuous integration platforms (D)." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Puppet, Chef, Ansible Tower, and Salt are all configuration management tools. CPG integrates with these continuous delivery (configuration management) providers to install and manage software on provisioned resources. They are not used for cost control (A), cloud monitoring (C), or continuous integration (D). Ansible is the default supported provider in CPG." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/support-config-management-providers.html">
 <h2>Question 5</h2>
 <p class="question-stem">Which of the following best describes what Puppet, Chef, Ansible Tower and Salt are utilized for?</p>
 <div class="answer-options">
@@ -92,7 +92,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Cloud Scripts and Cloud Script Templates use shell scripts (Linux) and PowerShell scripts (Windows) for host-based software installation (A). Python/Ruby (B) and JavaScript/Perl (C/D) are not the host-based scripting tools used by CPG for software installation on provisioned VMs." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Cloud Script Templates in CPG are actual executables passed to target VMs for execution. They can be Shell scripts, PowerShell scripts, or CloudInit scripts depending on the execution context. The other options list languages (Ruby, JavaScript, Perl) that are not used as host-based Cloud Script Template types in CPG. Cloud Scripts themselves use JavaScript for platform-side logic, but the templates that execute on VMs use Shell and PowerShell." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/cloud-scripts-and-templates.html">
 <h2>Question 6</h2>
 <p class="question-stem">Cloud Scripts and Cloud Script Templates utilize which host based scripting tools to install software?</p>
 <div class="answer-options">
@@ -105,7 +105,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Variable Sets are used to group variables for a Service Catalog item. In CPG, catalog items for cloud templates use variable sets to organize cloud-related variables into logical groups. Each variable set appears as a tab on the catalog item&#x27;s order form, allowing users to fill in grouped parameters (e.g., network settings, compute settings) separately." data-source-url="">
 <h2>Question 7</h2>
 <p class="question-stem">How are variables grouped for a Catalog Item?</p>
 <div class="answer-options">
@@ -116,8 +116,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> Form Parameters</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="A Resource Group must be created in Azure before configuring Azure Alerts in ServiceNow (B). All Azure resources, including alert configurations, belong to a Resource Group. A Network Security Group (A) controls traffic. An App Service (C) hosts web apps. A Monitor Alert (D) is created after the Resource Group exists." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Before configuring Azure Alerts in ServiceNow CPG, you must first create a Monitor Alert rule in Azure. Azure Monitor provides alerting capabilities that generate alerts based on metrics and activity logs. A Network Security Group (A) manages firewall rules, a Resource Group (B) organizes resources, and an App Service (C) hosts web apps. The alert integration requires the Azure Monitor Alert to exist so ServiceNow can receive and process the alert notifications." data-source-url="">
 <h2>Question 8</h2>
 <p class="question-stem">What must be created in Azure before you can configure Azure Alerts in ServiceNow?</p>
 <div class="answer-options">
@@ -130,7 +132,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="The Guided Setup application (D) in the Cloud Admin Portal walks administrators through the process of configuring Cloud Provisioning and Governance. Guided Setup provides step-by-step wizards for configuring integrations. Cloud Orchestration (A), Configuration Templates (B), and Cloud Planner (C) are not the setup wizard application." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Guided Setup is the application in the Cloud Admin Portal that walks administrators through setting up Cloud Provisioning and Governance. It provides a step-by-step wizard for configuring cloud accounts, credentials, discovery, and other required components. Cloud Orchestration (A) handles workflow automation, Configuration Templates (B) are not the setup mechanism, and Cloud Planner (C) is not a real CPG application." data-source-url="">
 <h2>Question 9</h2>
 <p class="question-stem">What application can you use in the Cloud Admin Portal to guide your organization through the process of setting up Cloud Provisioning and Governance?</p>
 <div class="answer-options">
@@ -143,7 +145,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,D" data-community="false" data-explanation="Organizations depend on Billing Data (B) for financial visibility into resource consumption and Tags (D) for cost allocation and resource attribution. Security Groups (A) control access. Identity and Authentication Management (C) handles access control, not billing/resource visibility." data-source-url="">
+<div class="question-card" data-answer="B,D" data-community="false" data-explanation="Tags (D) and Billing Data (B) are the cloud provider features organizations depend on for resource management and billing visibility. Tags categorize cloud resources with key:value metadata that enables detailed tracking and billing reports from multiple perspectives. Billing Data provides the actual cost information. Security Groups (A) handle firewall rules, and Identity and Authentication Management (C) controls access, neither is specifically about resource management and billing." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/cloud-tagging.html">
 <h2>Question 10</h2>
 <p class="question-stem">Which Cloud Provider feature do organizations depend on to provide visibility into resource management and billing? (Choose two.)</p>
 <div class="answer-options">
@@ -156,7 +158,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C,D" data-community="false" data-explanation="To analyze cloud consumption based on a new project identification code, Create a Cloud Script (C) to process and apply the code and add a new CAPI parameter (D) to the interface to pass the identifier through provisioning workflows. Adding a Tag Definition (A) helps labeling but is insufficient alone. A Resource Pool (B) is for grouping, not analysis." data-source-url="">
+<div class="question-card" data-answer="A,E" data-community="false" data-explanation="To track cloud consumption by a new project identification code, you need to: (A) add a new Project Tag to the Tag Definitions so the code becomes part of resource metadata for billing analysis, and (E) manually create a new variable since the tag&#x27;s value type can be set to Variable, presenting users with input on the order form. Resource Pools (B) filter tables, Cloud Scripts (C) install software, and the CAPI interface (D) handles cloud provider communication." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/cloud-tagging.html">
 <h2>Question 11</h2>
 <p class="question-stem">IT has implemented a new poet identification code, and they would like to be able to analyze cloud consumption based upon this code. What features would you use in Cloud Provisioning and Governance to implement this request? (Choose two.)</p>
 <div class="answer-options">
@@ -170,7 +172,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="Governance Rules (B) give managers control over cloud resources provisioned through CPG. Governance Rules enforce policies on what resources teams can deploy, enforcing compliance. Management Request (A) and Approval Policy (D) handle individual requests. Policy Action Script (C) is for scripted policy enforcement, not manager-level governance control." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="An Approval Policy is the CPG feature that gives a manager control over cloud resources provisioned by their team. Cloud Policies can create approval tasks as one of their actions, enabling system-wide control over approvals for resource operations and catalog item requests. Management Request (A), Governance Rule (B), and Policy Action Script (C) are not standard CPG features for approval workflows. The Approval Policy enforces review before resources are deployed." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/cloud-governance.html">
 <h2>Question 12</h2>
 <p class="question-stem">The Manager of the Marketing team wants to have control over the Cloud Resources provisioned through Cloud Provisioning and Governance. What feature in Cloud Provisioning and Governance should you use to satisfy this request?</p>
 <div class="answer-options">
@@ -183,7 +185,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="Templates (C) abstract vendor-specific cloud resources from end users by providing a standardized interface (CFT for AWS, ARM for Azure) that hides provider-specific details. Policies (A) enforce compliance. Workflows (B) orchestrate provisioning steps. Resource Profiles (D) define resource options but don&#x27;t abstract vendor specifics." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Resource Profiles abstract vendor-specific cloud resources from end users. They define standardized resource categories (Compute, OS, Schedule, Application, Compute Security Group) that map to different cloud providers&#x27; native offerings. Users select from profiles without needing to know provider-specific details. Policies (A) enforce governance rules, Workflows (B) automate processes, and Templates (C) are catalog item specifications, none of which serve the abstraction purpose." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/cloud-resource-profiles.html">
 <h2>Question 13</h2>
 <p class="question-stem">What mechanism can be used by Cloud Provisioning and Governance to abstract vendor-specific cloud resources from end users?</p>
 <div class="answer-options">
@@ -196,7 +198,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,D" data-community="false" data-explanation="AWS SNS Topic (B) receives and routes alert notifications to ServiceNow endpoints, and AWS Config (D) triggers configuration change alerts. AWS CloudTrail (A) provides audit logging, not alerts. AWS Control Tower (C) manages multi-account governance. AWS CloudWatch (E) generates metrics but SNS/Config are the integration points." data-source-url="">
+<div class="question-card" data-answer="B,E" data-community="false" data-explanation="To receive alerts from AWS in CPG, you must configure AWS SNS Topic (B) and AWS CloudWatch (E). CloudWatch monitors resources and generates alerts based on metrics and thresholds, while SNS (Simple Notification Service) delivers the alert notifications to ServiceNow. AWS CloudTrail (A) logs API calls, AWS Control Tower (C) manages multi-account governance, and AWS Config (D) evaluates resource configurations. The alerting pipeline is: CloudWatch detects → SNS delivers → ServiceNow receives." data-source-url="">
 <h2>Question 14</h2>
 <p class="question-stem">What AWS services must be configured for Cloud Provisioning and Governance to receive alerts from AWS? (Choose two.)</p>
 <div class="answer-options">
@@ -210,7 +212,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Variable Sets (D) are rendered as tabs on the request form of a Cloud Catalog Item, organizing related variables into logical groups. Tab Set (A) and Tab Group (B) are not standard ServiceNow Catalog concepts. Variable Group (C) is used within forms but not rendered as a tab at the catalog item level." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="A Variable Set is rendered as a tab on the request form of a Cloud Catalog Item. Variable Sets group related variables together and display as separate tabs on service catalog forms, organizing the ordering experience. Tab Set (A), Tab Group (B), and Variable Group (C) are not standard ServiceNow objects that render as tabs on catalog request forms. Variable Sets are a core Service Catalog concept used extensively in CPG catalog items." data-source-url="">
 <h2>Question 15</h2>
 <p class="question-stem">Which object is rendered as a tab on the request form of a Cloud Catalog Item?</p>
 <div class="answer-options">
@@ -223,7 +225,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="In the Orlando release or later, Application Profiles can be utilized in post-provision operations (D) to configure applications after VM provisioning completes. Server side includes (A) and MID Server script includes (B) are not CPG profile contexts. Blueprints stage operations (C) were the pre-Orlando approach." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="In Orlando and later, Application Profiles are utilized in Blueprints stage operations. The configuration management integration uses application profiles within blueprint operations like BootstrapNode, RegisterNode, and ExecuteConfigPackages to install software on provisioned VMs. While blueprints are in restricted usage from Orlando (no new ones can be created), existing blueprints and their application profiles continue to work. Server side includes (A) and MID Server script includes (B) serve different purposes, and post-provision operations (D) use Ansible jobs directly." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/support-config-management-providers.html">
 <h2>Question 16</h2>
 <p class="question-stem">For Cloud Provisioning and Governance in the Orlando release or later, where can you utilize an Application Profile?</p>
 <div class="answer-options">
@@ -236,7 +238,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="The Cloud Operations Dashboard (A) provides at-a-glance metrics on deployment activity, including which groups are deploying the most stacks. Cloud Activities (B) shows event logs. Cloud Request Items (C) shows individual requests. Cloud Orchestration Trail (D) shows workflow execution history, not group deployment summaries." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The Cloud Operations Dashboard breaks down cloud service requests and stacks from end users. Stacks are shown grouped by datacenters, and requests are broken down by requester. This dashboard (Operate &gt; Cloud Operations Dashboard) gives a quick visual of which groups are deploying the most stacks. Cloud Activities (B) shows individual operations, not aggregate deployment stats. Cloud Request Items (C) lists individual requests without the visual grouping. The Orchestration Trail (D) tracks workflow execution steps, not deployment summaries." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/use-cloud-operations-dashboard.html">
 <h2>Question 17</h2>
 <p class="question-stem">What would you review to quickly determine which group is deploying the most stacks?</p>
 <div class="answer-options">
@@ -249,7 +251,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Cloud Policies in CPG support the enforcement of Quotas on templates. CPG has four governance types: Quotas, Policies, Pools, and Permissions. Policies act as the mechanism that enforces quota limits on template ordering, controlling how many resources or stacks a user or group can provision through a template." data-source-url="">
 <h2>Question 18</h2>
 <p class="question-stem">What feature of CPG supports the use of Quotas for Templates?</p>
 <div class="answer-options">
@@ -259,8 +261,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> budget</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Expressions (A) are used to ensure Order Form variables automatically present appropriate CMDB CIs for ARM/CFT-backed Catalog Items. Expressions dynamically query the CMDB based on conditions to populate variable choice lists. Mappings (B) link template variables to catalog inputs. Conditions (C) control visibility. Metadata (D) provides template information." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Expressions in CPG dynamically compute values for catalog item variables and resource block attributes. When designing an ARM or CFT backed catalog item, you can create an expression that queries a CMDB table (e.g., cmdb_ci_server) and uses the results to populate the order form variable with a list of appropriate CIs. Mappings (B) connect form variables to template parameters but don&#x27;t query the CMDB. Conditions (C) filter when something applies. Metadata (D) provides static descriptive information." data-source-url="">
 <h2>Question 19</h2>
 <p class="question-stem">When designing an ARM or CFT backed Catalog Item, how can you ensure that the Order Form variable automatically presents with a list of appropriate CIs from the ServiceNow CMDB?</p>
 <div class="answer-options">
@@ -273,7 +277,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="After ingesting a new version of a cloud template (ARM, CFT, Terraform), you must activate the template version to ensure the catalog item&#x27;s order form reflects the new changes. Simply refreshing the browser or modifying variables won&#x27;t pull in the new template parameters. Template versions are managed independently, and each must be explicitly activated to become the active version used by the catalog item." data-source-url="">
 <h2>Question 20</h2>
 <p class="question-stem">After ingesting a new version of a Template, what can be done to ensure that the Order Form reflects the changes that were introduced in the new version of the Template?</p>
 <div class="answer-options">
@@ -283,8 +287,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Activate the template version</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Response processors in CPG are used to gather credentials and other data from cloud provider API responses after provisioning operations. After a VM or resource is provisioned, the response processor parses the cloud provider&#x27;s REST API response to extract credentials (e.g., IP addresses, login info) and updates the CMDB with the provisioned resource details." data-source-url="">
 <h2>Question 21</h2>
 <p class="question-stem">What feature or product capability must be utilized to gather credentials for a post provisioning operation?</p>
 <div class="answer-options">
@@ -294,8 +300,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> pattern</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,C" data-community="false" data-explanation="When upgrading from the New York release, Jenkins Workflow (A) and Puppet Manifest (C) are available deployment options in the latest CPG release. Azure ARM Templates (D) are a separate deployment method. The Azure Blueprint Service (B) is Azure-native and not a CPG option. Customers can upgrade from New York (E is incorrect)." data-source-url="">
+<div class="question-card" data-answer="D,F" data-community="false" data-explanation="Starting with Orlando, new blueprints cannot be created in CPG, though existing ones from prior releases still work. The modern deployment options are cloud templates: Azure ARM Templates (D) and Terraform Config files (F). Jenkins Workflow (A) is not a CPG deployment mechanism. The Azure Blueprint Service (B) is an Azure-native feature, not a CPG deployment option. Puppet Manifest (C) is for configuration management, not VM deployment. Customers can upgrade from New York (E is wrong) — their existing blueprints continue working." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/blueprints.html">
 <h2>Question 22</h2>
 <p class="question-stem">A customer on the New York release of CPG currently uses Blueprints to deploy Azure VMs. What deployment options are available to the customer when they upgrade to the latest release of CPG? (Choose two.)</p>
 <div class="answer-options">
@@ -310,7 +318,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Required parameters for a CAPI Operation are determined from ServiceNow product documentation (D) for each cloud provider integration. The ServiceNow docs specify required and optional parameters for each CAPI Operation. Cloud Provider documentation (A) describes the underlying API. ECMA script docs (C) are for JavaScript. Referencing other operations (B) is not the defined method." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="CAPI (Cloud API) operations wrap cloud provider REST APIs to enable communication between ServiceNow and cloud services. The required parameters for each CAPI operation depend on what the underlying cloud provider API expects. Therefore, you must consult the Cloud Provider&#x27;s own documentation and perform testing to determine the correct parameters. Referencing other CAPI operations (B) may give hints but parameters differ across operations. ECMA script docs (C) cover JavaScript, not cloud APIs. ServiceNow docs (D) describe CAPI framework architecture, not provider-specific API parameters." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/cloud-management-api.html">
 <h2>Question 23</h2>
 <p class="question-stem">How can the required parameters for a CAPI Operation be determined?</p>
 <div class="answer-options">
@@ -323,7 +331,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="When creating a new custom CAPI API, the suggested starting version number is 2.0. This prevents version conflicts with out-of-the-box (OOB) CAPI APIs that use version 1.x. Starting at 2.0 ensures your custom API doesn&#x27;t clash with existing OOB API definitions and allows clear differentiation between default and custom CAPI extensions." data-source-url="">
 <h2>Question 24</h2>
 <p class="question-stem">When creating a new CAPI API, what is the suggested starting version number to prevent conflicts with out-of-the-box CAPI APIs?</p>
 <div class="answer-options">
@@ -333,8 +341,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> 1.1</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="MID Server Script Includes are required to execute code that makes REST API calls for CAPI Operations. CAPI operations run on the MID Server, which acts as a proxy between the ServiceNow instance and cloud provider APIs. CAPI Method Mappers create MID Server script includes that contain the actual REST call logic for each cloud operation." data-source-url="">
 <h2>Question 25</h2>
 <p class="question-stem">What type of script is required for executing code to make a REST API call for a CAPI Operation?</p>
 <div class="answer-options">
@@ -344,8 +354,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Script Include</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="AmazonWebServicesAPIInvoker is a purpose-built JavaScript class in ServiceNow CPG that simplifies making REST API calls to AWS. It provides high-level abstraction over AWS authentication (signing, credentials) and request construction, requiring the least amount of code compared to lower-level base classes like CloudAPIBase or AWSCloudAPIBase." data-source-url="">
 <h2>Question 26</h2>
 <p class="question-stem">Which JavaScript Class can be used to make a REST API call to AWS with the least amount of code?</p>
 <div class="answer-options">
@@ -355,8 +367,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> AWSCloudAPIBase</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="The sys_id attribute is required by Cloud Provisioning and Governance to determine CI uniqueness (A). sys_id is ServiceNow&#x27;s universal unique identifier for every record, including CIs, making it the definitive uniqueness attribute. name (B) can be non-unique. object_id (C) and correlation_id (D) are supplementary identifiers, not the primary uniqueness determinant." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="CPG uses the object_id attribute on CI Class Types to determine uniqueness of cloud resources in the CMDB. The identification rule specifies an Object ID, and whenever components refer to a specific cloud resource, they need the Object ID to find the correct record. CI uniqueness is determined by the combination of service account, object_id, and datacenter/location, processed by the IRE. sys_id (A) is a system-generated unique key for all records, not cloud-specific. name (B) is not guaranteed unique. correlation_id (D) is for event correlation, not CI identification." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/cloud-management-api.html">
 <h2>Question 27</h2>
 <p class="question-stem">What CI Class Type attribute is required by Cloud Provisioning and Governance to determine uniqueness?</p>
 <div class="answer-options">
@@ -369,7 +383,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="Bindings (C) organize the Methods required to perform an Operation within a Resource Block. Bindings link method calls to their associated operations, defining how each operation invokes the underlying API methods. Method blocks (A) define individual methods. Steps (B) are sequential workflow units. Endpoint operations (D) define the API endpoints." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Steps are the Resource Block component that organizes the Methods required to perform an Operation. Each operation requires one or more steps to do the actual work. Each step calls a specific CAPI interface and method. You can add multiple steps to a single operation, and output attributes pass values between steps. Method blocks (A) is not a real CPG component. Bindings (C) are connections between adjacent resource blocks (horizontal connections). Endpoint operations (D) is not a recognized resource block component." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/resource-blocks.html">
 <h2>Question 28</h2>
 <p class="question-stem">What Resource Block component is used to organize the Methods required to perform an Operation?</p>
 <div class="answer-options">
@@ -382,7 +396,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Three components required to create a CAPI Extension are CAPI Vendor (defines the cloud provider), CAPI Interface (defines available operations), and CAPI REST API (defines the REST API spec) (A). CAPI Product/Method/API (B) uses incorrect terms. CAPI Provider (C/D) is a configured instance, not a component required for extension creation." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Creating a CAPI Extension requires three components: a CAPI Provider (defines the cloud vendor), a CAPI Interface (defines the operations/methods and parameters), and a CAPI API (ties the product and interface together with actual code, including method mappers and config overrides). The hierarchy is Provider &gt; Products &gt; Interfaces &gt; APIs. Option A uses &#x27;REST API&#x27; instead of &#x27;API&#x27;. Option B uses &#x27;Product&#x27; and &#x27;Method&#x27; which are not the three core extension components. Option C says &#x27;Vendor&#x27; instead of &#x27;Provider&#x27; — the documentation uses &#x27;Provider&#x27; as the correct term." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/cloud-management-api.html">
 <h2>Question 29</h2>
 <p class="question-stem">Which three CAPI components must be configured to create a CAPI Extension?</p>
 <div class="answer-options">
@@ -395,7 +409,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="HTTP status code 200 means the call was successful (A). 200 OK is the standard success response for REST API calls. It is a valid and universally recognized code (B is incorrect). Server errors are 5xx codes (500, 503). Client errors are 4xx codes (400, 404). Any CPG REST integration receiving 200 indicates the cloud service processed the request successfully." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="HTTP status code 200 means the API call was successful (OK). This is a standard HTTP response code indicating the request was received, understood, and processed correctly. Status code 200 is definitely valid (B is wrong). Server errors use 5xx codes like 500 Internal Server Error (C is wrong). Client errors use 4xx codes like 400 Bad Request or 404 Not Found (D is wrong). When testing CAPI REST calls, a 200 response confirms the cloud service accepted and processed the request." data-source-url="">
 <h2>Question 30</h2>
 <p class="question-stem">When testing a REST API, you receive status code of 200 from the Cloud Service. What does this mean?</p>
 <div class="answer-options">
@@ -408,7 +422,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="When authoring a new CAPI Extension, create a CAPI Interface (C) to define the operations available for the new cloud service. The Interface is the contract/spec describing what operations can be performed. CAPI Provider (A) is a configured instance implementing an interface. CAPI API (B) defines the underlying REST calls. CAPI Product (D) represents the cloud service offering." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="When authoring a CAPI Extension, you create a CAPI Interface to define the operations (methods) and parameters available for the new cloud service. Interfaces define the framework for REST calls and are reusable across different products. A CAPI Provider (A) defines the cloud vendor, not operations. A CAPI API (B) ties a product and interface together with implementation code, but the operations themselves are defined in the interface. A CAPI Product (D) categorizes resource types under a provider but doesn&#x27;t define operations." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/cloud-management-api.html">
 <h2>Question 31</h2>
 <p class="question-stem">When authoring a new CAPI Extension, what must you create to define the operations that will be available for the new cloud service?</p>
 <div class="answer-options">
@@ -421,7 +435,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="Before authoring a new Resource Block, you need to know the Host Interface of the host Resource Block it will connect to. In CPG, resource blocks have three interface types: guest interface (connects upward to parent), host interface (connects downward to children), and bindings (connect adjacent blocks). Your new block&#x27;s guest interface connects to the host&#x27;s host interface, so you must know its specification." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/resource-blocks.html">
 <h2>Question 32</h2>
 <p class="question-stem">Before you can author a new Resource Block, what information do you require about the Host Resource Block that the Resource Block you are authoring will connect to?</p>
 <div class="answer-options">
@@ -431,8 +445,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Endpoint Mappings of the Host</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Regular Expressions are NOT a supported expression type in a Resource Block. CPG Resource Blocks support three expression types: Runtime Expressions (evaluated at request time), Complex Expressions (combine multiple values/calculations), and Definitional Expressions (define static or template-based values). Regular Expressions are a pattern-matching concept unrelated to resource block attribute resolution." data-source-url="">
 <h2>Question 33</h2>
 <p class="question-stem">Which of the following is NOT a supported expression type in a Resource Block?</p>
 <div class="answer-options">
@@ -442,8 +458,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Definitional Expressions</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="B,C" data-community="false" data-explanation="For a Day-2 CAPI Operation (post-provisioning operations like Stop, Start, Modify), you must configure a CAPI API and a CAPI Method. The CAPI API contains the integration code and ties a product to an interface, while the CAPI Method maps to the specific operation within that API. The Provider and Interface are defined at a higher level and don&#x27;t need per-operation configuration." data-source-url="">
 <h2>Question 34</h2>
 <p class="question-stem">Which CAPI components must be configured for a Day-2 CAPI Operation? (Choose two.)</p>
 <div class="answer-options">
@@ -454,8 +472,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> CAPI Interface</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="When using a CFT or ARM Template, OS Profiles (A) are used to define and deploy software configurations for provisioned resources. Cloud Scripts (B) install software on running VMs post-provision. Compute Profile (C) defines virtual hardware sizing. Blueprints (D) were the legacy approach replaced by CFT/ARM Templates." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Cloud Scripts are used to deploy software when working with CFT or ARM Templates. Cloud script templates can be Shell, PowerShell, or CloudInit executables that run on provisioned VMs to install and configure software. OS Profiles (A) specify the operating system image, not software deployment. Compute Profiles (C) define hardware specifications like CPU, memory, and storage. Blueprints (D) are deprecated from Orlando and are infrastructure deployment templates, not specifically for software installation on top of templates." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/cloud-scripts-and-templates.html">
 <h2>Question 35</h2>
 <p class="question-stem">When using a CFT or an ARM Template what feature of Cloud Provisioning and Governance is used to deploy software?</p>
 <div class="answer-options">
@@ -468,7 +488,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="The Cloud Operation Context activity is used in a custom workflow called by a resource block operation to retrieve information about the triggering operation. This activity provides the workflow with context data including operation parameters, resource block details, stack information, and any input attributes needed to process the cloud operation within the workflow." data-source-url="">
 <h2>Question 36</h2>
 <p class="question-stem">When a custom workflow is called by a resource block operation, what activity should be used to get information about the operation from the Cloud Provisioning and Governance application?</p>
 <div class="answer-options">
@@ -478,8 +498,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Custom Script Activity</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Cloud Provisioning and Governance uses the Identification Reconciliation Engine (IRE) (A) to add and update entries in the CMDB. The IRE is ServiceNow&#x27;s standard CMDB API for CI identification, deduplication, and reconciliation. CMDBTransformUtil (B) handles data transformations. CMDBGroupAPI (C) is not a standard ServiceNow CMDB API. CI Reconciliation API (D) is a subset function of the IRE." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="CPG uses the Identification and Reconciliation Engine (IRE) to add and update entries in the CMDB. The IRE processes CI data using identification rules that specify object_id, service account, and datacenter to determine uniqueness. When CAPI response processors return cloud resource data, the IRE reconciles it with existing CMDB records — creating new CIs or updating existing ones. CMDBTransformUtil (B) is for transform map operations. CMDBGroupAPI (C) is for CI group management. CI Reconciliation API (D) is not the standard term — IRE is the correct ServiceNow API." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/cloud-management-api.html">
 <h2>Question 37</h2>
 <p class="question-stem">What API does Cloud Provisioning and Governance utilize to add and update entries in the CMDB?</p>
 <div class="answer-options">
@@ -492,7 +514,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="The Cloud Administrator role (sn_cmp.cmp_root_admin) (C) should be utilized for cloud alerts, providing complete access to configure and receive cloud monitoring alerts. Cloud Governor (A) manages governance rules. Cloud Operator (B) manages day-to-day operations. Cloud event integration (D) is a specific role for event processing integrations." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The sn_cmp.cloud_event_integration role is specifically designed for cloud alert integration. This role allows the integration user or service account to receive, process, and route cloud events and alerts from external sources like AWS CloudWatch or Azure Monitor into ServiceNow. Cloud Governor (A) manages governance policies. Cloud Operator (B) handles day-to-day cloud operations and the operations dashboard. Cloud Administrator (C) has broad admin capabilities but is not the specific role for alert integration." data-source-url="">
 <h2>Question 38</h2>
 <p class="question-stem">Which role should be utilized for cloud alerts?</p>
 <div class="answer-options">
@@ -505,7 +527,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="The three available Tag Types in CPG Tag Management are Internal, External, and ServiceNow (A). Internal tags are used within the organization, External tags are cloud provider-specific tags, and ServiceNow tags are platform-managed. AWS/Azure/ServiceNow (B) are providers, not tag types. Custom Tags (C) and User-defined (D) are not the standard type names." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="The three available Tag Types in Tag Management are ServiceNow, Internal, and User-defined. ServiceNow tags are the system-provided default tags (like Application, Business Service, Cost Center). Internal tags are generated by the platform automatically. User-defined tags are imported from cloud providers during cloud discovery. Cloud admins can convert User-defined tags to ServiceNow (Custom) type to enable them in the Billing Dashboard. Options A and C include &#x27;External&#x27; or &#x27;Custom Tags&#x27; which are not the correct tag type field values. Option B lists cloud provider names, not tag types." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/cloud-tagging.html">
 <h2>Question 39</h2>
 <p class="question-stem">What are the three available Tag Types in Tag Management?</p>
 <div class="answer-options">
@@ -518,7 +540,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="In Cloud Provisioning and Governance, AWS regions are represented as Logical Datacenters. ServiceNow uses the concept of Logical Datacenters to abstract cloud provider geographic regions/zones into a platform-neutral model. When cloud resources are discovered or provisioned, they are mapped to Logical Datacenters that correspond to the cloud provider&#x27;s regions." data-source-url="">
 <h2>Question 40</h2>
 <p class="question-stem">In AWS, the region-specific containers for virtual resources are called regions. In Cloud Provisioning and Governance, regions are called what?</p>
 <div class="answer-options">
@@ -528,8 +550,10 @@
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Cloud Centers</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="In Azure, any service used must be associated with a Subscription (A). Azure Subscriptions are the fundamental billing and management scope that all Azure resources belong to. Diagnostic Logs (B) are monitoring features. Storage Account (C) is a specific service. Tags (D) are organizational labels. Availability Sets (E) are for VM high-availability grouping only." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="In Azure, every service or resource must be associated with a Subscription. Subscriptions are the billing and management boundary in Azure — they link resources to an Azure account for cost tracking and access control. Without a subscription, you cannot create or use any Azure resource. Diagnostic Logs (B) are optional monitoring configurations. A Storage Account (C) is a specific resource type, not a universal requirement. Tags (D) are optional metadata. An Availability Set (E) is used for high availability of VMs, not a universal resource requirement." data-source-url="">
 <h2>Question 41</h2>
 <p class="question-stem">When working with Azure any service that is used must be associated with a _______________?</p>
 <div class="answer-options">
@@ -543,7 +567,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Azure Resource Manager uses Resource Groups (D) to organize the cloud resources required to deploy a VM. Resource Groups are the fundamental ARM organizational unit containing all related resources (VMs, NICs, disks, etc.) for a deployment. Resource Pool (A) is a VMware/ServiceNow concept. Storage Account (B) stores data. Placement Group (C) is for proximity placement." data-source-url="">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Azure Resource Manager (ARM) uses Resource Groups to organize the cloud resources required to deploy a VM. A Resource Group is a logical container that holds related Azure resources (VMs, disks, NICs, NSGs) and manages them as a unit for deployment, access control, and lifecycle management. Resource Pools (A) are a CPG concept for grouping cloud resources, not an ARM construct. Storage Accounts (B) store data but don&#x27;t organize VM resources. Placement Groups (C) control VM placement within a datacenter for performance, not general resource organization." data-source-url="">
 <h2>Question 42</h2>
 <p class="question-stem">The Azure Resource Manager uses what to organize the cloud resources required to deploy a VM?</p>
 <div class="answer-options">
@@ -556,7 +580,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="true">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="AWS Simple Notification Service (SNS) is used to send alert messages to Cloud Provisioning and Governance. SNS is AWS&#x27;s pub/sub messaging service that pushes notifications to subscribers. CPG integrates with SNS topics to receive alerts about cloud resource state changes, billing thresholds, and CloudWatch alarms, enabling automated response within ServiceNow." data-source-url="">
 <h2>Question 43</h2>
 <p class="question-stem">Which Service in AWS is used to send alert messages to Cloud Provisioning and Governance?</p>
 <div class="answer-options">
@@ -567,8 +591,10 @@
 <div class="answer-option" data-key="E"><span class="option-key">E.</span> Simple Email Service</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
+<button class="explain-btn">Explain with AI</button>
+<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="Catalog Items use Expressions (B) to dynamically set values for Resource Block attributes. Expressions evaluate conditions and compute values based on order form input, CMDB data, or other variables. Methods (A) define API call implementations. Functions (C) are not a CPG Catalog concept. Operations (D) define what actions are performed, not dynamic attribute values." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="Expressions are the objects that catalog items use to dynamically set values for resource block attributes. Expressions can evaluate conditions, perform lookups against CMDB tables, and compute values at order time to populate resource block input parameters. This allows catalog items to be dynamic rather than static. Methods (A) are CAPI operations called by resource block steps. Functions (C) is a generic programming term, not a CPG component. Operations (D) define the actions a resource block can perform (provision, deprovision, etc.), not dynamic value setting." data-source-url="">
 <h2>Question 44</h2>
 <p class="question-stem">What objet does a Catalog Item utilize to dynamically set values for a Resource Block attribute?</p>
 <div class="answer-options">
@@ -581,7 +607,7 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="When deploying an IIS Web Server in AWS for public access, a Security Group allowing inbound traffic (B) must be configured to allow HTTP/HTTPS access (ports 80/443). AWS Security Groups act as virtual firewalls. A TLS Certificate (A) enables HTTPS but is not required for basic access. Network Traffic Group (C) is not an AWS concept. Windows Host Based Firewall (D) would block traffic by default." data-source-url="">
+<div class="question-card" data-answer="B" data-community="false" data-explanation="To allow public access to an IIS Web Server in AWS, you must configure a Security Group that allows inbound traffic on the appropriate ports (HTTP 80, HTTPS 443). AWS Security Groups act as virtual firewalls controlling inbound and outbound traffic at the instance level. A TLS Certificate (A) encrypts traffic but doesn&#x27;t control access. Network Traffic Group (C) is not a standard AWS construct — the correct term is Security Group. Windows Host Based Firewall (D) is OS-level, but AWS traffic must first pass through the Security Group." data-source-url="">
 <h2>Question 45</h2>
 <p class="question-stem">When deploying an IIS Web Server in AWS for public access, which of the following must be configured to allow users to access the Web Server?</p>
 <div class="answer-options">
