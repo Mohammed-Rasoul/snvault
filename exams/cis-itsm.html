@@ -25,8 +25,12 @@
     <main>
         <div class="quiz-banner"><a href="../quiz/cis-itsm.html">Test yourself on IT Service Management &rarr;</a></div>
 <div class="ai-notice">Answers verified with AI using ServiceNow documentation. Exercise your own judgement.</div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="ServiceNow uses single-table inheritance — querying cmdb_ci_computer returns CIs from the base class AND all child (extended) classes. Parent class records are NOT included; only the selected table and its descendants are returned." data-source-url="">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The image shows the CMDB class hierarchy:
+cmdb → cmdb_ci → cmdb_ci_hardware → cmdb_ci_computer → cmdb_ci_server → cmdb_ci_win_server / cmdb_ci_linux_server / cmdb_ci_unix_server, and cmdb_ci_hardware → cmdb_ci_pc_hardware.
+
+ServiceNow uses single-table inheritance: querying cmdb_ci_computer returns CIs from that table AND all child (extended) classes below it in the hierarchy. This includes cmdb_ci_server, cmdb_ci_win_server, cmdb_ci_linux_server, cmdb_ci_unix_server, and cmdb_ci_pc_hardware. Parent class records (cmdb_ci_hardware, cmdb_ci, cmdb) are NOT included." data-source-url="">
 <h2>Question 1</h2>
+<div class="question-image"><img src="../images/questions/cis-itsm/image1.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">Given the class structure shown below, which types of CIs will be included in a report run against the cmdb_ci_computer table?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Just CIs defined directly in cmdb_ci_computer</div>

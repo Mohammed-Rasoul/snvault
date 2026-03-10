@@ -169,6 +169,40 @@ main {
     line-height: 1.7;
 }
 
+/* Question images */
+
+.question-image {
+    margin-bottom: 1rem;
+    border: 1px solid #e0d5f5;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #faf8ff;
+    padding: 0.5rem;
+}
+
+.question-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.question-image.answer-image {
+    border-color: #22863a;
+    background: #f0fff4;
+    margin-top: 1rem;
+}
+
+.question-image.answer-image::before {
+    content: "Answer:";
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #22863a;
+    margin-bottom: 0.5rem;
+}
+
 /* Browse page answer options */
 
 .answer-options {

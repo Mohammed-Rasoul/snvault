@@ -25,8 +25,15 @@
     <main>
         <div class="quiz-banner"><a href="../quiz/cis-discovery.html">Test yourself on Discovery &rarr;</a></div>
 <div class="ai-notice">Answers verified with AI using ServiceNow documentation. Exercise your own judgement.</div>
-<div class="question-card" data-answer="A,B,D" data-community="true" data-explanation="Based on the image (not visible in text), three true statements are: Attributes from two tables populate a table with the same name as a CMDB table (A), this is part of an Application Pattern Type step (B), and for the operation to run there must be data in the process.executablePath variable (D). Application patterns use process variables including executablePath. If values are unmatched they are not merged (C is false). This is application, not infrastructure type (E is false)." data-source-url="">
+<div class="question-card" data-answer="A,B,D" data-community="false" data-explanation="The image shows a Merge Table operation with: First Table=$name_details, Second Table=$more_process_info, Target Table=$cmdb_ci_web_server, Merge Criteria: $process.executablePath Contains &quot;mongoose&quot;, Unmatched Values: Remove.
+
+(A) TRUE — Two tables ($name_details and $more_process_info) are merged into $cmdb_ci_web_server, which matches the ServiceNow CMDB table cmdb_ci_web_server.
+(B) TRUE — The use of $process.executablePath (checking for &quot;mongoose&quot;, a Node.js web server) indicates this is an Application pattern type. Application patterns identify running processes and their associated services.
+(C) FALSE — The image explicitly shows &quot;Unmatched Values: Remove&quot;, meaning unmatched values are NOT merged into the target table.
+(D) TRUE — The merge criteria requires $process.executablePath to contain &quot;mongoose&quot;, so this variable must have data for the operation to execute.
+(E) FALSE — This is an Application pattern (uses process variables), not an infrastructure pattern." data-source-url="https://www.servicenow.com/docs/bundle/yokohama-it-operations-management/page/product/discovery/concept/pattern-table-operations.html">
 <h2>Question 1</h2>
+<div class="question-image"><img src="../images/questions/cis-discovery/image1.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">Based on this image, which of the following statements are true? (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Attributes from two tables populate a table with the same name as a ServiceNow CMDB table.</div>
@@ -39,8 +46,18 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="The name of the CI stays &#x27;Windows1&#x27; (A). ServiceNow Discovery has higher precedence than third-party tools like Altiris by default reconciliation rules. Since Discovery set the name first and has higher priority as a data source, subsequent updates from Altiris (a lower-priority source) do not overwrite the Discovery-populated name attribute." data-source-url="">
+<div class="question-card" data-answer="A" data-community="false" data-explanation="The image shows two tables:
+1) Reconciliation Definitions: Altiris, OpenView, and ServiceNow all reconcile the &quot;name&quot; attribute on Windows Server [cmdb_ci_win_server].
+2) Data Source Precedences: ServiceNow=100, OpenView=200, Altiris=300 (lower number = higher precedence).
+
+Since ServiceNow Discovery (order 100) has the highest precedence and set the name to &quot;Windows1&quot; first, Altiris (order 300, lowest precedence) cannot overwrite it. The name stays &quot;Windows1&quot;.
+
+(A) TRUE — ServiceNow has higher precedence than Altiris.
+(B) FALSE — Altiris cannot override a higher-precedence source.
+(C) FALSE — The name was populated by ServiceNow Discovery.
+(D) FALSE — Discovery IS listed in the reconciliation definitions." data-source-url="https://www.servicenow.com/docs/bundle/yokohama-it-operations-management/page/product/configuration-management/concept/data-precedence-rules.html">
 <h2>Question 2</h2>
+<div class="question-image"><img src="../images/questions/cis-discovery/image2.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">Based on the following images, which choice best describes what occurs if Discovery sets the name attribute of a discovered Windows Server CI to 'Windows1' and then Altiris discovery runs detecting 'Windows2' for the name attribute on the same CI?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> The name of the CI stays 'Windows1'.</div>
@@ -576,6 +593,7 @@
 </div>
 <div class="question-card" data-answer="B" data-community="true" data-explanation="Based on the image (not visible in text), London Linux Servers is a CMDB Group with Health Group type (B). CMDB Groups can be of type Default, Dashboard, or Health. A Health Group type tracks CMDB health metrics for the group. Community consensus (100%) confirms B. Option A uses Dashboard Group type. Option C incorrectly describes it as a Datacenter Group. Option D uses Default Group type." data-source-url="">
 <h2>Question 43</h2>
+<div class="question-image"><img src="../images/questions/cis-discovery/image13.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">Based on the following image, which of the following choices is also true about London Linux Servers?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> It is a CMDB Group with Dashboard Group type.</div>
@@ -652,8 +670,15 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="true" data-explanation="Based on the image (not visible in text), Step 25 uses a shared library (C). Per the docs: shared libraries are reusable sequences of discovery steps referenced via the Library Reference operation. Step 26 (A) does not use a shared library. Community consensus (100%) confirms C. The Library Reference operation in Step 25 links to a reusable shared library." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery-and-service-mapping-patterns/modify-pattern-using-extensions.html">
+<div class="question-card" data-answer="C" data-community="false" data-explanation="The image shows two steps from the Windows OS - Servers pattern in Pattern Designer:
+- Step 25: &quot;Windows - Storage&quot; — has a grid/library icon indicating a Library Reference (shared library). The name &quot;Windows - Storage&quot; is a well-known shared library in Discovery.
+- Step 26: &quot;Insert total disk space of the server&quot; — has a document/step icon indicating a regular operation step (not a shared library).
+
+In Pattern Designer, shared libraries are reusable sequences of discovery steps that can be referenced by multiple patterns via the Library Reference operation. Step 25 references the &quot;Windows - Storage&quot; shared library, while Step 26 is a standalone Insert operation.
+
+Answer: C — Only Step 25 uses a shared library." data-source-url="https://www.servicenow.com/docs/bundle/yokohama-it-operations-management/page/product/discovery/concept/pattern-shared-library.html">
 <h2>Question 49</h2>
+<div class="question-image"><img src="../images/questions/cis-discovery/image15.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">The following shows part of the Windows OS - Servers pattern in Pattern Designer:<br /><br />Which of the steps above use(s) a shared library?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Step 26</div>
@@ -719,6 +744,7 @@
 </div>
 <div class="question-card" data-answer="D" data-community="true" data-explanation="Based on the image (not visible in text), there is a tabular variable named &#x27;name_details&#x27; (D). Community consensus (100%) confirms D. Tabular variables hold multi-row data from operations like WMI queries. A scalar variable (B) holds single values. WMI query operation (A) is one possibility but not confirmed from image. The value can be used in pattern steps (C is false)." data-source-url="">
 <h2>Question 54</h2>
+<div class="question-image"><img src="../images/questions/cis-discovery/image18.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">Based on this image, which of the following choices is true?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> This is from a WMI query operation step.</div>
@@ -906,6 +932,7 @@
 </div>
 <div class="question-card" data-answer="B,C,E" data-community="true" data-explanation="Based on the image (not visible in text), the most probable results are a scalar variable named MaximumWorkingSetSize (B), a scalar variable named PageFaults (C), and a tabular variable named more_process_info (E). Community consensus (100%) confirms BCE. WMI queries against Win32_Process return individual scalar columns and can also populate tabular variables for the full result set." data-source-url="">
 <h2>Question 68</h2>
+<div class="question-image"><img src="../images/questions/cis-discovery/image23.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">Which of the below choices are the most probable results of the following image? (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> A tabular variable named ‘WMI Query’.</div>
@@ -1105,6 +1132,7 @@
 </div>
 <div class="question-card" data-answer="A" data-community="true" data-explanation="Based on the image (not visible in text), this is an Application horizontal pattern type (A). The two pattern types are Infrastructure and Application. Application patterns discover software applications and can be used for both Service Mapping top-down discovery and horizontal Discovery. Community consensus (50%) indicates A. Infrastructure patterns (C) are for OS/hardware level discovery." data-source-url="">
 <h2>Question 83</h2>
+<div class="question-image"><img src="../images/questions/cis-discovery/image25.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">From Pattern Designer, which horizontal pattern type is the image below showing?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Application</div>

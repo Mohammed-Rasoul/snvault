@@ -121,6 +121,17 @@
     // Question card
     const card = el("div", { className: "quiz-question" });
     card.appendChild(el("h2", null, "Question " + q.id));
+
+    // Question images
+    if (q.question_images && q.question_images.length > 0) {
+      q.question_images.forEach(imgPath => {
+        const imgDiv = el("div", { className: "question-image" });
+        const img = el("img", { src: "../" + imgPath, alt: "Question image", loading: "lazy" });
+        imgDiv.appendChild(img);
+        card.appendChild(imgDiv);
+      });
+    }
+
     card.appendChild(elHTML("p", { className: "quiz-stem" }, escapeAndFormat(q.stem)));
 
     if (isMulti) {
@@ -147,12 +158,64 @@
 
     // Actions
     const actions = el("div", { className: "quiz-actions" });
-    const submitBtn = el("button", {
-      className: "quiz-btn",
-      id: "submit-btn",
-      onClick: () => submitAnswer(q)
-    }, "Submit Answer");
-    actions.appendChild(submitBtn);
+
+    const hasNoOptions = q.options.length === 0;
+
+    if (hasNoOptions) {
+      // Image-only question (HOTSPOT/DRAG DROP) — show Reveal Answer button
+      const revealBtn = el("button", {
+        className: "quiz-btn",
+        id: "submit-btn",
+        onClick: () => {
+          submitted = true;
+          results.push({ question: q, chosen: [], correct: false });
+          revealBtn.style.display = "none";
+          nextBtn.style.display = "inline-block";
+          // Show answer images
+          if (q.answer_images && q.answer_images.length > 0) {
+            q.answer_images.forEach(imgPath => {
+              const imgDiv = el("div", { className: "question-image answer-image" });
+              const img = el("img", { src: "../" + imgPath, alt: "Answer image", loading: "lazy" });
+              imgDiv.appendChild(img);
+              card.insertBefore(imgDiv, actions);
+            });
+          }
+          const fb = document.getElementById("quiz-feedback");
+          fb.className = "quiz-feedback";
+          fb.textContent = "See the answer image above.";
+          fb.style.display = "block";
+          // Show explanation if available
+          if (q.explanation) {
+            const explainBtn = el("button", {
+              className: "explain-btn",
+              onClick: () => {
+                explainBtn.disabled = true;
+                const box = card.querySelector(".ai-explanation");
+                let processed = escapeHtmlSafe(q.explanation);
+                if (q.source_url) {
+                  processed += '<br><a href="' + q.source_url + '" target="_blank" rel="noopener">ServiceNow Docs Reference</a>';
+                }
+                box.removeAttribute("hidden");
+                box.classList.add("typing");
+                typewrite(box, processed, () => box.classList.remove("typing"));
+              }
+            }, "Explain with AI");
+            actions.appendChild(explainBtn);
+            const explainBox = el("div", { className: "ai-explanation" });
+            explainBox.setAttribute("hidden", "");
+            card.insertBefore(explainBox, actions);
+          }
+        }
+      }, "Reveal Answer");
+      actions.appendChild(revealBtn);
+    } else {
+      const submitBtn = el("button", {
+        className: "quiz-btn",
+        id: "submit-btn",
+        onClick: () => submitAnswer(q)
+      }, "Submit Answer");
+      actions.appendChild(submitBtn);
+    }
 
     const nextBtn = el("button", {
       className: "quiz-btn",
@@ -234,6 +297,17 @@
     // Toggle buttons
     document.getElementById("submit-btn").style.display = "none";
     document.getElementById("next-btn").style.display = "inline-block";
+
+    // Show answer images
+    if (q.answer_images && q.answer_images.length > 0) {
+      const card = app.querySelector(".quiz-question");
+      q.answer_images.forEach(imgPath => {
+        const imgDiv = el("div", { className: "question-image answer-image" });
+        const img = el("img", { src: "../" + imgPath, alt: "Answer image", loading: "lazy" });
+        imgDiv.appendChild(img);
+        card.insertBefore(imgDiv, card.querySelector(".quiz-actions"));
+      });
+    }
 
     // Explain with AI button (only if explanation exists)
     if (q.explanation) {

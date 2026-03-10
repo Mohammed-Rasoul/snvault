@@ -37,14 +37,28 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="" data-community="false" data-explanation="This drag-and-drop question asks to match application service types to descriptions but the specific items and descriptions are not included in the scraped text (they were in an image). In CSDM, key application service types include Application Service (logical), Business Application (business-facing), Technical Service (infrastructure-level), and Entry Point. Without the visible drag items, a precise mapping cannot be determined." data-source-url="">
+<div class="question-card" data-answer="S" data-community="false" data-explanation="The answer image shows the correct drag-and-drop mappings for application service types:
+
+1. **Service Mapping Top-down** → &quot;Mission-critical services mapped using entry points and patterns&quot;
+   Top-down mapping starts from known entry points and uses patterns to discover the full service topology. Best for critical, well-understood services.
+
+2. **Service Mapping Connection Suggestion** → &quot;Custom-built services discovered using fingerprinting and connection analysis&quot;
+   Connection suggestions analyze network traffic and fingerprints to suggest connections between CIs for custom/non-standard applications.
+
+3. **Tag-Based** → &quot;Cloud-native/container services using cloud provider tags&quot;
+   Tag-based service mapping uses cloud tags (AWS, Azure, GCP) to automatically create and manage application services for cloud-native workloads.
+
+4. **Dynamic CI Group** → &quot;Smaller services defined using CMDB filters and queries&quot;
+   Dynamic CI Groups create logical service groupings based on CMDB query conditions and filter criteria, suitable for simpler service definitions." data-source-url="https://www.servicenow.com/docs/bundle/yokohama-it-operations-management/page/product/service-mapping/concept/application-service-types.html">
 <h2>Question 2</h2>
+<div class="question-image"><img src="../images/questions/cis-df/image1.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">DRAG DROP -<br />Drag and drop the application service type to the best description.</p>
 <div class="answer-options">
 </div>
 <button class="reveal-btn">Show Answer</button>
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
+<div class="question-image answer-image" hidden><img src="../images/questions/cis-df/image2.png" alt="Answer image" loading="lazy"></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="To add a custom CI class in the CMDB, you need sn_cmdb_admin (to manage CMDB classes) and personalize_dictionary (to create new fields/tables). cmdb_inst_admin (A) is not the correct role for class creation. itil_admin (B) lacks CMDB class management permissions. data_classification_admin (C) is for data classification. personalize_form only allows form layout changes, not the dictionary changes needed for new classes." data-source-url="">
 <h2>Question 3</h2>
@@ -179,8 +193,19 @@
 </div>
 <button class="reveal-btn">Show Answer</button>
 </div>
-<div class="question-card" data-answer="C,D" data-community="false" data-explanation="In ServiceNow reconciliation rules, a LOWER priority number means HIGHER precedence. (C) Altiris can update SCCM records because Altiris has higher priority than SCCM. (D) SCCM can insert new records regardless of priority - all sources can insert. (A) is wrong because SCCM has the lowest priority and cannot update records from higher-priority sources. (B) is wrong because ServiceNow has the highest priority and can update any record." data-source-url="">
+<div class="question-card" data-answer="C,D" data-community="false" data-explanation="The image shows Reconciliation Rules for Windows Server [cmdb_ci_win_server]:
+- ServiceNow: Priority 100 (highest precedence)
+- Altiris: Priority 200
+- SCCM: Priority 300 (lowest precedence)
+
+In ServiceNow, lower priority number = higher precedence for UPDATES. All sources can INSERT new records regardless of priority.
+
+(A) FALSE — SCCM has priority 300 (LOWEST precedence), not highest. It CANNOT update records from higher-precedence sources.
+(B) FALSE — ServiceNow has priority 100 (HIGHEST precedence) and CAN update records created by ANY other source.
+(C) TRUE — Altiris (priority 200) has higher precedence than SCCM (priority 300), so Altiris CAN update records inserted by SCCM.
+(D) TRUE — Any discovery source can INSERT new records into the CMDB regardless of priority. Priority only controls which sources can UPDATE existing records." data-source-url="https://www.servicenow.com/docs/bundle/yokohama-it-operations-management/page/product/configuration-management/concept/data-precedence-rules.html">
 <h2>Question 14</h2>
+<div class="question-image"><img src="../images/questions/cis-df/image8.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">The following Reconciliation Rules were configured for ServiceNow, Altiris, and SCCM:<br /><br />Which are true? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Data collected with a discovery source of SCCM can update any record in the Windows Server [cmdb_ci_win_server] table because it has the highest priority number.</div>
@@ -262,7 +287,7 @@
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> IntegrationHub ETL</div>
 <div class="answer-option" data-key="B"><span class="option-key">B.</span> Discovery</div>
 <div class="answer-option" data-key="C"><span class="option-key">C.</span> Workflow Studio</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> Service Mapping Show Suggested Answer Hide Answer Suggested Answer: D 🗳️</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Service Mapping</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
 </div>
@@ -300,10 +325,12 @@
 </div>
 <div class="question-card" data-answer="A" data-community="true">
 <h2>Question 25</h2>
+<div class="question-image"><img src="../images/questions/cis-df/image6.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">DRAG DROP -<br />ServiceNow provides a suite of CMDB management tools designed to effectively ingest, manage, and maintain CIs and relationships.<br />Drag and drop the design architecture to its management tool.<br />Some options may not apply.</p>
 <div class="answer-options">
 </div>
 <button class="reveal-btn">Show Answer</button>
+<div class="question-image answer-image" hidden><img src="../images/questions/cis-df/image7.png" alt="Answer image" loading="lazy"></div>
 </div>
 <div class="question-card" data-answer="A" data-community="true">
 <h2>Question 26</h2>
@@ -323,7 +350,7 @@
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Data collected with a discovery source of SCCM can update any record in the Windows Server [cmdb_ci_win_server] table because it has the highest priority number.</div>
 <div class="answer-option" data-key="B"><span class="option-key">B.</span> Data collected with a discovery source of ServiceNow can insert new records into the Windows Server [cmdb_ci_win_server] table, but cannot update records created by Altiris or SCCM.</div>
 <div class="answer-option" data-key="C"><span class="option-key">C.</span> Data collected with a discovery source of Altiris can update records inserted by SCCM into the Windows Server [cmdb_ci_win_server] table.</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> Data collected with a discovery source of SCCM can be inserted as new records in the Windows Server [cmdb_ci_win_server] table. Show Suggested Answer Hide Answer Suggested Answer: BD 🗳️</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Data collected with a discovery source of SCCM can be inserted as new records in the Windows Server [cmdb_ci_win_server] table.</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
 </div>
@@ -343,16 +370,18 @@
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Correctness</div>
 <div class="answer-option" data-key="B"><span class="option-key">B.</span> Compliance</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> Completeness Show Suggested Answer Hide Answer Suggested Answer: B 🗳️</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Completeness</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
 </div>
 <div class="question-card" data-answer="A" data-community="true">
 <h2>Question 30</h2>
+<div class="question-image"><img src="../images/questions/cis-df/image9.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">DRAG DROP -<br />Drag and drop the CMDB Health Dashboard metric to the description.</p>
 <div class="answer-options">
 </div>
 <button class="reveal-btn">Show Answer</button>
+<div class="question-image answer-image" hidden><img src="../images/questions/cis-df/image10.png" alt="Answer image" loading="lazy"></div>
 </div>
 <div class="question-card" data-answer="A" data-community="true">
 <h2>Question 31</h2>
@@ -424,7 +453,7 @@
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> CMDB Health Dashboards Playbooks</div>
 <div class="answer-option" data-key="B"><span class="option-key">B.</span> CSDM Now Create Playbooks</div>
 <div class="answer-option" data-key="C"><span class="option-key">C.</span> CSDB Data Foundations Dashboard Playbooks</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> CSDM Data Foundations Dashboard Playbooks Show Suggested Answer Hide Answer Suggested Answer: A 🗳️</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> CSDM Data Foundations Dashboard Playbooks</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
 </div>
@@ -436,7 +465,7 @@
 <div class="answer-option" data-key="B"><span class="option-key">B.</span> State CIs</div>
 <div class="answer-option" data-key="C"><span class="option-key">C.</span> Duplicate CIs</div>
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> Downgraded CIs</div>
-<div class="answer-option" data-key="E"><span class="option-key">E.</span> Upgraded CIs Show Suggested Answer Hide Answer Suggested Answer: AC 🗳️</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> Upgraded CIs</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
 </div>
@@ -457,7 +486,7 @@
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> CMDB Data Manager</div>
 <div class="answer-option" data-key="B"><span class="option-key">B.</span> De-duplication templates</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> CMDB Health Dashboard Show Suggested Answer Hide Answer Suggested Answer: C 🗳️</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> CMDB Health Dashboard</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
 </div>
@@ -515,17 +544,21 @@
 </div>
 <div class="question-card" data-answer="A" data-community="true">
 <h2>Question 46</h2>
+<div class="question-image"><img src="../images/questions/cis-df/image11.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">DRAG DROP -<br />A new ServiceNow customer is assembling a Configuration Management team to support their CMDB.<br />Drag each role to its corresponding job description.</p>
 <div class="answer-options">
 </div>
 <button class="reveal-btn">Show Answer</button>
+<div class="question-image answer-image" hidden><img src="../images/questions/cis-df/image12.png" alt="Answer image" loading="lazy"></div>
 </div>
 <div class="question-card" data-answer="A" data-community="true">
 <h2>Question 47</h2>
+<div class="question-image"><img src="../images/questions/cis-df/image13.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">DRAG DROP -<br />A CMDB Administrator seeks to understand the available tools for preventing, addressing, and remediating duplicate CIs.<br />Drag and drop each feature with the corresponding outcome.<br />Some options may not apply.</p>
 <div class="answer-options">
 </div>
 <button class="reveal-btn">Show Answer</button>
+<div class="question-image answer-image" hidden><img src="../images/questions/cis-df/image14.png" alt="Answer image" loading="lazy"></div>
 </div>
 <div class="question-card" data-answer="A" data-community="true">
 <h2>Question 48</h2>
@@ -561,10 +594,12 @@
 </div>
 <div class="question-card" data-answer="A" data-community="true">
 <h2>Question 51</h2>
+<div class="question-image"><img src="../images/questions/cis-df/image15.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">DRAG DROP -<br />A manufacturing organization has implemented Incident Management in ServiceNow and wants to integrate additional products to enhance its functionality.<br />Drag each ServiceNow product to the value it brings to supporting Incident Management.</p>
 <div class="answer-options">
 </div>
 <button class="reveal-btn">Show Answer</button>
+<div class="question-image answer-image" hidden><img src="../images/questions/cis-df/image16.png" alt="Answer image" loading="lazy"></div>
 </div>
 <div class="question-card" data-answer="A" data-community="true">
 <h2>Question 52</h2>
@@ -687,10 +722,12 @@
 </div>
 <div class="question-card" data-answer="A" data-community="true">
 <h2>Question 63</h2>
+<div class="question-image"><img src="../images/questions/cis-df/image17.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">DRAG DROP -<br />Some steps need to be taken to transition from using different status attributes in the CMDB to life cycle objects.<br />Drag and drop the objectives/attributes to the description.</p>
 <div class="answer-options">
 </div>
 <button class="reveal-btn">Show Answer</button>
+<div class="question-image answer-image" hidden><img src="../images/questions/cis-df/image18.png" alt="Answer image" loading="lazy"></div>
 </div>
 <div class="question-card" data-answer="A" data-community="true">
 <h2>Question 64</h2>
@@ -802,10 +839,12 @@
 </div>
 <div class="question-card" data-answer="A" data-community="true">
 <h2>Question 74</h2>
+<div class="question-image"><img src="../images/questions/cis-df/image19.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">DRAG DROP -<br />A CMDB Owner starts on the CSDM journey and needs to become familiar with the CSDM domains.<br />Drag the CMDB objects to the correct CSDM domains.</p>
 <div class="answer-options">
 </div>
 <button class="reveal-btn">Show Answer</button>
+<div class="question-image answer-image" hidden><img src="../images/questions/cis-df/image20.png" alt="Answer image" loading="lazy"></div>
 </div>
 <div class="question-card" data-answer="A" data-community="true">
 <h2>Question 75</h2>

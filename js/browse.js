@@ -14,10 +14,20 @@
         }
       });
 
-      var label = correctKeys.join(", ");
-      if (isCommunity) label += " (Community voted)";
+      var label = correctKeys.filter(function (k) { return k; }).join(", ");
+      if (!label) {
+        var hasAnswerImg = card.querySelectorAll(".answer-image").length > 0;
+        label = hasAnswerImg ? "See answer image below" : "See explanation";
+      } else if (isCommunity) {
+        label += " (Community voted)";
+      }
       btn.textContent = label;
       btn.disabled = true;
+
+      // Reveal answer images
+      card.querySelectorAll(".answer-image").forEach(function (img) {
+        img.removeAttribute("hidden");
+      });
     });
   });
 
