@@ -27,6 +27,7 @@
 <div class="ai-notice">Answers verified with AI using ServiceNow documentation. Exercise your own judgement.</div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="The image shows the CMDB class hierarchy: cmdb &gt; cmdb_ci &gt; cmdb_ci_hardware &gt; cmdb_ci_computer, with child classes cmdb_ci_server (which further extends to cmdb_ci_win_server, cmdb_ci_linux_server, cmdb_ci_unix_server) and cmdb_ci_pc_hardware. Reports run against a table include records from that table AND all child (extended) tables. A report on cmdb_ci_computer returns CIs from the table itself plus all classes that extend it (server types, pc_hardware). Parent classes like cmdb_ci or cmdb_ci_hardware are NOT included — inheritance flows downward only (C)." data-source-url="">
 <h2>Question 1</h2>
+<div class="question-image"><img src="../images/questions/cis-itsm/image1.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">Given the class structure shown below, which types of CIs will be included in a report run against the cmdb_ci_computer table?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Just CIs defined directly in cmdb_ci_computer</div>

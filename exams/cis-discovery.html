@@ -27,6 +27,7 @@
 <div class="ai-notice">Answers verified with AI using ServiceNow documentation. Exercise your own judgement.</div>
 <div class="question-card" data-answer="A,B,D" data-community="false" data-explanation="The image shows a Merge Table operation with Target Table=$cmdb_ci_web_server, which matches a CMDB table name (A). The $process.executablePath variable is used in the merge criteria condition, which is specific to Application patterns — infrastructure patterns don&#x27;t use executablePath (B is true, E is false). This variable must contain data for the condition to evaluate and the operation to run (D). Unmatched Values is set to &#x27;Remove&#x27;, meaning unmatched values are NOT merged into the target table, so C is false." data-source-url="">
 <h2>Question 1</h2>
+<div class="question-image"><img src="../images/questions/cis-discovery/image1.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">Based on this image, which of the following statements are true? (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Attributes from two tables populate a table with the same name as a ServiceNow CMDB table.</div>
@@ -41,6 +42,7 @@
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="The image shows Data Source Precedences: ServiceNow order=100 (highest priority), OpenView=200, Altiris=300 (lowest priority). Lower order number means higher precedence. When Discovery (ServiceNow, order 100) sets name=&#x27;Windows1&#x27; first, Altiris (order 300) cannot overwrite it because Altiris has lower precedence. A higher-precedence source&#x27;s data is protected from being overwritten by a lower-precedence source. The name stays &#x27;Windows1&#x27; (A)." data-source-url="">
 <h2>Question 2</h2>
+<div class="question-image"><img src="../images/questions/cis-discovery/image2.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">Based on the following images, which choice best describes what occurs if Discovery sets the name attribute of a discovered Windows Server CI to 'Windows1' and then Altiris discovery runs detecting 'Windows2' for the name attribute on the same CI?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> The name of the CI stays 'Windows1'.</div>
@@ -656,6 +658,7 @@
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="The image shows two steps in Pattern Designer: Step 25 &#x27;Windows - Storage&#x27; has the shared library icon (stacked list indicator), while Step 26 &#x27;Insert total disk space of the server&#x27; has a regular step icon (single document). In Pattern Designer, shared libraries are reusable step collections indicated by a distinct list icon. Only Step 25 uses a shared library (C). Step 26 is a standalone step." data-source-url="">
 <h2>Question 49</h2>
+<div class="question-image"><img src="../images/questions/cis-discovery/image15.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">The following shows part of the Windows OS - Servers pattern in Pattern Designer:<br /><br />Which of the steps above use(s) a shared library?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Step 26</div>

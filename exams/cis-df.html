@@ -37,16 +37,18 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="S,M,T,R,T,B,B,S,M,C,S,I,D,C,I,G,I,C,M,D,B" data-community="false" data-explanation="The answer image shows the correct drag-and-drop mapping: Service Mapping (Top-down) uses patterns for precise, mission-critical service mapping. Tag-Based mapping is designed for cloud-native, container, and VM environments where tags identify relationships. Service Mapping (Connection Suggestion) uses application fingerprinting to quickly generate service maps for custom-built applications. Dynamic CI Group is for small application services that can be grouped using CMDB queries and filters without complex mapping patterns." data-source-url="">
+<div class="question-card" data-answer="" data-community="false" data-explanation="Service Mapping (Top-down) - Recommended for mission-critical application services that require a precise approach using patterns; Tag-Based - Best fit to map cloud-native container-based or virtual machine environments; Service Mapping (Connection Suggestion) - Ideal for custom-built applications and leverages application fingerprinting to generate service maps in a timely manner; Dynamic CI Group - Ideal for small application services that can be easily grouped using filters and CMDB queries. The answer image shows the correct drag-and-drop mapping: Service Mapping (Top-down) uses patterns for precise, mission-critical service mapping. Tag-Based mapping is designed for cloud-native, container, and VM environments where tags identify relationships. Service Mapping (Connection Suggestion) uses application fingerprinting to quickly generate service maps for custom-built applications. Dynamic CI Group is for small application services that can be grouped using CMDB queries and filters without complex mapping patterns." data-source-url="">
 <h2>Question 2</h2>
+<div class="question-image"><img src="../images/questions/cis-df/image1.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">DRAG DROP -<br />Drag and drop the application service type to the best description.</p>
 <div class="answer-options">
 </div>
 <button class="reveal-btn">Show Answer</button>
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
+<div class="question-image answer-image" hidden><img src="../images/questions/cis-df/image2.png" alt="Answer image" loading="lazy"></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="Creating a custom CI class requires two capabilities: managing CMDB classes and creating new table structures. sn_cmdb_admin provides CMDB administration rights to create/manage CI classes, and personalize_dictionary allows creating new fields and tables (dictionary entries). Option A (cmdb_inst_admin) doesn&#x27;t grant class creation rights. Option B (itil_admin) lacks CMDB class management permissions. Option C (data_classification_admin) is for data classification, not class management. personalize_form (in A and B) only allows layout changes, not the dictionary-level changes needed for new classes." data-source-url="https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/ci-class-manager-landing-page.html">
+<div class="question-card" data-answer="D" data-community="false" data-explanation="Creating a custom CI class requires two capabilities: managing CMDB classes and creating new table structures. sn_cmdb_admin provides CMDB administration rights to create/manage CI classes, and personalize_dictionary allows creating new fields and tables (dictionary entries). Option A (cmdb_inst_admin) doesn&#x27;t grant class creation rights. Option B (itil_admin) lacks CMDB class management permissions. Option C (data_classification_admin) is for data classification, not class management. personalize_form (in A and B) only allows layout changes, not the dictionary-level changes needed for new classes." data-source-url="">
 <h2>Question 3</h2>
 <p class="question-stem">A new custom class is needed to reflect a new application being managed in the CMDB.<br />Which roles are minimally needed to add this custom CI class?</p>
 <div class="answer-options">
@@ -191,6 +193,7 @@
 </div>
 <div class="question-card" data-answer="C,D" data-community="false" data-explanation="The image shows Reconciliation Rules: ServiceNow priority=100 (highest precedence), Altiris=200, SCCM=300 (lowest precedence). Lower priority number means higher precedence. (C) Altiris (200) can update SCCM (300) records because Altiris has higher precedence. (D) SCCM can insert new records — all authorized sources can create new CIs regardless of priority. (A) is wrong — SCCM has the LOWEST precedence despite the highest number, so it cannot update others&#x27; records. (B) is wrong — ServiceNow has the HIGHEST precedence and can update any record." data-source-url="https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/create-reconciliation-rule-non-cmdb.html">
 <h2>Question 14</h2>
+<div class="question-image"><img src="../images/questions/cis-df/image8.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">The following Reconciliation Rules were configured for ServiceNow, Altiris, and SCCM:<br /><br />Which are true? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Data collected with a discovery source of SCCM can update any record in the Windows Server [cmdb_ci_win_server] table because it has the highest priority number.</div>
