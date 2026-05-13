@@ -805,8 +805,20 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="Filter Group configuration is found under the Security Operations &gt; Groups application module. Filter Groups are a Security Operations Common feature shared across all SecOps applications, so they live under the Security Operations navigation menu. The Groups module provides access to both Filter Groups and other grouping mechanisms. Options B, C, and D place Filter Groups under the Vulnerability module, but they are actually a Security Operations-level feature." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 61</h2>
+<p class="question-stem">What is the difference between the ADD and COPY Dockerfile instructions? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> ADD supports regular expression handling while COPY does not.</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> COPY supports compression format handling while ADD does not.</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> ADD supports compression format handling while COPY does not.</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> COPY supports regular expression handling while ADD does not.</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> ADD supports remote URL handling while COPY does not.</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="false" data-explanation="Filter Group configuration is found under the Security Operations &gt; Groups application module. Filter Groups are a Security Operations Common feature shared across all SecOps applications, so they live under the Security Operations navigation menu. The Groups module provides access to both Filter Groups and other grouping mechanisms. Options B, C, and D place Filter Groups under the Vulnerability module, but they are actually a Security Operations-level feature." data-source-url="">
+<h2>Question 62</h2>
 <p class="question-stem">Filter Group configuration is found under which Application module?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Security Operations > Groups</div>
@@ -818,8 +830,134 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 63</h2>
+<p class="question-stem">A user’s attempts to set the system time from inside a Docker container are unsuccessful.<br />Could this be blocking this operation?<br />SELinux</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 64</h2>
+<p class="question-stem">One of several containers in a pod is marked as unhealthy after failing its livenessProbe many times.<br />Is this the action taken by the orchestrator to fix the unhealthy container?<br />The unhealthy container is restarted.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 65</h2>
+<p class="question-stem">Is this a way to configure the Docker engine to use a registry without a trusted TLS certificate?<br />Set INSECURE_REGISTRY in the ‘/etc/docker/default’ configuration file.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 66</h2>
+<p class="question-stem">Is this a way to configure the Docker engine to use a registry without a trusted TLS certificate?<br />Set and export the IGNORE_TLS environment variable on the command line.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 67</h2>
+<p class="question-stem">Is this a way to configure the Docker engine to use a registry without a trusted TLS certificate?<br />Pass the ‘--insecure registry’ flag to the daemon at run time.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 68</h2>
+<p class="question-stem">Is this an advantage of multi-stage builds?<br />better logical separation of Dockerfile instructions for increased readability</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 69</h2>
+<p class="question-stem">Is this an advantage of multi-stage builds?<br />better caching when building Docker images</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 70</h2>
+<p class="question-stem">You add a new user to the engineering organization in DTR.<br />Will this action grant them read/write access to the engineering/api repository?<br />Add the user directly to the list of users with read/write access under the repository’s Permissions tab.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 71</h2>
+<p class="question-stem">You add a new user to the engineering organization in DTR.<br />Will this action grant them read/write access to the engineering/api repository?<br />Mirror the engineering/api repository to one of the user’s own private repositories.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 72</h2>
+<p class="question-stem">You add a new user to the engineering organization in DTR.<br />Will this action grant them read/write access to the engineering/api repository?<br />Add them to a team in the engineering organization that has read/write access to the engineering/api repository.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 73</h2>
+<p class="question-stem">Seven managers are in a swarm cluster.<br />Is this how should they be distributed across three datacenters or availability zones?<br />3-2-2</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 74</h2>
+<p class="question-stem">Seven managers are in a swarm cluster.<br />Is this how should they be distributed across three datacenters or availability zones?<br />5-1-1</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 75</h2>
+<p class="question-stem">Is this a function of UCP?<br />image role-based access control</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 76</h2>
+<p class="question-stem">Is this a function of UCP?<br />enforces the deployment of signed images to the cluster</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="The property sn_vul.itsm_popup controls whether a popup appears when creating a Problem or Change record from a Vulnerability or Vulnerable Item record. When set to True, users see a popup confirmation dialog before the ITSM record is created. When False, the record is created directly without the popup. Note that options B and C have identical text; both show sn_vul.itsm_popup as the answer. Options A (popup_ui_page) and D (popup) are not the correct property names." data-source-url="">
-<h2>Question 62</h2>
+<h2>Question 77</h2>
 <p class="question-stem">Which is the property that is set to True or False based on the customer desire fora popup when creating a Problem or Change record from a Vulnerability or Vulnerable Item (VI) record?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> sn_vul.popup_ui_page</div>
@@ -830,6 +968,502 @@
 <button class="reveal-btn">Show Answer</button>
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 78</h2>
+<p class="question-stem">Is this the purpose of Docker Content Trust?<br />Sign and verify image tags.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 79</h2>
+<p class="question-stem">Is this the purpose of Docker Content Trust?<br />Indicate an image on Docker Hub is an official image.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 80</h2>
+<p class="question-stem">In the context of a swarm mode cluster, does this describe a node? an instance of the Docker CLI connected to the swarm</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 81</h2>
+<p class="question-stem">In the context of a swarm mode cluster, does this describe a node? a virtual machine participating in the swarm</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 82</h2>
+<p class="question-stem">Is this a supported user authentication method for Universal Control Plane?<br />SAML</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 83</h2>
+<p class="question-stem">Is this a supported user authentication method for Universal Control Plane?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="X"><span class="option-key">X.</span> 500</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 84</h2>
+<p class="question-stem">Is this statement correct?<br />A Dockerfile provides instructions for building a Docker image.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 85</h2>
+<p class="question-stem">Is this statement correct?<br />A Dockerfile stores persistent data between deployments of a container.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 86</h2>
+<p class="question-stem">Will this command ensure that overlay traffic between service tasks is encrypted? docker network create -d overlay --secure <network-name></p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 87</h2>
+<p class="question-stem">An application image runs in multiple environments, with each environment using different certificates and ports. Is this a way to provision configuration to containers at runtime?<br />Create a Dockerfile for each environment, specifying ports and Docker secrets for certificates.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 88</h2>
+<p class="question-stem">Will this sequence of steps completely delete an image from disk in the Docker Trusted Registry?<br />Delete the image and delete the image repository from Docker Trusted Registry</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 89</h2>
+<p class="question-stem">Will this sequence of steps completely delete an image from disk in the Docker Trusted Registry?<br />Delete the image and run garbage collection on the Docker Trusted Registry.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 90</h2>
+<p class="question-stem">Does this describe the role of Control Groups (cgroups) when used with a Docker container? user authorization to the Docker API</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 91</h2>
+<p class="question-stem">Does this describe the role of Control Groups (cgroups) when used with a Docker container? role-based access control to clustered resources</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 92</h2>
+<p class="question-stem">Does this describe the role of Control Groups (cgroups) when used with a Docker container? accounting and limiting of resources</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 93</h2>
+<p class="question-stem">Two development teams in your organization use Kubernetes and want to deploy their applications while ensuring that Kubernetes-specific resources, such as secrets, are grouped together for each application.<br />Is this a way to accomplish this?<br />Create one pod and add all the resources needed for each application.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 94</h2>
+<p class="question-stem">Two development teams in your organization use Kubernetes and want to deploy their applications while ensuring that Kubernetes-specific resources, such as secrets, are grouped together for each application.<br />Is this a way to accomplish this?<br />Create one namespace for each application and add all the resources to it.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 95</h2>
+<p class="question-stem">Two development teams in your organization use Kubernetes and want to deploy their applications while ensuring that Kubernetes-specific resources, such as secrets, are grouped together for each application.<br />Is this a way to accomplish this?<br />Create a collection for each application.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 96</h2>
+<p class="question-stem">You created a new service named ‘http’ and discover it is not registering as healthy.<br />Will this command enable you to view the list of historical tasks for this service?<br />‘docker inspect http’</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 97</h2>
+<p class="question-stem">The Kubernetes yaml shown below describes a clusterIP service.<br />Is this a correct statement about how this service routes requests?<br />Traffic sent to the IP of any pod with the label app: nginx on port 8080 will be forwarded to port 80 in that pod.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 98</h2>
+<p class="question-stem">A company’s security policy specifies that development and production containers must run on separate nodes in a given Swarm cluster.<br />Can this be used to schedule containers to meet the security policy requirements? label constraints</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 99</h2>
+<p class="question-stem">A company’s security policy specifies that development and production containers must run on separate nodes in a given Swarm cluster. Can this be used to schedule containers to meet the security policy requirements? environment variables</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 100</h2>
+<p class="question-stem">Will a DTR security scan detect this?<br />private keys copied to the image</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 101</h2>
+<p class="question-stem">Will a DTR security scan detect this?<br />image configuration poor practices, such as exposed ports or inclusion of compilers in production images</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 102</h2>
+<p class="question-stem">You configure a local Docker engine to enforce content trust by setting the environment variable DOCKER_CONTENT_TRUST=1.<br />If myorg/myimage:1.0 is unsigned, does Docker block this command? docker image build, from a Dockerfile that begins FROM myorg/myimage:1.0</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 103</h2>
+<p class="question-stem">Can this set of commands identify the published port(s) for a container?<br />‘docker container inspect’, ‘docker port’</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 104</h2>
+<p class="question-stem">Can this set of commands identify the published port(s) for a container?<br />‘docker port inspect’, ‘docker container inspect’</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 105</h2>
+<p class="question-stem">A persistentVolumeClaim (PVC) is created with the specification storageClass: "", and size requirements that cannot be satisfied by any existing persistentVolume.<br />Is this an action Kubernetes takes in this situation?<br />The PVC remains unbound until a persistentVolume that matches all requirements of the PVC becomes available.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 106</h2>
+<p class="question-stem">Will this configuration achieve fault tolerance for managers in a swarm? an odd number of manager nodes, totaling more than two</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 107</h2>
+<p class="question-stem">Will this configuration achieve fault tolerance for managers in a swarm? only two managers, one active and one passive</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 108</h2>
+<p class="question-stem">You want to provide a configuration file to a container at runtime.<br />Does this set of Kubernetes tools and steps accomplish this?<br />Turn the configuration file into a configMap object, use it to populate a volume associated with the pod, and mount that file from the volume to the appropriate container and path.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 109</h2>
+<p class="question-stem">You want to create a container that is reachable from its host’s network.<br />Does this action accomplish this?<br />Use either EXPOSE or --publish to access the container on the bridge network.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 110</h2>
+<p class="question-stem">You want to create a container that is reachable from its host’s network.<br />Does this action accomplish this?<br />Use network connect to access the container on the bridge network.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 111</h2>
+<p class="question-stem">Will this action upgrade Docker Engine CE to Docker Engine EE?<br />Disable the Docker service via ‘chkconfig’ or ‘systemctl’.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 112</h2>
+<p class="question-stem">Will this action upgrade Docker Engine CE to Docker Engine EE?<br />Run docker engine activate.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 113</h2>
+<p class="question-stem">Will this command display a list of volumes for a specific container?<br />‘docker container logs nginx --volumes’</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 114</h2>
+<p class="question-stem">Will this command display a list of volumes for a specific container?<br />‘docker container inspect nginx’</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 115</h2>
+<p class="question-stem">In Docker Trusted Registry, is this how a user can prevent an image, such as ‘nginx:latest’, from being overwritten by another user with push access to the repository?<br />Use the DTR web UI to make all tags in the repository immutable.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 116</h2>
+<p class="question-stem">In Docker Trusted Registry, is this how a user can prevent an image, such as ‘nginx:latest’, from being overwritten by another user with push access to the repository?<br />Tag the image with ‘nginx:immutable’.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 117</h2>
+<p class="question-stem">Does this command display all the pods in the cluster that are labeled as ‘env: development’?<br />‘kubectl get pods -l env=development’</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 118</h2>
+<p class="question-stem">Does this command display all the pods in the cluster that are labeled as ‘env: development’?<br />‘kubectl get pods --all-namespaces -l ‘env in (development)’ ’</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 119</h2>
+<p class="question-stem">Your organization has a centralized logging solution, such as Splunk.<br />Will this configure a Docker container to export container logs to the logging solution? docker system events --filter splunk</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 120</h2>
+<p class="question-stem">Your organization has a centralized logging solution, such as Splunk.<br />Will this configure a Docker container to export container logs to the logging solution? docker logs <container-id></p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 121</h2>
+<p class="question-stem">Your organization has a centralized logging solution, such as Splunk.<br />Will this configure a Docker container to export container logs to the logging solution?<br />Set the log-driver and log-opt keys to values for the logging solution (Splunk) in the daemon.json file.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 122</h2>
+<p class="question-stem">The Kubernetes yaml shown below describes a networkPolicy.<br />Will the networkPolicy BLOCK this traffic?<br />a request issued from a pod bearing the tier: backend label, to a pod bearing the tier: frontend label</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 123</h2>
+<p class="question-stem">Is this a Linux kernel namespace that is disabled by default and must be enabled at Docker engine runtime to be used? pid</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 124</h2>
+<p class="question-stem">Is this a Linux kernel namespace that is disabled by default and must be enabled at Docker engine runtime to be used? net</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 125</h2>
+<p class="question-stem">Is this a Linux kernel namespace that is disabled by default and must be enabled at Docker engine runtime to be used? user</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 126</h2>
+<p class="question-stem">Will this command mount the host’s ‘/data’ directory to the ubuntu container in read-only mode?<br />‘docker run -v /data:/mydata --mode readonly ubuntu’</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 127</h2>
+<p class="question-stem">Will this command mount the host’s ‘/data’ directory to the ubuntu container in read-only mode?<br />‘docker run --add-volume /data /mydata --read only ubuntu’</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 128</h2>
+<p class="question-stem">Will this command list all nodes in a swarm cluster from the command line?<br />‘docker inspect nodes’</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 129</h2>
+<p class="question-stem">Will this command list all nodes in a swarm cluster from the command line?<br />‘docker swarm nodes’</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 130</h2>
+<p class="question-stem">Will this command list all nodes in a swarm cluster from the command line?<br />‘docker node ls’</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 131</h2>
+<p class="question-stem">Is this a type of Linux kernel namespace that provides container isolation?<br />Process ID</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 132</h2>
+<p class="question-stem">The following Docker Compose file is deployed as a stack:<br />Is this statement correct about this health check definition?<br />Health checks test for app health ten seconds apart. Three failed health checks transition the container into “unhealthy” status.</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Yes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> No</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
 </div>
     </main>
     <footer class="site-footer">

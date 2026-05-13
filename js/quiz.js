@@ -24,14 +24,19 @@
 
   function el(tag, attrs, children) {
     const e = document.createElement(tag);
-    if (attrs) Object.entries(attrs).forEach(([k, v]) => {
-      if (k === "className") e.className = v;
-      else if (k.startsWith("on")) e.addEventListener(k.slice(2).toLowerCase(), v);
-      else e.setAttribute(k, v);
-    });
+    if (attrs)
+      Object.entries(attrs).forEach(([k, v]) => {
+        if (k === "className") e.className = v;
+        else if (k.startsWith("on"))
+          e.addEventListener(k.slice(2).toLowerCase(), v);
+        else e.setAttribute(k, v);
+      });
     if (children) {
       if (typeof children === "string") e.textContent = children;
-      else if (Array.isArray(children)) children.forEach(c => { if (c) e.appendChild(c); });
+      else if (Array.isArray(children))
+        children.forEach((c) => {
+          if (c) e.appendChild(c);
+        });
       else e.appendChild(children);
     }
     return e;
@@ -55,7 +60,7 @@
     let chosenCount = 25;
     const total = examData.questions.length;
 
-    const counts = [10, 25, 50].filter(n => n <= total);
+    const counts = [10, 25, 50].filter((n) => n <= total);
     counts.push(total);
 
     const container = el("div", { className: "quiz-config" }, [
@@ -65,16 +70,26 @@
     ]);
 
     const btnRow = el("div", { className: "quiz-count-options" });
-    counts.forEach(n => {
+    counts.forEach((n) => {
       const label = n === total ? "All (" + total + ")" : String(n);
-      const btn = el("button", {
-        className: "quiz-count-btn" + (n === chosenCount || (chosenCount > total && n === total) ? " selected" : ""),
-        onClick: () => {
-          chosenCount = n;
-          btnRow.querySelectorAll(".quiz-count-btn").forEach(b => b.classList.remove("selected"));
-          btn.classList.add("selected");
-        }
-      }, label);
+      const btn = el(
+        "button",
+        {
+          className:
+            "quiz-count-btn" +
+            (n === chosenCount || (chosenCount > total && n === total)
+              ? " selected"
+              : ""),
+          onClick: () => {
+            chosenCount = n;
+            btnRow
+              .querySelectorAll(".quiz-count-btn")
+              .forEach((b) => b.classList.remove("selected"));
+            btn.classList.add("selected");
+          },
+        },
+        label,
+      );
       btnRow.appendChild(btn);
     });
 
@@ -83,10 +98,14 @@
 
     container.appendChild(btnRow);
 
-    const startBtn = el("button", {
-      className: "quiz-start-btn",
-      onClick: () => startQuiz(chosenCount)
-    }, "Start Quiz");
+    const startBtn = el(
+      "button",
+      {
+        className: "quiz-start-btn",
+        onClick: () => startQuiz(chosenCount),
+      },
+      "Start Quiz",
+    );
     container.appendChild(startBtn);
 
     app.appendChild(container);
@@ -112,10 +131,17 @@
     // Progress
     const pct = Math.round((currentIndex / total) * 100);
     const progress = el("div", { className: "quiz-progress" }, [
-      el("div", { className: "quiz-progress-text" }, "Question " + (currentIndex + 1) + " of " + total),
+      el(
+        "div",
+        { className: "quiz-progress-text" },
+        "Question " + (currentIndex + 1) + " of " + total,
+      ),
       el("div", { className: "quiz-progress-bar" }, [
-        el("div", { className: "quiz-progress-fill", style: "width:" + pct + "%" })
-      ])
+        el("div", {
+          className: "quiz-progress-fill",
+          style: "width:" + pct + "%",
+        }),
+      ]),
     ]);
 
     // Question card
@@ -124,35 +150,50 @@
 
     // Question images
     if (q.question_images && q.question_images.length > 0) {
-      q.question_images.forEach(imgPath => {
+      q.question_images.forEach((imgPath) => {
         const imgDiv = el("div", { className: "question-image" });
-        const img = el("img", { src: "../" + imgPath, alt: "Question image", loading: "lazy" });
+        const img = el("img", {
+          src: "../" + imgPath,
+          alt: "Question image",
+          loading: "lazy",
+        });
         imgDiv.appendChild(img);
         card.appendChild(imgDiv);
       });
     }
 
-    card.appendChild(elHTML("p", { className: "quiz-stem" }, escapeAndFormat(q.stem)));
+    card.appendChild(
+      elHTML("p", { className: "quiz-stem" }, escapeAndFormat(q.stem)),
+    );
 
     if (isMulti) {
-      card.appendChild(el("p", { className: "quiz-hint" }, "(Choose " + q.answer.length + ")"));
+      card.appendChild(
+        el("p", { className: "quiz-hint" }, "(Choose " + q.answer.length + ")"),
+      );
     }
 
     const optionsDiv = el("div", { className: "quiz-options" });
-    q.options.forEach(opt => {
-      const btn = el("button", {
-        className: "quiz-option",
-        onClick: () => toggleOption(btn, opt.key, isMulti)
-      }, [
-        el("span", { className: "option-key" }, opt.key + "."),
-        document.createTextNode(" " + opt.text)
-      ]);
+    q.options.forEach((opt) => {
+      const btn = el(
+        "button",
+        {
+          className: "quiz-option",
+          onClick: () => toggleOption(btn, opt.key, isMulti),
+        },
+        [
+          el("span", { className: "option-key" }, opt.key + "."),
+          document.createTextNode(" " + opt.text),
+        ],
+      );
       optionsDiv.appendChild(btn);
     });
     card.appendChild(optionsDiv);
 
     // Feedback area (hidden until submit)
-    const feedbackEl = el("div", { className: "quiz-feedback", id: "quiz-feedback" });
+    const feedbackEl = el("div", {
+      className: "quiz-feedback",
+      id: "quiz-feedback",
+    });
     feedbackEl.style.display = "none";
     card.appendChild(feedbackEl);
 
@@ -163,66 +204,93 @@
 
     if (hasNoOptions) {
       // Image-only question (HOTSPOT/DRAG DROP) — show Reveal Answer button
-      const revealBtn = el("button", {
-        className: "quiz-btn",
-        id: "submit-btn",
-        onClick: () => {
-          submitted = true;
-          results.push({ question: q, chosen: [], correct: false });
-          revealBtn.style.display = "none";
-          nextBtn.style.display = "inline-block";
-          // Show answer images
-          if (q.answer_images && q.answer_images.length > 0) {
-            q.answer_images.forEach(imgPath => {
-              const imgDiv = el("div", { className: "question-image answer-image" });
-              const img = el("img", { src: "../" + imgPath, alt: "Answer image", loading: "lazy" });
-              imgDiv.appendChild(img);
-              card.insertBefore(imgDiv, actions);
-            });
-          }
-          const fb = document.getElementById("quiz-feedback");
-          fb.className = "quiz-feedback";
-          fb.textContent = "See the answer image above.";
-          fb.style.display = "block";
-          // Show explanation if available
-          if (q.explanation) {
-            const explainBtn = el("button", {
-              className: "explain-btn",
-              onClick: () => {
-                explainBtn.disabled = true;
-                const box = card.querySelector(".ai-explanation");
-                let processed = escapeHtmlSafe(q.explanation);
-                if (q.source_url) {
-                  processed += '<br><a href="' + q.source_url + '" target="_blank" rel="noopener">ServiceNow Docs Reference</a>';
-                }
-                box.removeAttribute("hidden");
-                box.classList.add("typing");
-                typewrite(box, processed, () => box.classList.remove("typing"));
-              }
-            }, "Explain with AI");
-            actions.appendChild(explainBtn);
-            const explainBox = el("div", { className: "ai-explanation" });
-            explainBox.setAttribute("hidden", "");
-            card.insertBefore(explainBox, actions);
-          }
-        }
-      }, "Reveal Answer");
+      const revealBtn = el(
+        "button",
+        {
+          className: "quiz-btn",
+          id: "submit-btn",
+          onClick: () => {
+            submitted = true;
+            results.push({ question: q, chosen: [], correct: false });
+            revealBtn.style.display = "none";
+            nextBtn.style.display = "inline-block";
+            // Show answer images
+            if (q.answer_images && q.answer_images.length > 0) {
+              q.answer_images.forEach((imgPath) => {
+                const imgDiv = el("div", {
+                  className: "question-image answer-image",
+                });
+                const img = el("img", {
+                  src: "../" + imgPath,
+                  alt: "Answer image",
+                  loading: "lazy",
+                });
+                imgDiv.appendChild(img);
+                card.insertBefore(imgDiv, actions);
+              });
+            }
+            const fb = document.getElementById("quiz-feedback");
+            fb.className = "quiz-feedback";
+            fb.textContent = "See the answer image above.";
+            fb.style.display = "block";
+            // Show explanation if available
+            if (q.explanation) {
+              const explainBtn = el(
+                "button",
+                {
+                  className: "explain-btn",
+                  onClick: () => {
+                    explainBtn.disabled = true;
+                    const box = card.querySelector(".ai-explanation");
+                    let processed = escapeHtmlSafe(q.explanation);
+                    if (q.source_url) {
+                      processed +=
+                        '<br><a href="' +
+                        q.source_url +
+                        '" target="_blank" rel="noopener">ServiceNow Docs Reference</a>';
+                    }
+                    box.removeAttribute("hidden");
+                    box.classList.add("typing");
+                    typewrite(box, processed, () =>
+                      box.classList.remove("typing"),
+                    );
+                  },
+                },
+                "Explain with AI",
+              );
+              actions.appendChild(explainBtn);
+              const explainBox = el("div", { className: "ai-explanation" });
+              explainBox.setAttribute("hidden", "");
+              card.insertBefore(explainBox, actions);
+            }
+          },
+        },
+        "Reveal Answer",
+      );
       actions.appendChild(revealBtn);
     } else {
-      const submitBtn = el("button", {
-        className: "quiz-btn",
-        id: "submit-btn",
-        onClick: () => submitAnswer(q)
-      }, "Submit Answer");
+      const submitBtn = el(
+        "button",
+        {
+          className: "quiz-btn",
+          id: "submit-btn",
+          onClick: () => submitAnswer(q),
+        },
+        "Submit Answer",
+      );
       actions.appendChild(submitBtn);
     }
 
-    const nextBtn = el("button", {
-      className: "quiz-btn",
-      id: "next-btn",
-      style: "display:none",
-      onClick: nextQuestion
-    }, currentIndex < total - 1 ? "Next Question" : "See Results");
+    const nextBtn = el(
+      "button",
+      {
+        className: "quiz-btn",
+        id: "next-btn",
+        style: "display:none",
+        onClick: nextQuestion,
+      },
+      currentIndex < total - 1 ? "Next Question" : "See Results",
+    );
     actions.appendChild(nextBtn);
 
     card.appendChild(actions);
@@ -244,13 +312,15 @@
     if (isMulti) {
       btn.classList.toggle("selected");
       if (selectedKeys.includes(key)) {
-        selectedKeys = selectedKeys.filter(k => k !== key);
+        selectedKeys = selectedKeys.filter((k) => k !== key);
       } else {
         selectedKeys.push(key);
       }
     } else {
       // Single select: deselect others
-      btn.parentElement.querySelectorAll(".quiz-option").forEach(b => b.classList.remove("selected"));
+      btn.parentElement
+        .querySelectorAll(".quiz-option")
+        .forEach((b) => b.classList.remove("selected"));
       btn.classList.add("selected");
       selectedKeys = [key];
     }
@@ -267,12 +337,12 @@
     results.push({
       question: q,
       chosen: selectedKeys.slice(),
-      correct: isCorrect
+      correct: isCorrect,
     });
 
     // Mark options
     const optionBtns = app.querySelectorAll(".quiz-option");
-    optionBtns.forEach(btn => {
+    optionBtns.forEach((btn) => {
       btn.classList.add("disabled");
       const key = btn.querySelector(".option-key").textContent.replace(".", "");
       if (q.answer.includes(key)) {
@@ -301,9 +371,13 @@
     // Show answer images
     if (q.answer_images && q.answer_images.length > 0) {
       const card = app.querySelector(".quiz-question");
-      q.answer_images.forEach(imgPath => {
+      q.answer_images.forEach((imgPath) => {
         const imgDiv = el("div", { className: "question-image answer-image" });
-        const img = el("img", { src: "../" + imgPath, alt: "Answer image", loading: "lazy" });
+        const img = el("img", {
+          src: "../" + imgPath,
+          alt: "Answer image",
+          loading: "lazy",
+        });
         imgDiv.appendChild(img);
         card.insertBefore(imgDiv, card.querySelector(".quiz-actions"));
       });
@@ -313,20 +387,27 @@
     if (q.explanation) {
       const card = app.querySelector(".quiz-question");
       const actions = card.querySelector(".quiz-actions");
-      const explainBtn = el("button", {
-        className: "explain-btn",
-        onClick: () => {
-          explainBtn.disabled = true;
-          const box = card.querySelector(".ai-explanation");
-          let processed = escapeHtmlSafe(q.explanation);
-          if (q.source_url) {
-            processed += '<br><a href="' + q.source_url + '" target="_blank" rel="noopener">ServiceNow Docs Reference</a>';
-          }
-          box.removeAttribute("hidden");
-          box.classList.add("typing");
-          typewrite(box, processed, () => box.classList.remove("typing"));
-        }
-      }, "Explain with AI");
+      const explainBtn = el(
+        "button",
+        {
+          className: "explain-btn",
+          onClick: () => {
+            explainBtn.disabled = true;
+            const box = card.querySelector(".ai-explanation");
+            let processed = escapeHtmlSafe(q.explanation);
+            if (q.source_url) {
+              processed +=
+                '<br><a href="' +
+                q.source_url +
+                '" target="_blank" rel="noopener">ServiceNow Docs Reference</a>';
+            }
+            box.removeAttribute("hidden");
+            box.classList.add("typing");
+            typewrite(box, processed, () => box.classList.remove("typing"));
+          },
+        },
+        "Explain with AI",
+      );
       actions.appendChild(explainBtn);
 
       const explainBox = el("div", { className: "ai-explanation" });
@@ -346,53 +427,93 @@
 
   function renderResults() {
     app.innerHTML = "";
-    const correctCount = results.filter(r => r.correct).length;
+    const correctCount = results.filter((r) => r.correct).length;
     const total = results.length;
     const pct = Math.round((correctCount / total) * 100);
 
     const container = el("div", { className: "quiz-results" });
     container.appendChild(el("h1", null, "Results"));
-    container.appendChild(el("p", { className: "quiz-score" },
-      correctCount + "/" + total + " correct (" + pct + "%)"
-    ));
+    container.appendChild(
+      el(
+        "p",
+        { className: "quiz-score" },
+        correctCount + "/" + total + " correct (" + pct + "%)",
+      ),
+    );
 
     // Action buttons
-    const missedCount = results.filter(r => !r.correct).length;
-    const actions = el("div", { className: "quiz-actions", style: "margin-bottom:1.5rem" });
+    const missedCount = results.filter((r) => !r.correct).length;
+    const actions = el("div", {
+      className: "quiz-actions",
+      style: "margin-bottom:1.5rem",
+    });
 
     if (missedCount > 0) {
-      actions.appendChild(el("button", {
-        className: "quiz-btn",
-        onClick: retryMissed
-      }, "Retry Missed (" + missedCount + ")"));
+      actions.appendChild(
+        el(
+          "button",
+          {
+            className: "quiz-btn",
+            onClick: retryMissed,
+          },
+          "Retry Missed (" + missedCount + ")",
+        ),
+      );
     }
 
-    actions.appendChild(el("button", {
-      className: "quiz-btn secondary",
-      onClick: renderConfig
-    }, "New Quiz"));
+    actions.appendChild(
+      el(
+        "button",
+        {
+          className: "quiz-btn secondary",
+          onClick: renderConfig,
+        },
+        "New Quiz",
+      ),
+    );
 
     container.appendChild(actions);
 
     // All questions review
     results.forEach((r, i) => {
-      const card = el("div", { className: "quiz-result-card" + (r.correct ? "" : " wrong") });
+      const card = el("div", {
+        className: "quiz-result-card" + (r.correct ? "" : " wrong"),
+      });
 
       const header = el("div", { className: "result-header" }, [
         el("h3", null, "Question " + r.question.id),
-        el("span", { className: "result-icon" }, r.correct ? "\u2713" : "\u2717")
+        el(
+          "span",
+          { className: "result-icon" },
+          r.correct ? "\u2713" : "\u2717",
+        ),
       ]);
       card.appendChild(header);
 
-      card.appendChild(elHTML("p", { className: "result-stem" }, escapeAndFormat(r.question.stem)));
+      card.appendChild(
+        elHTML(
+          "p",
+          { className: "result-stem" },
+          escapeAndFormat(r.question.stem),
+        ),
+      );
 
       const answersDiv = el("div", { className: "result-answers" });
-      answersDiv.appendChild(elHTML("div", { className: "your-answer" },
-        "Your answer: " + (r.chosen.length > 0 ? r.chosen.join(", ") : "none")
-      ));
-      answersDiv.appendChild(elHTML("div", { className: "correct-answer" },
-        "Correct answer: " + r.question.answer.join(", ")
-      ));
+      answersDiv.appendChild(
+        elHTML(
+          "div",
+          { className: "your-answer" },
+          "Your answer: " +
+            (r.chosen.length > 0 ? r.chosen.join(", ") : "none"),
+        ),
+      );
+      answersDiv.appendChild(
+        elHTML(
+          "div",
+          { className: "correct-answer" },
+          "Correct answer: " + r.question.answer.join(", "),
+        ),
+      );
       card.appendChild(answersDiv);
 
       container.appendChild(card);
@@ -402,7 +523,7 @@
   }
 
   function retryMissed() {
-    const missed = results.filter(r => !r.correct).map(r => r.question);
+    const missed = results.filter((r) => !r.correct).map((r) => r.question);
     quizQuestions = shuffle(missed);
     currentIndex = 0;
     selectedKeys = [];
@@ -423,11 +544,19 @@
     while (i < html.length) {
       if (html[i] === "<") {
         const end = html.indexOf(">", i);
-        if (end !== -1) { segments.push({ type: "tag", value: html.slice(i, end + 1) }); i = end + 1; continue; }
+        if (end !== -1) {
+          segments.push({ type: "tag", value: html.slice(i, end + 1) });
+          i = end + 1;
+          continue;
+        }
       }
       if (html[i] === "&") {
         const semi = html.indexOf(";", i);
-        if (semi !== -1 && semi - i < 10) { segments.push({ type: "text", value: html.slice(i, semi + 1) }); i = semi + 1; continue; }
+        if (semi !== -1 && semi - i < 10) {
+          segments.push({ type: "text", value: html.slice(i, semi + 1) });
+          i = semi + 1;
+          continue;
+        }
       }
       segments.push({ type: "text", value: html[i] });
       i++;
@@ -435,17 +564,28 @@
     let output = "";
     let idx = 0;
     function step() {
-      if (idx >= segments.length) { el.innerHTML = output; if (onDone) onDone(); return; }
+      if (idx >= segments.length) {
+        el.innerHTML = output;
+        if (onDone) onDone();
+        return;
+      }
       const seg = segments[idx++];
       output += seg.value;
-      if (seg.type === "tag") { step(); }
-      else { el.innerHTML = output; setTimeout(step, 12); }
+      if (seg.type === "tag") {
+        step();
+      } else {
+        el.innerHTML = output;
+        setTimeout(step, 12);
+      }
     }
     step();
   }
 
   // Init
-  loadExam().catch(err => {
-    app.innerHTML = '<p style="color:#d73a49;">Failed to load exam data: ' + err.message + '</p>';
+  loadExam().catch((err) => {
+    app.innerHTML =
+      '<p style="color:#d73a49;">Failed to load exam data: ' +
+      err.message +
+      "</p>";
   });
 })();
