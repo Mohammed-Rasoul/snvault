@@ -532,8 +532,19 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="For the Close code field, the correct Facts table is Choice [sys_choice]. Close code is a choice-type field on the Incident table, so its values are stored in the sys_choice table. The breakdown source should use Choice [sys_choice] with conditions filtering for Table=Incident and Element=close_code, similar to how the Incident.Category breakdown source uses sys_choice. The Incident table itself doesn&#x27;t contain the choice definitions." data-source-url="https://www.servicenow.com/docs/r/now-intelligence/performance-analytics/t_DefiningABreakdownSource.html">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 40</h2>
+<p class="question-stem">Where should you go to activate a Performance Analytics Content Pack?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Content Management > Performance Analytics</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Performance Analytics > Add Content Pack</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Performance Analytics > Activate Solution</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> System Applications > All Available Applications > All</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="B" data-community="false" data-explanation="For the Close code field, the correct Facts table is Choice [sys_choice]. Close code is a choice-type field on the Incident table, so its values are stored in the sys_choice table. The breakdown source should use Choice [sys_choice] with conditions filtering for Table=Incident and Element=close_code, similar to how the Incident.Category breakdown source uses sys_choice. The Incident table itself doesn&#x27;t contain the choice definitions." data-source-url="https://www.servicenow.com/docs/r/now-intelligence/performance-analytics/t_DefiningABreakdownSource.html">
+<h2>Question 41</h2>
 <p class="question-stem">Consider this scenario:<br />1. You are working with a default ServiceNow instance.<br />2. You need to configure a Breakdown source and a Breakdown for the Close code field in order to analyze incident data by Close codes.<br /><br />Which of the following is the correct Facts table to use in the Breakdown source for Close code?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Close Code [sys_close_code]</div>
@@ -546,7 +557,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="After duplicating a dashboard, only changes to widgets made with the Edit Content icon (B) are visible on both the original and duplicate. This is because Edit Content modifies the underlying widget record shared between both dashboards. Layout changes, tab name/order modifications, and Follow Interactive Filter setting changes are dashboard-level configurations that remain independent between the original and the copy." data-source-url="">
-<h2>Question 41</h2>
+<h2>Question 42</h2>
 <p class="question-stem">After modifying a Dashboard created from another Dashboard using the “Duplicate Dashboard” functionality, what type of changes are visible on both the original and the duplicate Dashboard going forward?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Layout</div>
@@ -559,7 +570,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B,D" data-community="false" data-explanation="The valid Performance Analytics Widget types include Time Series (B) and Breakdown (D). Time Series displays indicator scores over time, and Breakdown shows scores split by breakdown elements. Pie (A) and Heatmap (C) are report visualization types, not PA-specific widget types. PA widgets are distinct from report visualizations and include types like Single Score, Time Series, Breakdown, and Speedometer." data-source-url="">
-<h2>Question 42</h2>
+<h2>Question 43</h2>
 <p class="question-stem">Select the valid Performance Analytics Widget types. (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Pie</div>
@@ -572,7 +583,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="To apply the same Breakdown to Indicators using different facts tables, a Breakdown Mapping must be configured for each facts table (D). Breakdown Mappings define how breakdown elements correspond to fields on each indicator&#x27;s facts table. Without a mapping for a specific facts table, the breakdown cannot be associated with indicators using that table. Application scope, collection jobs, and Breakdown Relations are unrelated to this requirement." data-source-url="">
-<h2>Question 43</h2>
+<h2>Question 44</h2>
 <p class="question-stem">What must be true in order to apply the same Breakdown to Indicators using different facts tables?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> The Breakdown and Indicators must belong to the same application scope.</div>
@@ -585,7 +596,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="In KPI Details, when an indicator misses its target on the Target Review date, the KPI status is set to &#x27;Off Track.&#x27; This status indicates the indicator failed to meet its defined target by the review deadline. &#x27;Missed&#x27; and &#x27;Not Met&#x27; are not standard KPI status values in PA. The associated target is not automatically disabled; it remains active so progress can continue to be tracked." data-source-url="">
-<h2>Question 44</h2>
+<h2>Question 45</h2>
 <p class="question-stem">In KPI Details, what happens when an indicator misses its target on the Target Review date?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> The KPI status is set to Missed.</div>
@@ -598,7 +609,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B,C,E" data-community="false" data-explanation="A PA Widget may not follow the Dashboard Breakdown Source because: the Indicator has no configured Breakdowns (B), &#x27;Follow Element&#x27; is not checked in Widget data settings (C), or the Breakdown used by the Widget uses a different Breakdown Source than the dashboard (E). Time series widgets can follow breakdowns (A is wrong). Element security blocks viewing but doesn&#x27;t prevent following (D). Following an Interactive Filter operates independently of breakdown following (F)." data-source-url="">
-<h2>Question 45</h2>
+<h2>Question 46</h2>
 <p class="question-stem">A Performance Analytics Widget does not follow the Dashboard Breakdown Source. Select the possible reasons for this behavior. (Choose three.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> It is a time series type widget.</div>
@@ -613,7 +624,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="The allowed visualization type for Text Analytics Widgets is Word Cloud (C). Text Analytics analyzes string fields from indicator sources and displays the most frequently occurring words or phrases as a word cloud, where word size indicates frequency. Keyword List, Breakdown, and Time series are not valid visualization types for Text Analytics widgets." data-source-url="">
-<h2>Question 46</h2>
+<h2>Question 47</h2>
 <p class="question-stem">Select the allowed visualization type for Text Analytics Widgets.</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Keyword List</div>
@@ -626,7 +637,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="B" data-community="false" data-explanation="With Relative start: 0 days ago and Relative end: 0 days ago, the collection job collects data for the current date range, which means scores for Today (B). &#x27;0 days ago&#x27; means today, so the job queries data from today to today. The job processes and stores scores for Today. It does not collect yesterday&#x27;s scores, tomorrow&#x27;s scores, or fail. This is the standard configuration for collecting current-day data." data-source-url="">
-<h2>Question 47</h2>
+<h2>Question 48</h2>
 <p class="question-stem">An Active Collection Job is configured as follows:<br />• Relative start: 0 days ago<br />• Relative end: 0 days ago<br />• Run: Daily<br /><br />Which scores will be collected for a Daily Indicator included in this job?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Scores for Tomorrow</div>
@@ -639,7 +650,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="When the number of Breakdown elements exceeds the maximum allowed (defined in System Properties), the &#x27;DC active&#x27; checkbox becomes visible and disabled on the Breakdown Source form. DC active (Data Collection active) is automatically unchecked to prevent excessive data collection. This protects system performance by stopping score collection for oversized breakdowns. You must reduce elements or increase the limit before re-enabling collection." data-source-url="">
-<h2>Question 48</h2>
+<h2>Question 49</h2>
 <p class="question-stem">Which Breakdown Source attribute becomes visible and disabled when the number of Breakdown elements exceeds the maximum allowed as defined in the System Properties?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Collection error</div>
@@ -652,7 +663,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="To collect scores for yesterday with a Daily Collection job, configure Relative start: 1 days ago and Relative end: 1 days ago (D). This means the job looks at data from 1 day ago to 1 day ago, which is yesterday. &#x27;0 days ago to 0 days ago&#x27; collects today&#x27;s data. &#x27;1 days ago to 0 days ago&#x27; would span yesterday through today. &#x27;-1 days ago&#x27; is not valid syntax." data-source-url="">
-<h2>Question 49</h2>
+<h2>Question 50</h2>
 <p class="question-stem">You have a Daily Collection job. How should you configure Relative start and Relative end to be able to collect scores for yesterday?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> 1 days ago to 0 days ago</div>
@@ -665,7 +676,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="The Direction property of an Indicator indicates whether scores should ideally increase or decrease (Maximize or Minimize). For example, &#x27;Number of resolved incidents&#x27; would have Direction set to Maximize, while &#x27;Average resolution time&#x27; would be Minimize. This property affects how targets, thresholds, and signals interpret score changes. It does not control layout, list ordering, or rounding." data-source-url="">
-<h2>Question 50</h2>
+<h2>Question 51</h2>
 <p class="question-stem">What is the purpose of the Direction property of an Indicator?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Sets the layout of the Indicator when used on a Dashboard</div>
@@ -678,7 +689,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="You can tell an Automated Breakdown is using a Bucket Group when the Facts table of the Breakdown Source is set to [pa_buckets] (C). Bucket groups recategorize data into discrete ranges and are stored in the pa_buckets table. The Breakdown&#x27;s facts table itself is not set to pa_buckets. Default element filters and Related list conditions do not directly identify bucket group usage." data-source-url="">
-<h2>Question 51</h2>
+<h2>Question 52</h2>
 <p class="question-stem">How can you tell that an Automated Breakdown is using a Bucket Group?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> The Facts table of the Breakdown is set to [pa_buckets].</div>
@@ -691,7 +702,7 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="Breakdown Relations use the relationship between records (like Assigned To user and their Manager) as current at the time the Data Collector is executed (C). When the collection job runs, it evaluates the relationship at that moment to determine how elements are related. The relationship is not updated when the Breakdown Relation record is modified, when a separate relations job runs, or when a user views the indicator." data-source-url="">
-<h2>Question 52</h2>
+<h2>Question 53</h2>
 <p class="question-stem">In your data model, there is a relationship between the Assigned To user and their Manager.<br />Breakdown Relations use this relationship that is current as of?</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> When the Breakdown Relation is updated</div>
@@ -704,26 +715,13 @@
 <div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="Formula A &#x27;((Number of new critical incidents)) / ((Number of new incidents)) * 100&#x27; uses double parentheses (()) instead of double square brackets ([[]]) for indicator references. PA formulas require [[indicator_name]] syntax for indicator scores and {{indicator_name}} for global totals. Options B, C, and D all use correct bracket syntax. The double-parenthesis notation is invalid in PA formula syntax." data-source-url="">
-<h2>Question 53</h2>
+<h2>Question 54</h2>
 <p class="question-stem">Select the syntactically INCORRECT formula, assuming that all Indicators names are valid.</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> ((Number of new critical incidents)) / ((Number of new incidents)) * 100</div>
 <div class="answer-option" data-key="B"><span class="option-key">B.</span> 100 - ((([[Average resolution time of resolved incidents]] - 17.5) / 17.5) * 100)</div>
 <div class="answer-option" data-key="C"><span class="option-key">C.</span> if ([[Number of resolved incidents]] == 0) {0} else ([[Number of resolved incidents]])</div>
 <div class="answer-option" data-key="D"><span class="option-key">D.</span> [[Number of new incidents]] / {{Number of new incidents}} * 100</div>
-</div>
-<button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
-</div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="When authoring a new Resource Block that connects to a Host Resource Block, you need to know the Host Interface of the Host. The Host Interface defines which resource blocks can be hosted on it. The ServiceNow doc for specifying host resources states: &#x27;Hosts that support the Host interface of a resource block are potential hosts for the resource block.&#x27; The Guest Interface belongs to the guest (the block being authored), not the host. CI Class and Endpoint Mappings are not required to establish the host-guest relationship." data-source-url="https://www.servicenow.com/docs/r/it-operations-management/cloud-configuration-governance/specify-host-resource-cmp.html">
-<h2>Question 54</h2>
-<p class="question-stem">Before you can author a new Resource Block, what information do you require about the Host Resource Block that the Resource Block you are authoring will connect to?</p>
-<div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> CI Class of the Host</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> Guest Interface of the Host</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> Host Interface of the Host</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> Endpoint Mappings of the Host</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
 <button class="explain-btn">Explain with AI</button>

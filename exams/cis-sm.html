@@ -820,18 +820,16 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="For releasing an application that trading partners can install in their own Salesforce environments and build upon with process builders and triggers, a Managed Package is recommended. Managed packages provide IP protection, versioning, upgrade paths, and can be listed on AppExchange. Unmanaged packages don&#x27;t support upgrades, change sets aren&#x27;t cross-org, and zip files lack package management features." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 61</h2>
-<p class="question-stem">Universal Containers’ (UC) innovative apps division is releasing an application which can be installed in their trading partners’ Salesforce environments. The application allows the trading partners to book containers from UC directly without leaving their own Salesforce environment. The partners can then build on top of the application with process builders and triggers so the container booking process can be integrated with the trading partners’ own processes.<br />What is the recommended mechanism for releasing the application?</p>
+<p class="question-stem">In Service Mapping, which can be useful in determining what Patterns, Identification Sections, Connection Sections, and Steps are tried?</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Change Sets</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> Managed Package</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> Unmanaged Package</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> Zip file deployable by Force.com Migration Tool</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Pattern Log</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> ECC Log</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Service Mapping Log</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Discovery Log</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="C" data-community="false" data-explanation="In Service Mapping, a red circle icon on the service map represents a credential error. Red indicates a critical error that prevents discovery from proceeding, and a circle (rather than triangle) specifically denotes a credential-related issue where the MID Server couldn&#x27;t authenticate to the target. Yellow triangle (A) typically indicates a warning or non-critical issue. Yellow circle (B) and red triangle (D) are not the standard SM credential error indicators." data-source-url="">
 <h2>Question 62</h2>
@@ -846,229 +844,697 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="When deploying a huge volume of metadata that cannot be deployed at once, the recommended strategy is to identify metadata dependencies, create logical groupings, and deploy in the right order. This ensures dependent components are deployed before the components that reference them. Alphabetical sorting ignores dependencies, and mixing tools or using CI alone doesn&#x27;t address the dependency ordering problem." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 63</h2>
-<p class="question-stem">Universal Containers (UC) has a huge volume of metadata that cannot be deployed at once.<br />What is the recommended strategy for UC to be successful with the deployment?</p>
+<p class="question-stem">If a customer wants to track a new hardware configuration item within a dedicated new table, where there is no baseline class defined, which one can be performed?</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Sort and group the metadata alphabetically and deploy them in the same order.</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> Use a combination of the Ant migration tool and change sets for deployment.</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> Identify metadata dependencies, create logical groupings, and deploy in the right order.</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> Use a continuous integration tool such as Jenkins to deploy the metadata.</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Create a new table by extending the Configuration Item [cmdb_ci] table</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> It is never recommended to build a new table</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Create a new table by extending the Task [task] table</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Create a new table by extending the Application [cmdb_ci_appl] table</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,C" data-community="false" data-explanation="Change sets provide two key advantages for deploying simple configuration changes: (B) an easy way to deploy related components by grouping them together in a single change set, and (C) a simple and declarative method for deployment using the point-and-click UI. Change sets are not ideal for very large deployments (A) and don&#x27;t inherently track changes to components (D) — that requires version control." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 64</h2>
-<p class="question-stem">Universal Containers is planning to release simple configuration changes and enhancements to their Sales Cloud. A Technical Architect recommended using change sets.<br />Which two advantages would change sets provide in this scenario? (Choose two.)</p>
+<p class="question-stem">Which Service Mapping technique is appropriate for small application services that rarely change and require high availability?</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> The ability to deploy a very large number of components easily.</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> An easy way to deploy related components.</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> A simple and declarative method for deployment.</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> The ability to track changes to components.</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Tag-Based Mapping</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Dynamic CI Group</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Manual Services</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Top-Down Mapping</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="To address critical bugs while a long-term project is in development, utilize a dedicated developer pro sandbox to fix critical bugs and release them to production independently. This keeps the bug fix pipeline separate from the ongoing project development, allowing urgent fixes to reach production without waiting for the larger project to complete or risking destabilization of development work." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 65</h2>
-<p class="question-stem">Universal Containers (UC) is about to begin development work on a new project in their Salesforce org that will take many months to complete. UC is concerned about how critical bugs will be addressed for existing live functionality.<br />What is the recommended release management strategy to address this concern?</p>
+<p class="question-stem">A single MID Server can connect to how many ServiceNow instances?</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Include fixes for critical bugs in the ongoing Development sandboxes so that they will be released with the other code.</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> Keep teams separate until the end of the project and create a Full Copy sandbox to merge their work then.</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> Utilize a dedicated developer pro sandbox to address critical bugs and release to production.</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> Address critical bugs in the Development sandboxes and push those changes to production separately.</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> One</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Up to 255</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Up to maximum allowable memory</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> 10</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="For organizations with both minor and major releases, change sets should be used for minor releases (simple configuration changes via point-and-click) and Metadata API for major releases (large, complex code deployments that benefit from automation). Change sets are too limited for major releases with many components, while Metadata API provides the scripting and automation needed for complex deployments." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 66</h2>
-<p class="question-stem">Universal Containers has multiple minor and major releases in a year. Minor releases have simple configuration changes, while major releases involve a large number of complex code components.<br />What deployment tools should an Architect recommend for both types of releases?</p>
+<p class="question-stem">For Service Mapping and Discovery, new and updated patterns become available between ServiceNow releases from which of the following sources?</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Force.com IDE for minor releases and metadata API for major releases.</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> Change sets for both minor releases and major releases.</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> Change sets for minor releases and Force.com IDE for major releases.</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> Change sets for minor releases and metadata API for major releases.</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> ServiceNow Doc Site</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> ServiceNow Store</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> ServiceNow Now Support</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> ServiceNow Community</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B" data-community="false" data-explanation="Two key Metadata API limitations are: (A) maximum deployed .zip file size is 39 MB, and (B) you can deploy and retrieve up to 10,000 files at once. These constraints affect large-scale deployments — organizations with many metadata components may need to split deployments into multiple batches, and large orgs may exceed the .zip size limit requiring file optimization or splitting." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 67</h2>
-<p class="question-stem">Universal Containers (UC) works with different partners and has few admin resources that take care of the day-to-day deployment tasks. As a result, UC would like to find a way to automate the deployments using Metadata API.<br />Which two limitations of Metadata API should be considered when using Metadata API-based deployments? (Choose two.)</p>
+<p class="question-stem">When building a Discovery Pattern, which operation results in a termination of the Identification or Connection Section if a condition is not met?</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Maximum size of deployed .zip file is 39 M</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> Deploy and retrieve up to 10,000 files at once.</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> Deploy up to 10,000 files, but retrieve more than 10,000 files.</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> Maximum size of deployed .zip file is 400 M</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Get Process</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Match</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Parse URL</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Get Registry Key</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D,E" data-community="false" data-explanation="To quickly get feedback and prioritize feature requests aligned with business goals: (D) present the requests at a Center of Excellence meeting, where cross-functional stakeholders can evaluate and prioritize them against business objectives, and (E) create a backlog or priority list in a project management tool to track, rank, and manage the requests systematically. These provide structured, transparent prioritization." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 68</h2>
-<p class="question-stem">Universal Containers (UC) has received feedback from the field on several new feature requests that are aligned with key business goals. UC is looking for a way to quickly get feedback and prioritize these requests.<br />Which two options should an Architect recommend? (Choose two.)</p>
+<p class="question-stem">Which omitted action will keep changes to a discovery pattern connection section from taking effect?</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Create design standards around the new features being requested.</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> Send the requests to IT for a formal review at the end of the year.</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> Bring the feature request to the Test Manager to gain quality checks.</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> Present the feature requests at a Center of Excellence meeting.</div>
-<div class="answer-option" data-key="E"><span class="option-key">E.</span> Create a backlog or priority list in a project management tool.</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Publishing the updated pattern</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Saving the updated pattern</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Exporting the updated pattern</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Saving the updated connection section</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C,D" data-community="false" data-explanation="For a Center of Excellence (CoE), Executive Sponsors (C) and Program Team (D) are the recommended user groups. Executive Sponsors provide strategic direction, funding, and organizational authority. The Program Team brings technical governance and delivery expertise. Inside Sales Users and Call Center Agents are end users who benefit from the CoE&#x27;s output but don&#x27;t typically drive governance decisions." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 69</h2>
-<p class="question-stem">Universal Containers is starting a Center of Excellence (CoE).<br />Which two user groups should an Architect recommend to join the CoE? (Choose two.)</p>
+<p class="question-stem">When planning for a Service Mapping engagement and deploying MID Servers into a customer environment, which outbound port must be open from the customer environment to allow the MID Server(s) to communicate to the customer ServiceNow instance hosted in the ServiceNow cloud?</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Inside Sales Users</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> Call Center Agents</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> Executive Sponsors</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> Program Team</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> 8080</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> 443</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> 80</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> 636</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> 25</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="To prevent design conflicts when multiple project teams build into a single org, create Design Standards for Governance. Design standards establish common patterns, naming conventions, architectural guidelines, and coding standards that all teams must follow. This ensures consistency and prevents conflicts. A CoE charter, release management, and Git repos serve different purposes and don&#x27;t directly address design consistency." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 70</h2>
-<p class="question-stem">Universal Containers has multiple project teams building into a single org. The project teams are concerned with design conflicts and ensuring a common design process.<br />What should an Architect recommend to prevent this conflict?</p>
+<p class="question-stem">Which one of the following describes the three minimum components needed to discover a service containing baseline supported operating systems, infrastructure, and applications?</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Create a Center of Excellence Charter document.</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> Create a Release Management process.</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> Create Design Standards for Governance.</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> Create a backup system using Git Repositories.</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> MID Server, IP Range, and Subnet Mask</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> MID Server, IP Range, Entry Point</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> MID server, Entry Point, and Credentials</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> MID Server, Entry Point, and Subnet Mask</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="When testing finds issues, fix them in the development sandbox, migrate to testing for validation, and deploy to production after testing passes. This follows the proper SDLC flow: Dev → Test → Prod. Fixing directly in test (D) or deploying from test to prod bypasses proper development practices. Fixing in dev and deploying directly to prod (C) skips testing validation." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 71</h2>
-<p class="question-stem">Universal Containers has multiple projects being developed in parallel. One of the projects is in the testing phase, and the testing team found a list of issues on the items that will be deployed to production. As the project deadline is short, the customer team proposes that the fixes be done in the test sandbox and then deployed to Production.<br />What should the Architect recommend?</p>
+<p class="question-stem">Which value is defined for the Discovery source field when an application is discovered by Service Mapping?</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Recommend fixing the issues in the test environment and migrating the changes to the development sandbox.</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> Recommend fixing the issues in the development sandbox, migrating them to testing, and deploy to production after testing.</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> Recommend fixing the issues in the development environment and deploying the changes to production.</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> Recommend the customer team’s proposal to fix the issues in the testing environment and deploy them to production.</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Discovery</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Application Service</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> ServiceNow</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Service Mapping</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="Load Testing measures page response time under expected concurrent user conditions. With 1,500 concurrent users and a 5-second response time target, load testing simulates the expected traffic to verify performance meets requirements. Unit testing checks code logic, system integration testing verifies system connections, and stress testing pushes beyond expected limits to find breaking points." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 72</h2>
-<p class="question-stem">Universal Containers (UC) is implementing Service Cloud for their contact centers for 3,000 users. They have approximately 10 customers. The average page response time expected is less than 5 seconds with 1,500 concurrent users.<br />What type of testing will help UC measure the page response time?</p>
+<p class="question-stem">Reconciliation Rules for the Application [cmdb_ci_appl] table are configured exactly the same for the following data sources and the priorities are configured as listed. - ServiceNow - Priority 100 - Altiris - Priority 200 - SCCM - Priority 300 Which one of the following is true?</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Unit Testing</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> System Integration Testing</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> Load Testing</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> Stress Testing</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> If an Application CI is discovered by ServiceNow, then the same Application CI is discovered by Altiris, an update is allowed</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> If an Application CI is discovered by ServiceNow, then the same Application CI is discovered by SCCM, an update is allowed</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> If an Application CI is discovered by Altiris, then the same Application CI is discovered by ServiceNow, an update is allowed</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> If an Application CI is discovered by Altiris, then the same Application CI is discovered by SCCM, an update is allowed</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B,E" data-community="false" data-explanation="Three risks of using a Developer Edition org for staging Community changes: (A) Dev Ed orgs cannot have sandboxes, making team development difficult; (B) limited user counts and low data volumes make user testing difficult; and (E) Change Sets cannot deploy from Dev Ed to Production, requiring more complex Metadata API deployments. These constraints make Dev Ed unsuitable for staging production-bound changes." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 73</h2>
-<p class="question-stem">Universal Containers has proposed using a Developer Edition org to stage changes to their Customer Community, which includes multiple custom Visualforce pages and components.<br />Which three risks should a Technical Architect consider in this strategy? (Choose three.)</p>
+<p class="question-stem">What is a primary Service Mapping feature using machine learning-powered mapping?</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Developer Edition orgs CANNOT have sandboxes, which will make team development difficult.</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> Developer Edition orgs have limited user counts and low data volume limits, which will make User Testing difficult.</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> Code changes CANNOT be deployed from a Developer Sandbox to Production.</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> Developer Edition orgs do NOT run on production servers, and will NOT perform well during testing,</div>
-<div class="answer-option" data-key="E"><span class="option-key">E.</span> Change Sets CANNOT be used to deploy from Developer Edition to Production, which will make deployment more complex.</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> It builds application clusters using tag-based conditions.</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> It relies on traffic-based information to predict service maps.</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> It requires manual addition of configuration items.</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> It uses patterns to identify configuration details.</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,D,E" data-community="false" data-explanation="Three version control best practices: (B) maintain a single entry point for production from the master branch to ensure controlled releases; (D) maintain separate developer branches for minor and major releases to isolate different release streams; and (E) maintain a single repository with individual branches for projects to centralize code while enabling parallel development. Unrestricted access (C) violates governance principles." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 74</h2>
-<p class="question-stem">Universal Containers (UC) is considering updating their Salesforce Release Management process.<br />Which three best practices should UC consider for version control? (Choose three.)</p>
+<p class="question-stem">Which one of the following describes how often the ServiceNow instance sends a synthetic transaction via the Heartbeat probe to a MID Server?</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Automation is a must with various application branches in the repository.</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> Maintain a single entry point for production from the master branch.</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> Maintain unrestricted access to the release sandboxes for all changes being deployed.</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> Maintain separate developer branches for minor and major releases.</div>
-<div class="answer-option" data-key="E"><span class="option-key">E.</span> Maintain a single repository for applications with individual branches for projects.</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Every 1 minute</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Every 5 minutes</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Every 10 minutes</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Every 3 minutes</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="When Metadata API doesn&#x27;t support certain components, deploy those unsupported components manually before or after the automated deployment. This is the practical workaround — perform the automated Metadata API deployment for supported components, then handle unsupported ones through the UI or other manual methods. AppExchange products aren&#x27;t designed for this, and other deployment tools have similar limitations." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 75</h2>
-<p class="question-stem">Universal Containers has automated its deployment process using Metadata API. However, they found that Metadata API does not support all the components yet.<br />What should be done to address this?</p>
+<p class="question-stem">In a Discovery Pattern, which of the following configurations would allow a step in an Identification Section to be skipped and have the pattern continue to the next step?</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Deploy unsupported components manually before/after deployment.</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> Use AppExchange products to deploy unsupported components.</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> Use the Force.com IDE for deploying the unsupported components.</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> Use change sets for deploying all the unsupported components.</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Set a precondition on a step such as "1 Equals 2"</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Select the option "Terminate if not found"</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Set a temporary variable in the step called "skip"</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Enable Debug Mode</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="To address the test data setup problem in continuous integration, include automated sample data during deployment. Automating test data creation as part of the CI pipeline ensures consistent, repeatable test environments without manual effort. Training users (A) or adding more people (B) are manual approaches that don&#x27;t scale, and dismissing it as out of scope (D) ignores a solvable bottleneck in the CI process." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 76</h2>
-<p class="question-stem">Universal Containers has a stable continuous integration process and all stakeholders are happy. However, user testing takes a long time, as data has to be set up.<br />What should an Architect do to address this problem?</p>
+<p class="question-stem">Which one of the following describes the basis of how ServiceNow Discovery primarily classifies computers?</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Train business users to create test data more efficiently.</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> Advise the project manager to assign more users to create test data.</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> Include automated sample data during deployment.</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> Test data creation is outside the scope of continuous integration.</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> WMI</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> CPU Type</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Operating System</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> NetBIOS name</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A,B" data-community="false" data-explanation="Waterfall methodology is favored in two situations: (A) applications with many systems and inter-dependencies between components, where upfront planning and sequential execution reduce integration risk, and (B) regulatory compliance requirements validated by outside agencies, where comprehensive documentation and formal phase gates are mandatory. Flexible requirements (C) and incremental changes (D) suit Agile better." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 77</h2>
-<p class="question-stem">Which two project situations favor a waterfall methodology? (Choose two.)</p>
+<p class="question-stem">Which Service Mapping technique uses patterns to identify configuration details and establish process-to-process connections?</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> An application with many systems and inter-dependencies between components.</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> An application with regulatory compliance requirements to be validated by outside agencies.</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> An in-house application with a fixed team size, but an open timeline and flexible requirements.</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> An application in post-production, with incremental changes made by a small team.</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Tag-Based Mapping</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Top-Down Mapping</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Manual Services</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Dynamic CI Group</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="For urgent production issues, the recommended approach is to fix the issue in the hotfix sandbox, test it there, and deploy directly to production. The hotfix sandbox exists specifically for this purpose — bypassing the standard release pipeline to address critical issues quickly. Following the full release process (B) is too slow, and fixing in staging (C) or going through full dev-to-UAT (D) adds unnecessary delay for urgent fixes." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 78</h2>
-<p class="question-stem">Universal Containers (UC) is using Sales and Service Cloud. They have two major releases and four minor releases every year. They have development (dev), integration, user acceptance (UAT), staging, and hotfix sandboxes.</p>
+<p class="question-stem">Which is the most common risk that can negatively impact a Service Mapping engagement?</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Fix the issue in hotfix, test, and deploy to production.</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> Follow the release management process to move to production.</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> Fix the issue in staging and deploy it to production.</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> Fix the issue in development, test in UAT, and deploy to production.</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> The MID server resource requirements are beyond capacity of the customer</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> The customer is not using Active Directory for credential authentication</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> The customer security team is not made aware early enough in the engagement of the credential requirements</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> The customer external firewall only communicates on outbound port 80 and 443</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="D" data-community="false" data-explanation="The key reason to use effort tracking in an Agile tool is that it allows developers to compare their effort estimates and actuals to better adjust future estimates. This feedback loop improves estimation accuracy over time, leading to more predictable sprints and better project planning. It&#x27;s not about tracking hours for compensation (B), micromanaging developers (C), or making timeline commitments based solely on estimates (A)." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 79</h2>
-<p class="question-stem">Universal Containers’ (UC) development team is using an Agile tool to track the status of build items, but only in terms of stages. UC is not able to track any effort estimates, log any hours worked, or keep track of remaining effort.<br />For what reason should UC reconsider using the Agile tool for effort tracking?</p>
+<p class="question-stem">Which Service Mapping technique eliminates the need for a license and provides quick visualization through list filters or CMDB queries?</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Allows the management team to make critical timeline commitments based solely on developer estimates.</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> Allows the organization to track the Developers’ work hours for salary compensation purposes.</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> Allows the management team to manage the performance of bad developers who are slacking off.</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> Allows the Developer to compare their effort estimates and actuals to better adjust their future estimates.</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Top-Down Mapping</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Dynamic CI Group</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Tag-Based Mapping</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Manual Services</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 80</h2>
+<p class="question-stem">What is the primary role of Predictive Intelligence in Service Mapping?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> To identify application fingerprints to evaluate their relationships with CIs</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> To execute scheduled jobs to initiate application service mapping</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> To calculate the confidence level of application fingerprint connections</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> To monitor the readiness state of prerequisites</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 81</h2>
+<p class="question-stem">Service Mapping uses which table to build tag-based maps from?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Application [cmdb_ci_appl]</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Application Service [cmdb_ci_service_discovered]</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Servers [cmdb_ci_servers]</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Key Value [cmdb_key_value]</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 82</h2>
+<p class="question-stem">Which one of the following is a characteristic of a service in the context of ServiceNow Service Mapping?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Never contains cloud based elements</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> May not always be written to the CMDB</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Often comprised of more than 50 configuration items</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Performs a single or few limited specialized operations</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 83</h2>
+<p class="question-stem">Which one of the following describes the result of the following UNIX command? cat /home/ubuntu/lbappinfo</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> List all files and directories under the lbappinfo directory</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Determine if a file starting with lbappinfo exists in the ubuntu directory</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Display any lines in the lbappinfo file containing the word cat</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Display the contents of the file lbappinfo</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 84</h2>
+<p class="question-stem">What information does the Top 10 Service Issues report display in ML-powered Service Map-ping?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> The training status of application fingerprints percentage</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> A summary of all active scheduled jobs</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> A list of application services most affected by ML-related issues</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> The readiness status of all application services affected by ML-related issues</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 85</h2>
+<p class="question-stem">Which one of the following describes the relationship between the Application Server [cmdb_ci_app_server] table and the Application [cmdb_ci_appl] table?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Application Server [cmdb_ci_app_server] table is the base table to the Application [cmdb_ci_appl] table</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Application [cmdb_ci_appl] table is extended from the Application Server [cmdb_ci_app_server] table</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Application Server [cmdb_ci_app_server] table is the child table to the Application [cmdb_ci_appl] table</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Application Server [cmdb_ci_app_server] table is the parent table to the Application [cmdb_ci_appl] table</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 86</h2>
+<p class="question-stem">Which describes the common set of protocols used by Service Mapping to discover target CIs?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> LDAP, SNMP, HTTP</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> SSH, SMTP, HTTP</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> SSH, SMTP</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> WMI, SSH, SNMP</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 87</h2>
+<p class="question-stem">When configuring SNMP credentials, which of the following is true? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Only SNMP v1/v2 is supported</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> SNMP v1/v2/v3 is supported</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> SNMP Read Only account is required</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> SNMP Read/Write account is required</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 88</h2>
+<p class="question-stem">In Service Mapping Pattern Designer, which operation is used to create outgoing connections?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Parse connection</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Create URL</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Match connection</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Create reference</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> Create connection</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 89</h2>
+<p class="question-stem">Which of the following ServiceNow Store applications provide customers with new patterns outside of a major product release?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Discovery and Service Mapping Patterns</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> CMDB CI Class Models</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Service Graph Data Visualizer</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> ITOM Visibility Pattern Extensions</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 90</h2>
+<p class="question-stem">In ServiceNow Discovery, which one of the following phases is responsible for mapping applica-tion to host relationships?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Port Scan</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Classification</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Identification</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Exploration</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 91</h2>
+<p class="question-stem">Which of one of the following best describes what Datasource Precedence Rules are?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Consists of one or more Identifier Entries that specify the Criterion attributes that uniquely identify a CI</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Reclassifies CIs into parent or child tables</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Allows the ability to assign a priority to data sources if multiple data sources are authorized to update the same table or table attributes</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Specifies the order of which data sources can create records in the CMDB</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 92</h2>
+<p class="question-stem">What information is required to discover a service in Service Mapping?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> MID Server, Network Diagram, Entry Point</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Credentials, Application name, MID Server</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> MID Server, IP Range, Load Balancer</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Credentials, MID Server, Entry Point</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 93</h2>
+<p class="question-stem">After running Service Mapping discovery you receive the following error: Service Mapping Error: Failed to identify CI on host myHostName The application port 1433 is closed Which one of the following describes the reason for the error?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> The application process is NOT up and running on the host</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> The Discovery Pattern is NOT configured to collect information on the port</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> The Identification Rule is NOT configured correctly</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> The Entry Point is NOT configured correctly</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 94</h2>
+<p class="question-stem">Which one of the following regular expressions can be used to capture 198.51.100.207 from the following string? jdbc:198.51.100.207</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> jdbc:([\d\.]+)</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> jdbc:([\d[1-3]+\.+])</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> jdbc:([\d]+)</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> jdbc:([\d\.+])</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 95</h2>
+<p class="question-stem">In Pattern Designer, when using the Parse File operation, which of the following are parsing strategies?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Delimited Text, XML File, Regular Expressions, Command Line Unix Style</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Delimited Text, XML File, Debug Mode, Command Line Unix Style</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Regular Expression, Position From End, String Search Point, Ini File</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Vertical File, XML File, Delimited File. Database File</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 96</h2>
+<p class="question-stem">What describes the functionality of ServiceNow Discovery?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Performs Vertical Discovery</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Performs Up Down Discovery</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Performs Horizontal Discovery</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Performs Top Down Discovery</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 97</h2>
+<p class="question-stem">The Ignite application you are trying to discover requires credentials that are different from the host operating system. Which one of the following best describes how to enter the credentials?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Add the credential to the Credentials table and choose type “Applicative” and the appropriate CI Type for the Ignite application</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> In the Identification Section of the Pattern for the Ignite CI Type, choose the Change user operation and enter the credentials in the appropriate fields</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Add the credentials to the appropriate Ignite CI Type attributes</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Add the credential to the Credentials table and choose type “Other” and the appropriate CI Type for the Ignite application</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 98</h2>
+<p class="question-stem">Which scheduled job is installed with the Service Mapping Plus (sn_sm_scoped_app) applica-tion?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Update business service status</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Update statistics for application service readiness dashboard</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Update query based services</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Generate entry point candidates from netflow and netstat data</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 99</h2>
+<p class="question-stem">What information does the confidence level provide on the Application Service Readiness Dash-board?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> The probability of a connection belonging to application services</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> The frequency of scheduled jobs for a connection</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> The readiness state of all prerequisites</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> The probability of servers hosting the application</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 100</h2>
+<p class="question-stem">Which one of the following is the default time interval a MID Server checks for upgrades?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> 15 minutes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> 30 minutes</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> 5 minutes</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> 60 minutes</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 101</h2>
+<p class="question-stem">Which of one of the following best represents a well thought out and scalable configuration se-lection of Criterion attributes for a new application Identification Rule (CI Identifier) taking into account an application upgrade or the potential that the application is installed more than once on the same server?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Class, Installation Directory</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Class, Configuration File Name</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Class, Discovery Source</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Class, Version</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> Class, Last Discovered</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 102</h2>
+<p class="question-stem">When building a Connection Section using Pattern Designer, which host would you configure in Debug Mode to help you discover the connection information from Host A to Host B?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Host B</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Neither Host A or Host B</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Host A and Host B</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Host A</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 103</h2>
+<p class="question-stem">A customer has recently placed check scanners in some of their branches across Europe. The scanners send the scanned images of the checks to the bank’s datacenter through a web service that goes through an F5 load balancer. The images then go through the bank’s Apache web serv-ers and are processed by an application server named ImageSmart. Eventually the images are stored in a cluster of Oracle databases. The bank’s tellers log into ImageSmart through a Citrix Portal and have the capability to review the checks and approve them. Which one of the following represents most accurately how many business services and entry points are involved in this process?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> One service and one entry point</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> One service and two entry points</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Two services and one entry point</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Two service and two entry points</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 104</h2>
+<p class="question-stem">In Service Mapping, which one of the following represent the sections that comprise a Discovery Pattern?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Process Detection. Identification Section, and Extension Section</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Entry Point, Identification Section, Connection Section</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Host Detection, Entry Point, Identification Section</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Identification Section, Connection Section, and Extension Section</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 105</h2>
+<div class="question-image"><img src="../images/questions/cis-sm/image8.png" alt="Question image" loading="lazy"></div>
+<p class="question-stem">In the following image, the black arrow at the top indicates which one of the following?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> The firewall protecting the service</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> The connection from the upstream service</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> The router interface to the service</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> The entry point to the service</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 106</h2>
+<p class="question-stem">Which represents the three overall calculated CMDB health scores displayed on the CMDB Health Dashboard?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Compliance, Completeness, Audit</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Compliance, Correctness, Reconciled</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Correctness, Completeness, Duplicates</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Compliance, Correctness, Completeness</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 107</h2>
+<div class="question-image"><img src="../images/questions/cis-sm/image9.png" alt="Question image" loading="lazy"></div>
+<p class="question-stem">In the following image, which one of the following best represents how the ticket-monster application is presented?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> as a subordinate Service</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> as an exclusion</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> as a cluster member</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> as an inclusion</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 108</h2>
+<p class="question-stem">Which one of the following Identifier Entry configuration options must be set to true to attempt a match using the Application Rule Identification Rule if no match is found using a more specific Identification Rule?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Allow fallback to parent’s rules</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Allow null attribute</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Criterion attributes</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Applies to</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> Independent</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 109</h2>
+<p class="question-stem">Which one of the following best describes what a MID Server is?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Operating System</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> JAR File</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Agent</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Java Application</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 110</h2>
+<p class="question-stem">Which one of the following represent items that can be created from the CI Class Manager?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Service Candidates, Identification Rules, Data Refresh Rules, Dependency Rule</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Tables & Columns, Identification Rules, Identifier Entries, Dependencies and Reconciliation Rules</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Identification Rules, Tables & Columns, Dependency Rules, Service Groups</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Identifier Entries, Process Classifiers, Reconciliation Rules, Data Refresh Rules</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 111</h2>
+<p class="question-stem">Which one of the following lists best describes a multi-tier architecture of an actual service?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Load Balancer > Web Server Cluster > Database > Application Server Cluster</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Load Balancer > WebSphere MQ > Database > Web Server Cluster</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Load Balancer > Web Server Cluster > Application Server Cluster > Database</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Load Balancer > Web Server Cluster > Middleware > Database > Application Server Cluster</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 112</h2>
+<div class="question-image"><img src="../images/questions/cis-sm/image10.png" alt="Question image" loading="lazy"></div>
+<p class="question-stem">In the image, which one of the following best describes what is happening?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> The administrator is using the Command Line Console to determine if this host has any processes with a process ID of 8080</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> The administrator is using the Command Line Console to count how many processes are listening</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> The administrator is using the Command Line Console to determine if this host has any processes using port 8080</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> The administrator is using the Command Line Console to determine if the MID Server is communicating</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 113</h2>
+<p class="question-stem">From the Discovery Pattern list, using the Action on selected rows option called Export pat-terns with CMDB items, an update set is created containing the modified pattern and which of the following related items? (Choose three.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Extension Section</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Identification Rules</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Reconciliation Rules</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> CIs with a Discovery Source of ServiceWatch stored in the Configuration items[cmdb_ci] ta-ble</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> CIs with a Discovery Source of ServiceWatch stored in the Application[cmdb_ci_appl] table</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 114</h2>
+<p class="question-stem">In ServiceNow Discovery, which one of the following typically query target hosts to gather dis-covery data?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> 3P Scripts</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Sensors</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Classifiers</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Probes</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 115</h2>
+<p class="question-stem">Which of the following ServiceNow modules must you navigate to in order to convert legacy business services into application services in bulk rather than individually?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Application Services</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Business Applications</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Services</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Applications</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 116</h2>
+<p class="question-stem">During ServiceNow Discovery, which one of the following is created after a credential is suc-cessfully used for the first time to access a device?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Credential Vault</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Credential Lock</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Credential Affinity</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Credential Store</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 117</h2>
+<p class="question-stem">In order for Service Mapping to successfully discover UNIX targets, which SSH credential can be granted with limited privileges to a user?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> RDP privileges</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> root privileges</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> domain access and local administrator privileges</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> WMI privileges</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> selective sudo (or sudo equivalent) access</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 118</h2>
+<p class="question-stem">Which one of the following represents the output of the regular expression - (\d{2}:\d{2}:\d{2}) on the following string? 2014/02/07-17:49:36</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> 174936</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> 17:49</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> 49:36:00</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> 17:49:36</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 119</h2>
+<div class="question-image"><img src="../images/questions/cis-sm/image11.png" alt="Question image" loading="lazy"></div>
+<p class="question-stem">Which of the following Regular Expressions would capture the host, port, and path from the following MySQL connection string? jdbc:mysql://localhost:3306/myDatabase?profileSQL=true</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> *\/\/([\w\.]+):(\d+)\/(\w+)</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> *:\/\/([\w\.-_]+):(\w+)\/(\w+)</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> *:\/\/(\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}+):(\d+)</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> jdbc:mysql:\/\/([\w\.]):(\d+)\/(\w+)</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 120</h2>
+<p class="question-stem">An entry point is configured for an application service, with application load balancer being the first target. Which is the key cause if the application load balancer is not discovered?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> There is no Identification Section correctly configured for the load balancer.</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> There is no Connection Section correctly configured for the load balancer to downstream CIs.</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> There is no valid credential configured for the load balancer.</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> The entry point given is a user-facing IP and it needs to be replaced with the management IP.</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 121</h2>
+<p class="question-stem">What role does Predictive Intelligence play in ML-powered Service Mapping?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> It generates connection suggestions based on processed data.</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> It monitors the performance of scheduled jobs.</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> It activates and manages ADME probes for discovery.</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> It displays the readiness status of application services.</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 122</h2>
+<p class="question-stem">Which one of the following ServiceNow Discovery phases is responsible for determining if a device should be created or updated in the CMDB?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Port Scan</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Identification</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Reconciliation</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Classification</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 123</h2>
+<p class="question-stem">Which of one of the following best describes what Reconciliation Rules (Reconciliation Defini-tions) are?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Consists of one or more Identifier Entries that specify the Criterion attributes that Uniquely identifies a CI</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Specifies which data sources can update a configuration item (CI) or set of CI attributes</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Tracks duplicate CIs until resolved</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Reclassifies CIs into parent or child tables</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 124</h2>
+<p class="question-stem">From the Dependency View map, which of the following buttons must be selected to view the related services for a configuration item?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Vertical</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Group</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Details</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Force</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
 </div>
     </main>
     <footer class="site-footer">

@@ -25,17 +25,16 @@
     <main>
         <div class="quiz-banner"><a href="../quiz/cis-df.html">Test yourself on Data Foundations &rarr;</a></div>
 <div class="ai-notice">Answers verified with AI using ServiceNow documentation. Exercise your own judgement.</div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="The Correctness scorecard on the CMDB Health Dashboard tracks stale CIs. Correctness is a KPI that aggregates three metrics: Orphan, Staleness, and Duplicate. The Staleness metric measures the percentage of CIs not updated within a configured duration (default 60 days). Since the administrator wants to minimize stale CIs, the Correctness scorecard (A) is where this information is displayed. Compliance tracks adherence to rules, and Completeness tracks missing/empty CI attributes — neither directly addresses staleness." data-source-url="https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/t_CreateCMDBHealthStaleRule.html">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 1</h2>
-<p class="question-stem">A CMDB Administrator would like to minimize stale CIs in the CMDB.<br />Which CMDB Health Dashboard scorecard displays this information?</p>
+<div class="question-image"><img src="../images/questions/cis-df/image36.png" alt="Question image" loading="lazy"></div>
+<p class="question-stem">The CMDB Administrator has set-up two Dynamic Reconcilliation Rules within the ServiceNow Production Instance. The ‘Server’ class has a Dynamic Reconciliation Rule of largest value for the RAM field. The ‘Windows Server’ class has a Dynamic Reconciliation Rule of most reported for the RAM field. Given the above data in the Multisource CMDB, which value would be added to the CMDB for RAM for a ‘Server’ CI?</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Correctness</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> Compliance</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> Completeness</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> 4.096 MB</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> 8.192 MB</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> 2.048 MB</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="" data-community="false" data-explanation="Service Mapping (Top-down) - Recommended for mission-critical application services that require a precise approach using patterns; Tag-Based - Best fit to map cloud-native container-based or virtual machine environments; Service Mapping (Connection Suggestion) - Ideal for custom-built applications and leverages application fingerprinting to generate service maps in a timely manner; Dynamic CI Group - Ideal for small application services that can be easily grouped using filters and CMDB queries. The answer image shows the correct drag-and-drop mapping: Service Mapping (Top-down) uses patterns for precise, mission-critical service mapping. Tag-Based mapping is designed for cloud-native, container, and VM environments where tags identify relationships. Service Mapping (Connection Suggestion) uses application fingerprinting to quickly generate service maps for custom-built applications. Dynamic CI Group is for small application services that can be grouped using CMDB queries and filters without complex mapping patterns." data-source-url="">
 <h2>Question 2</h2>
@@ -112,45 +111,38 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B" data-community="false" data-explanation="Discovery automatically creates CIs and the relationships between them in the CMDB. When Discovery runs, it scans networks and infrastructure, identifying hardware, software, and their dependencies, then populates both CI records and their relationships automatically. IntegrationHub ETL (A) imports data but doesn&#x27;t auto-discover relationships. Workflow Studio (C) is for building workflows, not CI discovery. Service Mapping (D) maps application services to infrastructure but Discovery is the core solution specifically described as creating &#x27;automatic relationships.&#x27;" data-source-url="https://www.servicenow.com/docs/r/it-operations-management/discovery/r-discovery.html">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 8</h2>
-<p class="question-stem">Which ServiceNow solution creates automatic relationships?</p>
+<p class="question-stem">A CMDB Administrator has built a number of Technology Management Service Offerings (Technical Service Offerings) based on Dynamic CI Groups to better maintain group alignment for the member CI. Which Groups are synced to CIs from the offering that has a relationship to a Dynamic CI Group? (Choose two.)</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> IntegrationHub ETL</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> Discovery</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> Workflow Studio</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> Service Mapping</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Approval Group</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Managed by Group</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Support Group</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Owned by Group</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C" data-community="false" data-explanation="The CMDB Data Foundations Dashboard Playbooks (CSDB is the abbreviation used in option C) provide structured guidelines for troubleshooting CMDB health issues like missing serial numbers. Option A (&#x27;CMDB Health Dashboards Playbooks&#x27;) is not an official product name. Option D references CSDM (Common Service Data Model), which is about data model frameworks, not CI data quality troubleshooting. Option B (&#x27;CSDM Now Create Playbooks&#x27;) relates to framework content setup, not quality remediation." data-source-url="">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 9</h2>
-<p class="question-stem">A CMDB Administrator is reviewing the health of the CMDB and notices a large percentage of the Hardware CIs are missing serial numbers. The Administrator is concerned this may cause duplicate CIs and would like to resolve the issue in a timely manner.<br />What structured guidelines provided by ServiceNow are available to troubleshoot and resolve the issue?</p>
+<p class="question-stem">A Data Center Manager is working with the CMDB CI Class Manager to define the relationship between Application Servers and the Applications they host. The company has multiple Application Servers that host one or more Applications. Which describes the relationship between the Application Server table ([cmdb_ci_app_server]) and the Application table ([cmdb_ci_appl])?</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> CMDB Health Dashboards Playbooks</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> CSDM Now Create Playbooks</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> CSDB Data Foundations Dashboard Playbooks</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> CSDM Data Foundations Dashboard Playbooks</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Many-to-one</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> One-to-one</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> One-to-many</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Many-to-many</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="B,C" data-community="false" data-explanation="The CMDB Health Dashboard evaluates data quality through three KPIs: Correctness, Completeness, and Compliance. Under Correctness, the metrics are Orphan, Staleness (Stale CIs), and Duplicate (Duplicate CIs). Option B (&#x27;State CIs&#x27; likely refers to &#x27;Stale CIs&#x27;) and C (Duplicate CIs) match the Staleness and Duplicate metrics under the Correctness KPI. Missing CIs (A), Downgraded CIs (D), and Upgraded CIs (E) are not metrics tracked by the CMDB Health Dashboard." data-source-url="https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/t_CreateCMDBHealthStaleRule.html">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 10</h2>
-<p class="question-stem">Configuration Management needs to ensure data quality for all CIs in the CMDB.<br />What areas of data quality for CIs are in the CMDB Health Dashboard? (Choose two.)</p>
+<p class="question-stem">An Asset Manager wants to ensure that Asset records and CI records are kept synchronized automatically. How does the Manager do this? (Choose two.)</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Missing CIs</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> State CIs</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> Duplicate CIs</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> Downgraded CIs</div>
-<div class="answer-option" data-key="E"><span class="option-key">E.</span> Upgraded CIs</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Ensure one-to-one physical mapping between Asset and CI</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Ensure that scheduled jobs are run during off-business hours to ensure sync happens</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Ensure that the business rule to update Asset fields on change on the CI table is active</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Ensure that the business rule to update CI fields on change on the asset table is active</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="D" data-community="false" data-explanation="When a CI with an appropriate support group is selected on an Incident form, the Assignment Group field is automatically populated. The support group defined on the CI maps to the incident&#x27;s Assignment Group, routing the incident to the correct team. Support Group (A) appears on the CI but isn&#x27;t a field populated on the incident form. Approval Group (B), Change Group (C), and Managed by Group (E) serve different purposes." data-source-url="">
 <h2>Question 11</h2>
@@ -166,17 +158,16 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="A" data-community="false" data-explanation="CMDB Data Manager generates attestation, certification, and lifecycle tasks for CMDB class owners. These tasks appear under the &#x27;My Work&#x27; tab in CMDB Workspace, where owners can review, attest, approve, reject, or reassign CIs. De-duplication templates (B) help merge duplicate CIs but don&#x27;t generate tasks under My Work. The CMDB Health Dashboard (C) displays health metrics and scorecards but doesn&#x27;t create tasks for class owners." data-source-url="https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/review-data-manager-attes-task.html">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 12</h2>
-<p class="question-stem">CMDB class owners are receiving tasks under the ‘My Work’ tab in the CMDB Workspace.<br />Which CMDB management tool is generating these tasks?</p>
+<p class="question-stem">A CMDB Administrator needs to identify which attributes have been created specifically for the Windows Server class. Which tab in the Attributes section is used?</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> CMDB Data Manager</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> De-duplication templates</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> CMDB Health Dashboard</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> All</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Derived</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Added</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Child</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="Principal Classes are designated in the CI Class Manager. This tool allows administrators to view, create, and edit class definitions including marking classes as &#x27;Principal&#x27;. When a class is marked as Principal, only CIs of those classes appear in CI reference fields (e.g., on an Incident form). CMDB Workspace (B) is for monitoring health, Data Manager (C) is for policies, and System Properties (D) doesn&#x27;t manage class designations." data-source-url="">
 <h2>Question 13</h2>
@@ -191,19 +182,16 @@
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
 </div>
-<div class="question-card" data-answer="C,D" data-community="false" data-explanation="The image shows Reconciliation Rules: ServiceNow priority=100 (highest precedence), Altiris=200, SCCM=300 (lowest precedence). Lower priority number means higher precedence. (C) Altiris (200) can update SCCM (300) records because Altiris has higher precedence. (D) SCCM can insert new records — all authorized sources can create new CIs regardless of priority. (A) is wrong — SCCM has the LOWEST precedence despite the highest number, so it cannot update others&#x27; records. (B) is wrong — ServiceNow has the HIGHEST precedence and can update any record." data-source-url="https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/create-reconciliation-rule-non-cmdb.html">
+<div class="question-card" data-answer="A" data-community="true">
 <h2>Question 14</h2>
-<div class="question-image"><img src="../images/questions/cis-df/image8.png" alt="Question image" loading="lazy"></div>
-<p class="question-stem">The following Reconciliation Rules were configured for ServiceNow, Altiris, and SCCM:<br /><br />Which are true? (Choose two.)</p>
+<p class="question-stem">A Configuration Management Process Owner is preparing solution options for presentation to the technical governance board for ingesting custom CIs to the CMDB. The solution needs to align with best practice, minimize the cost of future work (technical debt) and ensure compliance with future upgrades. Which solutions accomplish this? (Choose two.)</p>
 <div class="answer-options">
-<div class="answer-option" data-key="A"><span class="option-key">A.</span> Data collected with a discovery source of SCCM can update any record in the Windows Server [cmdb_ci_win_server] table because it has the highest priority number.</div>
-<div class="answer-option" data-key="B"><span class="option-key">B.</span> Data collected with a discovery source of ServiceNow can insert new records into the Windows Server [cmdb_ci_win_server] table, but cannot update records created by Altiris or SCCM.</div>
-<div class="answer-option" data-key="C"><span class="option-key">C.</span> Data collected with a discovery source of Altiris can update records inserted by SCCM into the Windows Server [cmdb_ci_win_server] table.</div>
-<div class="answer-option" data-key="D"><span class="option-key">D.</span> Data collected with a discovery source of SCCM can be inserted as new records in the Windows Server [cmdb_ci_win_server] table.</div>
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Repurposing a base CI class and rename attributes, as required</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Extending an existing CI class table to accommodate the custom CI class attributes</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Installing or upgrading the ‘CMDB CI Class Models’ store application to find a suitable existing CI class accommodating any new attributes</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Extending an existing Asset class table to accommodate the custom CI class attributes</div>
 </div>
 <button class="reveal-btn">Show Answer</button>
-<button class="explain-btn">Explain with AI</button>
-<div class="ai-explanation" hidden></div>
 </div>
 <div class="question-card" data-answer="A" data-community="false" data-explanation="IntegrationHub ETL natively uses the Identification and Reconciliation Engine (IRE) when importing data into the CMDB, ensuring CIs are properly identified and reconciled. Import Sets with Transform Maps (C) can use IRE but only if configured with onAfter scripts, making it easier to accidentally bypass. Table API (B) also doesn&#x27;t inherently go through IRE. IntegrationHub ETL is the recommended approach for IRE-compliant data imports." data-source-url="">
 <h2>Question 15</h2>
@@ -357,6 +345,7 @@
 </div>
 <div class="question-card" data-answer="B,D" data-community="false" data-explanation="When reconciliation rules with different priorities exist, the source with the higher priority number takes precedence. After an authorized discovery source updates an attribute, subsequent updates are accepted only from the same or higher priority source. A lower-priority source cannot overwrite values set by a higher-priority one, ensuring data integrity from the most authoritative sources." data-source-url="">
 <h2>Question 27</h2>
+<div class="question-image"><img src="../images/questions/cis-df/image8.png" alt="Question image" loading="lazy"></div>
 <p class="question-stem">The following Reconciliation Rules were configured for ServiceNow, Altiris, and SCCM: Which are true? (Choose two.)</p>
 <div class="answer-options">
 <div class="answer-option" data-key="A"><span class="option-key">A.</span> Data collected with a discovery source of SCCM can update any record in the Windows Server [cmdb_ci_win_server] table because it has the highest priority number.</div>
@@ -966,6 +955,1262 @@
 <button class="reveal-btn">Show Answer</button>
 <button class="explain-btn">Explain with AI</button>
 <div class="ai-explanation" hidden></div>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 76</h2>
+<p class="question-stem">A Configuration Manager is managing a CI class in the CMDB. The identification rule(s) needs an update. Where can the Configuration Manager view and configure the existing identification rule(s) for the class? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> CI Identifiers module</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> API Integrations</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> IRE Application</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> CI Class Manager</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 77</h2>
+<p class="question-stem">A CMDB Administrator wants to ensure that only relevant CIs from managed classes will be shown on Incident, Problem, and Change records. Which checkbox needs to be checked in the CI Class Manager for the CMDB Administrator to achieve the requested result?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Principal Class</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Independent</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Main Record</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Extensible</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 78</h2>
+<p class="question-stem">A Configuration Management team has decided to start taking advantage of the CMDB 360/Multisource CMDB functionality. Which system property must be enabled?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> glide.identification_engine.multisource_enabled</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> glide.identification_engine.multisource.query.max.limit</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> glide.identification_engine.multisource_non_cmdb_ci_enabled</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> glide.identification_engine.multisource_cmdb_ci_enabled</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 79</h2>
+<p class="question-stem">A CMDB Administrator is creating technical documentation for stakeholders, which includes a list of attributes, Identification and Reconciliation Engine (IRE) rules, and suggested relationships for several classes. Which central location does the CMDB Administrator use to collect this information?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> CI Class Manager</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> CI Identifiers</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> CMDB Workspace</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> CMDB Data Manager</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 80</h2>
+<p class="question-stem">A CMDB Administrator wants to configure IRE rules for the CMDB. The CMDB Administrator opens CI Class Manager and sees the Health Inclusions Rules tab available under a CI Class. How are these rules utilized by the IRE?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> To narrow the scope of CIs included in the identification process</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> To reduce the data ingested into the CMDB</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> To reconcile specific attributes based on data sources</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 81</h2>
+<p class="question-stem">A Windows administration team wants a grouping of CIs using CMDB groups. Which methods can be used? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Tag-based queries</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Scripted queries</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Saved queries</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Encoded queries</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 82</h2>
+<p class="question-stem">A CMDB Administrator is managing group data from both the CI Class Manager and a Technical Service Offering for a specific class. Cl Class Manager: - Managed by Group = Enterprise IT Services Technical Service Offering: - Managed by Group = Windows Support - Change Group = Change Management Team What would be the Managed By Group for CIs from this class based on the configured values?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Windows Support</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Enterprise IT Services</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Change Management Team</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 83</h2>
+<p class="question-stem">A Configuration Manager wants to manage manually maintained data attributes of CIs. Which group values are automatically synchronized on CIs using Technology Management Offerings (Technical Service Offerings) and dynamic CI groups? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Change group</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Approval group</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Support group</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> CMDB group</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 84</h2>
+<p class="question-stem">A CMDB Administrator is tasked with managing the CMDB and needs to define a new CI class to track a new type of equipment that has not been seen before. Which action adds a new CI class and ensures it integrates properly with the existing CMDB structure?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Use Service Catalog to define the new CI class, as the CI Class Manager is only for service-related records and not for hardware CIs</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Edit an existing CI class under CI Class Manager and add new fields specific to the new equipment type</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Create a new CI class directly in the CI Class Manager and configure the table inheritance to ensure it inherits from a relevant parent class</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Use the CI Class Manager to create a new CI class but avoid setting up any inheritance, as CI classes should be independent of one another to maintain clarity</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 85</h2>
+<p class="question-stem">A Configuration Manager needs to restrict the number of classes available in a Configuration Item reference field on an incident form. How does the Manager set Principal Classes?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> By using the Principal Class check box on the CI Class Manager's 'Basic Info' tab for a Class</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> By using the Principal Class check box on the CI Class Manager's 'Attributes' tab for a Class</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> By using the Principal Class attribute on the CI</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> By using the Principal Class check box on the CMDB Workspace</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 86</h2>
+<p class="question-stem">A CMDB Administrator aims to utilize CSDM life cycle field mappings to better align with CSDM best practices. What is the next step to take after selecting the Enable Life Cycle Sync button?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Resolve any incomplete field mappings identified in the Discrepancy Report</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Fix the incorrect values in the Life Cycle Stage to match legacy values</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Activate the CSDM Life Cycle field mappings</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 87</h2>
+<p class="question-stem">A CMDB Administrator needs to set a CI Class as a Principal Class. Which CI Class Manager tab would need to be accessed?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Health > Attributes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Class Info > Attributes</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Class Info > Basic Info</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 88</h2>
+<p class="question-stem">A ServiceNow Administrator needs to create multiple new classes in the CMDB but wants to follow ServiceNow's best practices for naming CMDB tables to prevent technical debt. Which is the starting prefix for all custom CMDB tables?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> ci_cmdb</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> cmdb_ci</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> u_cmdb_ci</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> u_ci_cmdb</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 89</h2>
+<p class="question-stem">A Configuration Management team needs to prevent duplicate server records to avoid confusion among users. Server records are identified when they are processed via the Identification and Reconciliation Engine (IRE) using the configured identification rules. Where would these rules be configured?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> CMDB Workspace</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> CMDB CI Class Manager</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> CMDB Health Dashboard</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> CMDB Data Manager</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 90</h2>
+<p class="question-stem">A CMDB Administrator notices that CIs do not have a support group. How can the support group be automatically populated and maintained on the CI record?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Technology Management Service Offering (Technical Service Offering)</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Technology Management Service (Technical Service)</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> CI Class Manager</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Dynamic CI group</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 91</h2>
+<p class="question-stem">Using CI Class Manager, the Tomcat identification rule has the following criterion attributes configured: •	Class •	Install Directory Which identifier entry configuration option must be checked to attempt a match using the Application identification rule if no match is found using the Tomcat identification rule?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Allow fallback to parent's rules</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Independent</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Applies to</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Criterion attributes</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 92</h2>
+<p class="question-stem">A CMDB CI Class Owner has been asked to change the icon for the UNIX Server class. Which CI Class Manager tab can the owner use to change the icon for the class?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> CI List</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Basic Info</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Attributes</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Suggested Relationships</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 93</h2>
+<p class="question-stem">A Configuration Manager is reviewing the life cycle of CIs to ensure data accuracy, consistency, and relevance. The manager reviews the legacy status values and their equivalent CSDM life cycle stage and life cycle stage status values. Where are these reviewed?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Life cycle choice list</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Life cycle mappings</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Life cycle properties</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 94</h2>
+<p class="question-stem">An organization is updating the CMDB to include new asset types like IoT devices. Relevant CI classes need to be added and outdated ones need to be removed from the Principal Class filter to ensure accurate display in ITSM processes. Which roles are needed to add or remove classes? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> personalize_dictionary</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> sn_csdm_admin</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> sn_cmdb_admin</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> cmdb_query_builder</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 95</h2>
+<p class="question-stem">An IT group has a requirement to upgrade all the Windows servers. There is a Dynamic CI Group containing all the Windows servers. What happens to the Dynamic CI Group when it is referenced from the Configuration Item field on a Change form?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> It displays all related CIs in the Impacted Services related list.</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> It calculates impact against the Dynamic CI Group.</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> It displays all related CIs in the Affected CIs related list.</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 96</h2>
+<p class="question-stem">A CMDB Administrator is working in the CI Class Manager on the Basic Info tab. How can the class be set as a Principal Class?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Check the Principal Class check box</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Click the Principal Class UI Action button</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Select 'Yes' from the Principal Class choice list</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 97</h2>
+<p class="question-stem">A global enterprise integrates data from multiple discovery sources such as ServiceNow Discovery, SCCM, AWS, and manual uploads to populate its CMDB. However, each discovery source categorizes the same CIs differently, leading to duplicate records and inconsistencies across the system. As a result, the CMDB team is struggling with data accuracy and standardization. What actions does the CMDB team take to resolve the issue? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Allow each discovery source to define its own CI class, even if it results in inconsistencies</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Implement and use identification and reconciliation rules to avoid duplicates and standardize CI classification</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Create a custom script to manually adjust incoming data before storing it in the CMDB</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Use CI Class Manager to establish standardized CI classes and attributes across all discovery sources</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 98</h2>
+<p class="question-stem">A CMDB CI Class Owner responsible for the Windows Servers needs to manage the Windows Server class. Which CI Class Manager feature will help the CI Class Owner streamline this task?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Pinned Classes</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> CI Favorites</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Search CI Classes</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 99</h2>
+<p class="question-stem">The Change Management team in an organization wants to implement a Change across multiple CIs at the same time. Which field on the Change Request form needs to be populated with a dynamic CI group?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Configuration Item</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Business Service</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Service Offering</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 100</h2>
+<p class="question-stem">A CMDB Administrator needs to configure a new application identification rule that considers the potential for the same application installed more than once on the same server. Which is the best choice of a criterion attribute?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Version</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Configuration File Name</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Port</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Configuration File Path</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> Class</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 101</h2>
+<p class="question-stem">A Windows server is reclassified from the Server table [cmdb_ci_server] to the Windows Server table [cmdb_ci_win_server] when processed through the Identification and Reconciliation Engine (IRE). Which process occurred?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Class Change</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Class Switch</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Class Downgrade</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Class Upgrade</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 102</h2>
+<p class="question-stem">An organization utilizes multiple data sources to update its CMDB, each assigned a different priority level. A high-priority data source is scheduled to update server records weekly. However, due to an integration issue, the high-priority data source stops updating the records. Which configuration can be used to allow a lower-priority data source to update records after a specified period of inactivity from the higher-priority source?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Data Refresh Rules</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Reconciliation Rules</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Health Inclusion Rules</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Identification Rules</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 103</h2>
+<p class="question-stem">A CMDB Administrator has imported data into the ServiceNow CMDB from a third-party source using a Service Graph Connector. The Administrator wants to review specific field to field mappings for the import. Which feature will show that information?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Integration Hub</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> IntegrationHub ETL</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> CMDB Integrations Dashboard</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 104</h2>
+<p class="question-stem">What are the characteristics or functions of ServiceNow IntegrationHub ETL? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Integrates third-party data into the CMDB or into non-CM DB tables</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Uses the IRE to process and integrate data</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Imports Microsoft SCCM/Intune data into the CMDB</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Performs discovery data collection and updates the CMDB</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 105</h2>
+<p class="question-stem">A CMDB Administrator needs to ingest relevant data from Microsoft SCCM into the CMDB. Which ingestion method brings the fastest time to value?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Import Sets</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Service Graph Connectors</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Agent Client Collector</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> IntegrationHub ETL</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 106</h2>
+<p class="question-stem">A CMDB Administrator changes the query for the SCCM Service Graph Connector. What is the impact of this change?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Any Scheduled Jobs for the SCCM Service Graph Connector will need to be configured.</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Any updates for the SCCM Service Graph Connector will be skipped during the upgrade.</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> The Data Source for the SCCM Service Graph Connector will be marked as Inactive.</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 107</h2>
+<p class="question-stem">A CMDB Administrator needs to prevent duplicate CI creation from import sets that load data into the CMDB from vendor shipment files containing CI information. How can the Administrator do this?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Set the coalesce on two mappings within the transform map</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Create comparison rules in the IRE</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Set the system property to utilize the IRE within transform maps</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Use the CMDBTransformUtil API in the transform script</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 108</h2>
+<p class="question-stem">A ServiceNow Administrator wants to implement Service Graph Connectors to provide integrations to many third-party solutions that the company wants integrated into the CMDB. Which categories of connectors are available to the Administrator? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> DevOps</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Cloud</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Workflow Automation</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Observability</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 109</h2>
+<p class="question-stem">A Configuration Manager needs to ingest third-party CIs into the CMDB. Which method minimizes the risk of technical debt?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Vendor-provided integration</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Table API</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Service Graph Connector</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Import Sets and Transform Maps</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 110</h2>
+<p class="question-stem">Which ServiceNow solutions automatically create relationships between CI Applications that are part of an Application Service? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> IntegrationHub ETL</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Event Management</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Discovery</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Service Mapping</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> Data Manager</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 111</h2>
+<p class="question-stem">A CMDB Administrator wants to leverage dynamic reconciliation rules. Which feature must be enabled?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> CMDB Data Manager</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> CMDB 360/Multisource CMDB</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> CMDB Workspace</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Reconciliation Rules</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 112</h2>
+<p class="question-stem">A CMDB Administrator needs the fastest time to value solution for effectively ingesting, managing, and maintaining CIs and relationships. Which management tool will accomplish this to import Windows computer data from SCCM?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> IntegrationHub ETL connection to SCCM using Robust Transform Engine (RTE)</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Import set using JDBC data source connection to SCCM using transform maps</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> SCCM Service Graph Connector</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> SCCM Usage Metering Spoke</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 113</h2>
+<p class="question-stem">A CMDB Administrator has installed a Service Graph Connector (SGC), and then made customizations to the mappings. Which is a consequence of this action?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Fields populated by a customization will have a special tag associated with them in the CMDB.</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> The customization will prevent the SGC from executing without an approval record attached to the affected mapping record.</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> The customized mappings are not supported by ServiceNow, and the customer is responsible for supporting their own customized SGC.</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 114</h2>
+<p class="question-stem">A CMDB Data Owner has requested belter insights on the different data sources that make up the CMDB data set. The Platform Owner knows that the new Service Graph Connector Central plugin is just what is needed. After installing the plugin, what workspace will have the new Service Graph Connector Central tab available?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Discovery Admin Workspace</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> CMDB Workspace</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Service Graph Connector Workspace</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 115</h2>
+<p class="question-stem">A CMDB Administrator wants to ensure all short-lived CIs that have not been discovered in the past week are removed. After retiring the CI records, which recommended action does the CMDB Administrator take?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Create a delete police</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Create a business rule</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Create a scheduled job</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 116</h2>
+<p class="question-stem">A CMDB Administrator has taken over management of a ServiceNow instance and has determined there are multiple deficiencies in the CMDB. During review of the CMDB Data Foundations Dashboard, the Administrator sees that ServiceNow offers Remediation Playbooks. How can Playbooks assist the Administrator in resolving these issues?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Playbooks can be installed in the instance to automatically fix issues.</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Playbooks can help analyze and fix issues.</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Playbooks can automatically track common CMDB issues and output metrics.</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 117</h2>
+<p class="question-stem">A CMDB Administrator utilizing the CMDB Data Foundations Dashboard sees an issue and wants to run a playbook. Which types of documentation can they expect to be provided in a playbook? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Root Cause</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Automated Remediations</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Problem Analysis</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Problem Overview</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 118</h2>
+<p class="question-stem">A CMDB Administrator is considering whether to start using the playbooks provided on the CMDB Data Foundation Dashboard. What are the benefits to support the decision to leverage this feature? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Offers automated scripts to resolve poorly performing metrics</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Offers insight into the downstream impacts of poorly performing metrics</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Offers remediation options to address and improve poorly performing metrics</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Offers remediation templates to improve poorly performing metrics</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 119</h2>
+<p class="question-stem">A CMDB Administrator is beginning the journey of populating the CMDB and needs to verify that any data which is no longer useful/applicable is removed. Which governance management tool will accomplish this?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> CI Class Manager</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> CMDB and CSDM Data Foundations Dashboard</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> CMDB Data Manager</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> De-duplication Templates</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> CMDB Health Dashboard</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 120</h2>
+<p class="question-stem">The CMDB Administrator wants to leverage the Staleness metric from the CMDB Health Dashboard - Correctness Scorecard. Which field is used to calculate the duration of this metric?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Updated (sys_updated_on)</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Created (sys_created_on)</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Last modified on (last_modified)</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Most recent discovery (last_discovery)</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> First discovered (first_discovered)</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 121</h2>
+<p class="question-stem">A data center has many servers. The CMDB Administrator wants to confirm that all servers exist. Which Data Manager policy type does the Administrator implement?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Attestation</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Certification</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Promotion</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Verification</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 122</h2>
+<p class="question-stem">Using existing baseline Data Manager policies, what condition must a CI meet before it can be archived or deleted?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Be fully operational and in use</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Be marked as critical</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Be retired and in end of life</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Be marked as inactive</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 123</h2>
+<p class="question-stem">The Configuration Management team wants to confirm that all servers in the CMDB actually exist in the data center. Which CMDB Data Manager policy type would the team create?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Attestation</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Retire</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Delete</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Archive</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> Certification</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 124</h2>
+<p class="question-stem">How do CMDB management tools and features within the CMDB governance pillar help organizations manage CIs and improve service delivery? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Reduced hardware costs</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Gain visibility and control</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Assist integration choices</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Enhanced Service Management operations</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 125</h2>
+<p class="question-stem">What types of policies can be created within CMDB Data Manager? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Retire</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Reconciliation</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> De-duplication</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Archive</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 126</h2>
+<p class="question-stem">Which default user groups are available when setting up a CMDB Data Manager policy and specifying the task assignment with the Assignment type set to 'User Group Field'? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Owned by Group</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Assignment Group</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Managed By Group</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Support Group</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 127</h2>
+<p class="question-stem">During a CMDB implementation, a team member is tasked with ensuring the accuracy and completeness of CI data. This person is also responsible for maintaining data quality and resolving discrepancies. Which role is responsible for these tasks?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> CMDB Architect</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> IT Asset Manager</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Configuration Manager</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Service Owner</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 128</h2>
+<p class="question-stem">A CMDB Configuration Manager sets up the following data filter for a certification policy using CMDB Data Manager. •	Table: Server [cmdb_ci_server] •	Filter: Operating System | contains | Server OR Operating System | contains | Linux Which operating systems are affected by this policy? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Linux CentOS</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> AIX</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Windows Server 2022 Datacenter</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Windows 2019 Datacenter</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 129</h2>
+<p class="question-stem">A CMDB Administrator needs to track which CIs and CI classes are missing key data. Which CMDB Health Dashboard scorecard supports tracking this requirement?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Correctness</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Completeness</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Compliance</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 130</h2>
+<p class="question-stem">A CMDB Administrator has a number of similar de-duplication tasks that need to be remediated in bulk. How does the Administrator achieve this?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Utilize the Duplicate CI Remediator Wizard</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Configure and run a custom de-duplication background script</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Create de-duplication tasks manually and remediate each</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Create and run a de-duplication template</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 131</h2>
+<p class="question-stem">A CMDB Administrator group aims to establish a process for receiving task notifications when the Support Group or Managed By Group fields are not populated for operational Linux servers stored in the CMDB. Which ServiceNow modules can be leveraged to configure recommended fields and generate task records in cases where these fields are missing for Linux servers in the CMDB?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> CMDB Workspace and Scheduled Jobs</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Technical Service Offerings and Dynamic CI groups</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Dynamic CI groups and CMDB groups</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> CI Class Manager and Health Preferences</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 132</h2>
+<p class="question-stem">A CMDB Administrator has a report in ServiceNow that lists all CMDB Services that do not have an owner and wants to use a ServiceNow Playbook. What Governance process play can prevent this from recurring?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Set a default value on the Service Owner field so that is never empty</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Make the field Owned by mandatory</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Make the field Managed by mandatory on all CIs</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 133</h2>
+<p class="question-stem">A CMDB Administrator wants to leverage the Staleness metric from the CMDB Health Dashboard - Correctness Scorecard. What is the default duration of this metric?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> 30 days</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> 24 hours</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> 7 days</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> 60 days</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 134</h2>
+<p class="question-stem">A Configuration Manager responsible for a specific region wants to use the CMDB Health Dashboard to improve the data quality of the CMDB for that region. The Configuration Manager only sees the overall score and grouped by CI Class. How can the Configuration Manager get a score for regionally relevant CIs?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> On the CMDB health settings, activate the option, Group scores by region</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Customize the CMDB Health Dashboard scheduled jobs to group the results by region</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Create CMDB groups with type, health, by region</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 135</h2>
+<p class="question-stem">How does a CMDB Administrator use the ServiceNow Platform to ensure the data quality associated with CIs in the CMDB?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Data Quality Scheduled Job</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> CMDB Audit Business Rule</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> CMDB Workspace</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Data Quality Business Rule</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 136</h2>
+<p class="question-stem">A CMDB Configuration Manager is reviewing the metrics on the CMDB Health Dashboard's Correctness Scorecard. For the Duplicate metric in the Server class, it shows Healthy CIs/Evaluated as 59,000/60,000. What does this indicate about the scope of server records calculated under this metric?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> 1,000 server records are in scope for this metric</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> 60,000 server records are in scope for this metric</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> 59,000 Linux and 60,000 Windows servers records are in scope for this metric</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> 59,000 server records are in scope for this metric</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 137</h2>
+<p class="question-stem">A CMDB Administrator wants to start utilizing the CMDB Health Dashboard and its Key Performance Indicators. What does the Administrator do to start using the dashboard?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Download the dashboard from the ServiceNow store</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Nothing, the dashboard is activated by default</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Activate the dashboard scheduled jobs</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Activate the dashboard system property</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 138</h2>
+<p class="question-stem">Which are CMDB Data Manager end of life policy types? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Archive</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Retire</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Lost</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Decommission</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> Disposed</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 139</h2>
+<p class="question-stem">A CMDB team has noticed that some hardware CIs are missing the serial number information, making it difficult to maintain data accuracy. The team needs a structured approach to identify and address these gaps. Which accomplishes this task?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> CI Class Manager</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Service Graph Connectors</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> CMDB Data Foundation Playbook</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 140</h2>
+<p class="question-stem">A CMDB Configuration Manager intends to implement CMDB Data Manager delete and archive policies for all server records in the New York datacenter. In which lifecycle state would servers be affected by these new policies?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Missing - Stolen</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Inventory - Available</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> End of Life - Retired</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> In any lifecycle stale</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 141</h2>
+<p class="question-stem">The CMDB Administrator has been asked to establish Configuration Management with a functional CMDB. Which factor is most critical for successfully operationalizing the CMDB in ServiceNow?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Populating the CMDB with as much data as possible to ensure a comprehensive inventory of CIs</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Establishing clear governance and continuously monitoring CMDB health</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Allowing IT teams to modify CMDB records as needed to promote flexibility in data management</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Relying on automated discovery tools to maintain and update CMDB records</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 142</h2>
+<p class="question-stem">Where does a user with the appropriate role(s) review and manage the generated tasks after configuring CMDB Data Manager policies?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> CMDB Health Dashboard > Duplicate CIs tab</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> CMDB Workspace > My Work tab</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> CMDB Health Dashboard > Audit tab</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> CMDB Workspace > Management tab</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 143</h2>
+<p class="question-stem">A Configuration Management Process Owner needs to configure Data Manager for policy tasks to be correctly assigned and aligned with the group attribute assigned to a class in CI Class Manager. Which is the recommended field to be used for a policy task assignment?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Managed by group</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Change group</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Approval group</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Support group</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 144</h2>
+<p class="question-stem">A CMDB Administrator uses the CMDB Data Foundations Dashboard to gain insights into the CMDB. The results display low scores for several metrics. Which actions can the CMDB Administrator take to improve the CMDB Health? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Remove non-operational and retired CIs</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Focus on metric(s) with Critical and High priorities</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Adjust the metrics using exclusion rules to improve the scores</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Use the Remediation Playbooks linked beside each metric</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 145</h2>
+<p class="question-stem">Which shows the most complete list of policy types that are provided by the CMDB Data Manager?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Delete, Attestation, Retire, and Certification</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Attestation, Retire, and Certification</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Archive and Delete</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Retire, Archive, Attestation, Certification, and Delete</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 146</h2>
+<p class="question-stem">The CMDB Administrator group seeks to filler specific CI classes that display on the CMDB Health Dashboard. This ensures that only relevant data is displayed, excluding items that are not ready for management. Which feature can the group utilize to achieve this goal?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Reconciliation Rules</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Identification Rules</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Data Refresh Rules</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Health Inclusion Rules</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 147</h2>
+<p class="question-stem">A CMDB Administrator is using the Duplicate CI Remediator to address a de-duplication task. On the first lab of the wizard, the Main CI is selected. Which attributes are used to identify the Main CI? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Least Related Items</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Most Related Items</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Newest Created</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Oldest Created</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 148</h2>
+<p class="question-stem">A Configuration Manager needs to enable a CMDB Data Manager policy to remove records from a CI Class while retaining the ability to restore them within a specified period. Which policy type should the Configuration Manager create?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Archive</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Retire</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Certification</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Delete</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 149</h2>
+<p class="question-stem">The Configuration Management team finds value in the reports from CMDB 360/Multisource CMDB and wants to use it for all CI data. Which must be true in order for CMDB 360/Multisource CMDB to be able to report on and analyze that data?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Reconciliation rules with priorities must be configured.</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> The CI data must be from an authorized Service Graph Connector.</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> The CI data must go through the IRE.</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> ServiceNow Discovery must be used to populate the CI data.</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 150</h2>
+<p class="question-stem">ServiceNow Event Management significantly benefits from a well-maintained and properly populated CMDB. What are key advantages it provides to Event Management? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Correlation of alerts to knowledge base articles</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Mapped services provide visibility to the business impact of an alert</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Binding of alerts to specific CIs</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Mapped services provide visibility to users consuming the service</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 151</h2>
+<p class="question-stem">A CMDB Administrator needs insights into how their CMDB is configured according to ServiceNow recommended practice. Which should be used?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> CMDB Health Dashboard</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> CMDB Workspace</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> CMDB Data Manager</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> CMDB Data Foundation Dashboard</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 152</h2>
+<p class="question-stem">What is the value of using the CMDB in security operations? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Auto-resolves a vulnerability</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Identifies the IT infrastructure with a vulnerability</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Enables audits and attestations across CIs</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Allows security team to assess and remediate an incident</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 153</h2>
+<p class="question-stem">The CMDB Configuration Management team has successfully developed a healthy and trusted CMDB. They have integrated discovered infrastructure data, accurately referenced non-discoverable data (such as change and support group information), and made the CMDB service-aware using Service Mapping. How will these improvements enhance the change management process? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Provides insight into the potential impact of the change</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Ensures that no changes result in service downtime, regardless of planning or execution</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Automatically schedules and deploys changes without human review or approval</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Enables auto population of the assignment group field to dynamically route changes</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 154</h2>
+<p class="question-stem">A CMDB Manager uses CMDB 360/Multisource CMDB to maintain and improve CMDB quality. Why would the Manager use CMDB 360/Multisource CMDB?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> To identify CI attributes from multiple data sources</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> To ingest data from multiple data sources using Import Set(s)</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> To populate the CMDB from multiple data sources</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> To ingest data from multiple data sources using Service Graph Connector(s)</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 155</h2>
+<p class="question-stem">A CMDB Administrator is comparing the Unified Map to the Service Mapping map. What are additional capabilities of the Unified Map? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Number of levels displayed on a map can be modified</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Visibility to an application and the host it is installed on</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Map nodes can be filtered based on user preferences</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Map can be zoomed in and out</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 156</h2>
+<p class="question-stem">A Service Desk Manager wants to leverage the Unified Map to find active incidents or problems for a selected CI. Which panel will give the manager visibility and details?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Overview</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Attributes</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Related items</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Application services</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 157</h2>
+<p class="question-stem">A CMDB Administrator wants to educate the team on the various actions that can be performed within the CMDB Workspace. What actions can be initiated from the CMDB Workspace? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Create a new CMDB class</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Execute ServiceNow Discovery</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Remediate duplicate CI records</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Create a CMDB Data Manager certification policy</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 158</h2>
+<p class="question-stem">A CMDB Administrator knows that the CMDB Data Foundation Dashboard is a resource to monitor and improve data quality. What is a benefit of this dashboard?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Provides the ability to resolve certification policy tasks</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Provides the ability to configure health-related metrics</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Provides key health-related metrics to make decisions</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 159</h2>
+<p class="question-stem">A CMDB Administrator is asked to create a query using the CMDB Query Builder that displays all operational CIs belonging to a specific application service. Which steps provide the desired outcome?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> 1. Add the Business Application, Application Service, and Configuration Item classes to the canvas. 2. Define a filter for the application service name and the operational status of the configuration items. 3. Configure the relationship between the classes. 4. Run the query.</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> 1. Add the Application Service and Configuration Item classes to the canvas. 2. Configure the relationship between the classes. 3. Define a filter for the application service name and the operational status of the configuration items. 4. Run the query.</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> 1. Add the Application Service and Configuration Item classes to the canvas. 2. Configure the relationship between the classes. 3. Add the Operational Status and Name fields as columns. 4. Run the query.</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 160</h2>
+<p class="question-stem">A Configuration Manager wants to explore ServiceNow CMDB 360 saved queries to see if the reports can assist with managing of CMDB data. What insights are gained from CMDB 360 queries? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Gaps in attribute data from different data sources</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Unique CIs created from different data sources</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Different attribute values from different data sources</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Orphan CIs created from different data sources</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> Duplicate configuration items from different data sources</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 161</h2>
+<p class="question-stem">A CMDB Administrator wants to leverage the CMDB Data Foundations Dashboard. What are benefits of using this application?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Checks that important data is valid and properly configured</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Has a framework to create custom metrics for the CMDB</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Provides playbooks to assist in the remediation of potential risks</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Uses automation to remediate potential risks</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 162</h2>
+<p class="question-stem">A Service Owner needs to view related items, such as Active Incidents and Planned Changes, directly on the home node of the Unified Map. Which work area would allow the Service Owner to meet this goal?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Map</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Tool box</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Content controls</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Contextual side panel</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 163</h2>
+<p class="question-stem">A CMDB Administrator wants to use the CMDB and CSDM Data Foundations Dashboard. Where can the Administrator obtain the dashboard?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> It is a free application on the ServiceNow Innovation Lab.</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> It is active by default.</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> It is a free application on the ServiceNow Store.</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> It is a paid application on the ServiceNow Store.</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 164</h2>
+<p class="question-stem">A Configuration Manager working in the CMDB Workspace wants to see how CIs are connected to each other. Which tool can be used?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Relationship Map</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Business Service Map</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Unified Map</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 165</h2>
+<p class="question-stem">An organization is using CMDB Query Builder to find all application services with a database that has incidents and all infrastructure in those application services. Which steps does the organization take to build this query? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Use a CMDB Query to include application services and their related infrastructure</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Use a Service Mapping Query to find all incidents related to the database</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Use a Service Mapping Query to include non-CMDB tables like the Incident table</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Add a non-CMDB table to the query</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 166</h2>
+<p class="question-stem">A customer wants to model their business applications and would like to capture different types of data that includes Personally Identifiable Information (PII) data. Based on these requirements, which CMDB class needs to be leveraged to achieve this?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> API Component</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Information Object</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Business Capability</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Data Classification</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 167</h2>
+<p class="question-stem">A CSDM Data Manager needs metrics on the alignment of product models, locations, and business units with best practices. Which tab in the CSDM Data Foundations Dashboard provides this information?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Fly</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Crawl</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Foundation</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Run</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> Walk</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 168</h2>
+<p class="question-stem">A Service Portfolio Manager wants to know what Application Services their Business Service Offerings depend on. What stage of CSDM would map this relationship?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Foundation</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Fly</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Run</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Walk</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> Crawl</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 169</h2>
+<p class="question-stem">An Enterprise Architect of a financial services company is working across the enterprise and wants to track their capabilities. Which CSDM 5 domain is used?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Build and Integration (Build)</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Design and Planning (Design)</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Service Delivery (Manage Technical)</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Service Consumption (Sell/Consume)</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> Foundation</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 170</h2>
+<p class="question-stem">A health organization must track certain data (for example, regulated patient information) and its relation to Business Applications. Which action does CSDM recommend to meet this goal?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Create fields on the Business Application record to mark the Business Application as containing patient information, and then ask the Business Application owner to mark the application as having patient information or not.</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Work with the Database administration team to classify the data on each database that holds patient information, and then use Relationships to map that back to the Business Application.</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Create an information Object to represent the patient information, and then link it through a relationship to the Business Application after consulting with the Application owner.</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 171</h2>
+<p class="question-stem">A CMDB Architect intends to populate the CMDB using the CSDM guidance. Which key stakeholders from the organization should be involved in decisions regarding population of the CMDB using the CSDM Crawl Stage?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Business Service Manager, Technology Service Owner</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Application Owner, Application Service Owner</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Customer Service Manager, Infrastructure Manager</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 172</h2>
+<p class="question-stem">A hospital has received a new CT Scanner. The inventory management team has created a catalog item doctors can use to schedule patients for scans. What CSDM domain should the inventory management team map the catalog item to?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Foundation</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Design and Planning (Design)</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Service Delivery (Manage Technical Service)</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Service Consumption (Sell/Consume)</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> Build and Integration (Build)</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 173</h2>
+<p class="question-stem">A CSDM Data Manager needs metrics on the alignment of Technology Management Services (Technical Services) and Technology Management Offerings (Technical Service Offerings) with best practices. Which tab in the CSDM Data Foundation Dashboard provides this information?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Crawl</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Run</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Walk</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Fly</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 174</h2>
+<p class="question-stem">A CMDB Architect intends to build a CMDB using CSDM guidance. Which CMDB tables will the architect use to build the CSDM sell/consume domain?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Business Capability, Information Object, Business Application</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Business Service Offering, Business Service</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Application Service, Technology Management Service (Technical Service), Technology Management Offering (Technical Service Offering)</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 175</h2>
+<p class="question-stem">The Application Portfolio Management team is asking for help modeling platforms as Business Applications. How would this be mapped in CSDM using the ServiceNow Platform in the Incident and Change applications?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> ServiceNow Platform, Incident, and Change would all be web based Architecture type. Incident and Change would have a reference to ServiceNow Platform.</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> ServiceNow Platform would be an Architecture type of Platform Host. Incident and Change would be Platform Applications and have a reference to ServiceNow Platform.</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> ServiceNow Platform, Incident, and Change would all be web based Architecture type. A Depends On relationship would be created between ServiceNow Platform and Incident and Change.</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> ServiceNow Platform would be an Architecture type of Platform Host. Incident and Change would be Platform Applications. Then a Depends On relationship would be created between ServiceNow Platform and Incident and Change.</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 176</h2>
+<p class="question-stem">A Manager needs information on how to correctly establish relationships between Infrastructure CIs, Technology Management Offerings (Technical Service Offerings), and Application Services within the CMDB. Which CSDM domain would provide this information?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Design and Planning (Design)</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Service Consumption (Sell / Consume)</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Service Delivery (Manage Technical Services)</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Build and Integration (Build)</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> Foundation</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 177</h2>
+<p class="question-stem">A retail organization needs to ensure that incidents affecting customer-facing services are resolved quickly to reduce potential revenue loss. Which CSDM attribute is used to prioritize these services?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Assignment Group on the CI record</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Affected CIs in the Incident record</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Business Criticality in the Service Offering</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Service classification in the Technical Service</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 178</h2>
+<p class="question-stem">A CMDB Manager wants to start adding CSDM design and planning (design) domain components into the CMDB. Who is involved in this exercise? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Application Service Owner</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Enterprise Architect</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Business Relationship Manager</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Application Owner</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 179</h2>
+<p class="question-stem">A company wants to track regulatory compliance. ServiceNow has an artifact type called an information object as part of the CSDM framework. What is the purpose of an information object?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> It describes data in general on a group of Configuration Items.</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> It describes data exchanged between an API interface and an Application.</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> It describes the logical data to the Business Applications.</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 180</h2>
+<p class="question-stem">The ITSM Manager wants to use Technology Management Offerings (Technical Service Offerings) to populate the support group of associated CIs. What CSDM stage would this be completed in?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Run</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Walk</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Foundation</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Fly</div>
+<div class="answer-option" data-key="E"><span class="option-key">E.</span> Crawl</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 181</h2>
+<p class="question-stem">A Configuration Manager is implementing end to end service modeling and wants to get help on status and playbooks for improving the quality. What does the Configuration Manager reference to obtain guidance?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> CMDB Data Foundation Dashboard</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Service Mapping Data Foundation Dashboard</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> CSDM Data Foundation Dashboard</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> CMDB Workspace</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 182</h2>
+<p class="question-stem">A CMDB Administrator is leveraging CI data as part of an Integrated Risk Management implementation and the Entity Scoping process. The Administrator wants to leverage the CSDM Data Foundations Dashboard playbooks under the Run tab. Which CSDM relationships are leveraged using the CSDM playbooks? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Business Applications that have their relationships to Information Objects</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Business Applications that have relationships to Application Services</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Logical CIs that have relationships with Information Objects</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Locations that have established parent records</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 183</h2>
+<p class="question-stem">The Incident Process Owner asks which classes of CSDM are used on the Incident form. Which classes are appropriate? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Application Service</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Service Offering</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Business Application</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Service Portfolio</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 184</h2>
+<p class="question-stem">A Business Relationship Manager in an organization wants to implement Service Portfolio Management (SPM) and to present offerings to business consumers. Which CSDM Domain does this align with?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Design and Planning (Design)</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Service Consumption (Sell/Consume)</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Service Delivery</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Build and Integration (Build)</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 185</h2>
+<p class="question-stem">How is the CMDB aligned to business processes? (Choose two.)</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> Enables the CFO/CIO to track software licenses</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> Enhances decision-making and operational efficiency across the organization</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> Extends service delivery management to all enterprise departments</div>
+<div class="answer-option" data-key="D"><span class="option-key">D.</span> Provides a centralized view of configuration items and their relationships</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 186</h2>
+<div class="question-image"><img src="../images/questions/cis-df/image21.png" alt="Question image" loading="lazy"></div>
+<p class="question-stem">DRAG DROP - Drag and drop the product to its description. Show Suggested Answer</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 187</h2>
+<div class="question-image"><img src="../images/questions/cis-df/image23.png" alt="Question image" loading="lazy"></div>
+<p class="question-stem">The Server [cmdb_ci_server] class uses a dynamic reconciliation rule of lowest value for the Disk Space (GB) field, while the Windows Server [cmdb_ci_win_server] class uses a dynamic reconciliation rule of most reported for the Disk Space (GB) field. Given the following data sources that populate Windows Server data into the CMDB 360/Multisource CMDB: Which value would be added to the CMDB for the Disk Space (GB) field of a Windows Server [cmdb_ci_win_server] record?</p>
+<div class="answer-options">
+<div class="answer-option" data-key="A"><span class="option-key">A.</span> 80</div>
+<div class="answer-option" data-key="B"><span class="option-key">B.</span> 75</div>
+<div class="answer-option" data-key="C"><span class="option-key">C.</span> 50</div>
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 188</h2>
+<div class="question-image"><img src="../images/questions/cis-df/image24.png" alt="Question image" loading="lazy"></div>
+<p class="question-stem">DRAG DROP - Drag and drop the CMDB Health Dashboard metric to the description. Show Suggested Answer</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 189</h2>
+<div class="question-image"><img src="../images/questions/cis-df/image26.png" alt="Question image" loading="lazy"></div>
+<p class="question-stem">DRAG DROP - The CMDB Health Dashboard is based on three Key Performance Indicators (KPIs): Correctness, Compliance, and Completeness. Each KPI includes several sub-metrics. Drag the sub-metrics to the KPI. Some options may not apply. Show Suggested Answer</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 190</h2>
+<div class="question-image"><img src="../images/questions/cis-df/image28.png" alt="Question image" loading="lazy"></div>
+<p class="question-stem">DRAG DROP - Given a list of Service types in the platform. Drag the appropriate service to its definition. Show Suggested Answer</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 191</h2>
+<div class="question-image"><img src="../images/questions/cis-df/image30.png" alt="Question image" loading="lazy"></div>
+<p class="question-stem">DRAG DROP - A Platform Owner is building the governance team to support the CSDM. Drag the domain to the roles that make up the governance team. Show Suggested Answer</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
+</div>
+<div class="question-card" data-answer="A" data-community="true">
+<h2>Question 192</h2>
+<div class="question-image"><img src="../images/questions/cis-df/image32.png" alt="Question image" loading="lazy"></div>
+<p class="question-stem">DRAG DROP - An Enterprise Architect needs to help the CMDB owner understand the benefits of CSDM. Drag the CSDM domains to the respective benefits. Show Suggested Answer</p>
+<div class="answer-options">
+</div>
+<button class="reveal-btn">Show Answer</button>
 </div>
     </main>
     <footer class="site-footer">

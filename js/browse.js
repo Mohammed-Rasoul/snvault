@@ -14,7 +14,11 @@
         }
       });
 
-      var label = correctKeys.filter(function (k) { return k; }).join(", ");
+      var label = correctKeys
+        .filter(function (k) {
+          return k;
+        })
+        .join(", ");
       if (!label) {
         var hasAnswerImg = card.querySelectorAll(".answer-image").length > 0;
         label = hasAnswerImg ? "See answer image below" : "See explanation";
@@ -32,28 +36,33 @@
   });
 
   // Explain with AI buttons
-  document.querySelectorAll(".explain-btn:not([disabled])").forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      var card = btn.closest(".question-card");
-      var explanation = card.dataset.explanation;
-      var sourceUrl = card.dataset.sourceUrl || "";
-      var box = card.querySelector(".ai-explanation");
-      if (!explanation || !box) return;
+  document
+    .querySelectorAll(".explain-btn:not([disabled])")
+    .forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var card = btn.closest(".question-card");
+        var explanation = card.dataset.explanation;
+        var sourceUrl = card.dataset.sourceUrl || "";
+        var box = card.querySelector(".ai-explanation");
+        if (!explanation || !box) return;
 
-      var processed = escapeHtml(explanation);
-      if (sourceUrl) {
-        processed += '<br><a href="' + sourceUrl + '" target="_blank" rel="noopener">ServiceNow Docs Reference</a>';
-      }
+        var processed = escapeHtml(explanation);
+        if (sourceUrl) {
+          processed +=
+            '<br><a href="' +
+            sourceUrl +
+            '" target="_blank" rel="noopener">ServiceNow Docs Reference</a>';
+        }
 
-      btn.disabled = true;
-      box.removeAttribute("hidden");
-      box.classList.add("typing");
+        btn.disabled = true;
+        box.removeAttribute("hidden");
+        box.classList.add("typing");
 
-      typewrite(box, processed, function () {
-        box.classList.remove("typing");
+        typewrite(box, processed, function () {
+          box.classList.remove("typing");
+        });
       });
     });
-  });
 
   function escapeHtml(str) {
     var div = document.createElement("div");
